@@ -1,0 +1,15 @@
+filename = "sem-patrol-control-1.2.1.jar"
+name = "[TaCZ] Simple Enemy: Patrol Control"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "bc1c0ee28d939fdd5af9d22b7892d932d25908cd6440c0f65452ff8aa76b4bff"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/8890/765/sem-patrol-control-1.2.1.jar"
+
+[update.curseforge]
+file-id = 8890765
+project-id = 1690360

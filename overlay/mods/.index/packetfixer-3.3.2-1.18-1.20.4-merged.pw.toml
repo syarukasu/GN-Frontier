@@ -1,0 +1,15 @@
+filename = "packetfixer-3.3.2-1.18-1.20.4-merged.jar"
+name = "Packet Fixer"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "12f96ecb8e61e0b3d3f0ca5701f479904904501dd251aa7bb60205afdf6bc2ce"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/7872/374/packetfixer-3.3.2-1.18-1.20.4-merged.jar"
+
+[update.curseforge]
+file-id = 7872374
+project-id = 689467

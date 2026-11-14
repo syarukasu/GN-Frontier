@@ -1,0 +1,10 @@
+{
+  "emission.auto": true,
+  "emission.min_interval_min": 60,
+  "emission.max_interval_min": 90,
+  "emission.damage_pct": 100,
+  "emission.damage_interval_sec": 2,
+  "emission.suit_pct": 60,
+  "emission.roof_protects": true,
+  "emission.debuffs": true
+}

@@ -1,0 +1,15 @@
+filename = "curios-forge-5.14.1+1.20.1.jar"
+name = "Curios API"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "1e817919a35b37cf30524aaec73f0ca5130452f23f168f844854df282eb8e51f"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/6418/456/curios-forge-5.14.1%2B1.20.1.jar"
+
+[update.curseforge]
+file-id = 6418456
+project-id = 309927

@@ -1,0 +1,15 @@
+filename = "horror_element_mod-1.6.3-forge-1.20.1.jar"
+name = "Horror Elements mod"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "3caa31c97003a57a1204aa31eedf31782fe7fceeff5f6832b20faf828972a1f9"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/7484/210/horror_element_mod-1.6.3-forge-1.20.1.jar"
+
+[update.curseforge]
+file-id = 7484210
+project-id = 496520

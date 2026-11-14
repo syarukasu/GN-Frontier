@@ -1,0 +1,15 @@
+filename = "JEIunofficial-unofficial-1.20.1-forge-15.59.0.212-jeiuu.2.jar"
+name = "JEI Unofficial Unofficial"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "4e39cbfa9278760aa70cc19d32c823e2f7fe04de23d9a85eb4dc8afb40bad854"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/9487/446/JEIunofficial-unofficial-1.20.1-forge-15.59.0.212-jeiuu.2.jar"
+
+[update.curseforge]
+file-id = 9487446
+project-id = 1788708

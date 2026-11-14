@@ -1,0 +1,15 @@
+filename = "chat_heads-0.15.7-forge-1.20.jar"
+name = "Chat Heads"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "1cfed5826ca81787618dde3d8e52fdf06068a76712d45327ec36046229f955e7"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/8642/487/chat_heads-0.15.7-forge-1.20.jar"
+
+[update.curseforge]
+file-id = 8642487
+project-id = 407206

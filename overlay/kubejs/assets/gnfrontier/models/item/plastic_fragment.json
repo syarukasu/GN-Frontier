@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "gnfrontier:item/plastic_fragment_video_r14"
+  }
+}

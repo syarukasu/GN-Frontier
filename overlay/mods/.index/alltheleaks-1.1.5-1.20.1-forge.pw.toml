@@ -1,0 +1,15 @@
+filename = "alltheleaks-1.1.5-1.20.1-forge.jar"
+name = "AllTheLeaks (Memory Leak Fix)"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "8c9a30ac9f4df04fb5067010ef88d7d92e3b510c183080390c4b3c6d8958c0c2"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/9505/18/alltheleaks-1.1.5-1.20.1-forge.jar"
+
+[update.curseforge]
+file-id = 9505018
+project-id = 1091339

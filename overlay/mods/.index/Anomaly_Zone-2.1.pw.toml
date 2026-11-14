@@ -1,0 +1,15 @@
+filename = "Anomaly_Zone-2.1.jar"
+name = "Anomaly Zone Mod"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "e80fc6117f0369b3af1ff194abd15a4f6137d5087d436aeacb475e50401b8558"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/9481/457/Anomaly_Zone-2.1.jar"
+
+[update.curseforge]
+file-id = 9481457
+project-id = 1604795

@@ -1,0 +1,15 @@
+filename = "botarium-forge-1.20.1-2.3.4.jar"
+name = "Botarium"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "470810a364ff4ad4d4fcd4e55798263938fc893970eacecc58e8b741a392b1cf"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/5486/70/botarium-forge-1.20.1-2.3.4.jar"
+
+[update.curseforge]
+file-id = 5486070
+project-id = 704113

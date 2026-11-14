@@ -1,0 +1,174 @@
+plugins {
+    id 'java'
+    id 'net.minecraftforge.gradle' version '6.0.54'
+}
+group = 'local.gnfrontier'
+version = file('../VERSION').text.trim()
+if (!(version ==~ /\d+\.\d+\.\d+/)) throw new GradleException('VERSION must be answer.video.update')
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+minecraft { mappings channel: 'official', version: '1.20.1' }
+repositories { mavenCentral() }
+dependencies { minecraft 'net.minecraftforge:forge:1.20.1-47.4.20' }
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+tasks.withType(AbstractArchiveTask).configureEach {
+    preserveFileTimestamps = false
+    reproducibleFileOrder = true
+}
+jar { manifest.attributes('Implementation-Version': project.version, 'MixinConfigs': 'gnfrontier.mixins.json'); finalizedBy 'reobfJar' }
+processResources {
+    inputs.property('version', project.version)
+    filesMatching('META-INF/mods.toml') { expand version: project.version }
+}
+sourceSets {
+    verification {
+        java.srcDir 'src/verification/java'
+        compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath
+        runtimeClasspath += sourceSets.main.output + sourceSets.main.runtimeClasspath
+    }
+}
+tasks.register('verifyCore', JavaExec) {
+    dependsOn 'verificationClasses'
+    classpath = sourceSets.verification.runtimeClasspath
+    mainClass = 'local.gnfrontier.core.CoreVerification'
+    jvmArgs '-ea'
+}
+tasks.named('check') { dependsOn 'verifyCore' }
+
+tasks.register('verifyRespawn', JavaExec) {
+    dependsOn 'verificationClasses'
+    classpath = sourceSets.verification.runtimeClasspath
+    mainClass = 'local.gnfrontier.core.RespawnVerification'
+    maxHeapSize = '512m'
+    jvmArgs '-ea', '-XX:ActiveProcessorCount=2'
+}
+tasks.named('check') { dependsOn 'verifyRespawn' }
+
+def gnGame = providers.gradleProperty('gnGameDir').getOrElse(file('../.cache/game').absolutePath)
+repositories { flatDir { dirs "${gnGame}/mods" } }
+dependencies { compileOnly files("${gnGame}/mods/Veil-forge-1.20.1-1.0.0.296-slim.jar") }
+repositories { flatDir { dirs '../revisions/multiplayer-mods-r2/downloads' } }
+dependencies { implementation fg.deobf('local:lootr-forge:1.20-0.7.35.94') }
+dependencies { implementation fg.deobf('local:PetiteInventory-TaCZMagazineCompatibilityPatchVIVI2:0.0.1') }
+dependencies { implementation fg.deobf('local:tacz-forge:1.20.1-1.2.0') }
+dependencies { implementation fg.deobf('local:curios-forge:5.14.1+1.20.1') }
+
+dependencies { implementation fg.deobf('local:lostcities:1.20-7.5.7') }
+sourceSets.verification.runtimeClasspath += files("${gnGame}/mods/rhino-forge-2001.2.3-build.10.jar")
+sourceSets.verification.runtimeClasspath += fileTree('../revisions/finishing-r5/verification-libs') { include '*.jar' }
+tasks.register('verifyIntegrations', JavaExec) {
+    dependsOn 'verificationClasses', 'reobfJar'
+    classpath = sourceSets.verification.runtimeClasspath
+    mainClass = 'local.gnfrontier.core.IntegrationVerification'
+    jvmArgs '--add-opens=java.base/java.lang.invoke=ALL-UNNAMED'
+    args project.file('../overlay/kubejs/server_scripts/gn_frontier_recipes.js'), project.file('../overlay/config/lostcities/profiles/gn_azzz15flat_wide.json'), tasks.jar.archiveFile.get().asFile,project.file('../revisions/terrain-materials-r12')
+}
+tasks.named('check') { dependsOn 'verifyIntegrations' }
+tasks.register('verifyMultiplayer', JavaExec) {
+    dependsOn 'verificationClasses'
+    classpath = sourceSets.verification.runtimeClasspath
+    mainClass = 'local.gnfrontier.core.MultiplayerVerification'
+    maxHeapSize = '768m'
+    jvmArgs '-XX:ActiveProcessorCount=2', '--add-opens=java.base/java.lang.invoke=ALL-UNNAMED'
+    args project.file('../overlay/config/lootr-common.toml'), project.file('../revisions/multiplayer-mods-r2/downloads')
+}
+tasks.named('check') { dependsOn 'verifyMultiplayer' }
+tasks.register('verifyModLinks', JavaExec) {
+    dependsOn 'verificationClasses'
+    classpath = sourceSets.verification.runtimeClasspath
+    mainClass = 'local.gnfrontier.core.ModLinkVerification'
+    maxHeapSize = '768m'
+    jvmArgs '-XX:ActiveProcessorCount=2'
+    args "${gnGame}/mods", project.file('../revisions/multiplayer-mods-r2/downloads'), project.file('../revisions/terrain-materials-r12/tacz-binary-links.json')
+}
+tasks.named('check') { dependsOn 'verifyModLinks' }
+tasks.register('verifyCampaign',JavaExec) {
+    dependsOn 'verificationClasses'
+    classpath=sourceSets.verification.runtimeClasspath
+    mainClass='local.gnfrontier.core.CampaignVerification'
+    maxHeapSize='768m'
+    jvmArgs '-ea','-XX:ActiveProcessorCount=2'
+}
+tasks.named('check') { dependsOn 'verifyCampaign' }
+tasks.register('verifyMerchantQuests',JavaExec) {
+    dependsOn 'verificationClasses'
+    classpath=sourceSets.verification.runtimeClasspath
+    mainClass='local.gnfrontier.core.MerchantQuestVerification'
+    maxHeapSize='512m'
+    jvmArgs '-ea','-XX:ActiveProcessorCount=2'
+    args project.file('../overlay/kubejs/data/gnfrontier/merchant_quests/black_market.json')
+}
+tasks.named('check') { dependsOn 'verifyMerchantQuests' }
+
+tasks.register('verifyDailyMissions',JavaExec) {
+    dependsOn 'verificationClasses'
+    classpath=sourceSets.verification.runtimeClasspath
+    mainClass='local.gnfrontier.core.DailyMissionVerification'
+    maxHeapSize='768m'
+    jvmArgs '-ea','-XX:ActiveProcessorCount=2'
+    args project.file('../overlay/kubejs/data/gnfrontier/daily_missions/catalog.json')
+    args project.file('../revisions/modular-deliveries-r31/catalog-schema1.json')
+}
+tasks.named('check') { dependsOn 'verifyDailyMissions' }
+
+tasks.register('verifyShrapnel',JavaExec) {
+    dependsOn 'verificationClasses'
+    classpath=sourceSets.verification.runtimeClasspath
+    mainClass='local.gnfrontier.core.ShrapnelVerification'
+    maxHeapSize='512m'
+    jvmArgs '-ea','-XX:ActiveProcessorCount=2','--add-opens=java.base/java.lang.invoke=ALL-UNNAMED'
+    args project.file('../revisions/daily-missions-r21/source-mods/ShrapnelExplosionsMod-2.0.7.3-1.20.1.jar'),project.file('../revisions/daily-missions-r21/patched-mods/ShrapnelExplosionsMod-2.0.7.3-gncompat.1-1.20.1.jar'),"${gnGame}/mods/superbwarfare-0.8.9.2-mc1.20.1-65d985a64-all.jar"
+}
+tasks.named('check') { dependsOn 'verifyShrapnel' }
+tasks.register('verifyCompatibility',JavaExec) {
+    dependsOn 'verificationClasses'
+    classpath=sourceSets.verification.runtimeClasspath
+    mainClass='local.gnfrontier.core.CompatibilityVerification'
+    maxHeapSize='512m'
+    jvmArgs '-ea','-XX:ActiveProcessorCount=2'
+    args project.file('../revisions/compatibility-r20'),project.file('../overlay/kubejs')
+}
+tasks.named('check') { dependsOn 'verifyCompatibility' }
+tasks.register('verifyGameplayData',JavaExec) {
+    dependsOn 'verificationClasses','reobfJar'
+    classpath=sourceSets.verification.runtimeClasspath
+    mainClass='local.gnfrontier.core.GameplayDataVerification'
+    maxHeapSize='768m'
+    jvmArgs '-XX:ActiveProcessorCount=2','--add-opens=java.base/java.lang.invoke=ALL-UNNAMED'
+    args tasks.jar.archiveFile.get().asFile,"${gnGame}/mods",new File(gradle.gradleUserHomeDir,'caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.20/forge-1.20.1-47.4.20-srg.jar'),project.file('../overlay/kubejs/server_scripts/gn_frontier_progression.js'),project.file('../revisions/finishing-r5/generated-data.json'),project.file('../revisions/terrain-materials-r12')
+    args project.file('../revisions/enhanced-ai-r22/downloads/enhancedai-3.3.7.5.jar')
+}
+tasks.named('check') { dependsOn 'verifyGameplayData' }
+
+tasks.register('verifyFinishing',JavaExec) {
+    dependsOn 'verificationClasses'
+    classpath=sourceSets.verification.runtimeClasspath
+    mainClass='local.gnfrontier.core.FinishingVerification'
+    maxHeapSize='768m'
+    jvmArgs '-ea','-XX:ActiveProcessorCount=2','--add-opens=java.base/java.lang.invoke=ALL-UNNAMED'
+    args project.file('../revisions/finishing-r5'),project.file('../overlay/config/lostcities/profiles/gn_azzz15flat_finished.json'),project.file('../revisions/terrain-materials-r12')
+}
+tasks.named('check') { dependsOn 'verifyFinishing' }
+
+tasks.register('surveyWorldgen', JavaExec) {
+    dependsOn 'verificationClasses'
+    classpath = sourceSets.verification.runtimeClasspath
+    mainClass = 'local.gnfrontier.core.WorldgenCoverage'
+    maxHeapSize = '768m'
+    jvmArgs '-XX:ActiveProcessorCount=2'
+    args project.file('../revisions/worldgen-azzz15flat-wide-r1/base/aaaaaaaaz15Flat.json'), project.file('../evidence/worldgen-coverage-survey.json')
+}
+
+// Separate test-only MOD. It is excluded from the distributable addon and target instance.
+sourceSets {
+    review {
+        compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath
+        runtimeClasspath += sourceSets.main.output + sourceSets.main.runtimeClasspath
+    }
+}
+tasks.register('reviewJar', Jar) {
+    dependsOn 'reviewClasses'
+    archiveBaseName = 'gn-frontier-checks'
+    from sourceSets.review.output
+}
+reobf { reviewJar {} }
+tasks.named('reviewJar') { finalizedBy 'reobfReviewJar' }

@@ -1,0 +1,15 @@
+filename = "chaoscrafts_security_essentials-0.5.2-beta.jar"
+name = "[CDM] ChaosCraft's Security Essentials (Security Cameras & Turrets)"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "0aaa0a46d01c8637fcb58b6594e288b65c9374403ca3bdb3c6d5fc807b66c961"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/8864/704/chaoscrafts_security_essentials-0.5.2-beta.jar"
+
+[update.curseforge]
+file-id = 8864704
+project-id = 1655609

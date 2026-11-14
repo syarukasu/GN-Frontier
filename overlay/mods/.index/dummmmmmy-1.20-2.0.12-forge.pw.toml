@@ -1,0 +1,15 @@
+filename = "dummmmmmy-1.20-2.0.12-forge.jar"
+name = "MmmMmmMmmMmm (Target Dummy)"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "bd7f168ec56f14a25d36d9d0dc4d281e88f77b1ba678907b5c570e5c051a5ca4"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/7963/208/dummmmmmy-1.20-2.0.12-forge.jar"
+
+[update.curseforge]
+file-id = 7963208
+project-id = 225738

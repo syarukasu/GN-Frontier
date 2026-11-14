@@ -1,0 +1,15 @@
+filename = "tacz-mesh-loader-forge-1.20.1-0.2.1-hotfix.jar"
+name = "tacz-mesh-loader-forge-1.20.1-0.2.1-hotfix.jar"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "07d24da1113c1adf409fb5da929b4fd9302a35b6f268dd9929ebc3758322dca1"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/9539/316/tacz-mesh-loader-forge-1.20.1-0.2.1-hotfix.jar"
+
+[update.curseforge]
+file-id = 9539316
+project-id = 1549522

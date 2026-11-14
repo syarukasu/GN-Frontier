@@ -1,0 +1,8 @@
+{
+  "type": "gnfrontier:natural_chests",
+  "conditions": [],
+  "sources": [
+    "survival_instinct:chests/trash_can"
+  ],
+  "target": "gnfrontier:chests/drawer"
+}

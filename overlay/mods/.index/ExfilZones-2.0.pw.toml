@@ -1,0 +1,15 @@
+filename = "ExfilZones-2.0.jar"
+name = "Evacuation Mod"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "4d7c7c67eb5aea6a893f48a2adfedae1b0909bbfbb7dd43c8c75c37f20ce28e5"
+mode = "url"
+url = "https://cdn.modrinth.com/data/KTLfmdu9/versions/tSxioFKh/ExfilZones-2.0.jar"
+
+[update.modrinth]
+mod-id = "KTLfmdu9"
+version = "tSxioFKh"

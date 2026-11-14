@@ -1,0 +1,15 @@
+filename = "cloth-config-11.1.136-forge.jar"
+name = "Cloth Config API (Fabric/Forge/NeoForge)"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "1e895e85cf5b1e1905ef3178ec155c8badfe22a1577b92c09143a5aa1f4ce0f2"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/5729/105/cloth-config-11.1.136-forge.jar"
+
+[update.curseforge]
+file-id = 5729105
+project-id = 348521

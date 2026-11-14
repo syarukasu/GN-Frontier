@@ -1,0 +1,15 @@
+filename = "framework-forge-1.20.1-0.8.0.jar"
+name = "Framework"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "37c267f46d8b8dfa81bae8c9fa9fa6467e456cadecae10722ee91b43437f25a0"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/7573/740/framework-forge-1.20.1-0.8.0.jar"
+
+[update.curseforge]
+file-id = 7573740
+project-id = 549225

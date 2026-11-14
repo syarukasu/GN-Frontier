@@ -1,0 +1,12 @@
+{
+  "generic.tacz_x_guns_lights_addon.off": "オフ",
+  "generic.tacz_x_guns_lights_addon.on": "オン",
+  "preset.tacz_x_guns_lights_addon.high": "高",
+  "preset.tacz_x_guns_lights_addon.low": "低",
+  "preset.tacz_x_guns_lights_addon.medium": "中",
+  "section.tacz_x_guns_lights_addon.general": "一般",
+  "strength.tacz_x_guns_lights_addon.high": "高",
+  "strength.tacz_x_guns_lights_addon.low": "低",
+  "strength.tacz_x_guns_lights_addon.medium": "中",
+  "strength.tacz_x_guns_lights_addon.off": "なし"
+}

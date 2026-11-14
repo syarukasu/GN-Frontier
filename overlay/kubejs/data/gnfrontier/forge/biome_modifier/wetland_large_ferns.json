@@ -1,0 +1,11 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "minecraft:swamp",
+    "minecraft:mangrove_swamp"
+  ],
+  "features": [
+    "gnfrontier:wetland_large_ferns"
+  ],
+  "step": "vegetal_decoration"
+}

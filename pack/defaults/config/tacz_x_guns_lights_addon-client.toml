@@ -1,0 +1,140 @@
+
+[muzzle_flash]
+	#Enable muzzle-flash dynamic lighting when firing TaCZ guns.
+	enabled = true
+	#Base light radius of an unsuppressed muzzle flash, in blocks (1..15).
+	#This is the reach of the flash: 12 means the glow fades out ~12 blocks away.
+	#The actual radius per weapon is this value scaled by the [balance] section,
+	#so a pistol and an RPG do not flash identically.
+	#Range: 1 ~ 15
+	radiusBlocks = 12
+	#What still lights up when a silencer or a muzzle brake/compensator is
+	#attached (TaCZ keeps both in the same slot, so this covers either).
+	#NONE        - nothing at all: no muzzle flash, no bullet trail (default).
+	#TRACER_ONLY - no muzzle flash, but bullets still leave their trail light.
+	#NORMAL      - the attachment changes nothing, same light as a bare barrel.
+	#Allowed Values: NONE, TRACER_ONLY, NORMAL
+	silencedLight = "NONE"
+	#How many client ticks a muzzle flash stays lit (1 tick = 1/20 sec).
+	#Range: 1 ~ 20
+	durationTicks = 1
+	#How far in front of the shooter's eyes the flash sits, in blocks.
+	#Too small and the light sits inside your own head, which reads as "everything
+	#around me lights up" rather than "my gun flashed" — that is what 0.8 did.
+	#Roughly the length of the weapon is about right.
+	#Range: 0.0 ~ 4.0
+	muzzleOffsetBlocks = 1.6
+	#Gun IDs that should never spawn a muzzle-flash light (e.g. crossbows,
+	#grenade launchers — anything that doesn't realistically flash).
+	#One entry per line, format "namespace:path", e.g. "tacz:crossbow".
+	#Find the exact ID from the gun's data-pack file name (without .json).
+	muzzleFlashBlacklist = []
+	#TaCZ has no real "is this a bow/crossbow" flag — every weapon (including
+	#crossbows made from TaCZ) is the exact same gun type under the hood, just a
+	#different resource-pack skin. So this is a heuristic, not a hard detector:
+	#if enabled, a gun is auto-skipped when its ID (namespace:path) contains any
+	#of the keywords below, case-insensitive. Good enough to catch most crossbow/
+	#bow-style weapons out of the box without listing every one by hand. Use the
+	#exact muzzleFlashBlacklist above for anything this heuristic misses.
+	autoDetectBowLikeWeapons = true
+	#Keywords checked against each gun's ID when autoDetectBowLikeWeapons is on.
+	muzzleFlashAutoDetectKeywords = ["bow", "crossbow", "arrow"]
+
+[bullet_trail]
+	#Enable dynamic trail-light following TaCZ bullets in flight.
+	enabled = true
+
+[bullet_tracer]
+	#Distance in blocks between consecutive trail sparks.
+	#1.0 gives a continuous streak (one spark per block flown). Larger values
+	#leave visible gaps and are cheaper; smaller values are denser but cost more
+	#light-engine updates. Note that bullets fly tens of blocks per tick, so this
+	#is what decides whether a shot reads as a streak or as a few stray dots.
+	#Range: 0.5 ~ 16.0
+	stepBlocks = 1.0
+	#How many ticks each trail spark stays lit (1 tick = 1/20 sec).
+	#Keep it short: light that outlives the shot itself reads as lag rather than
+	#as a flash. 2 ticks = 100 ms. The impact flash lives twice this long.
+	#With subTickLight on, the light engine flushes every frame, so even 1 tick
+	#is reliably visible.
+	#Range: 1 ~ 20
+	ttlTicks = 2
+	#Base light radius of each trail spark, in blocks (1..15).
+	#Scaled per weapon by the [balance] section below.
+	#Range: 1 ~ 15
+	radiusBlocks = 3
+	#Extra radius (in blocks) for the spark sitting on the bullet itself, on top
+	#of radiusBlocks. A brighter head with a dimmer tail is what makes a tracer
+	#read as a moving projectile rather than a static line. 0 disables the effect.
+	#Range: 0 ~ 8
+	headBonusBlocks = 1
+	#If true, only bullets TaCZ itself marks as tracer ammo emit trail light.
+	#Matches TaCZ's own tracer rendering, but means ordinary ammo flies dark.
+	onlyTracerAmmo = false
+	#Extra radius in blocks for a brief flash where the bullet actually hit,
+	#on top of radiusBlocks. This is what makes a point-blank shot read: the wall
+	#you shot lights up, instead of the only light being the flash at your own face.
+	#The impact flash also lives twice as long as an ordinary trail spark.
+	#0 disables it.
+	#Range: 0 ~ 10
+	impactBonusBlocks = 4
+
+[balance]
+	#Scale light radius by the weapon's TaCZ gun type, so a 9mm pistol does not
+	#light up the street like a rocket launcher (and vice versa). Multipliers are
+	#applied to muzzle_flash.radiusBlocks and bullet_tracer.radiusBlocks.
+	#Turn off to give every weapon in the game the exact same radius.
+	scaleByGunType = true
+	#Radius multiplier for TaCZ type "pistol".
+	#Range: 0.0 ~ 2.0
+	pistol = 0.65
+	#Radius multiplier for TaCZ type "smg".
+	#Range: 0.0 ~ 2.0
+	smg = 0.8
+	#Radius multiplier for TaCZ type "rifle".
+	#Range: 0.0 ~ 2.0
+	rifle = 1.0
+	#Radius multiplier for TaCZ type "shotgun".
+	#Range: 0.0 ~ 2.0
+	shotgun = 1.1
+	#Radius multiplier for TaCZ type "sniper".
+	#Range: 0.0 ~ 2.0
+	sniper = 1.15
+	#Radius multiplier for TaCZ type "mg" (machine guns).
+	#Range: 0.0 ~ 2.0
+	mg = 1.05
+	#Radius multiplier for TaCZ type "rpg" (rocket/grenade launchers).
+	#Range: 0.0 ~ 2.0
+	rpg = 1.4
+	#Radius multiplier for weapons whose type is missing or unrecognised
+	#(custom gun packs are free to invent their own type strings).
+	#Range: 0.0 ~ 2.0
+	unknown = 1.0
+	#Extra radius in blocks for projectiles TaCZ flags as explosive, added after
+	#the type multiplier. Catches rockets and grenades even in gun packs that
+	#label them as something other than "rpg".
+	#Range: 0 ~ 8
+	explosiveBonusBlocks = 3
+
+[render]
+	#Global radius multiplier applied to every light this addon creates,
+	#after all per-weapon balancing.
+	#1.0 = use configured radii as-is.
+	#0.0 = effectively disable lighting without unloading the mixin.
+	#Range: 0.0 ~ 1.0
+	globalRadiusScale = 1.0
+	#Update light every rendered frame instead of every game tick.
+	#The vanilla light engine flushes its updates from LevelRenderer.renderLevel(),
+	#i.e. once per frame, so light placed before rendering shows up in that same
+	#frame — at 60 fps that is three updates per game tick instead of one.
+	#What it fixes: a fast bullet's light otherwise appears in 50 ms jumps, and a
+	#point-blank shot (bullet alive for a single tick) can produce no light at all.
+	#What it does NOT do: block light is still integer and still snaps to whole
+	#blocks — this makes the light land at the right moment and place, not smoother.
+	#Turn off if you suspect it costs you frames.
+	subTickLight = true
+
+[internals]
+	#If true, print active light-source counts to INFO log every 10 seconds.
+	debugLogStats = false
+

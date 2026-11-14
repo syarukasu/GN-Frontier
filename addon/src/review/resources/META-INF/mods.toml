@@ -1,0 +1,13 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+[[mods]]
+modId="gnreview"
+version="1.0"
+displayName="Disposable GN Review Checks"
+[[dependencies.gnreview]]
+modId="gnfrontier"
+mandatory=true
+versionRange="[0.1.0-dev.9]"
+ordering="AFTER"
+side="BOTH"

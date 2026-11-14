@@ -1,0 +1,13 @@
+{
+  "type": "gnfrontier:natural_chests",
+  "conditions": [],
+  "sources": [
+    "chaoszpack_lc_loot:chests/ammo",
+    "keerdm_zombie_essentials:chests/tacz_gunchest",
+    "survival_instinct:chests/military_loot",
+    "minecraft:chests/simple_dungeon",
+    "minecraft:chests/pillager_outpost",
+    "minecraft:chests/village/village_weaponsmith"
+  ],
+  "target": "gnfrontier:chests/military"
+}

@@ -1,0 +1,15 @@
+filename = "quantified api-omni-2.2.4.jar"
+name = "[QAPI] | Quantified API"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "f3c71df7388f25e836ab99703fd641d5521e9f2092934e2033e0a005993363ae"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/9037/916/quantified%20api-omni-2.2.4.jar"
+
+[update.curseforge]
+file-id = 9037916
+project-id = 1397967

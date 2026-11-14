@@ -1,0 +1,30 @@
+// r11: video-observed items; unshown manufacturing ratios are reproduction settings.
+ServerEvents.recipes(event => {
+  event.remove({"id": "survival_instinct:gas_mask_recipe"});
+  event.custom({"type":"minecraft:crafting_shaped","category":"equipment","pattern":["aba","bcb","s s"],"key":{"a":{"item":"survival_instinct:tier_ii_kevlar"},"b":{"item":"survival_instinct:polyethylene_sheet"},"c":{"item":"survival_instinct:can"},"s":{"tag":"forge:ingots/steel"}},"result":{"item":"survival_instinct:gas_mask_helmet","count":1}}).id("survival_instinct:gas_mask_recipe");
+  event.remove({"id": "survival_instinct:kevlar_i_leather_recipe"});
+  event.custom({"type":"minecraft:crafting_shapeless","category":"misc","ingredients":[{"item":"minecraft:leather"},{"item":"minecraft:string"},{"tag":"forge:ingots/steel"}],"result":{"item":"survival_instinct:tier_i_kevlar","count":2}}).id("survival_instinct:kevlar_i_leather_recipe");
+  event.remove({"id": "survival_instinct:kevlar_i_recipe"});
+  event.custom({"type":"minecraft:crafting_shapeless","category":"misc","ingredients":[{"item":"survival_instinct:cloth"},{"item":"minecraft:string"},{"tag":"forge:ingots/steel"}],"result":{"item":"survival_instinct:tier_i_kevlar","count":2}}).id("survival_instinct:kevlar_i_recipe");
+  event.remove({"id": "survival_instinct:kevlar_ii_kevlar_recipe"});
+  event.custom({"type":"minecraft:crafting_shapeless","category":"misc","ingredients":[{"item":"survival_instinct:tier_i_kevlar"},{"item":"minecraft:gold_ingot"},{"item":"survival_instinct:steellium"},{"tag":"forge:ingots/steel"}],"result":{"item":"survival_instinct:tier_ii_kevlar","count":2}}).id("survival_instinct:kevlar_ii_kevlar_recipe");
+  event.remove({"id": "survival_instinct:kevlar_ii_leather_recipe"});
+  event.custom({"type":"minecraft:crafting_shapeless","category":"misc","ingredients":[{"item":"minecraft:leather"},{"item":"minecraft:string"},{"item":"survival_instinct:steellium"},{"item":"minecraft:gold_ingot"},{"tag":"forge:ingots/steel"}],"result":{"item":"survival_instinct:tier_ii_kevlar","count":2}}).id("survival_instinct:kevlar_ii_leather_recipe");
+  event.remove({"id": "survival_instinct:kevlar_ii_recipe"});
+  event.custom({"type":"minecraft:crafting_shapeless","category":"misc","ingredients":[{"item":"survival_instinct:cloth"},{"item":"minecraft:string"},{"item":"survival_instinct:steellium"},{"item":"minecraft:gold_ingot"},{"tag":"forge:ingots/steel"}],"result":{"item":"survival_instinct:tier_ii_kevlar","count":2}}).id("survival_instinct:kevlar_ii_recipe");
+  event.remove({"id": "survival_instinct:kevlar_iii_kevlar_recipe"});
+  event.custom({"type":"minecraft:crafting_shapeless","category":"misc","ingredients":[{"item":"survival_instinct:tier_ii_kevlar"},{"item":"survival_instinct:aluminium"},{"item":"minecraft:diamond"},{"tag":"forge:ingots/steel"}],"result":{"item":"survival_instinct:tier_iii_kevlar","count":2}}).id("survival_instinct:kevlar_iii_kevlar_recipe");
+  event.remove({"id": "survival_instinct:kevlar_iii_leather_recipe"});
+  event.custom({"type":"minecraft:crafting_shapeless","category":"misc","ingredients":[{"item":"minecraft:leather"},{"item":"minecraft:string"},{"item":"survival_instinct:aluminium"},{"item":"minecraft:diamond"},{"tag":"forge:ingots/steel"}],"result":{"item":"survival_instinct:tier_iii_kevlar","count":2}}).id("survival_instinct:kevlar_iii_leather_recipe");
+  event.remove({"id": "survival_instinct:kevlar_iii_recipe"});
+  event.custom({"type":"minecraft:crafting_shapeless","category":"misc","ingredients":[{"item":"survival_instinct:cloth"},{"item":"minecraft:string"},{"item":"survival_instinct:aluminium"},{"item":"minecraft:diamond"},{"tag":"forge:ingots/steel"}],"result":{"item":"survival_instinct:tier_iii_kevlar","count":2}}).id("survival_instinct:kevlar_iii_recipe");
+  event.remove({"id": "survival_instinct:kevlar_tier_iv_cloth_recipe"});
+  event.custom({"type":"minecraft:crafting_shapeless","category":"misc","ingredients":[{"item":"survival_instinct:cloth"},{"item":"minecraft:string"},{"item":"minecraft:netherite_ingot"},{"tag":"forge:ingots/steel"}],"result":{"item":"survival_instinct:tier_iv_kevlar","count":2}}).id("survival_instinct:kevlar_tier_iv_cloth_recipe");
+  event.remove({"id": "survival_instinct:kevlar_tier_iv_kevlar_recipe"});
+  event.custom({"type":"minecraft:crafting_shapeless","category":"misc","ingredients":[{"item":"survival_instinct:tier_iii_kevlar"},{"item":"minecraft:netherite_ingot"},{"tag":"forge:ingots/steel"}],"result":{"item":"survival_instinct:tier_iv_kevlar","count":2}}).id("survival_instinct:kevlar_tier_iv_kevlar_recipe");
+  event.remove({"id": "survival_instinct:kevlar_tier_iv_recipe"});
+  event.custom({"type":"minecraft:crafting_shapeless","category":"misc","ingredients":[{"item":"minecraft:leather"},{"item":"minecraft:string"},{"item":"minecraft:netherite_ingot"},{"tag":"forge:ingots/steel"}],"result":{"item":"survival_instinct:tier_iv_kevlar","count":2}}).id("survival_instinct:kevlar_tier_iv_recipe");
+  event.custom({"type":"create:crushing","ingredients":[{"item":"gnfrontier:aluminum_chunk"}],"results":[{"item":"gnfrontier:aluminum_scrap","count":4}],"processingTime":200}).id("gnfrontier:aluminum_chunk_recycling");
+  event.custom({"type":"create:mixing","ingredients":[{"item":"gnfrontier:plastic_fragment"},{"item":"gnfrontier:plastic_fragment"},{"item":"gnfrontier:plastic_fragment"},{"item":"gnfrontier:plastic_fragment"}],"results":[{"item":"tfmg:plastic_sheet"}],"heatRequirement":"heated"}).id("gnfrontier:plastic_fragment_recycling");
+  event.custom({"type":"create:crushing","ingredients":[{"item":"gnfrontier:waste_battery"}],"results":[{"item":"tfmg:lead_ingot"},{"item":"gnfrontier:plastic_fragment","count":2}],"processingTime":300}).id("gnfrontier:waste_battery_recycling");
+});

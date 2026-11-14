@@ -1,0 +1,15 @@
+filename = "oculus-mc1.20.1-1.8.0.jar"
+name = "Oculus"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "0945df0cba0f62b3901dd80c3268e5311b770ece78c78037a45db12ac0425fef"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/6020/952/oculus-mc1.20.1-1.8.0.jar"
+
+[update.curseforge]
+file-id = 6020952
+project-id = 581495

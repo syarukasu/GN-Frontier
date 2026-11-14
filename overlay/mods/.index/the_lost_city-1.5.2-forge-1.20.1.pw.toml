@@ -1,0 +1,15 @@
+filename = "the_lost_city-1.5.2-forge-1.20.1.jar"
+name = "The Lost City"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "980f79a255b47e44c35113860338959c5984148a03eec9727778abebe12be6d8"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/9347/193/the_lost_city-1.5.2-forge-1.20.1.jar"
+
+[update.curseforge]
+file-id = 9347193
+project-id = 1159207

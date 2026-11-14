@@ -1,0 +1,7 @@
+{
+  "demandOnClientMessage": "このサーバーに参加するには、No Chat Reportsの導入が必要です。",
+  "demandOnClient": false,
+  "convertToGameMessage": true,
+  "addQueryData": true,
+  "enableDebugLog": false
+}

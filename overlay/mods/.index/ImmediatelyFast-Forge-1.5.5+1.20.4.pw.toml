@@ -1,0 +1,15 @@
+filename = "ImmediatelyFast-Forge-1.5.5+1.20.4.jar"
+name = "ImmediatelyFast"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "82db19cc65b5c11a444498fb4b8cbcb0393c043e794cb5bf368631a0af765035"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/8348/481/ImmediatelyFast-Forge-1.5.5%2B1.20.4.jar"
+
+[update.curseforge]
+file-id = 8348481
+project-id = 686911

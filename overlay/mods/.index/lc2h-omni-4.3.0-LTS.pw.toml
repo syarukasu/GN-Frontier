@@ -1,0 +1,15 @@
+filename = "lc2h-omni-4.3.0-LTS.jar"
+name = "[LC²H] | Lost Cities: Multithreaded"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "04eb12f4cadc0c80ec7a88cba347c42972733a0a72dcf3667183af4643629c91"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/9457/247/lc2h-omni-4.3.0-LTS.jar"
+
+[update.curseforge]
+file-id = 9457247
+project-id = 1325431

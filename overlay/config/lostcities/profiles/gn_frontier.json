@@ -1,0 +1,40 @@
+{
+  "public": true,
+  "cities": {
+    "cityChance": 0.00025,
+    "cityMinRadius": 256,
+    "cityMaxRadius": 768,
+    "cityThreshold": 0.2,
+    "cityMinHeight": 50,
+    "cityMaxHeight": 130,
+    "cityStyleAlternative": "citystyle_border1",
+    "cityStyleThreshold": 0.4
+  },
+  "lostcity": {
+    "description": "GN Frontier - prototype cities, suburbs and wilderness",
+    "extraDescription": "Requires installed ChaosZPack testworld assets. New worlds only. Not an original-series profile.",
+    "worldStyle": "testworld",
+    "landscapeType": "default",
+    "groundLevel": 71,
+    "buildingChance": 0.55,
+    "buildingMinFloors": 0,
+    "buildingMaxFloors": 15,
+    "buildingMinFloorsChance": 4,
+    "buildingMaxFloorsChance": 12,
+    "ruinChance": 0.7,
+    "ruinMinlevelPercent": 0.65,
+    "ruinMaxlevelPercent": 1.0,
+    "highwayDistanceMask": 7,
+    "highwayRequiresTwoCities": true,
+    "railwaysEnabled": true,
+    "vineChance": 0.35,
+    "chestWithoutLootChance": 0.15,
+    "generateLoot": true,
+    "generateSpawners": true
+  },
+  "explosions": {
+    "explosionChance": 0.001,
+    "miniExplosionChance": 0.01,
+    "explosionsInCitiesOnly": true
+  }
+}

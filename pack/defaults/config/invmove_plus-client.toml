@@ -1,0 +1,46 @@
+camera = true
+#0 hold Alt or middle; 1 hold Alt; 2 hold middle; 3 toggle with Alt; 4 toggle with middle; 5 hold both; 6 press Alt or middle (toggle)
+#Range: 0 ~ 6
+cameraActivation = 0
+showButton = true
+#Range: -100 ~ 100
+buttonGridX = 0
+#Range: -100 ~ 100
+buttonGridY = 0
+#Legs button position in pixels relative to the inventory window (set visually in the settings screen)
+#Range: -400 ~ 400
+buttonX = 159
+#Range: -400 ~ 400
+buttonY = 2
+#0 = S (12 px), 1 = M (16 px), 2 = L (24 px), 3 = XL (32 px)
+#Range: 0 ~ 3
+buttonSize = 1
+#Range: 0 ~ 99
+configVersion = 3
+
+#Movement keys that work while a screen is open
+[keys]
+	keyForward = true
+	keyBack = true
+	keyLeft = true
+	keyRight = true
+	keyJump = true
+	keySneak = true
+	keySprint = true
+
+#Screens where movement works
+[screens]
+	screenInventory = true
+	screenContainers = true
+	screenChat = false
+	screenOther = false
+
+#Exceptions
+[exceptions]
+	#Movement keys never move you while any text field is focused
+	blockWhileTyping = true
+	#Holding Shift in containers never sneaks you (safe shift-clicking)
+	blockSneakInInventory = true
+	#Movement keys never move you while a search field is focused (recipe book, creative inventory, JEI)
+	blockInSearchFields = true
+

@@ -1,0 +1,15 @@
+filename = "gundb-2.2.2-1.20.1.jar"
+name = "Gun Durability"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "4bb49bd1e2a6c6f0d393b88af59da12db0f1c765801852ce1d15b87b7b33683d"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/8674/93/gundb-2.2.2-1.20.1.jar"
+
+[update.curseforge]
+file-id = 8674093
+project-id = 1065328

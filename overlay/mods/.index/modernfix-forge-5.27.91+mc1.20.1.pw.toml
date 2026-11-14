@@ -1,0 +1,15 @@
+filename = "modernfix-forge-5.27.91+mc1.20.1.jar"
+name = "ModernFix"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "b42fe87fd5ffa46f7db56c6cee01b08dea362baf4cc56a70db40d928773b5000"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/9309/378/modernfix-forge-5.27.91%2Bmc1.20.1.jar"
+
+[update.curseforge]
+file-id = 9309378
+project-id = 790626

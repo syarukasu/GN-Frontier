@@ -1,0 +1,15 @@
+filename = "appleskin-forge-mc1.20.1-2.5.1.jar"
+name = "AppleSkin"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "e12419e43e3babc810af289403c5cd96bd7f09809b389acc6bb2f122b4b2a426"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/4770/828/appleskin-forge-mc1.20.1-2.5.1.jar"
+
+[update.curseforge]
+file-id = 4770828
+project-id = 248787

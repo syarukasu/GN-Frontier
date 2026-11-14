@@ -1,0 +1,21 @@
+# GN multiplayer: independent, saved first-open rolls. No timed replenishment.
+randomise_seed = true
+disable = false
+disable_break = true
+enable_break = false
+enable_fake_player_break = false
+blast_resistant = false
+blast_immune = true
+refresh_all = false
+refresh_loot_tables = []
+refresh_modids = []
+refresh_dimensions = []
+refresh_structures = []
+decay_all = false
+decay_loot_tables = []
+decay_modids = []
+decay_dimensions = []
+decay_structures = []
+# Furniture is handled by GN Frontier through the Lootr inventory API.
+additional_chests = []
+additional_trapped_chests = []

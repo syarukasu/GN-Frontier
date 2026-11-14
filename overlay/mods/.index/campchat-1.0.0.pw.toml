@@ -1,0 +1,15 @@
+filename = "campchat-1.0.0.jar"
+name = "CampChat"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "b5068b1d2b41e98dd69c369819b8da0a7d8b5ffc52ead3575092f76fa43e4d4d"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/7883/426/campchat-1.0.0.jar"
+
+[update.curseforge]
+file-id = 7883426
+project-id = 1506037

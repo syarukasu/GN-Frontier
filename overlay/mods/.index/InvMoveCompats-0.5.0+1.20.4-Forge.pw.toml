@@ -1,0 +1,15 @@
+filename = "InvMoveCompats-0.5.0+1.20.4-Forge.jar"
+name = "InvMoveCompats"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "e06d37fb6205e07b20192ab72cf0ce1c8e850d97bbf3b97deafe5b0f9dd9ffc7"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/7219/803/InvMoveCompats-0.5.0%2B1.20.4-Forge.jar"
+
+[update.curseforge]
+file-id = 7219803
+project-id = 581875

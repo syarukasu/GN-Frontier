@@ -1,0 +1,15 @@
+filename = "chaoszpack_structures-1.0.2-1.20.1.jar"
+name = "ChaosZPack Remastered: Structures ! [Watchtowers]"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "b6e4c282d5350ef3ede3a15a4198f1a14dc01e6956cf23a03084cf23ebce4197"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/6969/81/chaoszpack_structures-1.0.2-1.20.1.jar"
+
+[update.curseforge]
+file-id = 6969081
+project-id = 1341107

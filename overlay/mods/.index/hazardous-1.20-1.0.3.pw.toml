@@ -1,0 +1,15 @@
+filename = "hazardous-1.20-1.0.3.jar"
+name = "Hazardous"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "9bdf4428d63f66c699fdf1909a3ec216c6affee6c5a5fe50be6358bf2f1c4ede"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/9361/842/hazardous-1.20-1.0.3.jar"
+
+[update.curseforge]
+file-id = 9361842
+project-id = 1513956

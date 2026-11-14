@@ -1,0 +1,15 @@
+filename = "Keerdm Zombie Apocalypse Essentials (TACZ) 1.42.jar"
+name = "Keerdm's Zombie Apocalypse Essentials"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "1b9db7636db3a1bcfb015d19c6d44b663e454f05e12e472d128c60f2b5214d3e"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/7740/113/Keerdm%20Zombie%20Apocalypse%20Essentials%20%28TACZ%29%201.42.jar"
+
+[update.curseforge]
+file-id = 7740113
+project-id = 1061079

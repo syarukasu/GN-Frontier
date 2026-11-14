@@ -1,0 +1,15 @@
+filename = "Steam_Rails-1.7.3+forge-mc1.20.1.jar"
+name = "Create: Steam 'n' Rails"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "0e98b72472ff78464f6e69025bb47f942e7f66a976382fbb87ceff765a8b00cf"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/8745/475/Steam_Rails-1.7.3%2Bforge-mc1.20.1.jar"
+
+[update.curseforge]
+file-id = 8745475
+project-id = 688231

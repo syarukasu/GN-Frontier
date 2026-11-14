@@ -1,0 +1,15 @@
+filename = "the_lost_city_superb_warfare-1.0.1.jar"
+name = "The Lost City X Superb Warfare"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "f2202e98aab4853a165e5efa995f512d9c73f657a4952c8b21af13d256c5472b"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/7393/696/the_lost_city_superb_warfare-1.0.1.jar"
+
+[update.curseforge]
+file-id = 7393696
+project-id = 1403720

@@ -1,0 +1,20 @@
+{
+  "hamster.ammo.flares_ammo.name": "閃火",
+  "hamster.gun.coltm1892.name": "Colt M1892 ニューアーミー",
+  "hamster.gun.coltm1892.desc": "米軍が採用した初期のダブルアクション式回転拳銃。\n§e威力はやや低い。",
+  "hamster.gun.colt1873.name": "Colt M1873 ピースメーカー",
+  "hamster.gun.colt1873.desc": "旧時代に広く普及したシングルアクション式回転拳銃。\n§e通称「ピースメーカー」。",
+  "hamster.ammo.compact_ammo.name": "小型弾",
+  "hamster.gun.sks.name": "SKSカービン",
+  "hamster.gun.sks.desc": "旧式の半自動カービン。",
+  "hamster.gun.win1894.name": "ウィンチェスターM1894",
+  "hamster.gun.win1894.desc": "レバー操作で次弾を装填する旧式小銃。",
+  "hamster.gun.mp18.name": "MP18短機関銃",
+  "hamster.gun.mp18.desc": "旧式の短機関銃。",
+  "hamster.gun.lugerp08.name": "ルガーP08",
+  "hamster.gun.lugerp08.desc": "旧式の自動拳銃。",
+  "hamster.gun.webley.name": "ウェブリー回転式拳銃",
+  "hamster.gun.webley.desc": "旧式の回転式拳銃。",
+  "hamster.gun.mosin9130.name": "モシン・ナガンM91/30",
+  "hamster.gun.mosin9130.desc": "ボルト操作で次弾を装填する旧式小銃。"
+}

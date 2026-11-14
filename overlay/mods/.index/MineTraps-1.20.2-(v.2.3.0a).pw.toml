@@ -1,0 +1,15 @@
+filename = "MineTraps-1.20.2-(v.2.3.0a).jar"
+name = "MineTraps"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "817579abedd583e97fc6849520ac6999d57e30000a01e4d6ea649553e4e3b244"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/5446/284/MineTraps-1.20.2-%28v.2.3.0a%29.jar"
+
+[update.curseforge]
+file-id = 5446284
+project-id = 311546

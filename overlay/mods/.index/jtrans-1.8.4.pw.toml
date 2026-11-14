@@ -1,0 +1,15 @@
+filename = "jtrans-1.8.4.jar"
+name = "JTrans"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "886782dc39948f5543d0dad5f7db7375d0ca7ce8f5032472f9bc60e0750cfabe"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/9539/844/jtrans-1.8.4.jar"
+
+[update.curseforge]
+file-id = 9539844
+project-id = 1505335

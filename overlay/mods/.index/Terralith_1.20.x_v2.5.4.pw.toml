@@ -1,0 +1,15 @@
+filename = "Terralith_1.20.x_v2.5.4.jar"
+name = "Terralith"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "8f65f309d8f2723754bf4b60c7b5763d3ab6ed04b01c172109ba6564e981b95f"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/5512/76/Terralith_1.20.x_v2.5.4.jar"
+
+[update.curseforge]
+file-id = 5512076
+project-id = 513688

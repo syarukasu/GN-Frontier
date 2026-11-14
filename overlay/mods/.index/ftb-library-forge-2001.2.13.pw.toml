@@ -1,0 +1,15 @@
+filename = "ftb-library-forge-2001.2.13.jar"
+name = "FTB Library (NeoForge)"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "41810281b65336265cae2c88412022d02f2f0a3f28c66a06173d86f98acf14a7"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/8226/927/ftb-library-forge-2001.2.13.jar"
+
+[update.curseforge]
+file-id = 8226927
+project-id = 404465

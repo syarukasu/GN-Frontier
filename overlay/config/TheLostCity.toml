@@ -1,0 +1,7 @@
+#Defines generation profile to use
+GenerationProfileName = "example_profile"
+#Defines buildings profile to use
+BuildingsProfileName = "gn_vehicle_models"
+#Enables Experimental features.
+Experimental = false
+

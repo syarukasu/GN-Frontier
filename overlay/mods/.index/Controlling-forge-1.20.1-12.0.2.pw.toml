@@ -1,0 +1,15 @@
+filename = "Controlling-forge-1.20.1-12.0.2.jar"
+name = "Controlling"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "516308a93824119f6a1ebc75425aa21ee8f8de0c331942793a054ba6d9c24944"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/4646/682/Controlling-forge-1.20.1-12.0.2.jar"
+
+[update.curseforge]
+file-id = 4646682
+project-id = 250398

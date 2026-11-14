@@ -1,0 +1,2332 @@
+{
+  "schema": 2,
+  "templates": [
+    {
+      "id": "salvage_repairs",
+      "kind": "DELIVERY",
+      "merchant": "NEUTRAL",
+      "title": "{target}の買い付け",
+      "openings": [
+        {
+          "id": "p1",
+          "text": "手を貸してもらいたい。"
+        },
+        {
+          "id": "p2",
+          "text": "引き受けられる仕事を探しているなら、これを頼めるか。"
+        },
+        {
+          "id": "p3",
+          "text": "こちらで一件、人手が必要になった。"
+        },
+        {
+          "id": "p4",
+          "text": "少し厄介な用事が残っている。"
+        }
+      ],
+      "middles": [
+        {
+          "id": "p1",
+          "text": "傷んだ設備を補修したい。材料に使う{target}を{count}{unit}集めて納めてくれ。"
+        },
+        {
+          "id": "p2",
+          "text": "回収した部品を組み直している。足りない{target}を{count}{unit}届けてほしい。"
+        },
+        {
+          "id": "p3",
+          "text": "修理の仕事が溜まっている。{target}を{count}{unit}用意してくれ。"
+        },
+        {
+          "id": "p4",
+          "text": "予備の材料を使い切った。{target}を{count}{unit}補充したい。"
+        }
+      ],
+      "endings": [
+        {
+          "id": "p1",
+          "text": "条件を満たしたらPDAから報告してくれ。報酬は用意してある。"
+        },
+        {
+          "id": "p2",
+          "text": "引き受けるなら頼む。仕事が済んだら代金を渡す。"
+        },
+        {
+          "id": "p3",
+          "text": "無理のない範囲で構わない。済ませたら知らせてくれ。"
+        },
+        {
+          "id": "p4",
+          "text": "必要な仕事を片づけてくれれば、約束の額を払う。"
+        }
+      ],
+      "targets": [
+        {
+          "id": "scrap",
+          "label": "金属くず",
+          "counts": [
+            8,
+            12,
+            16,
+            24,
+            32,
+            40,
+            48,
+            64
+          ],
+          "unit": "個",
+          "unit_reward": 10,
+          "base_reward": 20,
+          "item": "gnfrontier:metal_scrap"
+        },
+        {
+          "id": "aluminum",
+          "label": "アルミくず",
+          "counts": [
+            4,
+            8,
+            12,
+            16,
+            24,
+            32
+          ],
+          "unit": "個",
+          "unit_reward": 18,
+          "base_reward": 40,
+          "item": "gnfrontier:aluminum_scrap"
+        },
+        {
+          "id": "iron_sheet",
+          "label": "鉄板",
+          "counts": [
+            4,
+            8,
+            12,
+            16,
+            24
+          ],
+          "unit": "枚",
+          "unit_reward": 25,
+          "base_reward": 40,
+          "item": "create:iron_sheet"
+        }
+      ]
+    },
+    {
+      "id": "medical_stock",
+      "kind": "DELIVERY",
+      "merchant": "NEUTRAL",
+      "title": "{target}の補充",
+      "openings": [
+        {
+          "id": "p1",
+          "text": "手を貸してもらいたい。"
+        },
+        {
+          "id": "p2",
+          "text": "引き受けられる仕事を探しているなら、これを頼めるか。"
+        },
+        {
+          "id": "p3",
+          "text": "こちらで一件、人手が必要になった。"
+        },
+        {
+          "id": "p4",
+          "text": "少し厄介な用事が残っている。"
+        }
+      ],
+      "middles": [
+        {
+          "id": "p1",
+          "text": "救護用の備蓄を補充している。{target}を{count}{unit}納めてほしい。"
+        },
+        {
+          "id": "p2",
+          "text": "次の巡回に持たせる物資が足りない。{target}を{count}{unit}用意してくれ。"
+        },
+        {
+          "id": "p3",
+          "text": "保管していた物資を使い切りそうだ。{target}が{count}{unit}必要になった。"
+        },
+        {
+          "id": "p4",
+          "text": "回収班から追加の注文が来た。{target}を{count}{unit}集めてくれ。"
+        }
+      ],
+      "endings": [
+        {
+          "id": "p1",
+          "text": "条件を満たしたらPDAから報告してくれ。報酬は用意してある。"
+        },
+        {
+          "id": "p2",
+          "text": "引き受けるなら頼む。仕事が済んだら代金を渡す。"
+        },
+        {
+          "id": "p3",
+          "text": "無理のない範囲で構わない。済ませたら知らせてくれ。"
+        },
+        {
+          "id": "p4",
+          "text": "必要な仕事を片づけてくれれば、約束の額を払う。"
+        }
+      ],
+      "targets": [
+        {
+          "id": "bandage",
+          "label": "消毒済みの包帯",
+          "counts": [
+            2,
+            4,
+            6,
+            8,
+            10,
+            12
+          ],
+          "unit": "個",
+          "unit_reward": 60,
+          "base_reward": 60,
+          "item": "survival_instinct:bandage"
+        },
+        {
+          "id": "cloth",
+          "label": "布",
+          "counts": [
+            4,
+            8,
+            12,
+            16,
+            24,
+            32
+          ],
+          "unit": "枚",
+          "unit_reward": 12,
+          "base_reward": 30,
+          "item": "survival_instinct:cloth"
+        },
+        {
+          "id": "mre",
+          "label": "携帯戦闘糧食",
+          "counts": [
+            2,
+            3,
+            4,
+            6,
+            8
+          ],
+          "unit": "個",
+          "unit_reward": 70,
+          "base_reward": 40,
+          "item": "survival_instinct:mre"
+        }
+      ]
+    },
+    {
+      "id": "power_repairs",
+      "kind": "DELIVERY",
+      "merchant": "EAST",
+      "title": "{target}の調達",
+      "openings": [
+        {
+          "id": "p1",
+          "text": "補給担当からの依頼だ。"
+        },
+        {
+          "id": "p2",
+          "text": "次の仕事を任せたい。"
+        },
+        {
+          "id": "p3",
+          "text": "こちらの作業が滞っている。力を借りたい。"
+        },
+        {
+          "id": "p4",
+          "text": "一件、引き受けてもらえるだろうか。"
+        }
+      ],
+      "middles": [
+        {
+          "id": "p1",
+          "text": "古い設備の電装を直している。{target}を{count}{unit}納めてほしい。"
+        },
+        {
+          "id": "p2",
+          "text": "補修用の在庫が底をついた。{target}を{count}{unit}補充したい。"
+        },
+        {
+          "id": "p3",
+          "text": "整備班から材料の追加要請が来ている。{target}を{count}{unit}頼む。"
+        },
+        {
+          "id": "p4",
+          "text": "回収した設備を動かす準備を進めている。{target}が{count}{unit}必要だ。"
+        }
+      ],
+      "endings": [
+        {
+          "id": "p1",
+          "text": "条件を満たしたらPDAから報告してくれ。報酬は用意してある。"
+        },
+        {
+          "id": "p2",
+          "text": "引き受けるなら頼む。仕事が済んだら代金を渡す。"
+        },
+        {
+          "id": "p3",
+          "text": "無理のない範囲で構わない。済ませたら知らせてくれ。"
+        },
+        {
+          "id": "p4",
+          "text": "必要な仕事を片づけてくれれば、約束の額を払う。"
+        }
+      ],
+      "targets": [
+        {
+          "id": "wire",
+          "label": "銅のワイヤー",
+          "counts": [
+            8,
+            12,
+            16,
+            24,
+            32,
+            48
+          ],
+          "unit": "本",
+          "unit_reward": 15,
+          "base_reward": 60,
+          "item": "tfmg:copper_wire"
+        },
+        {
+          "id": "electronic_scrap",
+          "label": "電子部品のくず",
+          "counts": [
+            4,
+            8,
+            12,
+            16,
+            24
+          ],
+          "unit": "個",
+          "unit_reward": 30,
+          "base_reward": 60,
+          "item": "survival_instinct:electronic_scrap"
+        }
+      ]
+    },
+    {
+      "id": "steel_orders",
+      "kind": "DELIVERY",
+      "merchant": "EAST",
+      "title": "{target}の納入",
+      "openings": [
+        {
+          "id": "p1",
+          "text": "補給担当からの依頼だ。"
+        },
+        {
+          "id": "p2",
+          "text": "次の仕事を任せたい。"
+        },
+        {
+          "id": "p3",
+          "text": "こちらの作業が滞っている。力を借りたい。"
+        },
+        {
+          "id": "p4",
+          "text": "一件、引き受けてもらえるだろうか。"
+        }
+      ],
+      "middles": [
+        {
+          "id": "p1",
+          "text": "整備用の部材を作る。{target}を{count}{unit}調達してくれ。"
+        },
+        {
+          "id": "p2",
+          "text": "傷んだ架台を作り直したい。{target}を{count}{unit}納めてほしい。"
+        },
+        {
+          "id": "p3",
+          "text": "工房でまとまった材料が必要になった。{target}を{count}{unit}頼む。"
+        },
+        {
+          "id": "p4",
+          "text": "補修材料を先にそろえておきたい。{target}を{count}{unit}届けてくれ。"
+        }
+      ],
+      "endings": [
+        {
+          "id": "p1",
+          "text": "条件を満たしたらPDAから報告してくれ。報酬は用意してある。"
+        },
+        {
+          "id": "p2",
+          "text": "引き受けるなら頼む。仕事が済んだら代金を渡す。"
+        },
+        {
+          "id": "p3",
+          "text": "無理のない範囲で構わない。済ませたら知らせてくれ。"
+        },
+        {
+          "id": "p4",
+          "text": "必要な仕事を片づけてくれれば、約束の額を払う。"
+        }
+      ],
+      "targets": [
+        {
+          "id": "steel",
+          "label": "鋼鉄インゴット",
+          "counts": [
+            4,
+            8,
+            12,
+            16,
+            24,
+            32
+          ],
+          "unit": "個",
+          "unit_reward": 75,
+          "base_reward": 50,
+          "item": "tfmg:steel_ingot"
+        },
+        {
+          "id": "iron_sheet",
+          "label": "鉄板",
+          "counts": [
+            8,
+            12,
+            16,
+            24,
+            32
+          ],
+          "unit": "枚",
+          "unit_reward": 25,
+          "base_reward": 50,
+          "item": "create:iron_sheet"
+        }
+      ]
+    },
+    {
+      "id": "patrol_supplies",
+      "kind": "DELIVERY",
+      "merchant": "WEST",
+      "title": "{target}の備蓄",
+      "openings": [
+        {
+          "id": "p1",
+          "text": "仕事の話だ。"
+        },
+        {
+          "id": "p2",
+          "text": "手が空いているなら、この件を頼みたい。"
+        },
+        {
+          "id": "p3",
+          "text": "こちらだけでは手が回らなくなった。"
+        },
+        {
+          "id": "p4",
+          "text": "必要な仕事がもう一つある。"
+        }
+      ],
+      "middles": [
+        {
+          "id": "p1",
+          "text": "巡回班に持たせる備品を補充したい。{target}を{count}{unit}納めてくれ。"
+        },
+        {
+          "id": "p2",
+          "text": "次の輸送に備えて物資を集めている。{target}が{count}{unit}不足している。"
+        },
+        {
+          "id": "p3",
+          "text": "遠出する連中から注文が来ている。{target}を{count}{unit}用意してほしい。"
+        },
+        {
+          "id": "p4",
+          "text": "予備の物資が少なくなってきた。{target}を{count}{unit}補充してくれ。"
+        }
+      ],
+      "endings": [
+        {
+          "id": "p1",
+          "text": "条件を満たしたらPDAから報告してくれ。報酬は用意してある。"
+        },
+        {
+          "id": "p2",
+          "text": "引き受けるなら頼む。仕事が済んだら代金を渡す。"
+        },
+        {
+          "id": "p3",
+          "text": "無理のない範囲で構わない。済ませたら知らせてくれ。"
+        },
+        {
+          "id": "p4",
+          "text": "必要な仕事を片づけてくれれば、約束の額を払う。"
+        }
+      ],
+      "targets": [
+        {
+          "id": "battery",
+          "label": "電池",
+          "counts": [
+            2,
+            4,
+            6,
+            8,
+            12,
+            16
+          ],
+          "unit": "個",
+          "unit_reward": 50,
+          "base_reward": 40,
+          "item": "survival_instinct:batteries"
+        },
+        {
+          "id": "filter",
+          "label": "ガスマスク用フィルター",
+          "counts": [
+            1,
+            2,
+            3,
+            4,
+            6
+          ],
+          "unit": "個",
+          "unit_reward": 100,
+          "base_reward": 80,
+          "item": "gnfrontier:gas_filter"
+        },
+        {
+          "id": "mre",
+          "label": "携帯戦闘糧食",
+          "counts": [
+            2,
+            4,
+            6,
+            8,
+            12
+          ],
+          "unit": "個",
+          "unit_reward": 70,
+          "base_reward": 40,
+          "item": "survival_instinct:mre"
+        }
+      ]
+    },
+    {
+      "id": "electronics_orders",
+      "kind": "DELIVERY",
+      "merchant": "BLACK",
+      "title": "{target}の仕入れ",
+      "openings": [
+        {
+          "id": "p1",
+          "text": "あんたに回せそうな仕事が入った。"
+        },
+        {
+          "id": "p2",
+          "text": "買い手がついた。引き受ける気はあるか。"
+        },
+        {
+          "id": "p3",
+          "text": "一件、仕事を頼みたい。"
+        },
+        {
+          "id": "p4",
+          "text": "いつもの取引とは別に頼みがある。"
+        }
+      ],
+      "middles": [
+        {
+          "id": "p1",
+          "text": "中古設備の修理屋から注文が入った。{target}を{count}{unit}持ってきてくれ。"
+        },
+        {
+          "id": "p2",
+          "text": "部品取り用の在庫を増やしたい。{target}を{count}{unit}仕入れる。"
+        },
+        {
+          "id": "p3",
+          "text": "買い手が修理用の部品を探している。{target}を{count}{unit}用意できるか。"
+        },
+        {
+          "id": "p4",
+          "text": "次の取引までに材料をそろえたい。{target}を{count}{unit}納めてくれ。"
+        }
+      ],
+      "endings": [
+        {
+          "id": "p1",
+          "text": "条件を満たしたらPDAから報告してくれ。報酬は用意してある。"
+        },
+        {
+          "id": "p2",
+          "text": "引き受けるなら頼む。仕事が済んだら代金を渡す。"
+        },
+        {
+          "id": "p3",
+          "text": "無理のない範囲で構わない。済ませたら知らせてくれ。"
+        },
+        {
+          "id": "p4",
+          "text": "必要な仕事を片づけてくれれば、約束の額を払う。"
+        }
+      ],
+      "targets": [
+        {
+          "id": "scrap",
+          "label": "電子部品のくず",
+          "counts": [
+            4,
+            8,
+            12,
+            16,
+            24,
+            32
+          ],
+          "unit": "個",
+          "unit_reward": 30,
+          "base_reward": 60,
+          "item": "survival_instinct:electronic_scrap"
+        },
+        {
+          "id": "circuit",
+          "label": "高度な回路",
+          "counts": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "unit": "個",
+          "unit_reward": 180,
+          "base_reward": 80,
+          "item": "hbm_m:advanced_circuit"
+        }
+      ]
+    },
+    {
+      "id": "old_handguns",
+      "kind": "DELIVERY",
+      "merchant": "BLACK",
+      "title": "{target}の買い取り",
+      "openings": [
+        {
+          "id": "p1",
+          "text": "あんたに回せそうな仕事が入った。"
+        },
+        {
+          "id": "p2",
+          "text": "買い手がついた。引き受ける気はあるか。"
+        },
+        {
+          "id": "p3",
+          "text": "一件、仕事を頼みたい。"
+        },
+        {
+          "id": "p4",
+          "text": "いつもの取引とは別に頼みがある。"
+        }
+      ],
+      "middles": [
+        {
+          "id": "p1",
+          "text": "旧式の拳銃を欲しがる客がいる。{target}を{count}{unit}持ってきてくれ。"
+        },
+        {
+          "id": "p2",
+          "text": "型を指定した注文が来ている。必要なのは{target}、{count}{unit}だ。"
+        },
+        {
+          "id": "p3",
+          "text": "手持ちの在庫では注文を埋められない。{target}を{count}{unit}探してくれ。"
+        },
+        {
+          "id": "p4",
+          "text": "古い銃でも売り先はある。今回は{target}を{count}{unit}買い取る。"
+        }
+      ],
+      "endings": [
+        {
+          "id": "p1",
+          "text": "条件を満たしたらPDAから報告してくれ。報酬は用意してある。"
+        },
+        {
+          "id": "p2",
+          "text": "引き受けるなら頼む。仕事が済んだら代金を渡す。"
+        },
+        {
+          "id": "p3",
+          "text": "無理のない範囲で構わない。済ませたら知らせてくれ。"
+        },
+        {
+          "id": "p4",
+          "text": "必要な仕事を片づけてくれれば、約束の額を払う。"
+        }
+      ],
+      "targets": [
+        {
+          "id": "colt1892",
+          "label": "Colt M1892",
+          "counts": [
+            1,
+            2,
+            3
+          ],
+          "unit": "丁",
+          "unit_reward": 850,
+          "base_reward": 50,
+          "item": "tacz:modern_kinetic_gun",
+          "gun_id": "hamster:coltm1892"
+        },
+        {
+          "id": "colt1873",
+          "label": "Colt M1873 SAA",
+          "counts": [
+            1,
+            2,
+            3
+          ],
+          "unit": "丁",
+          "unit_reward": 900,
+          "base_reward": 50,
+          "item": "tacz:modern_kinetic_gun",
+          "gun_id": "hamster:colt1873"
+        }
+      ]
+    },
+    {
+      "id": "hostile_clearance",
+      "kind": "HUNT",
+      "merchant": "NEUTRAL",
+      "title": "{target}の討伐",
+      "openings": [
+        {
+          "id": "p1",
+          "text": "手を貸してもらいたい。"
+        },
+        {
+          "id": "p2",
+          "text": "引き受けられる仕事を探しているなら、これを頼めるか。"
+        },
+        {
+          "id": "p3",
+          "text": "こちらで一件、人手が必要になった。"
+        },
+        {
+          "id": "p4",
+          "text": "少し厄介な用事が残っている。"
+        }
+      ],
+      "middles": [
+        {
+          "id": "p1",
+          "text": "物資を探す連中が危険にさらされている。{target}を{count}{unit}倒し、数を減らしてほしい。"
+        },
+        {
+          "id": "p2",
+          "text": "廃墟を歩くにも気が抜けない。{target}を{count}{unit}討伐してくれ。"
+        },
+        {
+          "id": "p3",
+          "text": "回収班から害敵駆除の要請があった。{target}を{count}{unit}倒してほしい。"
+        },
+        {
+          "id": "p4",
+          "text": "安全に動ける余地を少しでも増やしたい。{target}を{count}{unit}討伐してくれ。"
+        }
+      ],
+      "endings": [
+        {
+          "id": "p1",
+          "text": "条件を満たしたらPDAから報告してくれ。報酬は用意してある。"
+        },
+        {
+          "id": "p2",
+          "text": "引き受けるなら頼む。仕事が済んだら代金を渡す。"
+        },
+        {
+          "id": "p3",
+          "text": "無理のない範囲で構わない。済ませたら知らせてくれ。"
+        },
+        {
+          "id": "p4",
+          "text": "必要な仕事を片づけてくれれば、約束の額を払う。"
+        }
+      ],
+      "targets": [
+        {
+          "id": "zombies",
+          "label": "ゾンビ類",
+          "counts": [
+            4,
+            6,
+            8,
+            10,
+            12,
+            16
+          ],
+          "unit": "体",
+          "unit_reward": 35,
+          "base_reward": 50,
+          "entities": [
+            "minecraft:zombie",
+            "minecraft:husk",
+            "minecraft:drowned"
+          ]
+        },
+        {
+          "id": "skeletons",
+          "label": "スケルトン類",
+          "counts": [
+            3,
+            4,
+            6,
+            8,
+            10,
+            12
+          ],
+          "unit": "体",
+          "unit_reward": 45,
+          "base_reward": 50,
+          "entities": [
+            "minecraft:skeleton",
+            "minecraft:stray"
+          ]
+        },
+        {
+          "id": "spiders",
+          "label": "クモ類",
+          "counts": [
+            3,
+            4,
+            6,
+            8,
+            10,
+            12
+          ],
+          "unit": "体",
+          "unit_reward": 35,
+          "base_reward": 50,
+          "entities": [
+            "minecraft:spider",
+            "minecraft:cave_spider"
+          ]
+        },
+        {
+          "id": "creepers",
+          "label": "クリーパー",
+          "counts": [
+            2,
+            3,
+            4,
+            6,
+            8
+          ],
+          "unit": "体",
+          "unit_reward": 60,
+          "base_reward": 60,
+          "entities": [
+            "minecraft:creeper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hostile_infantry",
+      "kind": "SOLDIER",
+      "merchant": "WEST",
+      "title": "交戦中の敵兵の討伐",
+      "openings": [
+        {
+          "id": "p1",
+          "text": "仕事の話だ。"
+        },
+        {
+          "id": "p2",
+          "text": "手が空いているなら、この件を頼みたい。"
+        },
+        {
+          "id": "p3",
+          "text": "こちらだけでは手が回らなくなった。"
+        },
+        {
+          "id": "p4",
+          "text": "必要な仕事がもう一つある。"
+        }
+      ],
+      "middles": [
+        {
+          "id": "p1",
+          "text": "こちらの探索者を狙う兵が出ている。交戦中の{target}を{count}{unit}倒してくれ。"
+        },
+        {
+          "id": "p2",
+          "text": "武装した連中に追い回されている。探索者を攻撃している{target}を{count}{unit}討伐してほしい。"
+        },
+        {
+          "id": "p3",
+          "text": "回収班が銃撃を受けている。交戦中の{target}を{count}{unit}排除してくれ。"
+        },
+        {
+          "id": "p4",
+          "text": "襲ってくる兵への対処を頼みたい。探索者と交戦中の{target}を{count}{unit}倒してくれ。"
+        }
+      ],
+      "endings": [
+        {
+          "id": "p1",
+          "text": "条件を満たしたらPDAから報告してくれ。報酬は用意してある。"
+        },
+        {
+          "id": "p2",
+          "text": "引き受けるなら頼む。仕事が済んだら代金を渡す。"
+        },
+        {
+          "id": "p3",
+          "text": "無理のない範囲で構わない。済ませたら知らせてくれ。"
+        },
+        {
+          "id": "p4",
+          "text": "必要な仕事を片づけてくれれば、約束の額を払う。"
+        }
+      ],
+      "targets": [
+        {
+          "id": "infantry",
+          "label": "敵兵",
+          "counts": [
+            2,
+            3,
+            4,
+            6,
+            8
+          ],
+          "unit": "人",
+          "unit_reward": 120,
+          "base_reward": 100,
+          "entities": [
+            "simpleenemymod:ruunit",
+            "simpleenemymod:usunit",
+            "simpleenemymod:pmcunit"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hostile_shipping",
+      "kind": "SHIP",
+      "merchant": "EAST",
+      "title": "敵船舶の撃沈",
+      "openings": [
+        {
+          "id": "p1",
+          "text": "補給担当からの依頼だ。"
+        },
+        {
+          "id": "p2",
+          "text": "次の仕事を任せたい。"
+        },
+        {
+          "id": "p3",
+          "text": "こちらの作業が滞っている。力を借りたい。"
+        },
+        {
+          "id": "p4",
+          "text": "一件、引き受けてもらえるだろうか。"
+        }
+      ],
+      "middles": [
+        {
+          "id": "p1",
+          "text": "武装した船が輸送を妨げている。敵兵が運用する船を{count}{unit}撃沈してくれ。"
+        },
+        {
+          "id": "p2",
+          "text": "水上からの脅威を減らしたい。敵兵が乗る船を{count}{unit}沈めてほしい。"
+        },
+        {
+          "id": "p3",
+          "text": "輸送担当から対処の要請だ。敵兵が運用する船を{count}{unit}撃沈してくれ。"
+        },
+        {
+          "id": "p4",
+          "text": "敵の水上戦力への対処を頼む。敵兵の船を{count}{unit}沈めれば完了だ。"
+        }
+      ],
+      "endings": [
+        {
+          "id": "p1",
+          "text": "条件を満たしたらPDAから報告してくれ。報酬は用意してある。"
+        },
+        {
+          "id": "p2",
+          "text": "引き受けるなら頼む。仕事が済んだら代金を渡す。"
+        },
+        {
+          "id": "p3",
+          "text": "無理のない範囲で構わない。済ませたら知らせてくれ。"
+        },
+        {
+          "id": "p4",
+          "text": "必要な仕事を片づけてくれれば、約束の額を払う。"
+        }
+      ],
+      "targets": [
+        {
+          "id": "ship",
+          "label": "敵船舶",
+          "counts": [
+            1,
+            2,
+            3
+          ],
+          "unit": "隻",
+          "unit_reward": 1400,
+          "base_reward": 100
+        }
+      ]
+    },
+    {
+      "id": "hostile_rotors",
+      "kind": "HELICOPTER",
+      "merchant": "WEST",
+      "title": "敵ヘリの撃墜",
+      "openings": [
+        {
+          "id": "p1",
+          "text": "仕事の話だ。"
+        },
+        {
+          "id": "p2",
+          "text": "手が空いているなら、この件を頼みたい。"
+        },
+        {
+          "id": "p3",
+          "text": "こちらだけでは手が回らなくなった。"
+        },
+        {
+          "id": "p4",
+          "text": "必要な仕事がもう一つある。"
+        }
+      ],
+      "middles": [
+        {
+          "id": "p1",
+          "text": "敵ヘリのせいで動きづらくなっている。敵兵が運用するヘリを{count}{unit}落としてくれ。"
+        },
+        {
+          "id": "p2",
+          "text": "上空からの脅威を減らしたい。敵兵が操縦するヘリを{count}{unit}撃墜してほしい。"
+        },
+        {
+          "id": "p3",
+          "text": "飛んでいる敵への対処を頼む。敵兵のヘリを{count}{unit}撃墜すれば完了だ。"
+        },
+        {
+          "id": "p4",
+          "text": "輸送班が上空を警戒している。敵兵が運用するヘリを{count}{unit}落としてくれ。"
+        }
+      ],
+      "endings": [
+        {
+          "id": "p1",
+          "text": "条件を満たしたらPDAから報告してくれ。報酬は用意してある。"
+        },
+        {
+          "id": "p2",
+          "text": "引き受けるなら頼む。仕事が済んだら代金を渡す。"
+        },
+        {
+          "id": "p3",
+          "text": "無理のない範囲で構わない。済ませたら知らせてくれ。"
+        },
+        {
+          "id": "p4",
+          "text": "必要な仕事を片づけてくれれば、約束の額を払う。"
+        }
+      ],
+      "targets": [
+        {
+          "id": "helicopter",
+          "label": "敵ヘリ",
+          "counts": [
+            1,
+            2,
+            3
+          ],
+          "unit": "機",
+          "unit_reward": 1700,
+          "base_reward": 100
+        }
+      ]
+    }
+  ],
+  "deliveries": {
+    "items": [
+      {
+        "id": "iron_sheet",
+        "label": "鉄板",
+        "counts": [
+          4,
+          8,
+          12,
+          16,
+          24
+        ],
+        "unit": "枚",
+        "unit_reward": 25,
+        "base_reward": 40,
+        "item": "create:iron_sheet",
+        "bundle_limits": {
+          "max_for_three": 4,
+          "max_for_two": 8
+        }
+      },
+      {
+        "id": "bandage",
+        "label": "消毒済みの包帯",
+        "counts": [
+          2,
+          4,
+          6,
+          8,
+          10,
+          12
+        ],
+        "unit": "個",
+        "unit_reward": 30,
+        "base_reward": 20,
+        "item": "survival_instinct:bandage",
+        "bundle_limits": {
+          "max_for_three": 2,
+          "max_for_two": 4
+        }
+      },
+      {
+        "id": "mre",
+        "label": "携帯戦闘糧食",
+        "counts": [
+          2,
+          4,
+          6,
+          8
+        ],
+        "unit": "個",
+        "unit_reward": 45,
+        "base_reward": 20,
+        "item": "survival_instinct:mre",
+        "bundle_limits": {
+          "max_for_three": 2,
+          "max_for_two": 4
+        }
+      },
+      {
+        "id": "wire",
+        "label": "銅のワイヤー",
+        "counts": [
+          8,
+          12,
+          16,
+          24,
+          32,
+          48
+        ],
+        "unit": "本",
+        "unit_reward": 15,
+        "base_reward": 60,
+        "item": "tfmg:copper_wire",
+        "bundle_limits": {
+          "max_for_three": 12,
+          "max_for_two": 24
+        }
+      },
+      {
+        "id": "electronic_scrap",
+        "label": "電子スクラップ",
+        "counts": [
+          4,
+          8,
+          12,
+          16,
+          20,
+          24
+        ],
+        "unit": "個",
+        "unit_reward": 12,
+        "base_reward": 8,
+        "item": "survival_instinct:electronic_scrap",
+        "bundle_limits": {
+          "max_for_three": 4,
+          "max_for_two": 8
+        }
+      },
+      {
+        "id": "steel",
+        "label": "鋼鉄インゴット",
+        "counts": [
+          2,
+          4,
+          8,
+          12,
+          16
+        ],
+        "unit": "個",
+        "unit_reward": 75,
+        "base_reward": 50,
+        "item": "tfmg:steel_ingot",
+        "bundle_limits": {
+          "max_for_three": 2,
+          "max_for_two": 8
+        }
+      },
+      {
+        "id": "battery",
+        "label": "電池",
+        "counts": [
+          2,
+          4,
+          6,
+          8,
+          12
+        ],
+        "unit": "個",
+        "unit_reward": 30,
+        "base_reward": 20,
+        "item": "survival_instinct:batteries",
+        "bundle_limits": {
+          "max_for_three": 2,
+          "max_for_two": 4
+        }
+      },
+      {
+        "id": "filter",
+        "label": "ガスマスク用フィルター",
+        "counts": [
+          2,
+          4,
+          6,
+          8,
+          10,
+          12
+        ],
+        "unit": "個",
+        "unit_reward": 40,
+        "base_reward": 50,
+        "item": "gnfrontier:gas_filter",
+        "bundle_limits": {
+          "max_for_three": 2,
+          "max_for_two": 5
+        }
+      },
+      {
+        "id": "circuit",
+        "label": "高度な回路",
+        "counts": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "unit": "個",
+        "unit_reward": 180,
+        "base_reward": 80,
+        "item": "hbm_m:advanced_circuit",
+        "bundle_limits": {
+          "max_for_three": 1,
+          "max_for_two": 2
+        }
+      },
+      {
+        "id": "colt1892",
+        "label": "Colt M1892",
+        "counts": [
+          1,
+          2,
+          3
+        ],
+        "unit": "丁",
+        "unit_reward": 850,
+        "base_reward": 50,
+        "item": "tacz:modern_kinetic_gun",
+        "gun_id": "hamster:coltm1892",
+        "bundle_limits": {
+          "max_for_three": 0,
+          "max_for_two": 1
+        }
+      },
+      {
+        "id": "colt1873",
+        "label": "Colt M1873 SAA",
+        "counts": [
+          1,
+          2,
+          3
+        ],
+        "unit": "丁",
+        "unit_reward": 900,
+        "base_reward": 50,
+        "item": "tacz:modern_kinetic_gun",
+        "gun_id": "hamster:colt1873",
+        "bundle_limits": {
+          "max_for_three": 0,
+          "max_for_two": 1
+        }
+      },
+      {
+        "id": "circuit_board",
+        "label": "回路基板",
+        "item": "tfmg:circuit_board",
+        "counts": [
+          2,
+          4,
+          6,
+          8
+        ],
+        "unit": "枚",
+        "unit_reward": 35,
+        "base_reward": 20,
+        "bundle_limits": {
+          "max_for_three": 2,
+          "max_for_two": 4
+        }
+      },
+      {
+        "id": "capacitor",
+        "label": "コンデンサー",
+        "item": "tfmg:capacitor_item",
+        "counts": [
+          2,
+          4,
+          6,
+          8
+        ],
+        "unit": "個",
+        "unit_reward": 30,
+        "base_reward": 20,
+        "bundle_limits": {
+          "max_for_three": 2,
+          "max_for_two": 4
+        }
+      },
+      {
+        "id": "transistor",
+        "label": "トランジスター",
+        "item": "tfmg:transistor_item",
+        "counts": [
+          2,
+          4,
+          6,
+          8
+        ],
+        "unit": "個",
+        "unit_reward": 40,
+        "base_reward": 20,
+        "bundle_limits": {
+          "max_for_three": 2,
+          "max_for_two": 4
+        }
+      },
+      {
+        "id": "coil",
+        "label": "電磁コイル",
+        "item": "tfmg:electromagnetic_coil",
+        "counts": [
+          2,
+          4,
+          6,
+          8
+        ],
+        "unit": "個",
+        "unit_reward": 45,
+        "base_reward": 20,
+        "bundle_limits": {
+          "max_for_three": 2,
+          "max_for_two": 4
+        }
+      },
+      {
+        "id": "electron_tube",
+        "label": "電子管",
+        "item": "create:electron_tube",
+        "counts": [
+          2,
+          4,
+          6,
+          8
+        ],
+        "unit": "個",
+        "unit_reward": 40,
+        "base_reward": 20,
+        "bundle_limits": {
+          "max_for_three": 2,
+          "max_for_two": 4
+        }
+      },
+      {
+        "id": "analog_circuit",
+        "label": "アナログ回路",
+        "item": "hbm_m:analog_circuit",
+        "counts": [
+          2,
+          4,
+          6,
+          8
+        ],
+        "unit": "個",
+        "unit_reward": 35,
+        "base_reward": 20,
+        "bundle_limits": {
+          "max_for_three": 2,
+          "max_for_two": 4
+        }
+      },
+      {
+        "id": "storage_battery",
+        "label": "蓄電バッテリー",
+        "item": "survival_instinct:energy_storage_battery",
+        "counts": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "unit": "個",
+        "unit_reward": 160,
+        "base_reward": 30,
+        "bundle_limits": {
+          "max_for_three": 1,
+          "max_for_two": 2
+        }
+      },
+      {
+        "id": "aluminum_sheet",
+        "label": "アルミニウムの板",
+        "item": "tfmg:aluminum_sheet",
+        "counts": [
+          4,
+          8,
+          12,
+          16
+        ],
+        "unit": "枚",
+        "unit_reward": 30,
+        "base_reward": 20,
+        "bundle_limits": {
+          "max_for_three": 4,
+          "max_for_two": 8
+        }
+      },
+      {
+        "id": "cast_iron_sheet",
+        "label": "鋳鉄の板",
+        "item": "tfmg:cast_iron_sheet",
+        "counts": [
+          4,
+          8,
+          12,
+          16
+        ],
+        "unit": "枚",
+        "unit_reward": 30,
+        "base_reward": 20,
+        "bundle_limits": {
+          "max_for_three": 4,
+          "max_for_two": 8
+        }
+      },
+      {
+        "id": "lead_sheet",
+        "label": "鉛の板",
+        "item": "tfmg:lead_sheet",
+        "counts": [
+          4,
+          8,
+          12,
+          16
+        ],
+        "unit": "枚",
+        "unit_reward": 30,
+        "base_reward": 20,
+        "bundle_limits": {
+          "max_for_three": 4,
+          "max_for_two": 8
+        }
+      },
+      {
+        "id": "nickel_sheet",
+        "label": "ニッケルの板",
+        "item": "tfmg:nickel_sheet",
+        "counts": [
+          4,
+          8,
+          12,
+          16
+        ],
+        "unit": "枚",
+        "unit_reward": 45,
+        "base_reward": 20,
+        "bundle_limits": {
+          "max_for_three": 4,
+          "max_for_two": 8
+        }
+      },
+      {
+        "id": "rubber_sheet",
+        "label": "ゴムシート",
+        "item": "tfmg:rubber_sheet",
+        "counts": [
+          4,
+          8,
+          12,
+          16
+        ],
+        "unit": "枚",
+        "unit_reward": 25,
+        "base_reward": 20,
+        "bundle_limits": {
+          "max_for_three": 4,
+          "max_for_two": 8
+        }
+      },
+      {
+        "id": "plastic_sheet",
+        "label": "プラスチック板",
+        "item": "tfmg:plastic_sheet",
+        "counts": [
+          4,
+          8,
+          12,
+          16
+        ],
+        "unit": "枚",
+        "unit_reward": 30,
+        "base_reward": 20,
+        "bundle_limits": {
+          "max_for_three": 4,
+          "max_for_two": 8
+        }
+      },
+      {
+        "id": "steel_mechanism",
+        "label": "鋼鉄製機構",
+        "item": "tfmg:steel_mechanism",
+        "counts": [
+          1,
+          2,
+          3
+        ],
+        "unit": "個",
+        "unit_reward": 180,
+        "base_reward": 30,
+        "bundle_limits": {
+          "max_for_three": 1,
+          "max_for_two": 2
+        }
+      },
+      {
+        "id": "precision_mechanism",
+        "label": "精密機構",
+        "item": "create:precision_mechanism",
+        "counts": [
+          1,
+          2,
+          3
+        ],
+        "unit": "個",
+        "unit_reward": 160,
+        "base_reward": 30,
+        "bundle_limits": {
+          "max_for_three": 1,
+          "max_for_two": 2
+        }
+      },
+      {
+        "id": "antibiotics",
+        "label": "抗生物質",
+        "item": "survival_instinct:antibiotics",
+        "counts": [
+          2,
+          4,
+          6
+        ],
+        "unit": "個",
+        "unit_reward": 100,
+        "base_reward": 20,
+        "bundle_limits": {
+          "max_for_three": 2,
+          "max_for_two": 4
+        }
+      },
+      {
+        "id": "analgesic",
+        "label": "鎮痛剤",
+        "item": "survival_instinct:analgesic",
+        "counts": [
+          2,
+          4,
+          6
+        ],
+        "unit": "個",
+        "unit_reward": 70,
+        "base_reward": 20,
+        "bundle_limits": {
+          "max_for_three": 2,
+          "max_for_two": 4
+        }
+      },
+      {
+        "id": "morphine",
+        "label": "モルヒネ注射器",
+        "item": "survival_instinct:morphine_injector",
+        "counts": [
+          1,
+          2,
+          3
+        ],
+        "unit": "個",
+        "unit_reward": 120,
+        "base_reward": 20,
+        "bundle_limits": {
+          "max_for_three": 1,
+          "max_for_two": 2
+        }
+      },
+      {
+        "id": "adrenaline",
+        "label": "アドレナリン注射器",
+        "item": "survival_instinct:adrenaline_injector",
+        "counts": [
+          1,
+          2,
+          3
+        ],
+        "unit": "個",
+        "unit_reward": 140,
+        "base_reward": 20,
+        "bundle_limits": {
+          "max_for_three": 1,
+          "max_for_two": 2
+        }
+      },
+      {
+        "id": "medkit",
+        "label": "携帯救急キット",
+        "item": "survival_instinct:survival_medkit",
+        "counts": [
+          1,
+          2,
+          3
+        ],
+        "unit": "個",
+        "unit_reward": 160,
+        "base_reward": 20,
+        "bundle_limits": {
+          "max_for_three": 1,
+          "max_for_two": 2
+        }
+      },
+      {
+        "id": "alcohol_wipes",
+        "label": "アルコール綿",
+        "item": "survival_instinct:alcohol_wipes",
+        "counts": [
+          2,
+          4,
+          6,
+          8
+        ],
+        "unit": "個",
+        "unit_reward": 25,
+        "base_reward": 20,
+        "bundle_limits": {
+          "max_for_three": 2,
+          "max_for_two": 4
+        }
+      },
+      {
+        "id": "sks",
+        "label": "SKSカービン",
+        "item": "tacz:modern_kinetic_gun",
+        "counts": [
+          1,
+          2
+        ],
+        "unit": "丁",
+        "unit_reward": 1150,
+        "base_reward": 50,
+        "gun_id": "hamster:sks",
+        "bundle_limits": {
+          "max_for_three": 0,
+          "max_for_two": 1
+        }
+      },
+      {
+        "id": "win1894",
+        "label": "ウィンチェスターM1894",
+        "item": "tacz:modern_kinetic_gun",
+        "counts": [
+          1,
+          2
+        ],
+        "unit": "丁",
+        "unit_reward": 1300,
+        "base_reward": 50,
+        "gun_id": "hamster:win1894",
+        "bundle_limits": {
+          "max_for_three": 0,
+          "max_for_two": 1
+        }
+      },
+      {
+        "id": "mp18",
+        "label": "MP18短機関銃",
+        "item": "tacz:modern_kinetic_gun",
+        "counts": [
+          1,
+          2
+        ],
+        "unit": "丁",
+        "unit_reward": 1500,
+        "base_reward": 50,
+        "gun_id": "hamster:mp18",
+        "bundle_limits": {
+          "max_for_three": 0,
+          "max_for_two": 1
+        }
+      },
+      {
+        "id": "lugerp08",
+        "label": "ルガーP08",
+        "item": "tacz:modern_kinetic_gun",
+        "counts": [
+          1,
+          2
+        ],
+        "unit": "丁",
+        "unit_reward": 1000,
+        "base_reward": 50,
+        "gun_id": "hamster:lugerp08",
+        "bundle_limits": {
+          "max_for_three": 0,
+          "max_for_two": 1
+        }
+      },
+      {
+        "id": "webley",
+        "label": "ウェブリー回転式拳銃",
+        "item": "tacz:modern_kinetic_gun",
+        "counts": [
+          1,
+          2
+        ],
+        "unit": "丁",
+        "unit_reward": 950,
+        "base_reward": 50,
+        "gun_id": "hamster:webley",
+        "bundle_limits": {
+          "max_for_three": 0,
+          "max_for_two": 1
+        }
+      },
+      {
+        "id": "mosin9130",
+        "label": "モシン・ナガンM91/30",
+        "item": "tacz:modern_kinetic_gun",
+        "counts": [
+          1,
+          2
+        ],
+        "unit": "丁",
+        "unit_reward": 1200,
+        "base_reward": 50,
+        "gun_id": "hamster:mosin9130",
+        "bundle_limits": {
+          "max_for_three": 0,
+          "max_for_two": 1
+        }
+      }
+    ],
+    "requesters": [
+      {
+        "id": "workshop",
+        "label": "廃市街の修理工",
+        "merchant": "NEUTRAL"
+      },
+      {
+        "id": "medic",
+        "label": "避難所の衛生係",
+        "merchant": "NEUTRAL"
+      },
+      {
+        "id": "provisions",
+        "label": "物資交換所の仕入れ係",
+        "merchant": "NEUTRAL"
+      },
+      {
+        "id": "east_supply",
+        "label": "東側の補給担当",
+        "merchant": "EAST"
+      },
+      {
+        "id": "east_engineer",
+        "label": "東側の整備担当",
+        "merchant": "EAST"
+      },
+      {
+        "id": "west_patrol",
+        "label": "西側の巡回担当",
+        "merchant": "WEST"
+      },
+      {
+        "id": "west_repair",
+        "label": "西側の修理担当",
+        "merchant": "WEST"
+      },
+      {
+        "id": "broker",
+        "label": "裏通りの仲買人",
+        "merchant": "BLACK"
+      },
+      {
+        "id": "electronics",
+        "label": "闇市場の電子機器業者",
+        "merchant": "BLACK"
+      }
+    ],
+    "purposes": [
+      {
+        "id": "field_repairs",
+        "label": "応急修理の資材",
+        "reason": "傷んだ設備に手を入れたい。補修に使う材料を探している。",
+        "items": [
+          "iron_sheet",
+          "cast_iron_sheet",
+          "aluminum_sheet",
+          "rubber_sheet"
+        ],
+        "requesters": [
+          "workshop",
+          "east_engineer",
+          "west_repair"
+        ]
+      },
+      {
+        "id": "reinforcement",
+        "label": "拠点の補強材",
+        "reason": "建物の傷みがひどい。使える場所から補強を進めたい。",
+        "items": [
+          "iron_sheet",
+          "steel",
+          "lead_sheet",
+          "aluminum_sheet"
+        ],
+        "requesters": [
+          "workshop",
+          "east_supply",
+          "west_repair"
+        ]
+      },
+      {
+        "id": "medical",
+        "label": "救護所の消耗品",
+        "reason": "負傷者の手当てが続いている。救護に使う消耗品を補充したい。",
+        "items": [
+          "bandage",
+          "antibiotics",
+          "medkit",
+          "alcohol_wipes",
+          "morphine",
+          "analgesic"
+        ],
+        "requesters": [
+          "medic",
+          "east_supply",
+          "west_patrol"
+        ]
+      },
+      {
+        "id": "patrol",
+        "label": "巡回用の物資",
+        "reason": "次の巡回に向けて荷をまとめている。携行品を揃えてくれ。",
+        "items": [
+          "filter",
+          "battery",
+          "mre",
+          "bandage",
+          "antibiotics"
+        ],
+        "requesters": [
+          "east_supply",
+          "west_patrol"
+        ]
+      },
+      {
+        "id": "relief",
+        "label": "交代要員の携行品",
+        "reason": "交代で持ち場に入る者たちへ、食料と衛生用品を渡したい。",
+        "items": [
+          "mre",
+          "bandage",
+          "medkit",
+          "alcohol_wipes"
+        ],
+        "requesters": [
+          "medic",
+          "east_supply",
+          "west_patrol",
+          "provisions"
+        ]
+      },
+      {
+        "id": "lighting",
+        "label": "照明設備の補修材",
+        "reason": "夜の作業場が暗くて困っている。照明回りの部品を補いたい。",
+        "items": [
+          "wire",
+          "battery",
+          "electron_tube",
+          "capacitor"
+        ],
+        "requesters": [
+          "workshop",
+          "east_engineer",
+          "west_repair"
+        ]
+      },
+      {
+        "id": "communications",
+        "label": "無線設備の補修部品",
+        "reason": "使える通信機を寄せ集めている。配線や電源回りの部品が足りない。",
+        "items": [
+          "wire",
+          "electronic_scrap",
+          "battery",
+          "circuit_board",
+          "transistor"
+        ],
+        "requesters": [
+          "east_engineer",
+          "west_repair",
+          "electronics"
+        ]
+      },
+      {
+        "id": "power",
+        "label": "配電設備の補修材",
+        "reason": "配電設備の点検で交換箇所が見つかった。手元の材料を補充したい。",
+        "items": [
+          "wire",
+          "battery",
+          "storage_battery",
+          "coil",
+          "plastic_sheet"
+        ],
+        "requesters": [
+          "workshop",
+          "east_engineer",
+          "west_repair"
+        ]
+      },
+      {
+        "id": "mechanical",
+        "label": "工房の機械部品",
+        "reason": "止まった作業機械を修理している。傷んだ外装や配線を交換するため、加工済みの資材が必要だ。",
+        "items": [
+          "iron_sheet",
+          "steel",
+          "steel_mechanism",
+          "precision_mechanism",
+          "rubber_sheet"
+        ],
+        "requesters": [
+          "workshop",
+          "east_engineer",
+          "west_repair"
+        ]
+      },
+      {
+        "id": "metal_stock",
+        "label": "金属材料",
+        "reason": "金属加工の仕事が重なっている。手を止めずに済むよう、材料を仕入れたい。",
+        "items": [
+          "steel",
+          "iron_sheet",
+          "aluminum_sheet",
+          "cast_iron_sheet",
+          "nickel_sheet"
+        ],
+        "requesters": [
+          "workshop",
+          "east_supply",
+          "broker"
+        ]
+      },
+      {
+        "id": "filters",
+        "label": "防護用品",
+        "reason": "埃のひどい場所へ出入りする者が増えた。交換用の防護用品を確保したい。",
+        "items": [
+          "filter",
+          "rubber_sheet"
+        ],
+        "requesters": [
+          "medic",
+          "east_supply",
+          "west_patrol"
+        ]
+      },
+      {
+        "id": "electronics",
+        "label": "電子機器の交換部品",
+        "reason": "故障した電子機器を直して売りに出したい。交換に使える部品を探している。",
+        "items": [
+          "electronic_scrap",
+          "circuit",
+          "circuit_board",
+          "capacitor",
+          "transistor",
+          "analog_circuit"
+        ],
+        "requesters": [
+          "electronics",
+          "broker"
+        ]
+      },
+      {
+        "id": "old_revolver",
+        "label": "旧式拳銃",
+        "reason": "旧式の拳銃を探している客がいる。指定の型が見つかれば引き取りたい。",
+        "items": [
+          "colt1892",
+          "webley"
+        ],
+        "requesters": [
+          "broker"
+        ]
+      },
+      {
+        "id": "old_single_action",
+        "label": "旧式回転式拳銃",
+        "reason": "古い回転式拳銃の注文を受けた。銃の型を確認して持ち込んでくれ。",
+        "items": [
+          "colt1873"
+        ],
+        "requesters": [
+          "broker"
+        ]
+      },
+      {
+        "id": "radio_repair",
+        "label": "無線機の交換部品",
+        "reason": "使えなくなった無線機を直している。電源や増幅回路の交換部品を探している。",
+        "items": [
+          "electron_tube",
+          "capacitor",
+          "transistor",
+          "coil"
+        ],
+        "requesters": [
+          "electronics",
+          "workshop",
+          "east_engineer",
+          "west_repair"
+        ]
+      },
+      {
+        "id": "control_panels",
+        "label": "制御盤の補修部品",
+        "reason": "回収した制御盤を動かしたい。傷んだ回路や配線を交換する部品が必要だ。",
+        "items": [
+          "circuit_board",
+          "analog_circuit",
+          "circuit",
+          "wire"
+        ],
+        "requesters": [
+          "electronics",
+          "workshop",
+          "east_engineer",
+          "west_repair"
+        ]
+      },
+      {
+        "id": "power_storage",
+        "label": "予備電源の整備品",
+        "reason": "停電時に使う電源を整備している。蓄電部や外装の補修に使う物資を集めてくれ。",
+        "items": [
+          "battery",
+          "storage_battery",
+          "lead_sheet",
+          "plastic_sheet"
+        ],
+        "requesters": [
+          "workshop",
+          "east_engineer",
+          "west_repair"
+        ]
+      },
+      {
+        "id": "insulated_wiring",
+        "label": "配線の交換資材",
+        "reason": "古い配線の被覆が傷んでいる。漏電する前に配線と絶縁材を交換したい。",
+        "items": [
+          "wire",
+          "rubber_sheet",
+          "plastic_sheet"
+        ],
+        "requesters": [
+          "workshop",
+          "east_engineer",
+          "west_repair"
+        ]
+      },
+      {
+        "id": "high_temp_repairs",
+        "label": "工業設備の補修材",
+        "reason": "熱で傷んだ設備を補修する。指定の金属を加工済みの状態で揃えてほしい。",
+        "items": [
+          "cast_iron_sheet",
+          "nickel_sheet",
+          "steel",
+          "iron_sheet"
+        ],
+        "requesters": [
+          "workshop",
+          "east_engineer",
+          "west_repair"
+        ]
+      },
+      {
+        "id": "precision_service",
+        "label": "機構の交換部品",
+        "reason": "作業機械の調子が悪い。分解して使える部品を探すより、指定の機構を調達したい。",
+        "items": [
+          "precision_mechanism",
+          "steel_mechanism",
+          "coil"
+        ],
+        "requesters": [
+          "workshop",
+          "east_engineer",
+          "west_repair"
+        ]
+      },
+      {
+        "id": "trauma_care",
+        "label": "重傷者の救護物資",
+        "reason": "重傷者の手当てに使う備蓄を補充したい。必要な医療品を指定の数だけ届けてくれ。",
+        "items": [
+          "medkit",
+          "bandage",
+          "morphine",
+          "adrenaline"
+        ],
+        "requesters": [
+          "medic",
+          "east_supply",
+          "west_patrol"
+        ]
+      },
+      {
+        "id": "infection_control",
+        "label": "衛生班の補給品",
+        "reason": "傷の処置と汚染区画の作業が続いている。衛生用品と防護用品を補充したい。",
+        "items": [
+          "antibiotics",
+          "alcohol_wipes",
+          "bandage",
+          "filter"
+        ],
+        "requesters": [
+          "medic",
+          "east_supply",
+          "west_patrol"
+        ]
+      },
+      {
+        "id": "patrol_armory",
+        "label": "巡回班の予備火器",
+        "reason": "巡回班に回す予備の銃を確保したい。指定した型式のものを持ち込んでくれ。",
+        "items": [
+          "sks",
+          "mp18",
+          "win1894"
+        ],
+        "requesters": [
+          "east_supply",
+          "west_patrol",
+          "broker"
+        ]
+      },
+      {
+        "id": "vintage_collection",
+        "label": "旧式銃の買い付け",
+        "reason": "古い銃を扱う取引先から注文が入った。型式を確かめて回収してきてほしい。",
+        "items": [
+          "lugerp08",
+          "webley",
+          "mosin9130",
+          "colt1873",
+          "colt1892"
+        ],
+        "requesters": [
+          "broker"
+        ]
+      }
+    ],
+    "sizes": [
+      1,
+      2,
+      3
+    ],
+    "titles": [
+      {
+        "id": "title_01",
+        "text": "{purpose}"
+      },
+      {
+        "id": "title_02",
+        "text": "{purpose}の調達"
+      },
+      {
+        "id": "title_03",
+        "text": "{purpose}の納入依頼"
+      },
+      {
+        "id": "title_04",
+        "text": "{purpose}を求む"
+      }
+    ],
+    "openings": [
+      {
+        "id": "opening_01",
+        "text": "一件、物資の手配を頼みたい。"
+      },
+      {
+        "id": "opening_02",
+        "text": "こちらの依頼を引き受けてもらえるか。"
+      },
+      {
+        "id": "opening_03",
+        "text": "探し物がある。手を貸してほしい。"
+      },
+      {
+        "id": "opening_04",
+        "text": "物資を運べる者を探している。"
+      },
+      {
+        "id": "opening_05",
+        "text": "手が空いていたら、この調達を頼みたい。"
+      },
+      {
+        "id": "opening_06",
+        "text": "取引の話だ。必要な品を揃えてほしい。"
+      },
+      {
+        "id": "opening_07",
+        "text": "自分たちだけでは集めきれそうにない。"
+      },
+      {
+        "id": "opening_08",
+        "text": "外に出るついでがあれば、力を貸してくれ。"
+      }
+    ],
+    "circumstances": [
+      {
+        "id": "circumstance_01",
+        "text": "いつもの補給が遅れている。"
+      },
+      {
+        "id": "circumstance_02",
+        "text": "入荷の見通しが立たず、あちこちに声をかけている。"
+      },
+      {
+        "id": "circumstance_03",
+        "text": "前回の仕入れだけでは足りなかった。"
+      },
+      {
+        "id": "circumstance_04",
+        "text": "必要な分を分けてもらえる相手が見つからない。"
+      },
+      {
+        "id": "circumstance_05",
+        "text": "手元で揃えられる分だけでは数が足りない。"
+      },
+      {
+        "id": "circumstance_06",
+        "text": "使う分をまとめて確保しておきたい。"
+      },
+      {
+        "id": "circumstance_07",
+        "text": "不足分を埋めてもらえれば、こちらも助かる。"
+      },
+      {
+        "id": "circumstance_08",
+        "text": "近場では必要な数が揃わなかった。"
+      }
+    ],
+    "instructions": [
+      {
+        "id": "instruction_01",
+        "text": "下記の品と数量を揃えたら、PDAから納品してくれ。"
+      },
+      {
+        "id": "instruction_02",
+        "text": "必要品は下に記してある。すべて揃ってから納品を頼む。"
+      },
+      {
+        "id": "instruction_03",
+        "text": "一覧にある物資をまとめて引き取りたい。"
+      },
+      {
+        "id": "instruction_04",
+        "text": "品目と数量を確認してから、納品の手続きをしてほしい。"
+      },
+      {
+        "id": "instruction_05",
+        "text": "数量は下の一覧の通りだ。揃った分を一度に引き渡してくれ。"
+      },
+      {
+        "id": "instruction_06",
+        "text": "指定した品を手元に揃えて、PDAから受け渡しを頼む。"
+      }
+    ],
+    "endings": [
+      {
+        "id": "ending_01",
+        "text": "受け取りを確認したら、約束の額を払う。"
+      },
+      {
+        "id": "ending_02",
+        "text": "手間賃は用意してある。よろしく頼む。"
+      },
+      {
+        "id": "ending_03",
+        "text": "引き受けてもらえるなら助かる。"
+      },
+      {
+        "id": "ending_04",
+        "text": "帰り道は気をつけてくれ。"
+      },
+      {
+        "id": "ending_05",
+        "text": "品が揃えば、それでこの依頼は完了だ。"
+      },
+      {
+        "id": "ending_06",
+        "text": "道中の判断は任せる。無事に戻ってくれ。"
+      },
+      {
+        "id": "ending_07",
+        "text": "仕事が済んだら、こちらも報酬を渡す。"
+      },
+      {
+        "id": "ending_08",
+        "text": "依頼を引き受ける前に、条件を確認してくれ。"
+      }
+    ]
+  }
+}

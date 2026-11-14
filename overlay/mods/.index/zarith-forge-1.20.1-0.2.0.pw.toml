@@ -1,0 +1,15 @@
+filename = "zarith-forge-1.20.1-0.2.0.jar"
+name = "Zarith"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "02b672e064a6d93b4fab241cb4f1cd4314e3f4bb6fdd3e3b13d6c611aa85a443"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/9284/417/zarith-forge-1.20.1-0.2.0.jar"
+
+[update.curseforge]
+file-id = 9284417
+project-id = 1720181

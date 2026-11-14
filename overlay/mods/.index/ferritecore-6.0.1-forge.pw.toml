@@ -1,0 +1,15 @@
+filename = "ferritecore-6.0.1-forge.jar"
+name = "FerriteCore ((Neo)Forge)"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "9c2c9396a49e796d88497758caa4637d2bcbb433c318e2dd9cebcffbaf0f6c54"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/4810/975/ferritecore-6.0.1-forge.jar"
+
+[update.curseforge]
+file-id = 4810975
+project-id = 429235

@@ -1,0 +1,66 @@
+[
+  {
+    "match": [
+      "gnfrontier:waste_battery"
+    ],
+    "result": "2*2"
+  },
+  {
+    "match": [
+      "tacz:modern_kinetic_gun{GunId:\"hamster:coltm1892\"}"
+    ],
+    "result": "2*1"
+  },
+  {
+    "match": [
+      "tacz:modern_kinetic_gun{GunId:\"hamster:colt1873\"}"
+    ],
+    "result": "2*1"
+  },
+  {
+    "match": [
+      "gnfrontier:aluminum_chunk"
+    ],
+    "result": "2*2"
+  },
+  {
+    "match": [
+      "tacz:modern_kinetic_gun{GunId:\"hamster:m1879revolver\"}"
+    ],
+    "result": "2*1"
+  },
+  {
+    "match": [
+      "tacz:modern_kinetic_gun"
+    ],
+    "result": "3*2"
+  },
+  {
+    "match": [
+      "#minecraft:swords",
+      "#minecraft:pickaxes",
+      "#minecraft:axes",
+      "#minecraft:shovels",
+      "#minecraft:hoes"
+    ],
+    "result": "1*2"
+  },
+  {
+    "match": [
+      "#minecraft:beds"
+    ],
+    "result": "3*2"
+  },
+  {
+    "match": [
+      "#minecraft:doors"
+    ],
+    "result": "2*3"
+  },
+  {
+    "match": [
+      "minecraft:shield"
+    ],
+    "result": "2*2"
+  }
+]

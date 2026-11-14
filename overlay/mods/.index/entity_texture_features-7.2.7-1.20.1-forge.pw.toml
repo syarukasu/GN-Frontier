@@ -1,0 +1,15 @@
+filename = "entity_texture_features-7.2.7-1.20.1-forge.jar"
+name = "Entity Texture Features"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "9a1a335b50026c1a2770254cd5f89f2f5c85f35a0a8ffeb1de9663c8b356c588"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/9420/328/entity_texture_features-7.2.7-1.20.1-forge.jar"
+
+[update.curseforge]
+file-id = 9420328
+project-id = 568563

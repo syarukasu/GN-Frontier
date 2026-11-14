@@ -1,0 +1,15 @@
+filename = "PetiteInventory-TaCZMagazineCompatibilityPatchVIVI2-0.0.1.jar"
+name = "PetiteInventory"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "d08ba5403c16727523d7efefe4d38cd15c2c0609901d8675eeb6a40114302575"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/8591/987/PetiteInventory-TaCZMagazineCompatibilityPatchVIVI2-0.0.1.jar"
+
+[update.curseforge]
+file-id = 8591987
+project-id = 1583648

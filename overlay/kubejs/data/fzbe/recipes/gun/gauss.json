@@ -1,0 +1,58 @@
+{
+  "type": "tacz:gun_smith_table_crafting",
+  "materials": [
+    {
+      "item": {
+        "item": "minecraft:iron_block"
+      },
+      "count": 40
+    },
+    {
+      "item": {
+        "item": "minecraft:gold_block"
+      },
+      "count": 10
+    },
+    {
+      "item": {
+        "item": "minecraft:diamond_block"
+      },
+      "count": 2
+    },
+    {
+      "item": {
+        "item": "minecraft:redstone_block"
+      },
+      "count": 10
+    },
+    {
+      "item": {
+        "item": "minecraft:netherite_ingot"
+      },
+      "count": 4
+    },
+    {
+      "item": {
+        "item": "minecraft:blaze_rod"
+      },
+      "count": 12
+    },
+    {
+      "item": {
+        "item": "fzbe:charged_particle"
+      },
+      "count": 1
+    },
+    {
+      "item": {
+        "item": "minecraft:copper_block"
+      },
+      "count": 10
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "fzbe:gauss",
+    "tab": "tacz:sniper"
+  }
+}

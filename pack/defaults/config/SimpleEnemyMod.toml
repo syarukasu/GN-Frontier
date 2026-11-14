@@ -1,0 +1,8 @@
+#Wiki: https://berezkamc.github.io/Berezka-Studio-Wiki/docs/tutorial-basics/simple_enemy_guns_config/
+#ru units loadouts, structure: ["loadout_name, gunID, ammoCount, fireMode, scopeID (optional), muzzleID (optional), gripID (optional), weight (optional, requires SEM Extended mod), stockID (optional, requires SEM Extended mod), magID (optional, requires SEM Extended mod), laserID (optional, requires SEM Extended mod)", "next_example"]
+ru_loadouts = []
+#us units loadouts, structure: ["loadout_name, gunID, ammoCount, fireMode, scopeID (optional), muzzleID (optional), gripID (optional), weight (optional, requires SEM Extended mod), stockID (optional, requires SEM Extended mod), magID (optional, requires SEM Extended mod), laserID (optional, requires SEM Extended mod)", "next_example"]
+us_loadouts = []
+#pmc units loadouts, structure: ["loadout_name, gunID, ammoCount, fireMode, scopeID (optional), muzzleID (optional), gripID (optional), weight (optional, requires SEM Extended mod), stockID (optional, requires SEM Extended mod), magID (optional, requires SEM Extended mod), laserID (optional, requires SEM Extended mod)", "next_example"]
+pmc_loadouts = []
+

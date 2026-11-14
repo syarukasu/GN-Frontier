@@ -1,0 +1,15 @@
+# New survival worlds only. Do not copy into an existing save with occupied disabled slots.
+[general]
+inventory_slots = 36
+hotbar_slots = 5
+offhand_slot = true
+head_slot = true
+chest_slot = true
+legs_slot = true
+feet_slot = true
+crafting_top_left_slot = true
+crafting_top_right_slot = true
+crafting_bottom_left_slot = true
+crafting_bottom_right_slot = true
+exclude_creative_mode_players = true
+indexing = "TINYINV"

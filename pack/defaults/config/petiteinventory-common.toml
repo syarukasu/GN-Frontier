@@ -1,0 +1,7 @@
+
+[Setting]
+	#Enabled menu.
+	whitelist = []
+	#Whether inventory will be effort.
+	enableInventory = true
+

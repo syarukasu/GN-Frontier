@@ -1,0 +1,15 @@
+filename = "berezka_api-1.2.9.7.1-forge-1.20.1.jar"
+name = "Berezka's library"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "20fe74d017243ea5219102dd2dbe175b3d42950bc41ebdd818d384a8c8239b92"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/9393/255/berezka_api-1.2.9.7.1-forge-1.20.1.jar"
+
+[update.curseforge]
+file-id = 9393255
+project-id = 1160598

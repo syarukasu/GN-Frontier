@@ -1,0 +1,19 @@
+{
+  "type": "gnfrontier:natural_chests",
+  "conditions": [],
+  "sources": [
+    "chaoszpack_lc_loot:chests/bigbuildings",
+    "chaoszpack_lc_loot:chests/suburban",
+    "chaoszpack_lc_loot:chests/shop",
+    "survival_instinct:chests/suburban_house_loot",
+    "survival_instinct:chests/survivor_camp_loot",
+    "survival_instinct:chests/survivor_house_loot",
+    "lostcities:chests/lostcitychest",
+    "minecraft:chests/village/village_desert_house",
+    "minecraft:chests/village/village_plains_house",
+    "minecraft:chests/village/village_savanna_house",
+    "minecraft:chests/village/village_snowy_house",
+    "minecraft:chests/village/village_taiga_house"
+  ],
+  "target": "gnfrontier:chests/residential"
+}

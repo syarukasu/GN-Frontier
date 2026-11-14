@@ -1,0 +1,8 @@
+{
+  "death.attack.zarith.physics_block": "%1$sは動くブロックに押し潰された",
+  "death.attack.zarith.physics_block.player": "%1$sは%2$sが投げたブロックに押し潰された",
+  "entity.zarith.physics_block": "物理演算ブロック",
+  "hud.zarith.vehicle": "%s km/h  ギア%s  %s rpm",
+  "key.zarith.shift_down": "シフトダウン（車両）",
+  "key.zarith.shift_up": "シフトアップ（車両）"
+}

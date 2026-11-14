@@ -1,0 +1,15 @@
+filename = "tacz-forge-1.20.1-1.2.0.jar"
+name = "[TaCZ] Timeless and Classics Zero Guns"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "1c2f2915f76908d396a0da577665c977564c279ccb89d459a00a29225aa45a92"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/9454/481/tacz-forge-1.20.1-1.2.0.jar"
+
+[update.curseforge]
+file-id = 9454481
+project-id = 1028108

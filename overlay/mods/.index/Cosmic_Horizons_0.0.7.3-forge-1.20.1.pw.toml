@@ -1,0 +1,15 @@
+filename = "Cosmic_Horizons_0.0.7.3-forge-1.20.1.jar"
+name = "Cosmic Horizons"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "46cdac6c72a3788f3ffbd2d6ef0420aad3688a74079c3dbdd84e3e300441c3ca"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/6055/514/Cosmic_Horizons_0.0.7.3-forge-1.20.1.jar"
+
+[update.curseforge]
+file-id = 6055514
+project-id = 1063119

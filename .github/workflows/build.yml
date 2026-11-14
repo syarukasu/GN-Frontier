@@ -1,0 +1,35 @@
+name: Verify and build core
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check shared version
+        run: python tools/project.py check
+      - name: Fetch checksum-locked upstream build dependencies
+        run: python tools/project.py deps
+      - name: Compile and reobfuscate the one core mod
+        working-directory: addon
+        run: bash gradlew --no-daemon --max-workers=2 jar
+      - name: Check built version and embedded originals
+        run: python tools/project.py check --jar "addon/build/libs/gn-frontier-$(cat VERSION).jar"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: gn-frontier-core
+          path: addon/build/libs/gn-frontier-*.jar
+          if-no-files-found: error

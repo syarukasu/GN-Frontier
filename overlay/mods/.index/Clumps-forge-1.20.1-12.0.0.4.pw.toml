@@ -1,0 +1,15 @@
+filename = "Clumps-forge-1.20.1-12.0.0.4.jar"
+name = "Clumps"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "1d1cfcf386f182b1d0bdbe4bd4fc57b96234e8c7468e95e1575ad4dd6433243a"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/5278/538/Clumps-forge-1.20.1-12.0.0.4.jar"
+
+[update.curseforge]
+file-id = 5278538
+project-id = 256717

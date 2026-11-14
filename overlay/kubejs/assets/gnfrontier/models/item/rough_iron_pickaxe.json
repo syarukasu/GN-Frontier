@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/iron_pickaxe",
+  "textures": {
+    "layer0": "gnfrontier:item/rough_iron_pickaxe"
+  }
+}

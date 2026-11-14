@@ -1,0 +1,15 @@
+filename = "NoChatReports-FORGE-1.20.1-v2.2.3.jar"
+name = "No Chat Reports"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "1f6505721ce6a78ce46e662f65fc81646705f82f169e9b7565951d1965d51672"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/8675/977/NoChatReports-FORGE-1.20.1-v2.2.3.jar"
+
+[update.curseforge]
+file-id = 8675977
+project-id = 634062

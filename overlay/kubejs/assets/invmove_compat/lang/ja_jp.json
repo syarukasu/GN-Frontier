@@ -1,0 +1,18 @@
+{
+  "key.invmove.module.ponder": "思案画面",
+  "config.invmove.emi.backgroundHide.recipe": "レシピ画面",
+  "config.invmove.emi.movement.recipe": "レシピ画面",
+  "config.invmove.jei.backgroundHide.recipe": "レシピ画面",
+  "config.invmove.jei.movement.recipe": "レシピ画面",
+  "config.invmove.ponder.movement.holdPonderAllowMovement": "長押しで解説を開く間",
+  "config.invmove.ponder.movement.holdPonderAllowMovement.notAvailable": "§6§o解説機能への完全対応にはCreate 6.0.7以降が必要です。\n一部の機能（長押し中の設定）は無効になっています。",
+  "config.invmove.ponder.movement.index": "解説の索引",
+  "config.invmove.ponder.movement.ponder": "解説画面",
+  "config.invmove.ponder.movement.tag": "解説の分類",
+  "config.invmove.roughlyenoughitems.backgroundHide.recipe": "レシピ画面",
+  "config.invmove.roughlyenoughitems.movement.recipe": "レシピ画面",
+  "tooltip.config.invmove.ponder.movement.holdPonderAllowMovement": "アイテムの解説キーを押している間、移動を許可するかを設定します。",
+  "tooltip.config.invmove.ponder.movement.index": "この画面ではゲームが一時停止するため、この設定が上書きされる場合があります。",
+  "tooltip.config.invmove.ponder.movement.ponder": "この画面ではゲームが一時停止するため、この設定が上書きされる場合があります。",
+  "tooltip.config.invmove.ponder.movement.tag": "この画面ではゲームが一時停止するため、この設定が上書きされる場合があります。"
+}

@@ -1,0 +1,15 @@
+filename = "FA+Player-v1.1.zip"
+name = "FA+Player-v1.1.zip"
+side = "client"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-release-type = "release"
+
+[download]
+hash-format = "sha256"
+hash = "9ee3ae5b2fe5cd980e4041429dc66d88243f5f2420e2814e5361c746ad937f33"
+mode = "url"
+url = "https://cdn.modrinth.com/data/TAIMVZCL/versions/Wj7NeGjP/FA%2BPlayer-v1.1.zip"
+
+[update.modrinth]
+mod-id = "TAIMVZCL"
+version = "Wj7NeGjP"

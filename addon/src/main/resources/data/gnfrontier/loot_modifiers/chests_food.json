@@ -1,0 +1,14 @@
+{
+  "type": "gnfrontier:natural_chests",
+  "conditions": [],
+  "sources": [
+    "chaoszpack_lc_loot:chests/restaurant",
+    "chaoszpack_lc_loot:chests/walmart",
+    "survival_instinct:chests/farm_loot",
+    "survival_instinct:chests/market_sheld_2",
+    "survival_instinct:chests/market_shelf",
+    "survival_instinct:chests/refrigerator",
+    "minecraft:chests/shipwreck_supply"
+  ],
+  "target": "gnfrontier:chests/food"
+}

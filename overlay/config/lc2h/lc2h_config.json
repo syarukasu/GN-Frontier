@@ -1,0 +1,96 @@
+/*
+==============================================
+|             LC2H - Configuration           |
+|             Author: Admany                 |
+|             All Rights Reserved            |
+==============================================
+|  This config file auto-updates itself if   |
+|  there are config changes. You do NOT need |
+|  to delete it for new features or updates! |
+==============================================
+*/
+
+{
+  "_comment": "Edit this file to configure LC2H. For documentation, visit the mod's wiki.",
+
+  // === General Settings ===
+  // Enable async batching for double blocks
+  "enableAsyncDoubleBlockBatcher": true,
+  // Scan every loaded chunk for legacy floating/double-block cleanup. Expensive in large modpacks and disabled by default; use /lc2h cleanup chunk for targeted repair.
+  "enableAutomaticChunkScans": false,
+  // Legacy broad structure toggle. LC2H always keeps the complete-start collision guard active so vanilla and modded structures cannot be cut by city boundaries.
+  "rejectStructuresInCityChunks": false,
+  // Extra non-city chunk ring kept clear around cities when rejecting structures (0-4).
+  "cityStructureRejectionBufferChunks": 0,
+  // Retired compatibility field. LC2H always preserves native Lost Cities terrain shaping.
+  "cityVerticalTerrainClearance": false,
+  // Recommended: serialize nearby Lost Cities chunk-gen to avoid bugged/duplicated chunks (may reduce max throughput)
+  "enableLostCitiesGenerationLock": true,
+  // Recommended: prevent crashes from broken/invalid Lost Cities building parts (safe bounds checks)
+  "enableLostCitiesPartSliceCompat": true,
+  // Lost Cities street planner. The 7.5.x grid is the default. ChaosZPack profiles automatically use LEGACY. Applies to chunks planned after saving without a restart.
+  "lostCitiesStreetGenerationMode": "HIERARCHICAL_GRID_V1",
+  // Enable cache stats logging
+  "enableCacheStatsLogging": true,
+  // Enable removal of floating vegetation after terrain generation
+  "enableFloatingVegetationRemoval": true,
+  // Extra floating blocks to remove, separated by commas. Glow lichen and IW frost are included when available.
+  "floatingVegetationAdditionalBlocks": [
+  "minecraft:glow_lichen",
+  "immersive_weathering:frost"
+],
+  // Enable Lost Cities explosion debris spill into adjacent chunks (can add rubble around streets)
+  "enableExplosionDebris": false,
+  // Hide the experimental features warning screen
+  "hideExperimentalWarning": true,
+  // Enable debug logging for memory management and warmup operations
+  "enableDebugLogging": false,
+  // Write routine LC2H status messages to the log. Warnings and errors are always shown.
+  "enableLc2hLogging": false,
+
+  // === Caching ===
+  // Max combined LC2H + Lost Cities cache budget (MB).
+  "cacheCombinedMaxMB": 256,
+  // If true, enforce combined max by evicting from the largest cache.
+  "cacheEnforceCombinedMax": true,
+  // If true, split the combined max evenly between LC2H and Lost Cities.
+  "cacheSplitEqual": false,
+  // Max LC2H cache budget (MB).
+  "cacheMaxMB": 384,
+  // Max Lost Cities cache budget (MB).
+  "cacheLostCitiesMaxMB": 128,
+  // Lost Cities RAM cache TTL (minutes).
+  "cacheLostCitiesTtlMinutes": 10,
+  // Lost Cities disk cache TTL (hours).
+  "cacheLostCitiesDiskTtlHours": 2,
+
+  // === Interface ===
+  // UI accent color in hex (example: 3A86FF)
+  "uiAccentColor": "3A86FF",
+  // Preferred LC2H config screen language (example: en_us, lt_lt).
+  "uiLocale": "en_us",
+
+  // === City Edge ===
+  // Smooth terrain near city borders. Enabled by default and can be changed live
+  "cityBlendEnabled": true,
+  // Blend width in blocks around city borders
+  "cityBlendWidth": 64,
+  // Blend softness (higher = softer falloff)
+  "cityBlendSoftness": 1.6,
+  // Always active: protect city boundaries from unsafe tree placement.
+  "cityBlendClearTrees": true,
+  // Always active: capture and replay trees that cross Lost Cities seams.
+  "cityBlendTreeSeamFix": true,
+  // Buffer (blocks) from a chunk edge to block seam-crossing trees
+  "cityBlendTreeSeamBuffer": 3,
+  // Multiplier for auto-detected tree spread at seams (raise for giant tree modpacks)
+  "treeSeamRadiusMultiplier": 1.0,
+  // Experimental: defer cross-chunk Lost Cities writes through a seam journal. Disabled by default because it changes native generation order.
+  "seamOwnershipEnabled": false,
+  // Maximum deferred seam write intents per target chunk
+  "seamOwnershipMaxIntentsPerChunk": 8192,
+  // How long deferred seam write intents are kept before expiring (milliseconds)
+  "seamOwnershipIntentTtlMs": 600000,
+  // Maximum downward support depth for Lost Cities highway pillars (higher reaches seabed in deep oceans)
+  "highwaySupportMaxDepth": 192
+}

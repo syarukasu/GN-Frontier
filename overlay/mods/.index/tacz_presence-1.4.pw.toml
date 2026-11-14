@@ -1,0 +1,15 @@
+filename = "tacz_presence-1.4.jar"
+name = "TaCZ: Presence"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "2384bb4b3df41999c586aaf0d35ea33c477fad6a520985e78ba99d735823dea4"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/7882/246/tacz_presence-1.4.jar"
+
+[update.curseforge]
+file-id = 7882246
+project-id = 1435817

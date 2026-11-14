@@ -1,0 +1,7 @@
+{
+  "block.computercraft.computer_normal": "パソコン",
+  "commands.computercraft.track.dump.computer": "パソコン",
+  "gui.computercraft.config.term_sizes.computer": "パソコン",
+  "tracking_field.computercraft.computer_tasks.name": "依頼",
+  "upgrade.minecraft.diamond_sword.adjective": "近接"
+}

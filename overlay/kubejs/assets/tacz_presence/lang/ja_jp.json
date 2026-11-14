@@ -1,0 +1,7 @@
+{
+  "gui.tacz.hud.low_ammo": "弾薬残量低下",
+  "gui.tacz.hud.no_ammo": "弾切れ",
+  "gui.tacz.hud.reload": "再読み込み",
+  "config.tacz_presence.cat.sounds": "サウンド",
+  "config.tacz_presence.cat.hud": "画面表示"
+}

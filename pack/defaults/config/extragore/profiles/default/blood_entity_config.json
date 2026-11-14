@@ -1,0 +1,242 @@
+{
+  "version": 1,
+  "defaults": {
+    "color": "FF0000",
+    "style": "LIGHT",
+    "amalgamation": "BOTH",
+    "brightness": "WORLD",
+    "count": 24,
+    "dripChance": 0.4,
+    "viscosity": 0.35,
+    "speed": {
+      "min": 1.0,
+      "max": 1.0
+    },
+    "scale": {
+      "min": 0.6,
+      "max": 1.8
+    },
+    "life": {
+      "min": 300,
+      "max": 400
+    }
+  },
+  "groups": {
+    "bone": {
+      "color": "D0CABB",
+      "style": "HEAVY",
+      "brightness": "WORLD",
+      "viscosity": 0.25,
+      "scale": {
+        "min": 0.6,
+        "max": 1.1
+      },
+      "life": {
+        "min": 200,
+        "max": 300
+      },
+      "entities": [
+        "minecraft:skeleton",
+        "minecraft:stray",
+        "minecraft:wither_skeleton",
+        "minecraft:skeleton_horse",
+        "minecraft:wither"
+      ]
+    },
+    "slime": {
+      "color": "82B85A",
+      "style": "SLIMY",
+      "amalgamation": "BOTH",
+      "brightness": "WORLD",
+      "viscosity": 0.7,
+      "count": 20,
+      "scale": {
+        "min": 0.6,
+        "max": 1.4
+      },
+      "life": {
+        "min": 150,
+        "max": 200
+      },
+      "entities": [
+        "minecraft:slime",
+        "minecraft:creeper"
+      ]
+    },
+    "magma": {
+      "color": "D85A24",
+      "style": "CLOTTED",
+      "brightness": "FULLBRIGHT",
+      "viscosity": 0.85,
+      "count": 20,
+      "scale": {
+        "max": 1.4
+      },
+      "life": {
+        "min": 150,
+        "max": 200
+      },
+      "entities": [
+        "minecraft:magma_cube",
+        "minecraft:strider"
+      ]
+    },
+    "flame": {
+      "color": "E6B84C",
+      "style": "HEAVY",
+      "brightness": "FULLBRIGHT",
+      "viscosity": 0.1,
+      "scale": {
+        "min": 0.2,
+        "max": 1.4
+      },
+      "life": {
+        "min": 200,
+        "max": 300
+      },
+      "entities": [
+        "minecraft:blaze"
+      ]
+    },
+    "venom": {
+      "color": "76A842",
+      "style": "LIGHT",
+      "amalgamation": "BOTH",
+      "brightness": "FULLBRIGHT",
+      "dripChance": 0,
+      "viscosity": 0.55,
+      "entities": [
+        "minecraft:spider",
+        "minecraft:cave_spider",
+        "minecraft:witch",
+        "minecraft:bee",
+        "minecraft:pufferfish"
+      ]
+    },
+    "metal": {
+      "color": "A7ADB2",
+      "style": "HEAVY",
+      "brightness": "WORLD",
+      "viscosity": 0.15,
+      "scale": {
+        "min": 0.2,
+        "max": 1.4
+      },
+      "life": {
+        "min": 200,
+        "max": 300
+      },
+      "entities": [
+        "minecraft:iron_golem"
+      ]
+    },
+    "spirit": {
+      "color": "C3CFD6",
+      "style": "LIGHT",
+      "brightness": "FULLBRIGHT",
+      "viscosity": 0.2,
+      "scale": {
+        "min": 0.2,
+        "max": 1.4
+      },
+      "life": {
+        "min": 200,
+        "max": 300
+      },
+      "entities": [
+        "minecraft:vex",
+        "minecraft:ghast",
+        "minecraft:allay"
+      ]
+    },
+    "magic": {
+      "color": "9A60C7",
+      "style": "MAGIC",
+      "brightness": "FULLBRIGHT",
+      "viscosity": 0.45,
+      "count": 30,
+      "scale": {
+        "min": 0.4,
+        "max": 1.0
+      },
+      "life": {
+        "min": 200,
+        "max": 300
+      },
+      "entities": [
+        "minecraft:enderman",
+        "minecraft:endermite",
+        "minecraft:ender_dragon",
+        "minecraft:shulker",
+        "minecraft:evoker",
+        "minecraft:illusioner",
+        "minecraft:phantom",
+        "minecraft:warden"
+      ]
+    },
+    "water": {
+      "color": "347FA3",
+      "style": "LIGHT",
+      "brightness": "WORLD",
+      "viscosity": 0.05,
+      "count": 12,
+      "life": {
+        "min": 200,
+        "max": 300
+      },
+      "entities": [
+        "minecraft:squid",
+        "minecraft:guardian",
+        "minecraft:elder_guardian",
+        "minecraft:axolotl",
+        "minecraft:dolphin",
+        "minecraft:tadpole",
+        "minecraft:turtle"
+      ]
+    },
+    "fish": {
+      "color": "FF0000",
+      "style": "LIGHT",
+      "brightness": "WORLD",
+      "viscosity": 0.05,
+      "count": 12,
+      "life": {
+        "min": 200,
+        "max": 300
+      },
+      "entities": [
+        "minecraft:cod",
+        "minecraft:salmon",
+        "minecraft:tropical_fish"
+      ]
+    },
+    "glow": {
+      "color": "347FA3",
+      "style": "LIGHT",
+      "brightness": "FULLBRIGHT",
+      "viscosity": 0.05,
+      "count": 12,
+      "life": {
+        "min": 200,
+        "max": 300
+      },
+      "entities": [
+        "minecraft:glow_squid"
+      ]
+    },
+    "snow": {
+      "color": "E8F0F2",
+      "style": "HEAVY",
+      "brightness": "WORLD",
+      "viscosity": 0.8,
+      "count": 12,
+      "life": {
+        "min": 200,
+        "max": 300
+      },
+      "entities": [
+        "minecraft:snow_golem"
+      ]
+    }
+  }
+}

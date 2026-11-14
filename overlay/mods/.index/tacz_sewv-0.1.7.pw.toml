@@ -1,0 +1,15 @@
+filename = "tacz_sewv-0.1.7.jar"
+name = "[TaCZ/SBW] Combined Arms"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "f35d9f65674a19f074c0e09af44cbcafbf9e249ce8014285851f7e7ed9a8a7f8"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/9320/153/tacz_sewv-0.1.7.jar"
+
+[update.curseforge]
+file-id = 9320153
+project-id = 1605176

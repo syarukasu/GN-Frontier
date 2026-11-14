@@ -1,0 +1,15 @@
+filename = "tooltipoverhaul-forge-1.20.1-2.1.0.jar"
+name = "Tooltip Overhaul"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "8513f9b7e7d4f04b8e9be1b52978e68edf470b1fed8423c52c73531e603003b7"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/9491/812/tooltipoverhaul-forge-1.20.1-2.1.0.jar"
+
+[update.curseforge]
+file-id = 9491812
+project-id = 1327508

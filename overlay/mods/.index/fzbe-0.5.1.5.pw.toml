@@ -1,0 +1,15 @@
+filename = "fzbe-0.5.1.5.jar"
+name = "fzbe-0.5.1.5.jar"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "24322e9ba3c4361703f9b94b71b4c0ce7d853a3358569ca4b9b5c1f2566f40c2"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/9608/427/fzbe-0.5.1.5.jar"
+
+[update.curseforge]
+file-id = 9608427
+project-id = 1685964

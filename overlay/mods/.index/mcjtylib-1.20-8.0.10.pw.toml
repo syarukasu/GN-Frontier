@@ -1,0 +1,15 @@
+filename = "mcjtylib-1.20-8.0.10.jar"
+name = "McJtyLib"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "c43d62c89588f26af9dd74be7ccb05bb2c48fdf76dfd198eb80a2ded5939da2c"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/9531/93/mcjtylib-1.20-8.0.10.jar"
+
+[update.curseforge]
+file-id = 9531093
+project-id = 233105

@@ -1,0 +1,17 @@
+{
+  "type": "gnfrontier:natural_chests",
+  "conditions": [],
+  "sources": [
+    "keerdm_zombie_essentials:chests/abandoned_car_advanced_tacz",
+    "keerdm_zombie_essentials:chests/abandoned_car_basic_tacz",
+    "survival_instinct:chests/facility_loot",
+    "survival_instinct:chests/garage_loot",
+    "survival_instinct:chests/gas_station_loot",
+    "survival_instinct:chests/hardware_loot",
+    "lostcities:chests/raildungeonchest",
+    "minecraft:chests/abandoned_mineshaft",
+    "minecraft:chests/village/village_toolsmith",
+    "minecraft:chests/village/village_armorer"
+  ],
+  "target": "gnfrontier:chests/industrial"
+}

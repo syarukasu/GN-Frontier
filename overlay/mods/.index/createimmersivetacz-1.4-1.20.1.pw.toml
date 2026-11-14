@@ -1,0 +1,15 @@
+filename = "createimmersivetacz-1.4-1.20.1.jar"
+name = "Create: Immersive Tacz Integration"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "8f1e8b58afba0aaa53becef2f4de41184aca10b901c835faeffbdc03db975f7a"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/6901/38/createimmersivetacz-1.4-1.20.1.jar"
+
+[update.curseforge]
+file-id = 6901038
+project-id = 1152431

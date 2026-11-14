@@ -1,0 +1,15 @@
+filename = "hbm_m-0.2.1-alpha+1.20.1-forge.jar"
+name = "HBM's Nuclear Tech Modernized"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "14acbd4fd0de45f2b2b9116094fefb9de5055439e36033c0b2802a7dc8bf4828"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/8609/178/hbm_m-0.2.1-alpha%2B1.20.1-forge.jar"
+
+[update.curseforge]
+file-id = 8609178
+project-id = 1319588

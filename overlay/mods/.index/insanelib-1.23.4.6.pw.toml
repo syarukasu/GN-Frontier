@@ -1,0 +1,15 @@
+filename = "insanelib-1.23.4.6.jar"
+name = "InsaneLib"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "cadc3902d8bb6d454f6b5039381da3995220640a1945b65400a2a16f4052a318"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/8306/331/insanelib-1.23.4.6.jar"
+
+[update.curseforge]
+file-id = 8306331
+project-id = 465109

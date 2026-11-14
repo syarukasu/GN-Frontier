@@ -1,0 +1,15 @@
+filename = "tacz_attributes-1.4.jar"
+name = "TaCZ_attributes"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "b15bf462a623d9193046dc382c3e38ac271f385bcac785c389e7e151eb8dd196"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/8470/731/tacz_attributes-1.4.jar"
+
+[update.curseforge]
+file-id = 8470731
+project-id = 1113285

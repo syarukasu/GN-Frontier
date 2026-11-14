@@ -1,0 +1,15 @@
+filename = "InvMove_Plus-1.20.1-universal-0.6.0.jar"
+name = "InvMove Plus"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "1005112c0734f00ea8efff7303a31ad4786ae32187115e0099e7dc8a2294ef31"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/9384/229/InvMove_Plus-1.20.1-universal-0.6.0.jar"
+
+[update.curseforge]
+file-id = 9384229
+project-id = 1714977

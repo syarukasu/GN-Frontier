@@ -1,0 +1,15 @@
+filename = "ComplementaryUnbound_r5.9.3.zip"
+name = "ComplementaryUnbound_r5.9.3.zip"
+side = "client"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-release-type = "release"
+
+[download]
+hash-format = "sha256"
+hash = "98ac741dee294d2a3c82d153349148c3bb7fb688c30eb3b49c3b9ac37e968c5a"
+mode = "url"
+url = "https://cdn.modrinth.com/data/R6NEzAwj/versions/B1kyfoUZ/ComplementaryUnbound_r5.9.3.zip"
+
+[update.modrinth]
+mod-id = "R6NEzAwj"
+version = "B1kyfoUZ"

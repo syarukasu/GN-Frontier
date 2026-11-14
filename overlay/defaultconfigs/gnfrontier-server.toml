@@ -1,0 +1,34 @@
+# GN new-world defaults. Numbers are independent reproduction balance.
+[rules]
+deleteInventoryOnDeath = true
+lowAltitudeGas = true
+gasBelowY = 40
+dayZombies = true
+pickaxeZombieBreaking = true
+underwaterHypoxia = true
+factionReinforcements = true
+raidIntervalTicks = 12000
+nearbyRaidEntityCap = 16
+# Original distance unknown. Loaded military structure bounds only.
+rotorBaseRadius = 96
+filterProtectionTicks = 12000
+
+# New street chunks only; clearance may reject a car.
+streetVehiclePercent = 65
+
+# Radius 5 and 3-day bed relocation follow the source observations.
+# Grace duration, vertical shape and AI timings are independent adjustment values.
+[respawn]
+graceTicks = 200
+shelterRadius = 5
+shelterHalfHeight = 5
+pickaxeZombieBedSearchRadius = 24
+pickaxeZombieBedBreakTicks = 100
+
+# Observed behavior; timing, strength and frequency are provisional.
+[rodZombie]
+enabled = true
+range = 16
+cooldownTicks = 100
+spawnOneIn = 16
+pullStrength = 0.9

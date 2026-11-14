@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "doomsday_decoration:fridge",
+    "doomsday_decoration:fridge_2",
+    "doomsday_decoration:metalcabinet",
+    "doomsday_decoration:metalcabinet_2",
+    "doomsday_decoration:metaldrawer",
+    "doomsday_decoration:metaldrawer_2"
+  ]
+}

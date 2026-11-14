@@ -1,0 +1,81 @@
+# GN-077: Expert integration. Keep authored gun damage, five-slot Petite inventory, Gun Durability jams, and GN factions/quests.
+
+[calibers]
+bulletTypes = true
+
+[magazines]
+enabled = true
+extendedMagAttachments = true
+
+[inventory]
+itemSizes = false
+weight = false
+
+[jamming]
+enabled = false
+
+[enemies]
+banditSpawning = false
+unSpawning = false
+patrols = false
+
+[nightRaids]
+enabled = false
+
+[convoys]
+enabled = false
+
+[contracts]
+enabled = false
+hud = false
+
+[blackMarket]
+enabled = false
+
+[cartel]
+enabled = false
+
+[airdrops]
+enabled = false
+
+[roadblocks]
+enabled = false
+
+[drones]
+operators = false
+
+[darkness]
+enabled = false
+darkerNights = false
+
+[stealth]
+noiseHud = false
+
+[visuals]
+tips = false
+
+[debug]
+logging = false
+
+[ballistics]
+caliberDamage = false
+wallPenetration = true
+ricochets = true
+
+[weaponLights]
+enabled = true
+
+[suppression]
+enabled = true
+
+[hitFeedback]
+enabled = true
+
+[scopes]
+variableZoomScopeList = []
+
+[grenades]
+fragShrapnelDensity = 0
+
+[claymores]
+fragments = 0.0

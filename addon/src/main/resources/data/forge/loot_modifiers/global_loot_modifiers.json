@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "entries": [
+    "gnfrontier:bed_salvage",
+    "gnfrontier:chests_drawer",
+    "gnfrontier:chests_residential",
+    "gnfrontier:chests_food",
+    "gnfrontier:chests_medical",
+    "gnfrontier:chests_industrial",
+    "gnfrontier:chests_military",
+    "gnfrontier:chests_ammo",
+    "gnfrontier:chests_office",
+    "gnfrontier:model_salvage"
+  ]
+}

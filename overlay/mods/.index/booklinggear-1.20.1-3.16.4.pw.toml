@@ -1,0 +1,15 @@
+filename = "booklinggear-1.20.1-3.16.4.jar"
+name = "Bookling Gear"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "e3640cc77de4102ad2cd55209dcd06f2f1fcff61e2b2871941cc5c4b4c86c738"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/9426/240/booklinggear-1.20.1-3.16.4.jar"
+
+[update.curseforge]
+file-id = 9426240
+project-id = 1122766

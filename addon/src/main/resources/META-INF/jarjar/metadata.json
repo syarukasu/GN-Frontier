@@ -1,0 +1,52 @@
+{
+  "jars": [
+    {
+      "identifier": {
+        "group": "gg.moonflower",
+        "artifact": "molang-compiler"
+      },
+      "version": {
+        "range": "[3.1.1.19,)",
+        "artifactVersion": "3.1.1.19"
+      },
+      "path": "META-INF/jarjar/molang-compiler-3.1.1.19.jar",
+      "isObfuscated": false
+    },
+    {
+      "identifier": {
+        "group": "io.github.spair",
+        "artifact": "imgui-java-binding"
+      },
+      "version": {
+        "range": "[1.86.11,)",
+        "artifactVersion": "1.86.11"
+      },
+      "path": "META-INF/jarjar/imgui-java-binding-1.86.11.jar",
+      "isObfuscated": false
+    },
+    {
+      "identifier": {
+        "group": "io.github.spair",
+        "artifact": "imgui-java-lwjgl3"
+      },
+      "version": {
+        "range": "[1.86.11,)",
+        "artifactVersion": "1.86.11"
+      },
+      "path": "META-INF/jarjar/imgui-java-lwjgl3-1.86.11.jar",
+      "isObfuscated": false
+    },
+    {
+      "identifier": {
+        "group": "io.github.spair",
+        "artifact": "imgui-java-natives-windows"
+      },
+      "version": {
+        "range": "[1.86.11,)",
+        "artifactVersion": "1.86.11"
+      },
+      "path": "META-INF/jarjar/imgui-java-natives-windows-1.86.11.jar",
+      "isObfuscated": false
+    }
+  ]
+}

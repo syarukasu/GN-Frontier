@@ -1,0 +1,30 @@
+{
+  "pack": "GN Frontier",
+  "policy": "Pack-authored Japanese is editable under kubejs/assets. Third-party JARs remain unmodified. No JTrans translations are extracted for redistribution.",
+  "sources": [
+    {
+      "name": "ModJP",
+      "url": "https://github.com/kaikomziu/ModJP",
+      "revision": "46c9449ffd67367ec0e289af992868517f458979",
+      "license": "MIT",
+      "license_file": "ModJP-MIT.txt",
+      "use": "Reviewed missing translations with format-argument checks. Pack-specific corrections are stored in the same editable language files."
+    },
+    {
+      "name": "Hbm's Nuclear Tech Mod original Japanese language",
+      "url": "https://github.com/HbmMods/Hbm-s-Nuclear-Tech-GIT",
+      "english_blob": "7bfa129a1070229472180ce573818a612c85614b",
+      "japanese_blob": "c63569b5000abdd970bef10b6e11103bdcbb6767",
+      "license": "GPL-3.0",
+      "license_file": "HBM-language-GPL-3.0.txt",
+      "use": "Matching complete English phrases adapted to hbm_m; additional manual translations and terminology corrections. Editable source is assets/hbm_m/lang/ja_jp.json."
+    },
+    {
+      "name": "JTrans 1.8.4",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/jtrans/files/9539844",
+      "sha256": "886782dc39948f5543d0dad5f7db7375d0ca7ce8f5032472f9bc60e0750cfabe",
+      "license": "All Rights Reserved; author permits unchanged JAR inclusion in modpacks",
+      "use": "Original JAR only; no extraction of its translated resources into KubeJS."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "#simpleenemymod:ru_units",
+    "#simpleenemymod:us_units",
+    "#simpleenemymod:pmc_units",
+    "tacz_sewv:ru_combat_engineer",
+    "tacz_sewv:us_combat_engineer",
+    "tacz_sewv:pmc_commander"
+  ]
+}

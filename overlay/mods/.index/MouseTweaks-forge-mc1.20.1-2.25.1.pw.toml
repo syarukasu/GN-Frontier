@@ -1,0 +1,15 @@
+filename = "MouseTweaks-forge-mc1.20.1-2.25.1.jar"
+name = "Mouse Tweaks"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "6c27d16aa715ac6613a55fc463739e2c7b78279e4e4c4cede299e4a2d4a70f08"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/5338/457/MouseTweaks-forge-mc1.20.1-2.25.1.jar"
+
+[update.curseforge]
+file-id = 5338457
+project-id = 60089

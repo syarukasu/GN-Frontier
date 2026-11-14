@@ -1,0 +1,11 @@
+{
+  "catnip.ui.cancel_label": "キャンセル",
+  "ponder.ui.exit": "非常口の標識",
+  "catnip.ui.client_config_button_label": "クライアント設定",
+  "catnip.ui.discard_changes_button": "変更をキャンセルして破棄",
+  "catnip.ui.save_label": "保存",
+  "catnip.ui.value_entry.range": "射程",
+  "key.categories.ponder": "思案画面",
+  "catnip.ui.save_changes_button": "変更を保存",
+  "catnip.ui.reset_all_button": "すべて初期化"
+}

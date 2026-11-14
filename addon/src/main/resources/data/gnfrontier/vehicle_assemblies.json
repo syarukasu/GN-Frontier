@@ -1,0 +1,10 @@
+[
+  {"template":"discardblackcar_1","front":"discardblackcar_1","rear":"discardblackcar_2","large":false},
+  {"template":"discardbluecar_2","front":"discardbluecar_1","rear":"discardbluecar_2","large":false},
+  {"template":"discardredcar_1","front":"discardredcar_1","rear":"discardredcar_2","large":false},
+  {"template":"discardwhitecar_2","front":"discardwhitecar_1","rear":"discardwhitecar_2","large":false},
+  {"template":"discardgreyjeep_1","front":"discardgreyjeep_1","rear":"discardgreyjeep_2","large":false},
+  {"template":"discardgreenpickuptruck","front":"discardgreenjeep_1","rear":"discardgreenpickuptruck","large":false},
+  {"template":"discardwhitevan_1","front":"discardwhitevan_1","rear":"discardwhitevan_2","large":true},
+  {"template":"discardredstationwagon","front":"discardredcar_1","rear":"discardredstationwagon","large":true}
+]

@@ -1,0 +1,11 @@
+filename = "Veil-forge-1.20.1-1.0.0.296-slim.jar"
+name = "Veil (slim)"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "296c693c659a81b9baa0c778d29a5ab89c56bbb46b5245a3bc2213bd0485f492"
+mode = "url"
+url = "https://maven.blamejared.com/foundry/veil/Veil-forge-1.20.1/1.0.0.296/Veil-forge-1.20.1-1.0.0.296-slim.jar"

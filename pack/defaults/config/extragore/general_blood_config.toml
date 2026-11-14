@@ -1,0 +1,411 @@
+
+#Base spray placement and motion with optional damage and health scaling.
+[hit_dispersion]
+
+	#Base spray strength, spread and hit height placement.
+	[hit_dispersion.spray]
+		#Sets base spray strength. Higher values throw droplets farther.
+		#Range: 0.0 ~ 10.0
+		force = 3.0
+		#Side spread of the spray cone. Lower is tighter, higher is wider.
+		#Range: 0.0 ~ 10.0
+		cone_range = 2.0
+		#Up and down spread of the spray arc. Lower is flatter, higher is wider.
+		#Range: 0.0 ~ 10.0
+		y_cone_range = 2.5
+		#If true, blood starts from the lower, middle, or upper body area that was hit.
+		enable_vertical_hit_zones = true
+
+	#Adjusts the base spray settings using the damage amount.
+	[hit_dispersion.damage_scaling]
+		#When disabled, damage does not change the spray.
+		enable_damage_scaling = true
+		#Damage point for the low spray values.
+		#Range: 0.0 ~ 10000.0
+		low_damage_amount = 0.5
+		#Damage point for the medium spray values.
+		#Range: 0.0 ~ 10000.0
+		medium_damage_amount = 3.0
+		#Damage point for the high spray values.
+		#Range: 0.0 ~ 10000.0
+		high_damage_amount = 5.5
+		#Amount added to spray strength at low damage.
+		#Range: -10.0 ~ 10.0
+		force_addition_at_low_damage = -0.5
+		#Amount added to spray strength at medium damage.
+		#Range: -10.0 ~ 10.0
+		force_addition_at_medium_damage = 0.25
+		#Amount added to spray strength at high damage.
+		#Range: -10.0 ~ 10.0
+		force_addition_at_high_damage = 0.6
+		#Amount added to horizontal spread at low damage.
+		#Range: -10.0 ~ 10.0
+		cone_range_addition_at_low_damage = 0.0
+		#Amount added to horizontal spread at medium damage.
+		#Range: -10.0 ~ 10.0
+		cone_range_addition_at_medium_damage = 0.1
+		#Amount added to horizontal spread at high damage.
+		#Range: -10.0 ~ 10.0
+		cone_range_addition_at_high_damage = 0.3
+		#Amount added to vertical spread at low damage.
+		#Range: -10.0 ~ 10.0
+		y_cone_range_addition_at_low_damage = 0.0
+		#Amount added to vertical spread at medium damage.
+		#Range: -10.0 ~ 10.0
+		y_cone_range_addition_at_medium_damage = 0.1
+		#Amount added to vertical spread at high damage.
+		#Range: -10.0 ~ 10.0
+		y_cone_range_addition_at_high_damage = 0.3
+
+	#Optional spray motion scaling based on target health after the hit.
+	[hit_dispersion.health_motion]
+		#If true, spray strength and spread use the health points below.
+		enable_health_motion_scaling = true
+		#Sets the low health point for blood spray (0 – 1 = 0% – 100% health left after the hit).
+		#At or below this point, the low values are used.
+		#Range: 0.0 ~ 1.0
+		low_health_fraction = 0.2
+		#Sets the middle health point for blood spray (0 – 1 = 0% – 100% health left after the hit).
+		#Around this point, the middle values are used.
+		#Range: 0.0 ~ 1.0
+		mid_health_fraction = 0.5
+		#Sets the high health point for blood spray (0 – 1 = 0% – 100% health left after the hit).
+		#At or above this point, the high values are used.
+		#Range: 0.0 ~ 1.0
+		high_health_fraction = 1.0
+		#Sets spray strength at low health (0 – 500%).
+		#100% keeps it unchanged.
+		#Range: 0.0 ~ 500.0
+		force_at_low_percent = 125.0
+		#Sets spray strength at middle health (0 – 500%).
+		#100% keeps it unchanged.
+		#Range: 0.0 ~ 500.0
+		force_at_mid_percent = 85.0
+		#Sets spray strength at high health (0 – 500%).
+		#100% keeps it unchanged.
+		#Range: 0.0 ~ 500.0
+		force_at_high_percent = 65.0
+		#Sets horizontal spread at low health (0 – 500%).
+		#100% keeps it unchanged.
+		#Range: 0.0 ~ 500.0
+		cone_range_at_low_percent = 155.0
+		#Sets horizontal spread at middle health (0 – 500%).
+		#100% keeps it unchanged.
+		#Range: 0.0 ~ 500.0
+		cone_range_at_mid_percent = 95.0
+		#Sets horizontal spread at high health (0 – 500%).
+		#100% keeps it unchanged.
+		#Range: 0.0 ~ 500.0
+		cone_range_at_high_percent = 60.0
+		#Sets vertical spread at low health (0 – 500%).
+		#100% keeps it unchanged.
+		#Range: 0.0 ~ 500.0
+		y_cone_range_at_low_percent = 130.0
+		#Sets vertical spread at middle health (0 – 500%).
+		#100% keeps it unchanged.
+		#Range: 0.0 ~ 500.0
+		y_cone_range_at_mid_percent = 90.0
+		#Sets vertical spread at high health (0 – 500%).
+		#100% keeps it unchanged.
+		#Range: 0.0 ~ 500.0
+		y_cone_range_at_high_percent = 65.0
+
+#Particle size, count, health fraction scaling, damage scaling and fading.
+[particle_settings]
+	#Sets when particles start to fade (0 – 1 = 0% – 100% of their lifetime).
+	#At 1, they stay visible until they expire.
+	#MAGIC, SLIMY and CLOTTED use separate timing until they enter water or lava.
+	#Range: 0.0 ~ 1.0
+	start_fade = 0.15
+	#Sets which MAGIC blood particles blink:
+	#
+	#BOTH = Flying particles and settled stains blink.
+	#GROUND = Only settled stains blink.
+	#FLYING = Only flying particles blink.
+	#NONE = Disables blinking.
+	#Allowed Values: BOTH, GROUND, FLYING, NONE
+	magic_blinking = "BOTH"
+
+	#Particle size scaling by entity size and health fraction.
+	[particle_settings.size]
+		#If true, particle size follows the shared health fraction points.
+		enable_size_reduction = true
+		#Sets particle size for small entities (0 – 500%).
+		#100% keeps it unchanged.
+		#Range: 0.0 ~ 500.0
+		small_size_percent = 85.0
+		#Sets particle size for medium entities (0 – 500%).
+		#100% keeps it unchanged.
+		#Range: 0.0 ~ 500.0
+		medium_size_percent = 100.0
+		#Sets particle size for large entities (0 – 500%).
+		#100% keeps it unchanged.
+		#Range: 0.0 ~ 500.0
+		large_size_percent = 130.0
+		#Sets particle size at low health (0 – 500%).
+		#100% keeps it unchanged.
+		#Range: 0.0 ~ 500.0
+		size_at_low_percent = 130.0
+		#Sets particle size at middle health (0 – 500%).
+		#100% keeps it unchanged.
+		#Range: 0.0 ~ 500.0
+		size_at_mid_percent = 95.0
+		#Sets particle size at high health (0 – 500%).
+		#100% keeps it unchanged.
+		#Range: 0.0 ~ 500.0
+		size_at_high_percent = 75.0
+
+	#Particle count scaling by entity size and health fraction.
+	[particle_settings.count]
+		#If true, particle count follows the shared health fraction points.
+		enable_count_reduction = true
+		#Sets particle count for small entities (0 – 500%).
+		#100% keeps it unchanged.
+		#Range: 0.0 ~ 500.0
+		small_count_percent = 80.0
+		#Sets particle count for medium entities (0 – 500%).
+		#100% keeps it unchanged.
+		#Range: 0.0 ~ 500.0
+		medium_count_percent = 100.0
+		#Sets particle count for large entities (0 – 500%).
+		#100% keeps it unchanged.
+		#Range: 0.0 ~ 500.0
+		large_count_percent = 120.0
+		#Sets particle count at low health (0 – 500%).
+		#100% keeps it unchanged.
+		#Range: 0.0 ~ 500.0
+		count_at_low_percent = 180.0
+		#Sets particle count at middle health (0 – 500%).
+		#100% keeps it unchanged.
+		#Range: 0.0 ~ 500.0
+		count_at_mid_percent = 100.0
+		#Sets particle count at high health (0 – 500%).
+		#100% keeps it unchanged.
+		#Range: 0.0 ~ 500.0
+		count_at_high_percent = 55.0
+
+	#Shared health fraction points used by size and count scaling.
+	[particle_settings.life_fraction]
+		#Sets the low health point for particle size and count (0 – 1 = 0% – 100% health left after the hit).
+		#At or below this point, the low values are used.
+		#Range: 0.0 ~ 1.0
+		low_health_fraction = 0.2
+		#Sets the middle health point for particle size and count (0 – 1 = 0% – 100% health left after the hit).
+		#Around this point, the middle values are used.
+		#Range: 0.0 ~ 1.0
+		mid_health_fraction = 0.5
+		#Sets the high health point for particle size and count (0 – 1 = 0% – 100% health left after the hit).
+		#At or above this point, the high values are used.
+		#Range: 0.0 ~ 1.0
+		high_health_fraction = 1.0
+
+	#Scales particle size and count by damage dealt.
+	[particle_settings.damage_response]
+		#When disabled, damage does not change particle size or count.
+		enable_damage_scaling = true
+		#Low damage tier in health points. Around this value, the low damage size/count percents are used. Default: 1.
+		#Range: 0.0 ~ 10000.0
+		low_damage_amount = 1.0
+		#Medium damage tier in health points. Around this value, the medium damage percents are used. Default: 4.
+		#Range: 0.0 ~ 10000.0
+		medium_damage_amount = 4.0
+		#High damage tier in health points. At or above this value, the high damage size/count percents are used. Default: 7.
+		#Range: 0.0 ~ 10000.0
+		high_damage_amount = 7.0
+		#Sets particle size at low damage (0 – 500%).
+		#100% keeps it unchanged.
+		#Range: 0.0 ~ 500.0
+		size_at_low_damage_percent = 80.0
+		#Sets particle size at medium damage (0 – 500%).
+		#100% keeps it unchanged.
+		#Range: 0.0 ~ 500.0
+		size_at_medium_damage_percent = 100.0
+		#Sets particle size at high damage (0 – 500%).
+		#100% keeps it unchanged.
+		#Range: 0.0 ~ 500.0
+		size_at_high_damage_percent = 120.0
+		#Sets particle count at low damage (0 – 500%).
+		#100% keeps it unchanged.
+		#Range: 0.0 ~ 500.0
+		count_at_low_damage_percent = 15.0
+		#Sets particle count at medium damage (0 – 500%).
+		#100% keeps it unchanged.
+		#Range: 0.0 ~ 500.0
+		count_at_medium_damage_percent = 50.0
+		#Sets particle count at high damage (0 – 500%).
+		#100% keeps it unchanged.
+		#Range: 0.0 ~ 500.0
+		count_at_high_damage_percent = 90.0
+
+#Particle limits and rendering options.
+[performance]
+
+	#Particle updates, rendering, limits and surface size.
+	[performance.general]
+		#Sets how often blood visuals update. Particle motion is unchanged.
+		#
+		#DETAILED = Updates every tick.
+		#BALANCED = Updates every 2 ticks.
+		#AUTO = Uses BALANCED with Fast graphics, otherwise DETAILED.
+		#Allowed Values: DETAILED, BALANCED, AUTO
+		update_quality = "AUTO"
+		#Without shaders, shows underwater blood from above.
+		#With shaders, enables enhanced water rendering.
+		water_rendering = true
+		#Improves blood visibility through glass and other translucent blocks.
+		#Disable for better performance.
+		glass_rendering = false
+		#Allows blood to spread down block sides.
+		edge_continuation = true
+		#Maximum number of active blood particles without shaders.
+		#Range: 100 ~ 8192
+		maximum_blood_particles = 1500
+		#Maximum number of active blood particles with shaders.
+		#Range: 100 ~ 8192
+		maximum_blood_particles_with_shaders = 500
+		#Allows blood to grow gradually on surfaces.
+		liquid_blood_expansion = true
+		#Allows CLOTTED blood to shrink gradually on surfaces.
+		clotted_shrinking = true
+
+	#Reduces distant blood detail. Does not affect MAGIC blood.
+	[performance.distance_lod]
+		#Keeps full detail up to this distance in blocks.
+		#Range: 0.0 ~ 512.0
+		full_quality_blocks = 20.0
+		#Uses reduced detail beyond this distance in blocks.
+		#Range: 0.0 ~ 512.0
+		first_reduction_blocks = 25.0
+		#Uses low detail beyond this distance in blocks.
+		#Range: 0.0 ~ 512.0
+		second_reduction_blocks = 30.0
+		#Hides blood beyond this distance in blocks.
+		#Range: 1.0 ~ 512.0
+		hide_blocks = 40.0
+
+#Which entities and damage types can spawn blood.
+[blood_filters]
+
+	#Which entities are allowed to spawn blood.
+	[blood_filters.targets]
+		#Allows players to spawn blood.
+		include_players = true
+		#Sets how Entity List filters blood:
+		#
+		#NONE = Ignores the list.
+		#BLACKLIST = Blocks listed entities.
+		#WHITELIST = Allows only listed entities.
+		#Allowed Values: NONE, BLACKLIST, WHITELIST
+		list_mode = "NONE"
+		#Entity registry names used by the selected list mode.
+		#Examples: minecraft:player, minecraft:zombie, modid:your_entity.
+		entity_list = []
+
+	#Special damage type toggles.
+	[blood_filters.damage_types]
+		#Allows blood from fire, lava and hot floor damage.
+		fire = false
+		#Allows blood from drowning damage.
+		drowning = false
+		#Allows blood from suffocation damage.
+		suffocation = false
+		#Allows blood from cactus damage.
+		cactus = true
+		#Allows blood from effects such as poison, instant damage, wither, dragon breath and starvation.
+		effects = true
+		#Allows blood from explosion damage.
+		explosion = true
+		#Allows blood from falls, wall impacts, anvils and falling blocks.
+		fall = true
+		#Allows blood from lightning damage.
+		lightning = false
+		#Allows blood from void damage.
+		void = true
+
+#How blood behaves on ground, water, walls, ceilings and hot blocks.
+[surface_behavior]
+
+	#Floor and ground puddle behavior.
+	[surface_behavior.ground]
+		#Randomly rotates ground stains. Disable to keep them aligned.
+		surface_rotation = true
+		#Allows blood on passable blocks shaped like a single snow layer: a full square, 1/8 block high. Other passable blocks are skipped.
+		passable_block_collision = true
+		#Allows nearby floor blood to merge into larger puddles.
+		ground_amalgamation = true
+		#Minimum floor and ceiling stain size.
+		#Range: 0.0 ~ 5.0
+		ground_spread_min = 0.85
+		#Maximum floor and ceiling stain size.
+		#Range: 0.0 ~ 5.0
+		ground_spread_max = 1.25
+
+	#Blood spreading and amalgamation behavior on water surfaces.
+	[surface_behavior.water]
+		#Randomly rotates water stains. Disable to keep them aligned.
+		surface_rotation = true
+		#Allows nearby blood on water surfaces to merge into larger pools.
+		water_amalgamation = true
+		#Minimum blood spread size on water surfaces.
+		#Range: 0.0 ~ 5.0
+		water_spread_min = 0.85
+		#Maximum blood spread size on water surfaces.
+		#Range: 0.0 ~ 5.0
+		water_spread_max = 1.25
+
+	#Wall blood behavior and block filters.
+	[surface_behavior.wall]
+		#Allows blood to hang and drip from block edges.
+		block_edge_drip = true
+		#Allows blood to drip from walls.
+		standard_drip = true
+		#Allows nearby wall blood to merge into larger stains.
+		wall_amalgamation = true
+		#Minimum wall stain length.
+		#Range: 0.0 ~ 5.0
+		wall_stretch_min = 0.75
+		#Maximum wall stain length.
+		#Range: 0.0 ~ 5.0
+		wall_stretch_max = 1.35
+		#Wall sliding speed (0 – 1 = 0% – 100%). Set to 0 to disable it.
+		#Range: 0.0 ~ 1.0
+		wall_slide_speed = 0.03
+		#Sets which blocks allow wall and ceiling drips:
+		#
+		#NONE = Ignores the list.
+		#BLACKLIST = Blocks drips on listed blocks.
+		#WHITELIST = Allows drips only on listed blocks.
+		#Allowed Values: NONE, BLACKLIST, WHITELIST
+		wall_block_list_mode = "NONE"
+		#Blocks used to filter wall and ceiling drips.
+		wall_block_list = []
+
+	#Ceiling blood behavior and block filters.
+	[surface_behavior.ceiling]
+		#Allows blood to hang and drip from ceilings.
+		ceiling_drip = true
+		#Allows supported blood styles to stick to ceilings.
+		ceiling_stick = true
+		#Sets which blocks allow ceiling attachment:
+		#
+		#NONE = Ignores the list.
+		#BLACKLIST = Blocks attachment to listed blocks.
+		#WHITELIST = Allows attachment only to listed blocks.
+		#Allowed Values: NONE, BLACKLIST, WHITELIST
+		ceiling_block_list_mode = "NONE"
+		#Block registry names used by the selected ceiling list mode.
+		#Examples: minecraft:stone, minecraft:white_concrete, modid:your_block.
+		ceiling_block_list = []
+
+	#Blood behavior on hot blocks and lava.
+	[surface_behavior.hot_blocks]
+		#Makes listed blocks affect blood like lava.
+		enabled = true
+		#Sets how often blood jumps on lava and hot blocks (0 – 500%).
+		#100% keeps the normal frequency. Set to 0 to disable these jumps.
+		#Range: 0.0 ~ 500.0
+		jump_frequency_percent = 100.0
+		#Block registry names treated as hot.
+		#Examples: minecraft:magma_block, minecraft:lava, modid:heated_block.
+		hot_block_list = ["minecraft:magma_block"]
+

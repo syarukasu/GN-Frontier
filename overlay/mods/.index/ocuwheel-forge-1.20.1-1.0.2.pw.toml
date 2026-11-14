@@ -1,0 +1,15 @@
+filename = "ocuwheel-forge-1.20.1-1.0.2.jar"
+name = "Ocuwheel - Iris & Oculus Flywheel Compat for Create"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "4cf4597fb3a64408377b504ff648d75cf1288d0d98fa1a562bbb711285684d0a"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/8989/714/ocuwheel-forge-1.20.1-1.0.2.jar"
+
+[update.curseforge]
+file-id = 8989714
+project-id = 1655478

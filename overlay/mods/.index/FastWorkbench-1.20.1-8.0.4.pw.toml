@@ -1,0 +1,15 @@
+filename = "FastWorkbench-1.20.1-8.0.4.jar"
+name = "FastWorkbench"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "86d20c6879bf86ef76b3fd94998d3e5c3327acb5d5324b6eb0b5348354766620"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/5101/229/FastWorkbench-1.20.1-8.0.4.jar"
+
+[update.curseforge]
+file-id = 5101229
+project-id = 288885

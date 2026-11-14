@@ -1,0 +1,86 @@
+{
+  "calculator": {
+    "internalName": "calculator",
+    "displayName": "電卓",
+    "description": "標準搭載のアプリ。",
+    "version": "1.0"
+  },
+  "settings": {
+    "internalName": "settings",
+    "displayName": "設定",
+    "description": "標準搭載のアプリ。",
+    "version": "1.0"
+  },
+  "notes": {
+    "internalName": "notes",
+    "displayName": "メモ",
+    "description": "簡単なメモを残すためのアプリ。",
+    "version": "1.0"
+  },
+  "marketplace": {
+    "internalName": "marketplace",
+    "displayName": "アプリ配布所",
+    "description": "標準搭載のアプリ。",
+    "version": "1.0"
+  },
+  "notepad": {
+    "internalName": "notepad",
+    "displayName": "メモ帳",
+    "description": "標準搭載のアプリ。",
+    "version": "1.0"
+  },
+  "paint": {
+    "internalName": "paint",
+    "displayName": "お絵描き",
+    "description": "標準搭載のアプリ。",
+    "version": "1.0"
+  },
+  "terminal": {
+    "internalName": "terminal",
+    "displayName": "端末",
+    "description": "システムのコマンドを実行する端末。Networkingアドオンが必要。",
+    "version": "1.0"
+  },
+  "example": {
+    "internalName": "example",
+    "displayName": "見本アプリ",
+    "description": "追加アプリの見本。",
+    "version": "1.0"
+  },
+  "messenger": {
+    "internalName": "messenger",
+    "displayName": "通信",
+    "description": "メッセージをやり取りする通信アプリ。",
+    "version": "1.0"
+  },
+  "geometry dash": {
+    "internalName": "geometry dash",
+    "displayName": "Geometry Dash",
+    "description": "リズムに合わせて障害物を飛び越えるゲーム。",
+    "version": "1.0"
+  },
+  "weather": {
+    "internalName": "weather",
+    "displayName": "気象情報",
+    "description": "現在の天気と予報を確認する。",
+    "version": "1.0"
+  },
+  "files": {
+    "internalName": "files",
+    "displayName": "ファイル",
+    "description": "標準搭載のアプリ。",
+    "version": "1.0"
+  },
+  "home security": {
+    "internalName": "home security",
+    "displayName": "拠点の警備",
+    "description": "監視カメラと警備装置を確認する。専用アドオンが必要。",
+    "version": "1.0"
+  },
+  "sftp": {
+    "internalName": "sftp",
+    "displayName": "SFTP",
+    "description": "SFTPサーバーと安全にファイルを転送する。Networkingアドオンが必要。",
+    "version": "1.0"
+  }
+}

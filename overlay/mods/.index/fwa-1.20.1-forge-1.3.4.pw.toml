@@ -1,0 +1,15 @@
+filename = "fwa-1.20.1-forge-1.3.4.jar"
+name = "Fancy World Animations"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "8902547bf11f91a3a60062f72a54686578a3d74122f7528e35c2c7bdc424e5a7"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/9396/654/fwa-1.20.1-forge-1.3.4.jar"
+
+[update.curseforge]
+file-id = 9396654
+project-id = 1452982

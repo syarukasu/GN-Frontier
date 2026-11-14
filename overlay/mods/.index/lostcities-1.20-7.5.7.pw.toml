@@ -1,0 +1,15 @@
+filename = "lostcities-1.20-7.5.7.jar"
+name = "The Lost Cities"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "1a473ca9e7a1040d5e3b402a42eddd7b2fc34a5f270f9c6d0c604f0c0faa8009"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/9055/133/lostcities-1.20-7.5.7.jar"
+
+[update.curseforge]
+file-id = 9055133
+project-id = 269024

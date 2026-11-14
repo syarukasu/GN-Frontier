@@ -1,0 +1,15 @@
+filename = "BadOptimizations-2.4.1-1.20.1.jar"
+name = "BadOptimizations"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "3da53cdf856757d9ec7df0be86bc23b2c7d67a019b490f8f64317d4d9b77cac8"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/7338/200/BadOptimizations-2.4.1-1.20.1.jar"
+
+[update.curseforge]
+file-id = 7338200
+project-id = 949555

@@ -1,0 +1,56 @@
+# SEM Patrol Control v1.2.1
+# Addon for [SEM] Simple Enemy Mod 1.20.1-0.1.6-beta-hotfix.
+# Controls the military_patrol scheduler and can enforce a hard global cap
+# on hostile RU/US soldiers spawned by any Simple Enemy system.
+
+[general]
+# Master switch for this addon scheduler.
+enabled = true
+
+# Recommended: true. Disables Simple Enemy's RANDOM military_patrol scheduler
+# while keeping the patrol event available for this addon to trigger manually.
+disableNativePatrols = true
+
+# GLOBAL = one shared timer for the whole server.
+# PER_PLAYER = each online player has an independent timer.
+spawnMode = "GLOBAL"
+
+[schedule]
+# Delay after the first player is available before the first patrol cycle.
+initialDelayMinutes = 5.0
+
+# A new cycle is scheduled randomly between these two values.
+# Set both to the same number for an exact fixed interval.
+minIntervalMinutes = 10.0
+maxIntervalMinutes = 15.0
+
+[patrols]
+# Number of separate patrol events requested each cycle.
+minPatrolsPerCycle = 1
+maxPatrolsPerCycle = 2
+
+# True global patrol cap for this server session. Patrols remain counted across chunk unloads until their tracked members are actually removed.
+maxActivePatrols = 3
+
+# 0 = no per-player cap. Useful mainly with PER_PLAYER mode.
+maxActivePatrolsPerPlayer = 0
+
+
+[size]
+# Simple Enemy adds ONE squad leader in addition to this soldier count.
+# Example 3-5 = 3..5 soldiers + 1 leader = 4..6 NPCs total.
+minSoldiers = 3
+maxSoldiers = 5
+
+[population]
+# Hard global control for hostile Simple Enemy soldiers (RU/US only).
+# Applies to Patrol, Combat, Cave, Village Garrison and other SEM spawn paths.
+# PMC/recruit units are intentionally excluded.
+enforceGlobalSoldierLimit = true
+
+# Maximum hostile RU/US soldiers tracked across loaded and unloaded chunks.
+maxActiveSoldiers = 18
+
+[advanced]
+# Simple Enemy may reject a spawn position. Retry a patrol this many times in the same cycle.
+maxSpawnAttemptsPerPatrol = 3

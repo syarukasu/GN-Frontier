@@ -1,0 +1,11 @@
+# New-world overrides; unspecified options use the installed mod's defaults.
+[projectile]
+allow_projectile_destroy_blocks = false
+[explosion]
+explosion_destroy = false
+extra_explosion_effect = false
+[vehicle.collision]
+collision_destroy_soft_blocks = false
+collision_destroy_normal_blocks = false
+collision_destroy_hard_blocks = false
+collision_destroy_blocks_beastly = false

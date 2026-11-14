@@ -1,0 +1,15 @@
+filename = "taczadditions-1.20.1-1.3.6.jar"
+name = "TaCZ: Additions"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "3b4889add9db773fd31967ee8257fc89a3f298f3c0f6596263ba79f686b0f88c"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/9250/498/taczadditions-1.20.1-1.3.6.jar"
+
+[update.curseforge]
+file-id = 9250498
+project-id = 1356005

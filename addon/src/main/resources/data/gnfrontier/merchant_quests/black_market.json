@@ -1,0 +1,195 @@
+{
+  "schema": 1,
+  "quests": [
+    {
+      "id": "black_contact",
+      "revision": 1,
+      "title": "quest.gnfrontier.black_contact.title",
+      "description": "quest.gnfrontier.black_contact.description",
+      "requires": [],
+      "reputation": 10,
+      "reward": 300,
+      "reputation_reward": 5,
+      "items": [
+        {
+          "item": "gnfrontier:metal_scrap",
+          "count": 24
+        },
+        {
+          "item": "survival_instinct:cloth",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": "black_relief",
+      "revision": 1,
+      "title": "quest.gnfrontier.black_relief.title",
+      "description": "quest.gnfrontier.black_relief.description",
+      "requires": [
+        "black_contact"
+      ],
+      "reputation": 15,
+      "reward": 600,
+      "reputation_reward": 5,
+      "items": [
+        {
+          "item": "survival_instinct:bandage",
+          "count": 6
+        },
+        {
+          "item": "survival_instinct:mre",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": "black_power",
+      "revision": 1,
+      "title": "quest.gnfrontier.black_power.title",
+      "description": "quest.gnfrontier.black_power.description",
+      "requires": [
+        "black_relief"
+      ],
+      "reputation": 20,
+      "reward": 700,
+      "reputation_reward": 5,
+      "items": [
+        {
+          "item": "tfmg:copper_wire",
+          "count": 16
+        },
+        {
+          "item": "gnfrontier:aluminum_scrap",
+          "count": 8
+        },
+        {
+          "item": "survival_instinct:batteries",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": "black_steel",
+      "revision": 1,
+      "title": "quest.gnfrontier.black_steel.title",
+      "description": "quest.gnfrontier.black_steel.description",
+      "requires": [
+        "black_power"
+      ],
+      "reputation": 25,
+      "reward": 1000,
+      "reputation_reward": 5,
+      "items": [
+        {
+          "item": "tfmg:steel_ingot",
+          "count": 16
+        },
+        {
+          "item": "gnfrontier:chromium_concentrate",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": "black_circuits",
+      "revision": 1,
+      "title": "quest.gnfrontier.black_circuits.title",
+      "description": "quest.gnfrontier.black_circuits.description",
+      "requires": [
+        "black_steel"
+      ],
+      "reputation": 30,
+      "reward": 1300,
+      "reputation_reward": 5,
+      "items": [
+        {
+          "item": "survival_instinct:electronic_scrap",
+          "count": 16
+        },
+        {
+          "item": "hbm_m:advanced_circuit",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": "black_computers",
+      "revision": 1,
+      "title": "quest.gnfrontier.black_computers.title",
+      "description": "quest.gnfrontier.black_computers.description",
+      "requires": [
+        "black_circuits"
+      ],
+      "reputation": 35,
+      "reward": 1800,
+      "reputation_reward": 5,
+      "items": [
+        {
+          "item": "gnfrontier:cpu_i5_2500k",
+          "count": 1
+        },
+        {
+          "item": "gnfrontier:gpu_gtx_480",
+          "count": 1
+        },
+        {
+          "item": "superbwarfare:intelligent_chip",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": "black_workshop",
+      "revision": 1,
+      "title": "quest.gnfrontier.black_workshop.title",
+      "description": "quest.gnfrontier.black_workshop.description",
+      "requires": [
+        "black_computers"
+      ],
+      "reputation": 40,
+      "reward": 2400,
+      "reputation_reward": 5,
+      "items": [
+        {
+          "item": "create:precision_mechanism",
+          "count": 2
+        },
+        {
+          "item": "tfmg:steel_ingot",
+          "count": 24
+        },
+        {
+          "item": "create:iron_sheet",
+          "count": 16
+        }
+      ]
+    },
+    {
+      "id": "black_bulk_order",
+      "revision": 1,
+      "title": "quest.gnfrontier.black_bulk_order.title",
+      "description": "quest.gnfrontier.black_bulk_order.description",
+      "requires": [
+        "black_workshop"
+      ],
+      "reputation": 45,
+      "reward": 3500,
+      "reputation_reward": 10,
+      "items": [
+        {
+          "item": "gnfrontier:gas_filter",
+          "count": 8
+        },
+        {
+          "item": "survival_instinct:bandage",
+          "count": 12
+        },
+        {
+          "item": "survival_instinct:batteries",
+          "count": 16
+        }
+      ]
+    }
+  ]
+}

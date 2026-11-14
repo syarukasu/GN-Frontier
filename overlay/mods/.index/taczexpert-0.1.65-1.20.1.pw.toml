@@ -1,0 +1,15 @@
+filename = "taczexpert-0.1.65-1.20.1.jar"
+name = "TaCZ Expert"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "072f7be25b99e1e74bbe47453877a8afbf9e01167a8004e2a87cd43470e5bdf2"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/9493/606/taczexpert-0.1.65-1.20.1.jar"
+
+[update.curseforge]
+file-id = 9493606
+project-id = 1722241

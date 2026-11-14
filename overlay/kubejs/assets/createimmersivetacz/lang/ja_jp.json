@@ -1,0 +1,18 @@
+{
+  "item.createimmersivetacz.primer": "銃用雷管",
+  "block.createimmersivetacz.test_block": "試験用ブロック",
+  "fluid_type.createimmersivetacz.gunpowder_fluid": "液状火薬",
+  "fluid_type.createimmersivetacz.nitropowder_fluid": "液状ニトロ火薬",
+  "item.createimmersivetacz.40mmhe_casing": "40mm榴弾の薬莢",
+  "item.createimmersivetacz.firing_mechanism": "撃発機構",
+  "item.createimmersivetacz.gernade_casing": "空気圧手榴弾の外殻",
+  "item.createimmersivetacz.gun_trigger": "引き金機構",
+  "item.createimmersivetacz.gunbarrel": "銃身",
+  "item.createimmersivetacz.gunpowder_bucket": "液状火薬入りバケツ",
+  "item.createimmersivetacz.incomplete_twelve_gauge_shell": "12番散弾の薬莢（製作途中）",
+  "item.createimmersivetacz.nitropowder_bucket": "液状ニトロ火薬入りバケツ",
+  "item.createimmersivetacz.pneumatic_pistol_casing": "空気圧拳銃の筐体",
+  "item.createimmersivetacz.rimmed_blunt_ap_casing": "リム付き鈍頭徹甲弾の薬莢",
+  "item.createimmersivetacz.slap_casing": "SLAP弾の薬莢",
+  "item.createimmersivetacz.twelve_gauge_shell": "12番散弾の薬莢"
+}

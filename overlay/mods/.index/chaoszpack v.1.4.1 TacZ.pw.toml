@@ -1,0 +1,15 @@
+filename = "chaoszpack v.1.4.1 TacZ.jar"
+name = "ChaosZPack [Lost Cities] Better Cities / Zombie Apocalypse /  Abandoned Structures / TacZ"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "62e8db0ab3748e3dec0cb65467b73e444b4d444ffea2fc9c6ba37442568b5c0b"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/7801/45/chaoszpack%20v.1.4.1%20TacZ.jar"
+
+[update.curseforge]
+file-id = 7801045
+project-id = 1222668

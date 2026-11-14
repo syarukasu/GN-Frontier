@@ -1,0 +1,15 @@
+filename = "chaoscrafts_device_mod-1.9.0-beta-all.jar"
+name = "[CDM] ChaosCraft's Devices"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "e0081413bb7dc03a457a281c0719253e1d15191a2a91976b1d5477fa17e81371"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/8665/61/chaoscrafts_device_mod-1.9.0-beta-all.jar"
+
+[update.curseforge]
+file-id = 8665061
+project-id = 1344649

@@ -1,0 +1,3 @@
+{
+  "framework.gui.process_config_fail": "サーバーからの設定を処理できませんでした：%s"
+}

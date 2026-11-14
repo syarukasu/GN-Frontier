@@ -1,0 +1,7 @@
+#Controls how Doomsday Decoration blocks behave when players try to break them.
+#BREAKABLE: normal breaking and normal loot drops.
+#UNBREAKABLE: players cannot break the blocks.
+#DROP_NOTHING: blocks can be broken, but their block loot is removed.
+#Allowed Values: BREAKABLE, UNBREAKABLE, DROP_NOTHING
+blockBreakMode = "DROP_NOTHING"
+

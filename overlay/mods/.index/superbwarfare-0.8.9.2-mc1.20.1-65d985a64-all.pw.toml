@@ -1,0 +1,15 @@
+filename = "superbwarfare-0.8.9.2-mc1.20.1-65d985a64-all.jar"
+name = "[SBW] Superb Warfare"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "559930003f638080de648a8621821d785158768c3f69a762094ef4c8d3c4cc12"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/9019/882/superbwarfare-0.8.9.2-mc1.20.1-65d985a64-all.jar"
+
+[update.curseforge]
+file-id = 9019882
+project-id = 1218165

@@ -1,0 +1,12 @@
+{
+  "type": "gnfrontier:natural_chests",
+  "conditions": [],
+  "sources": [
+    "chaoszpack_lc_loot:chests/firestation",
+    "chaoszpack_lc_loot:chests/hospital",
+    "keerdm_zombie_essentials:chests/abandoned_car_emergency_tacz",
+    "survival_instinct:chests/fire_station",
+    "survival_instinct:chests/pharmacy_loot"
+  ],
+  "target": "gnfrontier:chests/medical"
+}

@@ -1,0 +1,15 @@
+filename = "TZP_1.20.1_2.7.zip"
+name = "TZP_1.20.1_2.7.zip"
+side = "client"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-release-type = "release"
+
+[download]
+hash-format = "sha256"
+hash = "aed1af48318a160f049fe8ac52d8445848de89eebc530c45dd5c0c5dc7af95bb"
+mode = "metadata:curseforge"
+url = ""
+
+[update.curseforge]
+file-id = 4750306
+project-id = 312822

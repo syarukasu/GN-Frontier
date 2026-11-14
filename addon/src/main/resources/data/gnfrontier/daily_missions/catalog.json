@@ -1,0 +1,1067 @@
+{
+  "schema": 1,
+  "templates": [
+    {
+      "id": "salvage_repairs",
+      "kind": "DELIVERY",
+      "merchant": "NEUTRAL",
+      "title": "{target}の買い付け",
+      "openings": [
+        {
+          "id": "p1",
+          "text": "手を貸してもらいたい。"
+        },
+        {
+          "id": "p2",
+          "text": "引き受けられる仕事を探しているなら、これを頼めるか。"
+        },
+        {
+          "id": "p3",
+          "text": "こちらで一件、人手が必要になった。"
+        },
+        {
+          "id": "p4",
+          "text": "少し厄介な用事が残っている。"
+        }
+      ],
+      "middles": [
+        {
+          "id": "p1",
+          "text": "傷んだ設備を補修したい。材料に使う{target}を{count}{unit}集めて納めてくれ。"
+        },
+        {
+          "id": "p2",
+          "text": "回収した部品を組み直している。足りない{target}を{count}{unit}届けてほしい。"
+        },
+        {
+          "id": "p3",
+          "text": "修理の仕事が溜まっている。{target}を{count}{unit}用意してくれ。"
+        },
+        {
+          "id": "p4",
+          "text": "予備の材料を使い切った。{target}を{count}{unit}補充したい。"
+        }
+      ],
+      "endings": [
+        {
+          "id": "p1",
+          "text": "条件を満たしたらPDAから報告してくれ。報酬は用意してある。"
+        },
+        {
+          "id": "p2",
+          "text": "引き受けるなら頼む。仕事が済んだら代金を渡す。"
+        },
+        {
+          "id": "p3",
+          "text": "無理のない範囲で構わない。済ませたら知らせてくれ。"
+        },
+        {
+          "id": "p4",
+          "text": "必要な仕事を片づけてくれれば、約束の額を払う。"
+        }
+      ],
+      "targets": [
+        {
+          "id": "scrap",
+          "label": "金属くず",
+          "counts": [
+            8,
+            12,
+            16,
+            24,
+            32,
+            40,
+            48,
+            64
+          ],
+          "unit": "個",
+          "unit_reward": 10,
+          "base_reward": 20,
+          "item": "gnfrontier:metal_scrap"
+        },
+        {
+          "id": "aluminum",
+          "label": "アルミくず",
+          "counts": [
+            4,
+            8,
+            12,
+            16,
+            24,
+            32
+          ],
+          "unit": "個",
+          "unit_reward": 18,
+          "base_reward": 40,
+          "item": "gnfrontier:aluminum_scrap"
+        },
+        {
+          "id": "iron_sheet",
+          "label": "鉄板",
+          "counts": [
+            4,
+            8,
+            12,
+            16,
+            24
+          ],
+          "unit": "枚",
+          "unit_reward": 25,
+          "base_reward": 40,
+          "item": "create:iron_sheet"
+        }
+      ]
+    },
+    {
+      "id": "medical_stock",
+      "kind": "DELIVERY",
+      "merchant": "NEUTRAL",
+      "title": "{target}の補充",
+      "openings": [
+        {
+          "id": "p1",
+          "text": "手を貸してもらいたい。"
+        },
+        {
+          "id": "p2",
+          "text": "引き受けられる仕事を探しているなら、これを頼めるか。"
+        },
+        {
+          "id": "p3",
+          "text": "こちらで一件、人手が必要になった。"
+        },
+        {
+          "id": "p4",
+          "text": "少し厄介な用事が残っている。"
+        }
+      ],
+      "middles": [
+        {
+          "id": "p1",
+          "text": "救護用の備蓄を補充している。{target}を{count}{unit}納めてほしい。"
+        },
+        {
+          "id": "p2",
+          "text": "次の巡回に持たせる物資が足りない。{target}を{count}{unit}用意してくれ。"
+        },
+        {
+          "id": "p3",
+          "text": "保管していた物資を使い切りそうだ。{target}が{count}{unit}必要になった。"
+        },
+        {
+          "id": "p4",
+          "text": "回収班から追加の注文が来た。{target}を{count}{unit}集めてくれ。"
+        }
+      ],
+      "endings": [
+        {
+          "id": "p1",
+          "text": "条件を満たしたらPDAから報告してくれ。報酬は用意してある。"
+        },
+        {
+          "id": "p2",
+          "text": "引き受けるなら頼む。仕事が済んだら代金を渡す。"
+        },
+        {
+          "id": "p3",
+          "text": "無理のない範囲で構わない。済ませたら知らせてくれ。"
+        },
+        {
+          "id": "p4",
+          "text": "必要な仕事を片づけてくれれば、約束の額を払う。"
+        }
+      ],
+      "targets": [
+        {
+          "id": "bandage",
+          "label": "消毒済みの包帯",
+          "counts": [
+            2,
+            4,
+            6,
+            8,
+            10,
+            12
+          ],
+          "unit": "個",
+          "unit_reward": 60,
+          "base_reward": 60,
+          "item": "survival_instinct:bandage"
+        },
+        {
+          "id": "cloth",
+          "label": "布",
+          "counts": [
+            4,
+            8,
+            12,
+            16,
+            24,
+            32
+          ],
+          "unit": "枚",
+          "unit_reward": 12,
+          "base_reward": 30,
+          "item": "survival_instinct:cloth"
+        },
+        {
+          "id": "mre",
+          "label": "携帯戦闘糧食",
+          "counts": [
+            2,
+            3,
+            4,
+            6,
+            8
+          ],
+          "unit": "個",
+          "unit_reward": 70,
+          "base_reward": 40,
+          "item": "survival_instinct:mre"
+        }
+      ]
+    },
+    {
+      "id": "power_repairs",
+      "kind": "DELIVERY",
+      "merchant": "EAST",
+      "title": "{target}の調達",
+      "openings": [
+        {
+          "id": "p1",
+          "text": "補給担当からの依頼だ。"
+        },
+        {
+          "id": "p2",
+          "text": "次の仕事を任せたい。"
+        },
+        {
+          "id": "p3",
+          "text": "こちらの作業が滞っている。力を借りたい。"
+        },
+        {
+          "id": "p4",
+          "text": "一件、引き受けてもらえるだろうか。"
+        }
+      ],
+      "middles": [
+        {
+          "id": "p1",
+          "text": "古い設備の電装を直している。{target}を{count}{unit}納めてほしい。"
+        },
+        {
+          "id": "p2",
+          "text": "補修用の在庫が底をついた。{target}を{count}{unit}補充したい。"
+        },
+        {
+          "id": "p3",
+          "text": "整備班から材料の追加要請が来ている。{target}を{count}{unit}頼む。"
+        },
+        {
+          "id": "p4",
+          "text": "回収した設備を動かす準備を進めている。{target}が{count}{unit}必要だ。"
+        }
+      ],
+      "endings": [
+        {
+          "id": "p1",
+          "text": "条件を満たしたらPDAから報告してくれ。報酬は用意してある。"
+        },
+        {
+          "id": "p2",
+          "text": "引き受けるなら頼む。仕事が済んだら代金を渡す。"
+        },
+        {
+          "id": "p3",
+          "text": "無理のない範囲で構わない。済ませたら知らせてくれ。"
+        },
+        {
+          "id": "p4",
+          "text": "必要な仕事を片づけてくれれば、約束の額を払う。"
+        }
+      ],
+      "targets": [
+        {
+          "id": "wire",
+          "label": "銅のワイヤー",
+          "counts": [
+            8,
+            12,
+            16,
+            24,
+            32,
+            48
+          ],
+          "unit": "本",
+          "unit_reward": 15,
+          "base_reward": 60,
+          "item": "tfmg:copper_wire"
+        },
+        {
+          "id": "electronic_scrap",
+          "label": "電子部品のくず",
+          "counts": [
+            4,
+            8,
+            12,
+            16,
+            24
+          ],
+          "unit": "個",
+          "unit_reward": 30,
+          "base_reward": 60,
+          "item": "survival_instinct:electronic_scrap"
+        }
+      ]
+    },
+    {
+      "id": "steel_orders",
+      "kind": "DELIVERY",
+      "merchant": "EAST",
+      "title": "{target}の納入",
+      "openings": [
+        {
+          "id": "p1",
+          "text": "補給担当からの依頼だ。"
+        },
+        {
+          "id": "p2",
+          "text": "次の仕事を任せたい。"
+        },
+        {
+          "id": "p3",
+          "text": "こちらの作業が滞っている。力を借りたい。"
+        },
+        {
+          "id": "p4",
+          "text": "一件、引き受けてもらえるだろうか。"
+        }
+      ],
+      "middles": [
+        {
+          "id": "p1",
+          "text": "整備用の部材を作る。{target}を{count}{unit}調達してくれ。"
+        },
+        {
+          "id": "p2",
+          "text": "傷んだ架台を作り直したい。{target}を{count}{unit}納めてほしい。"
+        },
+        {
+          "id": "p3",
+          "text": "工房でまとまった材料が必要になった。{target}を{count}{unit}頼む。"
+        },
+        {
+          "id": "p4",
+          "text": "補修材料を先にそろえておきたい。{target}を{count}{unit}届けてくれ。"
+        }
+      ],
+      "endings": [
+        {
+          "id": "p1",
+          "text": "条件を満たしたらPDAから報告してくれ。報酬は用意してある。"
+        },
+        {
+          "id": "p2",
+          "text": "引き受けるなら頼む。仕事が済んだら代金を渡す。"
+        },
+        {
+          "id": "p3",
+          "text": "無理のない範囲で構わない。済ませたら知らせてくれ。"
+        },
+        {
+          "id": "p4",
+          "text": "必要な仕事を片づけてくれれば、約束の額を払う。"
+        }
+      ],
+      "targets": [
+        {
+          "id": "steel",
+          "label": "鋼鉄インゴット",
+          "counts": [
+            4,
+            8,
+            12,
+            16,
+            24,
+            32
+          ],
+          "unit": "個",
+          "unit_reward": 75,
+          "base_reward": 50,
+          "item": "tfmg:steel_ingot"
+        },
+        {
+          "id": "iron_sheet",
+          "label": "鉄板",
+          "counts": [
+            8,
+            12,
+            16,
+            24,
+            32
+          ],
+          "unit": "枚",
+          "unit_reward": 25,
+          "base_reward": 50,
+          "item": "create:iron_sheet"
+        }
+      ]
+    },
+    {
+      "id": "patrol_supplies",
+      "kind": "DELIVERY",
+      "merchant": "WEST",
+      "title": "{target}の備蓄",
+      "openings": [
+        {
+          "id": "p1",
+          "text": "仕事の話だ。"
+        },
+        {
+          "id": "p2",
+          "text": "手が空いているなら、この件を頼みたい。"
+        },
+        {
+          "id": "p3",
+          "text": "こちらだけでは手が回らなくなった。"
+        },
+        {
+          "id": "p4",
+          "text": "必要な仕事がもう一つある。"
+        }
+      ],
+      "middles": [
+        {
+          "id": "p1",
+          "text": "巡回班に持たせる備品を補充したい。{target}を{count}{unit}納めてくれ。"
+        },
+        {
+          "id": "p2",
+          "text": "次の輸送に備えて物資を集めている。{target}が{count}{unit}不足している。"
+        },
+        {
+          "id": "p3",
+          "text": "遠出する連中から注文が来ている。{target}を{count}{unit}用意してほしい。"
+        },
+        {
+          "id": "p4",
+          "text": "予備の物資が少なくなってきた。{target}を{count}{unit}補充してくれ。"
+        }
+      ],
+      "endings": [
+        {
+          "id": "p1",
+          "text": "条件を満たしたらPDAから報告してくれ。報酬は用意してある。"
+        },
+        {
+          "id": "p2",
+          "text": "引き受けるなら頼む。仕事が済んだら代金を渡す。"
+        },
+        {
+          "id": "p3",
+          "text": "無理のない範囲で構わない。済ませたら知らせてくれ。"
+        },
+        {
+          "id": "p4",
+          "text": "必要な仕事を片づけてくれれば、約束の額を払う。"
+        }
+      ],
+      "targets": [
+        {
+          "id": "battery",
+          "label": "電池",
+          "counts": [
+            2,
+            4,
+            6,
+            8,
+            12,
+            16
+          ],
+          "unit": "個",
+          "unit_reward": 50,
+          "base_reward": 40,
+          "item": "survival_instinct:batteries"
+        },
+        {
+          "id": "filter",
+          "label": "ガスマスク用フィルター",
+          "counts": [
+            1,
+            2,
+            3,
+            4,
+            6
+          ],
+          "unit": "個",
+          "unit_reward": 100,
+          "base_reward": 80,
+          "item": "gnfrontier:gas_filter"
+        },
+        {
+          "id": "mre",
+          "label": "携帯戦闘糧食",
+          "counts": [
+            2,
+            4,
+            6,
+            8,
+            12
+          ],
+          "unit": "個",
+          "unit_reward": 70,
+          "base_reward": 40,
+          "item": "survival_instinct:mre"
+        }
+      ]
+    },
+    {
+      "id": "electronics_orders",
+      "kind": "DELIVERY",
+      "merchant": "BLACK",
+      "title": "{target}の仕入れ",
+      "openings": [
+        {
+          "id": "p1",
+          "text": "あんたに回せそうな仕事が入った。"
+        },
+        {
+          "id": "p2",
+          "text": "買い手がついた。引き受ける気はあるか。"
+        },
+        {
+          "id": "p3",
+          "text": "一件、仕事を頼みたい。"
+        },
+        {
+          "id": "p4",
+          "text": "いつもの取引とは別に頼みがある。"
+        }
+      ],
+      "middles": [
+        {
+          "id": "p1",
+          "text": "中古設備の修理屋から注文が入った。{target}を{count}{unit}持ってきてくれ。"
+        },
+        {
+          "id": "p2",
+          "text": "部品取り用の在庫を増やしたい。{target}を{count}{unit}仕入れる。"
+        },
+        {
+          "id": "p3",
+          "text": "買い手が修理用の部品を探している。{target}を{count}{unit}用意できるか。"
+        },
+        {
+          "id": "p4",
+          "text": "次の取引までに材料をそろえたい。{target}を{count}{unit}納めてくれ。"
+        }
+      ],
+      "endings": [
+        {
+          "id": "p1",
+          "text": "条件を満たしたらPDAから報告してくれ。報酬は用意してある。"
+        },
+        {
+          "id": "p2",
+          "text": "引き受けるなら頼む。仕事が済んだら代金を渡す。"
+        },
+        {
+          "id": "p3",
+          "text": "無理のない範囲で構わない。済ませたら知らせてくれ。"
+        },
+        {
+          "id": "p4",
+          "text": "必要な仕事を片づけてくれれば、約束の額を払う。"
+        }
+      ],
+      "targets": [
+        {
+          "id": "scrap",
+          "label": "電子部品のくず",
+          "counts": [
+            4,
+            8,
+            12,
+            16,
+            24,
+            32
+          ],
+          "unit": "個",
+          "unit_reward": 30,
+          "base_reward": 60,
+          "item": "survival_instinct:electronic_scrap"
+        },
+        {
+          "id": "circuit",
+          "label": "高度な回路",
+          "counts": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "unit": "個",
+          "unit_reward": 180,
+          "base_reward": 80,
+          "item": "hbm_m:advanced_circuit"
+        }
+      ]
+    },
+    {
+      "id": "old_handguns",
+      "kind": "DELIVERY",
+      "merchant": "BLACK",
+      "title": "{target}の買い取り",
+      "openings": [
+        {
+          "id": "p1",
+          "text": "あんたに回せそうな仕事が入った。"
+        },
+        {
+          "id": "p2",
+          "text": "買い手がついた。引き受ける気はあるか。"
+        },
+        {
+          "id": "p3",
+          "text": "一件、仕事を頼みたい。"
+        },
+        {
+          "id": "p4",
+          "text": "いつもの取引とは別に頼みがある。"
+        }
+      ],
+      "middles": [
+        {
+          "id": "p1",
+          "text": "旧式の拳銃を欲しがる客がいる。{target}を{count}{unit}持ってきてくれ。"
+        },
+        {
+          "id": "p2",
+          "text": "型を指定した注文が来ている。必要なのは{target}、{count}{unit}だ。"
+        },
+        {
+          "id": "p3",
+          "text": "手持ちの在庫では注文を埋められない。{target}を{count}{unit}探してくれ。"
+        },
+        {
+          "id": "p4",
+          "text": "古い銃でも売り先はある。今回は{target}を{count}{unit}買い取る。"
+        }
+      ],
+      "endings": [
+        {
+          "id": "p1",
+          "text": "条件を満たしたらPDAから報告してくれ。報酬は用意してある。"
+        },
+        {
+          "id": "p2",
+          "text": "引き受けるなら頼む。仕事が済んだら代金を渡す。"
+        },
+        {
+          "id": "p3",
+          "text": "無理のない範囲で構わない。済ませたら知らせてくれ。"
+        },
+        {
+          "id": "p4",
+          "text": "必要な仕事を片づけてくれれば、約束の額を払う。"
+        }
+      ],
+      "targets": [
+        {
+          "id": "colt1892",
+          "label": "Colt M1892",
+          "counts": [
+            1,
+            2,
+            3
+          ],
+          "unit": "丁",
+          "unit_reward": 850,
+          "base_reward": 50,
+          "item": "tacz:modern_kinetic_gun",
+          "gun_id": "hamster:coltm1892"
+        },
+        {
+          "id": "colt1873",
+          "label": "Colt M1873 SAA",
+          "counts": [
+            1,
+            2,
+            3
+          ],
+          "unit": "丁",
+          "unit_reward": 900,
+          "base_reward": 50,
+          "item": "tacz:modern_kinetic_gun",
+          "gun_id": "hamster:colt1873"
+        }
+      ]
+    },
+    {
+      "id": "hostile_clearance",
+      "kind": "HUNT",
+      "merchant": "NEUTRAL",
+      "title": "{target}の討伐",
+      "openings": [
+        {
+          "id": "p1",
+          "text": "手を貸してもらいたい。"
+        },
+        {
+          "id": "p2",
+          "text": "引き受けられる仕事を探しているなら、これを頼めるか。"
+        },
+        {
+          "id": "p3",
+          "text": "こちらで一件、人手が必要になった。"
+        },
+        {
+          "id": "p4",
+          "text": "少し厄介な用事が残っている。"
+        }
+      ],
+      "middles": [
+        {
+          "id": "p1",
+          "text": "物資を探す連中が危険にさらされている。{target}を{count}{unit}倒し、数を減らしてほしい。"
+        },
+        {
+          "id": "p2",
+          "text": "廃墟を歩くにも気が抜けない。{target}を{count}{unit}討伐してくれ。"
+        },
+        {
+          "id": "p3",
+          "text": "回収班から害敵駆除の要請があった。{target}を{count}{unit}倒してほしい。"
+        },
+        {
+          "id": "p4",
+          "text": "安全に動ける余地を少しでも増やしたい。{target}を{count}{unit}討伐してくれ。"
+        }
+      ],
+      "endings": [
+        {
+          "id": "p1",
+          "text": "条件を満たしたらPDAから報告してくれ。報酬は用意してある。"
+        },
+        {
+          "id": "p2",
+          "text": "引き受けるなら頼む。仕事が済んだら代金を渡す。"
+        },
+        {
+          "id": "p3",
+          "text": "無理のない範囲で構わない。済ませたら知らせてくれ。"
+        },
+        {
+          "id": "p4",
+          "text": "必要な仕事を片づけてくれれば、約束の額を払う。"
+        }
+      ],
+      "targets": [
+        {
+          "id": "zombies",
+          "label": "ゾンビ類",
+          "counts": [
+            4,
+            6,
+            8,
+            10,
+            12,
+            16
+          ],
+          "unit": "体",
+          "unit_reward": 35,
+          "base_reward": 50,
+          "entities": [
+            "minecraft:zombie",
+            "minecraft:husk",
+            "minecraft:drowned"
+          ]
+        },
+        {
+          "id": "skeletons",
+          "label": "スケルトン類",
+          "counts": [
+            3,
+            4,
+            6,
+            8,
+            10,
+            12
+          ],
+          "unit": "体",
+          "unit_reward": 45,
+          "base_reward": 50,
+          "entities": [
+            "minecraft:skeleton",
+            "minecraft:stray"
+          ]
+        },
+        {
+          "id": "spiders",
+          "label": "クモ類",
+          "counts": [
+            3,
+            4,
+            6,
+            8,
+            10,
+            12
+          ],
+          "unit": "体",
+          "unit_reward": 35,
+          "base_reward": 50,
+          "entities": [
+            "minecraft:spider",
+            "minecraft:cave_spider"
+          ]
+        },
+        {
+          "id": "creepers",
+          "label": "クリーパー",
+          "counts": [
+            2,
+            3,
+            4,
+            6,
+            8
+          ],
+          "unit": "体",
+          "unit_reward": 60,
+          "base_reward": 60,
+          "entities": [
+            "minecraft:creeper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hostile_infantry",
+      "kind": "SOLDIER",
+      "merchant": "WEST",
+      "title": "交戦中の敵兵の討伐",
+      "openings": [
+        {
+          "id": "p1",
+          "text": "仕事の話だ。"
+        },
+        {
+          "id": "p2",
+          "text": "手が空いているなら、この件を頼みたい。"
+        },
+        {
+          "id": "p3",
+          "text": "こちらだけでは手が回らなくなった。"
+        },
+        {
+          "id": "p4",
+          "text": "必要な仕事がもう一つある。"
+        }
+      ],
+      "middles": [
+        {
+          "id": "p1",
+          "text": "こちらの探索者を狙う兵が出ている。交戦中の{target}を{count}{unit}倒してくれ。"
+        },
+        {
+          "id": "p2",
+          "text": "武装した連中に追い回されている。探索者を攻撃している{target}を{count}{unit}討伐してほしい。"
+        },
+        {
+          "id": "p3",
+          "text": "回収班が銃撃を受けている。交戦中の{target}を{count}{unit}排除してくれ。"
+        },
+        {
+          "id": "p4",
+          "text": "襲ってくる兵への対処を頼みたい。探索者と交戦中の{target}を{count}{unit}倒してくれ。"
+        }
+      ],
+      "endings": [
+        {
+          "id": "p1",
+          "text": "条件を満たしたらPDAから報告してくれ。報酬は用意してある。"
+        },
+        {
+          "id": "p2",
+          "text": "引き受けるなら頼む。仕事が済んだら代金を渡す。"
+        },
+        {
+          "id": "p3",
+          "text": "無理のない範囲で構わない。済ませたら知らせてくれ。"
+        },
+        {
+          "id": "p4",
+          "text": "必要な仕事を片づけてくれれば、約束の額を払う。"
+        }
+      ],
+      "targets": [
+        {
+          "id": "infantry",
+          "label": "敵兵",
+          "counts": [
+            2,
+            3,
+            4,
+            6,
+            8
+          ],
+          "unit": "人",
+          "unit_reward": 120,
+          "base_reward": 100,
+          "entities": [
+            "simpleenemymod:ruunit",
+            "simpleenemymod:usunit",
+            "simpleenemymod:pmcunit"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hostile_shipping",
+      "kind": "SHIP",
+      "merchant": "EAST",
+      "title": "敵船舶の撃沈",
+      "openings": [
+        {
+          "id": "p1",
+          "text": "補給担当からの依頼だ。"
+        },
+        {
+          "id": "p2",
+          "text": "次の仕事を任せたい。"
+        },
+        {
+          "id": "p3",
+          "text": "こちらの作業が滞っている。力を借りたい。"
+        },
+        {
+          "id": "p4",
+          "text": "一件、引き受けてもらえるだろうか。"
+        }
+      ],
+      "middles": [
+        {
+          "id": "p1",
+          "text": "武装した船が輸送を妨げている。敵兵が運用する船を{count}{unit}撃沈してくれ。"
+        },
+        {
+          "id": "p2",
+          "text": "水上からの脅威を減らしたい。敵兵が乗る船を{count}{unit}沈めてほしい。"
+        },
+        {
+          "id": "p3",
+          "text": "輸送担当から対処の要請だ。敵兵が運用する船を{count}{unit}撃沈してくれ。"
+        },
+        {
+          "id": "p4",
+          "text": "敵の水上戦力への対処を頼む。敵兵の船を{count}{unit}沈めれば完了だ。"
+        }
+      ],
+      "endings": [
+        {
+          "id": "p1",
+          "text": "条件を満たしたらPDAから報告してくれ。報酬は用意してある。"
+        },
+        {
+          "id": "p2",
+          "text": "引き受けるなら頼む。仕事が済んだら代金を渡す。"
+        },
+        {
+          "id": "p3",
+          "text": "無理のない範囲で構わない。済ませたら知らせてくれ。"
+        },
+        {
+          "id": "p4",
+          "text": "必要な仕事を片づけてくれれば、約束の額を払う。"
+        }
+      ],
+      "targets": [
+        {
+          "id": "ship",
+          "label": "敵船舶",
+          "counts": [
+            1,
+            2,
+            3
+          ],
+          "unit": "隻",
+          "unit_reward": 1400,
+          "base_reward": 100
+        }
+      ]
+    },
+    {
+      "id": "hostile_rotors",
+      "kind": "HELICOPTER",
+      "merchant": "WEST",
+      "title": "敵ヘリの撃墜",
+      "openings": [
+        {
+          "id": "p1",
+          "text": "仕事の話だ。"
+        },
+        {
+          "id": "p2",
+          "text": "手が空いているなら、この件を頼みたい。"
+        },
+        {
+          "id": "p3",
+          "text": "こちらだけでは手が回らなくなった。"
+        },
+        {
+          "id": "p4",
+          "text": "必要な仕事がもう一つある。"
+        }
+      ],
+      "middles": [
+        {
+          "id": "p1",
+          "text": "敵ヘリのせいで動きづらくなっている。敵兵が運用するヘリを{count}{unit}落としてくれ。"
+        },
+        {
+          "id": "p2",
+          "text": "上空からの脅威を減らしたい。敵兵が操縦するヘリを{count}{unit}撃墜してほしい。"
+        },
+        {
+          "id": "p3",
+          "text": "飛んでいる敵への対処を頼む。敵兵のヘリを{count}{unit}撃墜すれば完了だ。"
+        },
+        {
+          "id": "p4",
+          "text": "輸送班が上空を警戒している。敵兵が運用するヘリを{count}{unit}落としてくれ。"
+        }
+      ],
+      "endings": [
+        {
+          "id": "p1",
+          "text": "条件を満たしたらPDAから報告してくれ。報酬は用意してある。"
+        },
+        {
+          "id": "p2",
+          "text": "引き受けるなら頼む。仕事が済んだら代金を渡す。"
+        },
+        {
+          "id": "p3",
+          "text": "無理のない範囲で構わない。済ませたら知らせてくれ。"
+        },
+        {
+          "id": "p4",
+          "text": "必要な仕事を片づけてくれれば、約束の額を払う。"
+        }
+      ],
+      "targets": [
+        {
+          "id": "helicopter",
+          "label": "敵ヘリ",
+          "counts": [
+            1,
+            2,
+            3
+          ],
+          "unit": "機",
+          "unit_reward": 1700,
+          "base_reward": 100
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "modern_structures:factory_2",
+      "required": false
+    },
+    {
+      "id": "modern_structures:factory",
+      "required": false
+    },
+    {
+      "id": "modern_structures:outpost",
+      "required": false
+    },
+    {
+      "id": "tacz_sewv:forest_helipad",
+      "required": false
+    },
+    {
+      "id": "tacz_sewv:forest_ru_comms",
+      "required": false
+    },
+    {
+      "id": "tacz_sewv:forest_us_comms",
+      "required": false
+    },
+    {
+      "id": "tacz_sewv:forest_watchtower",
+      "required": false
+    },
+    {
+      "id": "tacz_sewv:desert_helipad",
+      "required": false
+    },
+    {
+      "id": "tacz_sewv:desert_ru_comms",
+      "required": false
+    },
+    {
+      "id": "tacz_sewv:desert_us_comms",
+      "required": false
+    },
+    {
+      "id": "tacz_sewv:desert_watchtower",
+      "required": false
+    }
+  ]
+}

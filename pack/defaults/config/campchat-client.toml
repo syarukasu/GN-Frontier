@@ -1,0 +1,11 @@
+#Message notification anchor position.
+#Available: TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
+#Allowed Values: TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
+notificationAnchor = "TOP_LEFT"
+#Message notification scale.
+#Range: 0.0 ~ 99999.0
+notificationScale = 0.5
+#Maximum number of visible message notifications.
+#Range: 1 ~ 99999
+maxVisibleNotifications = 1
+

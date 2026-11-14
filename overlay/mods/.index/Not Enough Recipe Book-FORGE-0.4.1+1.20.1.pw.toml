@@ -1,0 +1,15 @@
+filename = "Not Enough Recipe Book-FORGE-0.4.1+1.20.1.jar"
+name = "Not Enough Recipe Book [NERB]"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "8f05afb56310b21e91d2f1d1200a9c0d98a34a9689b9b6288a6507c0498b299d"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/5760/231/Not%20Enough%20Recipe%20Book-FORGE-0.4.1%2B1.20.1.jar"
+
+[update.curseforge]
+file-id = 5760231
+project-id = 738663

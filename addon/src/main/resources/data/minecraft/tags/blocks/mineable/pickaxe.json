@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "#gnfrontier:salvage_vehicles",
+    "gnfrontier:mining_rig",
+    "gnfrontier:terraformer",
+    "gnfrontier:orbital_launcher",
+    "gnfrontier:ground_uplink",
+    "gnfrontier:deterrence_station"
+  ]
+}

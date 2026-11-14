@@ -1,0 +1,15 @@
+filename = "tinyinv-1.20.1-1.1.0.1.jar"
+name = "TinyInv"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "c014733c81d6363ed078208a29ca5a12c4d924f8b770cfe0c842597c28c2f0ba"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/5234/306/tinyinv-1.20.1-1.1.0.1.jar"
+
+[update.curseforge]
+file-id = 5234306
+project-id = 455299

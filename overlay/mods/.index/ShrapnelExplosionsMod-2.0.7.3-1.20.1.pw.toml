@@ -1,0 +1,15 @@
+filename = "ShrapnelExplosionsMod-2.0.7.3-1.20.1.jar"
+name = "Shrapnel Explosions Mod"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "98f5e14f28c5d0dc71587876157d0e419615b89cd792f8f29cec0b3d309c218d"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/8328/245/ShrapnelExplosionsMod-2.0.7.3-1.20.1.jar"
+
+[update.curseforge]
+file-id = 8328245
+project-id = 1464716

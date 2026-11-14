@@ -1,0 +1,13 @@
+{
+  "block.immersive_weathering.cut_iron": "切り出した鉄",
+  "block.immersive_weathering.cut_iron_slab": "切り出した鉄のハーフブロック",
+  "block.immersive_weathering.cut_iron_stairs": "切り出した鉄の階段",
+  "block.immersive_weathering.frost": "フロスト",
+  "block.immersive_weathering.moss": "苔の塊",
+  "item.immersive_weathering.mortar": "迫撃砲",
+  "tag.immersive_weathering.flammable_stairs": "引火しやすい状態の階段",
+  "block.immersive_weathering.permafrost": "永久凍土",
+  "block.immersive_weathering.mossy_chiseled_stone_bricks": "苔むした模様入りの石レンガ",
+  "block.immersive_weathering.mossy_stone_wall": "苔むした石の塀",
+  "block.immersive_weathering.stone_wall": "石の塀"
+}

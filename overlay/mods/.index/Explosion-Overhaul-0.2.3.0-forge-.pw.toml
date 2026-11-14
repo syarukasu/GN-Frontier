@@ -1,0 +1,15 @@
+filename = "Explosion-Overhaul-0.2.3.0-forge-.jar"
+name = "Explosion Overhaul: A new level of destruction"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "feac2ed262604f01e74609acdeba83c9b0bbe2b602ba0da40196fb1041f2c64f"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/7659/431/Explosion-Overhaul-0.2.3.0-forge-.jar"
+
+[update.curseforge]
+file-id = 7659431
+project-id = 1296203

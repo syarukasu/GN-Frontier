@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "gnfrontier:block/mining_rig_side",
+    "north": "gnfrontier:block/mining_rig_front",
+    "south": "gnfrontier:block/mining_rig_side",
+    "east": "gnfrontier:block/mining_rig_side",
+    "west": "gnfrontier:block/mining_rig_side",
+    "up": "gnfrontier:block/mining_rig_top",
+    "down": "gnfrontier:block/mining_rig_side"
+  }
+}

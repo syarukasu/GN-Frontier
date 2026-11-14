@@ -1,0 +1,15 @@
+filename = "ragdollified-forge-1.20.1-1.2.2.jar"
+name = "Ragdollified"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "8ae7bd251883e559f96283ec2b2dcff7b457ee2573d7404fe3df17a648b7c657"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/9437/444/ragdollified-forge-1.20.1-1.2.2.jar"
+
+[update.curseforge]
+file-id = 9437444
+project-id = 1417732

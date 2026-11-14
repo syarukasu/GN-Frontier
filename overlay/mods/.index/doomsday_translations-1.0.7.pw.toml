@@ -1,0 +1,15 @@
+filename = "doomsday_translations-1.0.7.jar"
+name = "Doomsday translation"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "397c6a8c708b50cfb479f134a27ac328ea2fd147e47eebab38c94c1b53a38900"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/7341/247/doomsday_translations-1.0.7.jar"
+
+[update.curseforge]
+file-id = 7341247
+project-id = 1366293

@@ -1,0 +1,15 @@
+filename = "moonlight-1.20-2.16.39-forge.jar"
+name = "Moonlight Lib"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "b8488c5004906c8d16f764dd121eaf1c01c7ef614a3f8d6b029f05c9bbcd7754"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/9493/250/moonlight-1.20-2.16.39-forge.jar"
+
+[update.curseforge]
+file-id = 9493250
+project-id = 499980

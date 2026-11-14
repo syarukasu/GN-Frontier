@@ -1,0 +1,12 @@
+{
+  "app.chaoscrafts_device_mod.home_security.description": "端末の近くの監視カメラを確認する",
+  "block.chaoscrafts_device_mod.laptop_black": "ノートパソコン",
+  "block.chaoscrafts_device_mod.laptop_white": "白いノートパソコン",
+  "block.chaoscrafts_device_mod.security_camera": "監視カメラ",
+  "item.chaoscrafts_device_mod.security_camera": "監視カメラ",
+  "key.chaoscrafts_device_mod.window_screenshot": "ウィンドウを撮影",
+  "message.chaoscrafts_device_mod.security_camera.id": "カメラID：%s",
+  "message.chaoscrafts_device_mod.security_camera.owner_only": "このカメラを設定できるのは所有者だけです",
+  "message.chaoscrafts_device_mod.security_camera.private": "カメラを非公開にしました",
+  "message.chaoscrafts_device_mod.security_camera.public": "カメラを公開しました"
+}

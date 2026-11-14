@@ -1,0 +1,15 @@
+filename = "EnhancedVisuals_FORGE_v1.8.34_mc1.20.1.jar"
+name = "EnhancedVisuals"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "29e8c198c8b45c97e01f2566b2ca2e72b2af5436edca9d04d75259377ebde291"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/9080/707/EnhancedVisuals_FORGE_v1.8.34_mc1.20.1.jar"
+
+[update.curseforge]
+file-id = 9080707
+project-id = 255389

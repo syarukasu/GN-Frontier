@@ -1,0 +1,15 @@
+filename = "skarrier_mobs-1.1.2-forge-1.20.1.jar"
+name = "Skarrier Mobs"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "5d3e067fe9b5ebab5997c64d476ac40e521bcd0dfbf797b65074f132794f1b03"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/9296/241/skarrier_mobs-1.1.2-forge-1.20.1.jar"
+
+[update.curseforge]
+file-id = 9296241
+project-id = 1566041

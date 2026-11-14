@@ -1,0 +1,15 @@
+filename = "simpleenemymod-1.20.1-0.1.6-beta-hotfix.jar"
+name = "TaCZ : Simple Enemy"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "503fa7b86fc73b4b64436019635ec2dfba7a5266412d416bd4f48b3f9a072576"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/8880/362/simpleenemymod-1.20.1-0.1.6-beta-hotfix.jar"
+
+[update.curseforge]
+file-id = 8880362
+project-id = 1471691

@@ -1,0 +1,15 @@
+filename = "sleeprework-FORGE-1.20.1-1.1.0.jar"
+name = "Sleep Rework"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "e124e07bed4d1ff79f42edb33ff09f432117ef748eb40f3fc552070732785347"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/4657/938/sleeprework-FORGE-1.20.1-1.1.0.jar"
+
+[update.curseforge]
+file-id = 4657938
+project-id = 888850

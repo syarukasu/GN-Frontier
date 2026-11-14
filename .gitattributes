@@ -1,0 +1,18 @@
+* text=auto
+*.java text eol=lf
+*.json text eol=lf
+*.toml text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.gradle text eol=lf
+*.properties text eol=lf
+*.yml text eol=lf
+*.bat text eol=crlf
+gradlew text eol=lf
+*.png binary
+*.nbt binary
+*.jar binary
+# Preserve byte-exact game resources and upstream data across Windows/Linux.
+addon/src/main/resources/** -text
+overlay/** -text
+pack/defaults/** -text

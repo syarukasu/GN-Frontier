@@ -1,0 +1,5 @@
+{
+  "name": "ad_astra:run_venus_bullet/side_venus_bullet_start",
+  "fallback": "minecraft:empty",
+  "elements": []
+}

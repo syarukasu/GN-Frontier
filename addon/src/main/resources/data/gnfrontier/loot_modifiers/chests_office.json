@@ -1,0 +1,10 @@
+{
+  "type": "gnfrontier:natural_chests",
+  "conditions": [],
+  "sources": [
+    "chaoszpack_lc_loot:chests/observatory",
+    "survival_instinct:chests/cash_register",
+    "survival_instinct:chests/facility_office"
+  ],
+  "target": "gnfrontier:chests/office"
+}

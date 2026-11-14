@@ -1,0 +1,7 @@
+{
+  "key.invmove.category.general": "一般",
+  "key.invmove.module.vanilla": "標準",
+  "key.invmove.unrecognized.nomod": "不明",
+  "tooltip.gui.advancements": "この画面ではゲームが一時停止するため、この設定が上書きされる場合があります。",
+  "tooltip.item.minecraft.book": "この画面ではゲームが一時停止するため、この設定が上書きされる場合があります。"
+}

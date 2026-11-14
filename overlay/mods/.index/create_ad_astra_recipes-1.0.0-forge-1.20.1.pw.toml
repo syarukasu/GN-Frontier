@@ -1,0 +1,15 @@
+filename = "create_ad_astra_recipes-1.0.0-forge-1.20.1.jar"
+name = "Create Ad Astra Recipes"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "fc8b9769aecd0981ad465c9f1cf81f6f2caed660ce34b35e3776cd38796059d2"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/5997/398/create_ad_astra_recipes-1.0.0-forge-1.20.1.jar"
+
+[update.curseforge]
+file-id = 5997398
+project-id = 1160777

@@ -1,0 +1,210 @@
+{
+  "version": 1,
+  "defaults": {
+    "color": "FF0000",
+    "style": "LIGHT",
+    "amalgamation": "BOTH",
+    "brightness": "WORLD",
+    "count": 50,
+    "dripChance": 0.4,
+    "viscosity": 0.35,
+    "speed": {
+      "min": 1.0,
+      "max": 1.0
+    },
+    "scale": {
+      "min": 0.6,
+      "max": 1.8
+    },
+    "life": {
+      "min": 300,
+      "max": 400
+    }
+  },
+  "groups": {
+    "undead_heavy": {
+      "color": "C9C9C9",
+      "scale": {
+        "max": 1.1
+      },
+      "life": {
+        "min": 200,
+        "max": 300
+      },
+      "entities": [
+        "minecraft:skeleton",
+        "minecraft:wither_skeleton",
+        "minecraft:skeleton_horse"
+      ],
+      "style": "HEAVY",
+      "amalgamation": "NONE",
+      "dripChance": 0.0
+    },
+    "slime": {
+      "color": "B0FF91",
+      "style": "SLIMY",
+      "count": 40,
+      "scale": {
+        "max": 1.4,
+        "min": 1.0
+      },
+      "life": {
+        "min": 150,
+        "max": 200
+      },
+      "entities": [
+        "minecraft:slime",
+        "minecraft:creeper"
+      ]
+    },
+    "magma_cube": {
+      "color": "A82C07",
+      "style": "SLIMY",
+      "brightness": "FULLBRIGHT",
+      "count": 40,
+      "scale": {
+        "max": 1.4,
+        "min": 1.1
+      },
+      "life": {
+        "min": 150,
+        "max": 250
+      },
+      "entities": [
+        "minecraft:magma_cube"
+      ],
+      "dripChance": 0.2,
+      "viscosity": 0.75
+    },
+    "blaze": {
+      "color": "EDB90C",
+      "brightness": "FULLBRIGHT",
+      "scale": {
+        "min": 0.2,
+        "max": 1
+      },
+      "life": {
+        "min": 200,
+        "max": 300
+      },
+      "entities": [
+        "minecraft:blaze"
+      ],
+      "style": "MAGIC",
+      "amalgamation": "NONE",
+      "dripChance": 0.0,
+      "viscosity": 0.0
+    },
+    "poison": {
+      "color": "46CC23",
+      "dripChance": 0.7,
+      "viscosity": 0.7,
+      "entities": [
+        "minecraft:spider",
+        "minecraft:cave_spider",
+        "minecraft:witch"
+      ]
+    },
+    "iron": {
+      "color": "BABABA",
+      "scale": {
+        "min": 0.8
+      },
+      "life": {
+        "min": 200,
+        "max": 300
+      },
+      "entities": [
+        "minecraft:iron_golem"
+      ],
+      "amalgamation": "NONE",
+      "viscosity": 0,
+      "dripChance": 0,
+      "style": "HEAVY"
+    },
+    "magic": {
+      "color": "903FD1",
+      "style": "MAGIC",
+      "brightness": "FULLBRIGHT",
+      "count": 60,
+      "scale": {
+        "min": 0.4,
+        "max": 1.0
+      },
+      "life": {
+        "min": 200,
+        "max": 300
+      },
+      "entities": [
+        "minecraft:enderman",
+        "minecraft:endermite",
+        "minecraft:shulker"
+      ]
+    },
+    "water_creatures": {
+      "color": "418A9B",
+      "life": {
+        "min": 200,
+        "max": 300
+      },
+      "entities": [
+        "minecraft:guardian"
+      ],
+      "amalgamation": "NONE",
+      "count": 30,
+      "dripChance": 0,
+      "scale": {
+        "min": 1,
+        "max": 1
+      },
+      "viscosity": 1,
+      "style": "HEAVY"
+    },
+    "silverfish": {
+      "entities": [
+        "minecraft:silverfish"
+      ],
+      "color": "E0E0E0",
+      "style": "SLIMY",
+      "scale": {
+        "min": 0.2,
+        "max": 0.8
+      },
+      "count": 20
+    },
+    "elder_guardian": {
+      "entities": [
+        "minecraft:elder_guardian"
+      ],
+      "color": "D3DCA6",
+      "amalgamation": "NONE",
+      "dripChance": 0,
+      "viscosity": 1,
+      "scale": {
+        "min": 3,
+        "max": 3
+      },
+      "style": "HEAVY"
+    },
+    "black_splots": {
+      "entities": [
+        "minecraft:squid",
+        "minecraft:wither"
+      ],
+      "color": "353535"
+    },
+    "ender_dragon": {
+      "entities": [
+        "minecraft:ender_dragon"
+      ],
+      "color": "3A0A52",
+      "style": "HEAVY",
+      "amalgamation": "NONE",
+      "count": 100,
+      "scale": {
+        "min": 2,
+        "max": 3
+      }
+    }
+  }
+}

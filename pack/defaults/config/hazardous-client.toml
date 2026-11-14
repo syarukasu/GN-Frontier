@@ -1,0 +1,101 @@
+
+#Client settings
+[client]
+	#Hazard type id from client radiation data to display on the geiger dial (example: hazardous:radioactive_type). Leave empty to disable
+	geigerDisplayHazardType = "hazardous:radioactive_type"
+	#Value treated as 100% dial fill
+	#Range: 1.0E-4 ~ 1000000.0
+	geigerMaxRadiation = 100.0
+	#Radiation threshold where geiger pointer enters the yellow segment
+	#Range: 0.0 ~ 1000000.0
+	geigerMediumThresshold = 33.3
+	#Radiation threshold where geiger pointer enters the red segment
+	#Range: 0.0 ~ 1000000.0
+	geigerHighTresshold = 66.6
+	#Minimum displayed radiation required to play the medium geiger loop
+	#Range: 0.0 ~ 1000000.0
+	geigerSoundMediumMinRadiation = 1.0
+	#Minimum displayed radiation required to switch from medium to high geiger loop
+	#Range: 0.0 ~ 1000000.0
+	geigerSoundHighMinRadiation = 25.0
+	#Volume multiplier for geiger loops
+	#Range: 0.0 ~ 1.0
+	geigerSoundVolume = 0.8
+	#Maximum angle in degrees for geiger needle jitter when radiation is present
+	#Range: 0.0 ~ 10.0
+	geigerNeedleJitterAngle = 1.8
+	#Speed multiplier for geiger needle jitter animation
+	#Range: 0.1 ~ 10.0
+	geigerNeedleJitterSpeed = 1.1
+	#HUD anchor: top_left, top_center, top_right, center_left, center_right, bottom_left, bottom_center, bottom_right
+	geigerHudAnchor = "top_right"
+	#Scale factor for the geiger HUD (1.0 = normal, 2.0 = twice as large, 0.5 = half size)
+	#Range: 0.1 ~ 10.0
+	geigerHudScale = 1.0
+	#Horizontal HUD offset from anchor in pixels
+	#Range: -5000 ~ 5000
+	geigerHudOffsetX = 8
+	#Vertical HUD offset from anchor in pixels
+	#Range: -5000 ~ 5000
+	geigerHudOffsetY = 8
+	#Resource location from player dose data to display on the dosimeter (example: hazardous:radioactive_type). Leave empty to display sum of all dose entries
+	dosimeterDisplayResource = "hazardous:radioactive_type"
+	#Dose value treated as 100% dosimeter bar fill
+	#Range: 1.0E-4 ~ 1000000.0
+	dosimeterMaxDose = 20.0
+	#Dose threshold where dosimeter bar changes from green to yellow/orange
+	#Range: 0.0 ~ 1000000.0
+	dosimeterMediumDose = 3.0
+	#Dose threshold where dosimeter bar changes from yellow/orange to red
+	#Range: 0.0 ~ 1000000.0
+	dosimeterHighDose = 6.0
+	#Maximum dosimeter radiation icon shake offset in texture pixels once the medium dose threshold is reached
+	#Range: 0.0 ~ 10.0
+	dosimeterIconShakeMediumDistance = 0.35
+	#Maximum dosimeter radiation icon shake offset in texture pixels once the max dose threshold is reached
+	#Range: 0.0 ~ 10.0
+	dosimeterIconShakeMaxDistance = 1.1
+	#Speed multiplier for dosimeter radiation icon shake animation
+	#Range: 0.1 ~ 10.0
+	dosimeterIconShakeSpeed = 0.9
+	#Master volume multiplier applied to all Hazardous client sounds. Set to 0 to disable them all
+	#Range: 0.0 ~ 1.0
+	masterSoundVolume = 1.0
+	#Volume multiplier for the looping gasmask breathing sound. Set to 0 to disable
+	#Range: 0.0 ~ 1.0
+	gasmaskBreathingVolume = 0.5
+	#Remaining gasmask durability fraction at or below which the choking loop replaces breathing (0.1 = 10%, 0 keeps the old zero-durability behavior)
+	#Range: 0.0 ~ 1.0
+	gasmaskChokingRemainingDurability = 0.1
+	#Volume multiplier for the filter replenish sound. Set to 0 to disable
+	#Range: 0.0 ~ 1.0
+	filterReplenishVolume = 0.7
+	#HUD anchor: top_left, top_center, top_right, center_left, center_right, bottom_left, bottom_center, bottom_right
+	dosimeterHudAnchor = "top_right"
+	#Scale factor for the dosimeter HUD (1.0 = normal, 2.0 = twice as large, 0.5 = half size)
+	#Range: 0.1 ~ 10.0
+	dosimeterHudScale = 1.0
+	#Horizontal HUD offset from anchor in pixels
+	#Range: -5000 ~ 5000
+	dosimeterHudOffsetX = 8
+	#Vertical HUD offset from anchor in pixels
+	#Range: -5000 ~ 5000
+	dosimeterHudOffsetY = 84
+	#If true, show an on-screen anti-rad pill status indicator while resistance pill effects are active
+	resistancePillsHudEnabled = true
+	#HUD anchor: top_left, top_center, top_right, center_left, center_right, bottom_left, bottom_center, bottom_right
+	resistancePillsHudAnchor = "top_left"
+	#Scale factor for the resistance pills HUD indicator
+	#Range: 0.1 ~ 10.0
+	resistancePillsHudScale = 1.0
+	#Horizontal HUD offset from anchor in pixels
+	#Range: -5000 ~ 5000
+	resistancePillsHudOffsetX = 8
+	#Vertical HUD offset from anchor in pixels
+	#Range: -5000 ~ 5000
+	resistancePillsHudOffsetY = 8
+	#If true, a visible helmet-like Curios item in the head slot can hide the normal helmet armor render when it has its own Curios renderer
+	curiosHeadOverrideHelmetRender = true
+	#If true, hide the Hazard Immunity effect from the inventory and HUD effect list
+	hideHazardImmunityEffect = false
+

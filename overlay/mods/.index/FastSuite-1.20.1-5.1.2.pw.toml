@@ -1,0 +1,15 @@
+filename = "FastSuite-1.20.1-5.1.2.jar"
+name = "FastSuite"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "5e05cb3ce05785a0061a41b7a83443074a6c26dd7d9db75c453fa2487481d54e"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/7527/943/FastSuite-1.20.1-5.1.2.jar"
+
+[update.curseforge]
+file-id = 7527943
+project-id = 475117

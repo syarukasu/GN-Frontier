@@ -1,0 +1,7 @@
+filename = "gn-frontier-0.2.1.jar"
+name = "GN Frontier"
+side = "both"
+
+[download]
+hash-format = "sha256"
+hash = "211b9d696a91eaee4a35876b74414cc3611e075814f90f87e025b9955664a713"

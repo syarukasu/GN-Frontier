@@ -1,0 +1,15 @@
+filename = "simple_enemy_mod_config-1.0.0-forge-1.20.1.jar"
+name = "[TACZ] Simple Enemy: Guns Config"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "70062c6e2d59e4b98543be2778bab900313a685e0823fbaf877dbbfed4a5caaf"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/8863/228/simple_enemy_mod_config-1.0.0-forge-1.20.1.jar"
+
+[update.curseforge]
+file-id = 8863228
+project-id = 1525428

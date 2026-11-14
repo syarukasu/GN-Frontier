@@ -1,0 +1,15 @@
+filename = "modern_structures-1.6.jar"
+name = "Modern Structures"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "fc83d7ddac4dec14424b289f0b89b33014714c83df267290feb93837aac2c34a"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/5953/626/modern_structures-1.6.jar"
+
+[update.curseforge]
+file-id = 5953626
+project-id = 967101

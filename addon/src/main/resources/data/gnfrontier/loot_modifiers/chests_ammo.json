@@ -1,0 +1,9 @@
+{
+  "type": "gnfrontier:natural_chests",
+  "conditions": [],
+  "sources": [
+    "chaoszpack_lc_loot:chests/suburbanammo",
+    "keerdm_zombie_essentials:chests/tacz_ammochest"
+  ],
+  "target": "gnfrontier:chests/ammo"
+}

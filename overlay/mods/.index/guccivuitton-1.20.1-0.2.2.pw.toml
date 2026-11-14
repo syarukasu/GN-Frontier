@@ -1,0 +1,15 @@
+filename = "guccivuitton-1.20.1-0.2.2.jar"
+name = "Gucci & Vuitton Attachments"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "9247e55f20acf8ec89af56d4ad45fcc8fe08bee9f7189421ef31835f3516bd57"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/6062/98/guccivuitton-1.20.1-0.2.2.jar"
+
+[update.curseforge]
+file-id = 6062098
+project-id = 1103436

@@ -1,0 +1,20 @@
+{
+  "item.chaoscrafts_security_essentials.ammo_box": "弾薬箱",
+  "subtitles.chaoscrafts_security_essentials.minigun_turret_spinup": "ミニガンの銃身が回転する",
+  "app.chaoscrafts_security_essentials.home_security.description": "端末の近くの監視カメラを確認する",
+  "block.chaoscrafts_security_essentials.minigun_turret": "ミニガンタレット",
+  "block.chaoscrafts_security_essentials.security_camera": "監視カメラ",
+  "container.chaoscrafts_security_essentials.turret_inventory": "タレットの持ち物",
+  "item.chaoscrafts_security_essentials.minigun_turret": "ミニガンタレット",
+  "item.chaoscrafts_security_essentials.security_camera": "監視カメラ",
+  "message.chaoscrafts_security_essentials.camera.access_denied": "このカメラの利用権限がありません",
+  "message.chaoscrafts_security_essentials.camera.signal_unavailable": "信号を受信できません。カメラ周辺が読み込まれていません",
+  "message.chaoscrafts_security_essentials.security_camera.id": "カメラID：%s",
+  "message.chaoscrafts_security_essentials.security_camera.owner_only": "このカメラを設定できるのは所有者だけです",
+  "message.chaoscrafts_security_essentials.security_camera.private": "カメラを非公開にしました",
+  "message.chaoscrafts_security_essentials.security_camera.public": "カメラを公開しました",
+  "subtitles.chaoscrafts_security_essentials.minigun_fire_single": "ミニガンが発砲する",
+  "subtitles.chaoscrafts_security_essentials.minigun_turret_overheat": "ミニガンが過熱する",
+  "subtitles.chaoscrafts_security_essentials.minigun_turret_spindown": "ミニガンの回転が止まる",
+  "subtitles.chaoscrafts_security_essentials.minigun_turret_spinning": "ミニガンが回転する"
+}

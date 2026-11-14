@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "files": [
+    {
+      "path": ".cache/game/mods/curios-forge-5.14.1+1.20.1.jar",
+      "sha256": "1e817919a35b37cf30524aaec73f0ca5130452f23f168f844854df282eb8e51f",
+      "urls": [
+        "https://edge.forgecdn.net/files/6418/456/curios-forge-5.14.1%2B1.20.1.jar",
+        "https://mediafilez.forgecdn.net/files/6418/456/curios-forge-5.14.1%2B1.20.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/309927/files/6418456"
+    },
+    {
+      "path": ".cache/game/mods/lootr-forge-1.20-0.7.35.94.jar",
+      "sha256": "01200ee5889e6bcc3c5fa8f32b7b49a4bd58e653699eeb655c6f2dd314e3ce51",
+      "urls": [
+        "https://edge.forgecdn.net/files/7263/76/lootr-forge-1.20-0.7.35.94.jar"
+      ],
+      "page": "https://modrinth.com/project/EltpO5cN/version/mWTXC1ZX"
+    },
+    {
+      "path": ".cache/game/mods/lostcities-1.20-7.5.7.jar",
+      "sha256": "1a473ca9e7a1040d5e3b402a42eddd7b2fc34a5f270f9c6d0c604f0c0faa8009",
+      "urls": [
+        "https://edge.forgecdn.net/files/9055/133/lostcities-1.20-7.5.7.jar",
+        "https://mediafilez.forgecdn.net/files/9055/133/lostcities-1.20-7.5.7.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/269024/files/9055133"
+    },
+    {
+      "path": ".cache/game/mods/PetiteInventory-TaCZMagazineCompatibilityPatchVIVI2-0.0.1.jar",
+      "sha256": "d08ba5403c16727523d7efefe4d38cd15c2c0609901d8675eeb6a40114302575",
+      "urls": [
+        "https://edge.forgecdn.net/files/8591/987/PetiteInventory-TaCZMagazineCompatibilityPatchVIVI2-0.0.1.jar",
+        "https://mediafilez.forgecdn.net/files/8591/987/PetiteInventory-TaCZMagazineCompatibilityPatchVIVI2-0.0.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1583648/files/8591987"
+    },
+    {
+      "path": ".cache/game/mods/tacz-forge-1.20.1-1.2.0.jar",
+      "sha256": "1c2f2915f76908d396a0da577665c977564c279ccb89d459a00a29225aa45a92",
+      "urls": [
+        "https://edge.forgecdn.net/files/9454/481/tacz-forge-1.20.1-1.2.0.jar",
+        "https://mediafilez.forgecdn.net/files/9454/481/tacz-forge-1.20.1-1.2.0.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1028108/files/9454481"
+    },
+    {
+      "path": ".cache/game/mods/Veil-forge-1.20.1-1.0.0.296-slim.jar",
+      "sha256": "296c693c659a81b9baa0c778d29a5ab89c56bbb46b5245a3bc2213bd0485f492",
+      "urls": [
+        "https://maven.blamejared.com/foundry/veil/Veil-forge-1.20.1/1.0.0.296/Veil-forge-1.20.1-1.0.0.296-slim.jar"
+      ],
+      "page": "https://github.com/FoundryMC/Veil"
+    },
+    {
+      "path": "addon/src/main/resources/META-INF/jarjar/imgui-java-binding-1.86.11.jar",
+      "sha256": "cae0960cbd2784b6ab92d5ae13c9356db99eb7a35df9a6171669d64ab6f94b88",
+      "urls": [
+        "https://repo.maven.apache.org/maven2/io/github/spair/imgui-java-binding/1.86.11/imgui-java-binding-1.86.11.jar"
+      ]
+    },
+    {
+      "path": "addon/src/main/resources/META-INF/jarjar/imgui-java-lwjgl3-1.86.11.jar",
+      "sha256": "076b8ad542e630e2b906d67c46540137b3cd6e0e5e9e1cfefc2f55994d446b42",
+      "urls": [
+        "https://repo.maven.apache.org/maven2/io/github/spair/imgui-java-lwjgl3/1.86.11/imgui-java-lwjgl3-1.86.11.jar"
+      ]
+    },
+    {
+      "path": "addon/src/main/resources/META-INF/jarjar/imgui-java-natives-windows-1.86.11.jar",
+      "sha256": "5d7909d011d6d5485090b247813c8f68a98cedad972b535cd78341ccc91f0a29",
+      "urls": [
+        "https://repo.maven.apache.org/maven2/io/github/spair/imgui-java-natives-windows/1.86.11/imgui-java-natives-windows-1.86.11.jar"
+      ]
+    },
+    {
+      "path": "addon/src/main/resources/META-INF/jarjar/molang-compiler-3.1.1.19.jar",
+      "sha256": "08567ae5964242a7cffa93697cd63de60078d8dd375fb89ce426a390a7634100",
+      "urls": [
+        "https://maven.blamejared.com/gg/moonflower/molang-compiler/3.1.1.19/molang-compiler-3.1.1.19.jar"
+      ]
+    }
+  ]
+}

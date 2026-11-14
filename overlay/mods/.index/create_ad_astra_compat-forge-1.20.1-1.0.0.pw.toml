@@ -1,0 +1,15 @@
+filename = "create_ad_astra_compat-forge-1.20.1-1.0.0.jar"
+name = "Create Ad Atra Compat"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "fd942e664a5ca60f8999b900ff1da673325c107a01fc108ea4e1cc04172e56b6"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/5252/441/create_ad_astra_compat-forge-1.20.1-1.0.0.jar"
+
+[update.curseforge]
+file-id = 5252441
+project-id = 1001456

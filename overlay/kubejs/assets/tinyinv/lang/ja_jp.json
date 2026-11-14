@@ -1,0 +1,13 @@
+{
+  "tinyinv.chest_slot": "胴装備欄",
+  "tinyinv.crafting_bottom_left_slot": "クラフト左下の枠",
+  "tinyinv.crafting_bottom_right_slot": "クラフト右下の枠",
+  "tinyinv.crafting_top_left_slot": "クラフト左上の枠",
+  "tinyinv.crafting_top_right_slot": "クラフト右上の枠",
+  "tinyinv.feet_slot": "足装備欄",
+  "tinyinv.head_slot": "頭装備欄",
+  "tinyinv.hotbar_slots": "ホットバーの枠",
+  "tinyinv.legs_slot": "脚装備欄",
+  "tinyinv.offhand_slot": "オフハンドの枠",
+  "tinyinv.slots": "持ち物の枠"
+}

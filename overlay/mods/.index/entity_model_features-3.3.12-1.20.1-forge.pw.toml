@@ -1,0 +1,15 @@
+filename = "entity_model_features-3.3.12-1.20.1-forge.jar"
+name = "Entity Model Features"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "d7caedcb7c848d605a9f075c71e0d13ad5194326e55a6f45a50a97a3d8d87920"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/9188/522/entity_model_features-3.3.12-1.20.1-forge.jar"
+
+[update.curseforge]
+file-id = 9188522
+project-id = 844662

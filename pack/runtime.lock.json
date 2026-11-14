@@ -1,0 +1,4587 @@
+{
+  "schema": 1,
+  "minecraft": "1.20.1",
+  "forge": "47.4.20",
+  "files": [
+    {
+      "path": "mods/ad_astra-forge-1.20.1-1.15.21.jar",
+      "name": "Ad Astra",
+      "side": "both",
+      "size": 7508773,
+      "sha256": "d84dc1182b4c570d955df67b80703dc058ce944c7d9b0702e3577934c96d864c",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/8833/730/ad_astra-forge-1.20.1-1.15.21.jar",
+        "https://edge.forgecdn.net/files/8833/730/ad_astra-forge-1.20.1-1.15.21.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/635042/files/8833730",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 635042,
+          "file-id": 8833730
+        }
+      },
+      "mods": [
+        {
+          "modId": "ad_astra",
+          "displayName": "Ad Astra",
+          "version": "1.15.21",
+          "authors": "Alex Nijjar"
+        }
+      ],
+      "declared_license": "Terrarium License",
+      "installed_path": "mods/ad_astra-forge-1.20.1-1.15.21.jar",
+      "curseforge": {
+        "projectID": 635042,
+        "fileID": 8833730,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/alltheleaks-1.1.5-1.20.1-forge.jar",
+      "name": "AllTheLeaks (Memory Leak Fix)",
+      "side": "both",
+      "size": 1273920,
+      "sha256": "8c9a30ac9f4df04fb5067010ef88d7d92e3b510c183080390c4b3c6d8958c0c2",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9505/18/alltheleaks-1.1.5-1.20.1-forge.jar",
+        "https://edge.forgecdn.net/files/9505/18/alltheleaks-1.1.5-1.20.1-forge.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1091339/files/9505018",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1091339,
+          "file-id": 9505018
+        }
+      },
+      "mods": [
+        {
+          "modId": "alltheleaks",
+          "displayName": "All The Leaks",
+          "version": "1.1.5+1.20.1-forge",
+          "authors": "Uncandango"
+        }
+      ],
+      "declared_license": "MIT",
+      "installed_path": "mods/alltheleaks-1.1.5-1.20.1-forge.jar",
+      "curseforge": {
+        "projectID": 1091339,
+        "fileID": 9505018,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/Anomaly_Zone-2.1.jar",
+      "name": "Anomaly Zone Mod",
+      "side": "both",
+      "size": 126260457,
+      "sha256": "e80fc6117f0369b3af1ff194abd15a4f6137d5087d436aeacb475e50401b8558",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9481/457/Anomaly_Zone-2.1.jar",
+        "https://edge.forgecdn.net/files/9481/457/Anomaly_Zone-2.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1604795/files/9481457",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1604795,
+          "file-id": 9481457
+        }
+      },
+      "mods": [
+        {
+          "modId": "anomalyzone",
+          "displayName": "Anomaly Zone Mod",
+          "version": "1.0",
+          "authors": "X"
+        }
+      ],
+      "declared_license": "All Rights Reserved",
+      "installed_path": "mods/Anomaly_Zone-2.1.jar",
+      "curseforge": {
+        "projectID": 1604795,
+        "fileID": 9481457,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/appleskin-forge-mc1.20.1-2.5.1.jar",
+      "name": "AppleSkin",
+      "side": "both",
+      "size": 47428,
+      "sha256": "e12419e43e3babc810af289403c5cd96bd7f09809b389acc6bb2f122b4b2a426",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/4770/828/appleskin-forge-mc1.20.1-2.5.1.jar",
+        "https://edge.forgecdn.net/files/4770/828/appleskin-forge-mc1.20.1-2.5.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/248787/files/4770828",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 248787,
+          "file-id": 4770828
+        }
+      },
+      "mods": [
+        {
+          "modId": "appleskin",
+          "displayName": "AppleSkin",
+          "version": "${file.jarVersion}",
+          "authors": "squeek"
+        }
+      ],
+      "declared_license": "The Unlicense",
+      "installed_path": "mods/appleskin-forge-mc1.20.1-2.5.1.jar",
+      "curseforge": {
+        "projectID": 248787,
+        "fileID": 4770828,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/architectury-9.2.14-forge.jar",
+      "name": "Architectury API",
+      "side": "both",
+      "size": 580602,
+      "sha256": "218b471d0b8a1f6cda14cfc1beb9eeb0df54304500acc6c5613d9b88ec65d9af",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/5137/938/architectury-9.2.14-forge.jar",
+        "https://edge.forgecdn.net/files/5137/938/architectury-9.2.14-forge.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/419699/files/5137938",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 419699,
+          "file-id": 5137938
+        }
+      },
+      "mods": [
+        {
+          "modId": "architectury",
+          "displayName": "Architectury",
+          "version": "9.2.14",
+          "authors": "shedaniel"
+        }
+      ],
+      "declared_license": "GNU LGPLv3",
+      "installed_path": "mods/architectury-9.2.14-forge.jar",
+      "curseforge": {
+        "projectID": 419699,
+        "fileID": 5137938,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/BadOptimizations-2.4.1-1.20.1.jar",
+      "name": "BadOptimizations",
+      "side": "client",
+      "size": 460234,
+      "sha256": "3da53cdf856757d9ec7df0be86bc23b2c7d67a019b490f8f64317d4d9b77cac8",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/7338/200/BadOptimizations-2.4.1-1.20.1.jar",
+        "https://edge.forgecdn.net/files/7338/200/BadOptimizations-2.4.1-1.20.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/949555/files/7338200",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 949555,
+          "file-id": 7338200
+        }
+      },
+      "mods": [
+        {
+          "modId": "badoptimizations",
+          "displayName": "BadOptimizations",
+          "version": "2.4.1",
+          "authors": "Thosea"
+        }
+      ],
+      "declared_license": "MIT",
+      "installed_path": "mods/BadOptimizations-2.4.1-1.20.1.jar",
+      "curseforge": {
+        "projectID": 949555,
+        "fileID": 7338200,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/berezka_api-1.2.9.7.1-forge-1.20.1.jar",
+      "name": "Berezka's library",
+      "side": "both",
+      "size": 192349,
+      "sha256": "20fe74d017243ea5219102dd2dbe175b3d42950bc41ebdd818d384a8c8239b92",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9393/255/berezka_api-1.2.9.7.1-forge-1.20.1.jar",
+        "https://edge.forgecdn.net/files/9393/255/berezka_api-1.2.9.7.1-forge-1.20.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1160598/files/9393255",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1160598,
+          "file-id": 9393255
+        }
+      },
+      "mods": [
+        {
+          "modId": "berezka_api",
+          "displayName": "Berezka API",
+          "version": "1.2.9.7.1",
+          "authors": "Berezka"
+        }
+      ],
+      "declared_license": "All Rights Reserved",
+      "installed_path": "mods/berezka_api-1.2.9.7.1-forge-1.20.1.jar",
+      "curseforge": {
+        "projectID": 1160598,
+        "fileID": 9393255,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/BetterCompatibilityChecker-forge-4.0.8+mc1.20.1.jar",
+      "name": "Better Compatibility Checker",
+      "side": "both",
+      "size": 26540,
+      "sha256": "71ecffc7c33ae896d9299f392db11bd50027c2dcbd8b16593fa6b6a6a4018502",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/4688/940/BetterCompatibilityChecker-forge-4.0.8%2Bmc1.20.1.jar",
+        "https://edge.forgecdn.net/files/4688/940/BetterCompatibilityChecker-forge-4.0.8%2Bmc1.20.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/551894/files/4688940",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 551894,
+          "file-id": 4688940
+        }
+      },
+      "mods": [
+        {
+          "modId": "bcc",
+          "displayName": "Better Compatibility Checker",
+          "version": "4.0.8",
+          "authors": "Gaz"
+        }
+      ],
+      "declared_license": "All rights reserved",
+      "installed_path": "mods/BetterCompatibilityChecker-forge-4.0.8+mc1.20.1.jar",
+      "curseforge": {
+        "projectID": 551894,
+        "fileID": 4688940,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/booklinggear-1.20.1-3.16.4.jar",
+      "name": "Bookling Gear",
+      "side": "both",
+      "size": 1406544,
+      "sha256": "e3640cc77de4102ad2cd55209dcd06f2f1fcff61e2b2871941cc5c4b4c86c738",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9426/240/booklinggear-1.20.1-3.16.4.jar",
+        "https://edge.forgecdn.net/files/9426/240/booklinggear-1.20.1-3.16.4.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1122766/files/9426240",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1122766,
+          "file-id": 9426240
+        }
+      },
+      "mods": [
+        {
+          "modId": "booklinggear",
+          "displayName": "Bookling Gear",
+          "version": "3.16.4",
+          "authors": "Eruannie_9"
+        }
+      ],
+      "declared_license": "MIT Licence",
+      "installed_path": "mods/booklinggear-1.20.1-3.16.4.jar",
+      "curseforge": {
+        "projectID": 1122766,
+        "fileID": 9426240,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/botarium-forge-1.20.1-2.3.4.jar",
+      "name": "Botarium",
+      "side": "both",
+      "size": 157633,
+      "sha256": "470810a364ff4ad4d4fcd4e55798263938fc893970eacecc58e8b741a392b1cf",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/5486/70/botarium-forge-1.20.1-2.3.4.jar",
+        "https://edge.forgecdn.net/files/5486/70/botarium-forge-1.20.1-2.3.4.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/704113/files/5486070",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 704113,
+          "file-id": 5486070
+        }
+      },
+      "mods": [
+        {
+          "modId": "botarium",
+          "displayName": "Botarium",
+          "version": "2.3.4",
+          "authors": "CodexAdrian"
+        }
+      ],
+      "declared_license": "MIT",
+      "installed_path": "mods/botarium-forge-1.20.1-2.3.4.jar",
+      "curseforge": {
+        "projectID": 704113,
+        "fileID": 5486070,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/campchat-1.0.0.jar",
+      "name": "CampChat",
+      "side": "both",
+      "size": 731254,
+      "sha256": "b5068b1d2b41e98dd69c369819b8da0a7d8b5ffc52ead3575092f76fa43e4d4d",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/7883/426/campchat-1.0.0.jar",
+        "https://edge.forgecdn.net/files/7883/426/campchat-1.0.0.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1506037/files/7883426",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1506037,
+          "file-id": 7883426
+        }
+      },
+      "mods": [
+        {
+          "modId": "campchat",
+          "displayName": "CampChat",
+          "version": "1.0.0",
+          "authors": "kltyton"
+        }
+      ],
+      "declared_license": "All Rights Reserved",
+      "installed_path": "mods/campchat-1.0.0.jar",
+      "curseforge": {
+        "projectID": 1506037,
+        "fileID": 7883426,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/cc-tweaked-1.20.1-forge-1.115.1.jar",
+      "name": "cc 115.1",
+      "side": "both",
+      "size": 3073327,
+      "sha256": "21d84f2d7052a9acce9c8108c792db7961f3182d0add78617bc94752b0f93185",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/7759/163/cc-tweaked-1.20.1-forge-1.115.1.jar",
+        "https://edge.forgecdn.net/files/7759/163/cc-tweaked-1.20.1-forge-1.115.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1486511/files/7759163",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1486511,
+          "file-id": 7759163
+        }
+      },
+      "mods": [
+        {
+          "modId": "computercraft",
+          "displayName": "CC: Tweaked",
+          "version": "1.115.1",
+          "authors": "Daniel Ratcliffe, Aaron Mills, SquidDev"
+        }
+      ],
+      "declared_license": "ComputerCraft Public License (https://raw.githubusercontent.com/dan200/ComputerCraft/master/LICENSE)",
+      "installed_path": "mods/cc-tweaked-1.20.1-forge-1.115.1.jar",
+      "curseforge": {
+        "projectID": 1486511,
+        "fileID": 7759163,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/chaoscrafts_device_mod-1.9.0-beta-all.jar",
+      "name": "[CDM] ChaosCraft's Devices",
+      "side": "both",
+      "size": 11053933,
+      "sha256": "e0081413bb7dc03a457a281c0719253e1d15191a2a91976b1d5477fa17e81371",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/8665/61/chaoscrafts_device_mod-1.9.0-beta-all.jar",
+        "https://edge.forgecdn.net/files/8665/61/chaoscrafts_device_mod-1.9.0-beta-all.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1344649/files/8665061",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1344649,
+          "file-id": 8665061
+        }
+      },
+      "mods": [
+        {
+          "modId": "chaoscrafts_device_mod",
+          "displayName": "ChaosCraft's Device Mod",
+          "version": "1.9.0-beta",
+          "authors": "ChaosCraft"
+        }
+      ],
+      "declared_license": "All Rights Reserved",
+      "installed_path": "mods/chaoscrafts_device_mod-1.9.0-beta-all.jar",
+      "curseforge": {
+        "projectID": 1344649,
+        "fileID": 8665061,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/chaoscrafts_security_essentials-0.5.2-beta.jar",
+      "name": "[CDM] ChaosCraft's Security Essentials (Security Cameras & Turrets)",
+      "side": "both",
+      "size": 1292567,
+      "sha256": "0aaa0a46d01c8637fcb58b6594e288b65c9374403ca3bdb3c6d5fc807b66c961",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/8864/704/chaoscrafts_security_essentials-0.5.2-beta.jar",
+        "https://edge.forgecdn.net/files/8864/704/chaoscrafts_security_essentials-0.5.2-beta.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1655609/files/8864704",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1655609,
+          "file-id": 8864704
+        }
+      },
+      "mods": [
+        {
+          "modId": "chaoscrafts_security_essentials",
+          "displayName": "ChaosCraft's Security Essentials",
+          "version": "0.5.2-beta",
+          "authors": "ChaosCraft"
+        }
+      ],
+      "declared_license": "All Rights Reserved",
+      "installed_path": "mods/chaoscrafts_security_essentials-0.5.2-beta.jar",
+      "curseforge": {
+        "projectID": 1655609,
+        "fileID": 8864704,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/chaoszpack v.1.4.1 TacZ.jar",
+      "name": "ChaosZPack [Lost Cities] Better Cities / Zombie Apocalypse /  Abandoned Structures / TacZ",
+      "side": "both",
+      "size": 10493260,
+      "sha256": "62e8db0ab3748e3dec0cb65467b73e444b4d444ffea2fc9c6ba37442568b5c0b",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/7801/45/chaoszpack%20v.1.4.1%20TacZ.jar",
+        "https://edge.forgecdn.net/files/7801/45/chaoszpack%20v.1.4.1%20TacZ.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1222668/files/7801045",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1222668,
+          "file-id": 7801045
+        }
+      },
+      "mods": [
+        {
+          "modId": "chaoszpack",
+          "displayName": "ChaosZPack",
+          "version": "1.4.1",
+          "authors": "ChaosCraft"
+        }
+      ],
+      "declared_license": "All rights reserved",
+      "installed_path": "mods/chaoszpack v.1.4.1 TacZ.jar",
+      "curseforge": {
+        "projectID": 1222668,
+        "fileID": 7801045,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/chaoszpack_structures-1.0.2-1.20.1.jar",
+      "name": "ChaosZPack Remastered: Structures ! [Watchtowers]",
+      "side": "both",
+      "size": 56256,
+      "sha256": "b6e4c282d5350ef3ede3a15a4198f1a14dc01e6956cf23a03084cf23ebce4197",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/6969/81/chaoszpack_structures-1.0.2-1.20.1.jar",
+        "https://edge.forgecdn.net/files/6969/81/chaoszpack_structures-1.0.2-1.20.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1341107/files/6969081",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1341107,
+          "file-id": 6969081
+        }
+      },
+      "mods": [
+        {
+          "modId": "chaoszpack_structures",
+          "displayName": "ChaosZPack Structures",
+          "version": "1.0.2",
+          "authors": "ChaosCraft"
+        }
+      ],
+      "declared_license": "All Rights Reserved",
+      "installed_path": "mods/chaoszpack_structures-1.0.2-1.20.1.jar",
+      "curseforge": {
+        "projectID": 1341107,
+        "fileID": 6969081,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/chaoszproject-bandits-1.0.0-1.20.1.jar",
+      "name": "ChaosZProject: Bandits! - Pillager's Gun Addon",
+      "side": "both",
+      "size": 19791,
+      "sha256": "97c9f0d4ee3f5114353af3b23ffa08550682e684f11e853c93930c03881824e8",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/6562/409/chaoszproject-bandits-1.0.0-1.20.1.jar",
+        "https://edge.forgecdn.net/files/6562/409/chaoszproject-bandits-1.0.0-1.20.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1272684/files/6562409",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1272684,
+          "file-id": 6562409
+        }
+      },
+      "mods": [
+        {
+          "modId": "chaoszprojectbandits",
+          "displayName": "ChaosZProject: Bandits!",
+          "version": "1.0.0",
+          "authors": "ChaosCraft"
+        }
+      ],
+      "declared_license": "All rights reserved",
+      "installed_path": "mods/chaoszproject-bandits-1.0.0-1.20.1.jar",
+      "curseforge": {
+        "projectID": 1272684,
+        "fileID": 6562409,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/chat_heads-0.15.7-forge-1.20.jar",
+      "name": "Chat Heads",
+      "side": "client",
+      "size": 724902,
+      "sha256": "1cfed5826ca81787618dde3d8e52fdf06068a76712d45327ec36046229f955e7",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/8642/487/chat_heads-0.15.7-forge-1.20.jar",
+        "https://edge.forgecdn.net/files/8642/487/chat_heads-0.15.7-forge-1.20.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/407206/files/8642487",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 407206,
+          "file-id": 8642487
+        }
+      },
+      "mods": [
+        {
+          "modId": "chat_heads",
+          "displayName": "Chat Heads",
+          "version": "0.15.7",
+          "authors": "dzwdz, Fourmisain"
+        }
+      ],
+      "declared_license": "MPL-2.0",
+      "installed_path": "mods/chat_heads-0.15.7-forge-1.20.jar",
+      "curseforge": {
+        "projectID": 407206,
+        "fileID": 8642487,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/cloth-config-11.1.136-forge.jar",
+      "name": "Cloth Config API (Fabric/Forge/NeoForge)",
+      "side": "both",
+      "size": 1181413,
+      "sha256": "1e895e85cf5b1e1905ef3178ec155c8badfe22a1577b92c09143a5aa1f4ce0f2",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/5729/105/cloth-config-11.1.136-forge.jar",
+        "https://edge.forgecdn.net/files/5729/105/cloth-config-11.1.136-forge.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/348521/files/5729105",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 348521,
+          "file-id": 5729105
+        }
+      },
+      "mods": [
+        {
+          "modId": "cloth_config",
+          "displayName": "Cloth Config v10 API",
+          "version": "11.1.136",
+          "authors": ""
+        }
+      ],
+      "declared_license": "GNU LGPLv3",
+      "installed_path": "mods/cloth-config-11.1.136-forge.jar",
+      "curseforge": {
+        "projectID": 348521,
+        "fileID": 5729105,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/Clumps-forge-1.20.1-12.0.0.4.jar",
+      "name": "Clumps",
+      "side": "both",
+      "size": 20299,
+      "sha256": "1d1cfcf386f182b1d0bdbe4bd4fc57b96234e8c7468e95e1575ad4dd6433243a",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/5278/538/Clumps-forge-1.20.1-12.0.0.4.jar",
+        "https://edge.forgecdn.net/files/5278/538/Clumps-forge-1.20.1-12.0.0.4.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/256717/files/5278538",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 256717,
+          "file-id": 5278538
+        }
+      },
+      "mods": [
+        {
+          "modId": "clumps",
+          "displayName": "Clumps",
+          "version": "${file.jarVersion}",
+          "authors": "Jaredlll08"
+        }
+      ],
+      "declared_license": "MIT",
+      "installed_path": "mods/Clumps-forge-1.20.1-12.0.0.4.jar",
+      "curseforge": {
+        "projectID": 256717,
+        "fileID": 5278538,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/colorwheel-forge-1.3.2-mc1.20.1.jar",
+      "name": "Colorwheel",
+      "side": "client",
+      "size": 1143606,
+      "sha256": "a6c949775f1d51414bbeaee6330a1a4a783829c4fc628a08f417f064b77492d4",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9427/84/colorwheel-forge-1.3.2-mc1.20.1.jar",
+        "https://edge.forgecdn.net/files/9427/84/colorwheel-forge-1.3.2-mc1.20.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1254143/files/9427084",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1254143,
+          "file-id": 9427084
+        }
+      },
+      "mods": [
+        {
+          "modId": "colorwheel",
+          "displayName": "Colorwheel",
+          "version": "1.3.2+mc1.20.1",
+          "authors": "djefrey"
+        }
+      ],
+      "declared_license": "LGPLv3",
+      "installed_path": "mods/colorwheel-forge-1.3.2-mc1.20.1.jar",
+      "curseforge": {
+        "projectID": 1254143,
+        "fileID": 9427084,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/Controlling-forge-1.20.1-12.0.2.jar",
+      "name": "Controlling",
+      "side": "both",
+      "size": 115280,
+      "sha256": "516308a93824119f6a1ebc75425aa21ee8f8de0c331942793a054ba6d9c24944",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/4646/682/Controlling-forge-1.20.1-12.0.2.jar",
+        "https://edge.forgecdn.net/files/4646/682/Controlling-forge-1.20.1-12.0.2.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/250398/files/4646682",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 250398,
+          "file-id": 4646682
+        }
+      },
+      "mods": [
+        {
+          "modId": "controlling",
+          "displayName": "Controlling",
+          "version": "${file.jarVersion}",
+          "authors": "Jaredlll08"
+        }
+      ],
+      "declared_license": "MIT",
+      "installed_path": "mods/Controlling-forge-1.20.1-12.0.2.jar",
+      "curseforge": {
+        "projectID": 250398,
+        "fileID": 4646682,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/copycats-3.0.10+mc.1.20.1-forge.jar",
+      "name": "Create: Copycats+",
+      "side": "both",
+      "size": 2003713,
+      "sha256": "684a7a65a576d84bee4250b3cc10ddcaa66958cee05b541b1cd99df8bdc0185e",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/8822/431/copycats-3.0.10%2Bmc.1.20.1-forge.jar",
+        "https://edge.forgecdn.net/files/8822/431/copycats-3.0.10%2Bmc.1.20.1-forge.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/968398/files/8822431",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 968398,
+          "file-id": 8822431
+        }
+      },
+      "mods": [
+        {
+          "modId": "copycats",
+          "displayName": "Create: Copycats+",
+          "version": "3.0.10+mc.1.20.1-forge",
+          "authors": "Lysine, Bennyboy1695, Redcat_XVIII"
+        }
+      ],
+      "declared_license": "All Rights Reserved",
+      "installed_path": "mods/copycats-3.0.10+mc.1.20.1-forge.jar",
+      "curseforge": {
+        "projectID": 968398,
+        "fileID": 8822431,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/coroutil-forge-1.20.1-1.3.7.jar",
+      "name": "CoroUtil",
+      "side": "both",
+      "size": 64187,
+      "sha256": "11448808a42c17425cf2ea39701841008683d6ad6e2838a34eef0253251a870f",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/5096/38/coroutil-forge-1.20.1-1.3.7.jar",
+        "https://edge.forgecdn.net/files/5096/38/coroutil-forge-1.20.1-1.3.7.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/237749/files/5096038",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 237749,
+          "file-id": 5096038
+        }
+      },
+      "mods": [
+        {
+          "modId": "coroutil",
+          "displayName": "CoroUtil",
+          "version": "1.20.1-1.3.7",
+          "authors": "Corosus"
+        }
+      ],
+      "declared_license": "All Rights Reserved",
+      "installed_path": "mods/coroutil-forge-1.20.1-1.3.7.jar",
+      "curseforge": {
+        "projectID": 237749,
+        "fileID": 5096038,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/Cosmic_Horizons_0.0.7.3-forge-1.20.1.jar",
+      "name": "Cosmic Horizons",
+      "side": "both",
+      "size": 28385967,
+      "sha256": "46cdac6c72a3788f3ffbd2d6ef0420aad3688a74079c3dbdd84e3e300441c3ca",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/6055/514/Cosmic_Horizons_0.0.7.3-forge-1.20.1.jar",
+        "https://edge.forgecdn.net/files/6055/514/Cosmic_Horizons_0.0.7.3-forge-1.20.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1063119/files/6055514",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1063119,
+          "file-id": 6055514
+        }
+      },
+      "mods": [
+        {
+          "modId": "cosmos",
+          "displayName": "Cosmic Horizons",
+          "version": "0.0.7.3",
+          "authors": "DEA__TH"
+        }
+      ],
+      "declared_license": "All Rights Reserved",
+      "installed_path": "mods/Cosmic_Horizons_0.0.7.3-forge-1.20.1.jar",
+      "curseforge": {
+        "projectID": 1063119,
+        "fileID": 6055514,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/create-1.20.1-6.0.8.jar",
+      "name": "Create",
+      "side": "both",
+      "size": 19170905,
+      "sha256": "6fbb910c367dbce8e4fc7e5bf64b6edd4de980906ed00af8e47e4af843c0d9b0",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/7178/761/create-1.20.1-6.0.8.jar",
+        "https://edge.forgecdn.net/files/7178/761/create-1.20.1-6.0.8.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/328085/files/7178761",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 328085,
+          "file-id": 7178761
+        }
+      },
+      "mods": [
+        {
+          "modId": "create",
+          "displayName": "Create",
+          "version": "6.0.8",
+          "authors": "simibubi"
+        }
+      ],
+      "declared_license": "MIT",
+      "installed_path": "mods/create-1.20.1-6.0.8.jar",
+      "curseforge": {
+        "projectID": 328085,
+        "fileID": 7178761,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/create_ad_astra_compat-forge-1.20.1-1.0.0.jar",
+      "name": "Create Ad Atra Compat",
+      "side": "both",
+      "size": 23401,
+      "sha256": "fd942e664a5ca60f8999b900ff1da673325c107a01fc108ea4e1cc04172e56b6",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/5252/441/create_ad_astra_compat-forge-1.20.1-1.0.0.jar",
+        "https://edge.forgecdn.net/files/5252/441/create_ad_astra_compat-forge-1.20.1-1.0.0.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1001456/files/5252441",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1001456,
+          "file-id": 5252441
+        }
+      },
+      "mods": [
+        {
+          "modId": "create_ad_astra_compat",
+          "displayName": "Create Ad Atra Compat",
+          "version": "1.0.0",
+          "authors": "celsiusqc"
+        }
+      ],
+      "declared_license": "MIT",
+      "installed_path": "mods/create_ad_astra_compat-forge-1.20.1-1.0.0.jar",
+      "curseforge": {
+        "projectID": 1001456,
+        "fileID": 5252441,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/create_ad_astra_recipes-1.0.0-forge-1.20.1.jar",
+      "name": "Create Ad Astra Recipes",
+      "side": "both",
+      "size": 1582970,
+      "sha256": "fc8b9769aecd0981ad465c9f1cf81f6f2caed660ce34b35e3776cd38796059d2",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/5997/398/create_ad_astra_recipes-1.0.0-forge-1.20.1.jar",
+        "https://edge.forgecdn.net/files/5997/398/create_ad_astra_recipes-1.0.0-forge-1.20.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1160777/files/5997398",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1160777,
+          "file-id": 5997398
+        }
+      },
+      "mods": [
+        {
+          "modId": "create_ad_astra_recipes",
+          "displayName": "Create Ad Astra Recipes",
+          "version": "1.0.0",
+          "authors": "LittleButter On Modrinth, LittleButter66 On Curseforge"
+        }
+      ],
+      "declared_license": "All Rights Reserved",
+      "installed_path": "mods/create_ad_astra_recipes-1.0.0-forge-1.20.1.jar",
+      "curseforge": {
+        "projectID": 1160777,
+        "fileID": 5997398,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/createdeco-2.0.3-1.20.1-forge.jar",
+      "name": "Create Deco",
+      "side": "both",
+      "size": 3509013,
+      "sha256": "7d6dd0094d18d6bab64fcd7de680ea736015d1a1ffc472d3fe03122bc7aa0864",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/6373/226/createdeco-2.0.3-1.20.1-forge.jar",
+        "https://edge.forgecdn.net/files/6373/226/createdeco-2.0.3-1.20.1-forge.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/509285/files/6373226",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 509285,
+          "file-id": 6373226
+        }
+      },
+      "mods": [
+        {
+          "modId": "createdeco",
+          "displayName": "Create Deco",
+          "version": "2.0.3-1.20.1-forge",
+          "authors": "Kayla, Talrey, Ordana, Cassian"
+        }
+      ],
+      "declared_license": "Insert License Here",
+      "installed_path": "mods/createdeco-2.0.3-1.20.1-forge.jar",
+      "curseforge": {
+        "projectID": 509285,
+        "fileID": 6373226,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/createimmersivetacz-1.4-1.20.1.jar",
+      "name": "Create: Immersive Tacz Integration",
+      "side": "both",
+      "size": 79897,
+      "sha256": "8f1e8b58afba0aaa53becef2f4de41184aca10b901c835faeffbdc03db975f7a",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/6901/38/createimmersivetacz-1.4-1.20.1.jar",
+        "https://edge.forgecdn.net/files/6901/38/createimmersivetacz-1.4-1.20.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1152431/files/6901038",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1152431,
+          "file-id": 6901038
+        }
+      },
+      "mods": [
+        {
+          "modId": "createimmersivetacz",
+          "displayName": "Create Immersive TaCZ",
+          "version": "1.4-1.20.1",
+          "authors": "MYR"
+        }
+      ],
+      "declared_license": "All Rights Reserved",
+      "installed_path": "mods/createimmersivetacz-1.4-1.20.1.jar",
+      "curseforge": {
+        "projectID": 1152431,
+        "fileID": 6901038,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/creatingspace-1.20.1-1.7.21.jar",
+      "name": "Creating Space",
+      "side": "both",
+      "size": 2423372,
+      "sha256": "1e2f527976cbac9e965adaca6dbc75790341f21dcdf087205748bcc55003e466",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/8640/738/creatingspace-1.20.1-1.7.21.jar",
+        "https://edge.forgecdn.net/files/8640/738/creatingspace-1.20.1-1.7.21.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/858897/files/8640738",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 858897,
+          "file-id": 8640738
+        }
+      },
+      "mods": [
+        {
+          "modId": "creatingspace",
+          "displayName": "Creating Space",
+          "version": "1.7.21",
+          "authors": "Real Ant Engineer"
+        }
+      ],
+      "declared_license": "MIT",
+      "installed_path": "mods/creatingspace-1.20.1-1.7.21.jar",
+      "curseforge": {
+        "projectID": 858897,
+        "fileID": 8640738,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/CreativeCore_FORGE_v2.12.40_mc1.20.1.jar",
+      "name": "CreativeCore",
+      "side": "both",
+      "size": 1144290,
+      "sha256": "936de62489c0d6fbe74202486cbe2b191b8629b02bab1d480acfdb03690f33f4",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/8947/229/CreativeCore_FORGE_v2.12.40_mc1.20.1.jar",
+        "https://edge.forgecdn.net/files/8947/229/CreativeCore_FORGE_v2.12.40_mc1.20.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/257814/files/8947229",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 257814,
+          "file-id": 8947229
+        }
+      },
+      "mods": [
+        {
+          "modId": "creativecore",
+          "displayName": "CreativeCore",
+          "version": "2.12.40",
+          "authors": "CreativeMD"
+        }
+      ],
+      "declared_license": "LGPL-3.0-only",
+      "installed_path": "mods/CreativeCore_FORGE_v2.12.40_mc1.20.1.jar",
+      "curseforge": {
+        "projectID": 257814,
+        "fileID": 8947229,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/curios-forge-5.14.1+1.20.1.jar",
+      "name": "Curios API",
+      "side": "both",
+      "size": 398066,
+      "sha256": "1e817919a35b37cf30524aaec73f0ca5130452f23f168f844854df282eb8e51f",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/6418/456/curios-forge-5.14.1%2B1.20.1.jar",
+        "https://edge.forgecdn.net/files/6418/456/curios-forge-5.14.1%2B1.20.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/309927/files/6418456",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 309927,
+          "file-id": 6418456
+        }
+      },
+      "mods": [
+        {
+          "modId": "curios",
+          "displayName": "Curios API",
+          "version": "${file.jarVersion}",
+          "authors": "C4"
+        }
+      ],
+      "declared_license": "LGPL-3.0-or-later",
+      "installed_path": "mods/curios-forge-5.14.1+1.20.1.jar",
+      "curseforge": {
+        "projectID": 309927,
+        "fileID": 6418456,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/doomsday_decoration-forge-1.20.1-1.2.1.jar",
+      "name": "Doomsday Decoration",
+      "side": "both",
+      "size": 6525937,
+      "sha256": "a8727c92e1b15db7c52744c6cc96c1cad50c30cbc06a66b23fabdfbb0cabeb2b",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9499/174/doomsday_decoration-forge-1.20.1-1.2.1.jar",
+        "https://edge.forgecdn.net/files/9499/174/doomsday_decoration-forge-1.20.1-1.2.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1180487/files/9499174",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1180487,
+          "file-id": 9499174
+        }
+      },
+      "mods": [
+        {
+          "modId": "doomsday_decoration",
+          "displayName": "Doomsday Decoration RE",
+          "version": "1.2.1",
+          "authors": "Raiiiden, Huzai"
+        }
+      ],
+      "declared_license": "ARR",
+      "installed_path": "mods/doomsday_decoration-forge-1.20.1-1.2.1.jar",
+      "curseforge": {
+        "projectID": 1180487,
+        "fileID": 9499174,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/doomsday_translations-1.0.7.jar",
+      "name": "Doomsday translation",
+      "side": "both",
+      "size": 77882,
+      "sha256": "397c6a8c708b50cfb479f134a27ac328ea2fd147e47eebab38c94c1b53a38900",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/7341/247/doomsday_translations-1.0.7.jar",
+        "https://edge.forgecdn.net/files/7341/247/doomsday_translations-1.0.7.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1366293/files/7341247",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1366293,
+          "file-id": 7341247
+        }
+      },
+      "mods": [
+        {
+          "modId": "doomsday_translations",
+          "displayName": "Doomsday Translations",
+          "version": "1.0.7",
+          "authors": "Berezka"
+        }
+      ],
+      "declared_license": "All Rights Reserved",
+      "installed_path": "mods/doomsday_translations-1.0.7.jar",
+      "curseforge": {
+        "projectID": 1366293,
+        "fileID": 7341247,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/dummmmmmy-1.20-2.0.12-forge.jar",
+      "name": "MmmMmmMmmMmm (Target Dummy)",
+      "side": "both",
+      "size": 839685,
+      "sha256": "bd7f168ec56f14a25d36d9d0dc4d281e88f77b1ba678907b5c570e5c051a5ca4",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/7963/208/dummmmmmy-1.20-2.0.12-forge.jar",
+        "https://edge.forgecdn.net/files/7963/208/dummmmmmy-1.20-2.0.12-forge.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/225738/files/7963208",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 225738,
+          "file-id": 7963208
+        }
+      },
+      "mods": [
+        {
+          "modId": "dummmmmmy",
+          "displayName": "MmmMmmMmmMmm",
+          "version": "1.20-2.0.11",
+          "authors": "MehVahdJukaar, Bonusboni, Plantkillable"
+        }
+      ],
+      "declared_license": "Supplementaries Team License v.1.5",
+      "installed_path": "mods/dummmmmmy-1.20-2.0.12-forge.jar",
+      "curseforge": {
+        "projectID": 225738,
+        "fileID": 7963208,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/embeddium-0.3.31+mc1.20.1.jar",
+      "name": "Embeddium",
+      "side": "both",
+      "size": 1320675,
+      "sha256": "eed3d1325f2acc2fd4e69bb495e5ccb91d962126ac5330f0582ebc2a3daf47fb",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/5681/725/embeddium-0.3.31%2Bmc1.20.1.jar",
+        "https://edge.forgecdn.net/files/5681/725/embeddium-0.3.31%2Bmc1.20.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/908741/files/5681725",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 908741,
+          "file-id": 5681725
+        }
+      },
+      "mods": [
+        {
+          "modId": "embeddium",
+          "displayName": "Embeddium",
+          "version": "0.3.31+mc1.20.1",
+          "authors": "embeddedt"
+        },
+        {
+          "modId": "rubidium",
+          "displayName": "Rubidium (Embeddium)",
+          "version": "0.7.1",
+          "authors": ""
+        }
+      ],
+      "declared_license": "LGPL-3.0-only",
+      "installed_path": "mods/embeddium-0.3.31+mc1.20.1.jar",
+      "curseforge": {
+        "projectID": 908741,
+        "fileID": 5681725,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/enhancedai-3.3.7.5.jar",
+      "name": "Enhanced AI",
+      "side": "both",
+      "size": 1387972,
+      "sha256": "d0299bf27bdb5f4fa6af1e8fb33b21277f1ba5613a811dd96aecb9f03e941069",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/8946/3/enhancedai-3.3.7.5.jar",
+        "https://edge.forgecdn.net/files/8946/3/enhancedai-3.3.7.5.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/515276/files/8946003",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 515276,
+          "file-id": 8946003
+        }
+      },
+      "mods": [
+        {
+          "modId": "enhancedai",
+          "displayName": "Enhanced AI",
+          "version": "3.3.7.5",
+          "authors": "Insane96MCP"
+        }
+      ],
+      "declared_license": "All Rights Reserved",
+      "installed_path": "mods/enhancedai-3.3.7.5.jar",
+      "curseforge": {
+        "projectID": 515276,
+        "fileID": 8946003,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/EnhancedVisuals_FORGE_v1.8.34_mc1.20.1.jar",
+      "name": "EnhancedVisuals",
+      "side": "both",
+      "size": 4728483,
+      "sha256": "29e8c198c8b45c97e01f2566b2ca2e72b2af5436edca9d04d75259377ebde291",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9080/707/EnhancedVisuals_FORGE_v1.8.34_mc1.20.1.jar",
+        "https://edge.forgecdn.net/files/9080/707/EnhancedVisuals_FORGE_v1.8.34_mc1.20.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/255389/files/9080707",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 255389,
+          "file-id": 9080707
+        }
+      },
+      "mods": [
+        {
+          "modId": "enhancedvisuals",
+          "displayName": "EnhancedVisuals",
+          "version": "1.8.34",
+          "authors": "CreativeMD, Sonicjumper"
+        }
+      ],
+      "declared_license": "LGPL-3.0-only",
+      "installed_path": "mods/EnhancedVisuals_FORGE_v1.8.34_mc1.20.1.jar",
+      "curseforge": {
+        "projectID": 255389,
+        "fileID": 9080707,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/entity_model_features-3.3.12-1.20.1-forge.jar",
+      "name": "Entity Model Features",
+      "side": "client",
+      "size": 840669,
+      "sha256": "d7caedcb7c848d605a9f075c71e0d13ad5194326e55a6f45a50a97a3d8d87920",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9188/522/entity_model_features-3.3.12-1.20.1-forge.jar",
+        "https://edge.forgecdn.net/files/9188/522/entity_model_features-3.3.12-1.20.1-forge.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/844662/files/9188522",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 844662,
+          "file-id": 9188522
+        }
+      },
+      "mods": [
+        {
+          "modId": "entity_model_features",
+          "displayName": "Entity Model Features",
+          "version": "3.3.12",
+          "authors": "Traben"
+        }
+      ],
+      "declared_license": "LGPL-3.0",
+      "installed_path": "mods/entity_model_features-3.3.12-1.20.1-forge.jar",
+      "curseforge": {
+        "projectID": 844662,
+        "fileID": 9188522,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/entity_texture_features-7.2.7-1.20.1-forge.jar",
+      "name": "Entity Texture Features",
+      "side": "client",
+      "size": 1004366,
+      "sha256": "9a1a335b50026c1a2770254cd5f89f2f5c85f35a0a8ffeb1de9663c8b356c588",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9420/328/entity_texture_features-7.2.7-1.20.1-forge.jar",
+        "https://edge.forgecdn.net/files/9420/328/entity_texture_features-7.2.7-1.20.1-forge.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/568563/files/9420328",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 568563,
+          "file-id": 9420328
+        }
+      },
+      "mods": [
+        {
+          "modId": "entity_texture_features",
+          "displayName": "Entity Texture Features",
+          "version": "7.2.7",
+          "authors": "Traben"
+        }
+      ],
+      "declared_license": "LGPL-3.0",
+      "installed_path": "mods/entity_texture_features-7.2.7-1.20.1-forge.jar",
+      "curseforge": {
+        "projectID": 568563,
+        "fileID": 9420328,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/ExfilZones-2.0.jar",
+      "name": "Evacuation Mod",
+      "side": "both",
+      "size": 28299,
+      "sha256": "4d7c7c67eb5aea6a893f48a2adfedae1b0909bbfbb7dd43c8c75c37f20ce28e5",
+      "urls": [
+        "https://cdn.modrinth.com/data/KTLfmdu9/versions/tSxioFKh/ExfilZones-2.0.jar"
+      ],
+      "page": "https://modrinth.com/project/KTLfmdu9/version/tSxioFKh",
+      "source_metadata": {
+        "modrinth": {
+          "mod-id": "KTLfmdu9",
+          "version": "tSxioFKh"
+        }
+      },
+      "mods": [
+        {
+          "modId": "evacuation",
+          "displayName": "Evacuation Mod",
+          "version": "1.0.0",
+          "authors": "YourName"
+        }
+      ],
+      "declared_license": "All rights reserved",
+      "installed_path": "mods/ExfilZones-2.0.jar",
+      "delivery": "override-original"
+    },
+    {
+      "path": "mods/Explosion-Overhaul-0.2.3.0-forge-.jar",
+      "name": "Explosion Overhaul: A new level of destruction",
+      "side": "server",
+      "size": 84444256,
+      "sha256": "feac2ed262604f01e74609acdeba83c9b0bbe2b602ba0da40196fb1041f2c64f",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/7659/431/Explosion-Overhaul-0.2.3.0-forge-.jar",
+        "https://edge.forgecdn.net/files/7659/431/Explosion-Overhaul-0.2.3.0-forge-.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1296203/files/7659431",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1296203,
+          "file-id": 7659431
+        }
+      },
+      "mods": [
+        {
+          "modId": "explosionoverhaul",
+          "displayName": "Explosion Overhaul: A new level of destruction",
+          "version": "0.2.3.0-forge",
+          "authors": "Vinlanx"
+        }
+      ],
+      "declared_license": "All Rights Reserved",
+      "installed_path": "mods/Explosion-Overhaul-0.2.3.0-forge-.jar",
+      "curseforge": {
+        "projectID": 1296203,
+        "fileID": 7659431,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/extragore-1.20.1-5.4.jar",
+      "name": "Extra Gore",
+      "side": "client",
+      "size": 1306381,
+      "sha256": "1686e76de3e12833d879a41311518f6c0bdb453ce0eb6ccfa3f1523af73c6f00",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9428/69/extragore-1.20.1-5.4.jar",
+        "https://edge.forgecdn.net/files/9428/69/extragore-1.20.1-5.4.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/937006/files/9428069",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 937006,
+          "file-id": 9428069
+        }
+      },
+      "mods": [
+        {
+          "modId": "extragore",
+          "displayName": "Extra Gore",
+          "version": "5.4",
+          "authors": "Eruannie_9"
+        }
+      ],
+      "declared_license": "All Rights Reserved",
+      "installed_path": "mods/extragore-1.20.1-5.4.jar",
+      "curseforge": {
+        "projectID": 937006,
+        "fileID": 9428069,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/fancyplayeranimation-forge-1.20.1-1.3.4.jar",
+      "name": "Fancy Player Animation",
+      "side": "client",
+      "size": 511714,
+      "sha256": "92c17bf308486aa205e22bb0924f8764225a016c3f4e08001aa7c0d564dcfbc3",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9366/920/fancyplayeranimation-forge-1.20.1-1.3.4.jar",
+        "https://edge.forgecdn.net/files/9366/920/fancyplayeranimation-forge-1.20.1-1.3.4.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1744940/files/9366920",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1744940,
+          "file-id": 9366920
+        }
+      },
+      "mods": [
+        {
+          "modId": "fancyplayeranimation",
+          "displayName": "Fancy Player Animation",
+          "version": "1.3.4",
+          "authors": "SgodProject"
+        }
+      ],
+      "declared_license": "All Rights Reserved (c) 2026 SgodProject",
+      "installed_path": "mods/fancyplayeranimation-forge-1.20.1-1.3.4.jar",
+      "curseforge": {
+        "projectID": 1744940,
+        "fileID": 9366920,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/FastFurnace-1.20.1-8.0.2.jar",
+      "name": "FastFurnace",
+      "side": "both",
+      "size": 6170,
+      "sha256": "970c11c090e7a364e2e006aabb5e573f79901e710e97195334ee5802317776e8",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/5181/98/FastFurnace-1.20.1-8.0.2.jar",
+        "https://edge.forgecdn.net/files/5181/98/FastFurnace-1.20.1-8.0.2.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/299540/files/5181098",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 299540,
+          "file-id": 5181098
+        }
+      },
+      "mods": [
+        {
+          "modId": "fastfurnace",
+          "displayName": "FastFurnace",
+          "version": "8.0.2",
+          "authors": ""
+        }
+      ],
+      "declared_license": "MIT License",
+      "installed_path": "mods/FastFurnace-1.20.1-8.0.2.jar",
+      "curseforge": {
+        "projectID": 299540,
+        "fileID": 5181098,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/FastSuite-1.20.1-5.1.2.jar",
+      "name": "FastSuite",
+      "side": "both",
+      "size": 26600,
+      "sha256": "5e05cb3ce05785a0061a41b7a83443074a6c26dd7d9db75c453fa2487481d54e",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/7527/943/FastSuite-1.20.1-5.1.2.jar",
+        "https://edge.forgecdn.net/files/7527/943/FastSuite-1.20.1-5.1.2.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/475117/files/7527943",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 475117,
+          "file-id": 7527943
+        }
+      },
+      "mods": [
+        {
+          "modId": "fastsuite",
+          "displayName": "Fast Suite",
+          "version": "5.1.2",
+          "authors": ""
+        }
+      ],
+      "declared_license": "MIT License",
+      "installed_path": "mods/FastSuite-1.20.1-5.1.2.jar",
+      "curseforge": {
+        "projectID": 475117,
+        "fileID": 7527943,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/FastWorkbench-1.20.1-8.0.4.jar",
+      "name": "FastWorkbench",
+      "side": "both",
+      "size": 28188,
+      "sha256": "86d20c6879bf86ef76b3fd94998d3e5c3327acb5d5324b6eb0b5348354766620",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/5101/229/FastWorkbench-1.20.1-8.0.4.jar",
+        "https://edge.forgecdn.net/files/5101/229/FastWorkbench-1.20.1-8.0.4.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/288885/files/5101229",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 288885,
+          "file-id": 5101229
+        }
+      },
+      "mods": [
+        {
+          "modId": "fastbench",
+          "displayName": "Fast Workbench",
+          "version": "8.0.4",
+          "authors": ""
+        }
+      ],
+      "declared_license": "MIT License",
+      "installed_path": "mods/FastWorkbench-1.20.1-8.0.4.jar",
+      "curseforge": {
+        "projectID": 288885,
+        "fileID": 5101229,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/ferritecore-6.0.1-forge.jar",
+      "name": "FerriteCore ((Neo)Forge)",
+      "side": "both",
+      "size": 123034,
+      "sha256": "9c2c9396a49e796d88497758caa4637d2bcbb433c318e2dd9cebcffbaf0f6c54",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/4810/975/ferritecore-6.0.1-forge.jar",
+        "https://edge.forgecdn.net/files/4810/975/ferritecore-6.0.1-forge.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/429235/files/4810975",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 429235,
+          "file-id": 4810975
+        }
+      },
+      "mods": [
+        {
+          "modId": "ferritecore",
+          "displayName": "Ferrite Core",
+          "version": "${file.jarVersion}",
+          "authors": "malte0811"
+        }
+      ],
+      "declared_license": "MIT",
+      "installed_path": "mods/ferritecore-6.0.1-forge.jar",
+      "curseforge": {
+        "projectID": 429235,
+        "fileID": 4810975,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/framework-forge-1.20.1-0.8.0.jar",
+      "name": "Framework",
+      "side": "both",
+      "size": 383868,
+      "sha256": "37c267f46d8b8dfa81bae8c9fa9fa6467e456cadecae10722ee91b43437f25a0",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/7573/740/framework-forge-1.20.1-0.8.0.jar",
+        "https://edge.forgecdn.net/files/7573/740/framework-forge-1.20.1-0.8.0.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/549225/files/7573740",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 549225,
+          "file-id": 7573740
+        }
+      },
+      "mods": [
+        {
+          "modId": "framework",
+          "displayName": "Framework",
+          "version": "0.8.0",
+          "authors": "MrCrayfish"
+        }
+      ],
+      "declared_license": "LGPLv2.1",
+      "installed_path": "mods/framework-forge-1.20.1-0.8.0.jar",
+      "curseforge": {
+        "projectID": 549225,
+        "fileID": 7573740,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/ftb-library-forge-2001.2.13.jar",
+      "name": "FTB Library (NeoForge)",
+      "side": "both",
+      "size": 780558,
+      "sha256": "41810281b65336265cae2c88412022d02f2f0a3f28c66a06173d86f98acf14a7",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/8226/927/ftb-library-forge-2001.2.13.jar",
+        "https://edge.forgecdn.net/files/8226/927/ftb-library-forge-2001.2.13.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/404465/files/8226927",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 404465,
+          "file-id": 8226927
+        }
+      },
+      "mods": [
+        {
+          "modId": "ftblibrary",
+          "displayName": "FTB Library",
+          "version": "2001.2.13",
+          "authors": "FTB Team"
+        }
+      ],
+      "declared_license": "All Rights Reserved",
+      "installed_path": "mods/ftb-library-forge-2001.2.13.jar",
+      "curseforge": {
+        "projectID": 404465,
+        "fileID": 8226927,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/ftb-ultimine-forge-2001.1.8.jar",
+      "name": "FTB Ultimine (NeoForge)",
+      "side": "both",
+      "size": 129653,
+      "sha256": "b80dde55b2c91fd27f09f15ed2aefb0756c7bd704316e488ae8a06b179e85730",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/7880/472/ftb-ultimine-forge-2001.1.8.jar",
+        "https://edge.forgecdn.net/files/7880/472/ftb-ultimine-forge-2001.1.8.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/386134/files/7880472",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 386134,
+          "file-id": 7880472
+        }
+      },
+      "mods": [
+        {
+          "modId": "ftbultimine",
+          "displayName": "FTB Ultimine",
+          "version": "2001.1.8",
+          "authors": "FTB Team"
+        }
+      ],
+      "declared_license": "All Rights Reserved",
+      "installed_path": "mods/ftb-ultimine-forge-2001.1.8.jar",
+      "curseforge": {
+        "projectID": 386134,
+        "fileID": 7880472,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/fwa-1.20.1-forge-1.3.4.jar",
+      "name": "Fancy World Animations",
+      "side": "client",
+      "size": 411114,
+      "sha256": "8902547bf11f91a3a60062f72a54686578a3d74122f7528e35c2c7bdc424e5a7",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9396/654/fwa-1.20.1-forge-1.3.4.jar",
+        "https://edge.forgecdn.net/files/9396/654/fwa-1.20.1-forge-1.3.4.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1452982/files/9396654",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1452982,
+          "file-id": 9396654
+        }
+      },
+      "mods": [
+        {
+          "modId": "fwa",
+          "displayName": "Fancy World Animations",
+          "version": "1.3.4",
+          "authors": "maDU59_"
+        }
+      ],
+      "declared_license": "MIT",
+      "installed_path": "mods/fwa-1.20.1-forge-1.3.4.jar",
+      "curseforge": {
+        "projectID": 1452982,
+        "fileID": 9396654,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/geckolib-forge-1.20.1-4.8.4.jar",
+      "name": "GeckoLib",
+      "side": "both",
+      "size": 1038209,
+      "sha256": "c04abba4fd354dd8c0e8a732f1f05f4dca893d2e1d962b2ab128bbd411478747",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/8285/794/geckolib-forge-1.20.1-4.8.4.jar",
+        "https://edge.forgecdn.net/files/8285/794/geckolib-forge-1.20.1-4.8.4.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/388172/files/8285794",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 388172,
+          "file-id": 8285794
+        }
+      },
+      "mods": [
+        {
+          "modId": "geckolib",
+          "displayName": "GeckoLib 4",
+          "version": "4.8.4",
+          "authors": "Gecko, Eliot, AzureDoom, DerToaster, Tslat, Witixin"
+        }
+      ],
+      "declared_license": "MIT",
+      "installed_path": "mods/geckolib-forge-1.20.1-4.8.4.jar",
+      "curseforge": {
+        "projectID": 388172,
+        "fileID": 8285794,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/gundb-2.2.2-1.20.1.jar",
+      "name": "Gun Durability",
+      "side": "both",
+      "size": 632182,
+      "sha256": "4bb49bd1e2a6c6f0d393b88af59da12db0f1c765801852ce1d15b87b7b33683d",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/8674/93/gundb-2.2.2-1.20.1.jar",
+        "https://edge.forgecdn.net/files/8674/93/gundb-2.2.2-1.20.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1065328/files/8674093",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1065328,
+          "file-id": 8674093
+        }
+      },
+      "mods": [
+        {
+          "modId": "gundb",
+          "displayName": "Gun Durability",
+          "version": "2.2.2",
+          "authors": "Corrinedev"
+        }
+      ],
+      "declared_license": "All Rights Reserved",
+      "installed_path": "mods/gundb-2.2.2-1.20.1.jar",
+      "curseforge": {
+        "projectID": 1065328,
+        "fileID": 8674093,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/hazardous-1.20-1.0.3.jar",
+      "name": "Hazardous",
+      "side": "both",
+      "size": 1066473,
+      "sha256": "9bdf4428d63f66c699fdf1909a3ec216c6affee6c5a5fe50be6358bf2f1c4ede",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9361/842/hazardous-1.20-1.0.3.jar",
+        "https://edge.forgecdn.net/files/9361/842/hazardous-1.20-1.0.3.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1513956/files/9361842",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1513956,
+          "file-id": 9361842
+        }
+      },
+      "mods": [
+        {
+          "modId": "hazardous",
+          "displayName": "Hazardous",
+          "version": "${file.jarVersion}",
+          "authors": ""
+        }
+      ],
+      "declared_license": "MIT License https://github.com/McJtyMods/Hazardous/blob/1.16/LICENCE",
+      "installed_path": "mods/hazardous-1.20-1.0.3.jar",
+      "curseforge": {
+        "projectID": 1513956,
+        "fileID": 9361842,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/hbm_m-0.2.1-alpha+1.20.1-forge.jar",
+      "name": "HBM's Nuclear Tech Modernized",
+      "side": "both",
+      "size": 44945383,
+      "sha256": "14acbd4fd0de45f2b2b9116094fefb9de5055439e36033c0b2802a7dc8bf4828",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/8609/178/hbm_m-0.2.1-alpha%2B1.20.1-forge.jar",
+        "https://edge.forgecdn.net/files/8609/178/hbm_m-0.2.1-alpha%2B1.20.1-forge.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1319588/files/8609178",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1319588,
+          "file-id": 8609178
+        }
+      },
+      "mods": [
+        {
+          "modId": "hbm_m",
+          "displayName": "HBM's Nuclear Tech Modernized",
+          "version": "0.2.1-alpha",
+          "authors": "RaptorDev, TRFFuchs, razchexlitiel, HyperiO"
+        }
+      ],
+      "declared_license": "GNU General Public License v3.0",
+      "installed_path": "mods/hbm_m-0.2.1-alpha+1.20.1-forge.jar",
+      "curseforge": {
+        "projectID": 1319588,
+        "fileID": 8609178,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/horror_element_mod-1.6.3-forge-1.20.1.jar",
+      "name": "Horror Elements mod",
+      "side": "both",
+      "size": 21165237,
+      "sha256": "3caa31c97003a57a1204aa31eedf31782fe7fceeff5f6832b20faf828972a1f9",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/7484/210/horror_element_mod-1.6.3-forge-1.20.1.jar",
+        "https://edge.forgecdn.net/files/7484/210/horror_element_mod-1.6.3-forge-1.20.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/496520/files/7484210",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 496520,
+          "file-id": 7484210
+        }
+      },
+      "mods": [
+        {
+          "modId": "horror_element_mod",
+          "displayName": "Horror Element Mod",
+          "version": "1.6.3",
+          "authors": "Predator97427fr"
+        }
+      ],
+      "declared_license": "Academic Free License v3.0",
+      "installed_path": "mods/horror_element_mod-1.6.3-forge-1.20.1.jar",
+      "curseforge": {
+        "projectID": 496520,
+        "fileID": 7484210,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/ImmediatelyFast-Forge-1.5.5+1.20.4.jar",
+      "name": "ImmediatelyFast",
+      "side": "client",
+      "size": 532063,
+      "sha256": "82db19cc65b5c11a444498fb4b8cbcb0393c043e794cb5bf368631a0af765035",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/8348/481/ImmediatelyFast-Forge-1.5.5%2B1.20.4.jar",
+        "https://edge.forgecdn.net/files/8348/481/ImmediatelyFast-Forge-1.5.5%2B1.20.4.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/686911/files/8348481",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 686911,
+          "file-id": 8348481
+        }
+      },
+      "mods": [
+        {
+          "modId": "immediatelyfast",
+          "displayName": "ImmediatelyFast",
+          "version": "1.5.5+1.20.4",
+          "authors": "RK_01"
+        }
+      ],
+      "declared_license": "LGPL-3.0-or-later",
+      "installed_path": "mods/ImmediatelyFast-Forge-1.5.5+1.20.4.jar",
+      "curseforge": {
+        "projectID": 686911,
+        "fileID": 8348481,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/immersive-weathering-tweaks-1.3.3.jar",
+      "name": "[IWT] | Immersive Weathering: Tweaks",
+      "side": "both",
+      "size": 64011,
+      "sha256": "ed13fbcb14171017065d493b5763c7c989fef98154bbd779736b15ed8045ae6d",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9307/122/immersive-weathering-tweaks-1.3.3.jar",
+        "https://edge.forgecdn.net/files/9307/122/immersive-weathering-tweaks-1.3.3.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1607613/files/9307122",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1607613,
+          "file-id": 9307122
+        }
+      },
+      "mods": [
+        {
+          "modId": "iwt",
+          "displayName": "Immersive Weathering Tweaks",
+          "version": "1.3.3",
+          "authors": "Admany"
+        }
+      ],
+      "declared_license": "BRSSLA V1.5",
+      "installed_path": "mods/immersive-weathering-tweaks-1.3.3.jar",
+      "curseforge": {
+        "projectID": 1607613,
+        "fileID": 9307122,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/immersive_weathering-1.20.1-2.0.5-forge.jar",
+      "name": "Immersive Weathering [FORGE]",
+      "side": "both",
+      "size": 2269048,
+      "sha256": "b88353d6efe18635bac2d4169e704320987e9678fd683217195dcdcf2c1ca1ba",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/6116/941/immersive_weathering-1.20.1-2.0.5-forge.jar",
+        "https://edge.forgecdn.net/files/6116/941/immersive_weathering-1.20.1-2.0.5-forge.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/592449/files/6116941",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 592449,
+          "file-id": 6116941
+        }
+      },
+      "mods": [
+        {
+          "modId": "immersive_weathering",
+          "displayName": "Immersive Weathering",
+          "version": "1.20.1-2.0.5",
+          "authors": "Ordana, MehVahdJukaar, Keybounce"
+        }
+      ],
+      "declared_license": "LGPLv3",
+      "installed_path": "mods/immersive_weathering-1.20.1-2.0.5-forge.jar",
+      "curseforge": {
+        "projectID": 592449,
+        "fileID": 6116941,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/insanelib-1.23.4.6.jar",
+      "name": "InsaneLib",
+      "side": "both",
+      "size": 369931,
+      "sha256": "cadc3902d8bb6d454f6b5039381da3995220640a1945b65400a2a16f4052a318",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/8306/331/insanelib-1.23.4.6.jar",
+        "https://edge.forgecdn.net/files/8306/331/insanelib-1.23.4.6.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/465109/files/8306331",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 465109,
+          "file-id": 8306331
+        }
+      },
+      "mods": [
+        {
+          "modId": "insanelib",
+          "displayName": "InsaneLib",
+          "version": "1.23.4.6",
+          "authors": "Insane96MCP"
+        }
+      ],
+      "declared_license": "All Rights Reserved",
+      "installed_path": "mods/insanelib-1.23.4.6.jar",
+      "curseforge": {
+        "projectID": 465109,
+        "fileID": 8306331,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/InvMove-0.9.3+1.20.1-Forge.jar",
+      "name": "InvMove",
+      "side": "client",
+      "size": 270522,
+      "sha256": "fed951da0863669dea424fc7f9542e95f2bffe2fd53bef914e254fa9969d7885",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/7418/952/InvMove-0.9.3%2B1.20.1-Forge.jar",
+        "https://edge.forgecdn.net/files/7418/952/InvMove-0.9.3%2B1.20.1-Forge.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/581854/files/7418952",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 581854,
+          "file-id": 7418952
+        }
+      },
+      "mods": [
+        {
+          "modId": "invmove",
+          "displayName": "InvMove",
+          "version": "0.9.3",
+          "authors": "PieKing1215"
+        }
+      ],
+      "declared_license": "LGPL-3.0-only",
+      "installed_path": "mods/InvMove-0.9.3+1.20.1-Forge.jar",
+      "curseforge": {
+        "projectID": 581854,
+        "fileID": 7418952,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/InvMove_Plus-1.20.1-universal-0.6.0.jar",
+      "name": "InvMove Plus",
+      "side": "client",
+      "size": 91652,
+      "sha256": "1005112c0734f00ea8efff7303a31ad4786ae32187115e0099e7dc8a2294ef31",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9384/229/InvMove_Plus-1.20.1-universal-0.6.0.jar",
+        "https://edge.forgecdn.net/files/9384/229/InvMove_Plus-1.20.1-universal-0.6.0.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1714977/files/9384229",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1714977,
+          "file-id": 9384229
+        }
+      },
+      "mods": [
+        {
+          "modId": "invmove_plus",
+          "displayName": "InvMove_Plus",
+          "version": "0.6.0",
+          "authors": "Bogdan_Tokarev"
+        }
+      ],
+      "declared_license": "LGPL-3.0-only",
+      "installed_path": "mods/InvMove_Plus-1.20.1-universal-0.6.0.jar",
+      "curseforge": {
+        "projectID": 1714977,
+        "fileID": 9384229,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/InvMoveCompats-0.5.0+1.20.4-Forge.jar",
+      "name": "InvMoveCompats",
+      "side": "client",
+      "size": 103728,
+      "sha256": "e06d37fb6205e07b20192ab72cf0ce1c8e850d97bbf3b97deafe5b0f9dd9ffc7",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/7219/803/InvMoveCompats-0.5.0%2B1.20.4-Forge.jar",
+        "https://edge.forgecdn.net/files/7219/803/InvMoveCompats-0.5.0%2B1.20.4-Forge.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/581875/files/7219803",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 581875,
+          "file-id": 7219803
+        }
+      },
+      "mods": [
+        {
+          "modId": "invmove_compat",
+          "displayName": "InvMoveCompats",
+          "version": "0.5.0",
+          "authors": "PieKing1215"
+        }
+      ],
+      "declared_license": "LGPL-3.0-only",
+      "installed_path": "mods/InvMoveCompats-0.5.0+1.20.4-Forge.jar",
+      "curseforge": {
+        "projectID": 581875,
+        "fileID": 7219803,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/Jade-1.20.1-Forge-11.13.3.jar",
+      "name": "Jade 🔍",
+      "side": "both",
+      "size": 553487,
+      "sha256": "a632c77975e5aedff6322b0072f8b0db3f5d4bf914df6bdcc87d1aea4d5f55f4",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/8479/276/Jade-1.20.1-Forge-11.13.3.jar",
+        "https://edge.forgecdn.net/files/8479/276/Jade-1.20.1-Forge-11.13.3.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/324717/files/8479276",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 324717,
+          "file-id": 8479276
+        }
+      },
+      "mods": [
+        {
+          "modId": "jade",
+          "displayName": "Jade",
+          "version": "${file.jarVersion}",
+          "authors": "Snownee"
+        }
+      ],
+      "declared_license": "CC BY-NC-SA 4.0",
+      "installed_path": "mods/Jade-1.20.1-Forge-11.13.3.jar",
+      "curseforge": {
+        "projectID": 324717,
+        "fileID": 8479276,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/JEIunofficial-unofficial-1.20.1-forge-15.59.0.212-jeiuu.2.jar",
+      "name": "JEI Unofficial Unofficial",
+      "side": "both",
+      "size": 3097479,
+      "sha256": "4e39cbfa9278760aa70cc19d32c823e2f7fe04de23d9a85eb4dc8afb40bad854",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9487/446/JEIunofficial-unofficial-1.20.1-forge-15.59.0.212-jeiuu.2.jar",
+        "https://edge.forgecdn.net/files/9487/446/JEIunofficial-unofficial-1.20.1-forge-15.59.0.212-jeiuu.2.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1788708/files/9487446",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1788708,
+          "file-id": 9487446
+        }
+      },
+      "mods": [
+        {
+          "modId": "jei",
+          "displayName": "JEI unofficial unofficial",
+          "version": "15.59.0.212-jeiuu.2",
+          "authors": "StardustMINUS and the Stellar Remnants Team, Antigravity"
+        }
+      ],
+      "declared_license": "MIT AND LGPL-3.0-or-later",
+      "installed_path": "mods/JEIunofficial-unofficial-1.20.1-forge-15.59.0.212-jeiuu.2.jar",
+      "curseforge": {
+        "projectID": 1788708,
+        "fileID": 9487446,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/jtrans-1.8.4.jar",
+      "name": "JTrans",
+      "side": "client",
+      "size": 82235324,
+      "sha256": "886782dc39948f5543d0dad5f7db7375d0ca7ce8f5032472f9bc60e0750cfabe",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9539/844/jtrans-1.8.4.jar",
+        "https://edge.forgecdn.net/files/9539/844/jtrans-1.8.4.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1505335/files/9539844",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1505335,
+          "file-id": 9539844
+        }
+      },
+      "mods": [
+        {
+          "modId": "jtrans",
+          "displayName": "All Japanese Translate",
+          "version": "1.8.4",
+          "authors": "aoityou"
+        }
+      ],
+      "declared_license": "All Rights Reserved",
+      "installed_path": "mods/jtrans-1.8.4.jar",
+      "curseforge": {
+        "projectID": 1505335,
+        "fileID": 9539844,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/Keerdm Zombie Apocalypse Essentials (TACZ) 1.42.jar",
+      "name": "Keerdm's Zombie Apocalypse Essentials",
+      "side": "server",
+      "size": 258713,
+      "sha256": "1b9db7636db3a1bcfb015d19c6d44b663e454f05e12e472d128c60f2b5214d3e",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/7740/113/Keerdm%20Zombie%20Apocalypse%20Essentials%20%28TACZ%29%201.42.jar",
+        "https://edge.forgecdn.net/files/7740/113/Keerdm%20Zombie%20Apocalypse%20Essentials%20%28TACZ%29%201.42.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1061079/files/7740113",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1061079,
+          "file-id": 7740113
+        }
+      },
+      "mods": [
+        {
+          "modId": "keerdm_zombie_essentials",
+          "displayName": "Keerdm's Zombie Apocalypse Essentials",
+          "version": "1.42",
+          "authors": "keerdm"
+        }
+      ],
+      "declared_license": "Apache License version 2.0",
+      "installed_path": "mods/Keerdm Zombie Apocalypse Essentials (TACZ) 1.42.jar",
+      "curseforge": {
+        "projectID": 1061079,
+        "fileID": 7740113,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/kotlinforforge-4.12.0-all.jar",
+      "name": "Kotlin for Forge",
+      "side": "both",
+      "size": 7442998,
+      "sha256": "6a66c6a68ec09f8717cdbf06883394f0ee24d7cd826b7134a0f81839e8e720ae",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/7291/67/kotlinforforge-4.12.0-all.jar",
+        "https://edge.forgecdn.net/files/7291/67/kotlinforforge-4.12.0-all.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/351264/files/7291067",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 351264,
+          "file-id": 7291067
+        }
+      },
+      "mods": [],
+      "declared_license": "See original distribution",
+      "installed_path": "mods/kotlinforforge-4.12.0-all.jar",
+      "curseforge": {
+        "projectID": 351264,
+        "fileID": 7291067,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/kubejs-forge-2001.6.5-build.26.jar",
+      "name": "KubeJS",
+      "side": "both",
+      "size": 1658792,
+      "sha256": "1769312192fbf9d72f45054ba61130523bfb471b5f480a4bff8c210ec09400bb",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/8020/595/kubejs-forge-2001.6.5-build.26.jar",
+        "https://edge.forgecdn.net/files/8020/595/kubejs-forge-2001.6.5-build.26.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/238086/files/8020595",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 238086,
+          "file-id": 8020595
+        }
+      },
+      "mods": [
+        {
+          "modId": "kubejs",
+          "displayName": "KubeJS",
+          "version": "2001.6.5-build.26",
+          "authors": "LatvianModder"
+        }
+      ],
+      "declared_license": "GNU LGPLv3",
+      "installed_path": "mods/kubejs-forge-2001.6.5-build.26.jar",
+      "curseforge": {
+        "projectID": 238086,
+        "fileID": 8020595,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/lc2h-omni-4.3.0-LTS.jar",
+      "name": "[LC²H] | Lost Cities: Multithreaded",
+      "side": "both",
+      "size": 4327118,
+      "sha256": "04eb12f4cadc0c80ec7a88cba347c42972733a0a72dcf3667183af4643629c91",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9457/247/lc2h-omni-4.3.0-LTS.jar",
+        "https://edge.forgecdn.net/files/9457/247/lc2h-omni-4.3.0-LTS.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1325431/files/9457247",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1325431,
+          "file-id": 9457247
+        }
+      },
+      "mods": [
+        {
+          "modId": "lc2h",
+          "displayName": "LC2H [Lost Cities: Multithreaded]",
+          "version": "4.3.0-LTS",
+          "authors": "Admany"
+        }
+      ],
+      "declared_license": "BRSSLA V2.0.0",
+      "installed_path": "mods/lc2h-omni-4.3.0-LTS.jar",
+      "curseforge": {
+        "projectID": 1325431,
+        "fileID": 9457247,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/lootr-forge-1.20-0.7.35.94.jar",
+      "name": "Lootr",
+      "side": "both",
+      "size": 463485,
+      "sha256": "01200ee5889e6bcc3c5fa8f32b7b49a4bd58e653699eeb655c6f2dd314e3ce51",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/7263/76/lootr-forge-1.20-0.7.35.94.jar",
+        "https://edge.forgecdn.net/files/7263/76/lootr-forge-1.20-0.7.35.94.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/361276/files/7263076",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 361276,
+          "file-id": 7263076
+        }
+      },
+      "mods": [
+        {
+          "modId": "lootr",
+          "displayName": "Lootr",
+          "version": "0.7.35.94",
+          "authors": "Noobanidus"
+        }
+      ],
+      "declared_license": "https://github.com/noobanidus/Lootr/blob/1.16/LICENSE",
+      "installed_path": "mods/lootr-forge-1.20-0.7.35.94.jar",
+      "curseforge": {
+        "projectID": 361276,
+        "fileID": 7263076,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/lostcities-1.20-7.5.7.jar",
+      "name": "The Lost Cities",
+      "side": "both",
+      "size": 1442179,
+      "sha256": "1a473ca9e7a1040d5e3b402a42eddd7b2fc34a5f270f9c6d0c604f0c0faa8009",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9055/133/lostcities-1.20-7.5.7.jar",
+        "https://edge.forgecdn.net/files/9055/133/lostcities-1.20-7.5.7.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/269024/files/9055133",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 269024,
+          "file-id": 9055133
+        }
+      },
+      "mods": [
+        {
+          "modId": "lostcities",
+          "displayName": "LostCities",
+          "version": "${file.jarVersion}",
+          "authors": ""
+        }
+      ],
+      "declared_license": "MIT License https://github.com/McJtyMods/LostCities/blob/1.16/LICENCE",
+      "installed_path": "mods/lostcities-1.20-7.5.7.jar",
+      "curseforge": {
+        "projectID": 269024,
+        "fileID": 9055133,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/lrtactical-1.20.1-0.4.3.jar",
+      "name": "[TACZ] LesRaisins Tactical Equipements",
+      "side": "both",
+      "size": 6614642,
+      "sha256": "930372cab33e1f563f597c74f9155b5ed25e6f2b0ff7e12dfc86255e1020ef2d",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/8652/673/lrtactical-1.20.1-0.4.3.jar",
+        "https://edge.forgecdn.net/files/8652/673/lrtactical-1.20.1-0.4.3.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1273094/files/8652673",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1273094,
+          "file-id": 8652673
+        }
+      },
+      "mods": [
+        {
+          "modId": "lrtactical",
+          "displayName": "LesRaisins Tactical Equipments",
+          "version": "0.4.3",
+          "authors": "LesRaisins Studio"
+        }
+      ],
+      "declared_license": "GNU GPL 3.0",
+      "installed_path": "mods/lrtactical-1.20.1-0.4.3.jar",
+      "curseforge": {
+        "projectID": 1273094,
+        "fileID": 8652673,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/mcjtylib-1.20-8.0.10.jar",
+      "name": "McJtyLib",
+      "side": "both",
+      "size": 713643,
+      "sha256": "c43d62c89588f26af9dd74be7ccb05bb2c48fdf76dfd198eb80a2ded5939da2c",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9531/93/mcjtylib-1.20-8.0.10.jar",
+        "https://edge.forgecdn.net/files/9531/93/mcjtylib-1.20-8.0.10.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/233105/files/9531093",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 233105,
+          "file-id": 9531093
+        }
+      },
+      "mods": [
+        {
+          "modId": "mcjtylib",
+          "displayName": "McJtyLib",
+          "version": "${file.jarVersion}",
+          "authors": ""
+        }
+      ],
+      "declared_license": "MIT License https://github.com/McJtyMods/McJtyLib/blob/1.18/LICENCE",
+      "installed_path": "mods/mcjtylib-1.20-8.0.10.jar",
+      "delivery": "manifest",
+      "curseforge": {
+        "projectID": 233105,
+        "fileID": 9531093,
+        "required": true
+      }
+    },
+    {
+      "path": "mods/MineTraps-1.20.2-(v.2.3.0a).jar",
+      "name": "MineTraps",
+      "side": "both",
+      "size": 174514,
+      "sha256": "817579abedd583e97fc6849520ac6999d57e30000a01e4d6ea649553e4e3b244",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/5446/284/MineTraps-1.20.2-%28v.2.3.0a%29.jar",
+        "https://edge.forgecdn.net/files/5446/284/MineTraps-1.20.2-%28v.2.3.0a%29.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/311546/files/5446284",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 311546,
+          "file-id": 5446284
+        }
+      },
+      "mods": [
+        {
+          "modId": "minetraps",
+          "displayName": "MineTraps",
+          "version": "2.3.0a",
+          "authors": "XxRexRaptorxX (RexRaptor)"
+        }
+      ],
+      "declared_license": "All Rights Reserved",
+      "installed_path": "mods/MineTraps-1.20.2-(v.2.3.0a).jar",
+      "curseforge": {
+        "projectID": 311546,
+        "fileID": 5446284,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/modern_structures-1.6.jar",
+      "name": "Modern Structures",
+      "side": "both",
+      "size": 539079,
+      "sha256": "fc83d7ddac4dec14424b289f0b89b33014714c83df267290feb93837aac2c34a",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/5953/626/modern_structures-1.6.jar",
+        "https://edge.forgecdn.net/files/5953/626/modern_structures-1.6.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/967101/files/5953626",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 967101,
+          "file-id": 5953626
+        }
+      },
+      "mods": [
+        {
+          "modId": "modern_structures",
+          "displayName": "modern structures",
+          "version": "1.0.0",
+          "authors": "User, MCreator"
+        }
+      ],
+      "declared_license": "Academic Free License v3.0",
+      "installed_path": "mods/modern_structures-1.6.jar",
+      "curseforge": {
+        "projectID": 967101,
+        "fileID": 5953626,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/modernfix-forge-5.27.91+mc1.20.1.jar",
+      "name": "ModernFix",
+      "side": "both",
+      "size": 1012942,
+      "sha256": "b42fe87fd5ffa46f7db56c6cee01b08dea362baf4cc56a70db40d928773b5000",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9309/378/modernfix-forge-5.27.91%2Bmc1.20.1.jar",
+        "https://edge.forgecdn.net/files/9309/378/modernfix-forge-5.27.91%2Bmc1.20.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/790626/files/9309378",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 790626,
+          "file-id": 9309378
+        }
+      },
+      "mods": [
+        {
+          "modId": "modernfix",
+          "displayName": "ModernFix",
+          "version": "5.27.91+mc1.20.1",
+          "authors": "embeddedt"
+        }
+      ],
+      "declared_license": "GNU LGPL 3.0",
+      "installed_path": "mods/modernfix-forge-5.27.91+mc1.20.1.jar",
+      "curseforge": {
+        "projectID": 790626,
+        "fileID": 9309378,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/moonlight-1.20-2.16.39-forge.jar",
+      "name": "Moonlight Lib",
+      "side": "both",
+      "size": 1423451,
+      "sha256": "b8488c5004906c8d16f764dd121eaf1c01c7ef614a3f8d6b029f05c9bbcd7754",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9493/250/moonlight-1.20-2.16.39-forge.jar",
+        "https://edge.forgecdn.net/files/9493/250/moonlight-1.20-2.16.39-forge.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/499980/files/9493250",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 499980,
+          "file-id": 9493250
+        }
+      },
+      "mods": [
+        {
+          "modId": "moonlight",
+          "displayName": "Moonlight Library",
+          "version": "1.20-2.16.39",
+          "authors": "MehVahdJukaar"
+        }
+      ],
+      "declared_license": "gplv3",
+      "installed_path": "mods/moonlight-1.20-2.16.39-forge.jar",
+      "curseforge": {
+        "projectID": 499980,
+        "fileID": 9493250,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/MouseTweaks-forge-mc1.20.1-2.25.1.jar",
+      "name": "Mouse Tweaks",
+      "side": "client",
+      "size": 76237,
+      "sha256": "6c27d16aa715ac6613a55fc463739e2c7b78279e4e4c4cede299e4a2d4a70f08",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/5338/457/MouseTweaks-forge-mc1.20.1-2.25.1.jar",
+        "https://edge.forgecdn.net/files/5338/457/MouseTweaks-forge-mc1.20.1-2.25.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/60089/files/5338457",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 60089,
+          "file-id": 5338457
+        }
+      },
+      "mods": [
+        {
+          "modId": "mousetweaks",
+          "displayName": "Mouse Tweaks",
+          "version": "${file.jarVersion}",
+          "authors": "Ivan Molodetskikh (YaLTeR)"
+        }
+      ],
+      "declared_license": "BSD-3-Clause",
+      "installed_path": "mods/MouseTweaks-forge-mc1.20.1-2.25.1.jar",
+      "curseforge": {
+        "projectID": 60089,
+        "fileID": 5338457,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/NoChatReports-FORGE-1.20.1-v2.2.3.jar",
+      "name": "No Chat Reports",
+      "side": "both",
+      "size": 271630,
+      "sha256": "1f6505721ce6a78ce46e662f65fc81646705f82f169e9b7565951d1965d51672",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/8675/977/NoChatReports-FORGE-1.20.1-v2.2.3.jar",
+        "https://edge.forgecdn.net/files/8675/977/NoChatReports-FORGE-1.20.1-v2.2.3.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/634062/files/8675977",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 634062,
+          "file-id": 8675977
+        }
+      },
+      "mods": [
+        {
+          "modId": "nochatreports",
+          "displayName": "No Chat Reports",
+          "version": "1.20.1-v2.2.3",
+          "authors": "Aizistral"
+        }
+      ],
+      "declared_license": "WTFPL",
+      "installed_path": "mods/NoChatReports-FORGE-1.20.1-v2.2.3.jar",
+      "curseforge": {
+        "projectID": 634062,
+        "fileID": 8675977,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/Not Enough Recipe Book-FORGE-0.4.1+1.20.1.jar",
+      "name": "Not Enough Recipe Book [NERB]",
+      "side": "both",
+      "size": 21667,
+      "sha256": "8f05afb56310b21e91d2f1d1200a9c0d98a34a9689b9b6288a6507c0498b299d",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/5760/231/Not%20Enough%20Recipe%20Book-FORGE-0.4.1%2B1.20.1.jar",
+        "https://edge.forgecdn.net/files/5760/231/Not%20Enough%20Recipe%20Book-FORGE-0.4.1%2B1.20.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/738663/files/5760231",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 738663,
+          "file-id": 5760231
+        }
+      },
+      "mods": [
+        {
+          "modId": "nerb",
+          "displayName": "Not Enough Recipe Book",
+          "version": "0.4.1",
+          "authors": "OctoStudios"
+        }
+      ],
+      "declared_license": "All Rights Reserved",
+      "installed_path": "mods/Not Enough Recipe Book-FORGE-0.4.1+1.20.1.jar",
+      "curseforge": {
+        "projectID": 738663,
+        "fileID": 5760231,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/OctoLib-FORGE-0.5.0.1+1.20.1.jar",
+      "name": "ShatterLib | OctoLib",
+      "side": "both",
+      "size": 424035,
+      "sha256": "5bb146c691f2c5054752f006a61aab6335ecb1cd9718a9643733de5367971047",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/6274/623/OctoLib-FORGE-0.5.0.1%2B1.20.1.jar",
+        "https://edge.forgecdn.net/files/6274/623/OctoLib-FORGE-0.5.0.1%2B1.20.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/916747/files/6274623",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 916747,
+          "file-id": 6274623
+        }
+      },
+      "mods": [
+        {
+          "modId": "octolib",
+          "displayName": "OctoLib",
+          "version": "0.5.0.1",
+          "authors": "OctoStudios"
+        }
+      ],
+      "declared_license": "All Rights Reserved",
+      "installed_path": "mods/OctoLib-FORGE-0.5.0.1+1.20.1.jar",
+      "curseforge": {
+        "projectID": 916747,
+        "fileID": 6274623,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/oculus-mc1.20.1-1.8.0.jar",
+      "name": "Oculus",
+      "side": "client",
+      "size": 2851119,
+      "sha256": "0945df0cba0f62b3901dd80c3268e5311b770ece78c78037a45db12ac0425fef",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/6020/952/oculus-mc1.20.1-1.8.0.jar",
+        "https://edge.forgecdn.net/files/6020/952/oculus-mc1.20.1-1.8.0.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/581495/files/6020952",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 581495,
+          "file-id": 6020952
+        }
+      },
+      "mods": [
+        {
+          "modId": "oculus",
+          "displayName": "Oculus",
+          "version": "1.8.0",
+          "authors": "NanoLive, dima_dencep, coderbot, IMS212, Justsnoopy30, FoundationGames"
+        }
+      ],
+      "declared_license": "LGPL-3.0-only",
+      "installed_path": "mods/oculus-mc1.20.1-1.8.0.jar",
+      "curseforge": {
+        "projectID": 581495,
+        "fileID": 6020952,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/ocuwheel-forge-1.20.1-1.0.2.jar",
+      "name": "Ocuwheel - Iris & Oculus Flywheel Compat for Create",
+      "side": "client",
+      "size": 863001,
+      "sha256": "4cf4597fb3a64408377b504ff648d75cf1288d0d98fa1a562bbb711285684d0a",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/8989/714/ocuwheel-forge-1.20.1-1.0.2.jar",
+        "https://edge.forgecdn.net/files/8989/714/ocuwheel-forge-1.20.1-1.0.2.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1655478/files/8989714",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1655478,
+          "file-id": 8989714
+        }
+      },
+      "mods": [
+        {
+          "modId": "ocuwheel",
+          "displayName": "Ocuwheel",
+          "version": "1.0.2",
+          "authors": "ChaosCraft_HD"
+        }
+      ],
+      "declared_license": "BRSSLA V2.0",
+      "installed_path": "mods/ocuwheel-forge-1.20.1-1.0.2.jar",
+      "curseforge": {
+        "projectID": 1655478,
+        "fileID": 8989714,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/packetfixer-3.3.2-1.18-1.20.4-merged.jar",
+      "name": "Packet Fixer",
+      "side": "both",
+      "size": 188661,
+      "sha256": "12f96ecb8e61e0b3d3f0ca5701f479904904501dd251aa7bb60205afdf6bc2ce",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/7872/374/packetfixer-3.3.2-1.18-1.20.4-merged.jar",
+        "https://edge.forgecdn.net/files/7872/374/packetfixer-3.3.2-1.18-1.20.4-merged.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/689467/files/7872374",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 689467,
+          "file-id": 7872374
+        }
+      },
+      "mods": [
+        {
+          "modId": "packetfixer",
+          "displayName": "PacketFixer",
+          "version": "3.3.2",
+          "authors": "TonimatasDEV"
+        }
+      ],
+      "declared_license": "MIT",
+      "installed_path": "mods/packetfixer-3.3.2-1.18-1.20.4-merged.jar",
+      "curseforge": {
+        "projectID": 689467,
+        "fileID": 7872374,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/PetiteInventory-TaCZMagazineCompatibilityPatchVIVI2-0.0.1.jar",
+      "name": "PetiteInventory",
+      "side": "both",
+      "size": 117185,
+      "sha256": "d08ba5403c16727523d7efefe4d38cd15c2c0609901d8675eeb6a40114302575",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/8591/987/PetiteInventory-TaCZMagazineCompatibilityPatchVIVI2-0.0.1.jar",
+        "https://edge.forgecdn.net/files/8591/987/PetiteInventory-TaCZMagazineCompatibilityPatchVIVI2-0.0.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1583648/files/8591987",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1583648,
+          "file-id": 8591987
+        }
+      },
+      "mods": [
+        {
+          "modId": "petiteinventory",
+          "displayName": "PetiteInventory",
+          "version": "1.0.9",
+          "authors": "MerrySnow"
+        }
+      ],
+      "declared_license": "AGPL-3.0-only",
+      "installed_path": "mods/PetiteInventory-TaCZMagazineCompatibilityPatchVIVI2-0.0.1.jar",
+      "curseforge": {
+        "projectID": 1583648,
+        "fileID": 8591987,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/Placebo-1.20.1-8.6.3.jar",
+      "name": "Placebo",
+      "side": "both",
+      "size": 282474,
+      "sha256": "1cdf906cfbcbb5e5be2ef1bb721f79a24b01bd2ac559c8cdbfb7693f62421571",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/6274/231/Placebo-1.20.1-8.6.3.jar",
+        "https://edge.forgecdn.net/files/6274/231/Placebo-1.20.1-8.6.3.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/283644/files/6274231",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 283644,
+          "file-id": 6274231
+        }
+      },
+      "mods": [
+        {
+          "modId": "placebo",
+          "displayName": "Placebo",
+          "version": "8.6.3",
+          "authors": ""
+        }
+      ],
+      "declared_license": "MIT License",
+      "installed_path": "mods/Placebo-1.20.1-8.6.3.jar",
+      "curseforge": {
+        "projectID": 283644,
+        "fileID": 6274231,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/player-animation-lib-forge-1.0.2-rc1+1.20.jar",
+      "name": "playerAnimator",
+      "side": "both",
+      "size": 181437,
+      "sha256": "90d9965cb9efdbda29fdc5610be3914cf7008bf5c392ff34f7ab25f96a852691",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/4587/214/player-animation-lib-forge-1.0.2-rc1%2B1.20.jar",
+        "https://edge.forgecdn.net/files/4587/214/player-animation-lib-forge-1.0.2-rc1%2B1.20.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/658587/files/4587214",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 658587,
+          "file-id": 4587214
+        }
+      },
+      "mods": [
+        {
+          "modId": "playeranimator",
+          "displayName": "Player Animator",
+          "version": "1.0.2-rc1+1.20",
+          "authors": "KosmX"
+        }
+      ],
+      "declared_license": "MIT",
+      "installed_path": "mods/player-animation-lib-forge-1.0.2-rc1+1.20.jar",
+      "curseforge": {
+        "projectID": 658587,
+        "fileID": 4587214,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/quantified api-omni-2.2.4.jar",
+      "name": "[QAPI] | Quantified API",
+      "side": "both",
+      "size": 9578100,
+      "sha256": "f3c71df7388f25e836ab99703fd641d5521e9f2092934e2033e0a005993363ae",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9037/916/quantified%20api-omni-2.2.4.jar",
+        "https://edge.forgecdn.net/files/9037/916/quantified%20api-omni-2.2.4.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1397967/files/9037916",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1397967,
+          "file-id": 9037916
+        }
+      },
+      "mods": [
+        {
+          "modId": "quantified",
+          "displayName": "Quantified API",
+          "version": "2.2.4",
+          "authors": "Admany"
+        }
+      ],
+      "declared_license": "BRSSLA V1.5",
+      "installed_path": "mods/quantified api-omni-2.2.4.jar",
+      "curseforge": {
+        "projectID": 1397967,
+        "fileID": 9037916,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/ragdollified-forge-1.20.1-1.2.2.jar",
+      "name": "Ragdollified",
+      "side": "both",
+      "size": 1452348,
+      "sha256": "8ae7bd251883e559f96283ec2b2dcff7b457ee2573d7404fe3df17a648b7c657",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9437/444/ragdollified-forge-1.20.1-1.2.2.jar",
+        "https://edge.forgecdn.net/files/9437/444/ragdollified-forge-1.20.1-1.2.2.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1417732/files/9437444",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1417732,
+          "file-id": 9437444
+        }
+      },
+      "mods": [
+        {
+          "modId": "ragdollified",
+          "displayName": "Ragdollified",
+          "version": "1.2.2",
+          "authors": "raiiiden"
+        }
+      ],
+      "declared_license": "CUSTOM",
+      "installed_path": "mods/ragdollified-forge-1.20.1-1.2.2.jar",
+      "curseforge": {
+        "projectID": 1417732,
+        "fileID": 9437444,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/refurbished_furniture-forge-1.20.1-1.0.20.jar",
+      "name": "MrCrayfish's Furniture Mod: Refurbished",
+      "side": "both",
+      "size": 6689588,
+      "sha256": "480546202aa21fa07e6b1571f3e3263e5690e9804afb7c35984642bcf473bc6e",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/7110/922/refurbished_furniture-forge-1.20.1-1.0.20.jar",
+        "https://edge.forgecdn.net/files/7110/922/refurbished_furniture-forge-1.20.1-1.0.20.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/897116/files/7110922",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 897116,
+          "file-id": 7110922
+        }
+      },
+      "mods": [
+        {
+          "modId": "refurbished_furniture",
+          "displayName": "MrCrayfish's Furniture Mod: Refurbished",
+          "version": "1.0.20",
+          "authors": "MrCrayfish"
+        }
+      ],
+      "declared_license": "MIT",
+      "installed_path": "mods/refurbished_furniture-forge-1.20.1-1.0.20.jar",
+      "curseforge": {
+        "projectID": 897116,
+        "fileID": 7110922,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/resourcefulconfig-forge-1.20.1-2.1.3.jar",
+      "name": "Resourcefulconfig",
+      "side": "both",
+      "size": 136923,
+      "sha256": "c404b9e5cf8595427a72d4ca6ee5730289168762b463f169be3ae5dfe3727ded",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/6231/176/resourcefulconfig-forge-1.20.1-2.1.3.jar",
+        "https://edge.forgecdn.net/files/6231/176/resourcefulconfig-forge-1.20.1-2.1.3.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/714059/files/6231176",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 714059,
+          "file-id": 6231176
+        }
+      },
+      "mods": [
+        {
+          "modId": "resourcefulconfig",
+          "displayName": "Resourcefulconfig",
+          "version": "2.1.3",
+          "authors": ""
+        }
+      ],
+      "declared_license": "MIT",
+      "installed_path": "mods/resourcefulconfig-forge-1.20.1-2.1.3.jar",
+      "curseforge": {
+        "projectID": 714059,
+        "fileID": 6231176,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/resourcefullib-forge-1.20.1-2.1.29.jar",
+      "name": "Resourceful Lib",
+      "side": "both",
+      "size": 432753,
+      "sha256": "b13afb95231d88e1caea5a045967e0fc291b29020b0d26ad39e6f9e9a551fee8",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/5659/871/resourcefullib-forge-1.20.1-2.1.29.jar",
+        "https://edge.forgecdn.net/files/5659/871/resourcefullib-forge-1.20.1-2.1.29.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/570073/files/5659871",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 570073,
+          "file-id": 5659871
+        }
+      },
+      "mods": [
+        {
+          "modId": "resourcefullib",
+          "displayName": "Resourceful Lib",
+          "version": "2.1.29",
+          "authors": "ThatGravyBoat, Epic_Oreo"
+        }
+      ],
+      "declared_license": "MIT",
+      "installed_path": "mods/resourcefullib-forge-1.20.1-2.1.29.jar",
+      "curseforge": {
+        "projectID": 570073,
+        "fileID": 5659871,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/rhino-forge-2001.2.3-build.10.jar",
+      "name": "Rhino",
+      "side": "both",
+      "size": 1798244,
+      "sha256": "fed2211429301bf043864183cab9ab8e92d4cc4dbb9e488ce6c75217c54584a6",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/6186/971/rhino-forge-2001.2.3-build.10.jar",
+        "https://edge.forgecdn.net/files/6186/971/rhino-forge-2001.2.3-build.10.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/416294/files/6186971",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 416294,
+          "file-id": 6186971
+        }
+      },
+      "mods": [
+        {
+          "modId": "rhino",
+          "displayName": "Rhino",
+          "version": "2001.2.3-build.10",
+          "authors": "latvian.dev, Mozilla"
+        }
+      ],
+      "declared_license": "MPL-2.0",
+      "installed_path": "mods/rhino-forge-2001.2.3-build.10.jar",
+      "curseforge": {
+        "projectID": 416294,
+        "fileID": 6186971,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/Searchables-forge-1.20.1-1.0.3.jar",
+      "name": "Searchables",
+      "side": "both",
+      "size": 77732,
+      "sha256": "c1a76e93886210574d3f298c0461241fb711e52ac22c7a04d3236840f29e6576",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/5284/15/Searchables-forge-1.20.1-1.0.3.jar",
+        "https://edge.forgecdn.net/files/5284/15/Searchables-forge-1.20.1-1.0.3.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/858542/files/5284015",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 858542,
+          "file-id": 5284015
+        }
+      },
+      "mods": [
+        {
+          "modId": "searchables",
+          "displayName": "Searchables",
+          "version": "${file.jarVersion}",
+          "authors": "Jaredlll08"
+        }
+      ],
+      "declared_license": "MIT",
+      "installed_path": "mods/Searchables-forge-1.20.1-1.0.3.jar",
+      "curseforge": {
+        "projectID": 858542,
+        "fileID": 5284015,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/sem-patrol-control-1.2.1.jar",
+      "name": "[TaCZ] Simple Enemy: Patrol Control",
+      "side": "both",
+      "size": 26615,
+      "sha256": "bc1c0ee28d939fdd5af9d22b7892d932d25908cd6440c0f65452ff8aa76b4bff",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/8890/765/sem-patrol-control-1.2.1.jar",
+        "https://edge.forgecdn.net/files/8890/765/sem-patrol-control-1.2.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1690360/files/8890765",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1690360,
+          "file-id": 8890765
+        }
+      },
+      "mods": [
+        {
+          "modId": "sempatrolcontrol",
+          "displayName": "SEM Patrol Control",
+          "version": "1.2.1",
+          "authors": "OpenAI / custom build for SEM"
+        }
+      ],
+      "declared_license": "MIT",
+      "installed_path": "mods/sem-patrol-control-1.2.1.jar",
+      "curseforge": {
+        "projectID": 1690360,
+        "fileID": 8890765,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/ShrapnelExplosionsMod-2.0.7.3-1.20.1.jar",
+      "name": "Shrapnel Explosions Mod",
+      "side": "both",
+      "size": 1602004,
+      "sha256": "98f5e14f28c5d0dc71587876157d0e419615b89cd792f8f29cec0b3d309c218d",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/8328/245/ShrapnelExplosionsMod-2.0.7.3-1.20.1.jar",
+        "https://edge.forgecdn.net/files/8328/245/ShrapnelExplosionsMod-2.0.7.3-1.20.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1464716/files/8328245",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1464716,
+          "file-id": 8328245
+        }
+      },
+      "mods": [
+        {
+          "modId": "shrapnelexplosionsmod",
+          "displayName": "Shrapnel Explosions Mod",
+          "version": "2.0.7.3",
+          "authors": "CyberButcher"
+        }
+      ],
+      "declared_license": "All rights reserved",
+      "installed_path": "mods/ShrapnelExplosionsMod-2.0.7.3-1.20.1.jar",
+      "curseforge": {
+        "projectID": 1464716,
+        "fileID": 8328245,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/simple_enemy_mod_config-1.0.0-forge-1.20.1.jar",
+      "name": "[TACZ] Simple Enemy: Guns Config",
+      "side": "both",
+      "size": 11129,
+      "sha256": "70062c6e2d59e4b98543be2778bab900313a685e0823fbaf877dbbfed4a5caaf",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/8863/228/simple_enemy_mod_config-1.0.0-forge-1.20.1.jar",
+        "https://edge.forgecdn.net/files/8863/228/simple_enemy_mod_config-1.0.0-forge-1.20.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1525428/files/8863228",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1525428,
+          "file-id": 8863228
+        }
+      },
+      "mods": [
+        {
+          "modId": "simple_enemy_mod_config",
+          "displayName": "Simple Enemy Mod Config",
+          "version": "1.0.0",
+          "authors": "Berezka"
+        }
+      ],
+      "declared_license": "All Rights Reserved",
+      "installed_path": "mods/simple_enemy_mod_config-1.0.0-forge-1.20.1.jar",
+      "curseforge": {
+        "projectID": 1525428,
+        "fileID": 8863228,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/simpleenemymod-1.20.1-0.1.6-beta-hotfix.jar",
+      "name": "TaCZ : Simple Enemy",
+      "side": "both",
+      "size": 1333575,
+      "sha256": "503fa7b86fc73b4b64436019635ec2dfba7a5266412d416bd4f48b3f9a072576",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/8880/362/simpleenemymod-1.20.1-0.1.6-beta-hotfix.jar",
+        "https://edge.forgecdn.net/files/8880/362/simpleenemymod-1.20.1-0.1.6-beta-hotfix.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1471691/files/8880362",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1471691,
+          "file-id": 8880362
+        }
+      },
+      "mods": [
+        {
+          "modId": "simpleenemymod",
+          "displayName": "[SEM] Simple Enemy Mod",
+          "version": "1.20.1-0.1.6-beta-hotfix",
+          "authors": "NekoYuni"
+        }
+      ],
+      "declared_license": "GPLv3",
+      "installed_path": "mods/simpleenemymod-1.20.1-0.1.6-beta-hotfix.jar",
+      "curseforge": {
+        "projectID": 1471691,
+        "fileID": 8880362,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/skarrier_mobs-1.1.2-forge-1.20.1.jar",
+      "name": "Skarrier Mobs",
+      "side": "both",
+      "size": 4934205,
+      "sha256": "5d3e067fe9b5ebab5997c64d476ac40e521bcd0dfbf797b65074f132794f1b03",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9296/241/skarrier_mobs-1.1.2-forge-1.20.1.jar",
+        "https://edge.forgecdn.net/files/9296/241/skarrier_mobs-1.1.2-forge-1.20.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1566041/files/9296241",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1566041,
+          "file-id": 9296241
+        }
+      },
+      "mods": [
+        {
+          "modId": "skarrier_mobs",
+          "displayName": "Skarrier Mobs",
+          "version": "1.1.2",
+          "authors": "Skarrier"
+        }
+      ],
+      "declared_license": "All Rights Reserved",
+      "installed_path": "mods/skarrier_mobs-1.1.2-forge-1.20.1.jar",
+      "curseforge": {
+        "projectID": 1566041,
+        "fileID": 9296241,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/sleeprework-FORGE-1.20.1-1.1.0.jar",
+      "name": "Sleep Rework",
+      "side": "both",
+      "size": 63905,
+      "sha256": "e124e07bed4d1ff79f42edb33ff09f432117ef748eb40f3fc552070732785347",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/4657/938/sleeprework-FORGE-1.20.1-1.1.0.jar",
+        "https://edge.forgecdn.net/files/4657/938/sleeprework-FORGE-1.20.1-1.1.0.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/888850/files/4657938",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 888850,
+          "file-id": 4657938
+        }
+      },
+      "mods": [
+        {
+          "modId": "sleeprework",
+          "displayName": "Sleep Rework",
+          "version": "1.20.1-1.1.0",
+          "authors": "Lemons"
+        }
+      ],
+      "declared_license": "MIT",
+      "installed_path": "mods/sleeprework-FORGE-1.20.1-1.1.0.jar",
+      "curseforge": {
+        "projectID": 888850,
+        "fileID": 4657938,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/sodiumoptionsapi-forge-1.0.10-1.20.1.jar",
+      "name": "Sodium/Embeddium Options API",
+      "side": "both",
+      "size": 443978,
+      "sha256": "37ec0b6248f04e856e6e5ba2066c4ded9981ce128282a9b45cdb10b67b9c8415",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/6100/812/sodiumoptionsapi-forge-1.0.10-1.20.1.jar",
+        "https://edge.forgecdn.net/files/6100/812/sodiumoptionsapi-forge-1.0.10-1.20.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1103431/files/6100812",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1103431,
+          "file-id": 6100812
+        }
+      },
+      "mods": [
+        {
+          "modId": "sodiumoptionsapi",
+          "displayName": "Sodium Options API",
+          "version": "1.0.10",
+          "authors": "toni"
+        }
+      ],
+      "declared_license": "LGPLv3",
+      "installed_path": "mods/sodiumoptionsapi-forge-1.0.10-1.20.1.jar",
+      "curseforge": {
+        "projectID": 1103431,
+        "fileID": 6100812,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/spark-1.10.53-forge.jar",
+      "name": "spark",
+      "side": "both",
+      "size": 3114590,
+      "sha256": "eba275ba9bb0cb5b542913c3138c6eeff6a752898266d63d125d185f26ac99ed",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/4738/952/spark-1.10.53-forge.jar",
+        "https://edge.forgecdn.net/files/4738/952/spark-1.10.53-forge.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/361579/files/4738952",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 361579,
+          "file-id": 4738952
+        }
+      },
+      "mods": [
+        {
+          "modId": "spark",
+          "displayName": "spark",
+          "version": "1.10.53",
+          "authors": ""
+        }
+      ],
+      "declared_license": "GPLv3",
+      "installed_path": "mods/spark-1.10.53-forge.jar",
+      "curseforge": {
+        "projectID": 361579,
+        "fileID": 4738952,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/Steam_Rails-1.7.3+forge-mc1.20.1.jar",
+      "name": "Create: Steam 'n' Rails",
+      "side": "both",
+      "size": 17042037,
+      "sha256": "0e98b72472ff78464f6e69025bb47f942e7f66a976382fbb87ceff765a8b00cf",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/8745/475/Steam_Rails-1.7.3%2Bforge-mc1.20.1.jar",
+        "https://edge.forgecdn.net/files/8745/475/Steam_Rails-1.7.3%2Bforge-mc1.20.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/688231/files/8745475",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 688231,
+          "file-id": 8745475
+        }
+      },
+      "mods": [
+        {
+          "modId": "railways",
+          "displayName": "Create: Steam 'n' Rails",
+          "version": "1.7.3+forge-mc1.20.1",
+          "authors": "The Railways Team"
+        }
+      ],
+      "declared_license": "LGPL v3",
+      "installed_path": "mods/Steam_Rails-1.7.3+forge-mc1.20.1.jar",
+      "curseforge": {
+        "projectID": 688231,
+        "fileID": 8745475,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/superbwarfare-0.8.9.2-mc1.20.1-65d985a64-all.jar",
+      "name": "[SBW] Superb Warfare",
+      "side": "both",
+      "size": 42118965,
+      "sha256": "559930003f638080de648a8621821d785158768c3f69a762094ef4c8d3c4cc12",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9019/882/superbwarfare-0.8.9.2-mc1.20.1-65d985a64-all.jar",
+        "https://edge.forgecdn.net/files/9019/882/superbwarfare-0.8.9.2-mc1.20.1-65d985a64-all.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1218165/files/9019882",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1218165,
+          "file-id": 9019882
+        }
+      },
+      "mods": [
+        {
+          "modId": "superbwarfare",
+          "displayName": "Superb Warfare",
+          "version": "0.8.9.2",
+          "authors": "Atsuishio, Roki27, Light_Quanta and other contributors"
+        }
+      ],
+      "declared_license": "GNU General Public License v3.0",
+      "installed_path": "mods/superbwarfare-0.8.9.2-mc1.20.1-65d985a64-all.jar",
+      "curseforge": {
+        "projectID": 1218165,
+        "fileID": 9019882,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/survival_instinct-1.0.2-forge-1.20.1.jar",
+      "name": "Survival Instinct",
+      "side": "both",
+      "size": 2136620,
+      "sha256": "9f73d8ec5fcf6bb6641f46c0484c63dbfc4ed883c73f7dbbad38de8fcc753e62",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/7357/198/survival_instinct-1.0.2-forge-1.20.1.jar",
+        "https://edge.forgecdn.net/files/7357/198/survival_instinct-1.0.2-forge-1.20.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1242915/files/7357198",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1242915,
+          "file-id": 7357198
+        }
+      },
+      "mods": [
+        {
+          "modId": "survival_instinct",
+          "displayName": "Survival Instinct",
+          "version": "1.0.2",
+          "authors": "tohir, MCreator"
+        }
+      ],
+      "declared_license": "Academic Free License v3.0",
+      "installed_path": "mods/survival_instinct-1.0.2-forge-1.20.1.jar",
+      "curseforge": {
+        "projectID": 1242915,
+        "fileID": 7357198,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/tacz-forge-1.20.1-1.2.0.jar",
+      "name": "[TaCZ] Timeless and Classics Zero Guns",
+      "side": "both",
+      "size": 69001578,
+      "sha256": "1c2f2915f76908d396a0da577665c977564c279ccb89d459a00a29225aa45a92",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9454/481/tacz-forge-1.20.1-1.2.0.jar",
+        "https://edge.forgecdn.net/files/9454/481/tacz-forge-1.20.1-1.2.0.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1028108/files/9454481",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1028108,
+          "file-id": 9454481
+        }
+      },
+      "mods": [
+        {
+          "modId": "tacz",
+          "displayName": "Timeless & Classics Guns: Zero",
+          "version": "${file.jarVersion}",
+          "authors": "Serene Wave Studio | Timeless Squad"
+        }
+      ],
+      "declared_license": "GPL3 / CC BY-NC-ND 4.0",
+      "installed_path": "mods/tacz-forge-1.20.1-1.2.0.jar",
+      "curseforge": {
+        "projectID": 1028108,
+        "fileID": 9454481,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/tacz_attributes-1.4.jar",
+      "name": "TaCZ_attributes",
+      "side": "both",
+      "size": 89789,
+      "sha256": "b15bf462a623d9193046dc382c3e38ac271f385bcac785c389e7e151eb8dd196",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/8470/731/tacz_attributes-1.4.jar",
+        "https://edge.forgecdn.net/files/8470/731/tacz_attributes-1.4.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1113285/files/8470731",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1113285,
+          "file-id": 8470731
+        }
+      },
+      "mods": [
+        {
+          "modId": "tacz_attributes",
+          "displayName": "TaCZ_attributes",
+          "version": "1.4",
+          "authors": ""
+        }
+      ],
+      "declared_license": "MIT",
+      "installed_path": "mods/tacz_attributes-1.4.jar",
+      "curseforge": {
+        "projectID": 1113285,
+        "fileID": 8470731,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/tacz_attributes_addon-1.5.jar",
+      "name": "TACZ_Attributes_Addon",
+      "side": "both",
+      "size": 203419,
+      "sha256": "c24f26fff6ec7bed428a40efc548d4de6140f807f02f51d70aafd81e2edcabe8",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/7779/997/tacz_attributes_addon-1.5.jar",
+        "https://edge.forgecdn.net/files/7779/997/tacz_attributes_addon-1.5.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1482794/files/7779997",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1482794,
+          "file-id": 7779997
+        }
+      },
+      "mods": [
+        {
+          "modId": "tacz_attributes_addon",
+          "displayName": "TACZ_Attributes_Addon",
+          "version": "1.5",
+          "authors": ""
+        }
+      ],
+      "declared_license": "MIT",
+      "installed_path": "mods/tacz_attributes_addon-1.5.jar",
+      "curseforge": {
+        "projectID": 1482794,
+        "fileID": 7779997,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/tacz_presence-1.4.jar",
+      "name": "TaCZ: Presence",
+      "side": "both",
+      "size": 3866215,
+      "sha256": "2384bb4b3df41999c586aaf0d35ea33c477fad6a520985e78ba99d735823dea4",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/7882/246/tacz_presence-1.4.jar",
+        "https://edge.forgecdn.net/files/7882/246/tacz_presence-1.4.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1435817/files/7882246",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1435817,
+          "file-id": 7882246
+        }
+      },
+      "mods": [
+        {
+          "modId": "tacz_presence",
+          "displayName": "TaCZ: Presence",
+          "version": "1.4",
+          "authors": "TACZ Team"
+        }
+      ],
+      "declared_license": "All Rights Reserved",
+      "installed_path": "mods/tacz_presence-1.4.jar",
+      "curseforge": {
+        "projectID": 1435817,
+        "fileID": 7882246,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/tacz_sewv-0.1.7.jar",
+      "name": "[TaCZ/SBW] Combined Arms",
+      "side": "both",
+      "size": 19624217,
+      "sha256": "f35d9f65674a19f074c0e09af44cbcafbf9e249ce8014285851f7e7ed9a8a7f8",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9320/153/tacz_sewv-0.1.7.jar",
+        "https://edge.forgecdn.net/files/9320/153/tacz_sewv-0.1.7.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1605176/files/9320153",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1605176,
+          "file-id": 9320153
+        }
+      },
+      "mods": [
+        {
+          "modId": "tacz_sewv",
+          "displayName": "SBW: Combined Arms",
+          "version": "0.1.7",
+          "authors": "NeoAlive"
+        }
+      ],
+      "declared_license": "GPL-3.0",
+      "installed_path": "mods/tacz_sewv-0.1.7.jar",
+      "curseforge": {
+        "projectID": 1605176,
+        "fileID": 9320153,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/taczadditions-1.20.1-1.3.6.jar",
+      "name": "TaCZ: Additions",
+      "side": "both",
+      "size": 221368,
+      "sha256": "3b4889add9db773fd31967ee8257fc89a3f298f3c0f6596263ba79f686b0f88c",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9250/498/taczadditions-1.20.1-1.3.6.jar",
+        "https://edge.forgecdn.net/files/9250/498/taczadditions-1.20.1-1.3.6.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1356005/files/9250498",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1356005,
+          "file-id": 9250498
+        }
+      },
+      "mods": [
+        {
+          "modId": "taczadditions",
+          "displayName": "TaCZ: Additions",
+          "version": "1.3.6",
+          "authors": "Raiiiden"
+        }
+      ],
+      "declared_license": "ARR",
+      "installed_path": "mods/taczadditions-1.20.1-1.3.6.jar",
+      "curseforge": {
+        "projectID": 1356005,
+        "fileID": 9250498,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/taczexpert-0.1.65-1.20.1.jar",
+      "name": "TaCZ Expert",
+      "side": "both",
+      "size": 10638935,
+      "sha256": "072f7be25b99e1e74bbe47453877a8afbf9e01167a8004e2a87cd43470e5bdf2",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9493/606/taczexpert-0.1.65-1.20.1.jar",
+        "https://edge.forgecdn.net/files/9493/606/taczexpert-0.1.65-1.20.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1722241/files/9493606",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1722241,
+          "file-id": 9493606
+        }
+      },
+      "mods": [
+        {
+          "modId": "taczexpert",
+          "displayName": "TaCZ Expert",
+          "version": "0.1.65-1.20.1",
+          "authors": "TheFakeOri"
+        }
+      ],
+      "declared_license": "GPL-3.0-only",
+      "installed_path": "mods/taczexpert-0.1.65-1.20.1.jar",
+      "curseforge": {
+        "projectID": 1722241,
+        "fileID": 9493606,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/TerraBlender-forge-1.20.1-3.0.1.10.jar",
+      "name": "TerraBlender",
+      "side": "both",
+      "size": 107532,
+      "sha256": "c109016f46ca9bdae69976bf080bbf2e8e5968cb66c0a78845f8ca6af5dbbeb1",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/6290/448/TerraBlender-forge-1.20.1-3.0.1.10.jar",
+        "https://edge.forgecdn.net/files/6290/448/TerraBlender-forge-1.20.1-3.0.1.10.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/563928/files/6290448",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 563928,
+          "file-id": 6290448
+        }
+      },
+      "mods": [
+        {
+          "modId": "terrablender",
+          "displayName": "TerraBlender",
+          "version": "${file.jarVersion}",
+          "authors": "Adubbz"
+        }
+      ],
+      "declared_license": "LGPLv3",
+      "installed_path": "mods/TerraBlender-forge-1.20.1-3.0.1.10.jar",
+      "delivery": "manifest",
+      "curseforge": {
+        "projectID": 563928,
+        "fileID": 6290448,
+        "required": true
+      }
+    },
+    {
+      "path": "mods/Terralith_1.20.x_v2.5.4.jar",
+      "name": "Terralith",
+      "side": "both",
+      "size": 3156901,
+      "sha256": "8f65f309d8f2723754bf4b60c7b5763d3ab6ed04b01c172109ba6564e981b95f",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/5512/76/Terralith_1.20.x_v2.5.4.jar",
+        "https://edge.forgecdn.net/files/5512/76/Terralith_1.20.x_v2.5.4.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/513688/files/5512076",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 513688,
+          "file-id": 5512076
+        }
+      },
+      "mods": [
+        {
+          "modId": "terralith",
+          "displayName": "Terralith",
+          "version": "2.5.4",
+          "authors": "Stardust Labs"
+        }
+      ],
+      "declared_license": "Stardust Labs License",
+      "installed_path": "mods/Terralith_1.20.x_v2.5.4.jar",
+      "curseforge": {
+        "projectID": 513688,
+        "fileID": 5512076,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/tfmg-1.0.2f.jar",
+      "name": "Create: The Factory Must Grow",
+      "side": "both",
+      "size": 5343749,
+      "sha256": "a789d1519fd4033334d0e217b252c557095b8007922247bfe53ee9db4f76a63d",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/7344/584/tfmg-1.0.2f.jar",
+        "https://edge.forgecdn.net/files/7344/584/tfmg-1.0.2f.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/693815/files/7344584",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 693815,
+          "file-id": 7344584
+        }
+      },
+      "mods": [
+        {
+          "modId": "tfmg",
+          "displayName": "Create: The Factory Must Grow",
+          "version": "1.0.2f",
+          "authors": "DrMangoTea, Pepa, Luna"
+        }
+      ],
+      "declared_license": "MIT",
+      "installed_path": "mods/tfmg-1.0.2f.jar",
+      "curseforge": {
+        "projectID": 693815,
+        "fileID": 7344584,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/the_lost_city-1.5.2-forge-1.20.1.jar",
+      "name": "The Lost City",
+      "side": "both",
+      "size": 3911063,
+      "sha256": "980f79a255b47e44c35113860338959c5984148a03eec9727778abebe12be6d8",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9347/193/the_lost_city-1.5.2-forge-1.20.1.jar",
+        "https://edge.forgecdn.net/files/9347/193/the_lost_city-1.5.2-forge-1.20.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1159207/files/9347193",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1159207,
+          "file-id": 9347193
+        }
+      },
+      "mods": [
+        {
+          "modId": "the_lost_city",
+          "displayName": "The Lost City",
+          "version": "1.5.2",
+          "authors": "Berezka"
+        }
+      ],
+      "declared_license": "All Rights Reserved",
+      "installed_path": "mods/the_lost_city-1.5.2-forge-1.20.1.jar",
+      "curseforge": {
+        "projectID": 1159207,
+        "fileID": 9347193,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/the_lost_city_superb_warfare-1.0.1.jar",
+      "name": "The Lost City X Superb Warfare",
+      "side": "both",
+      "size": 5342,
+      "sha256": "f2202e98aab4853a165e5efa995f512d9c73f657a4952c8b21af13d256c5472b",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/7393/696/the_lost_city_superb_warfare-1.0.1.jar",
+        "https://edge.forgecdn.net/files/7393/696/the_lost_city_superb_warfare-1.0.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1403720/files/7393696",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1403720,
+          "file-id": 7393696
+        }
+      },
+      "mods": [
+        {
+          "modId": "the_lost_city_superb_warfare",
+          "displayName": "The Lost City Superb Warfare",
+          "version": "1.0.1",
+          "authors": "Berezka"
+        }
+      ],
+      "declared_license": "All Rights Reserved",
+      "installed_path": "mods/the_lost_city_superb_warfare-1.0.1.jar",
+      "curseforge": {
+        "projectID": 1403720,
+        "fileID": 7393696,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/tinyinv-1.20.1-1.1.0.1.jar",
+      "name": "TinyInv",
+      "side": "both",
+      "size": 122355,
+      "sha256": "c014733c81d6363ed078208a29ca5a12c4d924f8b770cfe0c842597c28c2f0ba",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/5234/306/tinyinv-1.20.1-1.1.0.1.jar",
+        "https://edge.forgecdn.net/files/5234/306/tinyinv-1.20.1-1.1.0.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/455299/files/5234306",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 455299,
+          "file-id": 5234306
+        }
+      },
+      "mods": [
+        {
+          "modId": "tinyinv",
+          "displayName": "TinyInv",
+          "version": "1.20.1-1.1.0.1",
+          "authors": "Nuparu00"
+        }
+      ],
+      "declared_license": "MIT License",
+      "installed_path": "mods/tinyinv-1.20.1-1.1.0.1.jar",
+      "curseforge": {
+        "projectID": 455299,
+        "fileID": 5234306,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/tooltipoverhaul-forge-1.20.1-2.1.0.jar",
+      "name": "Tooltip Overhaul",
+      "side": "client",
+      "size": 929889,
+      "sha256": "8513f9b7e7d4f04b8e9be1b52978e68edf470b1fed8423c52c73531e603003b7",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9491/812/tooltipoverhaul-forge-1.20.1-2.1.0.jar",
+        "https://edge.forgecdn.net/files/9491/812/tooltipoverhaul-forge-1.20.1-2.1.0.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1327508/files/9491812",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1327508,
+          "file-id": 9491812
+        }
+      },
+      "mods": [
+        {
+          "modId": "tooltipoverhaul",
+          "displayName": "Tooltip Overhaul",
+          "version": "2.1.0",
+          "authors": "Xylonity, ModderG"
+        }
+      ],
+      "declared_license": "GNU GPLv3",
+      "installed_path": "mods/tooltipoverhaul-forge-1.20.1-2.1.0.jar",
+      "curseforge": {
+        "projectID": 1327508,
+        "fileID": 9491812,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/Veil-forge-1.20.1-1.0.0.296-slim.jar",
+      "name": "Veil (slim)",
+      "side": "both",
+      "size": 8212690,
+      "sha256": "296c693c659a81b9baa0c778d29a5ab89c56bbb46b5245a3bc2213bd0485f492",
+      "urls": [
+        "https://maven.blamejared.com/foundry/veil/Veil-forge-1.20.1/1.0.0.296/Veil-forge-1.20.1-1.0.0.296-slim.jar"
+      ],
+      "page": "https://github.com/FoundryMC/Veil",
+      "declared_license": "LGPL-3.0",
+      "installed_path": "mods/Veil-forge-1.20.1-1.0.0.296-slim.jar",
+      "delivery": "override-original"
+    },
+    {
+      "path": "mods/watut-forge-1.20.1-1.2.3.jar",
+      "name": "What Are They Up To (Watut)",
+      "side": "both",
+      "size": 435496,
+      "sha256": "19a7291187e1074dac0ade56f95cdb84936e8563c55afdc0b86c90ea7cd80a9e",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/6315/241/watut-forge-1.20.1-1.2.3.jar",
+        "https://edge.forgecdn.net/files/6315/241/watut-forge-1.20.1-1.2.3.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/945479/files/6315241",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 945479,
+          "file-id": 6315241
+        }
+      },
+      "mods": [
+        {
+          "modId": "watut",
+          "displayName": "What Are They Up To",
+          "version": "1.20.1-1.2.3",
+          "authors": "Corosus"
+        }
+      ],
+      "declared_license": "All Rights Reserved",
+      "installed_path": "mods/watut-forge-1.20.1-1.2.3.jar",
+      "curseforge": {
+        "projectID": 945479,
+        "fileID": 6315241,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/xaeroworldmap-forge-1.20.1-1.47.0.jar",
+      "name": "Xaero's World Map",
+      "side": "both",
+      "size": 1429424,
+      "sha256": "88c6d844163c95a94d92bc6d87d9011cc840bd6207c3099a81b113d4450a3f6b",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9067/273/xaeroworldmap-forge-1.20.1-1.47.0.jar",
+        "https://edge.forgecdn.net/files/9067/273/xaeroworldmap-forge-1.20.1-1.47.0.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/317780/files/9067273",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 317780,
+          "file-id": 9067273
+        }
+      },
+      "mods": [
+        {
+          "modId": "xaeroworldmap",
+          "displayName": "Xaero's World Map",
+          "version": "1.47.0",
+          "authors": "xaero96"
+        }
+      ],
+      "declared_license": "All Rights Reserved",
+      "installed_path": "mods/xaeroworldmap-forge-1.20.1-1.47.0.jar",
+      "curseforge": {
+        "projectID": 317780,
+        "fileID": 9067273,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/zarith-forge-1.20.1-0.2.0.jar",
+      "name": "Zarith",
+      "side": "both",
+      "size": 9159157,
+      "sha256": "02b672e064a6d93b4fab241cb4f1cd4314e3f4bb6fdd3e3b13d6c611aa85a443",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9284/417/zarith-forge-1.20.1-0.2.0.jar",
+        "https://edge.forgecdn.net/files/9284/417/zarith-forge-1.20.1-0.2.0.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1720181/files/9284417",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1720181,
+          "file-id": 9284417
+        }
+      },
+      "mods": [
+        {
+          "modId": "zarith",
+          "displayName": "Zarith",
+          "version": "0.2.0",
+          "authors": "raiiiden"
+        }
+      ],
+      "declared_license": "CUSTOM",
+      "installed_path": "mods/zarith-forge-1.20.1-0.2.0.jar",
+      "curseforge": {
+        "projectID": 1720181,
+        "fileID": 9284417,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/zombieawareness-1.20.1-1.13.1.jar",
+      "name": "Zombie Awareness",
+      "side": "both",
+      "size": 291139,
+      "sha256": "4f5104f7d29e1d065364d2483885f3751da2bef09a734cead2fce81c82c46586",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/5096/285/zombieawareness-1.20.1-1.13.1.jar",
+        "https://edge.forgecdn.net/files/5096/285/zombieawareness-1.20.1-1.13.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/237754/files/5096285",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 237754,
+          "file-id": 5096285
+        }
+      },
+      "mods": [
+        {
+          "modId": "zombieawareness",
+          "displayName": "Zombie Awareness",
+          "version": "${file.jarVersion}",
+          "authors": "Corosus"
+        }
+      ],
+      "declared_license": "All Rights Reserved",
+      "installed_path": "mods/zombieawareness-1.20.1-1.13.1.jar",
+      "curseforge": {
+        "projectID": 237754,
+        "fileID": 5096285,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "resourcepacks/FA+Player-v1.1.zip",
+      "name": "FA+Player-v1.1.zip",
+      "side": "client",
+      "size": 110203,
+      "sha256": "9ee3ae5b2fe5cd980e4041429dc66d88243f5f2420e2814e5361c746ad937f33",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/8245/230/FA%2BPlayer-v1.1.zip",
+        "https://edge.forgecdn.net/files/8245/230/FA%2BPlayer-v1.1.zip"
+      ],
+      "page": "https://www.curseforge.com/projects/1281029/files/8245230",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1281029,
+          "file-id": 8245230
+        }
+      },
+      "installed_path": "resourcepacks/FA+Player-v1.1.zip",
+      "curseforge": {
+        "projectID": 1281029,
+        "fileID": 8245230,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "resourcepacks/FreshAnimations_v1.11.2_1.20.zip",
+      "name": "FreshAnimations_v1.11.2_1.20+.zip",
+      "side": "client",
+      "size": 742790,
+      "sha256": "3a36e09638aa72f3b6e36fcfbcb4f9a3ba31a03b09e777466034bf75827c157e",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9394/23/FreshAnimations_v1.11.2_1.20.zip",
+        "https://edge.forgecdn.net/files/9394/23/FreshAnimations_v1.11.2_1.20.zip"
+      ],
+      "page": "https://www.curseforge.com/projects/453763/files/9394023",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 453763,
+          "file-id": 9394023
+        }
+      },
+      "installed_path": "resourcepacks/FreshAnimations_v1.11.2_1.20.zip",
+      "curseforge": {
+        "projectID": 453763,
+        "fileID": 9394023,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "resourcepacks/TZP_1.20.1_2.7.zip",
+      "name": "TZP_1.20.1_2.7.zip",
+      "side": "client",
+      "size": 14177090,
+      "sha256": "aed1af48318a160f049fe8ac52d8445848de89eebc530c45dd5c0c5dc7af95bb",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/4750/306/TZP_1.20.1_2.7.zip",
+        "https://edge.forgecdn.net/files/4750/306/TZP_1.20.1_2.7.zip"
+      ],
+      "page": "https://www.curseforge.com/projects/312822/files/4750306",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 312822,
+          "file-id": 4750306
+        }
+      },
+      "installed_path": "resourcepacks/TZP_1.20.1_2.7.zip",
+      "curseforge": {
+        "projectID": 312822,
+        "fileID": 4750306,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "shaderpacks/ComplementaryUnbound_r5.9.3.zip",
+      "name": "ComplementaryUnbound_r5.9.3.zip",
+      "side": "client",
+      "size": 553400,
+      "sha256": "98ac741dee294d2a3c82d153349148c3bb7fb688c30eb3b49c3b9ac37e968c5a",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/8884/656/ComplementaryUnbound_r5.9.3.zip",
+        "https://edge.forgecdn.net/files/8884/656/ComplementaryUnbound_r5.9.3.zip"
+      ],
+      "page": "https://www.curseforge.com/projects/385587/files/8884656",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 385587,
+          "file-id": 8884656
+        }
+      },
+      "installed_path": "shaderpacks/ComplementaryUnbound_r5.9.3.zip",
+      "curseforge": {
+        "projectID": 385587,
+        "fileID": 8884656,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "tacz/GunpowderRevolution_gunpack v1.5.4hf1_1.zip",
+      "name": "GunpowderRevolution_gunpack v1.5.4hf1_1.zip",
+      "side": "both",
+      "size": 18066583,
+      "sha256": "4657f43e021edd0f83b37ae4511ba164904d0c52577cbf6c1fe7a0ec71c90137",
+      "urls": [
+        "https://edge.forgecdn.net/files/9078/257/GunpowderRevolution_gunpack%20v1.5.4hf1_1.zip",
+        "https://mediafilez.forgecdn.net/files/9078/257/GunpowderRevolution_gunpack%20v1.5.4hf1_1.zip"
+      ],
+      "page": "https://www.curseforge.com/minecraft/customization/tacz-gunpowder-revolution-great-war-gunpack/files/9078257",
+      "declared_license": "Original author terms; downloaded separately",
+      "installed_path": "tacz/GunpowderRevolution_gunpack v1.5.4hf1_1.zip",
+      "delivery": "override-original"
+    },
+    {
+      "path": "tacz/Trench_Tactics v0.05.zip",
+      "name": "Trench_Tactics v0.05.zip",
+      "side": "both",
+      "size": 1013036,
+      "sha256": "3d3efcd3e4252768d3bf16a17c3975e654d134b05103fd90ad55a0f0c2276b3e",
+      "urls": [
+        "https://edge.forgecdn.net/files/6610/302/Trench_Tactics%20v0.05.zip",
+        "https://mediafilez.forgecdn.net/files/6610/302/Trench_Tactics%20v0.05.zip"
+      ],
+      "page": "https://www.curseforge.com/minecraft/customization/tacz-lr-trench-tactics-ww1-gadget-packet/files/6610302",
+      "declared_license": "Original author terms; downloaded separately",
+      "installed_path": "tacz/Trench_Tactics v0.05.zip",
+      "delivery": "override-original"
+    },
+    {
+      "path": "mods/fzbe-0.5.1.5.jar",
+      "sha256": "24322e9ba3c4361703f9b94b71b4c0ce7d853a3358569ca4b9b5c1f2566f40c2",
+      "size": 9282506,
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9608/427/fzbe-0.5.1.5.jar",
+        "https://edge.forgecdn.net/files/9608/427/fzbe-0.5.1.5.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1685964/files/9608427",
+      "name": "fzbe-0.5.1.5.jar",
+      "side": "both",
+      "declared_license": "MIT (code) / ARR (assets)",
+      "authors": "FreeZBe",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1685964,
+          "file-id": 9608427
+        }
+      },
+      "installed_path": "mods/fzbe-0.5.1.5.jar",
+      "curseforge": {
+        "projectID": 1685964,
+        "fileID": 9608427,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "mods/tacz-mesh-loader-forge-1.20.1-0.2.1-hotfix.jar",
+      "sha256": "07d24da1113c1adf409fb5da929b4fd9302a35b6f268dd9929ebc3758322dca1",
+      "size": 817403,
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9539/316/tacz-mesh-loader-forge-1.20.1-0.2.1-hotfix.jar",
+        "https://edge.forgecdn.net/files/9539/316/tacz-mesh-loader-forge-1.20.1-0.2.1-hotfix.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1549522/files/9539316",
+      "name": "tacz-mesh-loader-forge-1.20.1-0.2.1-hotfix.jar",
+      "side": "both",
+      "declared_license": "GPL-3.0-only",
+      "authors": "VellEagle",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1549522,
+          "file-id": 9539316
+        }
+      },
+      "installed_path": "mods/tacz-mesh-loader-forge-1.20.1-0.2.1-hotfix.jar",
+      "curseforge": {
+        "projectID": 1549522,
+        "fileID": 9539316,
+        "required": true
+      },
+      "delivery": "manifest"
+    },
+    {
+      "path": "tacz/Ra1k_gunpack_v2.0.6_hotfix.zip",
+      "sha256": "c4369151e0fa28b7db99bf6349c2ea064672d7e35ec93b079a9935acc4b4f1d5",
+      "size": 13234202,
+      "urls": [
+        "https://edge.forgecdn.net/files/9542/984/Ra1k_gunpack_v2.0.6_hotfix.zip",
+        "https://mediafilez.forgecdn.net/files/9542/984/Ra1k_gunpack_v2.0.6_hotfix.zip"
+      ],
+      "page": "https://www.curseforge.com/minecraft/mc-addons/tacz-ra1ks-gunpack/files/9542984",
+      "name": "Ra1k_gunpack_v2.0.6_hotfix.zip",
+      "side": "both",
+      "declared_license": "MIT",
+      "authors": "Ra1k",
+      "installed_path": "tacz/Ra1k_gunpack_v2.0.6_hotfix.zip",
+      "delivery": "override-original"
+    },
+    {
+      "path": "tacz/Cold War from 1947-1991 v0.51.zip",
+      "sha256": "a5a4766a5b8ad0272c1b0d921c5402b0c61a8cc12169d7411585d3dbf6b1246b",
+      "size": 12082290,
+      "urls": [
+        "https://edge.forgecdn.net/files/7042/787/Cold%20War%20from%201947-1991%20v0.51.zip",
+        "https://mediafilez.forgecdn.net/files/7042/787/Cold%20War%20from%201947-1991%20v0.51.zip"
+      ],
+      "page": "https://www.curseforge.com/minecraft/customization/coldwarguns/files/7042787",
+      "name": "Cold War from 1947-1991 v0.51.zip",
+      "side": "both",
+      "declared_license": "CC-BY-4.0",
+      "authors": "LOL_141",
+      "installed_path": "tacz/Cold War from 1947-1991 v0.51.zip",
+      "delivery": "override-original"
+    },
+    {
+      "path": "tacz/Apocalypse_v1.1.7_G.zip",
+      "sha256": "d5b620657cf0afe89ee671d3d89e7698341106c3b5ac184a8b8688463e2783f2",
+      "size": 6829237,
+      "urls": [
+        "https://edge.forgecdn.net/files/7287/709/Apocalypse_v1.1.7_G.zip",
+        "https://mediafilez.forgecdn.net/files/7287/709/Apocalypse_v1.1.7_G.zip"
+      ],
+      "page": "https://www.curseforge.com/minecraft/customization/tacz-apocalypse-gun-pack/files/7287709",
+      "name": "Apocalypse_v1.1.7_G.zip",
+      "side": "both",
+      "declared_license": "All Rights Reserved",
+      "authors": "Am1ethy",
+      "installed_path": "tacz/Apocalypse_v1.1.7_G.zip",
+      "delivery": "override-original"
+    },
+    {
+      "path": "mods/guccivuitton-1.20.1-0.2.2.jar",
+      "installed_path": "mods/guccivuitton-1.20.1-0.2.2.jar",
+      "name": "Gucci & Vuitton Attachments",
+      "sha256": "9247e55f20acf8ec89af56d4ad45fcc8fe08bee9f7189421ef31835f3516bd57",
+      "size": 1598544,
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/6062/98/guccivuitton-1.20.1-0.2.2.jar",
+        "https://edge.forgecdn.net/files/6062/98/guccivuitton-1.20.1-0.2.2.jar"
+      ],
+      "page": "https://www.curseforge.com/minecraft/mc-mods/tacz-gucci-vuitton-attachments/files/6062098",
+      "curseforge": {
+        "projectID": 1103436,
+        "fileID": 6062098,
+        "required": true
+      },
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1103436,
+          "file-id": 6062098
+        }
+      },
+      "delivery": "manifest",
+      "authors": "xjqsh",
+      "declared_license": "All Rights Reserved",
+      "mods": [
+        {
+          "modId": "guccivuitton",
+          "version": "0.2.2",
+          "displayName": "Gucci & Vuitton Attachments"
+        }
+      ]
+    }
+  ],
+  "embedded_from_create": [
+    {
+      "path": "mods/flywheel-forge-1.20.1-1.0.5.jar",
+      "archive": "mods/create-1.20.1-6.0.8.jar",
+      "member": "META-INF/jarjar/flywheel-forge-1.20.1-1.0.5.jar",
+      "sha256": "316ca250f19244956b5f0cd75329309ea65a77b4b8da854389b6a9222e7f427c",
+      "size": 868892
+    },
+    {
+      "path": "mods/Ponder-Forge-1.20.1-1.0.91.jar",
+      "archive": "mods/create-1.20.1-6.0.8.jar",
+      "member": "META-INF/jarjar/Ponder-Forge-1.20.1-1.0.91.jar",
+      "sha256": "86e6b64372aba6d9c56f2c35725ea26d8febf2c75eed9950566e7f2849443b34",
+      "size": 783841
+    },
+    {
+      "path": "mods/Registrate-MC1.20-1.3.3.jar",
+      "archive": "mods/create-1.20.1-6.0.8.jar",
+      "member": "META-INF/jarjar/Registrate-MC1.20-1.3.3.jar",
+      "sha256": "226862d4638b77273f4627fbac871aa0b3af584dde377f4ce2cb0c7cc228cf00",
+      "size": 164480
+    }
+  ],
+  "core_from_build": true
+}

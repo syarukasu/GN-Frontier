@@ -1,0 +1,91 @@
+#Activa o desactiva todas las animaciones.
+enabled = true
+#Codos y rodillas que se doblan. Si hay algun problema visual con armaduras de otros mods, ponlo en false.
+bendLimbs = true
+#Movimientos de reposo largo (mirar alrededor, estirarse) cuando el jugador lleva tiempo quieto.
+longIdle = true
+#Animar tambien a los demas jugadores.
+animateOtherPlayers = true
+#Animaciones al golpear, picar, comer, beber, pescar, usar arco, escudo, etc.
+itemActions = true
+#Animaciones segun el entorno: subir y bajar escaleras, quemarse, lava y equilibrio sobre vallas y cosas angostas.
+environmentAnimations = true
+#Animacion propia al agacharse (shift). En false se deja la postura original del juego.
+sneakAnimation = true
+#Reaccion al recibir dano (el cuerpo se encoge y se echa hacia atras).
+hurtReaction = true
+#Estado del cuerpo: con poca vida el personaje se encorva, respira fuerte y cojea; con hambre se arrastra y se toca la panza.
+bodyStateAnimations = true
+#Clima: con frio se abraza y tirita, con lluvia se encoge, mira al cielo y se sacude, con calor (Nether, desierto) se seca la frente.
+weatherAnimations = true
+#Peso: la armadura puesta y el inventario lleno vuelven la marcha mas lenta y pesada.
+armorWeight = true
+#Inercia: el cuerpo se inclina al arrancar y girar, patina al frenar en seco despues de correr y aterriza mas hondo desde alto.
+inertia = true
+#Terreno: nieve, arena, hielo, arena de almas, miel, telaranas y agua poco profunda cambian la forma de caminar.
+terrainAnimations = true
+#Gestos ocasionales cuando el personaje esta quieto (frotarse la panza, secarse la frente, sacudirse el agua...).
+idleGestures = true
+#Flotar: en agua profunda, sin nadar, el personaje se mantiene a flote moviendo brazos y piernas (en false se deja la animacion de siempre).
+floatInWater = true
+#Escaleras de mano, enredaderas y andamios: el personaje trepa agarrandose con las manos y apoyando los pies (en false se deja la animacion del juego).
+climbLadders = true
+#Planear con elitros: postura propia en el vuelo (brazos pegados, piernas juntas, abre los brazos al arrancar y al bajar en picada).
+elytraGlide = true
+#Antorcha y farol en la mano: al sacarlos la mano baja a buscarlos, y despues los lleva en alto (la antorcha) o colgando y meciendose (el farol).
+heldLights = true
+#Compatibilidad con mods que animan al jugador (Better Combat, Emotecraft, WATUT, Bosses'Rise y cualquier otro que mueva el modelo): mientras su animacion esta activa, este mod les deja las piezas que mueven (un brazo, la cabeza, o todo el cuerpo durante un ataque, una voltereta o un emote).
+yieldToOtherMods = true
+#Objetos con los que este mod no anima al jugador (para mods de armas con animaciones propias que no usan esas librerias). Separados por comas: un objeto ("simplyswords:iron_longsword") o todos los de un mod ("simplyswords:"). Vacio = ninguno.
+yieldItems = ""
+#Bosses'Rise: la voltereta la hace este mod (el cuerpo gira entero como una bola, con rodillas al pecho). En false se deja la de Bosses'Rise.
+ownDodgeRoll = true
+#WATUT: cuando otro jugador tiene abierto el inventario, un cofre o una mesa, la pose la hace este mod (mira una pantalla delante del pecho, la sostiene con una mano y apunta y toca con la otra). En false se deja la de WATUT.
+ownMenuPose = true
+#1.3.4: todas las animaciones son de Player Animator. En true se usa en su lugar la animacion de siempre del mod (la de las versiones anteriores) y las opciones new... no hacen nada.
+legacyAnimations = false
+#1.3.4: quieto: respiracion, peso que pasa de una pierna a la otra y, despues de un rato, mirar alrededor o estirarse (con longIdle).
+newIdle = true
+#1.3.4: agachado (quieto y caminando) como el del juego, con respiracion y paso suaves.
+newSneak = true
+#1.3.4: agua: nadar a crol y flotar (brazos remando, piernas pedaleando).
+newWater = true
+#1.3.4: escaleras de mano y enredaderas: trepar con manos y pies, y colgado quieto.
+newClimb = true
+#1.3.4: planear con elitros (brazos abiertos como alas, pegados en picada, el cuerpo se ladea al girar).
+newElytra = true
+#1.3.4: montado (caballo, barco, carro): sentado con el cuerpo meciendose.
+newRide = true
+#1.3.4: al recibir dano el cuerpo se echa atras y los brazos se cubren.
+newHurt = true
+#1.3.4: frio (se abraza y tirita) y lluvia (mira al cielo y se sacude) cuando esta quieto.
+newWeather = true
+#1.3.4: ataques en combo (cinco tajos con espada, tres golpes pesados con hacha o maza, cuatro golpes sin arma), arrojar pociones, bolas de nieve, perlas... y picar segun la herramienta. Con Better Combat se dejan sus ataques.
+newAttack = true
+#1.3.4: comer, beber, arco, ballesta (cargar y apuntar), escudo y pesca.
+newItemUse = true
+#1.3.4: caminar (y cojear con poca vida) con la animacion de playerAnimator.
+newWalk = true
+#1.3.4: en las animaciones nuevas de caminar y correr, mover tambien los brazos (con las manos libres).
+newWalkArms = true
+#1.3.4: correr con la animacion de playerAnimator.
+newRun = true
+#1.3.4: caminar hacia atras de verdad (pasos cortos hacia atras, apoyando la punta del pie).
+newWalkBack = true
+#1.3.4: salto (brazos hacia abajo, piernas recogidas, la cabeza acompana), caida y aterrizaje.
+newJump = true
+#1.3.4: al caer de alto al agua el personaje se tira de clavado (de cabeza, brazos estirados).
+newDive = true
+#1.3.4: vuelo en creativo: estilo Superman al volar rapido y flotando (piernas colgando) al ir despacio.
+newFly = true
+#1.3.4: quieto frente a una hoguera o fuego, el personaje se calienta las manos y se las frota.
+newCampfire = true
+#1.3.4: calor (Nether, cerca de lava, desierto de dia): quieto, de vez en cuando se seca el sudor o se abanica.
+newHeat = true
+#1.3.4: catalejo con las dos manos (una lo lleva al ojo y la otra lo sostiene).
+newSpyglass = true
+#1.3.4: tridente: carga con el brazo atras y el otro apuntando, y lanzamiento con todo el cuerpo.
+newTrident = true
+#1.3.4: al cambiar el objeto de la mano, la mano baja a buscarlo y lo trae con un movimiento fluido.
+newItemDraw = true
+

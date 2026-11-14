@@ -1,0 +1,25 @@
+{
+  "purpose": "Chosen video recreation stack; original mod stack unconfirmed",
+  "arboria": {
+    "version": "1.1.2",
+    "project_id": "IuVnevHX",
+    "version_id": "LnBGB524",
+    "source": "https://modrinth.com/datapack/arboria",
+    "license": {
+      "id": "MIT",
+      "name": "MIT License",
+      "url": null
+    },
+    "archive_sha256": "6a33c96c437df88f75c57a85d7224029d556eaa1599dec4a576dd9cce320fdda",
+    "files_imported": 1975,
+    "method": "Unmodified data/ resources inside KubeJS",
+    "priority": "KubeJS above Terralith for 33 overlapping vanilla biome resources"
+  },
+  "terralith": {
+    "version": "2.5.4",
+    "project_id": "8oi3bsk5",
+    "version_id": "WeYhEb5d",
+    "source": "https://modrinth.com/datapack/terralith",
+    "archive_sha256": "8f65f309d8f2723754bf4b60c7b5763d3ab6ed04b01c172109ba6564e981b95f"
+  }
+}

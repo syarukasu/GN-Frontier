@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:blackstone",
+    "minecraft:cyan_terracotta",
+    "minecraft:deepslate",
+    "minecraft:cobbled_deepslate",
+    "minecraft:basalt"
+  ]
+}

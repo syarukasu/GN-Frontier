@@ -6,6 +6,6 @@ Upstream mods and gunpacks are pinned by URL, project/file IDs and SHA-256 in `p
 
 The core embeds unchanged Molang Compiler 3.1.1.19 (Ocelot, MIT) and imgui-java 1.86.11 (Ilya Prymshyts / SpaiR, Apache-2.0, binding/lwjgl3/Windows natives). Original files are fetched by `tools/project.py deps`; their checksums are in `pack/build-dependencies.lock.json`. Notices are in `licenses/`.
 
-Arboria 1.1.2 generation data is by Sunna (MIT). The original license is retained in `licenses/`. Some corrected structure data derives from ChaosZPack and Ad Astra. Public redistribution review for derived data remains open; see `docs/CURSEFORGE.md`. The GitHub repository is private. The initial source and configuration upload was explicitly approved by the user.
+Arboria 1.1.2 generation data is by Sunna (MIT). The original license is retained in `licenses/`. Some corrected structure data derives from ChaosZPack and Ad Astra. Public redistribution review for derived data remains open; see `docs/CURSEFORGE.md`. The public repository uses privacy-reviewed history. The original preparation history remains in a separate private archive.
 
 Japanese translations and pack rules are applied through KubeJS/resources or the one GN Frontier core. No third-party Java class is copied into the core as a patched replacement.

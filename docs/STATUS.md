@@ -4,7 +4,7 @@
 
 実施済み：
 
-- [GitHub](https://github.com/syarukasu/GN-Frontier)へ非公開で登録し、`main`と`v0.2.1`をpush済み。ユーザー承認済みのソース・設定2,783ファイルを送信。
+- [GitHub](https://github.com/syarukasu/GN-Frontier)で`main`と`v0.2.1`を管理。公開用の全履歴から個人環境の固定パスを取り除き、元の準備履歴は別の非公開リポジトリに保管。
 
 - 元Prismインスタンスへ0.2.1をバックアップ付きで導入。専用MODは1本、トップレベルJARは131本。元クライアントは起動していません。
 - セーブ・操作設定など、変更対象外の7,543ファイルは導入前後でハッシュ一致。
@@ -15,7 +15,7 @@
 - 日本語表示、FreeZBeの素材参照と未使用モデルの補正を確認。
 - Create内包のFlywheel・Ponder・Registrateを読み込み、トップレベルでの重複配置を整理。
 - Git管理したファイルだけの新規チェックアウトで、10個の原版依存物を公式から取得しビルド。検証・導入したJARと全バイト一致。
-- [GitHub Actionsの初回ビルド](https://github.com/syarukasu/GN-Frontier/actions/runs/43621339823)も成功。Ubuntu上で依存物取得、コアMODのコンパイル、0.2.1の番号・原版ライブラリ照合、成果物の保存まで完了。
+- 非公開の準備段階でGitHub Actionsのビルドを確認。公開用の履歴でも[Actions](https://github.com/syarukasu/GN-Frontier/actions)から確認できます。
 
 残件・確認の限界：
 

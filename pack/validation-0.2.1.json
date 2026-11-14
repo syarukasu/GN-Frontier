@@ -34,11 +34,18 @@
   },
   "github": {
     "repository": "https://github.com/syarukasu/GN-Frontier",
-    "visibility": "private",
-    "release_commit": "4a5c126a75c1bb7666b8636a677679611fd332bd",
+    "visibility": "public-preparation",
     "tag": "v0.2.1",
-    "workflow_url": "https://github.com/syarukasu/GN-Frontier/actions/runs/43621339823",
-    "workflow_conclusion": "success",
-    "scope": "Ubuntu compile, version and embedded original library verification; no game runtime on GitHub"
+    "release_commit": "e77d4286382a9186d5c0281780b766a738279f5b",
+    "original_private_build": "success; retained in private archive"
+  },
+  "privacy_review": {
+    "historical_commits_reviewed": 4,
+    "historical_blobs_reviewed": 5090,
+    "personal_paths_replaced": 2,
+    "credential_patterns_found": 0,
+    "commit_email": "GitHub noreply",
+    "image_metadata_found": false,
+    "original_history_retained_privately": true
   }
 }

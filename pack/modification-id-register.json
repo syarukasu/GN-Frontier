@@ -1,0 +1,830 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-11-12T23:34:24.310863+09:00",
+  "next_sequence": 83,
+  "rules": [
+    "IDは登録時に固定し、名称・分類・実装状態が変わっても変更しない。",
+    "新規項目には未使用の次番号を登録する。削除・統合したIDは廃止記録を残して再利用しない。",
+    "項目を分割するときは元IDを残し、新しいIDとの関係を記録する。",
+    "一覧の並び順から毎回採番しない。関連IDは関連事項を示し、依存関係や実装完了を意味しない。"
+  ],
+  "entries": [
+    {
+      "id": "GN-001",
+      "initial_title": "バニラ道具・防具レシピの制限",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": []
+    },
+    {
+      "id": "GN-002",
+      "initial_title": "作業台",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": []
+    },
+    {
+      "id": "GN-003",
+      "initial_title": "粗悪な鉄のツルハシ",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": []
+    },
+    {
+      "id": "GN-004",
+      "initial_title": "ハンドクランク",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": []
+    },
+    {
+      "id": "GN-005",
+      "initial_title": "プロペラ・ケース入りファン",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": []
+    },
+    {
+      "id": "GN-006",
+      "initial_title": "金属くずからの製鉄",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": []
+    },
+    {
+      "id": "GN-007",
+      "initial_title": "通常かまど・溶鉱炉の停止",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-044",
+        "GN-053"
+      ]
+    },
+    {
+      "id": "GN-008",
+      "initial_title": "松明の改変",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": []
+    },
+    {
+      "id": "GN-009",
+      "initial_title": "粗悪素材と再資源化",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-029",
+        "GN-047",
+        "GN-055"
+      ]
+    },
+    {
+      "id": "GN-010",
+      "initial_title": "製鋼から現代銃への進行",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": []
+    },
+    {
+      "id": "GN-011",
+      "initial_title": "ガスマスクの製鋼条件",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": []
+    },
+    {
+      "id": "GN-012",
+      "initial_title": "自然収納のloot",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": []
+    },
+    {
+      "id": "GN-013",
+      "initial_title": "個人別loot",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": []
+    },
+    {
+      "id": "GN-014",
+      "initial_title": "緑屋根拠点",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": []
+    },
+    {
+      "id": "GN-015",
+      "initial_title": "車・家電の素材回収",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-042",
+        "GN-049"
+      ]
+    },
+    {
+      "id": "GN-016",
+      "initial_title": "敵ドロップ",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": []
+    },
+    {
+      "id": "GN-017",
+      "initial_title": "広域都市プリセット",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-018",
+        "GN-019",
+        "GN-051",
+        "GN-052"
+      ]
+    },
+    {
+      "id": "GN-018",
+      "initial_title": "自然地形と都市境界",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-017",
+        "GN-019",
+        "GN-051",
+        "GN-052",
+        "GN-065",
+        "GN-066",
+        "GN-068"
+      ]
+    },
+    {
+      "id": "GN-019",
+      "initial_title": "湿地の地表植生",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-017",
+        "GN-018",
+        "GN-051",
+        "GN-052"
+      ]
+    },
+    {
+      "id": "GN-020",
+      "initial_title": "初期スポーン記録",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-021",
+        "GN-022",
+        "GN-023",
+        "GN-024",
+        "GN-026",
+        "GN-057"
+      ]
+    },
+    {
+      "id": "GN-021",
+      "initial_title": "ベッド登録と3日待ち",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-020",
+        "GN-022",
+        "GN-023",
+        "GN-024",
+        "GN-026",
+        "GN-057"
+      ]
+    },
+    {
+      "id": "GN-022",
+      "initial_title": "スポーン周囲と復活直後の保護",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-020",
+        "GN-021",
+        "GN-023",
+        "GN-024",
+        "GN-026",
+        "GN-057"
+      ]
+    },
+    {
+      "id": "GN-023",
+      "initial_title": "登録ベッドを壊す敵AI",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-020",
+        "GN-021",
+        "GN-022",
+        "GN-024",
+        "GN-026",
+        "GN-057"
+      ]
+    },
+    {
+      "id": "GN-024",
+      "initial_title": "自然生成ベッド・不衛生な寝床",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-020",
+        "GN-021",
+        "GN-022",
+        "GN-023",
+        "GN-026",
+        "GN-057"
+      ]
+    },
+    {
+      "id": "GN-025",
+      "initial_title": "死亡時の持ち物全消失",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": []
+    },
+    {
+      "id": "GN-026",
+      "initial_title": "釣り竿ゾンビ",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-020",
+        "GN-021",
+        "GN-022",
+        "GN-023",
+        "GN-024",
+        "GN-057"
+      ]
+    },
+    {
+      "id": "GN-027",
+      "initial_title": "窓蹴り",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-047"
+      ]
+    },
+    {
+      "id": "GN-028",
+      "initial_title": "伏せと銃性能",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": []
+    },
+    {
+      "id": "GN-029",
+      "initial_title": "インベントリ占有サイズ",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-009",
+        "GN-047",
+        "GN-055"
+      ]
+    },
+    {
+      "id": "GN-030",
+      "initial_title": "PDAの売買・財布",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-031",
+        "GN-032",
+        "GN-046",
+        "GN-056"
+      ]
+    },
+    {
+      "id": "GN-031",
+      "initial_title": "PDA依頼",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-030",
+        "GN-032",
+        "GN-046",
+        "GN-056",
+        "GN-062",
+        "GN-069"
+      ]
+    },
+    {
+      "id": "GN-032",
+      "initial_title": "軍需品と完成車両の取引",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-030",
+        "GN-031",
+        "GN-046",
+        "GN-056"
+      ]
+    },
+    {
+      "id": "GN-033",
+      "initial_title": "PC部品とマイニング",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": []
+    },
+    {
+      "id": "GN-034",
+      "initial_title": "軍AI・増援・抑止",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": []
+    },
+    {
+      "id": "GN-035",
+      "initial_title": "地下ガス・フィルター",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": []
+    },
+    {
+      "id": "GN-036",
+      "initial_title": "水中低酸素・失神",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": []
+    },
+    {
+      "id": "GN-037",
+      "initial_title": "エミッションと初期ポータル",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": []
+    },
+    {
+      "id": "GN-038",
+      "initial_title": "衛星通信",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-039",
+        "GN-045",
+        "GN-054"
+      ]
+    },
+    {
+      "id": "GN-039",
+      "initial_title": "Noahの現在の代替実装",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-038",
+        "GN-045",
+        "GN-054"
+      ]
+    },
+    {
+      "id": "GN-040",
+      "initial_title": "日本語化と素材の見た目",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-047",
+        "GN-048"
+      ]
+    },
+    {
+      "id": "GN-041",
+      "initial_title": "シェーダーの調整",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-058"
+      ]
+    },
+    {
+      "id": "GN-042",
+      "initial_title": "半分の車体の修正",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-015",
+        "GN-049"
+      ]
+    },
+    {
+      "id": "GN-043",
+      "initial_title": "Create Aero関連3移植版の除外",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": []
+    },
+    {
+      "id": "GN-044",
+      "initial_title": "かまどの修理機能",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-007",
+        "GN-053"
+      ]
+    },
+    {
+      "id": "GN-045",
+      "initial_title": "Project Noahの「地球の複製」",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-038",
+        "GN-039",
+        "GN-054"
+      ]
+    },
+    {
+      "id": "GN-046",
+      "initial_title": "PDA・地図の完全再現",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-030",
+        "GN-031",
+        "GN-032",
+        "GN-056"
+      ]
+    },
+    {
+      "id": "GN-047",
+      "initial_title": "素材・設備・窓蹴りの原資産一致",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-009",
+        "GN-027",
+        "GN-029",
+        "GN-040",
+        "GN-048",
+        "GN-055"
+      ]
+    },
+    {
+      "id": "GN-048",
+      "initial_title": "日本語訳の残り",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-040",
+        "GN-047"
+      ]
+    },
+    {
+      "id": "GN-049",
+      "initial_title": "既存チャンクの車修復",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-015",
+        "GN-042"
+      ]
+    },
+    {
+      "id": "GN-050",
+      "initial_title": "実機検証の残り",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-064",
+        "GN-065",
+        "GN-066",
+        "GN-067",
+        "GN-068",
+        "GN-069",
+        "GN-070"
+      ]
+    },
+    {
+      "id": "GN-051",
+      "initial_title": "自然地形の元構成",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-017",
+        "GN-018",
+        "GN-019",
+        "GN-052"
+      ]
+    },
+    {
+      "id": "GN-052",
+      "initial_title": "原作の都市生成値",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-017",
+        "GN-018",
+        "GN-019",
+        "GN-051"
+      ]
+    },
+    {
+      "id": "GN-053",
+      "initial_title": "かまどの原修理仕様",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-007",
+        "GN-044"
+      ]
+    },
+    {
+      "id": "GN-054",
+      "initial_title": "Noahと宇宙の元MOD",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-038",
+        "GN-039",
+        "GN-045"
+      ]
+    },
+    {
+      "id": "GN-055",
+      "initial_title": "原素材・所持品GUI",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-009",
+        "GN-029",
+        "GN-047"
+      ]
+    },
+    {
+      "id": "GN-056",
+      "initial_title": "原経済・loot・敵頻度",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-030",
+        "GN-031",
+        "GN-032",
+        "GN-046",
+        "GN-063"
+      ]
+    },
+    {
+      "id": "GN-057",
+      "initial_title": "復活と敵AIの細部",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-020",
+        "GN-021",
+        "GN-022",
+        "GN-023",
+        "GN-024",
+        "GN-026"
+      ]
+    },
+    {
+      "id": "GN-058",
+      "initial_title": "シェーダー・外観の原設定",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": [
+        "GN-041"
+      ]
+    },
+    {
+      "id": "GN-059",
+      "initial_title": "細かなアイテム挙動",
+      "first_recorded_revision": "car-integrity-r17",
+      "state": "active",
+      "related_ids": []
+    },
+    {
+      "id": "GN-060",
+      "initial_title": "GN Frontierのタイトル画面とガイド",
+      "first_recorded_revision": "pack-interface-r18",
+      "state": "active",
+      "related_ids": [
+        "GN-061"
+      ]
+    },
+    {
+      "id": "GN-061",
+      "initial_title": "統一ロード画面",
+      "first_recorded_revision": "pack-interface-r18",
+      "state": "active",
+      "related_ids": [
+        "GN-060"
+      ]
+    },
+    {
+      "id": "GN-062",
+      "initial_title": "闇商人の専用任務",
+      "first_recorded_revision": "pack-interface-r18",
+      "state": "active",
+      "related_ids": [
+        "GN-031",
+        "GN-063",
+        "GN-069"
+      ]
+    },
+    {
+      "id": "GN-063",
+      "initial_title": "専用任務の原仕様",
+      "first_recorded_revision": "pack-interface-r18",
+      "state": "active",
+      "related_ids": [
+        "GN-062",
+        "GN-056"
+      ]
+    },
+    {
+      "id": "GN-064",
+      "initial_title": "TFMGのゴーグル表示互換修正",
+      "first_recorded_revision": "merchant-quests-r19",
+      "state": "active",
+      "related_ids": [
+        "GN-050"
+      ]
+    },
+    {
+      "id": "GN-065",
+      "initial_title": "TFMG油田生成の範囲外書込防止",
+      "first_recorded_revision": "merchant-quests-r19",
+      "state": "active",
+      "related_ids": [
+        "GN-050",
+        "GN-018",
+        "GN-066"
+      ]
+    },
+    {
+      "id": "GN-066",
+      "initial_title": "AnomalyZoneの道生成の範囲外書込防止",
+      "first_recorded_revision": "compatibility-r20",
+      "state": "active",
+      "related_ids": [
+        "GN-050",
+        "GN-018",
+        "GN-065"
+      ]
+    },
+    {
+      "id": "GN-067",
+      "initial_title": "AnomalyZoneの光源色処理の互換修正",
+      "first_recorded_revision": "compatibility-r20",
+      "state": "active",
+      "related_ids": [
+        "GN-050"
+      ]
+    },
+    {
+      "id": "GN-068",
+      "initial_title": "Create滑車の不正NBTと生成データ修正",
+      "first_recorded_revision": "compatibility-r20",
+      "state": "active",
+      "related_ids": [
+        "GN-050",
+        "GN-018"
+      ]
+    },
+    {
+      "id": "GN-069",
+      "initial_title": "日替わり任務の組み合わせ生成と討伐依頼",
+      "first_recorded_revision": "daily-missions-r21",
+      "state": "active",
+      "related_ids": [
+        "GN-031",
+        "GN-050",
+        "GN-062",
+        "GN-070"
+      ]
+    },
+    {
+      "id": "GN-070",
+      "initial_title": "ShrapnelとSuperb Warfareの爆発互換修正",
+      "first_recorded_revision": "daily-missions-r21",
+      "state": "active",
+      "related_ids": [
+        "GN-050",
+        "GN-069"
+      ]
+    },
+    {
+      "id": "GN-071",
+      "initial_title": "Enhanced AI導入と既存AI・復活保護の連携",
+      "first_recorded_revision": "enhanced-ai-r22",
+      "state": "active",
+      "related_ids": [
+        "GN-022",
+        "GN-023",
+        "GN-026",
+        "GN-057"
+      ]
+    },
+    {
+      "id": "GN-072",
+      "initial_title": "採掘ゾンビのツルハシ条件",
+      "first_recorded_revision": "faction-hostility-r23",
+      "state": "active",
+      "related_ids": [
+        "GN-071",
+        "GN-023"
+      ]
+    },
+    {
+      "id": "GN-073",
+      "initial_title": "バニラ敵・東西・PMC・Banditsの敵対関係",
+      "first_recorded_revision": "faction-hostility-r23",
+      "state": "active",
+      "related_ids": [
+        "GN-034",
+        "GN-071"
+      ]
+    },
+    {
+      "id": "GN-074",
+      "initial_title": "NPC銃撃表示と旧拳銃IDの互換修正",
+      "first_recorded_revision": "faction-hostility-r23",
+      "state": "active",
+      "related_ids": [
+        "GN-034",
+        "GN-073"
+      ]
+    },
+    {
+      "id": "GN-075",
+      "initial_title": "端末不要のPDAと動画の画面枠",
+      "first_recorded_revision": "faction-hostility-r23",
+      "state": "active",
+      "related_ids": [
+        "GN-030",
+        "GN-031",
+        "GN-046",
+        "GN-062"
+      ]
+    },
+    {
+      "id": "GN-076",
+      "initial_title": "重なる所持品HUDと仮アイコンの整理",
+      "first_recorded_revision": "faction-hostility-r23",
+      "state": "active",
+      "related_ids": [
+        "GN-040",
+        "GN-047",
+        "GN-055"
+      ]
+    },
+    {
+      "id": "GN-077",
+      "initial_title": "TaCZ Expert導入と重複機能の整理",
+      "first_recorded_revision": "tacz-expert-r24",
+      "state": "active",
+      "related_ids": [
+        "GN-040",
+        "GN-074",
+        "GN-076"
+      ]
+    },
+    {
+      "id": "GN-078",
+      "initial_title": "互換処理をGN Frontier専用MODへ集約",
+      "first_recorded_revision": "addon-compat-r25",
+      "state": "active",
+      "related_ids": [
+        "GN-040",
+        "GN-070",
+        "GN-077"
+      ]
+    },
+    {
+      "id": "GN-079",
+      "initial_title": "Anomaly Zone推奨ガンパック・装備品の導入と日本語化",
+      "first_recorded_revision": "version-control-r39",
+      "state": "active",
+      "related_ids": []
+    },
+    {
+      "id": "GN-080",
+      "initial_title": "専用プリセットとハード固定のワールド作成画面",
+      "first_recorded_revision": "version-control-r39",
+      "state": "active",
+      "related_ids": []
+    },
+    {
+      "id": "GN-081",
+      "initial_title": "CurseForge配布元とパック単位の管理",
+      "first_recorded_revision": "version-control-r39",
+      "state": "active",
+      "related_ids": []
+    },
+    {
+      "id": "GN-082",
+      "initial_title": "Git管理と動画回・更新回数による共通バージョン",
+      "first_recorded_revision": "version-control-r39",
+      "state": "active",
+      "related_ids": []
+    }
+  ]
+}

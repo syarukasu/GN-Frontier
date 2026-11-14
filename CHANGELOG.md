@@ -8,5 +8,7 @@
 - Anomaly Zone推奨のFreeZBe、Phoenix、Cold War、Apocalypse、Gucci & Vuittonと必要なTaCZ Mesh Loaderを追加。
 - 追加パックの日本語表示、FreeZBeの素材参照と未使用モデル定義をKubeJSで補正。第三者JARは原版を使用。
 - CurseForgeの取得元と固定ファイルIDを整理。公開IDが未取得のものは未完了として管理。
+- McJtyLib 8.0.10をCurseForge原版へ、TerraBlenderを対応条件内のCurseForge掲載版3.0.1.10へ統一。
+- Create内包版の読み込みを確認し、Flywheel・Ponder・Registrateの重複JAR配置を整理。
 
 個別の導入・起動・公開状況は [確認状況](docs/STATUS.md) に記録します。実装済みと公開済みは別に扱います。

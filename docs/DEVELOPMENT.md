@@ -20,3 +20,11 @@ GitHub Actionsは同じ手順でコアをビルドし、番号と内包ライブ
 リリース時は変更履歴を更新し、ビルド・必要な隔離起動確認を行ってから`v0.2.1`のようなタグを付けます。配布物の生成はバージョンを共通ファイルから読み、CurseForgeの実在するprojectID/fileIDを使います。未取得のIDを仮の数字で埋めて公開しません。
 
 セーブ、アカウント、ログ、取得済み第三者JAR、生成された配布ZIP、画面検証データ、過去revisionはGitに入れません。動画の原画像・抽出テクスチャもリポジトリに入れません。公開可否が未確認の派生データは[CurseForgeの残件](CURSEFORGE.md)で管理します。
+
+ローカル候補ZIPは、固定原版を取得済みのゲームディレクトリを指定して作れます。
+
+```powershell
+python tools/build_release.py --cache <原版ファイルのフォルダー> --local-candidate
+```
+
+`--local-candidate`を省略すると、CurseForgeに未掲載のMODがある間は作成を拒否します。ローカル候補ZIPは未公開の検討用で、CurseForge管理・更新が完成した配布物ではありません。`pack/source-paths.json`が各設定の正規ソースを示します。清潔な新規導入用の値が必要な項目では`pack/defaults/`を使用します。

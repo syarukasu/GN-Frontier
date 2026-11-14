@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "version": "0.2.1",
+  "final_addon_sha256": "211b9d696a91eaee4a35876b74414cc3611e075814f90f87e025b9955664a713",
+  "runtime_scope": [
+    "Private never-activated desktop: core 0.2.1 starts and creates a fresh world with gn_azzz15flat_nature.",
+    "Anomaly Zone recommended screen: all six entries installed, visually inspected.",
+    "FreeZBe 32, Phoenix 45, Cold War 17, Apocalypse 30 guns and 60 Gucci attachments registered.",
+    "Create embedded Flywheel/Ponder loaded as mods; Registrate loaded from original nested library.",
+    "All four mode/cheat UI combinations; GUI scale 4 buttons fit; actual Survival/cheats-off world stays HARD and rejects peaceful or forced EASY.",
+    "Six namespaces translated; FreeZBe material reference and model resource corrections verified.",
+    "Clean Git checkout fetched ten original build dependencies and reproduced the exact JAR bytes.",
+    "Original client, user saves and OS input/focus were not used."
+  ],
+  "counts": {
+    "fzbe": 32,
+    "ra1k": 45,
+    "rainforest": 17,
+    "bf1": 30
+  },
+  "gucci_attachments": 60,
+  "known_limits": [
+    "CurseForge-only publication remains blocked by unpublished core/pack and ExfilZones/Veil listings.",
+    "GitHub upload requires explicit approval after automatic review rejection.",
+    "Inherited TFMG/HBM resources and generated POI/hanging-entity warnings remain. Initial world creation produced a 40-second watchdog warning under the two-CPU test cap, then completed; no performance claim.",
+    "Generated-world screenshot is partly obstructed and is not terrain-composition visual proof.",
+    "No GitHub Actions run yet; clean-checkout build executed locally."
+  ],
+  "deployment": {
+    "status": "APPLIED",
+    "version": "0.2.1",
+    "top_level_jars": 131,
+    "core_mods": 1,
+    "protected_files_unchanged": 7543,
+    "original_client_launched": false
+  }
+}

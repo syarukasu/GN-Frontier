@@ -20,7 +20,7 @@ jobs:
         with:
           python-version: '3.11'
       - name: Check shared version
-        run: python tools/project.py check
+        run: python tools/verify_repository.py
       - name: Fetch checksum-locked upstream build dependencies
         run: python tools/project.py deps
       - name: Compile and reobfuscate the one core mod

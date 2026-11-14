@@ -1,0 +1,29 @@
+name: 動画との差・未実装要素
+description: 該当する動画と根拠を添えて再現状況を管理します。
+title: "[再現] "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: GN Frontierのバージョン
+      placeholder: 0.2.1
+    validations:
+      required: true
+  - type: input
+    id: video
+    attributes:
+      label: 動画の回・URL・時刻
+    validations:
+      required: true
+  - type: input
+    id: modification
+    attributes:
+      label: 関連する改変ID
+      placeholder: GN-080、不明なら未記入
+  - type: textarea
+    id: observation
+    attributes:
+      label: 動画で確認できる内容と現在の違い
+      description: 画面から確認できた事実と推測を分けて記入してください。
+    validations:
+      required: true

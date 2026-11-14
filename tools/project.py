@@ -25,12 +25,12 @@ def version():
 def change_version(value):
     if not re.fullmatch(r'(0|[1-9]\d*)\.(0|[1-9]\d*)\.[1-9]\d*', value):
         raise ValueError('Invalid version')
-    (ROOT / 'VERSION').write_text(value + '\n', encoding='utf-8')
     config = ROOT / 'overlay/config/bcc-common.toml'
     body, count = re.subn(r'^modpackVersion = ".*"$', 'modpackVersion = "' + value + '"',
                           config.read_text('utf-8'), flags=re.M)
     if count != 1:
         raise ValueError('Expected one modpackVersion setting')
+    (ROOT / 'VERSION').write_text(value + '\n', encoding='utf-8')
     config.write_text(body, encoding='utf-8')
     print('Pack and core version:', value)
 

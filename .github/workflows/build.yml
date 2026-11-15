@@ -30,8 +30,24 @@ jobs:
         run: bash gradlew --no-daemon --max-workers=2 jar
       - name: Check built version and embedded originals
         run: python tools/project.py check --jar "addon/build/libs/gn-frontier-$(cat VERSION).jar"
+      - name: Verify dedicated-server compatibility against the pinned original
+        working-directory: addon
+        run: bash gradlew --no-daemon --max-workers=2 verifyServerCompatibility
+      - name: Build JAR-free client and server distributions
+        run: python tools/build_release.py
+      - name: Verify package coverage and archive contents
+        run: python tools/test_distribution.py --release "dist/GN-Frontier-$(cat VERSION)"
       - uses: actions/upload-artifact@v4
         with:
           name: gn-frontier-core
           path: addon/build/libs/gn-frontier-*.jar
+          if-no-files-found: error
+      - uses: actions/upload-artifact@v4
+        with:
+          name: gn-frontier-distributions
+          path: |
+            dist/GN-Frontier-*/*.zip
+            dist/GN-Frontier-*/*.mrpack
+            dist/GN-Frontier-*/downloads.lock.json
+            dist/GN-Frontier-*/SHA256SUMS.txt
           if-no-files-found: error

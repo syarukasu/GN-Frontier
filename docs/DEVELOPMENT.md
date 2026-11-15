@@ -12,21 +12,24 @@ python tools/project.py check
 cd addon
 .\gradlew.bat --no-daemon --max-workers=2 jar
 cd ..
-python tools/project.py check --jar addon/build/libs/gn-frontier-0.2.1.jar
+python tools/project.py check --jar addon/build/libs/gn-frontier-0.2.2.jar
 ```
 
 Linuxでは`addon`内から`bash gradlew --no-daemon --max-workers=2 jar`を使います。取得する依存物は`pack/build-dependencies.lock.json`のURLとSHA-256で固定し、既存Minecraftインスタンスをビルドに使う必要はありません。
 
-GitHub Actionsは同じ手順でコアをビルドし、番号と内包ライブラリの原版一致を検査します。このCIはゲーム起動や映像一致の検証ではありません。Gradleの古い`verify*`タスクはローカルの過去revisionの資料を必要とするため、クローン直後のCIでは実行しません。
+GitHub Actionsは同じ手順でコアをビルドし、番号と内包ライブラリの原版一致、配布用ダウンローダー、生成した3種類のアーカイブを検査します。このCIはゲーム起動や映像一致の検証ではありません。Gradleの古い`verify*`タスクはローカルの過去revisionの資料を必要とするため、クローン直後のCIでは実行しません。
 
 リリース時は変更履歴を更新し、ビルド・必要な隔離起動確認を行ってから`v0.2.1`のようなタグを付けます。配布物の生成はバージョンを共通ファイルから読み、CurseForgeの実在するprojectID/fileIDを使います。未取得のIDを仮の数字で埋めて公開しません。
 
 セーブ、アカウント、ログ、取得済み第三者JAR、生成された配布ZIP、画面検証データ、過去revisionはGitに入れません。動画の原画像・抽出テクスチャもリポジトリに入れません。公開可否が未確認の派生データは[CurseForgeの残件](CURSEFORGE.md)で管理します。
 
-ローカル候補ZIPは、固定原版を取得済みのゲームディレクトリを指定して作れます。
+コアのビルド後、メタデータから3種類のパックと単独コアを作成します。第三者JARをダウンロードしたり、ゲーム環境を複製したりする必要はありません。
 
 ```powershell
-python tools/build_release.py --cache <原版ファイルのフォルダー> --local-candidate
+python tools/build_release.py
+python tools/test_distribution.py --release dist/GN-Frontier-0.2.2
 ```
 
-`--local-candidate`を省略すると、CurseForgeに未掲載のMODがある間は作成を拒否します。ローカル候補ZIPは未公開の検討用で、CurseForge管理・更新が完成した配布物ではありません。`pack/source-paths.json`が各設定の正規ソースを示します。清潔な新規導入用の値が必要な項目では`pack/defaults/`を使用します。
+出力先は`dist/GN-Frontier-<version>/`です。既存成果物の上書きは拒否するため、検討用には`--output <別の出力先>`を指定します。取得済み原版も検査する場合だけ`--cache <原版ファイルのフォルダー>`を追加します。`pack/source-paths.json`が各設定の正規ソースを示し、新規導入用の値は`pack/defaults/`から取得します。サーバー用の除外規則は`pack/server-profile.json`、起動処理は`pack/bootstrap/`です。
+
+Releaseには生成したCurseForge ZIP・mrpack・サーバーZIP・単独コアJAR・`downloads.lock.json`・`SHA256SUMS.txt`をアップロードします。専用コアのURLは`v<version>`タグのReleaseへ固定されます。全成果物を揃えてから公開し、公開URLとハッシュを再確認します。第三者JARをReleaseへ転載しません。CurseForgeサイトへ投稿する条件は[配布ガイド](CURSEFORGE.md)で別途管理します。

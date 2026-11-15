@@ -30,8 +30,8 @@ def change_version(value):
                           config.read_text('utf-8'), flags=re.M)
     if count != 1:
         raise ValueError('Expected one modpackVersion setting')
-    (ROOT / 'VERSION').write_text(value + '\n', encoding='utf-8')
-    config.write_text(body, encoding='utf-8')
+    (ROOT / 'VERSION').write_text(value + '\n', encoding='utf-8', newline='\n')
+    config.write_text(body, encoding='utf-8', newline='\n')
     print('Pack and core version:', value)
 
 

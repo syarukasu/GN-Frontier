@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "created_at": "2026-11-12T23:34:24.310863+09:00",
-  "next_sequence": 83,
+  "next_sequence": 85,
   "rules": [
     "IDは登録時に固定し、名称・分類・実装状態が変わっても変更しない。",
     "新規項目には未使用の次番号を登録する。削除・統合したIDは廃止記録を残して再利用しない。",
@@ -825,6 +825,26 @@
       "first_recorded_revision": "version-control-r39",
       "state": "active",
       "related_ids": []
+    },
+    {
+      "id": "GN-083",
+      "initial_title": "JAR非同梱の配布物と外部依存の固定取得",
+      "first_recorded_revision": "0.2.2",
+      "state": "active",
+      "related_ids": [
+        "GN-081",
+        "GN-082"
+      ]
+    },
+    {
+      "id": "GN-084",
+      "initial_title": "専用サーバー構成とExfilZones・Anomaly Zoneの互換処理",
+      "first_recorded_revision": "0.2.2",
+      "state": "active",
+      "related_ids": [
+        "GN-078",
+        "GN-083"
+      ]
     }
   ]
 }

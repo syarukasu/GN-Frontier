@@ -4,6 +4,7 @@
 /dist/
 /evidence/
 /local-downloads/
+/local/
 /revisions/
 **/build/
 **/.gradle/
@@ -33,8 +34,10 @@
 !/tools/project.py
 !/tools/build_release.py
 !/tools/verify_repository.py
+!/tools/test_distribution.py
 /docs/*
 !/docs/VERSIONING.md
 !/docs/DEVELOPMENT.md
 !/docs/STATUS.md
 !/docs/CURSEFORGE.md
+!/docs/SERVER.md

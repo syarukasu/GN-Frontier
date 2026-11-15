@@ -3,7 +3,10 @@
   "minVersion": "0.8",
   "package": "local.gnfrontier.mixin",
   "compatibilityLevel": "JAVA_17",
+  "plugin": "local.gnfrontier.mixin.FrontierMixinPlugin",
   "mixins": [
+    "ExfilDedicatedServerMixin",
+    "AnomalyDialogServerMixin",
     "FurnaceMixin",
     "VehicleMissionMixin",
     "OxygenMixin",

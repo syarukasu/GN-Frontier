@@ -35,7 +35,9 @@
         "fileID": 8833730,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "562b28ad84cde481f857562c7991a8750b814e24",
+      "sha512": "213618602ab86f3e0305be6d9a2e47d3516fd12a3f46767719db4842a6abe230284b9f402d026ad67b39336f6ee80f7502ebab5128c605d665b8c165c877c98f"
     },
     {
       "path": "mods/alltheleaks-1.1.5-1.20.1-forge.jar",
@@ -69,7 +71,9 @@
         "fileID": 9505018,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "97cbda479edec6cb12a256f53635a73d182e1433",
+      "sha512": "90e59c3d01d750e6b747158b7f8d7f711dba1641cf7577267004bde24b72b279f116c33a3cd44b82f04832baac5d96a4a177b5c66ac6310833d87fe49b4a8746"
     },
     {
       "path": "mods/Anomaly_Zone-2.1.jar",
@@ -103,7 +107,9 @@
         "fileID": 9481457,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "6b5b6088a09801ae50176b3fdd98a230a4671e81",
+      "sha512": "bd24341ad428a9751c0fe6ccb485cec94ca3d151c14848373a4a66765d674b9db5ea9f95517f53b79c84d0eff256645413e5a8127d9b93df07e8023780d2dd2e"
     },
     {
       "path": "mods/appleskin-forge-mc1.20.1-2.5.1.jar",
@@ -137,7 +143,9 @@
         "fileID": 4770828,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "81919356f84eab14258db98924b66c3c38e372b1",
+      "sha512": "3176f928fb6c60d27f5edb610ca4ab0236175404eebf32797a1ec6cdd794bb294a260231579578536d03571377e43c6181adc75d8dd2c0733f17fce4f7e636b9"
     },
     {
       "path": "mods/architectury-9.2.14-forge.jar",
@@ -171,7 +179,9 @@
         "fileID": 5137938,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "a52918a500ff421180a1cbd1a0cabee712134ec4",
+      "sha512": "cf67f2050cafa00f0bee42e6d7bef77fdb808ac4f71742f7b4d6d5c1e6ffb49561a5a252f332d2b78a9767bdb5faa284611790dba303fbdc736ae36d794f61c7"
     },
     {
       "path": "mods/BadOptimizations-2.4.1-1.20.1.jar",
@@ -205,7 +215,9 @@
         "fileID": 7338200,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "304007dcb0fb15ed1a1bc3771736470dafc5be0f",
+      "sha512": "5e02d9c5a5bc3dccfccbfac4809cda4eb755c015060063b696e92568e0be3d8354a01f6ac5dae99bd27111b7e20bb680512287119459ad069dcf3e7d17cace0f"
     },
     {
       "path": "mods/berezka_api-1.2.9.7.1-forge-1.20.1.jar",
@@ -239,7 +251,9 @@
         "fileID": 9393255,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "a1d50b71bb290c6734d4608bdb80e359bebcc71d",
+      "sha512": "f0a6c1735ef8f90564901411362cfbee893c1cffe4807634a12e8c1cf902a7541883ba6f4721a907b891504f4ac44ac04ba225b282d40e7b602a4999f581f5e7"
     },
     {
       "path": "mods/BetterCompatibilityChecker-forge-4.0.8+mc1.20.1.jar",
@@ -273,7 +287,9 @@
         "fileID": 4688940,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "c5407cfd0b38d8db6d6f1c0088397f4c5616c7ae",
+      "sha512": "9bc033b764d50bf9563a11ebe3cceee6d071bd68b96715ddef23419103d09d1380276975e1e1ea981418bee281af89fadb250ec09a270ffa1c41c1788ce0028a"
     },
     {
       "path": "mods/booklinggear-1.20.1-3.16.4.jar",
@@ -307,7 +323,9 @@
         "fileID": 9426240,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "c2112e7adc2a25d94bb28c3fc9a3263ac43b2bf7",
+      "sha512": "30057a596d24a0c7b3f5923cfc2813d6a43240989de598d407aa830df795e63e99f8eeef91e63ad1b49fa3c3f1bfd696715373c9dc302e702bcc7f88e57f3600"
     },
     {
       "path": "mods/botarium-forge-1.20.1-2.3.4.jar",
@@ -341,7 +359,9 @@
         "fileID": 5486070,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "a6928cb03b7c5f81900d3d3c8e8c8f6a89a51a5b",
+      "sha512": "aa3530dde50966e47958690b02a343c4de3782d32ae3b2cb75b2155eebb76e172a292768d846b8d14a97bc9ebe18f1f655eaa3469fce13b2b4b15b16af0aba01"
     },
     {
       "path": "mods/campchat-1.0.0.jar",
@@ -375,7 +395,9 @@
         "fileID": 7883426,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "a06f6587fbbdb06abf80830029465c49f080d988",
+      "sha512": "db25b0016a0d8a1acf448e6e4d95315c99b47fcc3589ca34191dbc65f8190f17b1e7ee38836e5292d448d736fea8e3291f65a0a3e572da60f87f3304460bc994"
     },
     {
       "path": "mods/cc-tweaked-1.20.1-forge-1.115.1.jar",
@@ -409,7 +431,9 @@
         "fileID": 7759163,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "1a2f9672b3aa5e4c485c8b3ac0b2579ecdfb6798",
+      "sha512": "79397cdd37291158024621f5ed08cecf76b243e54318d5a252d44d068f2c0fc5491c52f05107a2a3300cc5a3a2d6cbdf2b02ebc4b0dacfafbc64f4a1e23dce76"
     },
     {
       "path": "mods/chaoscrafts_device_mod-1.9.0-beta-all.jar",
@@ -443,7 +467,9 @@
         "fileID": 8665061,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "f1d56282e396dfea2d183bc442cdd8a3bc3b13ee",
+      "sha512": "ffe90cb989ff282e54f0b6bf244ff19bf2a4f0f97cab1d5edea024836d797cc521b889db9f008022c23df90b463ec7c6bcca0baaca34f56e31290cd7c60de5a4"
     },
     {
       "path": "mods/chaoscrafts_security_essentials-0.5.2-beta.jar",
@@ -477,7 +503,9 @@
         "fileID": 8864704,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "23c5edc6d15ce08d6b57852ea3ed8916c5e38994",
+      "sha512": "ef251fe9941010dced7f00d13f7bc1c6232dd0d719ac000e19bd9594bedd06a16a96a6993163c9f15db25d698e2046fcc2a494a52b16fe6ae0a2ed42e71665da"
     },
     {
       "path": "mods/chaoszpack v.1.4.1 TacZ.jar",
@@ -511,7 +539,9 @@
         "fileID": 7801045,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "b375934dcece17854bdbfa765bfdf36f08bd07e2",
+      "sha512": "5a406d6808fbfb884edb8e672fe661f90333de58c0a4a30695422329fe21144497be9a51e4aff7c66194c5b1bf2717a89e11d84d3f638dd07e027f50b37263b9"
     },
     {
       "path": "mods/chaoszpack_structures-1.0.2-1.20.1.jar",
@@ -545,7 +575,9 @@
         "fileID": 6969081,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "5a9035e37afbd5901b10839a3b73e4395a97c0c5",
+      "sha512": "9c03a25c161e6a42abdc7aa1dd00dc2e6c0ff5b4b220a70ed05df9238b6f300dc30fa650425469b6cb5777c41f4b764064062dfeb439065b4565e769405c2b64"
     },
     {
       "path": "mods/chaoszproject-bandits-1.0.0-1.20.1.jar",
@@ -579,7 +611,9 @@
         "fileID": 6562409,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "ec58a560dca01c292a2c946470d8ebaebec94932",
+      "sha512": "34cd174f8207823ef3905d24a7db65a433395da73c8e3863c097ec6815c497d4a0fd1542ce148949efdf8b69ee3ddf958f62e91c4529bde06c9e6b0936c12b49"
     },
     {
       "path": "mods/chat_heads-0.15.7-forge-1.20.jar",
@@ -613,7 +647,9 @@
         "fileID": 8642487,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "80582e413216eb014d83252b05c731a4a151fe9b",
+      "sha512": "e5e063b25986c67d1c9493d767803efc31cb94f02adb70ff95942b49d740f30802099ab8a1998727903b2f34ff4f18e311d1b7af36d27b92c94d465dd8314c10"
     },
     {
       "path": "mods/cloth-config-11.1.136-forge.jar",
@@ -647,7 +683,9 @@
         "fileID": 5729105,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "c65d07748acc57ceb45d53b3964368b84f34d54f",
+      "sha512": "137c4af99c53d77317cbfb1cc8c49fc2761708b49d1992f51fd846960df41dde3a83519c987e081508d4ed90c603566f3d5a6cb620ad9d85b8f4de59aa9115ef"
     },
     {
       "path": "mods/Clumps-forge-1.20.1-12.0.0.4.jar",
@@ -681,7 +719,9 @@
         "fileID": 5278538,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "97cc669f68dbe812cb77cc3631339334fc28b877",
+      "sha512": "8519f95133e1bab4163b44d39fb5c7bf5968be340961df428d9b98ab92f6f75641d76c81f632e5f86e244b429321758957d6e8c5d0e0007f498259697bfc7018"
     },
     {
       "path": "mods/colorwheel-forge-1.3.2-mc1.20.1.jar",
@@ -715,7 +755,9 @@
         "fileID": 9427084,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "266c1394b56251c4fd60b43dc2f8c3713e63deb1",
+      "sha512": "8377750691b92446ad2ea03dc77fe3b47a5f59bea6ef5c02056981c2c25a5aeaf7e6501b897e60469c966080116f562593ac89c0c6cc3fa2c9708bc529553f71"
     },
     {
       "path": "mods/Controlling-forge-1.20.1-12.0.2.jar",
@@ -749,7 +791,9 @@
         "fileID": 4646682,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "f6d3cdd3ec68c5590cf5b2e89c38dbf031824bfd",
+      "sha512": "622aaf07a0f0f0fb7a96bd68fc52716b67e3e06547674207e7af4a26afebbfe5379b5553feef8b3258964ecd288844f0018be7848a5cb4b86de375a24470cac6"
     },
     {
       "path": "mods/copycats-3.0.10+mc.1.20.1-forge.jar",
@@ -783,7 +827,9 @@
         "fileID": 8822431,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "939d4ca4ac42b93c05a5fb92e629fb8cff060dc9",
+      "sha512": "b92d506eb21b46e1ad00b53e329e7870b4b5c0b3cbff9a75b560de71c0d950912500384b2ea396f6b0a3a69388a7cd1beaff711cf7501c4cc5512673339d46ff"
     },
     {
       "path": "mods/coroutil-forge-1.20.1-1.3.7.jar",
@@ -817,7 +863,9 @@
         "fileID": 5096038,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "7f5f0b62a638b6053c95919cbe8c2bea2e0c93d0",
+      "sha512": "37a13eaa68579dd45204ebdfa43b2909123a2e5e875a2ca51da0d0882d4c524be1e95fce4bb26db21901b7d100ad9363968814e3566d44b5afce8fb8e8088057"
     },
     {
       "path": "mods/Cosmic_Horizons_0.0.7.3-forge-1.20.1.jar",
@@ -851,7 +899,9 @@
         "fileID": 6055514,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "74398b1a08d38baf2645c93bf0db50a93c9334d2",
+      "sha512": "11f7eb8bfe4c8cfbcc15081ebc3e9e5c28ec3778666e813ccf3a36ce15234f63de9685d7fcf779083470a262d6da208ae75e6cf63b1446313b00ce086c93d004"
     },
     {
       "path": "mods/create-1.20.1-6.0.8.jar",
@@ -885,7 +935,9 @@
         "fileID": 7178761,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "b13d912b9247a38d66d11598c121442585a1c1e9",
+      "sha512": "5b51f5d31437d9bfbf221b67459abd87260d284874e1e23b7ed1d522b23a48059a3b1d2c1c541428da35dc6be15561b4f3c7f36aac6df3a0e8db6a278f6b0316"
     },
     {
       "path": "mods/create_ad_astra_compat-forge-1.20.1-1.0.0.jar",
@@ -919,7 +971,9 @@
         "fileID": 5252441,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "348f8477b3af519b250e65efbaec8a743c6b89d2",
+      "sha512": "c3e3faa630691418bb15d99d8c5fcbf7df5eb205c27940cef4f637c3011ca4c4a00549e3ca30797da7fd315107e61948c7c8ab9a06374253f288d6f0a7ef9d34"
     },
     {
       "path": "mods/create_ad_astra_recipes-1.0.0-forge-1.20.1.jar",
@@ -953,7 +1007,9 @@
         "fileID": 5997398,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "6b397ff20b176855306d98eacbda37534eb2cf3a",
+      "sha512": "ad36cfa16f51670fdd3604c3dbae1ac6aaa6a3789bd878b99cb6e7c7b2a0eee40c43ceff9b09ba0d55cba1390ba930b761642c78540cd8243503986db2697937"
     },
     {
       "path": "mods/createdeco-2.0.3-1.20.1-forge.jar",
@@ -987,7 +1043,9 @@
         "fileID": 6373226,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "54c8ad5686b846310bca9e69982a455e668dede3",
+      "sha512": "50b7e9bb7b09d720160b2491528f2ab751ad2299541be75cc6941e6b6c3d2d40faff5c5fa07a1bea9e3f43b73146ef6e0fdf6a106e65246b9767dd81053766bf"
     },
     {
       "path": "mods/createimmersivetacz-1.4-1.20.1.jar",
@@ -1021,7 +1079,9 @@
         "fileID": 6901038,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "d3f6f6f56a75e7538597da73cbdf7de825da16b5",
+      "sha512": "a379dc4adc392da9295cd40ec6e0d116d013d1dd86eb1839af8931701134eb3c31289afd7c84ce56710f7866f50c7a3e91439cdb00383e61775939244e125d3c"
     },
     {
       "path": "mods/creatingspace-1.20.1-1.7.21.jar",
@@ -1055,7 +1115,9 @@
         "fileID": 8640738,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "13b2545ab6bda86d0851a4f8c127966dc1a3befb",
+      "sha512": "2e9975b37e6c9b55e5bae83aed14d419c22ac7501269f17b991bc3981db06361cbd6c5cea00e8f638dcbc696919b0f6a8a22c2183ca457b21bf3256d29aff76b"
     },
     {
       "path": "mods/CreativeCore_FORGE_v2.12.40_mc1.20.1.jar",
@@ -1089,7 +1151,9 @@
         "fileID": 8947229,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "f8b65310e0183630dd00c1ade12f9b6ecd243287",
+      "sha512": "c883749ebe3825694c9d7aad6f406ca6c30de70ca7621cbafb7ebbfaa54766db065b5abd66f42827abca19b25983b2884c425934f6d04d629dc9fa731fe9aa0c"
     },
     {
       "path": "mods/curios-forge-5.14.1+1.20.1.jar",
@@ -1123,7 +1187,9 @@
         "fileID": 6418456,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "452175b95ad3db6ff58bb8968f6bf7a9d1e0f480",
+      "sha512": "1373f95fd111c977db2f6adcef8e4eb486a2d926a3e17374692dee4ac3d65857de6446c16922b531aa5ace2c23c666a7fcc28c720b2917c1e04808d15648ba87"
     },
     {
       "path": "mods/doomsday_decoration-forge-1.20.1-1.2.1.jar",
@@ -1157,7 +1223,9 @@
         "fileID": 9499174,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "a07ba63722d5cad056f636dc2df1c20da5444693",
+      "sha512": "c85c0d25cc62be76c726bf65279c7356888bcf4817bf4cb37db10a4c1c95b47919fc7e1b5dd35689b14bd5d5ab0fde19f1f55b0dbe375bb9ed07f7df745541f2"
     },
     {
       "path": "mods/doomsday_translations-1.0.7.jar",
@@ -1191,7 +1259,9 @@
         "fileID": 7341247,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "0369e4846be45903a045339f354ff657b2983267",
+      "sha512": "22936e651902ca4a0e0e99414edee9cbf22baf4815c01a6ef89e2c874591f712acef18152f5c00acadadd0067e3f6450a412d93b47d11d78dfd48e5527b3673c"
     },
     {
       "path": "mods/dummmmmmy-1.20-2.0.12-forge.jar",
@@ -1225,7 +1295,9 @@
         "fileID": 7963208,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "3b6da54436955ea2ca6e8891ef69d0f6621ab878",
+      "sha512": "3ad3237a847cdbfc93df1eb0eaa75552e9a1aca871e04106948317ee930b04e6e1d84fb776f3d21bd17ceb5bf033833562bf7294c7579a4e6f5abbf86f1aa32f"
     },
     {
       "path": "mods/embeddium-0.3.31+mc1.20.1.jar",
@@ -1265,7 +1337,9 @@
         "fileID": 5681725,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "bb2fa8f3e493af16af9160d049f96c614a1faf2f",
+      "sha512": "ffbf2da4685260a4d5c14c621708bd20722563f084f042d3dfb0a7b87f048e39299648c854a93939129da0d23a15a91ec628560d601e76074b08e275f6e132e9"
     },
     {
       "path": "mods/enhancedai-3.3.7.5.jar",
@@ -1299,7 +1373,9 @@
         "fileID": 8946003,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "8cb138410fd857d457a26eca5315546fd0417319",
+      "sha512": "02d1f62d4e05f92fb3f7bbd18c195b66df7849f0cdf60baab51bdd2499783a9da4f151b2020e99dd0dd8cd83017425a14308fec1911b507af1a2a52eadd23b2d"
     },
     {
       "path": "mods/EnhancedVisuals_FORGE_v1.8.34_mc1.20.1.jar",
@@ -1333,7 +1409,9 @@
         "fileID": 9080707,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "52cb835dd736e28407b9da0c1f3d66c24422385c",
+      "sha512": "4725b4fbb9a61e8d363f49b81d6423fec282acfbe3c350e15fd71c8d9cb27a13b45934ebd184f99864a35ae54037948e3d804dbe2006b55d935a946ce7a4dc88"
     },
     {
       "path": "mods/entity_model_features-3.3.12-1.20.1-forge.jar",
@@ -1367,7 +1445,9 @@
         "fileID": 9188522,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "adcec598039ec59a805a974de9d23ff5eede8299",
+      "sha512": "caef975883a15f7ec34010bce5bc81d4eea16f31204c04eb378ac5488a8d5874b0ffc2c396656e20d3bd287eb2061a956c85a7e58e98a78f727c86e5f4f334ab"
     },
     {
       "path": "mods/entity_texture_features-7.2.7-1.20.1-forge.jar",
@@ -1401,7 +1481,9 @@
         "fileID": 9420328,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "5a331e97045010b4851e7fc0fb8ac5184c6adcf7",
+      "sha512": "db929c8ec04b1a2d0aa7156d70483c252a77dadeef565e5fb51ab00b0975e2e71a1ea924506222648b06d8d44a2f3b9cdc4c62ef8b183c20302a70ad871fa006"
     },
     {
       "path": "mods/ExfilZones-2.0.jar",
@@ -1429,7 +1511,9 @@
       ],
       "declared_license": "All rights reserved",
       "installed_path": "mods/ExfilZones-2.0.jar",
-      "delivery": "override-original"
+      "delivery": "override-original",
+      "sha1": "c444fbd09a40cb5237c25091242ebcd7b4531af8",
+      "sha512": "caefe3fa021b7b4196fd522adef5b4cea66ec6c67a3d41be98ff40f504ff91fc7f71a0c8bb8d87bd7fe57fcbbf382e2769d40de408f642906d1b9c2731d1d009"
     },
     {
       "path": "mods/Explosion-Overhaul-0.2.3.0-forge-.jar",
@@ -1463,7 +1547,9 @@
         "fileID": 7659431,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "cc9476ceb1c76d40e25322bcb32f568833d6866f",
+      "sha512": "beda813f2940b9b7793a4046a439cde97caf89fce757b0e57b3f72099338dcdbec75e4b78ebf8cd3f5edacd80450297f6d44a891bd6946507ca6093c4a67e427"
     },
     {
       "path": "mods/extragore-1.20.1-5.4.jar",
@@ -1497,7 +1583,9 @@
         "fileID": 9428069,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "9ef39803be9b0d4df74d0130b4a5ef2b1cce8256",
+      "sha512": "3fe2a2bbfcfa612478bd862edaa4853b4736f6b3303a305dfe9368c97ae2db939ceeeebd286978d798273c85eb521fd5537f4f536f69b47734f53c5c656fcad0"
     },
     {
       "path": "mods/fancyplayeranimation-forge-1.20.1-1.3.4.jar",
@@ -1531,7 +1619,9 @@
         "fileID": 9366920,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "d08359e6ed8747268701b33c7f3bcafaf40e394f",
+      "sha512": "f03f5c242d8ca85f28687cc642869a4e593dfb4e1bb23c33c5f47e8a0cbe47398f8ccf130a5eac3b2ca639cec445f3ef8c7a50ab17848eca8d329b74d5ccbfbe"
     },
     {
       "path": "mods/FastFurnace-1.20.1-8.0.2.jar",
@@ -1565,7 +1655,9 @@
         "fileID": 5181098,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "b144b8599acd3fac3f8f9d31fa217a4a5b942f61",
+      "sha512": "4f11c4871ba88d10c07a295b84632e97ce417489c091c69873bc749dd11947413e907a55125e1529bd3a7a859dd8b8ba44857693fbbef74154ff14fb8d3d1c2e"
     },
     {
       "path": "mods/FastSuite-1.20.1-5.1.2.jar",
@@ -1599,7 +1691,9 @@
         "fileID": 7527943,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "32ea4495b0e646f8f060e4e97d17044dd9fdefbd",
+      "sha512": "5c41292a26c7a42ba462d92005afef0df80ce62714d3d47034be4a488c4632dcbf41d647a7825980008bf3970a14dd3cf181063f511231a8d55c235be0db1729"
     },
     {
       "path": "mods/FastWorkbench-1.20.1-8.0.4.jar",
@@ -1633,7 +1727,9 @@
         "fileID": 5101229,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "1a322a85e7c7024b8a0715c12d27b5ed0930d729",
+      "sha512": "c30dccece03fa9fa8de7bf0ec3b4988e7b2b0c214b5ab2142f13bcdced89c4ca8509244b9767df0903d55776ae2ada29b483af8dec649339b3f0c687ea18df76"
     },
     {
       "path": "mods/ferritecore-6.0.1-forge.jar",
@@ -1667,7 +1763,9 @@
         "fileID": 4810975,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "417fb6ce8f52abf40bd9d0390371790f9576f8ba",
+      "sha512": "a1960a7c03dc32d4ccaccaf28afdd9b078758bbd62d15a91d4039a83fa9397a098e89b69591f6bd5190254d9ee97e502504154b9aec764adb8c65f000b75ba2c"
     },
     {
       "path": "mods/framework-forge-1.20.1-0.8.0.jar",
@@ -1701,7 +1799,9 @@
         "fileID": 7573740,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "27347879f8760a7bc0b4bd71977abc50e498811c",
+      "sha512": "489320e5e5496a569b5c05e5b0b37c6a688f7d2166f42f88588fe433664a035d2ea8a6d270b32aa26a1018302c9066b88b39104507919800954b58d20ff850d7"
     },
     {
       "path": "mods/ftb-library-forge-2001.2.13.jar",
@@ -1735,7 +1835,9 @@
         "fileID": 8226927,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "a5427d5ff07eb044144ed0b54308370d88bce17e",
+      "sha512": "433c890fc64b31f140cdb92c6f03f78400bcc105229d1026dbbecb027ff75a8e2f94af5b1eef083d7cf3d37a9afa176731bc59cfeb771d01738353f9f1c113bf"
     },
     {
       "path": "mods/ftb-ultimine-forge-2001.1.8.jar",
@@ -1769,7 +1871,9 @@
         "fileID": 7880472,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "c2a1eb72c36ad067faafbff4e1618c4db906de74",
+      "sha512": "57e04a50f96e533d9f92aaa26861ec78709681faf98812b666f7240cb265140f6ac0c5f28025adc4961d8e51b22f65c3eead17bdba2ea7f2929815cafbfc65e5"
     },
     {
       "path": "mods/fwa-1.20.1-forge-1.3.4.jar",
@@ -1803,7 +1907,9 @@
         "fileID": 9396654,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "e8f52915a99ef77e6180a97c93a18d389c458def",
+      "sha512": "eb36a69106116f80ac891f6858087f1a8e099aedd4c2107d2fcd55dc389d16343b982fb8fb3f5809626825462262a24d835d0230e08fe39d4e9cb01f6425f4e5"
     },
     {
       "path": "mods/geckolib-forge-1.20.1-4.8.4.jar",
@@ -1837,7 +1943,9 @@
         "fileID": 8285794,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "81982cc287f80ffabb2fd36d22cc95e4255c739d",
+      "sha512": "e3ddb9b3688c5dc7e32befe5b7849447acf08e7f839c453e2e7034dd01e194118a6a496205aa89dba797709fec0c06b8ea4680536ef6b33fb0c29a976c09d576"
     },
     {
       "path": "mods/gundb-2.2.2-1.20.1.jar",
@@ -1871,7 +1979,9 @@
         "fileID": 8674093,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "81cb0a60b7312e02b8878a49fd0a8baff793dd0a",
+      "sha512": "3d20e4ee43ecfdd3a3bd0a4afccc9c8fbfd9f94a7c3bbbb573ce6b0c00a040fc3b6cdad355c474582f98f7309e0eb959c9928fb03b846532f11b26b3a65f054d"
     },
     {
       "path": "mods/hazardous-1.20-1.0.3.jar",
@@ -1905,7 +2015,9 @@
         "fileID": 9361842,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "98c4909a458ae5931da3c7ce6b9dff26683d2d02",
+      "sha512": "0a738b9d780fdf6e6d67c20f758f1e2cf59d89ef0ea7ce25bf8c35b7a084afc19ad125f2a5c25c99eb971626b90b988a38e6bd6cc51f8fa12f14d0913f0e7bb0"
     },
     {
       "path": "mods/hbm_m-0.2.1-alpha+1.20.1-forge.jar",
@@ -1939,7 +2051,9 @@
         "fileID": 8609178,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "1adc73d9f51c8dca6983e2ccc593302f47504ea4",
+      "sha512": "469090411e8c57ee089c7c7b8a9ceb2b7a05894e77214f412c20dbd6ea0deb76c1f515241458c77751fc95ff9eb1245b3af94c19323fa385e450e52cf10d9fa0"
     },
     {
       "path": "mods/horror_element_mod-1.6.3-forge-1.20.1.jar",
@@ -1973,7 +2087,9 @@
         "fileID": 7484210,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "00e2cd3bf7508695b151d963afe2e14906f83f54",
+      "sha512": "5d08d5a960447e7586a98d105289635f54430406e692f8e57a2cd144331037f63d839e7df3ff88080f2226441634cf17d5c51fe835bf0cf8bb7ac6424813cd0e"
     },
     {
       "path": "mods/ImmediatelyFast-Forge-1.5.5+1.20.4.jar",
@@ -2007,7 +2123,9 @@
         "fileID": 8348481,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "9eacd407b7dea636d375dc47335d92f616484ea2",
+      "sha512": "8fab0605880f6b3875dc6d9d7bc8d69612a3e61a0bfc5adeac3240248715042f04885a09bc4d29383ab809cfc536dff84c6150af56ebd8f08128a1c42909c323"
     },
     {
       "path": "mods/immersive-weathering-tweaks-1.3.3.jar",
@@ -2041,7 +2159,9 @@
         "fileID": 9307122,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "2371e0b866c031fa5344e1bbd7b0bc49dae1452b",
+      "sha512": "eb6e9be980f25dc7d86e3bde12c1bf34e06e777947a512d5f5f4f86352ed13a586cf9630c610526d9a228fe52303056b1c26ac10ad5b65f45113520f53e675d1"
     },
     {
       "path": "mods/immersive_weathering-1.20.1-2.0.5-forge.jar",
@@ -2075,7 +2195,9 @@
         "fileID": 6116941,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "d89ad3793ffb97df27f415ac6cc07c61460dd9f3",
+      "sha512": "4715d06078855f65d585530453deed62ca55e66ed9455e56dff77294a17c5106ab7aa9d117f34629d4d7b420b1b6e379b8d60e231d6327a9cb0a847aabab0e33"
     },
     {
       "path": "mods/insanelib-1.23.4.6.jar",
@@ -2109,7 +2231,9 @@
         "fileID": 8306331,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "cca086a7ff34c4ffadb3caf3e825acb87f7e7322",
+      "sha512": "f91a4f1a43264febad451a56847f52117f45a79db737a4587900c739891d2ceb191de67ff264f78c1bd551f9b6daf92adfe0c4d2bb82adc681660c0e463479db"
     },
     {
       "path": "mods/InvMove-0.9.3+1.20.1-Forge.jar",
@@ -2143,7 +2267,9 @@
         "fileID": 7418952,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "5ce261a448fb8417a40429bae9dc634d0cd0b1d5",
+      "sha512": "ce0eb2fc9e1e51641f9fd763602d92e3014a452263ed41ad6a8ecda5670c036c80e834338dd9e0a1adf23ec6ccf23f29827ac4896b85257d4ccf7789f3cb4541"
     },
     {
       "path": "mods/InvMove_Plus-1.20.1-universal-0.6.0.jar",
@@ -2177,7 +2303,9 @@
         "fileID": 9384229,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "fa9394683dd0114f8b40ba8b0aa2f1bd17c58dc9",
+      "sha512": "1b73376074073b1fc61aaf1023d97a50c70eed342103c1969c8b363dab4ce6c6cb26f2d749b17a0561c32d08e62c79f05f905fc166e7c86b7061fb04fc121245"
     },
     {
       "path": "mods/InvMoveCompats-0.5.0+1.20.4-Forge.jar",
@@ -2211,7 +2339,9 @@
         "fileID": 7219803,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "123558c7238f6daf9a5a0d0d3c3f74977d70d786",
+      "sha512": "acbee3c9f96cbc939f371e262b9aade7fde7d630333504b41d55ca7f7f0e396217a6ff8bebd637f7a56206d63915cbff524638a626c6133228c29b6a011da4b8"
     },
     {
       "path": "mods/Jade-1.20.1-Forge-11.13.3.jar",
@@ -2245,7 +2375,9 @@
         "fileID": 8479276,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "d08e64e66521d69e083c8525f1fc507f1c202384",
+      "sha512": "72025c4ad6d26522bafe3d5d6ac9d4702c006a868312cb34df8a7a2398a4618205839607b129c167fd176e58cb7655f08e3afbf1993925c80d4fcc559c45a037"
     },
     {
       "path": "mods/JEIunofficial-unofficial-1.20.1-forge-15.59.0.212-jeiuu.2.jar",
@@ -2279,7 +2411,9 @@
         "fileID": 9487446,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "14b963d123c5851e194bbc06682785bdd727740f",
+      "sha512": "8121a49ab71f49aa618234ea002493dfefe4a4aa56a6f7633d4763d8fbb03fde5f1c14f3546c1e3a48d57cad8ff36f20193ad1f3d0d8b91656efa3a66e0a3bd6"
     },
     {
       "path": "mods/jtrans-1.8.4.jar",
@@ -2313,7 +2447,9 @@
         "fileID": 9539844,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "2a1465483fe58ccec116e18e8eec43e3a5ea4da9",
+      "sha512": "3bab18c39667de8ca890d148ed097c14ad531722280fef15adb6a40531287663071977cba4e8126cfc2b7e81b766ab4e50e0f19e890a44c4ba4e2baec15038a6"
     },
     {
       "path": "mods/Keerdm Zombie Apocalypse Essentials (TACZ) 1.42.jar",
@@ -2347,7 +2483,9 @@
         "fileID": 7740113,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "0bbdc50e6eee9991ac453767e0bb73796417939e",
+      "sha512": "3a0470947628acef8c9c38a5c2dfbbefaebc79d8b852771a950f3e637faa7b2575a79e8b5008bafe417dcacc92de7f2c80686d9e6906f2d161f38c7e7dab3128"
     },
     {
       "path": "mods/kotlinforforge-4.12.0-all.jar",
@@ -2374,7 +2512,9 @@
         "fileID": 7291067,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "962fdb760409d6d71cbf079235f1ca94e3863a22",
+      "sha512": "767f40030ed4b370a3838fa65ae1b79974f31979342fff7cc834a0d5f39eb28612642519352ff2a1dd5226ce1f745f8b3156ee3625ffde01219137d064c1ee40"
     },
     {
       "path": "mods/kubejs-forge-2001.6.5-build.26.jar",
@@ -2408,7 +2548,9 @@
         "fileID": 8020595,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "8b0cc9797d4ed00fd2d1002d58960af8b32012ae",
+      "sha512": "71ef9e5eb5f3bead86b635b42ad305d075c6487e631217b281d938193dcdc5fe0ff6bae8c86dd4e069726223a66e8690c0610f736c5a62910f60fd80edd575c1"
     },
     {
       "path": "mods/lc2h-omni-4.3.0-LTS.jar",
@@ -2442,7 +2584,9 @@
         "fileID": 9457247,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "8ff6d1c3c9cf17d111c35ce0ff48011514e51636",
+      "sha512": "50433a551a3e9aea665d3ae19f0f7d8ce13f829dc1f491cb65398e6a03389837a35f87e05ceb97ab4910d1bb9caced0fac9342e7a2af81e4e60592494899da16"
     },
     {
       "path": "mods/lootr-forge-1.20-0.7.35.94.jar",
@@ -2476,7 +2620,9 @@
         "fileID": 7263076,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "1ec77a7df8adbf3290a296bf25b8f99f37a60020",
+      "sha512": "a04c6371376bfdac2b10cbb2bb9af7ded10ac26faaeb252b59aab2f02c2b2064c2c4ab665fb6ea218243e89d6f237d878c6951638bb948edead2c0a604dd023a"
     },
     {
       "path": "mods/lostcities-1.20-7.5.7.jar",
@@ -2510,7 +2656,9 @@
         "fileID": 9055133,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "a92d8e537aa86297468629503f895c102ed132e5",
+      "sha512": "3f36e97d97a2909261a3784aeca1a10ce7d1644a4b1e46234362509a5c1bff70a08338907054f7a20a24ae311fef50ff53ced5981d2227a7e61e72af7f5ba371"
     },
     {
       "path": "mods/lrtactical-1.20.1-0.4.3.jar",
@@ -2544,7 +2692,9 @@
         "fileID": 8652673,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "49670df2d364b48c538de5dd44d464d5ed6f8817",
+      "sha512": "57c4faa6fb408f8226271ecb8ec855de728fbe04687e4c05bf36654e6f5e7fa2aba92d3ed32b108920dd34c06011cb920889f109f6e91d2c9d8e21645cb4cd39"
     },
     {
       "path": "mods/mcjtylib-1.20-8.0.10.jar",
@@ -2578,7 +2728,9 @@
         "projectID": 233105,
         "fileID": 9531093,
         "required": true
-      }
+      },
+      "sha1": "c73bd16f21552fb4b9d1d6af84e11bb45b0ed6cb",
+      "sha512": "4371fce38e7bca62541a379980b3f4ecda0aca898a58c79470e7cafa1ef5ec9741bb6fe48a0d85f91efc3c34c9e7ae39e1998ea4169e345de47fc6e8cb3de36e"
     },
     {
       "path": "mods/MineTraps-1.20.2-(v.2.3.0a).jar",
@@ -2612,7 +2764,9 @@
         "fileID": 5446284,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "98f60226aa17e609aa6877f8ba6f400f09787999",
+      "sha512": "6d46136bda93aa3641035cc7d440be1abf2b65139f80aaec7ad75a126ecd097c7fbc7974ad205f4cb8dfc1207149bbede940ad9e787efbb57ec43e9021d35f5b"
     },
     {
       "path": "mods/modern_structures-1.6.jar",
@@ -2646,7 +2800,9 @@
         "fileID": 5953626,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "f90b1002fc054db6c4341421d7c7ee9a2556bc03",
+      "sha512": "d464cad94c3ea7441da83565308b5afacb203ec0092238cc64aafb5fb75c15e37bdd698b8806ce2dea6472ae20456075b15bfd1b7bb85a1ea358089fa8410d91"
     },
     {
       "path": "mods/modernfix-forge-5.27.91+mc1.20.1.jar",
@@ -2680,7 +2836,9 @@
         "fileID": 9309378,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "195d53d299a93c418c90b672c2640b4e41623f96",
+      "sha512": "23579203f4b2073331db60048f4e1cee33baf203e689b3cf2c231f274c81e7b9d0e1a6a0b5cd346f3cfeafc7715d84982f0335078c79ff097826177bc9e0f06b"
     },
     {
       "path": "mods/moonlight-1.20-2.16.39-forge.jar",
@@ -2714,7 +2872,9 @@
         "fileID": 9493250,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "12405de298c0d6c8ba53effdc5c8f28edee3aadc",
+      "sha512": "972d18375a4d028e421d755c111d0a523787b831fabb3160d5c5eced0df9b863f2fb515582b6fc117995c2abf908e17eb6fd17e88cf62e0c8f6adcbd777a3f17"
     },
     {
       "path": "mods/MouseTweaks-forge-mc1.20.1-2.25.1.jar",
@@ -2748,7 +2908,9 @@
         "fileID": 5338457,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "d751153e722a4e014691c83f39f5b07c6ec5333c",
+      "sha512": "a3bb0272c0a1a3be9250dfee030bb8f86217fa6a32bd534be8c940fdd8c466c800c2df85874877983ced36ecfc28c8ced6c0d42107c1ab621385b4be9a7c65eb"
     },
     {
       "path": "mods/NoChatReports-FORGE-1.20.1-v2.2.3.jar",
@@ -2782,7 +2944,9 @@
         "fileID": 8675977,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "fa524b8f5475aef5d09b2787e553c903e4e3fe94",
+      "sha512": "486e6143426ecce7e4784b6f3717d6120de6a29ee73c8fa1d641221f7490e527c13d942ec061c5853a24e1feb8d40126397e405511c3868537567ef1b91f447b"
     },
     {
       "path": "mods/Not Enough Recipe Book-FORGE-0.4.1+1.20.1.jar",
@@ -2816,7 +2980,9 @@
         "fileID": 5760231,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "c0806369f4257149664904db44efc60bd1785c17",
+      "sha512": "599e085062c6d7a7368a4cf0d47ce319bcaf570bf5966ec6f8b9529f006e315a7f4ab3d2f263c38564a501b9d7031e956d4ee881ed2e13999869d61cbc079702"
     },
     {
       "path": "mods/OctoLib-FORGE-0.5.0.1+1.20.1.jar",
@@ -2850,7 +3016,9 @@
         "fileID": 6274623,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "9eab28baff36942e1c924489e34753df10f40208",
+      "sha512": "e0bbe3a999f3a8c32b7dc0fd5bae61f62915dc5be40ac97a777f0784cdfaaed74b74f48cd407b9a8abb081ff331fbd272c9d4e08125f48f091435c926468d5c6"
     },
     {
       "path": "mods/oculus-mc1.20.1-1.8.0.jar",
@@ -2884,7 +3052,9 @@
         "fileID": 6020952,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "984f774e71790deaec674c7587bd24e0711871b2",
+      "sha512": "1bb4ac77400d6684347988ed298a692c2cb15cf7923693607eb8739b171a20fef7412259e9e157111d9ce21779badab386029956f7d2283a9e611722a373e9d5"
     },
     {
       "path": "mods/ocuwheel-forge-1.20.1-1.0.2.jar",
@@ -2918,7 +3088,9 @@
         "fileID": 8989714,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "6e3f3348bc008e8639e720013a34dd03ab46edcf",
+      "sha512": "50d4f984028f327531b8f20b0b49d8df080e048ee1e8716f9e6a8c379a1f3cd622a1684cbb8a7b52a17036bd5ff37e5bbe6459ea2a5f2480419fffb97afffd87"
     },
     {
       "path": "mods/packetfixer-3.3.2-1.18-1.20.4-merged.jar",
@@ -2952,7 +3124,9 @@
         "fileID": 7872374,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "79ebc5e66a5ee3ce92afb340e693d506e97361a0",
+      "sha512": "916501acefab2a33f7b5438375dec0c3d523975d82c807c98496227c107c1efd57c95d9e1501d657513324a9ad617eb8ef7e963921263389af896da55dc707a9"
     },
     {
       "path": "mods/PetiteInventory-TaCZMagazineCompatibilityPatchVIVI2-0.0.1.jar",
@@ -2986,7 +3160,9 @@
         "fileID": 8591987,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "42943cf0f27c8c04ee31bab445b636b835baea15",
+      "sha512": "b12ee0f9559db68136f24f7cac47b050d0e2ec732c2ad060ff86d752d95867b527fcd1dfe5eb1bfcbddc1afdf6c07fe48eb49ef1fb7190208ed0a3a8a18233d8"
     },
     {
       "path": "mods/Placebo-1.20.1-8.6.3.jar",
@@ -3020,7 +3196,9 @@
         "fileID": 6274231,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "e85f53de2e582a79ce25ff1df1e7b5b5fc08440f",
+      "sha512": "c23990465e26336f476c3b05a897bcf0c8660ae7338756b325f6bf81d0dee34b609474c62293f394acac818637ab03f92c776d104c8b8e86f3786395f5c4d623"
     },
     {
       "path": "mods/player-animation-lib-forge-1.0.2-rc1+1.20.jar",
@@ -3054,7 +3232,9 @@
         "fileID": 4587214,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "16808f94a41d45d8e986b4e4ea6b02ba57fa058a",
+      "sha512": "cb9f6a3aaa943823a85fdd716ddb3c7623af2b3520926c3a98d170c52d31908894808fb61c52bea39bae622dbab59d50b4bad56f7ca0533a9c3350d412c33729"
     },
     {
       "path": "mods/quantified api-omni-2.2.4.jar",
@@ -3088,7 +3268,9 @@
         "fileID": 9037916,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "b0da726a7b5d6729102d26c219b2187945df0d4c",
+      "sha512": "d5ff4ea02f3b8ec9b8db850dab1e576f2e74d41e6b4d4bd4c75f75bb3f3f57e66bbc0e2c85ee0f1ec18f7deecaec404309be818321f996132a2b588432846fba"
     },
     {
       "path": "mods/ragdollified-forge-1.20.1-1.2.2.jar",
@@ -3122,7 +3304,9 @@
         "fileID": 9437444,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "55801075412bbe120fcb664d6c790e276db40879",
+      "sha512": "4bb30e0ab55451ce5bc7d861b9a06444a092ef47a4c1263f681f9b8060390f70363011a005c2884008e59c36a5900fc6b74ede4d5db6a5bfeb4c9333f5f08459"
     },
     {
       "path": "mods/refurbished_furniture-forge-1.20.1-1.0.20.jar",
@@ -3156,7 +3340,9 @@
         "fileID": 7110922,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "ffb68135b88bdbb25224378c76daf922c3f4c322",
+      "sha512": "40fd537c4d6a85140d1132af6f36bb3b857ee34e41d6688a6ba3809ab3a63a7e4aece9e59d7fc3603b0a3130deb9af0593bca3683f888dd64eb4fa3ba492c8ad"
     },
     {
       "path": "mods/resourcefulconfig-forge-1.20.1-2.1.3.jar",
@@ -3190,7 +3376,9 @@
         "fileID": 6231176,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "597d40920dcc935f963842c817dcc4901862ab14",
+      "sha512": "2e05fe27529d00d7808a83dbe0c475a0fb96a20ebfd5c9767f4cc8dcd9a865e20a18de41fb9ed710e5cd2e0211c30303b43c1f22702af1d50ee7212ad83a54d3"
     },
     {
       "path": "mods/resourcefullib-forge-1.20.1-2.1.29.jar",
@@ -3224,7 +3412,9 @@
         "fileID": 5659871,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "6fc590a7c56a720fec57e290cbb0a106efbb3ffa",
+      "sha512": "8dbe951d431545a7d18081a8b11a52a248e6d8ff9862ae6462b0f5a6f57ff523af12704c3adb071ae99a7c5c1dd895bd7875dea59f9c4956c1597a668b6e8820"
     },
     {
       "path": "mods/rhino-forge-2001.2.3-build.10.jar",
@@ -3258,7 +3448,9 @@
         "fileID": 6186971,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "c83c9b719a6bab33fbd2b3f2f680eb3adbfc1aa1",
+      "sha512": "4eb6a635f3eff3baa158539bd55344421cf69b15e28f7da8bf55f370a11c071f3525063a6f81b67fbfca550ad8aaab7e6208df87f65ca6ed2851edd46f032b58"
     },
     {
       "path": "mods/Searchables-forge-1.20.1-1.0.3.jar",
@@ -3292,7 +3484,9 @@
         "fileID": 5284015,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "ed5a23ec30c90fd06b3f1d8140614028e1fafaee",
+      "sha512": "35ca37665b72dce28b76406441a2040cda96fb2945fa1473d0373806fdbaeedf877ea55957768224d23de199649f8b5ed1f66a314fdc86be462369bdeac4a267"
     },
     {
       "path": "mods/sem-patrol-control-1.2.1.jar",
@@ -3326,7 +3520,9 @@
         "fileID": 8890765,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "48287048e4f181c7f029212c05fb9a70f7887a09",
+      "sha512": "9898bf4129b3400f1165f33c4fe15d4ffb7a53e562475b3fc99edd8ef927bd45cf4153ae0da342689b2aaab5a505aef766b010fd0624bef34e7175ab42f9e846"
     },
     {
       "path": "mods/ShrapnelExplosionsMod-2.0.7.3-1.20.1.jar",
@@ -3360,7 +3556,9 @@
         "fileID": 8328245,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "01e0b8b0ba5ff3d729131cfd04afd978d258b5d2",
+      "sha512": "056cd07bceea1c3c9edade09ee69fa611dbd570eadc9fefb66ee48f5a6fde15b6b2c70c687cac7ac57f3576535e31a9a029e9b8137e2fcc3147f1890ff0c46c4"
     },
     {
       "path": "mods/simple_enemy_mod_config-1.0.0-forge-1.20.1.jar",
@@ -3394,7 +3592,9 @@
         "fileID": 8863228,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "8f5bd04932ef853cd5b26c16d1871cb22ecdca12",
+      "sha512": "1889c4c347cdbaa02614a2550c2b05cc54159c37d059d9e97d0c8ee5ff60ef0d66b91f7ee350e463e600dc876d855094572fc9f1c614db538416090a7782e77c"
     },
     {
       "path": "mods/simpleenemymod-1.20.1-0.1.6-beta-hotfix.jar",
@@ -3428,7 +3628,9 @@
         "fileID": 8880362,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "0b164daed3844ef1ed90fb254d7c809f870af7d3",
+      "sha512": "785246c16401ceadbcff526597e1ae870ff286d8780388597f68eb555f27c54accc6cb9a68152f477754a6249384369a82483fe4d67c6fcb0d1cfbd360a7705f"
     },
     {
       "path": "mods/skarrier_mobs-1.1.2-forge-1.20.1.jar",
@@ -3462,7 +3664,9 @@
         "fileID": 9296241,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "979016c328f00cfd34fa5464152ab668282a11eb",
+      "sha512": "9032e022e8a33c3ddb352828c84bdbaf29ebe897c6c434669af31785998a43d8febdbcd9620db326e952ecd0d844e99bed1832f139c09affef3a10d1e458f16d"
     },
     {
       "path": "mods/sleeprework-FORGE-1.20.1-1.1.0.jar",
@@ -3496,7 +3700,9 @@
         "fileID": 4657938,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "53bf1bfd0d0fd8bd56d5cbbc1181bdbd7924703b",
+      "sha512": "7e5c5bcdef3a16796a78c4a89db6801791963f2e27ea2f78a02a512ecf652669ab0ee0b01ae12a8a35c33de4d7747616501d6694415095e81be35ae2b6dd9d03"
     },
     {
       "path": "mods/sodiumoptionsapi-forge-1.0.10-1.20.1.jar",
@@ -3530,7 +3736,9 @@
         "fileID": 6100812,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "7529fbf938787ed13a251cbf40936f8c29ec4b6c",
+      "sha512": "20b11f1582df3df3d351e0cffcfc8b97453e2d73164fbad46d3f4eb960cab57d8f708d84b818782ef019d5cd9494ce001161f753623680516a191d6f510ebb79"
     },
     {
       "path": "mods/spark-1.10.53-forge.jar",
@@ -3564,7 +3772,9 @@
         "fileID": 4738952,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "231fb325368c0660954f47bfb03493f5246fa4d1",
+      "sha512": "15c6a3753dcba380624643a1e19c856240e8f6bed280f908e1be12c6154a86284ac86405c806273842975e0b7270af93ea9b1db5cf575a3853e54e1088cf7343"
     },
     {
       "path": "mods/Steam_Rails-1.7.3+forge-mc1.20.1.jar",
@@ -3598,7 +3808,9 @@
         "fileID": 8745475,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "5f904126d942cdbd272a5254ec6145851e5e1e7a",
+      "sha512": "c46bd5e48e64914433157e8cb92f5679d3407fc6e3e3b40a1a41b043efa6f32a2eb9c486313358e92f9e4cf169710ab161bbfa86a2763afcadff3b6e92021175"
     },
     {
       "path": "mods/superbwarfare-0.8.9.2-mc1.20.1-65d985a64-all.jar",
@@ -3632,7 +3844,9 @@
         "fileID": 9019882,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "9e77ea098c2eb752894cd945f37cc7c57bafe766",
+      "sha512": "985e0a3f02deddfaec95db72a3761994030fc2b72ccd53e90c0265c59d9467e09fabac111b1ab1d777b4a66c03e1fa3f9f58c963c471ef40462cf25573bbe4ad"
     },
     {
       "path": "mods/survival_instinct-1.0.2-forge-1.20.1.jar",
@@ -3666,7 +3880,9 @@
         "fileID": 7357198,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "a2dbab6aded299d7304ee93634ec38dd08df059b",
+      "sha512": "287fcf313ad6e0795b0b448b828e72b566332f8944e63c2383fbc6aeadff34850766a9655ba98a281f8378148ec2bb6617aab7a15f7f4094620b841af8f6b171"
     },
     {
       "path": "mods/tacz-forge-1.20.1-1.2.0.jar",
@@ -3700,7 +3916,9 @@
         "fileID": 9454481,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "0b91b2d09f724cdf412da93370cd57d311e78e67",
+      "sha512": "7784dd103fbaa5d26a6130ae6a716a1909f93c126fd226193b21dec38f8c345b0044e9e392a1aa6737e468a346b7e95dc38a3e76f22ecaf37cef438ae57874c1"
     },
     {
       "path": "mods/tacz_attributes-1.4.jar",
@@ -3734,7 +3952,9 @@
         "fileID": 8470731,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "93cfe50f409ee087fb6da7fc7c74e1c446c399a7",
+      "sha512": "f2cc86c479796de25fe95cf9e98e539385a65a9cb01bd360285fc5c68a0692fb74de840b85f7a7b339426ab0c7a791a6407c327fafb7773d98c5e347dbbc1a94"
     },
     {
       "path": "mods/tacz_attributes_addon-1.5.jar",
@@ -3768,7 +3988,9 @@
         "fileID": 7779997,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "f47df8d4c95d7d0dc9bffc058572066271aa16b1",
+      "sha512": "f98dba9539546415397ce2cf4d35b2f969bd921f7af9ae0439abf67e1397451f997c929f5ff6710f5d64d72b306225eb6a191d5c2cf038d13100a253d52d7487"
     },
     {
       "path": "mods/tacz_presence-1.4.jar",
@@ -3802,7 +4024,9 @@
         "fileID": 7882246,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "ac2fdc4c0445e2f1b693de2f77cf0563d7c158f1",
+      "sha512": "a6c0746127571f5ea4fdbe0385e27f80812134e9de8ac83d2ceb9aa7a601b98939935363d44b9afc9d16bd2e0a5708fee7bde76ec60c8230792715c7082ef0f5"
     },
     {
       "path": "mods/tacz_sewv-0.1.7.jar",
@@ -3836,7 +4060,9 @@
         "fileID": 9320153,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "75cff6a31ea0dcdb810ef0c891022270eee8e33e",
+      "sha512": "57b520deda4738b41bb57aa74b25c39fbe0c61da2a6aef791e0703d04aad6f8c954936fd5f89d4d306842e6cdc47bea0ea93c2637965cae1a142fb0547facbbc"
     },
     {
       "path": "mods/taczadditions-1.20.1-1.3.6.jar",
@@ -3870,7 +4096,9 @@
         "fileID": 9250498,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "fb8e2217ae0b4f6e5e632db81f59ca2c13649c21",
+      "sha512": "6d777e1ad629e7301e5359ac5c296df29d6ab351a6527889e9381af140527bf691a114ece2cdb3aa0763d56a5f1d643a2cad5e60ba4ba34379c014e82e7cfbe7"
     },
     {
       "path": "mods/taczexpert-0.1.65-1.20.1.jar",
@@ -3904,7 +4132,9 @@
         "fileID": 9493606,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "8dab4309bf87729faf42eed738561fd84ca6fb71",
+      "sha512": "6fe1f1fa01f2b24af90d70dcd2ecb71c5d37bff2cdfb6d9232f9434d23c9c983339ee1d06c5bdaaee09238680e8a6e99a91433b416748abe557ed89b88c6d818"
     },
     {
       "path": "mods/TerraBlender-forge-1.20.1-3.0.1.10.jar",
@@ -3938,7 +4168,9 @@
         "projectID": 563928,
         "fileID": 6290448,
         "required": true
-      }
+      },
+      "sha1": "3bd99fb59e8b06b04e78b5153790c1e08b2be5dc",
+      "sha512": "ef0c98e3d652f420a08a8d4205661ecb61c990ff19fabe04b9a0334b6a1bc671079dde74199a847e25df96f2a8262a35f37a0fca3c8fec95f7139074734ff8f5"
     },
     {
       "path": "mods/Terralith_1.20.x_v2.5.4.jar",
@@ -3972,7 +4204,9 @@
         "fileID": 5512076,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "79e1409b8db4ce86df9d6d6730f09c4bd8860a30",
+      "sha512": "885e171d8b34aae7e142f082d0364285ec5a8e8342f11c60d341f7a94083d5a42c4e30612fe4f9f64d57b484396a3dff3a224e2a2497d4ced8d22f2ad6cd561d"
     },
     {
       "path": "mods/tfmg-1.0.2f.jar",
@@ -4006,7 +4240,9 @@
         "fileID": 7344584,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "48e6b058f0d515cbb0e673d823e6e4042f9b1d37",
+      "sha512": "11e9c2007ace7bfc3ef0d166a48980b058ed30b7673996edfbbce14e4ca97b110d1b2db30d8f5ff0e81d4f3cc1bec78bdcd1a47925d2ac052e64cbdc5c91407f"
     },
     {
       "path": "mods/the_lost_city-1.5.2-forge-1.20.1.jar",
@@ -4040,7 +4276,9 @@
         "fileID": 9347193,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "cf1946b37460edbb02e50c3cce61c91ddab11429",
+      "sha512": "ea3ee3b325edabbf8bd34410682430c14bd4af9c12b72df63706e519cdfb19805d166ceb72284165106e7c6dba6d1d61ea6d89c048a766d02db61b5fb54c8212"
     },
     {
       "path": "mods/the_lost_city_superb_warfare-1.0.1.jar",
@@ -4074,7 +4312,9 @@
         "fileID": 7393696,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "f3e104b9e66ef37eea0b3127f4cfcc03c66b43af",
+      "sha512": "7e16f573b217850638d270d659b19377d1f5c0e0bbbaccd101bbe455df6224ad65ad02e1861194d070d6aa22e0fb6b3f426d2384c2cde5b3a175afb202eb6daf"
     },
     {
       "path": "mods/tinyinv-1.20.1-1.1.0.1.jar",
@@ -4108,7 +4348,9 @@
         "fileID": 5234306,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "7cefe6873d7bf1ca501b6e2ca0063a2cb02d2004",
+      "sha512": "cfea773757f55ccbf732175ca978a21764d49fa9d941764ec8dab0a5653294f31d2b23911207ce181d166fe7da385e2e3f0c857fe0ba22e994b2d73883433307"
     },
     {
       "path": "mods/tooltipoverhaul-forge-1.20.1-2.1.0.jar",
@@ -4142,7 +4384,9 @@
         "fileID": 9491812,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "a38a2ddf22ca2b325da3ddd2932ea9dc69781358",
+      "sha512": "45bf3f36da74aa661c571a1f3dcb3956ba5b5063d211bc6b3e840e1b3268435996342ee69db677ca3177cb08befa36d4d1fe23d03ea64188426dba2d624c6738"
     },
     {
       "path": "mods/Veil-forge-1.20.1-1.0.0.296-slim.jar",
@@ -4156,7 +4400,9 @@
       "page": "https://github.com/FoundryMC/Veil",
       "declared_license": "LGPL-3.0",
       "installed_path": "mods/Veil-forge-1.20.1-1.0.0.296-slim.jar",
-      "delivery": "override-original"
+      "delivery": "override-original",
+      "sha1": "83c9e937b13d4daf8110db69b875f59b0ab16a0d",
+      "sha512": "922d07d1f8990319cc8483680705f263b59821a1e5612738c87e5fb0552ff95e438db0be2f027241f048a49e352c532dfd741f30f12935932d188701cffa9b7d"
     },
     {
       "path": "mods/watut-forge-1.20.1-1.2.3.jar",
@@ -4190,7 +4436,9 @@
         "fileID": 6315241,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "d376debf1f96f37dbedf56919baeb7da2dcef9ab",
+      "sha512": "80be5011a6f3a933bf87cc1815febde79e915a9fb3d2ff304bfda199ad8a09e5acb32b91dc6a56db4765209c83ca977870b11bc7dbfeb7c4efa0fda6cc370386"
     },
     {
       "path": "mods/xaeroworldmap-forge-1.20.1-1.47.0.jar",
@@ -4224,7 +4472,9 @@
         "fileID": 9067273,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "6715c1d3758a3805589d82c41dc581537fe185cd",
+      "sha512": "a8c775ad1645cd3dc922072955fff65f7874bd6a1c99e6a61d370e7a9a5880e450ba61dafa6c719ad8f719fcff3b17ec6124b7f47288009547b4b136d81e5657"
     },
     {
       "path": "mods/zarith-forge-1.20.1-0.2.0.jar",
@@ -4258,7 +4508,9 @@
         "fileID": 9284417,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "ded3d90bee4534fe48999410eb433843d432ff44",
+      "sha512": "20e0b2da31ede86de80a58831415c2840b6d8cd219b689b0a8621db5fab90d7847038e8ae0921b747f541a074bbe4118f29beaebe2fe0f8bdcfcb1c8abe259b7"
     },
     {
       "path": "mods/zombieawareness-1.20.1-1.13.1.jar",
@@ -4292,7 +4544,9 @@
         "fileID": 5096285,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "173c30c8918da57be9398b3687ea19a81455c2c1",
+      "sha512": "16f33ffaa52c208c4239a35bc2ce268e0b56bec81d37a6120aa7708e64d806399c115d54d915f03c88bf9e44fdea01b0dc201816cd0ffd2f96601ae2ba3db337"
     },
     {
       "path": "resourcepacks/FA+Player-v1.1.zip",
@@ -4317,7 +4571,9 @@
         "fileID": 8245230,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "122e397af111e3dc5fb6b60004aad9464980f13a",
+      "sha512": "d2a5c46ae53e4bb6355604a1ade253ab49f1deb205f5ee69085014965241d3c9623204951ab174a5dbdaf24d9b25ecae9a1638cc6a13d780b398a6d70d157a4e"
     },
     {
       "path": "resourcepacks/FreshAnimations_v1.11.2_1.20.zip",
@@ -4342,7 +4598,9 @@
         "fileID": 9394023,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "c0f564f3b9c12762923015eefad53edbdbbd3d96",
+      "sha512": "e64c2fc73d2c61f6814d1223ac2a2bb1dda7ed55edb75efef23449475140a42ef2a490c4789f42e022eca96ffa6b50b63de70a2858fc7b257421b36aab5c10b3"
     },
     {
       "path": "resourcepacks/TZP_1.20.1_2.7.zip",
@@ -4367,7 +4625,9 @@
         "fileID": 4750306,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "0f24fbc99e9a6f4d1b9ceb628f9389a901137ec1",
+      "sha512": "494bd42e2e0ae1e49bc27723ab04333ba1a5d7941e230d91e09b9d1844f70e136441025c75ac9a6611d30c746ddc3ecf8a6e8606a0fd4eaf8a607c96c34e9006"
     },
     {
       "path": "shaderpacks/ComplementaryUnbound_r5.9.3.zip",
@@ -4392,7 +4652,9 @@
         "fileID": 8884656,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "2ee08300e1d6f039e63eae8484dddf57b3aaaf67",
+      "sha512": "a085d1d8cda67cd17a2b414eeba48bbd809da069f269bab46246235ec8fe714a275013c70d0504527b0987d810deddddba4564332414ab3b3bd7435932ff808c"
     },
     {
       "path": "tacz/GunpowderRevolution_gunpack v1.5.4hf1_1.zip",
@@ -4407,7 +4669,9 @@
       "page": "https://www.curseforge.com/minecraft/customization/tacz-gunpowder-revolution-great-war-gunpack/files/9078257",
       "declared_license": "Original author terms; downloaded separately",
       "installed_path": "tacz/GunpowderRevolution_gunpack v1.5.4hf1_1.zip",
-      "delivery": "override-original"
+      "delivery": "override-original",
+      "sha1": "4803fd49614cb25ca10b4bf0359139b5c6773234",
+      "sha512": "eea19e26ccb458bbf3a331a53c54d817bae1682abf48ea4ac8a9c97dd9af6cc62ac15e6b39c6df16a095139505002fcdf28541360c6ab5f60b5fd3ef8fc7efbe"
     },
     {
       "path": "tacz/Trench_Tactics v0.05.zip",
@@ -4422,7 +4686,9 @@
       "page": "https://www.curseforge.com/minecraft/customization/tacz-lr-trench-tactics-ww1-gadget-packet/files/6610302",
       "declared_license": "Original author terms; downloaded separately",
       "installed_path": "tacz/Trench_Tactics v0.05.zip",
-      "delivery": "override-original"
+      "delivery": "override-original",
+      "sha1": "2742afb3eb204d032f2fedbb830d0c1ff6244395",
+      "sha512": "c2234a6dce4772409ee346c5bfa764629db5b5f3be84c48b398b8c1754a0977e21b9ca23ef3f61fa41b0af5d9d92d8a8081b79071be7ee60886bb6af3b25860b"
     },
     {
       "path": "mods/fzbe-0.5.1.5.jar",
@@ -4449,7 +4715,9 @@
         "fileID": 9608427,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "ec503b63b826e8fd37b54532ef0891d9d6b7d7ef",
+      "sha512": "6d0ce4e4389be0e378c2ca6d208a1ec3ef4b0b181b8f55946878453a0e5a412a19e8cf4a60d9e3870cfa6989324c3c9aff503f4d05e3533d5d2375cf20e384f5"
     },
     {
       "path": "mods/tacz-mesh-loader-forge-1.20.1-0.2.1-hotfix.jar",
@@ -4476,7 +4744,9 @@
         "fileID": 9539316,
         "required": true
       },
-      "delivery": "manifest"
+      "delivery": "manifest",
+      "sha1": "607e8da78b2175f632943292ded7c2fa6a1eae58",
+      "sha512": "2a60a898100cd0826ca72d891c9f6aea6152d051d1d510eded95af706d05198dac54cd02043034d1745fbe7d32bd5b23c5b6aa6f914f5625d7e443298cfbeb32"
     },
     {
       "path": "tacz/Ra1k_gunpack_v2.0.6_hotfix.zip",
@@ -4492,7 +4762,9 @@
       "declared_license": "MIT",
       "authors": "Ra1k",
       "installed_path": "tacz/Ra1k_gunpack_v2.0.6_hotfix.zip",
-      "delivery": "override-original"
+      "delivery": "override-original",
+      "sha1": "a2947423b2e4489a2462d99cfd44b8686e9d38ec",
+      "sha512": "93d692648dd639e4b80883d6ed92ea2d7a31ef143f4522457382aaae646d474761f8e083096a59873db591607acad1236a37c56613a1a70a601333c6be9805db"
     },
     {
       "path": "tacz/Cold War from 1947-1991 v0.51.zip",
@@ -4508,7 +4780,9 @@
       "declared_license": "CC-BY-4.0",
       "authors": "LOL_141",
       "installed_path": "tacz/Cold War from 1947-1991 v0.51.zip",
-      "delivery": "override-original"
+      "delivery": "override-original",
+      "sha1": "641e23607b2521d0ccf11d0b40395aff863b587f",
+      "sha512": "7041fe48f7cd6e9f3eedec18259542ce503255c4abb95946a10df36a7e71085b526588bf4e3728c047f8f563574b8cc6e8297b67c7d289ce9aa32e37c1a2e659"
     },
     {
       "path": "tacz/Apocalypse_v1.1.7_G.zip",
@@ -4524,7 +4798,9 @@
       "declared_license": "All Rights Reserved",
       "authors": "Am1ethy",
       "installed_path": "tacz/Apocalypse_v1.1.7_G.zip",
-      "delivery": "override-original"
+      "delivery": "override-original",
+      "sha1": "f8514b6e4b204db4a849b9c2e143d948af8dd5a9",
+      "sha512": "a5f51956a62184ec276c1fb5aeab0709fe31fc48cb07e1a03c772019c4483b440a4d8b264344864fbf567691080793bcb2b073029b07cd289a2c0edf70dcd231"
     },
     {
       "path": "mods/guccivuitton-1.20.1-0.2.2.jar",
@@ -4557,7 +4833,9 @@
           "version": "0.2.2",
           "displayName": "Gucci & Vuitton Attachments"
         }
-      ]
+      ],
+      "sha1": "59e5ef296ff50bd1f0feaccc1ab7262a65b5429f",
+      "sha512": "de58b0e5f605c24fb636db798f0da3c40e90d54723525945ffe7597711b14c6d95eb23c8a72725c1dad00ffa8abc3b919680a214f973734b9b3b7d47dbf8d850"
     }
   ],
   "embedded_from_create": [

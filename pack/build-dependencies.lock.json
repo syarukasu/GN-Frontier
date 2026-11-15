@@ -80,6 +80,23 @@
       "urls": [
         "https://maven.blamejared.com/gg/moonflower/molang-compiler/3.1.1.19/molang-compiler-3.1.1.19.jar"
       ]
+    },
+    {
+      "path": ".cache/game/mods/ExfilZones-2.0.jar",
+      "sha256": "4d7c7c67eb5aea6a893f48a2adfedae1b0909bbfbb7dd43c8c75c37f20ce28e5",
+      "urls": [
+        "https://cdn.modrinth.com/data/KTLfmdu9/versions/tSxioFKh/ExfilZones-2.0.jar"
+      ],
+      "page": "https://modrinth.com/project/KTLfmdu9/version/tSxioFKh"
+    },
+    {
+      "path": ".cache/game/mods/Anomaly_Zone-2.1.jar",
+      "sha256": "e80fc6117f0369b3af1ff194abd15a4f6137d5087d436aeacb475e50401b8558",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9481/457/Anomaly_Zone-2.1.jar",
+        "https://edge.forgecdn.net/files/9481/457/Anomaly_Zone-2.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/1604795/files/9481457"
     }
   ]
 }

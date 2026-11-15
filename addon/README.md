@@ -9,7 +9,7 @@ GN Frontierのパック専用処理をまとめた、Forge 1.20.1向けのコア
 | 項目 | 内容 |
 | --- | --- |
 | 表示名 / MOD ID | GN Frontier / `gnfrontier` |
-| バージョン | パックと共通の **0.2.1**（[VERSION](../VERSION)） |
+| バージョン | パックと共通の **0.2.2**（[VERSION](../VERSION)） |
 | 対応環境 | Minecraft **1.20.1** / Forge **47.4.20** / Java **17** |
 | 利用するMODパック | [GN Frontier](../README.md) |
 | ソース | [src/main](src/main/) |
@@ -43,7 +43,7 @@ GN Frontierのパック専用処理をまとめた、Forge 1.20.1向けのコア
 
 リポジトリ全体を取得し、[開発・ビルド手順](../docs/DEVELOPMENT.md)に従ってください。`addon/`だけではなく、ルートの`VERSION`と固定依存リストを使ってビルドします。
 
-生成されるJARは`build/libs/gn-frontier-<バージョン>.jar`です。[GitHub Actions](https://github.com/syarukasu/GN-Frontier/actions/workflows/build.yml)では、ビルドに成功すると`gn-frontier-core`という名前で成果物が保存されます。これは開発確認用のコアMODです。
+生成されるJARは`build/libs/gn-frontier-<バージョン>.jar`です。[Release](https://github.com/syarukasu/GN-Frontier/releases/tag/v0.2.2)では、パックのメタデータが参照する取得先として単独のJARを公開します。パックZIP・mrpack・サーバーZIPには同梱しません。[GitHub Actions](https://github.com/syarukasu/GN-Frontier/actions/workflows/build.yml)の`gn-frontier-core`は開発確認用の成果物です。
 
 ## 不具合の報告
 

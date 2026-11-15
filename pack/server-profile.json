@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "description": "Dedicated-server filtering; the client keeps integrated-server gameplay mods.",
+  "exclude_mod_ids": {
+    "embeddium": "Client rendering engine",
+    "sodiumoptionsapi": "Client renderer settings",
+    "enhancedvisuals": "Client screen effects",
+    "controlling": "Client key binding screen",
+    "searchables": "Client search UI library",
+    "nerb": "Client recipe book UI",
+    "jei": "Client recipe browser"
+  },
+  "shared_registry_notes": {
+    "xaeroworldmap": "Retain on dedicated servers to preserve its four registered map-restriction effects in shared worlds."
+  },
+  "exclude_source_prefixes": [
+    "mods/.index/",
+    "resourcepacks/",
+    "shaderpacks/",
+    "kubejs/client_scripts/",
+    "config/fancymenu/"
+  ],
+  "exclude_source_files": [
+    "options.txt",
+    "config/embeddium-options.json",
+    "config/embeddium-mixins.properties",
+    "config/oculus.properties",
+    "config/enhancedvisuals.json",
+    "config/sodiumoptionsapi-options.json",
+    "config/xaeroworldmap.txt"
+  ],
+  "exclude_config_suffixes": ["-client.toml", "-client.json", "-client.jsonc", "-client.snbt"]
+}

@@ -1,0 +1,2 @@
+# Read https://www.minecraft.net/eula and set this to true if you agree.
+eula=false

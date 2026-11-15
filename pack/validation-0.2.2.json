@@ -1,0 +1,65 @@
+{
+  "version": "0.2.2",
+  "checked_on": "2026-11-15",
+  "status": "PASS_WITH_DOCUMENTED_LIMITS",
+  "core_sha256": "5723db7155005cf2541f89ac818bfe5413bb3b264f701cb86a78e8d18a062d63",
+  "distribution": {
+    "formats": ["curseforge", "mrpack", "dedicated-server"],
+    "jar_entries_in_pack_archives": 0,
+    "client_downloads": 140,
+    "curseforge_manifest_files": 132,
+    "curseforge_external_downloads": 8,
+    "server_downloads": 112,
+    "server_top_level_jars": 107,
+    "client_only_jars_excluded_from_server": 24,
+    "upstream_originals_hashed": 139,
+    "upstream_urls_available": 139,
+    "python_download_transaction_tests": 9,
+    "powershell_download_reuse_backup_and_failure_preservation": true,
+    "archive_crc_and_dependency_coverage": "PASS"
+  },
+  "dedicated_server": {
+    "platform": "Windows",
+    "java": 17,
+    "minecraft": "1.20.1",
+    "forge": "47.4.20",
+    "setup_exit_code": 0,
+    "reused_existing_test_world": true,
+    "new_test_worlds_created": 0,
+    "environments_copied": 0,
+    "profile": "gn_azzz15flat_nature",
+    "difficulty": "hard",
+    "done_observed": true,
+    "save_completed": true,
+    "exit_code": 0,
+    "missing_registry_mappings_in_final_configuration": 0,
+    "kubejs_startup_scripts": 1,
+    "kubejs_server_scripts": 4,
+    "kubejs_script_errors": 0,
+    "kubejs_script_warnings": 0,
+    "recipes_added": 181,
+    "recipes_removed": 251,
+    "failed_recipes": 0,
+    "controlled_review_client_files_restored": true
+  },
+  "compatibility": {
+    "third_party_jars_modified": false,
+    "exfil_server_events_and_commands_preserved": true,
+    "anomaly_dialog_packet_codecs_payloads_and_acknowledgement_preserved": true,
+    "changes_applied_only_on_dedicated_server": true,
+    "xaero_shared_map_restriction_effects_retained": 4
+  },
+  "deployment": {
+    "original_instance_modified": false,
+    "original_client_launched": false,
+    "os_input_or_focus_used": false,
+    "existing_instance_version": "0.2.1"
+  },
+  "limits": [
+    "CurseForge external dependencies require the included post-import setup script; the standard manifest cannot fetch arbitrary external URLs.",
+    "CurseForge site approval, project IDs and native app import/update validation remain open.",
+    "The mrpack targets direct Prism import and is not eligible for Modrinth site upload with its ForgeCDN/Maven URLs; GUI import is not tested.",
+    "Linux server boot, connected-client gameplay, long-running multiplayer load and fresh world generation in 0.2.2 are not tested.",
+    "Upstream optional integration, tag/resource and client-class discovery warnings remain; server success is not a claim of zero log errors."
+  ]
+}

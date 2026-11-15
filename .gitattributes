@@ -8,6 +8,8 @@
 *.properties text eol=lf
 *.yml text eol=lf
 *.bat text eol=crlf
+*.sh text eol=lf
+*.ps1 text eol=lf
 gradlew text eol=lf
 *.png binary
 *.nbt binary

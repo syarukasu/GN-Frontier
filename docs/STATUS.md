@@ -4,8 +4,7 @@
 
 実施済み：
 
-- [GitHub](https://github.com/syarukasu/GN-Frontier)で`main`と`v0.2.1`を管理。公開用の全履歴から個人環境の固定パスを取り除き、元の準備履歴は別の非公開リポジトリに保管。
-
+- [GitHub](https://github.com/syarukasu/GN-Frontier)で`main`と`v0.2.1`を公開。公開用の全履歴から個人環境の固定パスを取り除き、元の準備履歴・タグ・ビルド記録は別の非公開リポジトリに保管。公開側と保管側の可視性をそれぞれ確認済み。
 - 元Prismインスタンスへ0.2.1をバックアップ付きで導入。専用MODは1本、トップレベルJARは131本。元クライアントは起動していません。
 - セーブ・操作設定など、変更対象外の7,543ファイルは導入前後でハッシュ一致。
 - 非表示の専用デスクトップで起動し、新規ワールドを実際に生成。プリセットは`gn_azzz15flat_nature`。
@@ -15,8 +14,7 @@
 - 日本語表示、FreeZBeの素材参照と未使用モデルの補正を確認。
 - Create内包のFlywheel・Ponder・Registrateを読み込み、トップレベルでの重複配置を整理。
 - Git管理したファイルだけの新規チェックアウトで、10個の原版依存物を公式から取得しビルド。検証・導入したJARと全バイト一致。
-- 非公開の準備段階でGitHub Actionsのビルドを確認。公開用の履歴でも[Actions](https://github.com/syarukasu/GN-Frontier/actions)から確認できます。
-
+- [公開用履歴のGitHub Actionsビルド](https://github.com/syarukasu/GN-Frontier/actions/runs/43665171255)が成功。全履歴の個人用パス・認証情報パターン検査、原版依存物の取得、コアMODのビルド、バージョンと内包ライブラリの検証を通過。
 残件・確認の限界：
 
 - CurseForgeコアMOD・パックの公開ID、およびExfilZonesとVeilの掲載対応が残っています。

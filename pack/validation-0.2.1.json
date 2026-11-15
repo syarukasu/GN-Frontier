@@ -34,10 +34,16 @@
   },
   "github": {
     "repository": "https://github.com/syarukasu/GN-Frontier",
-    "visibility": "public-preparation",
+    "visibility": "public",
+    "repository_id": 1458355634,
     "tag": "v0.2.1",
     "release_commit": "e77d4286382a9186d5c0281780b766a738279f5b",
-    "original_private_build": "success; retained in private archive"
+    "original_private_build": "success; retained in private archive",
+    "workflow_status": "completed",
+    "workflow_conclusion": "success",
+    "workflow_url": "https://github.com/syarukasu/GN-Frontier/actions/runs/43665171255",
+    "validated_head": "806d9d0509ccf6155e4a01588f6234009dc468e5",
+    "private_archive_visibility_verified": true
   },
   "privacy_review": {
     "historical_commits_reviewed": 4,
@@ -46,6 +52,9 @@
     "credential_patterns_found": 0,
     "commit_email": "GitHub noreply",
     "image_metadata_found": false,
-    "original_history_retained_privately": true
+    "original_history_retained_privately": true,
+    "pre_publication_commits_reviewed": 5,
+    "pre_publication_blobs_reviewed": 5097,
+    "pre_publication_tracked_files": 2783
   }
 }

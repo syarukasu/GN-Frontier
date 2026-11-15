@@ -1,17 +1,65 @@
 # GN Frontier
 
-Minecraft 1.20.1 / Forge 47.4.20 向けの再現MODパックです。広域の廃都市、自然地形、銃器、勢力間の衝突、物資回収、設備整備を組み合わせます。
+**廃都市を探索し、物資を回収し、拠点を整える。**
 
-**MODパックとコアMODの共通バージョンは 0.2.1。** `VERSION` を唯一の番号の定義とし、左から「最終回後の答え合わせ・正式リリース」「動画の回」「更新回数」で管理します。対応範囲の番号であり、動画との完全一致を意味しません。
+![Minecraft 1.20.1](https://img.shields.io/badge/Minecraft-1.20.1-5C8C3C)
+![Forge 47.4.20](https://img.shields.io/badge/Forge-47.4.20-6D6D6D)
+[![Core build](https://github.com/syarukasu/GN-Frontier/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/syarukasu/GN-Frontier/actions/workflows/build.yml)
 
-- 専用MODは `addon/` のGN Frontier 1本。第三者MODの配布JARは変更しません。
-- 設定、日本語、レシピ、loot、生成データは `overlay/`、清潔な新規導入用の既定値は `pack/defaults/`。
-- PDAはホットキーで開き、取引・納品・任務を扱います。納品は1〜3品を組み合わせ、大量納品では品目数を減らします。
-- 新規ワールドは専用生成プリセットとハード難易度。名前、サバイバル／クリエイティブ、チートを選べます。
-- 自然生成はTerralith＋Arboria＋Lost Cities系の組み合わせ。原動画の生成MODやseedの完全特定ではありません。
+**[専用コアMOD](addon/README.md)** · [配布状況](docs/CURSEFORGE.md) · [更新履歴](CHANGELOG.md) · [不具合の報告](https://github.com/syarukasu/GN-Frontier/issues/new/choose)
 
-[更新履歴](CHANGELOG.md) · [番号の規則](docs/VERSIONING.md) · [ビルドと開発](docs/DEVELOPMENT.md) · [確認状況](docs/STATUS.md) · [CurseForgeの取得・公開状況](docs/CURSEFORGE.md)
+GN Frontierは、動画の世界観とゲーム体験の再現を目指す、Minecraft Forge 1.20.1向けのMODパックです。広い廃都市と自然地形を舞台に、銃器を使った戦闘、勢力間の衝突、物資の回収、取引、工業設備の整備を組み合わせます。
 
-CurseForge向け配布を準備中です。未掲載の依存物と正式な公開IDが残っているため、全MODをCurseForgeだけから導入・更新できる状態にはまだ達していません。ローカルのビルド成功、ゲーム内の確認、実インスタンスへの導入、配布サイトへの公開は区別して記録します。
+このリポジトリでMODパックの設定・データ・専用MODと、不具合や再現上の課題を管理しています。現在は**開発版 0.2.1**です。
 
-独自コードはMITです。第三者のライブラリ・生成データ・派生資産はそれぞれのライセンスに従います。[LICENSE](LICENSE) と [THIRD_PARTY.md](THIRD_PARTY.md) を参照してください。
+## 遊びの特徴
+
+- **廃都市と自然地形の探索** — Lost Cities系の都市と、Terralith・Arboriaによる地形や植生を組み合わせます。
+- **回収から始まる生活と工業** — 建物や車両から物資を集め、道具・設備・拠点を整えます。
+- **銃器と勢力の衝突** — TaCZとガンパックを軸に、人間の勢力と敵モブが入り交じる環境を作ります。
+- **PDAで取引と依頼** — ホットキーで開き、売買や任務を確認。納品は電子部品・工業資材・医療品・銃などを1〜3品で組み合わせ、多量の依頼では品目数を減らします。
+- **マルチプレイ向けの物資回収** — Lootrと専用処理で、対応するコンテナの戦利品をプレイヤーごとに管理します。
+
+新規ワールドは専用生成プリセット・ハード難易度です。ワールド名、サバイバル／クリエイティブ、チートのオン／オフを選べます。
+
+## 導入・配布状況
+
+| 項目 | 現在の状態 |
+| --- | --- |
+| MODパック / 専用コアMOD | 共通バージョン **0.2.1** |
+| Minecraft / Forge | **1.20.1 / 47.4.20** |
+| Java | **17** |
+| CurseForge向けパック配布 | 準備中。公開IDと一部依存物の掲載対応が残っています |
+| ソース・設定 | このGitHubリポジトリで公開 |
+| 開発用コアMODのビルド | [GitHub Actions](https://github.com/syarukasu/GN-Frontier/actions/workflows/build.yml)の成功した実行から確認できます |
+
+GitHubのソースZIPと開発用コアMODは、完成したパック配布物ではありません。CurseForgeから全MODを導入・更新できる状態に向けた作業は、[配布の残件](docs/CURSEFORGE.md)で管理しています。
+
+動画の生成MODやseedには未特定の部分があり、現在の構成には代替実装も含まれます。実装済み・検証済みの範囲と残件は[確認状況](docs/STATUS.md)を参照してください。
+
+## 困ったとき・動画との違いを見つけたとき
+
+まず[既知の課題](docs/STATUS.md)と[既存のIssue](https://github.com/syarukasu/GN-Frontier/issues)を確認し、該当するフォームから報告してください。専用コアMODの問題も同じ窓口で受け付けます。
+
+- [不具合・クラッシュを報告](https://github.com/syarukasu/GN-Frontier/issues/new?template=bug-report.yml) — パックのバージョン、発生状況、再現手順、追加・変更したMODや設定を記載してください。
+- [動画との差・未実装要素を報告](https://github.com/syarukasu/GN-Frontier/issues/new?template=video-difference.yml) — 動画の回・URL・時刻と、確認できた内容を記載してください。関連する[改変ID](pack/modification-id-register.json)が分かれば添えてください。
+
+ログや画像を公開する際は、個人用パス・接続先・認証情報が含まれていないか確認してください。
+
+## 専用MOD・開発資料
+
+**[GN Frontier 専用コアMODのページへ →](addon/README.md)**
+
+専用MODは1本に統合し、同じリポジトリの`addon/`で管理します。パックとコアは[共通バージョン](VERSION)を使います。番号は左から「最終回後の答え合わせ・正式リリース」「動画の回」「更新回数」です。詳しくは[バージョンの規則](docs/VERSIONING.md)を参照してください。
+
+| 資料 | 内容 |
+| --- | --- |
+| [開発・ビルド手順](docs/DEVELOPMENT.md) | 依存物の取得、ビルド、検証、配布物の作成 |
+| [更新履歴](CHANGELOG.md) | バージョンごとの変更点 |
+| [確認状況](docs/STATUS.md) | 実施した検証と残っている課題 |
+| [改変ID台帳](pack/modification-id-register.json) | 改変内容を追跡する固定ID |
+| [MOD・ガンパックの依存リスト](pack/runtime.lock.json) | 配布元、固定バージョン、ファイルID、ハッシュ |
+
+## ライセンス・クレジット
+
+GN Frontierの独自コードは[MIT](LICENSE)です。第三者MODの配布JARは原版を使用し、ライブラリ・テクスチャ・生成データには各配布元の条件が適用されます。詳細は[第三者ライセンスとクレジット](THIRD_PARTY.md)を参照してください。

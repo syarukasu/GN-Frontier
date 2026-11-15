@@ -1,0 +1,61 @@
+name: 不具合・クラッシュ
+description: MODパックまたは専用コアMODの不具合を報告します。
+title: "[不具合] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        既知の課題と既存のIssueを確認してから記入してください。
+        ログや画像には、個人用パス・接続先・認証情報を残さないよう確認してください。
+  - type: input
+    id: version
+    attributes:
+      label: GN Frontierのバージョン
+      placeholder: 0.2.1
+    validations:
+      required: true
+  - type: dropdown
+    id: component
+    attributes:
+      label: 問題が起きている対象
+      options:
+        - MODパック全体・不明
+        - 専用コアMOD
+        - 設定・レシピ・loot・生成
+        - 日本語・画面表示
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: 発生した環境
+      options:
+        - シングルプレイ
+        - マルチプレイのクライアント
+        - 専用サーバー
+        - 起動・ワールド作成時
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 起きたこと・期待した動作
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 再現手順
+      description: 不明な場合は、発生直前にしていた操作を記載してください。
+    validations:
+      required: true
+  - type: textarea
+    id: modifications
+    attributes:
+      label: 追加・変更したMODや設定
+      description: 変更がなければ「なし」と記載してください。
+  - type: textarea
+    id: evidence
+    attributes:
+      label: ログ・画像・関連する改変ID
+      description: 問題に関連する部分や共有リンクを添えてください。関連するGN-番号が分かれば記載してください。

@@ -1,5 +1,7 @@
 # 開発とGit管理
 
+[MODパックの案内](../README.md) · [専用コアMODの案内](../addon/README.md)
+
 `main`を基準に、専用MODは`addon/`、設定・日本語・レシピ・loot・生成データは`overlay/`で管理します。パックとコアの共通番号は`VERSION`です。第三者MODのJARは変更しません。
 
 Java 17、Python 3.11以上を用意し、リポジトリのルートで次を実行します。

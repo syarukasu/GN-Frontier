@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 確認状況・既知の課題
+    url: https://github.com/syarukasu/GN-Frontier/blob/main/docs/STATUS.md
+    about: 実施済みの検証と、まだ残っている課題を確認できます。
+  - name: GN Frontier 専用コアMOD
+    url: https://github.com/syarukasu/GN-Frontier/tree/main/addon
+    about: 専用MODの担当機能、ソース、ビルド手順はこちらです。

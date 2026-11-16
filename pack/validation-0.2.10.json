@@ -1,0 +1,261 @@
+{
+  "schema": 1,
+  "version": "0.2.10",
+  "date": "2026-11-17",
+  "modificationIds": [
+    "GN-101"
+  ],
+  "coreSha256": "7d0b0c0cf744bbbd529406b1165cc3a6db2ff7a2f993cfc79c66a1cff75d9b95",
+  "releasePublished": false,
+  "offline": {
+    "status": "PASS",
+    "checks": 202414,
+    "groups": {
+      "core": 4067,
+      "campaign": 370,
+      "legacyDailyMissions": 40258,
+      "modularDeliveries": 106580,
+      "specifications": 1131,
+      "weaponRepair": 50008
+    },
+    "distributionCompatibility": {
+      "status": "PASS",
+      "task": "verifyServerCompatibility",
+      "checks": [
+        "pinned original ExfilZones transformation",
+        "both Anomaly Zone dialog packet codecs and payloads"
+      ],
+      "dedicatedServerStarted": false
+    }
+  },
+  "repair": {
+    "status": "PASS",
+    "kitId": "hbm_m:gun_kit_2",
+    "implementation": "dedicated GN Frontier core; upstream item and JAR unmodified",
+    "operation": "main-hand air right-click, select carried gun, native repair menu button",
+    "restorePercent": 25,
+    "restorePercentConfirmedFromVideo": false,
+    "survivalKitsPerSuccessfulRepair": 1,
+    "creativeConsumesKit": false,
+    "requiresKitInCreative": true,
+    "nativeGunDurabilityProvider": "GunDB",
+    "modifiedGunField": "tag.Damage",
+    "otherGunNbtIncludingCapabilitiesPreserved": true,
+    "kitPurchase": {
+      "count": 8,
+      "unitPrice": 300,
+      "spent": 2400,
+      "balanceBefore": 10000,
+      "balanceAfter": 7600
+    },
+    "successfulNativeRepairs": 6,
+    "transactions": [
+      {
+        "evidence": "after-first-repair.json",
+        "kits": 7,
+        "rifleDamage": 500,
+        "pistolDamage": 600,
+        "status": "REPAIRED",
+        "allOtherGunNbtPreserved": true
+      },
+      {
+        "evidence": "rifle-second.json",
+        "kits": 6,
+        "rifleDamage": 250,
+        "pistolDamage": 600,
+        "status": "REPAIRED",
+        "allOtherGunNbtPreserved": true
+      },
+      {
+        "evidence": "rifle-full.json",
+        "kits": 5,
+        "rifleDamage": 0,
+        "pistolDamage": 600,
+        "status": "REPAIRED",
+        "allOtherGunNbtPreserved": true
+      },
+      {
+        "evidence": "full-rifle-rejected.json",
+        "kits": 5,
+        "rifleDamage": 0,
+        "pistolDamage": 600,
+        "status": "FULL",
+        "allOtherGunNbtPreserved": true
+      },
+      {
+        "evidence": "pistol-first.json",
+        "kits": 4,
+        "rifleDamage": 0,
+        "pistolDamage": 400,
+        "status": "REPAIRED",
+        "allOtherGunNbtPreserved": true
+      },
+      {
+        "evidence": "pistol-second.json",
+        "kits": 3,
+        "rifleDamage": 0,
+        "pistolDamage": 200,
+        "status": "REPAIRED",
+        "allOtherGunNbtPreserved": true
+      },
+      {
+        "evidence": "pistol-full.json",
+        "kits": 2,
+        "rifleDamage": 0,
+        "pistolDamage": 0,
+        "status": "REPAIRED",
+        "allOtherGunNbtPreserved": true
+      },
+      {
+        "evidence": "full-pistol-rejected.json",
+        "kits": 2,
+        "rifleDamage": 0,
+        "pistolDamage": 0,
+        "status": "FULL",
+        "allOtherGunNbtPreserved": true
+      },
+      {
+        "evidence": "no-kit-rejected.json",
+        "kits": 0,
+        "rifleDamage": 0,
+        "pistolDamage": 200,
+        "status": "NO_KIT",
+        "allOtherGunNbtPreserved": true
+      },
+      {
+        "evidence": "no-kit-replay-rejected.json",
+        "kits": 0,
+        "rifleDamage": 0,
+        "pistolDamage": 200,
+        "status": "NO_KIT",
+        "allOtherGunNbtPreserved": true
+      }
+    ],
+    "guards": {
+      "inventoryRestoredExactly": true,
+      "noKitSpentByRejectedActions": true,
+      "passed": [
+        "all inventory clicks are read-only",
+        "invalid button packets rejected",
+        "owner and active menu checked",
+        "vanilla items rejected",
+        "unknown GunId rejected",
+        "non-damageable guns rejected",
+        "changed selection rejected",
+        "disabled/offhand/outside slots rejected",
+        "disabled repair rejected",
+        "creative uses no consumable"
+      ]
+    }
+  },
+  "runtime": {
+    "status": "PASS",
+    "coreSha256": "7d0b0c0cf744bbbd529406b1165cc3a6db2ff7a2f993cfc79c66a1cff75d9b95",
+    "screenshots": [
+      {
+        "path": "revisions/version-control-r39/spec-0.2.10/final-00-repair-before.png",
+        "sha256": "77684e63169d6800337e81723f18fabd6bcb85323bb66a6cf6c2409a6d0b6622",
+        "width": 1600,
+        "height": 900,
+        "visuallyReviewed": true,
+        "source": "actual Minecraft framebuffer"
+      },
+      {
+        "path": "revisions/version-control-r39/spec-0.2.10/final-01-repair-after.png",
+        "sha256": "b7beb814931bd7886da14058f1fe0122d1321f33378ad20e4e0894465805b910",
+        "width": 1600,
+        "height": 900,
+        "visuallyReviewed": true,
+        "source": "actual Minecraft framebuffer"
+      },
+      {
+        "path": "revisions/version-control-r39/spec-0.2.10/final-02-full-no-consumption.png",
+        "sha256": "400bc18d4623ea576fd85b51e3231aa895a34643ef1736a6580aab3a76f47261",
+        "width": 1600,
+        "height": 900,
+        "visuallyReviewed": true,
+        "source": "actual Minecraft framebuffer"
+      },
+      {
+        "path": "revisions/version-control-r39/spec-0.2.10/final-03-pistol-before.png",
+        "sha256": "fa3c9850b6c8cb1bb0493f816da1c8f12c8c47d5b96bb7d433e65eab39e7e53f",
+        "width": 1600,
+        "height": 900,
+        "visuallyReviewed": true,
+        "source": "actual Minecraft framebuffer"
+      },
+      {
+        "path": "revisions/version-control-r39/spec-0.2.10/final-04-pistol-after.png",
+        "sha256": "ee8109268386bb632a8d0125d652405f660d9bbbd2b946a9ab2f965129c7f126",
+        "width": 1600,
+        "height": 900,
+        "visuallyReviewed": true,
+        "source": "actual Minecraft framebuffer"
+      },
+      {
+        "path": "revisions/version-control-r39/spec-0.2.10/final-05-no-kit-no-repair.png",
+        "sha256": "4713cc5a58f166f3785c71d1d73768cfb0b9d71af7c7e9b423dfe31cf39488cd",
+        "width": 1600,
+        "height": 900,
+        "visuallyReviewed": true,
+        "source": "actual Minecraft framebuffer"
+      }
+    ],
+    "scope": "Real client connected to the integrated server, native item-use/menu packets, server-side complete NBT comparison. Guard cases additionally call real server handlers with invalid fixtures. Dedicated server and long multiplayer sessions not run in this turn.",
+    "fixtureRestoration": {
+      "repair-fixture-restored.json": {
+        "fixtureRemoved": true,
+        "originalGameModeRestored": true
+      },
+      "pda-fixture-restored.json": {
+        "inventoryAndAccountExact": true,
+        "restored": true
+      },
+      "advancement-fixture-restored.json": {
+        "revokedReviewCriteria": 0,
+        "inventoryAndAdvancementsExact": true,
+        "restored": true
+      }
+    },
+    "clientClosed": true,
+    "runtimeRestored": true,
+    "optionsRestored": true,
+    "temporaryAccountRemoved": true,
+    "noNewCrashReport": true,
+    "worldCopied": false,
+    "environmentCopied": false,
+    "desktopSwitched": false,
+    "osInputInjected": false,
+    "excludedFixtures": [
+      {
+        "evidence": "staged-purchased-kits.json",
+        "reason": "Original staging gun had an absent scope ID. Replaced with a verified real ACOG before the final NBT baseline, all accepted repairs and six screenshots."
+      }
+    ]
+  },
+  "deployment": {
+    "status": "PASS",
+    "version": "0.2.10",
+    "coreSha256": "7d0b0c0cf744bbbd529406b1165cc3a6db2ff7a2f993cfc79c66a1cff75d9b95",
+    "changedFiles": 6,
+    "thirdPartyJarsUnchanged": 132,
+    "singleCore": true,
+    "liveWorldsTouched": false,
+    "liveGameStarted": false,
+    "customConfigurationRetained": true,
+    "existingWorldServerConfigsTouched": false
+  },
+  "repairKitSource": {
+    "report": "repair-kit-source-0.2.10.json",
+    "providerConfirmed": false,
+    "originalInteractionConfirmed": false,
+    "originalRecoveryAmountConfirmed": false,
+    "functionalTaCZRepairImplemented": true,
+    "visualAssetChangedThisTurn": false
+  },
+  "limits": [
+    "Screen layout and 25 percent are a pack implementation, not identified original video rules.",
+    "Existing jam state, heat and attachment wear are preserved rather than cleared.",
+    "Only registered TaCZ guns with active native durability are supported."
+  ]
+}

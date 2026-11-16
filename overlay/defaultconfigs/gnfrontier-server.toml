@@ -41,3 +41,8 @@ range = 16
 cooldownTicks = 100
 spawnOneIn = 16
 pullStrength = 0.9
+
+# Pack-owned TaCZ repair kit. Source-video repair amount and interaction are unconfirmed.
+[weaponRepairKit]
+enabled = true
+restorePercent = 25

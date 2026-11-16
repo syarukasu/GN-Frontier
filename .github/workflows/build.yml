@@ -33,6 +33,9 @@ jobs:
       - name: Verify dedicated-server compatibility against the pinned original
         working-directory: addon
         run: bash gradlew --no-daemon --max-workers=2 verifyServerCompatibility
+      - name: Verify weapon repair amounts and boundaries
+        working-directory: addon
+        run: bash gradlew --no-daemon --max-workers=2 verifyWeaponRepair
       - name: Build JAR-free client and server distributions
         run: python tools/build_release.py
       - name: Verify package coverage and archive contents

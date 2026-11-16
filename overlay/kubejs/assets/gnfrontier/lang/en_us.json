@@ -334,5 +334,21 @@
   "gui.gnfrontier.task.hint.accepted": "Meet the requirements, then report with the button at the lower right.",
   "gui.gnfrontier.task.hint.completed": "This task is complete.",
   "gui.gnfrontier.market.name.market_milk": "Condensed Milk",
-  "gui.gnfrontier.market.name.market_fruit": "Canned Fruit"
+  "gui.gnfrontier.market.name.market_fruit": "Canned Fruit",
+  "screen.gnfrontier.repair.title": "Weapon maintenance",
+  "screen.gnfrontier.repair.choose": "Choose a carried gun",
+  "screen.gnfrontier.repair.no_guns": "No carried firearms",
+  "screen.gnfrontier.repair.condition": "Condition: %s / %s",
+  "screen.gnfrontier.repair.after": "After repair: %s / %s",
+  "screen.gnfrontier.repair.stock": "Repair kits: %s",
+  "screen.gnfrontier.repair.amount": "One kit restores %s%% of maximum condition",
+  "screen.gnfrontier.repair.button": "Use one kit",
+  "screen.gnfrontier.repair.repaired": "Restored %s condition.",
+  "screen.gnfrontier.repair.hint": "Ammunition, attachments and quality are retained.",
+  "screen.gnfrontier.repair.no_kit": "No weapon repair kit.",
+  "screen.gnfrontier.repair.full": "This firearm is fully repaired.",
+  "screen.gnfrontier.repair.unsupported": "This item cannot be repaired.",
+  "screen.gnfrontier.repair.changed": "Inventory changed. Select the firearm again.",
+  "screen.gnfrontier.repair.disabled": "Weapon maintenance is unavailable.",
+  "screen.gnfrontier.repair.usage": "Hold and use to choose a carried firearm."
 }

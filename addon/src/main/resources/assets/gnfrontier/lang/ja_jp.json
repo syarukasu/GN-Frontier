@@ -206,5 +206,21 @@
   "gui.gnfrontier.task.hint.accepted": "条件を満たしたら、右下のボタンで報告してください。",
   "gui.gnfrontier.task.hint.completed": "この依頼は完了しました。",
   "gui.gnfrontier.market.name.market_milk": "コンデンスミルク",
-  "gui.gnfrontier.market.name.market_fruit": "フルーツ缶"
+  "gui.gnfrontier.market.name.market_fruit": "フルーツ缶",
+  "screen.gnfrontier.repair.title": "銃器整備",
+  "screen.gnfrontier.repair.choose": "補修する銃を選択",
+  "screen.gnfrontier.repair.no_guns": "所持品に銃がありません",
+  "screen.gnfrontier.repair.condition": "耐久：%s / %s",
+  "screen.gnfrontier.repair.after": "補修後：%s / %s",
+  "screen.gnfrontier.repair.stock": "キットの残り：%s個",
+  "screen.gnfrontier.repair.amount": "1個で最大耐久の%s％分を補修",
+  "screen.gnfrontier.repair.button": "キット1個で補修",
+  "screen.gnfrontier.repair.repaired": "耐久を%s補修しました。",
+  "screen.gnfrontier.repair.hint": "装填弾・付属品・品質を保持して補修します。",
+  "screen.gnfrontier.repair.no_kit": "武器修理キットがありません。",
+  "screen.gnfrontier.repair.full": "この銃の耐久は十分です。",
+  "screen.gnfrontier.repair.unsupported": "この品は補修の対象外です。",
+  "screen.gnfrontier.repair.changed": "所持品が変わりました。銃を選び直してください。",
+  "screen.gnfrontier.repair.disabled": "銃器の補修は利用できません。",
+  "screen.gnfrontier.repair.usage": "手に持って右クリックし、補修する銃を選びます。"
 }

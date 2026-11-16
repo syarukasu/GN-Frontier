@@ -28,6 +28,7 @@ public final class Frontier {
     public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, ID);
     public static final DeferredRegister<net.minecraft.world.inventory.MenuType<?>> MENUS=DeferredRegister.create(ForgeRegistries.MENU_TYPES,ID);
     public static final RegistryObject<net.minecraft.world.inventory.MenuType<CorpseMenu>> CORPSE_MENU=MENUS.register("corpse",()->net.minecraftforge.common.extensions.IForgeMenuType.create(CorpseMenu::new));
+    public static final RegistryObject<net.minecraft.world.inventory.MenuType<WeaponRepairMenu>> WEAPON_REPAIR_MENU=MENUS.register("weapon_repair",()->net.minecraftforge.common.extensions.IForgeMenuType.create(WeaponRepairMenu::new));
     public static final RegistryObject<EntityType<FallenSoldier>> FALLEN_SOLDIER = ENTITIES.register("fallen_soldier", () ->
             EntityType.Builder.<FallenSoldier>of(FallenSoldier::new,MobCategory.MISC).sized(1.8f,.45f).clientTrackingRange(8).updateInterval(20).build("gnfrontier:fallen_soldier"));
     public static final RegistryObject<EntityType<ScavengerHook>> SCAVENGER_HOOK = ENTITIES.register("scavenger_hook", () ->
@@ -107,5 +108,6 @@ public final class Frontier {
         MinecraftForge.EVENT_BUS.register(new Hypoxia());
         MinecraftForge.EVENT_BUS.register(new StrategicEvents());
         MinecraftForge.EVENT_BUS.register(new FactionHostility());
+        MinecraftForge.EVENT_BUS.register(new WeaponRepairKit());
     }
 }

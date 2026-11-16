@@ -227,3 +227,11 @@ tasks.register('visualReviewJar', Jar) {
 }
 reobf { visualReviewJar {} }
 tasks.named('visualReviewJar') { finalizedBy 'reobfVisualReviewJar' }
+
+tasks.register('verifyWeaponRepair', JavaExec) {
+    dependsOn 'verificationClasses'
+    classpath = sourceSets.verification.runtimeClasspath
+    mainClass = 'local.gnfrontier.core.WeaponRepairVerification'
+    maxHeapSize = '256m'
+    jvmArgs '-ea', '-XX:ActiveProcessorCount=2'
+}

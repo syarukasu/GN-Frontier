@@ -51,6 +51,7 @@ public final class FallenSoldierRenderer extends EntityRenderer<FallenSoldier> {
     public static void bind(IEventBus bus){
         bus.addListener((EntityRenderersEvent.RegisterRenderers event)->event.registerEntityRenderer(Frontier.FALLEN_SOLDIER.get(),FallenSoldierRenderer::new));
         bus.addListener((net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent event)->event.enqueueWork(()->net.minecraft.client.gui.screens.MenuScreens.register(Frontier.CORPSE_MENU.get(),CorpseScreen::new)));
+        bus.addListener((net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent event)->event.enqueueWork(()->net.minecraft.client.gui.screens.MenuScreens.register(Frontier.WEAPON_REPAIR_MENU.get(),WeaponRepairScreen::new)));
     }
     /** Simple Enemy/Combined Arms already supply a complete fallen pose, including relaxed arms. */
     @SuppressWarnings("unchecked")

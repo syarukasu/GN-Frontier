@@ -17,6 +17,8 @@ public final class PrototypeConfig {
     public static final ForgeConfigSpec.IntValue CORPSE_SEARCH_TICKS,CORPSE_EMPTY_SEARCH_TICKS;
     public static final ForgeConfigSpec.BooleanValue NIGHT_ZOMBIES;
     public static final ForgeConfigSpec.DoubleValue NIGHT_ZOMBIE_HEALTH,NIGHT_ZOMBIE_DAMAGE,NIGHT_ZOMBIE_SPEED;
+    public static final ForgeConfigSpec.BooleanValue WEAPON_REPAIR;
+    public static final ForgeConfigSpec.IntValue WEAPON_REPAIR_PERCENT;
     static {
         ForgeConfigSpec.Builder b = new ForgeConfigSpec.Builder();
         b.comment("Prototype balance, NOT original-series settings. Applies only to activated GN worlds.").push("rules");
@@ -61,6 +63,11 @@ public final class PrototypeConfig {
         b.comment("Corpse searching, measured in server ticks. Reproduction balance, not original Tarkov timing.").push("corpseSearch");
         CORPSE_SEARCH_TICKS=b.defineInRange("itemTicks",30,1,1200);
         CORPSE_EMPTY_SEARCH_TICKS=b.defineInRange("emptySlotTicks",2,1,200);
+        b.pop();
+        b.comment("Pack-owned TaCZ repair-kit behavior. Amount and interaction are provisional, not confirmed source-video settings.",
+                  "One kit restores this percentage of maximum Gun Durability wear; unrelated gun NBT is retained.").push("weaponRepairKit");
+        WEAPON_REPAIR=b.define("enabled",true);
+        WEAPON_REPAIR_PERCENT=b.defineInRange("restorePercent",25,1,100);
         b.pop(); SPEC = b.build();
     }
 }

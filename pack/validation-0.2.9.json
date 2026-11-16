@@ -1,0 +1,189 @@
+{
+  "schema": 1,
+  "version": "0.2.9",
+  "date": "2026-11-16",
+  "modificationIds": [
+    "GN-100"
+  ],
+  "coreSha256": "a06d42fc4bcc2a5e286abf73bf72542322b5b8a2c4314c1927c19b3d20ff1c8f",
+  "releasePublished": false,
+  "offline": {
+    "status": "PASS",
+    "checks": 152406,
+    "groups": {
+      "core": 4067,
+      "campaign": 370,
+      "legacyDailyMissions": 40258,
+      "modularDeliveries": 106580,
+      "specifications": 1131
+    }
+  },
+  "localization": {
+    "status": "PASS",
+    "locale": "ja_jp",
+    "changedKeys": 204,
+    "namespaces": {
+      "ad_astra": 4,
+      "create": 3,
+      "creatingspace": 4,
+      "fzbe": 12,
+      "hamster": 123,
+      "immersive_weathering": 41,
+      "minecraft": 1,
+      "railways": 1,
+      "skarrier_mobs": 1,
+      "superbwarfare": 12,
+      "tacz": 2
+    },
+    "registeredVisibleAdvancements": 499,
+    "resolvedTitlesAndDescriptions": 998,
+    "untranslatedEnglishProse": 0,
+    "displayOnlyDataOverrides": 2,
+    "criteriaRewardsRequirementsIconsPreserved": true,
+    "gunModelNumbersRetained": true
+  },
+  "runtime": {
+    "status": "PASS",
+    "coreSha256": "a06d42fc4bcc2a5e286abf73bf72542322b5b8a2c4314c1927c19b3d20ff1c8f",
+    "screenshots": [
+      {
+        "path": "revisions/version-control-r39/spec-0.2.9/final-toast-10-makarov.png",
+        "sha256": "99da8d2b06d5e8717c9195c38d64452c356df86ae2c236b4afaeb575382a7938",
+        "width": 1600,
+        "height": 900,
+        "visuallyReviewed": true
+      },
+      {
+        "path": "revisions/version-control-r39/spec-0.2.9/final-toast-11-weathering.png",
+        "sha256": "9f996f9b335ee07f36519a8463c216850d98b544a11915df425c8872a637e984",
+        "width": 1600,
+        "height": 900,
+        "visuallyReviewed": true
+      },
+      {
+        "path": "revisions/version-control-r39/spec-0.2.9/final-toast-12-orbit.png",
+        "sha256": "420623cd45dd5e75a70df62f615dcfa34828b139c2346cf4f3f3fde5f4234ed0",
+        "width": 1600,
+        "height": 900,
+        "visuallyReviewed": true
+      },
+      {
+        "path": "revisions/version-control-r39/spec-0.2.9/final-toast-13-vehicles.png",
+        "sha256": "b4f0a28188561d80672a4b631aec61867bf19ee2628784aeb204c9fb79053bcc",
+        "width": 1600,
+        "height": 900,
+        "visuallyReviewed": true
+      },
+      {
+        "path": "revisions/version-control-r39/spec-0.2.9/final-toast-14-gun-acquired.png",
+        "sha256": "63123d53ac667ec74ad9e169a16cdec61587e95aff48b8511d1ff01319b31e76",
+        "width": 1600,
+        "height": 900,
+        "visuallyReviewed": true
+      },
+      {
+        "path": "revisions/version-control-r39/spec-0.2.9/final-kit-shop.png",
+        "sha256": "f2594f71dd0d7be58d7b7756525d58709975351e0bc55f21bb0670096aa6aae2",
+        "width": 1600,
+        "height": 900,
+        "visuallyReviewed": true
+      }
+    ],
+    "toastCases": [
+      {
+        "trigger": "native preview of previously earned advancement",
+        "source": "actual Minecraft framebuffer",
+        "description": "旧式の軍用・警察用拳銃。小型で携行しやすい。",
+        "screen": "world",
+        "renderedFrames": 14,
+        "advancement": "hamster:gun_archive/makarov",
+        "earned": true,
+        "title": "銃器記録：マカロフPM"
+      },
+      {
+        "trigger": "controlled server award",
+        "source": "actual Minecraft framebuffer",
+        "description": "原木から樹皮を剥ぎ取る。",
+        "screen": "world",
+        "renderedFrames": 13,
+        "advancement": "immersive_weathering:immersive_weathering/bark_off",
+        "earned": true,
+        "title": "樹皮を剥ぐ"
+      },
+      {
+        "trigger": "controlled server award",
+        "source": "actual Minecraft framebuffer",
+        "description": "地球の周回軌道へ到達する。",
+        "screen": "world",
+        "renderedFrames": 14,
+        "advancement": "creatingspace:reach_earth_orbit",
+        "earned": true,
+        "title": "地上を離れて"
+      },
+      {
+        "trigger": "controlled server award",
+        "source": "actual Minecraft framebuffer",
+        "description": "車両組立台を用意する。",
+        "screen": "world",
+        "renderedFrames": 14,
+        "advancement": "superbwarfare:main/vehicle_assembling",
+        "earned": true,
+        "title": "車両の組み立て"
+      },
+      {
+        "trigger": "real gun acquisition inventory criterion",
+        "source": "actual Minecraft framebuffer",
+        "description": "初期の自動拳銃の一つ。\n§e商業的な成功を収めた先駆的な設計。",
+        "screen": "world",
+        "renderedFrames": 12,
+        "advancement": "hamster:gun_archive/bergman1896",
+        "earned": true,
+        "title": "銃器記録：ベルグマンNo.3"
+      }
+    ],
+    "audit": "registered advancement manager and effective client language; includes hidden displays",
+    "all499VisuallyRendered": false,
+    "scope": "Five real rendered notifications plus the repair-kit market screen. Makarov was already earned and previewed using the native toast; other examples used controlled server awards or actual gun acquisition.",
+    "gunAcquisition": {
+      "gunId": "hamster:bergman1896",
+      "nativeInventoryCriterionCompleted": true
+    },
+    "reviewStateRestored": {
+      "restored": true,
+      "revokedReviewCriteria": 4,
+      "inventoryAndAdvancementsExact": true
+    },
+    "noNewCrashReport": true,
+    "clientClosed": true,
+    "runtimeRestored": true,
+    "temporaryAccountRemoved": true,
+    "optionsRestored": true,
+    "worldCopied": false,
+    "environmentCopied": false,
+    "desktopSwitched": false,
+    "osInputInjected": false,
+    "excludedFrames": [
+      {
+        "path": "revisions/version-control-r39/spec-0.2.9/final-toast-00-makarov.png",
+        "reason": "first frame after resource reload had no visible notification"
+      }
+    ]
+  },
+  "deployment": {
+    "status": "PASS",
+    "version": "0.2.9",
+    "coreSha256": "a06d42fc4bcc2a5e286abf73bf72542322b5b8a2c4314c1927c19b3d20ff1c8f",
+    "changedFiles": 17,
+    "thirdPartyJarsUnchanged": 132,
+    "singleCore": true,
+    "liveWorldsTouched": false,
+    "liveGameStarted": false,
+    "customConfigurationRetained": true
+  },
+  "repairKit": {
+    "sourceReport": "repair-kit-source-0.2.9.json",
+    "providerConfirmed": false,
+    "appearance": "manual redraw of the observed low dark case, rim, handle and two catches; no video pixel extraction or image generation",
+    "functionalParityConfirmed": false
+  }
+}

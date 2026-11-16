@@ -37,6 +37,7 @@
 !/tools/test_distribution.py
 !/tools/storage.py
 !/tools/audit_quest_repetition.java
+!/tools/verify_advancement_locales.py
 /docs/*
 !/docs/VERSIONING.md
 !/docs/DEVELOPMENT.md

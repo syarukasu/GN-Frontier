@@ -349,5 +349,8 @@
   "tag.item.forge.stripped_wood": "樹皮を剥いだ木",
   "tag.item.forge.tools.wrench": "レンチ",
   "tag.recipe_serializer.create.automation_ignore": "自動化不可",
-  "create.train_map.train_owned_by": "所有者：%1$s"
+  "create.train_map.train_owned_by": "所有者：%1$s",
+  "advancement.create.root": "機械文明の再建",
+  "advancement.create.musical_arm": "機械仕掛けの演奏家",
+  "advancement.create.andesite_alloy.desc": "機械の基礎となる素材、安山岩合金を手に入れる。"
 }

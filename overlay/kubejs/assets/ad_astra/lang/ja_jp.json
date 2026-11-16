@@ -46,5 +46,9 @@
   "config.ad_astra.steelTierEnergyCapacity": "鋼鉄段階のエネルギー容量",
   "config.ad_astra.steelTierFluidCapacity": "鋼鉄段階の最大液体容量",
   "config.ad_astra.steelTierMaxEnergyInOut": "鋼鉄段階の最大エネルギー入出力",
-  "item.ad_astra.astrodux": "宇宙探査の手引き"
+  "item.ad_astra.astrodux": "宇宙探査の手引き",
+  "advancements.ad_astra.ad_astra.title": "星々への航路",
+  "advancements.ad_astra.ad_astra.description": "大気圏の先へ進むため、設備を整える。",
+  "advancements.ad_astra.dj.title": "船内の音楽係",
+  "advancements.ad_astra.energizer.title": "蓄電の備え"
 }

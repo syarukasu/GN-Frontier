@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "version": "0.2.9",
+  "date": "2026-11-16",
+  "status": "provider-unconfirmed",
+  "video": {
+    "url": "https://www.youtube.com/watch?v=dqV4ANw9UhM&t=474s",
+    "episode": 1,
+    "time": "07:54",
+    "observedName": "武器修理キット",
+    "observedPrice": 300,
+    "observedAppearance": [
+      "横長の暗色ケース",
+      "上面の持ち手",
+      "銀灰色の縁と前面の留め金"
+    ],
+    "notObserved": [
+      "アイテムIDと提供MOD名",
+      "修理操作の画面",
+      "一回の回復量と消費数",
+      "TaCZ以外への適用範囲"
+    ]
+  },
+  "candidates": [
+    {
+      "name": "HBM Nuclear Tech Modernized",
+      "artifact": "hbm_m-0.2.1-alpha+1.20.1-forge.jar",
+      "item": "hbm_m:gun_kit_2",
+      "result": "現構成の代替品。原版は小さい青色のキットで、原動画の黒いケースとは一致しない。ModItemsの登録先は汎用Itemであり、TaCZ修理への対応を確認したという扱いにはしない。",
+      "installed": true
+    },
+    {
+      "name": "TACZ: Durability 2.2.2",
+      "url": "https://github.com/Corrinedev/gundurability",
+      "artifact": "gundb-2.2.2-1.20.1.jar",
+      "sha256": "4bb49bd1e2a6c6f0d393b88af59da12db0f1c765801852ce1d15b87b7b33683d",
+      "result": "現在の銃耐久・修理システム。配布JARのdata/gundb/gundbとAnvilMenuMixinを照合し、銃種別の素材を使う金床修理を確認。動画の黒いケースを提供する証拠はない。",
+      "installed": true
+    },
+    {
+      "name": "TACZ: Durability 1.7.0",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/tacz-durability/files/6059475",
+      "artifact": "gundurability-1.7.0.jar",
+      "sha256": "18cc0c5931143ab9d9884837e94c1e3f0efd44f30d0eb34ba345cc32280950c7",
+      "result": "公式旧版の言語・モデル・修理用画像を確認。整備台、真鍮ブラシ、銃用潤滑剤、銃身・ばね・ボルトの構成で、黒いケースとの一致を確認できない。",
+      "installed": false
+    },
+    {
+      "name": "Iron Repair Kits 2.7.7 / Forge 1.20.1",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/iron-repair-kits/files/9048566",
+      "artifact": "iron_repair_kits-2.7.7-forge-1.20.1.jar",
+      "sha256": "e80eaa5c3dbf6a6e0877028575d4498c6abd11534cc33d302da071dea70be865",
+      "result": "公式配布の素材別キット画像を確認。工具が並ぶ開いたキットで、観測した閉じた黒いケースとは一致しない。",
+      "installed": false
+    },
+    {
+      "name": "Superb Warfare repair_tool",
+      "result": "元アイコンは溶接用の修理工具。動画のケースとは異なる。",
+      "installed": true
+    },
+    {
+      "name": "TaCZ Expert toolbox",
+      "result": "暗色ケースのブロックモデルはあるが、動画の武器修理キットを提供する証拠がない。収納・装飾モデルを修理用品だと決め付けない。",
+      "installed": true
+    },
+    {
+      "name": "Just Enough Guns / jeg:repair_kit",
+      "url": "https://github.com/MigaMiDev/Just-Enough-Guns/wiki/Repair-Kit",
+      "textureUrl": "https://github.com/MigaMiDev/Just-Enough-Guns/blob/master/src/main/resources/assets/jeg/textures/item/repair_kit.png",
+      "textureSha256": "43e719392ecac4fcea4335d4f7bfe50404311f1047e8d7f3c4461ad3b02ac9c0",
+      "result": "作者リポジトリの原画像は茶・橙色の工具箱で、動画の黒いケースと一致しない。作者Wikiの修理説明もJEG側の仕様であり、TaCZとの互換性を示す根拠にはしない。",
+      "installed": false
+    },
+    {
+      "name": "Auto Repair Kits",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/auto-repair-kits",
+      "result": "公式説明は充填式の自動修理。動画では使用方式を確認できず、名称の類似だけでは同定できない。候補保留。",
+      "installed": false
+    },
+    {
+      "name": "未確認の追加MODまたは原作者独自アイテム",
+      "result": "外観変更された既存品や独自定義も残る。提供IDか修理画面の追加証拠が必要。",
+      "installed": false
+    }
+  ],
+  "reproduction": {
+    "modelOverride": "overlay/kubejs/assets/hbm_m/models/item/gun_kit_2.json",
+    "texture": "overlay/kubejs/assets/gnfrontier/textures/item/weapon_repair_kit.png",
+    "textureSha256": "4c31b0e334b555cca9a15310c6efb49ee2853db39f2dcb2c8ef11d66069a53eb",
+    "method": "32x32で手作業の模写。横長の比率、持ち手、縁、左右の留め金を修正。映像の画素抽出・画像生成は使用していない。",
+    "newFunctionalRepairRulesAdded": false,
+    "functionalParity": "未確認。外観模写と販売価格の対応を、修理機能の完成とは分けて管理する。"
+  }
+}

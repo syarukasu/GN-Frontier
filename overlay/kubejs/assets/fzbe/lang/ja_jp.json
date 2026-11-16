@@ -275,5 +275,17 @@
   "key.categories.fzbe": "FreeZBe 武器装備",
   "key.fzbe.open_menu": "性能調整画面を開く",
   "gui.fzbe.mod_menu.apply_success": "§a調整を適用しました",
-  "gui.fzbe.mod_menu.reset_success": "§e改修設定を初期化しました"
+  "gui.fzbe.mod_menu.reset_success": "§e改修設定を初期化しました",
+  "advancements.fzbe.lmgs.title": "軽機関銃",
+  "advancements.fzbe.lmgs.description": "軽機関銃を回収し、装備を整える。",
+  "advancements.fzbe.pistols.title": "拳銃",
+  "advancements.fzbe.pistols.description": "拳銃を回収し、装備を整える。",
+  "advancements.fzbe.rifles.title": "小銃",
+  "advancements.fzbe.rifles.description": "小銃を回収し、装備を整える。",
+  "advancements.fzbe.shotguns.title": "散弾銃",
+  "advancements.fzbe.shotguns.description": "散弾銃を回収し、装備を整える。",
+  "advancements.fzbe.smgs.title": "短機関銃",
+  "advancements.fzbe.smgs.description": "短機関銃を回収し、装備を整える。",
+  "advancements.fzbe.snipers.title": "狙撃銃",
+  "advancements.fzbe.snipers.description": "狙撃銃を回収し、装備を整える。"
 }

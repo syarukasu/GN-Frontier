@@ -41,5 +41,7 @@
   "tacz.ammo.602x41.name": "§d6.02x41 弾",
   "tacz.ammo.9x39.name": "§d9x39mm 弾",
   "ea.block.ammobench": "弾薬作業台",
-  "ea.ammobench.desc": "弾薬を製作する幅2ブロックの作業台。Endless Ammoの弾薬製作に必須ではありません。"
+  "ea.ammobench.desc": "弾薬を製作する幅2ブロックの作業台。Endless Ammoの弾薬製作に必須ではありません。",
+  "advancement.tacz.root.title": "銃器の基礎",
+  "advancement.tacz.hunt_showdown.title": "狩猟の決着"
 }

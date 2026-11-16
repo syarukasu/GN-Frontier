@@ -2055,5 +2055,6 @@
   "tag.item.railways.phantom_track_revealing": "幽霊線路を表示するもの",
   "tag.item.railways.streamlined_stack": "なめらかな煙突",
   "tag.item.railways.woodburner_stack": "薪機関車の煙突",
-  "tag.item.railways.wooden_headstocks": "木製の端梁"
+  "tag.item.railways.wooden_headstocks": "木製の端梁",
+  "advancement.railways.root": "鉄路の復旧"
 }

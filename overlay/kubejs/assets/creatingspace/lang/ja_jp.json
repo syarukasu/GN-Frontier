@@ -364,5 +364,9 @@
   "propellant_type.creatingspace.methalox": "メタン／液体酸素",
   "propellant_type.creatingspace.monoprop": "混合済みのメタン・液体酸素",
   "rocket.assemble.new_rocket": "新しいロケットを作成",
-  "item.creatingspace.space_food.tooltip.summary": "…うえっ"
+  "item.creatingspace.space_food.tooltip.summary": "…うえっ",
+  "advancement.creatingspace.reach_earth_orbit.title": "地上を離れて",
+  "advancement.creatingspace.reach_earth_orbit.description": "地球の周回軌道へ到達する。",
+  "advancement.creatingspace.where_is_the_cheese.title": "月面への第一歩",
+  "advancement.creatingspace.where_is_the_cheese.description": "月に到達する。"
 }

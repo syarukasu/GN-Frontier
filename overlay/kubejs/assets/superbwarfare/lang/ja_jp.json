@@ -444,5 +444,17 @@
   "context.superbwarfare.tactical_map.ok": "確定",
   "item.superbwarfare.ru_helmet_6b47": "東軍 6B47 防弾ヘルメット",
   "item.superbwarfare.ru_chest_6b43": "東軍 6B43 防弾ベスト",
-  "item.superbwarfare.us_chest_iotv": "西軍 IOTV 防弾ベスト"
+  "item.superbwarfare.us_chest_iotv": "西軍 IOTV 防弾ベスト",
+  "superbwarfare.advancement.main.blueprint_researching": "設計図の研究",
+  "superbwarfare.advancement.main.blueprint_researching.des": "設計図を作るための研究設備を用意する。",
+  "superbwarfare.advancement.main.epic_blueprint.des": "希少な設計図を見つける。",
+  "superbwarfare.advancement.main.handsome_frame": "知能回路の回収",
+  "superbwarfare.advancement.main.handsome_frame.des": "知能チップを手に入れる。",
+  "superbwarfare.advancement.main.root": "戦闘車両と兵装",
+  "superbwarfare.advancement.main.root.des": "車両と重火器を整え、戦場に備える。",
+  "superbwarfare.advancement.main.superb_blueprint.des": "特級の設計図を見つける。",
+  "superbwarfare.advancement.main.vehicle_assembling": "車両の組み立て",
+  "superbwarfare.advancement.main.vehicle_assembling.des": "車両組立台を用意する。",
+  "superbwarfare.advancement.main.virtual_blueprint.des": "仮想設計図を見つける。確かに手の中にある。",
+  "superbwarfare.advancement.main.critical_hit.des": "頭部への一撃を決める。"
 }

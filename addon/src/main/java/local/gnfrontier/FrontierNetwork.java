@@ -14,7 +14,7 @@ import java.util.*;
 import java.util.function.Supplier;
 
 public final class FrontierNetwork {
-    private static final String VERSION = "9";
+    private static final String VERSION = "10";
     public static final SimpleChannel CHANNEL = NetworkRegistry.newSimpleChannel(Frontier.id("pda"), () -> VERSION, VERSION::equals, VERSION::equals);
     private static final Map<UUID, Long> LAST_REQUEST = new HashMap<>();
     private static final Map<UUID, Long> LAST_REFRESH = new HashMap<>();
@@ -65,6 +65,11 @@ public final class FrontierNetwork {
         static KickRequest decode(FriendlyByteBuf b){return new KickRequest();}
         static void handle(KickRequest m,Supplier<NetworkEvent.Context> ctx){var c=ctx.get();c.enqueueWork(()->{if(c.getSender()!=null)WindowKick.kick(c.getSender());});c.setPacketHandled(true);}
     }
+    public record SignalState(boolean enabled,boolean lost){
+        static void encode(SignalState state,FriendlyByteBuf b){b.writeBoolean(state.enabled);b.writeBoolean(state.lost);}
+        static SignalState decode(FriendlyByteBuf b){return new SignalState(b.readBoolean(),b.readBoolean());}
+        static void handle(SignalState state,Supplier<NetworkEvent.Context> ctx){var context=ctx.get();context.enqueueWork(()->DistExecutor.unsafeRunWhenOn(Dist.CLIENT,()->()->local.gnfrontier.client.PdaScreen.signal(state.enabled,state.lost)));context.setPacketHandled(true);}
+    }
     public record KickAnimation(int entityId) {
         static void encode(KickAnimation m,FriendlyByteBuf b){b.writeVarInt(m.entityId);}
         static KickAnimation decode(FriendlyByteBuf b){return new KickAnimation(b.readVarInt());}
@@ -82,6 +87,7 @@ public final class FrontierNetwork {
         CHANNEL.registerMessage(3,KickRequest.class,KickRequest::encode,KickRequest::decode,KickRequest::handle,Optional.of(NetworkDirection.PLAY_TO_SERVER));
         CHANNEL.registerMessage(4,KickAnimation.class,KickAnimation::encode,KickAnimation::decode,KickAnimation::handle,Optional.of(NetworkDirection.PLAY_TO_CLIENT));
         CHANNEL.registerMessage(5,Condition.class,Condition::encode,Condition::decode,Condition::handle,Optional.of(NetworkDirection.PLAY_TO_CLIENT));
+        CHANNEL.registerMessage(6,SignalState.class,SignalState::encode,SignalState::decode,SignalState::handle,Optional.of(NetworkDirection.PLAY_TO_CLIENT));
     }
     public static void forget(UUID player) { LAST_REQUEST.remove(player); LAST_REFRESH.remove(player); }
     public static void send(ServerPlayer player, String message) {
@@ -90,14 +96,15 @@ public final class FrontierNetwork {
     private static void send(ServerPlayer player, String message, boolean open) {
         WorldState world = WorldState.get(player.serverLevel());
         long tick = player.serverLevel().getServer().overworld().getGameTime();
-        world.refresh(tick);
+        world.refresh(player.serverLevel());
         Economy.State account = world.account(player.getUUID());
         Economy.refreshTasks(account, player.getUUID(), tick); world.setDirty();
-        Campaign.State campaign=world.campaign(player.getUUID());Campaign.refresh(campaign,player.getUUID(),tick);
+        Campaign.State campaign=world.refreshCampaign(player.getUUID(),player.serverLevel());
         CompoundTag n = WorldState.encode(account);
         n.putBoolean("open", open);
         n.putBoolean("enabled", world.enabled); n.putBoolean("signalLost", Campaign.signalLost(campaign,account,tick)); n.putString("message", message);
-        n.put("campaign",campaign.clientSnapshot());n.putLong("taskTicksRemaining",Economy.DAY_TICKS-tick%Economy.DAY_TICKS);
+        n.put("campaign",campaign.clientSnapshot());n.putLong("taskTicksRemaining",world.dailyCycle.remaining());
+        n.putBoolean("daylightCycle",player.getServer().overworld().getGameRules().getBoolean(net.minecraft.world.level.GameRules.RULE_DAYLIGHT));
         n.putInt("militaryRank",Campaign.militaryRank(account));n.putBoolean("satelliteOnline",Campaign.satelliteOnline(campaign,tick));n.putBoolean("deterrenceOnline",Campaign.deterrenceOnline(campaign,tick));
         ListTag offers = new ListTag();
         for (Economy.Offer offer : Economy.OFFERS) {

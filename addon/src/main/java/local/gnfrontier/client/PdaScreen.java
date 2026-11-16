@@ -29,6 +29,9 @@ public final class PdaScreen {
     }
     private static final String[] CATEGORIES={"food","medical","ammo","weapons","scrap","computing","permits"};
     public static boolean isNative(Screen screen){return screen!=null&&screen.getClass().getName().equals(NATIVE);}
+    public static boolean signalLost(){return snapshot.getBoolean("enabled")&&snapshot.getBoolean("signalLost");}
+    public static void signal(boolean enabled,boolean lost){snapshot.putBoolean("enabled",enabled);snapshot.putBoolean("signalLost",lost);hits.clear();}
+    public static void reset(){snapshot=new CompoundTag();hits.clear();}
     public static String tab(Screen screen){
         if(!isNative(screen))return "MAP";
         try {if(tabField==null){tabField=screen.getClass().getDeclaredField("activeTab");tabField.setAccessible(true);}return ((Enum<?>)tabField.get(screen)).name();}
@@ -59,11 +62,18 @@ public final class PdaScreen {
         bx=x;by=y;scale=s;textScale=s*2.6f;
         left=px(200);top=py(255);right=px(1398);bottom=py(925);side=px(1465);sideRight=px(1764);
         rowHeight=Math.max(15,Math.round(22*textScale));hits.clear();
+        if(signalLost()){
+            // Same continuous map area as the source PDA, not the shop/chat's split panels.
+            g.fill(px(190),py(243),px(1776),py(990),0xff141810);
+            var label=tr("gui.gnfrontier.signal_lost");var font=Minecraft.getInstance().font;
+            float size=scale*7f;
+            g.pose().pushPose();g.pose().translate(px(983),py(617),0);g.pose().scale(size,size,1);
+            g.drawString(font,label,-font.width(label)/2,-font.lineHeight/2,0xe5e2b2,false);g.pose().popPose();return;
+        }
         // The video fills the content areas over the frame's unused chat controls.
         g.fill(px(198),py(250),px(1400),py(930),0xff20231e);
         g.fill(px(1465),py(255),px(1764),py(930),0xff20231e);
         if(!snapshot.getBoolean("enabled")){text(g,tr("gui.gnfrontier.disabled"),left,top,right-left,WARN);return;}
-        if(snapshot.getBoolean("signalLost")){text(g,tr("gui.gnfrontier.signal_lost"),left,top,right-left,WARN);return;}
         switch(active){case "CONTACTS"->shop(g,mx,my);case "TASKS"->tasks(g,mx,my);case "STATS"->stats(g,mx,my);default->{}}
         String message=snapshot.getString("message");
         if(message.equals("SIGNAL LOST"))message=tr("gui.gnfrontier.signal_lost");
@@ -180,7 +190,7 @@ public final class PdaScreen {
         String label=done?"gui.gnfrontier.claimed":!accepted?"gui.gnfrontier.accept":special||q.getString("kind").equals("DELIVERY")?"gui.gnfrontier.quest.deliver":"gui.gnfrontier.claim";
         int index=selected;boolean enabled=!done&&(!special||q.getBoolean("unlocked"))&&(!accepted||q.getBoolean("ready"));
         button(g,tr(label),px(1529),py(950),px(1702)-px(1529),Math.max(6,py(983)-py(950)),enabled,false,mx,my,()->request(special?(accepted?"quest_claim":"quest_accept"):(accepted?"claim":"accept"),q.getString(special?"token":"claimToken"),special?0:index));
-        if(!special)text(g,tr("gui.gnfrontier.task_refresh",(snapshot.getLong("taskTicksRemaining")+1199)/1200),left,bottom-rowHeight,right-left,MUTED);
+        if(!special)text(g,snapshot.getBoolean("daylightCycle")?tr("gui.gnfrontier.task_refresh",(snapshot.getLong("taskTicksRemaining")+1199)/1200):tr("gui.gnfrontier.time_paused"),left,bottom-rowHeight,right-left,MUTED);
         if(!hovered.isEmpty())g.renderTooltip(Minecraft.getInstance().font,hovered,mx,my);
     }
     private static void stats(GuiGraphics g,int mx,int my){

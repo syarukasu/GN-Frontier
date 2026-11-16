@@ -99,12 +99,12 @@ public final class DailyMissions {
                 int index=(int)((start+(long)(i+slot*7919)*step)%catalog.variants);Campaign.Mission m=data.variants.get(index);
                 if(pass<2&&slot==0&&m.kind()!=Campaign.Kind.DELIVERY)continue;
                 if(pass<2&&slot==1&&m.kind()!=Campaign.Kind.HUNT&&m.kind()!=Campaign.Kind.SOLDIER)continue;
-                if(today.contains(m.objective())||state.issuedMissions.contains(m.id())||state.issuedAppearances.contains(m.appearance()))continue;
+                if(today.contains(m.objective())||state.issuedMissions.contains(m.id())||state.issuedAppearances.contains(m.appearance())||state.issuedContents.contains(m.contentKey()))continue;
                 if((pass==0||pass==2)&&state.recentObjectives.contains(m.objective()))continue;
                 picked=m;break;
             }
             if(picked==null||state.issuedMissions.size()>=MAX_HISTORY)break;
-            board.add(picked);today.add(picked.objective());state.issuedMissions.add(picked.id());state.issuedAppearances.add(picked.appearance());
+            board.add(picked);today.add(picked.objective());remember(state,picked);
         }
         for(Campaign.Mission m:board)state.recentObjectives.add(m.objective());
         while(state.recentObjectives.size()>9)state.recentObjectives.remove(0);
@@ -112,30 +112,39 @@ public final class DailyMissions {
     }
     private static boolean available(Campaign.State state,Set<String> today,Campaign.Mission m,boolean avoidRecent){
         Set<String> objectives=DeliveryModules.objectives(m);
-        return !state.issuedMissions.contains(m.id())&&!state.issuedAppearances.contains(m.appearance())
+        return !state.issuedMissions.contains(m.id())&&!state.issuedAppearances.contains(m.appearance())&&!state.issuedContents.contains(m.contentKey())
             &&Collections.disjoint(today,objectives)&&(!avoidRecent||Collections.disjoint(state.recentObjectives,objectives));
     }
+    private static void remember(Campaign.State state,Campaign.Mission mission){
+        state.issuedMissions.add(mission.id());state.issuedAppearances.add(mission.appearance());state.issuedContents.add(mission.contentKey());
+    }
+    private static Campaign.Mission delivery(Compiled data,Campaign.State state,Set<String> today,SplittableRandom random){
+        for(int attempt=0;attempt<384;attempt++){
+            var mission=DeliveryModules.sample(data.catalog.deliveries,random);
+            if(available(state,today,mission,attempt<256))return mission;
+        }
+        return null;
+    }
+    private static Campaign.Mission combat(Compiled data,Campaign.State state,Set<String> today,SplittableRandom random,boolean ground){
+        int start=random.nextInt(data.variants.size());
+        for(int pass=0;pass<4;pass++)for(int i=0;i<data.variants.size();i++){
+            var mission=data.variants.get((start+i)%data.variants.size());if(mission.kind()==Campaign.Kind.DELIVERY)continue;
+            if(ground&&pass<2&&mission.kind()!=Campaign.Kind.HUNT&&mission.kind()!=Campaign.Kind.SOLDIER)continue;
+            if(available(state,today,mission,pass%2==0))return mission;
+        }
+        return null;
+    }
     private static List<Campaign.Mission> drawModules(Compiled data,Campaign.State state,UUID player,long day){
+        for(var mission:state.dailyMissions)state.issuedContents.add(mission.contentKey());
         SplittableRandom random=new SplittableRandom(player.getMostSignificantBits()^Long.rotateLeft(player.getLeastSignificantBits(),19)^day*0x9e3779b97f4a7c15L);
         List<Campaign.Mission> board=new ArrayList<>();Set<String> today=new HashSet<>();
         for(int slot=0;slot<3&&state.issuedMissions.size()<MAX_HISTORY;slot++){
             Campaign.Mission chosen=null;boolean delivery=slot==0||(slot==2&&random.nextInt(4)!=0);
-            if(delivery){
-                // Bounded attempts regardless of the theoretical combination count or saved history size.
-                for(int attempt=0;attempt<192&&chosen==null;attempt++){
-                    var m=DeliveryModules.sample(data.catalog.deliveries,random);
-                    if(available(state,today,m,attempt<128))chosen=m;
-                }
-            }else{
-                int start=random.nextInt(data.variants.size());
-                for(int pass=0;pass<4&&chosen==null;pass++)for(int i=0;i<data.variants.size();i++){
-                    var m=data.variants.get((start+i)%data.variants.size());if(m.kind()==Campaign.Kind.DELIVERY)continue;
-                    if(slot==1&&pass<2&&m.kind()!=Campaign.Kind.HUNT&&m.kind()!=Campaign.Kind.SOLDIER)continue;
-                    if(available(state,today,m,pass%2==0)){chosen=m;break;}
-                }
-            }
+            chosen=delivery?delivery(data,state,today,random):combat(data,state,today,random,slot==1);
+            // Exhaustion never weakens the content guard. Fill spare slots from the other kind.
+            if(chosen==null)chosen=delivery?combat(data,state,today,random,false):delivery(data,state,today,random);
             if(chosen==null)continue;
-            board.add(chosen);today.addAll(DeliveryModules.objectives(chosen));state.issuedMissions.add(chosen.id());state.issuedAppearances.add(chosen.appearance());
+            board.add(chosen);today.addAll(DeliveryModules.objectives(chosen));remember(state,chosen);
         }
         for(var m:board)state.recentObjectives.addAll(new TreeSet<>(DeliveryModules.objectives(m)));
         while(state.recentObjectives.size()>9)state.recentObjectives.remove(0);

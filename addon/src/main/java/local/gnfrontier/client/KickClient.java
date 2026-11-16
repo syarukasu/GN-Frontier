@@ -39,11 +39,11 @@ public final class KickClient {
         if(e.phase!=TickEvent.Phase.END)return;Minecraft mc=Minecraft.getInstance();
         if(mc.level==null || mc.player==null)return;
         long now=mc.level.getGameTime();starts.entrySet().removeIf(x->now-x.getValue()>12);
-        while(KEY.consumeClick())if(mc.screen==null && (now<lastRequest || now-lastRequest>=14)) {
+        while(KEY.consumeClick())if(mc.screen==null&&!mc.player.isPassenger()&&!net.minecraft.client.gui.screens.Screen.hasControlDown()&&!net.minecraft.client.gui.screens.Screen.hasAltDown() && (now<lastRequest || now-lastRequest>=14)) {
             lastRequest=now;FrontierNetwork.CHANNEL.sendToServer(new FrontierNetwork.KickRequest());
         }
     }
-    @SubscribeEvent public static void logout(ClientPlayerNetworkEvent.LoggingOut e){starts.clear();lastRequest=Long.MIN_VALUE/2;AtmosphereOverrides.resetClient();}
+    @SubscribeEvent public static void logout(ClientPlayerNetworkEvent.LoggingOut e){starts.clear();lastRequest=Long.MIN_VALUE/2;AtmosphereOverrides.resetClient();PdaScreen.reset();}
     @SubscribeEvent(priority=EventPriority.HIGHEST) public static void hand(RenderHandEvent e) {
         Minecraft mc=Minecraft.getInstance();if(mc.player==null)return;float f=strength(mc.player.getId(),e.getPartialTick());
         if(f<=0 || !mc.options.getCameraType().isFirstPerson())return;

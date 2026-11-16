@@ -166,16 +166,6 @@ public final class Gameplay {
     }
     @SubscribeEvent(priority = EventPriority.LOWEST) public void death(LivingDeathEvent event) {
         if (event.isCanceled() || !(event.getEntity().level() instanceof ServerLevel level) || !active(level)) return;
-        if (event.getSource().getEntity() instanceof ServerPlayer killer) {
-            ResourceLocation id = ForgeRegistries.ENTITY_TYPES.getKey(event.getEntity().getType());
-            if (id != null && id.getNamespace().equals("simpleenemymod")) {
-                String path = id.getPath();
-                if (path.equals("ruunit") || path.equals("usunit")) {
-                    WorldState d = WorldState.get(level); Economy.State s = d.account(killer.getUUID());
-                    Economy.aggression(s, path.equals("ruunit") ? Economy.Faction.EAST : Economy.Faction.WEST); d.setDirty(); DiplomacyBridge.sync(killer, s);
-                }
-            }
-        }
         if (event.getEntity() instanceof ServerPlayer player && PrototypeConfig.DELETE_ON_DEATH.get()) player.getInventory().clearContent();
     }
     @SubscribeEvent(priority = EventPriority.LOWEST) public void drops(LivingDropsEvent event) {
@@ -192,7 +182,7 @@ public final class Gameplay {
         if (event.phase != TickEvent.Phase.END) return;
         var server = event.getServer(); ServerLevel level = server.overworld(); WorldState data = WorldState.get(level);
         if (!data.enabled) return;
-        long tick = clock(level); data.refresh(tick);
+        long tick = clock(level); data.refresh(level);
         if (tick % 1200 == 0) for (ServerPlayer p : server.getPlayerList().getPlayers()) DiplomacyBridge.sync(p, data.account(p.getUUID()));
         if (tick % 200 == 0 && PrototypeConfig.DAY_ZOMBIES.get() && level.isDay() && level.getGameRules().getBoolean(GameRules.RULE_DOMOBSPAWNING)
             && level.getDifficulty() != Difficulty.PEACEFUL) {
@@ -206,10 +196,17 @@ public final class Gameplay {
                 Zombie zombie = EntityType.ZOMBIE.create(level); if (zombie == null) continue;
                 zombie.moveTo(pos.getX() + .5, pos.getY(), pos.getZ() + .5, 0, 0);
                 if (!level.noCollision(zombie)) continue;
-                zombie.finalizeSpawn(level, level.getCurrentDifficultyAt(pos), MobSpawnType.EVENT, null, null);
+                if(!daySpawnAllowed(zombie,level))continue;
+                zombie.finalizeSpawn(level, level.getCurrentDifficultyAt(pos), MobSpawnType.NATURAL, null, null);
                 level.addFreshEntity(zombie);
             }
         }
+    }
+    public static boolean daySpawnAllowed(Zombie zombie,ServerLevel level){
+        // Deliberate daylight spawning skips vanilla's darkness condition, but not Forge/In Control vetoes.
+        var event=new net.minecraftforge.event.entity.living.MobSpawnEvent.PositionCheck(zombie,level,MobSpawnType.NATURAL,null);
+        net.minecraftforge.common.MinecraftForge.EVENT_BUS.post(event);
+        return event.getResult()!=Event.Result.DENY;
     }
     @SubscribeEvent public void join(EntityJoinLevelEvent event) {
         if(event.getLevel() instanceof ServerLevel server&&active(server)&&event.getEntity() instanceof Mob mob)RegisteredBedGoal.install(mob);
@@ -230,8 +227,6 @@ public final class Gameplay {
     }
     @SubscribeEvent public void livingTick(LivingEvent.LivingTickEvent event) {
         if (!(event.getEntity() instanceof Zombie z) || !(z.level() instanceof ServerLevel level) || !active(level)) return;
-        // Daylight fire only; lava and block fire remain dangerous.
-        if (level.isDay() && level.canSeeSky(z.blockPosition()) && !z.isInLava() && !level.getBlockState(z.blockPosition()).is(BlockTags.FIRE)) z.clearFire();
         if (EnhancedAiCompat.present()) return;
         if (z.tickCount % 10 != 0) return;
         if (z.goalSelector.getRunningGoals().anyMatch(g -> g.getGoal() instanceof RegisteredBedGoal)) { breaking.remove(z.getId()); return; }

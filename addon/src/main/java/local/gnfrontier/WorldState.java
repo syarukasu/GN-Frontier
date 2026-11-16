@@ -21,6 +21,8 @@ public final class WorldState extends SavedData {
     public final Map<String, Integer> usedStock = new HashMap<>();
     public long stockDay = -1;
     public long lastAlertDecay = -1;
+    public local.gnfrontier.core.DailyCycle dailyCycle=new local.gnfrontier.core.DailyCycle();
+    private long dailyRefreshTick=Long.MIN_VALUE,dailyRefreshSun=Long.MIN_VALUE;
     public static WorldState get(ServerLevel level) {
         return level.getServer().overworld().getDataStorage().computeIfAbsent(WorldState::load, WorldState::new, "gnfrontier");
     }
@@ -34,6 +36,20 @@ public final class WorldState extends SavedData {
     }
     public void refresh(long tick) {
         long day = Math.max(0, tick / Economy.DAY_TICKS);
+        refreshAt(tick,day);
+    }
+    public void refresh(ServerLevel level){
+        var overworld=level.getServer().overworld();
+        if(dailyRefreshTick==overworld.getGameTime()&&dailyRefreshSun==overworld.getDayTime())return;
+        dailyRefreshTick=overworld.getGameTime();dailyRefreshSun=overworld.getDayTime();
+        long legacyDay=dailyCycle.initialized()?0:Math.max(stockDay,campaigns.values().stream().mapToLong(s->s.day).max().orElse(0));
+        dailyCycle.observe(overworld.getGameTime(),overworld.getDayTime(),legacyDay);
+        refreshAt(overworld.getGameTime(),dailyCycle.day());setDirty();
+    }
+    public Campaign.State refreshCampaign(UUID player,ServerLevel level){
+        refresh(level);var campaign=campaign(player);Campaign.refreshForDay(campaign,player,dailyCycle.day());return campaign;
+    }
+    private void refreshAt(long tick,long day){
         if (day > stockDay) { stockDay = day; usedStock.clear(); setDirty(); }
         if (lastAlertDecay < 0) { lastAlertDecay = tick; setDirty(); }
         if (tick >= lastAlertDecay + 1200) {
@@ -79,6 +95,7 @@ public final class WorldState extends SavedData {
     public static WorldState load(CompoundTag n) {
         if (n.getInt("schema") != 1) throw new IllegalStateException("Unsupported GN Frontier save schema; refusing to reset accounts");
         WorldState data = new WorldState(); data.enabled = n.getBoolean("enabled");
+        data.dailyCycle=local.gnfrontier.core.DailyCycle.load(n.getCompound("dailyCycle"));
         for (Tag tag : n.getList("players", Tag.TAG_COMPOUND)) {
             CompoundTag row = (CompoundTag) tag;
             UUID id = row.getUUID("uuid");
@@ -102,6 +119,7 @@ public final class WorldState extends SavedData {
     @Override public CompoundTag save(CompoundTag n) {
         n.putInt("schema", 1); n.putBoolean("enabled", enabled);
         n.putLong("stockDay", stockDay); n.putLong("lastAlertDecay", lastAlertDecay);
+        n.put("dailyCycle",dailyCycle.save());
         emission=EnvironmentEvents.captureEmission(emission);n.put("emission",emission.copy());
         ListTag planets=new ListTag();terraformedPlanets.forEach(p->planets.add(StringTag.valueOf(p)));n.put("terraformedPlanets",planets);
         ListTag list = new ListTag();

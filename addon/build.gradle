@@ -125,6 +125,16 @@ tasks.register('verifyDailyMissions',JavaExec) {
 }
 tasks.named('check') { dependsOn 'verifyDailyMissions' }
 
+tasks.register('verifySpecifications',JavaExec) {
+    dependsOn 'verificationClasses'
+    classpath=sourceSets.verification.runtimeClasspath
+    mainClass='local.gnfrontier.core.SpecificationVerification'
+    maxHeapSize='512m'
+    jvmArgs '-ea','-XX:ActiveProcessorCount=2'
+    args project.file('../overlay/kubejs/data/gnfrontier/daily_missions/catalog.json')
+}
+tasks.named('check') { dependsOn 'verifySpecifications' }
+
 tasks.register('verifyShrapnel',JavaExec) {
     dependsOn 'verificationClasses'
     classpath=sourceSets.verification.runtimeClasspath

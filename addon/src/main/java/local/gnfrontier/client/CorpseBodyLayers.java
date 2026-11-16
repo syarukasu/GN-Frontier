@@ -31,7 +31,8 @@ final class CorpseBodyLayers {
     static boolean render(FallenSoldier corpse,LivingEntity body,EntityRenderer<? super LivingEntity> renderer,PoseStack poses,MultiBufferSource buffers,int light){
         if(!(renderer instanceof LivingEntityRenderer<?,?> living)||!(living.getModel() instanceof HierarchicalModel<?> nativeModel))return false;
         String name=nativeModel.getClass().getName();
-        if(!name.endsWith(".RUunitModel")&&!name.endsWith(".USunitModel"))return false;
+        if(!name.endsWith(".RUunitModel")&&!name.endsWith(".USunitModel")
+                &&!name.endsWith(".PmcUnitModel")&&!name.endsWith(".PmcCommanderModel"))return false;
         var model=(HierarchicalModel<LivingEntity>)nativeModel;var root=model.root();if(!root.hasChild("unit"))return false;
         ModelPart unit=root.getChild("unit"),head=unit.getChild("head"),torso=unit.getChild("body");
         boolean helmet=corpse.visibleEquipment(5).isEmpty(),vest=corpse.visibleEquipment(4).isEmpty();

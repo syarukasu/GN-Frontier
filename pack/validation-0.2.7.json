@@ -1,0 +1,235 @@
+{
+  "schema": 1,
+  "version": "0.2.7",
+  "date": "2026-11-16",
+  "modificationIds": [
+    "GN-097",
+    "GN-098"
+  ],
+  "auditResolved": [
+    "A01",
+    "A02",
+    "A03",
+    "A04",
+    "A05",
+    "A06",
+    "A07",
+    "C01",
+    "C02",
+    "C03"
+  ],
+  "coreSha256": "88154ceb74213ac336ca5c6875fec1f89ad892a7ee09b4b72a5ff2f1410c4c8f",
+  "releasePublished": false,
+  "offline": {
+    "status": "PASS",
+    "checks": 158672,
+    "groups": {
+      "core": 4244,
+      "respawnPolicy": 29,
+      "campaign": 370,
+      "dailyMissionsLegacy": 40258,
+      "modularDeliveries": 106580,
+      "specifications": 1131,
+      "multiplayerLogic": 6060
+    },
+    "generationDays": 365,
+    "freshDeliveries": 1061,
+    "repeatedDeliveryContents": 0
+  },
+  "server": {
+    "status": "PASS",
+    "checks": 333,
+    "basisCoreSha256": "a754ee2bceb79db1a6377e1df8c4fa91e54fc8976e8e8a5d178f1b50188bf19e",
+    "exitCode": 0,
+    "done": true,
+    "runtimeRestored": true,
+    "globalTestWorlds": 2,
+    "existingRegisteredWorldReused": true,
+    "worldCopied": false,
+    "environmentCopied": false,
+    "specificationChecks": [
+      "regular/support faction classification: simpleenemymod:ruunit",
+      "actual player-attributed death: simpleenemymod:ruunit",
+      "bounty counts a hostile soldier fighting a non-player: simpleenemymod:ruunit",
+      "GN standing and alert reflect this regular/support death: simpleenemymod:ruunit",
+      "regular/support faction classification: simpleenemymod:usunit",
+      "actual player-attributed death: simpleenemymod:usunit",
+      "bounty counts a hostile soldier fighting a non-player: simpleenemymod:usunit",
+      "GN standing and alert reflect this regular/support death: simpleenemymod:usunit",
+      "regular/support faction classification: tacz_sewv:ru_medic",
+      "actual player-attributed death: tacz_sewv:ru_medic",
+      "bounty counts a hostile soldier fighting a non-player: tacz_sewv:ru_medic",
+      "GN standing and alert reflect this regular/support death: tacz_sewv:ru_medic",
+      "regular/support faction classification: tacz_sewv:us_medic",
+      "actual player-attributed death: tacz_sewv:us_medic",
+      "bounty counts a hostile soldier fighting a non-player: tacz_sewv:us_medic",
+      "GN standing and alert reflect this regular/support death: tacz_sewv:us_medic",
+      "regular/support faction classification: tacz_sewv:ru_engineer",
+      "actual player-attributed death: tacz_sewv:ru_engineer",
+      "bounty counts a hostile soldier fighting a non-player: tacz_sewv:ru_engineer",
+      "GN standing and alert reflect this regular/support death: tacz_sewv:ru_engineer",
+      "regular/support faction classification: tacz_sewv:us_engineer",
+      "actual player-attributed death: tacz_sewv:us_engineer",
+      "bounty counts a hostile soldier fighting a non-player: tacz_sewv:us_engineer",
+      "GN standing and alert reflect this regular/support death: tacz_sewv:us_engineer",
+      "regular/support faction classification: tacz_sewv:ru_combat_engineer",
+      "actual player-attributed death: tacz_sewv:ru_combat_engineer",
+      "bounty counts a hostile soldier fighting a non-player: tacz_sewv:ru_combat_engineer",
+      "GN standing and alert reflect this regular/support death: tacz_sewv:ru_combat_engineer",
+      "regular/support faction classification: tacz_sewv:us_combat_engineer",
+      "actual player-attributed death: tacz_sewv:us_combat_engineer",
+      "bounty counts a hostile soldier fighting a non-player: tacz_sewv:us_combat_engineer",
+      "GN standing and alert reflect this regular/support death: tacz_sewv:us_combat_engineer",
+      "alliance overrides a stale player target",
+      "allied kill is not a bounty before its penalty is applied",
+      "another player's neutral enemy is not automatically my bounty",
+      "hostile regular can target its enemy owner's bed",
+      "native bed goal starts for a reachable hostile bed",
+      "becoming allied stops an already selected bed attack",
+      "allied owner's bed is excluded",
+      "neutral owner's bed is excluded without personal aggression",
+      "neutral soldier personally attacking the owner may breach",
+      "a shared bed respects its allied co-owner",
+      "owned PMC companion is excluded from autonomous bed attacks and hostile bounties",
+      "PMC commander gun has no virtual or infinite ammunition",
+      "commander virtual ammunition becomes bounded physical reserves",
+      "finite ammunition migration never reissues ammo or rerolls the gun",
+      "native PMC commander reload consumes a physical round",
+      "legacy corpse migration clears virtual ammo but retains all real gun NBT",
+      "corpse migration is applied once without repeat ammo gains",
+      "daylight immunity retains external fire through a real zombie tick",
+      "daylight does not ignite the zombie",
+      "spawn-cap fixture has no connected players",
+      "daytime addition reaches In Control and is allowed below cap",
+      "native In Control denies the daytime addition at the shared population cap"
+    ],
+    "regularSupportDeathsVerified": 8,
+    "daySpawnVetoVerified": true,
+    "finitePmcAmmoVerified": true
+  },
+  "finalClientJarComparison": {
+    "status": "PASS",
+    "basisCoreSha256": "a754ee2bceb79db1a6377e1df8c4fa91e54fc8976e8e8a5d178f1b50188bf19e",
+    "candidateCoreSha256": "88154ceb74213ac336ca5c6875fec1f89ad892a7ee09b4b72a5ff2f1410c4c8f",
+    "changedEntries": [
+      "local/gnfrontier/client/PdaScreen$DetailLine.class",
+      "local/gnfrontier/client/PdaScreen.class",
+      "local/gnfrontier/mixin/NativePdaPagesMixin.class"
+    ],
+    "serverClassesByteIdentical": true,
+    "unchangedEntries": 532
+  },
+  "client": {
+    "status": "PASS",
+    "coreSha256": "88154ceb74213ac336ca5c6875fec1f89ad892a7ee09b4b72a5ff2f1410c4c8f",
+    "screenshotCount": 11,
+    "screenshots": [
+      {
+        "path": "revisions/version-control-r39/spec-0.2.7/00-pda-jammed.png",
+        "sha256": "5e05a22d896764fb5254f9a7a53cbae42760d7ce43e696050529ca2fcfdb4d2e",
+        "width": 1600,
+        "height": 900
+      },
+      {
+        "path": "revisions/version-control-r39/spec-0.2.7/01-pda-map-restored.png",
+        "sha256": "0bf35a2d2755981f4d1ec39986e6862f8296afbe0c099c1926f10b70e61aced0",
+        "width": 1600,
+        "height": 900
+      },
+      {
+        "path": "revisions/version-control-r39/spec-0.2.7/10-pmc-before.png",
+        "sha256": "97793469bbe7ffff4d775bc0686e00129bdbf50c6ab33f8367f6d5cfbf465d46",
+        "width": 1600,
+        "height": 900
+      },
+      {
+        "path": "revisions/version-control-r39/spec-0.2.7/11-pmc-loot-screen.png",
+        "sha256": "0d4ed1dbb958fea68435ccac613f485169828a42b102fdb7ff4b43cb61b422ee",
+        "width": 1600,
+        "height": 900
+      },
+      {
+        "path": "revisions/version-control-r39/spec-0.2.7/12-pmc-after.png",
+        "sha256": "1923a98cbff5b9b28bd94ba8bf3bacf530954540873b68bf4fdccc7fdb470a47",
+        "width": 1600,
+        "height": 900
+      },
+      {
+        "path": "revisions/version-control-r39/spec-0.2.7/20-regular-before.png",
+        "sha256": "c583b00bac6bdb5f67a840cacd8d700e5739544b6d74767ceaab5bd943aa68cc",
+        "width": 1600,
+        "height": 900
+      },
+      {
+        "path": "revisions/version-control-r39/spec-0.2.7/21-regular-loot-screen.png",
+        "sha256": "f18e6db68d2aa1a858ec68a5c82fdc72de005f4725f1f71d693b3dd523cc457e",
+        "width": 1600,
+        "height": 900
+      },
+      {
+        "path": "revisions/version-control-r39/spec-0.2.7/22-regular-after.png",
+        "sha256": "2c0ea198c941d7f65b39b942e26381de3d8488a3c4b526734a7d15dbc3ea5131",
+        "width": 1600,
+        "height": 900
+      },
+      {
+        "path": "revisions/version-control-r39/spec-0.2.7/23-corpse-searching.png",
+        "sha256": "7449a6c9924ae440b0a7b244edf86b4537a0ae62c53b2082af9aa33b7aa3feb6",
+        "width": 1600,
+        "height": 900
+      },
+      {
+        "path": "revisions/version-control-r39/spec-0.2.7/30-window-before.png",
+        "sha256": "cd6c72a9e2b18692ca526763020ddda4ad17ac42d2dedfab56e1cbaf093737fc",
+        "width": 1600,
+        "height": 900
+      },
+      {
+        "path": "revisions/version-control-r39/spec-0.2.7/31-window-after.png",
+        "sha256": "31215506cb17f34842fd5f89727740e0b8c339969edff476f4405418b5473b5b",
+        "width": 1600,
+        "height": 900
+      }
+    ],
+    "actualMinecraftRendering": true,
+    "imagesEdited": false,
+    "visuallyInspected": true,
+    "pdaReference": "Part1 09:15-09:16 / E034",
+    "standaloneMapBlocked": true,
+    "corpseTypes": [
+      "simpleenemymod:pmcunit",
+      "tacz_sewv:pmc_commander",
+      "simpleenemymod:ruunit",
+      "simpleenemymod:usunit"
+    ],
+    "allPossessionsConserved": true,
+    "remainingGunNbtPreserved": true,
+    "armorRemovalVisible": true,
+    "storageSearchCompleted": true,
+    "twoWindowBlocksBroken": true,
+    "kickForwardImpulse": 0.2,
+    "desktopSwitched": false,
+    "osInputInjected": false,
+    "runtimeRestored": true
+  },
+  "installation": {
+    "status": "PASS",
+    "version": "0.2.7",
+    "coreSha256": "88154ceb74213ac336ca5c6875fec1f89ad892a7ee09b4b72a5ff2f1410c4c8f",
+    "changedFiles": 7,
+    "thirdPartyJarsUnchanged": 132,
+    "singleCore": true,
+    "liveGameStarted": false,
+    "worldsTouched": false,
+    "customBindingsRetained": true
+  },
+  "limits": [
+    "The 333 native server checks ran on the basis JAR. Final changes affect only the listed three client rendering classes; all server entries are byte-identical.",
+    "Screenshots are local evidence from the existing registered review client and are excluded from the public source repository.",
+    "PMC visual fixtures use real NPC deaths and menu packets; missing armor was equipped to exercise its removal. They do not establish natural spawn equipment probabilities.",
+    "Pre-upgrade expired mission contents cannot be reconstructed. The current board is seeded into content history; later boards persist canonical contents.",
+    "Existing accepted mission payloads remain unchanged until renewal; the expanded target list applies to newly generated missions.",
+    "Natural dawn renewal is an adopted reproduction policy. The original video exact reset time is not confirmed.",
+    "Actual multi-client long sessions, live FPS, full video fidelity and publication/import of 0.2.7 distribution archives remain unverified."
+  ]
+}

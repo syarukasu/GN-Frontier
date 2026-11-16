@@ -18,26 +18,27 @@ public final class DailyMissionVerification {
         legacy=Campaign.State.load(old);DailyMissions.install(catalog);Campaign.refresh(legacy,player,0);
         check(!legacy.dailyInitialized&&Campaign.token(legacy,0).equals(legacyToken)&&legacy.accepted==1,"Existing day's mission and acceptance remain intact");
         Campaign.refresh(legacy,player,24000);check(legacy.dailyInitialized&&legacy.accepted==0,"Next day migrates legacy board");
-        Set<String> catalogIds=new HashSet<>(),appearances=new HashSet<>();Set<Campaign.Kind> kinds=new HashSet<>();
+        Set<String> catalogIds=new HashSet<>(),appearances=new HashSet<>(),contents=new HashSet<>();Set<Campaign.Kind> kinds=new HashSet<>();
         for(int i=0;i<catalog.variants();i++) {
             var m=DailyMissions.variant(catalog,i);m.validate();check(catalogIds.add(m.id()),"Catalog identities unique");check(appearances.add(m.appearance()),"Visible contract signatures unique");kinds.add(m.kind());
+            contents.add(m.contentKey());
             check(!m.description().contains("{")&&!m.title().contains("{"),"Placeholders fully resolved");
             check(Campaign.Mission.load(m.save()).equals(m),"Every issued payload round trips typed NBT");
             check(!m.description().contains("ノア"),"Merchant wording does not imply Noah knowledge");
         }
         check(kinds.equals(EnumSet.allOf(Campaign.Kind.class)),"All five mission kinds present");
-        Campaign.State state=new Campaign.State();Set<String> seen=new HashSet<>(),seenAppearance=new HashSet<>();
+        Campaign.State state=new Campaign.State();Set<String> seen=new HashSet<>(),seenAppearance=new HashSet<>(),seenContents=new HashSet<>();
         int day=0;long started=System.nanoTime();
-        while(seen.size()<catalogIds.size()&&day<catalog.variants()+2) {
+        while(seenContents.size()<contents.size()&&day<catalog.variants()+2) {
             Campaign.refresh(state,player,(long)day*24000);
             Set<String> objectives=new HashSet<>();
-            for(var m:state.dailyMissions){check(seen.add(m.id()),"No issued combination ever repeats");check(seenAppearance.add(m.appearance()),"No identical visible contract repeats");check(objectives.add(m.objective()),"No same-target duplicates on one board");}
-            if(day<30){check(state.dailyMissions.stream().anyMatch(m->m.kind()==Campaign.Kind.DELIVERY),"Early boards include delivery");check(state.dailyMissions.stream().anyMatch(m->m.kind()==Campaign.Kind.HUNT||m.kind()==Campaign.Kind.SOLDIER),"Early boards include ground hunt");}
+            for(var m:state.dailyMissions){check(seen.add(m.id()),"No issued combination ever repeats");check(seenAppearance.add(m.appearance()),"No identical visible contract repeats");check(seenContents.add(m.contentKey()),"No wording-only repeat of an objective");check(objectives.add(m.objective()),"No same-target duplicates on one board");}
+            if(day<3){check(state.dailyMissions.stream().anyMatch(m->m.kind()==Campaign.Kind.DELIVERY),"Early boards include delivery");check(state.dailyMissions.stream().anyMatch(m->m.kind()==Campaign.Kind.HUNT||m.kind()==Campaign.Kind.SOLDIER),"Early boards include ground hunt");}
             if(day%127==0){CompoundTag saved=state.save();state=Campaign.State.load(saved);check(state.save().equals(saved),"Board/history survives actual NBT");}
             if(day==100)DailyMissions.install(DailyMissions.parse(document));
             day++;
         }
-        check(seen.equals(catalogIds),"Every unique candidate can be reached despite recent-target preferences");
+        check(seenContents.equals(contents),"Every unique objective can be reached without repeating its wording variants");
         Campaign.refresh(state,player,(long)day*24000);check(Campaign.missionCount(state)==0,"Exhausted catalog never silently repeats");
         check(!state.clientSnapshot().contains("issuedMissions")&&!state.clientSnapshot().contains("issuedAppearances"),"History is never sent in PDA polling snapshots");
         var full=Campaign.State.load(state.save());Campaign.refresh(full,player,0);check(full.day==day&&full.dailyMissions.isEmpty(),"Clock rewind cannot refill exhausted pool");

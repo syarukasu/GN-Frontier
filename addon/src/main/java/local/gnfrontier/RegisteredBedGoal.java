@@ -46,7 +46,7 @@ public final class RegisteredBedGoal extends Goal {
         if(!eligible()||mob.level().getGameTime()<retryAt)return false;
         retryAt=mob.level().getGameTime()+60+mob.getRandom().nextInt(40);
         ServerLevel level=(ServerLevel)mob.level();path=null;route=List.of();
-        List<BlockPos> beds=RespawnRules.nearbyRegisteredBeds(level,mob.blockPosition(),PrototypeConfig.BED_ATTACK_RANGE.get());
+        List<BlockPos> beds=RespawnRules.nearbyRegisteredBeds(level,mob.blockPosition(),PrototypeConfig.BED_ATTACK_RANGE.get(),mob);
         for(BlockPos bed:beds){
             target=bed;if(!griefAllowed(bed))continue;
             if(inReach(bed,true))return true;
@@ -60,7 +60,7 @@ public final class RegisteredBedGoal extends Goal {
         }
         target=null;return false;
     }
-    @Override public boolean canContinueToUse(){return eligible()&&target!=null&&elapsed<1800&&target.distSqr(mob.blockPosition())<=Math.pow(PrototypeConfig.BED_ATTACK_RANGE.get()+4,2)&&RespawnRules.registeredBed((ServerLevel)mob.level(),target);}
+    @Override public boolean canContinueToUse(){return eligible()&&target!=null&&elapsed<1800&&target.distSqr(mob.blockPosition())<=Math.pow(PrototypeConfig.BED_ATTACK_RANGE.get()+4,2)&&RespawnRules.attackableBed((ServerLevel)mob.level(),target,mob);}
     @Override public void start(){elapsed=breaking=cursor=stalled=0;if(path!=null)mob.getNavigation().moveTo(path,1);}
     @Override public boolean requiresUpdateEveryTick(){return true;}
     private boolean inReach(BlockPos pos,boolean bed){
@@ -70,7 +70,7 @@ public final class RegisteredBedGoal extends Goal {
         return hit.getType()==HitResult.Type.BLOCK&&(bed?pos.equals(RespawnRules.bedHead((ServerLevel)mob.level(),hit.getBlockPos())):pos.equals(hit.getBlockPos()));
     }
     private boolean griefAllowed(BlockPos pos){
-        if(!eligible()||target==null||!RespawnRules.registeredBed((ServerLevel)mob.level(),target))return false;
+        if(!eligible()||target==null||!RespawnRules.attackableBed((ServerLevel)mob.level(),target,mob))return false;
         BREAK_CHECK.set(new Permission(mob,pos));
         try{return ForgeEventFactory.getMobGriefingEvent(mob.level(),mob);}finally{BREAK_CHECK.remove();}
     }

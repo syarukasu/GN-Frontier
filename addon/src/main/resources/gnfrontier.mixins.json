@@ -23,6 +23,7 @@
     "DoomsdayDropsMixin",
     "EmissionScopeMixin",
     "GunTuningMixin",
+    "ZombieSunlightMixin",
     "MilitaryEventsMixin",
     "RotorSpawnMixin",
     "BedRemovalMixin",

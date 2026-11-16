@@ -22,7 +22,7 @@ public final class DiplomacyBridge {
             Method set = dataClass.getMethod("set", subjectClass, subjectClass, relationClass);
             for (int i = 0; i < 2; i++) {
                 Object faction = subjectClass.getMethod("faction", String.class).invoke(null, i == 0 ? "ru" : "us");
-                String status = account.alert[i] >= 30 || account.reputation[i] <= -20 ? "ENEMY" : account.reputation[i] >= 30 ? "ALLY" : "NEUTRAL";
+                String status = local.gnfrontier.core.FactionStanding.relation(account,i).name();
                 set.invoke(data, subject, faction, Enum.valueOf(relationClass, status));
             }
         } catch (ReflectiveOperationException | LinkageError ex) {

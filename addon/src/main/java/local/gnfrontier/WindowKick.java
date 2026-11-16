@@ -21,7 +21,7 @@ public final class WindowKick {
     private static final TagKey<Block> WINDOWS=TagKey.create(Registries.BLOCK,new ResourceLocation("gnfrontier:kickable_windows"));
     private static final Map<UUID,Long> last=new HashMap<>();
     public static void kick(ServerPlayer p) {
-        if(!p.isAlive() || p.isSpectator() || Hypoxia.down(p) || !p.mayBuild() || !WorldState.get(p.serverLevel()).enabled)return;
+        if(!p.isAlive() || p.isSpectator() || p.isPassenger() || Hypoxia.down(p) || !p.mayBuild() || !WorldState.get(p.serverLevel()).enabled)return;
         long now=p.serverLevel().getGameTime(),previous=last.getOrDefault(p.getUUID(),Long.MIN_VALUE/2);
         if(now>=previous && now-previous<14)return;
         last.put(p.getUUID(),now);

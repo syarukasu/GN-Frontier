@@ -43,6 +43,22 @@ public final class CorpseVisualChecks {
     private static void cmd(ServerPlayer p,String command){p.getServer().getCommands().performPrefixedCommand(p.getServer().createCommandSourceStack(),command);}
     public static Map<String,Object> server(ServerPlayer p,String action,Properties settings){
         owned(p);var level=p.serverLevel();Map<String,Object> data=new LinkedHashMap<>();
+        if(action.equals("jam-on")||action.equals("jam-off")){
+            var world=WorldState.get(level);var account=world.account(p.getUUID());account.alert[0]=account.alert[1]=0;
+            var campaign=world.campaign(p.getUUID());campaign.satellite=false;campaign.uplinkUntil=0;campaign.jamUntil=action.endsWith("on")?level.getGameTime()+6000:0;
+            ((net.minecraft.world.level.saveddata.SavedData)world).setDirty();PdaSignals.sync(p);FrontierNetwork.send(p,"");return Map.of("signalLost",action.endsWith("on"));
+        }
+        if(action.equals("kick")){
+            WindowKick.kick(p);var window=p.getPersistentData().getCompound("gn_visual_window");BlockPos pos=BlockPos.of(window.getLong("pos"));
+            return Map.of("lowerAir",level.getBlockState(pos).isAir(),"upperAir",level.getBlockState(pos.above()).isAir(),"motion",p.getDeltaMovement().toString());
+        }
+        if(action.equals("window")){
+            restoreWindow(p);BlockPos pos=p.blockPosition().north(2);
+            if(Gameplay.protectedAt(level,pos))throw new IllegalStateException("Unprotected window site required");
+            var tag=new net.minecraft.nbt.CompoundTag();tag.putLong("pos",pos.asLong());tag.putInt("lower",net.minecraft.world.level.block.Block.getId(level.getBlockState(pos)));tag.putInt("upper",net.minecraft.world.level.block.Block.getId(level.getBlockState(pos.above())));p.getPersistentData().put("gn_visual_window",tag);
+            level.setBlock(pos,net.minecraft.world.level.block.Blocks.GLASS.defaultBlockState(),3);level.setBlock(pos.above(),net.minecraft.world.level.block.Blocks.GLASS.defaultBlockState(),3);
+            p.teleportTo(level,pos.getX()+.5,pos.getY(),pos.getZ()+2.1,180,0);return Map.of("window",pos.toString(),"position",p.position().toString());
+        }
         if(action.equals("pose")){
             for(Mob mob:level.getEntitiesOfClass(Mob.class,p.getBoundingBox().inflate(24))){mob.setNoAi(true);mob.setDeltaMovement(net.minecraft.world.phys.Vec3.ZERO);}
             p.teleportTo(level,-282.5,72,-6.5,180,35);
@@ -55,23 +71,33 @@ public final class CorpseVisualChecks {
             data.put("terrain",cells);data.put("position",List.of(p.getX(),p.getY(),p.getZ()));return data;
         }
         if(action.equals("stage")||action.equals("cleanup")){
+            restoreWindow(p);
             List<Entity> remove=new ArrayList<>();for(var entity:level.getAllEntities())if(entity.getPersistentData().getBoolean("gn_visual_corpse_fixture"))remove.add(entity);
-            remove.forEach(Entity::discard);data.put("removedOldFixtures",remove.size());if(action.equals("cleanup"))return data;
+            remove.forEach(Entity::discard);data.put("removedOldFixtures",remove.size());if(action.equals("cleanup")){p.setNoGravity(false);return data;}
             double x=Double.parseDouble(settings.getProperty("x","-400.5")),z=Double.parseDouble(settings.getProperty("z","188.5"));
             int y=level.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,(int)Math.floor(x),(int)Math.floor(z));
             WorldState.get(level).enabled=true;
             cmd(p,"gamerule doMobSpawning false");cmd(p,"gamerule doDaylightCycle false");cmd(p,"time set 6000");cmd(p,"weather clear");
             p.setGameMode(GameType.SURVIVAL);p.setInvulnerable(true);p.setHealth(p.getMaxHealth());p.getFoodData().setFoodLevel(20);p.getInventory().clearContent();
+            p.getPersistentData().remove("gnfrontier_hypoxia");p.setForcedPose(null);p.setAirSupply(300);p.removeEffect(net.minecraft.world.effect.MobEffects.BLINDNESS);
+            p.setNoGravity(true);
+            FrontierNetwork.CHANNEL.send(net.minecraftforge.network.PacketDistributor.PLAYER.with(()->p),new FrontierNetwork.Condition(p.getId(),false,0,0));
             p.teleportTo(level,x,y+1,z+4.8,180,28);
             List<Map<String,Object>> rows=new ArrayList<>();
             for(int i=0;i<2;i++){
-                String id=i==0?"simpleenemymod:ruunit":"simpleenemymod:usunit";
+                boolean pmc=settings.getProperty("pdaPage","").equals("pmc");
+                String id=pmc?(i==0?"simpleenemymod:pmcunit":"tacz_sewv:pmc_commander"):(i==0?"simpleenemymod:ruunit":"simpleenemymod:usunit");
                 Mob mob=(Mob)ForgeRegistries.ENTITY_TYPES.getValue(new ResourceLocation(id)).create(level);
                 double px=x+(i==0?-1.6:1.6);int py=level.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,(int)Math.floor(px),(int)Math.floor(z));
                 mob.moveTo(px,py,z,i==0?-20:18,0);mob.getPersistentData().putBoolean("sewv:companion_rolled",true);
                 mob.setNoAi(true);mob.setPersistenceRequired();mob.getPersistentData().putBoolean("gn_visual_corpse_fixture",true);
                 mob.finalizeSpawn(level,level.getCurrentDifficultyAt(mob.blockPosition()),MobSpawnType.COMMAND,null,null);
                 level.addFreshEntity(mob);NpcEquipment.prepare(mob);
+                if(pmc){
+                    var gear=NpcLoadoutData.catalog.west();
+                    if(mob.getItemBySlot(EquipmentSlot.HEAD).isEmpty())mob.setItemSlot(EquipmentSlot.HEAD,new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(gear.helmet()))));
+                    if(mob.getItemBySlot(EquipmentSlot.CHEST).isEmpty())mob.setItemSlot(EquipmentSlot.CHEST,new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(gear.vest()))));
+                }
                 var possessions=NpcEquipment.contents(mob);mob.hurt(level.damageSources().genericKill(),10000);
                 var found=level.getEntitiesOfClass(FallenSoldier.class,mob.getBoundingBox().inflate(1));
                 if(found.size()!=1)throw new IllegalStateException("Expected one actual death corpse for "+id);
@@ -87,9 +113,26 @@ public final class CorpseVisualChecks {
         }
         throw new IllegalArgumentException(action);
     }
+    private static void restoreWindow(ServerPlayer player){
+        var data=player.getPersistentData();if(!data.contains("gn_visual_window"))return;
+        var window=data.getCompound("gn_visual_window");BlockPos pos=BlockPos.of(window.getLong("pos"));
+        player.serverLevel().setBlock(pos,net.minecraft.world.level.block.Block.stateById(window.getInt("lower")),3);player.serverLevel().setBlock(pos.above(),net.minecraft.world.level.block.Block.stateById(window.getInt("upper")),3);data.remove("gn_visual_window");
+    }
     public static Map<String,Object> client(String action){
         var mc=Minecraft.getInstance();if(mc.level==null||mc.player==null||mc.getSingleplayerServer()==null||!mc.getSingleplayerServer().getWorldData().getLevelName().equals("GN_Review_r39_creation"))throw new IllegalStateException("Owned integrated world required");
         Map<String,Object> data=new LinkedHashMap<>();
+        if(action.equals("keys")){
+            Map<String,String> keys=new TreeMap<>();for(var key:mc.options.keyMappings)if(Set.of("key.gnfrontier.kick","key.tacz.melee.desc","key.tacz.zoom.desc","key.anomalyzone.toggle_detector_mode").contains(key.getName()))keys.put(key.getName(),key.saveString()+":"+key.getKeyModifier());return Map.of("bindings",keys);
+        }
+        if(action.equals("map")||action.equals("tasks")||action.equals("attempt-map"))try{
+            mc.options.hideGui=false;
+            if(action.equals("attempt-map")){
+                var screen=mc.screen;var method=screen.getClass().getDeclaredMethod("ensureEmbeddedMap");method.setAccessible(true);method.invoke(screen);var field=screen.getClass().getDeclaredField("embeddedMap");field.setAccessible(true);var map=(net.minecraft.client.gui.screens.Screen)field.get(screen);mc.setScreen(map);
+                if(mc.screen==map)throw new AssertionError("Standalone map bypassed interference");return Map.of("standaloneBlocked",true);
+            }
+            var screen=(net.minecraft.client.gui.screens.Screen)Class.forName("com.kltyton.campchat.client.gui.CampChatScreen").getConstructor().newInstance();mc.setScreen(screen);
+            var field=screen.getClass().getDeclaredField("activeTab");field.setAccessible(true);field.set(screen,java.lang.Enum.valueOf((Class)field.getType(),action.equals("map")?"MAP":"TASKS"));local.gnfrontier.client.PdaScreen.opened();return Map.of("tab",action,"signalLost",local.gnfrontier.client.PdaScreen.signalLost());
+        }catch(ReflectiveOperationException error){throw new IllegalStateException(error);}
         if(action.equals("death-info")||action.startsWith("death-time-")){
             List<Map<String,Object>> rows=new ArrayList<>();
             try{
@@ -115,10 +158,10 @@ public final class CorpseVisualChecks {
         }
         if(action.equals("view")||action.equals("close")){
             mc.player.closeContainer();mc.setScreen(null);mc.options.hideGui=action.equals("view");
-            mc.options.bobView().set(false);mc.options.fov().set(70);mc.options.guiScale().set(3);mc.resizeDisplay();return Map.of("hideGui",mc.options.hideGui);
+            mc.options.setCameraType(net.minecraft.client.CameraType.FIRST_PERSON);mc.options.bobView().set(false);mc.options.fov().set(70);mc.options.guiScale().set(3);mc.resizeDisplay();return Map.of("hideGui",mc.options.hideGui);
         }
-        if(action.equals("open-east")||action.equals("open-west")){
-            mc.options.hideGui=false;String type=action.equals("open-east")?"simpleenemymod:ruunit":"simpleenemymod:usunit";
+        if(Set.of("open-east","open-west","open-pmc","open-commander").contains(action)){
+            mc.options.hideGui=false;String type=switch(action){case "open-east"->"simpleenemymod:ruunit";case "open-west"->"simpleenemymod:usunit";case "open-pmc"->"simpleenemymod:pmcunit";default->"tacz_sewv:pmc_commander";};
             FallenSoldier target=null;for(Entity entity:mc.level.entitiesForRendering())if(entity instanceof FallenSoldier body&&body.appearance().getString("id").equals(type)&&entity.distanceToSqr(mc.player)<64){target=body;break;}
             if(target==null)throw new IllegalStateException("Nearby rendered corpse missing: "+type);
             var interaction=mc.gameMode.interact(mc.player,(Entity)target,InteractionHand.MAIN_HAND);

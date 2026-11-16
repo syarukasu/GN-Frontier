@@ -209,13 +209,30 @@ public final class RespawnRules {
     }
 
     public static List<BlockPos> nearbyRegisteredBeds(ServerLevel level, BlockPos origin, int radius) {
+        return nearbyRegisteredBeds(level,origin,radius,null);
+    }
+    public static List<BlockPos> nearbyRegisteredBeds(ServerLevel level, BlockPos origin, int radius,net.minecraft.world.entity.Mob attacker) {
         Set<BlockPos> candidates = new HashSet<>();
         for (Economy.State account : WorldState.get(level).players.values()) {
             if (!account.spawnDimension.equals(dimension(level))) continue;
             BlockPos pos = BlockPos.of(account.spawnPosition);
-            if (pos.distSqr(origin) <= (double) radius * radius && intactBed(level, pos)) candidates.add(pos);
+            if (pos.distSqr(origin) <= (double) radius * radius && intactBed(level, pos)
+                    &&(attacker==null||attackableBed(level,pos,attacker))) candidates.add(pos);
         }
         return candidates.stream().sorted(Comparator.comparingDouble(pos -> pos.distSqr(origin))).limit(8).toList();
+    }
+
+    public static boolean attackableBed(ServerLevel level,BlockPos head,net.minecraft.world.entity.Mob attacker){
+        if(!intactBed(level,head))return false;
+        boolean found=false;
+        for(var entry:WorldState.get(level).players.entrySet()){
+            var account=entry.getValue();
+            if(!account.spawnDimension.equals(dimension(level))||account.spawnPosition!=head.asLong())continue;
+            found=true;
+            // Shared beds must also respect their friendly/neutral owners. Zombies have no diplomacy.
+            if(RegisteredBedGoal.human(attacker)&&!FactionRelations.hostileTo(attacker,entry.getKey(),account))return false;
+        }
+        return found;
     }
 
     public static boolean registeredBed(ServerLevel level, BlockPos head) {

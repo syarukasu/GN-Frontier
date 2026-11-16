@@ -49,7 +49,7 @@
   "gui.gnfrontier.tab.shop": "取引",
   "gui.gnfrontier.tab.stats": "活動記録",
   "gui.gnfrontier.tab.tasks": "依頼",
-  "gui.gnfrontier.task_refresh": "依頼更新まで%s分／撃破数は受注後から記録",
+  "gui.gnfrontier.task_refresh": "次の朝まで 約%s分",
   "gui.gnfrontier.trader_record": "%sとの信頼度 %s",
   "gui.gnfrontier.unconscious": "意識を失っています",
   "gui.gnfrontier.west_record": "西側軍　評価 %s／警戒度 %s",
@@ -326,5 +326,6 @@
   "screen.gnfrontier.corpse.search": "捜索",
   "screen.gnfrontier.corpse.searched": "捜索済み",
   "screen.gnfrontier.corpse.pause": "中断",
-  "screen.gnfrontier.corpse.unsearched": "未捜索"
+  "screen.gnfrontier.corpse.unsearched": "未捜索",
+  "gui.gnfrontier.time_paused": "次の朝に依頼更新（時刻停止中）"
 }

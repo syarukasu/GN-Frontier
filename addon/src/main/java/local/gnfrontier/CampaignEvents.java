@@ -53,22 +53,22 @@ public final class CampaignEvents {
         if(kind!=null)credit(p,kind,vehicle.getUUID(),id);
     }
     private static void credit(ServerPlayer p,Campaign.Kind kind,UUID target,String entityId) {
-        WorldState w=WorldState.get(p.serverLevel());Campaign.State c=w.campaign(p.getUUID());
-        Campaign.refresh(c,p.getUUID(),p.getServer().overworld().getGameTime());
+        WorldState w=WorldState.get(p.serverLevel());Campaign.State c=w.refreshCampaign(p.getUUID(),p.serverLevel());
         if(Campaign.credit(c,kind,target,entityId)){w.setDirty();p.sendSystemMessage(Component.literal("PDA：討伐依頼の進捗を更新しました"));}
     }
     @SubscribeEvent(priority=EventPriority.LOWEST) public void killed(LivingDeathEvent e) {
-        if(!e.isCanceled() && e.getSource().getEntity() instanceof ServerPlayer p && !p.isCreative() && !p.isSpectator()
-            && !e.getEntity().isAlliedTo(p) && !(e.getEntity() instanceof net.minecraft.world.entity.TamableAnimal pet && pet.isTame())
+        if(!e.isCanceled() && e.getSource().getEntity() instanceof ServerPlayer p
             && WorldState.get(p.serverLevel()).enabled) {
             ResourceLocation id=ForgeRegistries.ENTITY_TYPES.getKey(e.getEntity().getType());
             if(id==null)return;
-            if(id.getNamespace().equals("simpleenemymod")) {
-                // Neutral/allied soldiers do not become bounties merely because their mod ID matches.
-                boolean hostile=e.getEntity() instanceof Mob mob && mob.getTarget() instanceof ServerPlayer;
-                var data=e.getEntity().getPersistentData();hostile|=data.hasUUID("gnfrontier_raid_target")&&data.getUUID("gnfrontier_raid_target").equals(p.getUUID());
-                if(hostile)credit(p,Campaign.Kind.SOLDIER,e.getEntity().getUUID(),id.toString());
-            } else if(e.getEntity() instanceof net.minecraft.world.entity.monster.Monster)credit(p,Campaign.Kind.HUNT,e.getEntity().getUUID(),id.toString());
+            if(!p.isCreative()&&!p.isSpectator()&&!e.getEntity().isAlliedTo(p)
+                    &&!(e.getEntity() instanceof net.minecraft.world.entity.TamableAnimal pet&&pet.isTame())){
+                if(e.getEntity() instanceof Mob mob&&FactionHostility.force(mob)){
+                    if(FactionRelations.hostileTo(mob,p))credit(p,Campaign.Kind.SOLDIER,e.getEntity().getUUID(),id.toString());
+                }else if(e.getEntity() instanceof net.minecraft.world.entity.monster.Monster)credit(p,Campaign.Kind.HUNT,e.getEntity().getUUID(),id.toString());
+            }
+            // Determine bounty eligibility before this kill changes the relationship.
+            FactionRelations.recordAggression(e.getEntity(),p);
         }
     }
     @SubscribeEvent public void crafted(PlayerEvent.ItemCraftedEvent e) {
@@ -101,7 +101,7 @@ public final class CampaignEvents {
         for(ServerPlayer p:e.getServer().getPlayerList().getPlayers()) {
             if(!p.isAlive() || p.isSpectator() || p.isCreative())continue;
             IndustrialProgress.steelUnlocked(p);
-            Campaign.State c=w.campaign(p.getUUID());Campaign.refresh(c,p.getUUID(),now);Economy.State account=w.account(p.getUUID());
+            Campaign.State c=w.refreshCampaign(p.getUUID(),p.serverLevel());Economy.State account=w.account(p.getUUID());
             if(c.nextInterference==0)c.nextInterference=now+24000+p.getRandom().nextInt(48000);
             if(now>=c.nextInterference) {
                 c.jamUntil=now+2400+p.getRandom().nextInt(3600);c.nextInterference=c.jamUntil+24000+p.getRandom().nextInt(48000);

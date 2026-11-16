@@ -41,7 +41,7 @@ public final class TradeService {
         WorldState data = WorldState.get(player.serverLevel());
         if (!data.enabled) throw new IllegalArgumentException("このワールドではGNルールが無効です");
         if (!player.isAlive() || player.isSpectator() || Hypoxia.down(player)) throw new IllegalArgumentException("PDAを操作できません");
-        data.refresh(player.getServer().overworld().getGameTime());
+        data.refresh(player.serverLevel());
         if(Campaign.signalLost(data.campaign(player.getUUID()),data.account(player.getUUID()),player.getServer().overworld().getGameTime()))
             throw new IllegalArgumentException("SIGNAL LOST");
         return data;
@@ -60,8 +60,7 @@ public final class TradeService {
     }
     public static void claim(ServerPlayer player, int slot, String expectedToken) {
         if(!player.getServer().isSameThread())throw new IllegalStateException("Daily claim must run on server thread");
-        WorldState world=active(player);Campaign.State campaign=world.campaign(player.getUUID());
-        Campaign.refresh(campaign,player.getUUID(),player.getServer().overworld().getGameTime());
+        WorldState world=active(player);Campaign.State campaign=world.refreshCampaign(player.getUUID(),player.serverLevel());
         Campaign.State next=campaign.copy();Campaign.Mission mission=Campaign.mission(next,slot);
         Economy.State beforeAccount=world.account(player.getUUID());
         Economy.State after=Campaign.claim(next,beforeAccount,slot,expectedToken,mission.requirements().stream().map(r->requirementCount(player,r)).toList());
@@ -86,8 +85,8 @@ public final class TradeService {
         DiplomacyBridge.sync(player,after);
     }
     public static void accept(ServerPlayer player,int slot,String token) {
-        WorldState world=active(player);Campaign.State c=world.campaign(player.getUUID());
-        Campaign.refresh(c,player.getUUID(),player.getServer().overworld().getGameTime());Campaign.accept(c,slot,token);world.setDirty();
+        WorldState world=active(player);Campaign.State c=world.refreshCampaign(player.getUUID(),player.serverLevel());
+        Campaign.accept(c,slot,token);world.setDirty();
     }
     public static void acceptSpecial(ServerPlayer player,String token) {
         if(!player.getServer().isSameThread())throw new IllegalStateException("Quest must run on server thread");

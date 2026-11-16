@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "created_at": "2026-11-12T23:34:24.310863+09:00",
-  "next_sequence": 97,
+  "next_sequence": 99,
   "rules": [
     "IDは登録時に固定し、名称・分類・実装状態が変わっても変更しない。",
     "新規項目には未使用の次番号を登録する。削除・統合したIDは廃止記録を残して再利用しない。",
@@ -956,6 +956,36 @@
       "related_ids": [
         "GN-057",
         "GN-071"
+      ]
+    },
+    {
+      "id": "GN-097",
+      "initial_title": "細部仕様監査の是正・共通陣営判定と朝の依頼更新",
+      "first_recorded_revision": "0.2.7",
+      "state": "active",
+      "related_ids": [
+        "GN-023",
+        "GN-027",
+        "GN-031",
+        "GN-034",
+        "GN-038",
+        "GN-046",
+        "GN-069",
+        "GN-071",
+        "GN-075",
+        "GN-087",
+        "GN-088"
+      ]
+    },
+    {
+      "id": "GN-098",
+      "initial_title": "非正規兵・既存遺体からのNPC用無限弾薬流出を防止",
+      "first_recorded_revision": "0.2.7",
+      "state": "active",
+      "related_ids": [
+        "GN-086",
+        "GN-087",
+        "GN-097"
       ]
     }
   ]

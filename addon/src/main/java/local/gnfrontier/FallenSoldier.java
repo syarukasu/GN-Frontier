@@ -8,6 +8,7 @@ import net.minecraft.network.syncher.*;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.*;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.player.*;
@@ -26,6 +27,7 @@ public final class FallenSoldier extends Entity implements MenuProvider,IEntityA
     };
     private CompoundTag appearance=new CompoundTag();
     private int emptyTicks;
+    private boolean finiteAmmo;
     private final java.util.Map<java.util.UUID,CorpseSearch> searches=new java.util.HashMap<>();
     private final java.util.Set<CorpseMenu> viewers=new java.util.HashSet<>();
     public CorpseSearch search(java.util.UUID player){return searches.computeIfAbsent(player,id->new CorpseSearch());}
@@ -68,6 +70,10 @@ public final class FallenSoldier extends Entity implements MenuProvider,IEntityA
         super.tick();
         if(!isNoGravity()){setDeltaMovement(getDeltaMovement().add(0,-.04,0));move(MoverType.SELF,getDeltaMovement());setDeltaMovement(getDeltaMovement().scale(.98));if(onGround())setDeltaMovement(0,0,0);}
         if(!level().isClientSide){
+            if(!finiteAmmo&&WorldState.get((ServerLevel)level()).enabled&&NpcLoadoutData.catalog!=null){
+                if(NpcEquipment.finiteAmmo(new net.minecraftforge.items.wrapper.InvWrapper(inventory),true))inventory.setChanged();
+                finiteAmmo=true;
+            }
             viewers.removeIf(menu->menu.owner.containerMenu!=menu||!menu.stillValid(menu.owner));
             viewers.forEach(CorpseMenu::searchTick);
             // Unlooted bodies are retained across saves; only empty bodies decay.
@@ -77,11 +83,13 @@ public final class FallenSoldier extends Entity implements MenuProvider,IEntityA
         }
     }
     @Override protected void addAdditionalSaveData(CompoundTag tag){
+        tag.putBoolean("FiniteAmmo",finiteAmmo);
         tag.put("Appearance",appearance);tag.putInt("EmptyTicks",emptyTicks);ListTag items=new ListTag();
         for(int slot=0;slot<inventory.getContainerSize();slot++)if(!inventory.getItem(slot).isEmpty()){var item=NpcEquipment.saveStack(inventory.getItem(slot));item.putInt("Slot",slot);items.add(item);}tag.put("Items",items);
         ListTag knowledge=new ListTag();searches.forEach((player,state)->{CompoundTag row=state.save();row.putUUID("Player",player);knowledge.add(row);});tag.put("Searches",knowledge);
     }
     @Override protected void readAdditionalSaveData(CompoundTag tag){
+        finiteAmmo=tag.getBoolean("FiniteAmmo");
         appearance=tag.getCompound("Appearance");emptyTicks=tag.getInt("EmptyTicks");inventory.clearContent();
         var items=tag.getList("Items",Tag.TAG_COMPOUND);for(int i=0;i<items.size();i++){var item=items.getCompound(i);int slot=item.getInt("Slot");if(slot>=0&&slot<inventory.getContainerSize())inventory.setItem(slot,NpcEquipment.loadStack(item));}
         searches.clear();for(var row:tag.getList("Searches",Tag.TAG_COMPOUND))if(row instanceof CompoundTag state&&state.hasUUID("Player"))searches.put(state.getUUID("Player"),CorpseSearch.load(state));

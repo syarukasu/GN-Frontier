@@ -64,11 +64,11 @@ public final class ModularDeliveryVerification {
         DailyMissions.install(catalog);UUID player=new UUID(1,8);Campaign.State s=new Campaign.State(),same=new Campaign.State(),other=new Campaign.State();Campaign.refresh(s,player,0);Campaign.refresh(same,player,0);Campaign.refresh(other,new UUID(1,9),0);
         check(s.dailyMissions.equals(same.dailyMissions)&&!s.dailyMissions.equals(other.dailyMissions),"Deterministic per-player daily draw");
         for(int user=0;user<4;user++){
-            Campaign.State history=new Campaign.State();Set<String> ids=new HashSet<>(),appearances=new HashSet<>();
+            Campaign.State history=new Campaign.State();Set<String> ids=new HashSet<>(),appearances=new HashSet<>(),contents=new HashSet<>();
             for(int day=0;day<240;day++){
                 Campaign.refresh(history,new UUID(4,user),(long)day*24000);Set<String> targets=new HashSet<>();check(history.dailyMissions.size()==3,"Full board while large candidate pools remain");
                 check(history.dailyMissions.stream().anyMatch(m->m.kind()==Campaign.Kind.DELIVERY),"Daily board includes delivery");
-                for(var m:history.dailyMissions){check(ids.add(m.id())&&appearances.add(m.appearance()),"No reissued ID or visible contract over saved days");for(String key:DeliveryModules.objectives(m))check(targets.add(key),"No overlapping material between today's bundles");}
+                for(var m:history.dailyMissions){check(ids.add(m.id())&&appearances.add(m.appearance())&&contents.add(m.contentKey()),"No repeated contents, ID or visible contract over saved days");for(String key:DeliveryModules.objectives(m))check(targets.add(key),"No overlapping material between today's bundles");}
                 if(day%31==0){history=Campaign.State.load(history.save());DailyMissions.install(DailyMissions.parse(doc));}
             }
         }

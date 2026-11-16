@@ -3,7 +3,7 @@ package local.gnfrontier.core;
 import java.util.*;
 import net.minecraft.nbt.*;
 
-/** Persistent mission identities and progression. All clocks are elapsed server ticks. */
+/** Persistent mission identities and progression. Timers use elapsed ticks; production boards use DailyCycle. */
 public final class Campaign {
     public enum Kind { DELIVERY, SHIP, HELICOPTER, SOLDIER, HUNT }
     public record DeliveryItem(String item,String gunId,String label,String unit,int count) {
@@ -23,6 +23,12 @@ public final class Campaign {
         }
         public Mission(String id,String title,Kind kind,String item,String gunId,int count,long reward,Economy.Merchant merchant) {
             this(id,title,kind,item,gunId,count,reward,merchant,"",List.of(),kind+"|"+item+"|"+gunId,"");
+        }
+        public String contentKey(){
+            String contents=kind==Kind.DELIVERY
+                    ?String.join(";",requirements.stream().map(r->r.key()+"="+r.count()).sorted().toList())
+                    :String.join(";",new TreeSet<>(entities))+"|"+count;
+            return DailyMissions.hash(kind+"|"+merchant+"|"+contents);
         }
         public CompoundTag save() {
             CompoundTag n=new CompoundTag();n.putString("id",id);n.putString("title",title);n.putString("kind",kind.name());
@@ -74,7 +80,7 @@ public final class Campaign {
         public final Set<String> merchantAccepted=new TreeSet<>(),merchantCompleted=new TreeSet<>();
         public boolean dailyInitialized;
         public List<Mission> dailyMissions=List.of();
-        public final Set<String> issuedMissions=new HashSet<>(),issuedAppearances=new HashSet<>();
+        public final Set<String> issuedMissions=new HashSet<>(),issuedAppearances=new HashSet<>(),issuedContents=new HashSet<>();
         public final List<String> recentObjectives=new ArrayList<>();
         public boolean satellite, deterrence, noahComplete;
         public String noahDimension="";
@@ -87,7 +93,7 @@ public final class Campaign {
                 || uplinkUntil<0 || deterrenceUntil<0 || satellitesLaunched<0)
                 throw new IllegalArgumentException("Invalid campaign state");
             for(int p:progress) if(p<0 || p>64)throw new IllegalArgumentException("Invalid mission progress");
-            if(dailyMissions.size()>3||issuedMissions.size()>DailyMissions.MAX_HISTORY||issuedAppearances.size()>DailyMissions.MAX_HISTORY||recentObjectives.size()>9)
+            if(dailyMissions.size()>3||issuedMissions.size()>DailyMissions.MAX_HISTORY||issuedAppearances.size()>DailyMissions.MAX_HISTORY||issuedContents.size()>DailyMissions.MAX_HISTORY||recentObjectives.size()>9)
                 throw new IllegalArgumentException("Invalid daily mission history");
             if(dailyInitialized) {
                 int mask=(1<<dailyMissions.size())-1;if((accepted&~mask)!=0||(claimed&~mask)!=0)throw new IllegalArgumentException("Missing active mission");
@@ -95,6 +101,7 @@ public final class Campaign {
             }
         }
         public CompoundTag save() {
+            for(Mission mission:dailyMissions)issuedContents.add(mission.contentKey());
             validate();CompoundTag n=new CompoundTag();n.putLong("day",day);n.putInt("rotation",rotation);
             n.putInt("accepted",accepted);n.putInt("claimed",claimed);n.putIntArray("progress",progress);
             n.putLong("nextRaid",nextRaid);n.putLong("nextInterference",nextInterference);n.putLong("jamUntil",jamUntil);
@@ -109,8 +116,9 @@ public final class Campaign {
             if(dailyInitialized) {
                 ListTag board=new ListTag();dailyMissions.forEach(m->board.add(m.save()));n.put("dailyMissions",board);
             }
-            ListTag history=new ListTag(),appearances=new ListTag(),recent=new ListTag();
+            ListTag history=new ListTag(),appearances=new ListTag(),recent=new ListTag(),contents=new ListTag();
             issuedMissions.stream().sorted().forEach(x->history.add(StringTag.valueOf(x)));issuedAppearances.stream().sorted().forEach(x->appearances.add(StringTag.valueOf(x)));
+            issuedContents.stream().sorted().forEach(x->contents.add(StringTag.valueOf(x)));n.put("issuedContents",contents);
             recentObjectives.forEach(x->recent.add(StringTag.valueOf(x)));n.put("issuedMissions",history);n.put("issuedAppearances",appearances);n.put("recentObjectives",recent);return n;
         }
         public CompoundTag clientSnapshot() {
@@ -133,11 +141,17 @@ public final class Campaign {
             s.dailyInitialized=n.contains("dailyMissions",Tag.TAG_LIST);List<Mission> board=new ArrayList<>();for(Tag t:n.getList("dailyMissions",Tag.TAG_COMPOUND))board.add(Mission.load((CompoundTag)t));s.dailyMissions=List.copyOf(board);
             for(Tag t:n.getList("issuedMissions",Tag.TAG_STRING))s.issuedMissions.add(t.getAsString());
             for(Tag t:n.getList("issuedAppearances",Tag.TAG_STRING))s.issuedAppearances.add(t.getAsString());
+            for(Tag t:n.getList("issuedContents",Tag.TAG_STRING))s.issuedContents.add(t.getAsString());
+            // Legacy saves retain only the current board's full payload, not the contents of older boards.
+            for(Mission mission:s.dailyMissions)s.issuedContents.add(mission.contentKey());
             for(Tag t:n.getList("recentObjectives",Tag.TAG_STRING))s.recentObjectives.add(t.getAsString());s.validate();return s;
         }
     }
     public static void refresh(State s,UUID player,long tick) {
         long day=Math.max(0,tick/Economy.DAY_TICKS);
+        refreshForDay(s,player,day);
+    }
+    public static void refreshForDay(State s,UUID player,long day) {
         if(day>s.day) {
             if(DailyMissions.catalog()!=null){s.dailyMissions=DailyMissions.draw(s,player,day);s.dailyInitialized=true;}
             s.day=day;s.rotation=Math.floorMod(player.hashCode()+Long.hashCode(day),MISSIONS.size());s.accepted=0;s.claimed=0;

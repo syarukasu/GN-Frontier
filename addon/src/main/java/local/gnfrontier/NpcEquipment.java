@@ -27,6 +27,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 @Mod.EventBusSubscriber(modid=Frontier.ID)
 public final class NpcEquipment {
     public static final String ISSUED="gnfrontier_equipment_v1",FRESH="gnfrontier_fresh_unit",SNAPSHOT="gnfrontier_death_inventory";
+    public static final String FINITE="gnfrontier_finite_ammo_v2";
     public static boolean candidate(Mob mob){
         var id=ForgeRegistries.ENTITY_TYPES.getKey(mob.getType());if(id==null)return false;
         return mob instanceof Pillager||id.getNamespace().equals("simpleenemymod")||
@@ -41,15 +42,15 @@ public final class NpcEquipment {
         var state=mob.getPersistentData();
         // Issued units need no registry, faction or world-data lookup on every living tick.
         // A revived unit's death snapshot still takes the original cleanup path.
-        if(state.getBoolean(ISSUED)&&state.getBoolean(NpcGunQuality.INITIALIZED)&&!state.contains(SNAPSHOT))return;
+        if(state.getBoolean(ISSUED)&&state.getBoolean(NpcGunQuality.INITIALIZED)&&state.getBoolean(FINITE)&&!state.contains(SNAPSHOT))return;
         if(!eligible(mob)||!RespawnRules.enabled(mob.level()))return;
         if(mob.isAlive())mob.getPersistentData().remove(SNAPSHOT);
-        if(!mob.getPersistentData().getBoolean(ISSUED)||!mob.getPersistentData().getBoolean(NpcGunQuality.INITIALIZED))prepare(mob);
+        if(!state.getBoolean(ISSUED)||!state.getBoolean(NpcGunQuality.INITIALIZED)||!state.getBoolean(FINITE))prepare(mob);
     }
     private static ItemStack item(String id,int count){var key=new ResourceLocation(id);if(!ForgeRegistries.ITEMS.containsKey(key))throw new IllegalStateException("Missing issued item "+id);return new ItemStack(ForgeRegistries.ITEMS.getValue(key),count);}
     public static void prepare(Mob mob){
         if(!eligible(mob))return;
-        if(mob.getPersistentData().getBoolean(ISSUED)){NpcGunQuality.prepare(mob);return;}
+        if(mob.getPersistentData().getBoolean(ISSUED)){finite(mob);NpcGunQuality.prepare(mob);return;}
         var data=NpcLoadoutData.catalog;if(data==null)throw new IllegalStateException("NPC catalog not loaded");
         var inv=inventory(mob);var id=ForgeRegistries.ENTITY_TYPES.getKey(mob.getType()).toString();int faction=FactionHostility.faction(mob);
         boolean regular=faction==0||faction==1;
@@ -85,7 +86,7 @@ public final class NpcEquipment {
         }
         // Preserve the established scrap/medical/money pool, but roll it once while alive.
         // Recruited PMCs keep the inventory supplied by their owner without a free issue.
-        boolean ownedPmc=faction==2&&mob.saveWithoutId(new CompoundTag()).hasUUID("OwnerUUID");
+        boolean ownedPmc=faction==2&&FactionRelations.owned(mob);
         if(!ownedPmc&&mob.level() instanceof ServerLevel level){
             var params=new LootParams.Builder(level).withParameter(LootContextParams.THIS_ENTITY,mob)
                 .withParameter(LootContextParams.ORIGIN,mob.position()).withParameter(LootContextParams.DAMAGE_SOURCE,mob.damageSources().generic()).create(LootContextParamSets.ENTITY);
@@ -98,8 +99,26 @@ public final class NpcEquipment {
             if(stack.isDamageableItem())stack.setDamageValue(stack.getDamageValue());
             if(stack.getCount()>64){int excess=stack.getCount()-64;stack.setCount(64);ItemStack remainder=carry(inv,stack.copyWithCount(excess));stack.grow(remainder.getCount());}
         }
-        NpcGunQuality.prepare(mob);
+        finite(mob);NpcGunQuality.prepare(mob);
         mob.getPersistentData().putBoolean(ISSUED,true);mob.getPersistentData().remove(FRESH);
+    }
+    private static void finite(Mob mob){
+        if(mob.getPersistentData().getBoolean(FINITE)||NpcLoadoutData.catalog==null)return;
+        finiteAmmo(inventory(mob),!FactionRelations.owned(mob));mob.getPersistentData().putBoolean(FINITE,true);
+    }
+    /** Convert virtual NPC reserves once; keep gun ID, chamber, attachments, rarity and condition untouched. */
+    public static boolean finiteAmmo(IItemHandler inventory,boolean issueReserve){
+        var data=NpcLoadoutData.catalog;if(data==null)return false;boolean changed=false;
+        for(int slot=0;slot<inventory.getSlots();slot++){
+            var stack=inventory.getStackInSlot(slot);var gun=IGun.getIGunOrNull(stack);
+            if(gun==null||!stack.hasTag()||!stack.getTag().contains("DummyAmmo")&&!stack.getTag().contains("MaxDummyAmmo"))continue;
+            int virtual=Math.max(0,stack.getTag().getInt("DummyAmmo"));
+            var index=TimelessAPI.getCommonGunIndex(gun.getGunId(stack)).orElseThrow();
+            stack.getTag().remove("DummyAmmo");stack.getTag().remove("MaxDummyAmmo");changed=true;
+            int rounds=issueReserve?Math.min(virtual,index.getGunData().getAmmoAmount()*data.supportMagazines()):0;
+            while(rounds>0){int count=Math.min(64,rounds);carry(inventory,AmmoItemBuilder.create().setId(index.getGunData().getAmmoId()).setCount(count).build());rounds-=count;}
+        }
+        return changed;
     }
     private static ItemStack carry(IItemHandler inventory,ItemStack stack){
         for(int slot=6;slot<inventory.getSlots()&&!stack.isEmpty();slot++)stack=inventory.insertItem(slot,stack,false);

@@ -156,7 +156,7 @@ key_key.superbwarfare.hold_zoom:key.mouse.right
 key_key.superbwarfare.switch_zoom:key.keyboard.unknown
 key_key.superbwarfare.release_decoy:key.keyboard.v
 key_key.superbwarfare.free_camera:key.keyboard.c
-key_key.superbwarfare.melee:key.keyboard.v
+key_key.superbwarfare.melee:key.keyboard.v:CONTROL
 key_key.superbwarfare.vehicle_seek:key.keyboard.x
 key_key.superbwarfare.mark:key.mouse.middle
 key_key.superbwarfare.active_thermal_imaging:key.keyboard.k
@@ -233,8 +233,8 @@ key_key.tacz.crawl.desc:key.keyboard.c
 key_key.tacz.reload.desc:key.keyboard.r
 key_key.tacz.inspect.desc:key.keyboard.h
 key_key.tacz.fire_select.desc:key.keyboard.g
-key_key.tacz.melee.desc:key.keyboard.v
-key_key.tacz.zoom.desc:key.keyboard.v
+key_key.tacz.melee.desc:key.keyboard.v:CONTROL
+key_key.tacz.zoom.desc:key.keyboard.v:ALT
 key_key.tacz.interact.desc:key.keyboard.o
 key_key.tacz.refit.desc:key.keyboard.z
 key_key.tacz.open_config.desc:key.keyboard.t:ALT
@@ -266,7 +266,7 @@ key_key.ponder.ponder:key.keyboard.w
 key_create.keyinfo.toolmenu:key.keyboard.left.alt
 key_create.keyinfo.toolbelt:key.keyboard.left.alt
 key_create.keyinfo.rotate_menu:key.keyboard.unknown
-key_tfmg.keyinfo.transmission_shift_up:key.keyboard.v
+key_tfmg.keyinfo.transmission_shift_up:key.keyboard.f10
 key_tfmg.keyinfo.transmission_shift_down:key.keyboard.c
 key_tfmg.keyinfo.custom_button:key.keyboard.b
 key_tfmg.keyinfo.engine_start:key.keyboard.i
@@ -290,3 +290,6 @@ modelPart_right_sleeve:true
 modelPart_left_pants_leg:true
 modelPart_right_pants_leg:true
 modelPart_hat:true
+key_key.ad_astra.toggle_suit_flight:key.keyboard.f10:CONTROL
+key_key.hbm_m.power_armor_dash:key.keyboard.f10:ALT
+key_key.anomalyzone.toggle_detector_mode:key.keyboard.f10:SHIFT

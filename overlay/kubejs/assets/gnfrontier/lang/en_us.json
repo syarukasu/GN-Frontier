@@ -313,5 +313,6 @@
   "screen.gnfrontier.corpse.search": "Search",
   "screen.gnfrontier.corpse.searched": "Searched",
   "screen.gnfrontier.corpse.pause": "Pause",
-  "screen.gnfrontier.corpse.unsearched": "Unsearched"
+  "screen.gnfrontier.corpse.unsearched": "Unsearched",
+  "gui.gnfrontier.time_paused": "Contracts renew at dawn (time paused)"
 }

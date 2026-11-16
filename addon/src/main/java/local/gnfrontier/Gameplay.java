@@ -12,7 +12,6 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.world.*;
 import net.minecraft.world.effect.*;
 import net.minecraft.world.entity.*;
-import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.monster.Zombie;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
@@ -222,11 +221,7 @@ public final class Gameplay {
         if (!z.getPersistentData().getBoolean(MARKER)) {
             z.getPersistentData().putBoolean(MARKER, true);
             if (event.loadedFromDisk()) return;
-            if (!level.isDay()) {
-                Objects.requireNonNull(z.getAttribute(Attributes.MAX_HEALTH)).setBaseValue(30);
-                Objects.requireNonNull(z.getAttribute(Attributes.ATTACK_DAMAGE)).setBaseValue(4);
-                z.setHealth(z.getMaxHealth());
-            }
+            NightZombies.initializeFresh(z,level);
             if (!EnhancedAiCompat.present() && level.random.nextInt(8) == 0) { z.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Items.IRON_PICKAXE)); z.setDropChance(EquipmentSlot.MAINHAND, 0); }
             else if (!EnhancedAiCompat.present() && PrototypeConfig.ROD_ZOMBIES.get() && z.getMainHandItem().isEmpty() && level.random.nextInt(PrototypeConfig.ROD_CHANCE.get()) == 0) {
                 z.setItemSlot(EquipmentSlot.MAINHAND,new ItemStack(Items.FISHING_ROD));z.setDropChance(EquipmentSlot.MAINHAND,0);

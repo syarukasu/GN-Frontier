@@ -11,6 +11,7 @@ import com.tacz.guns.util.TacHitResult;
 import java.nio.file.*;
 import java.util.*;
 import local.gnperf.PerformanceChecks;
+import local.gnnight.NightZombieChecks;
 import local.gnfrontier.*;
 import net.minecraft.nbt.*;
 import net.minecraft.resources.ResourceLocation;
@@ -201,6 +202,7 @@ public final class CombatReview {
         verifySpawnRules(level,one,two);
         var pack=PackChecks.run(level,one);result.put("pack",pack);for(Object name:(List<?>)pack.get("checks"))checks.add(name.toString());
         var performance=PerformanceChecks.run(level,unit(level,"simpleenemymod:usunit"));result.put("performance",performance);for(Object name:(List<?>)performance.get("checks"))checks.add(name.toString());
+        var night=NightZombieChecks.run(level,unit(level,"simpleenemymod:usunit"));result.put("nightZombies",night);for(Object name:(List<?>)night.get("checks"))checks.add(name.toString());
         result.put("worldgen",CityGenerationChecks.run(level));check(true,"final preset generates both city and natural chunks at their actual boundary");
     }
     @SuppressWarnings({"rawtypes","unchecked"})

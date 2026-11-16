@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "created_at": "2026-11-12T23:34:24.310863+09:00",
-  "next_sequence": 96,
+  "next_sequence": 97,
   "rules": [
     "IDは登録時に固定し、名称・分類・実装状態が変わっても変更しない。",
     "新規項目には未使用の次番号を登録する。削除・統合したIDは廃止記録を残して再利用しない。",
@@ -946,6 +946,16 @@
       "state": "active",
       "related_ids": [
         "GN-091"
+      ]
+    },
+    {
+      "id": "GN-096",
+      "initial_title": "夜生まれゾンビの攻撃力と移動速度・昼夜差",
+      "first_recorded_revision": "0.2.6",
+      "state": "active",
+      "related_ids": [
+        "GN-057",
+        "GN-071"
       ]
     }
   ]

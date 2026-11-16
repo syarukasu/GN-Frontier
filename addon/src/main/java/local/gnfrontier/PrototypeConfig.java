@@ -15,6 +15,8 @@ public final class PrototypeConfig {
     public static final ForgeConfigSpec.DoubleValue ROD_PULL;
     public static final ForgeConfigSpec.IntValue ROTOR_BASE_RADIUS;
     public static final ForgeConfigSpec.IntValue CORPSE_SEARCH_TICKS,CORPSE_EMPTY_SEARCH_TICKS;
+    public static final ForgeConfigSpec.BooleanValue NIGHT_ZOMBIES;
+    public static final ForgeConfigSpec.DoubleValue NIGHT_ZOMBIE_HEALTH,NIGHT_ZOMBIE_DAMAGE,NIGHT_ZOMBIE_SPEED;
     static {
         ForgeConfigSpec.Builder b = new ForgeConfigSpec.Builder();
         b.comment("Prototype balance, NOT original-series settings. Applies only to activated GN worlds.").push("rules");
@@ -31,6 +33,14 @@ public final class PrototypeConfig {
         ROTOR_BASE_RADIUS=b.comment("NPC helicopters require a tagged military site within this horizontal distance; original distance unknown.").defineInRange("rotorBaseRadius",96,16,256);
         FILTER_TICKS=b.defineInRange("filterProtectionTicks",12000,200,1200000);
         STREET_VEHICLE_PERCENT=b.comment("One real-model car at most per eligible NEW street chunk, before clearance checks.").defineInRange("streetVehiclePercent",65,0,100);
+        b.pop();
+        b.comment("Fresh Overworld zombies born at time 13000-22999. Values are provisional video-reproduction balance.",
+                  "Base attack 8 becomes 12 damage (six hearts) on Hard against an unarmored player before other effects.",
+                  "Existing stronger attributes and unrelated speed modifiers are retained; old unmarked saves are not reclassified.").push("nightZombies");
+        NIGHT_ZOMBIES=b.define("enabled",true);
+        NIGHT_ZOMBIE_HEALTH=b.defineInRange("minimumMaxHealth",30.0,1.0,1024.0);
+        NIGHT_ZOMBIE_DAMAGE=b.defineInRange("minimumAttackDamage",8.0,0.0,2048.0);
+        NIGHT_ZOMBIE_SPEED=b.defineInRange("movementSpeedMultiplier",1.35,1.0,3.0);
         b.pop();
         b.comment("Independent reproduction settings; 10-second grace and bed AI timings are provisional.").push("respawn");
         RESPAWN_GRACE=b.defineInRange("graceTicks",200,0,12000);

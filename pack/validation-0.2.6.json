@@ -1,0 +1,116 @@
+{
+  "schema": 1,
+  "version": "0.2.6",
+  "date": "2026-11-16",
+  "modificationIds": [
+    "GN-096"
+  ],
+  "coreSha256": "1bb5f1b729d836c5d6b8bb8e665066734266af46dae613b2a30bdc85d3529466",
+  "releasePublished": false,
+  "valuesAreVideoEstimate": true,
+  "checksPassed": 279,
+  "nightProfile": {
+    "onlyNewOverworldSpawns": true,
+    "clockRangeInclusiveStartExclusiveEnd": [
+      13000,
+      23000
+    ],
+    "minimumBaseMaxHealth": 30,
+    "minimumBaseAttackDamage": 8,
+    "movementAttributeMultiplier": 1.35,
+    "attackAppliesToEveryTarget": true,
+    "targetSelectionChanged": false,
+    "preserveStrongerAttributes": true,
+    "retainedAfterDawnAndReload": true,
+    "doesNotStack": true,
+    "unknownLegacyBirthsReclassified": false
+  },
+  "nativePlayerDamage": {
+    "dayUnarmored": 4.5,
+    "nightUnarmored": 12.0
+  },
+  "nativeNonPlayerDamage": {
+    "armoredCreatureNight": 2.111999988555908,
+    "unarmoredCreatureNight": 8.0,
+    "equippedInfantryNight": 4.160003662109375,
+    "targetType": "simpleenemymod:usunit",
+    "equippedInfantryDay": 1.410003662109375,
+    "unarmoredCreatureDay": 3.0
+  },
+  "nativeWalking": {
+    "dayBlocks": 5.494192340244922,
+    "ratio": 1.8213350253949383,
+    "ticks": 50,
+    "nightBlocks": 10.00676494554466
+  },
+  "nightChecks": [
+    "night damage is checked under the pack's actual Hard difficulty",
+    "server loads night attack 8 and speed multiplier 1.35 defaults",
+    "clock-only night window at 0",
+    "clock-only night window at 6000",
+    "clock-only night window at 12999",
+    "clock-only night window at 13000",
+    "clock-only night window at 18000",
+    "clock-only night window at 22999",
+    "clock-only night window at 23000",
+    "clock-only night window at 42000",
+    "clock-only night window at -6000",
+    "day-born zombie has no night profile",
+    "day-born zombie retains native base attack and health",
+    "fresh night zombie receives its persistent birth marker",
+    "night base health floor 30 and attack floor 8 are applied",
+    "adult night speed is exactly 1.35 times its native value",
+    "native zombie melee reaches the unarmored player damage pipeline",
+    "native zombie melee reaches the unarmored player damage pipeline",
+    "native day zombie deals 4.5 damage on Hard",
+    "night zombie deals 12 damage or six hearts on Hard against an unarmored player",
+    "native zombie melee can damage non-player entity.minecraft.cow",
+    "native zombie melee can damage non-player entity.minecraft.cow",
+    "zombie attack strength also rises from 3 to 8 against an unarmored non-player",
+    "native equipment tick activates armor on a non-player target",
+    "native zombie melee can damage non-player entity.minecraft.cow",
+    "ordinary armor still reduces the strengthened zombie melee damage",
+    "native zombie melee can damage non-player entity.simpleenemymod.usunit",
+    "native zombie melee can damage non-player entity.simpleenemymod.usunit",
+    "equipped regular infantry also takes a stronger hit from a night-born zombie",
+    "repeat initialization does not stack night speed",
+    "night-born profile is retained through dawn",
+    "save and reload retain night attack and the single permanent speed modifier",
+    "unknown legacy birth time is not guessed from the current night",
+    "native baby speed multiplier is retained alongside night speed",
+    "stronger pre-existing mob base attributes are never lowered to the night floors",
+    "night health adjustment retains the native wounded fraction",
+    "night profile can be disabled with config",
+    "night profile leaves other dimensions' native mobs unchanged",
+    "day-born zombie stays at native strength when night arrives",
+    "night zombie actually walks farther with identical native movement input"
+  ],
+  "server": {
+    "status": "PASS",
+    "done": true,
+    "exitCode": 0,
+    "cpuLimit": 2,
+    "maxHeapGB": 6,
+    "environmentCopied": false,
+    "worldCopied": false,
+    "existingRegisteredWorldReused": true,
+    "globalTestWorlds": 1,
+    "runtimeRestored": true
+  },
+  "installation": {
+    "status": "PASS",
+    "changedFiles": 4,
+    "singleCore": true,
+    "thirdPartyJarsUnchanged": 132,
+    "liveGameStarted": false,
+    "liveWorldsTouched": false,
+    "unrelatedDefaultConfigValuesPreserved": true
+  },
+  "screenshots": 0,
+  "osInputInjected": false,
+  "limits": [
+    "Damage uses the native Player.hurt pipeline on an offline Player test fixture, plus native equipped infantry and non-player living entities.",
+    "Walking compares 50 normal entity updates under equal move-control inputs; the distance ratio is specific to this fixture, not a universal movement multiplier.",
+    "Connected-client combat, pursuit appearance and long sessions were not inspected."
+  ]
+}

@@ -16,6 +16,15 @@ filterProtectionTicks = 12000
 # New street chunks only; clearance may reject a car.
 streetVehiclePercent = 65
 
+# Fresh Overworld night spawns (13000-22999). User estimate: about six hearts per hit.
+# Base attack 8 becomes 12 on Hard before armor, equipment and other effects.
+# Speed +35% is provisional; profiles persist through dawn and save/reload.
+[nightZombies]
+enabled = true
+minimumMaxHealth = 30.0
+minimumAttackDamage = 8.0
+movementSpeedMultiplier = 1.35
+
 # Radius 5 and 3-day bed relocation follow the source observations.
 # Grace duration, vertical shape and AI timings are independent adjustment values.
 [respawn]

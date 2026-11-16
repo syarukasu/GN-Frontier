@@ -23,6 +23,15 @@ public final class Economy {
     public record Trade(State after, String item, int remove, int add, long delta) {}
 
     public static final List<Offer> OFFERS = List.of(
+        new Offer("market_meat",Merchant.BLACK,"survival_instinct:meat_can",1,6,0,0,24),
+        new Offer("market_fruit",Merchant.BLACK,"survival_instinct:fruit_can",5,26,0,0,24),
+        new Offer("market_milk",Merchant.BLACK,"lrtactical:consumable",1,20,0,0,24),
+        new Offer("market_energy",Merchant.BLACK,"survival_instinct:energy_can",1,10,0,0,24),
+        new Offer("market_wine",Merchant.BLACK,"survival_instinct:wine",1,15,0,0,24),
+        new Offer("market_dagger",Merchant.BLACK,"lrtactical:melee",1,50,0,0,8),
+        new Offer("market_french_nail",Merchant.BLACK,"lrtactical:melee",1,50,0,0,8),
+        new Offer("market_makarov",Merchant.BLACK,"tacz:modern_kinetic_gun",1,100,0,0,8),
+        new Offer("market_repair",Merchant.BLACK,"hbm_m:gun_kit_2",1,300,0,0,8),
         new Offer("ration", Merchant.NEUTRAL, "survival_instinct:mre", 1, 100, 0, 0, 24),
         new Offer("bandage", Merchant.NEUTRAL, "survival_instinct:bandage", 1, 60, 0, 0, 24),
         new Offer("antibiotics", Merchant.NEUTRAL, "survival_instinct:antibiotics", 1, 180, 0, 10, 8),

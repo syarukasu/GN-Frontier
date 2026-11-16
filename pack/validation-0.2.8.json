@@ -1,0 +1,251 @@
+{
+  "schema": 1,
+  "version": "0.2.8",
+  "date": "2026-11-16",
+  "modificationIds": [
+    "GN-099"
+  ],
+  "coreSha256": "f7b821d4b366fc519ebf8c10263f32f0f8ca2d628bacff603ae01098fae332ee",
+  "releasePublished": false,
+  "reference": "pda-reference-0.2.8.json",
+  "offline": {
+    "status": "PASS",
+    "checks": 152406,
+    "groups": {
+      "core": 4067,
+      "campaign": 370,
+      "legacyDailyMissions": 40258,
+      "modularDeliveries": 106580,
+      "specifications": 1131
+    }
+  },
+  "runtime": {
+    "status": "PASS",
+    "version": "0.2.8",
+    "coreSha256": "f7b821d4b366fc519ebf8c10263f32f0f8ca2d628bacff603ae01098fae332ee",
+    "screenshots": [
+      {
+        "path": "revisions/version-control-r39/spec-0.2.8/final-00-shop-food.png",
+        "sha256": "f619610d5c8f8cb5443e2a27358bbc5d785ddb99da82a8ea1177b5c8ecfc6996",
+        "width": 1600,
+        "height": 900
+      },
+      {
+        "path": "revisions/version-control-r39/spec-0.2.8/final-01-shop-computing.png",
+        "sha256": "e1f4ffccc669925471a2560480dc61f197b0bc0e0d22f0cf958f7406c5ace78e",
+        "width": 1600,
+        "height": 900
+      },
+      {
+        "path": "revisions/version-control-r39/spec-0.2.8/final-02-shop-weapons.png",
+        "sha256": "7b0c98242f1459d52899c3330d04fd5d1d8e14e57696f24a9d31fbe7e4ab5195",
+        "width": 1600,
+        "height": 900
+      },
+      {
+        "path": "revisions/version-control-r39/spec-0.2.8/final-03-quantity-two.png",
+        "sha256": "3ee1ef96bca9cf71aaf8b06232b550a7385b267cf50291e0482b96053b417f51",
+        "width": 1600,
+        "height": 900
+      },
+      {
+        "path": "revisions/version-control-r39/spec-0.2.8/final-10-delivery-available.png",
+        "sha256": "a918e40d1136706ad3429a68b642e99ac19da7f34bf67230b16c457db1a80e0c",
+        "width": 1600,
+        "height": 900
+      },
+      {
+        "path": "revisions/version-control-r39/spec-0.2.8/final-11-three-item-delivery.png",
+        "sha256": "5bbfb15f96dd4e2e011e9637cba50a5fe64bdc1f3c05a5f9234470612ca08db6",
+        "width": 1600,
+        "height": 900
+      },
+      {
+        "path": "revisions/version-control-r39/spec-0.2.8/final-12-ship-task.png",
+        "sha256": "41ba61f05f5149c20ffde55a8c85d27334e5582c08f72519f35cc4c384a03744",
+        "width": 1600,
+        "height": 900
+      },
+      {
+        "path": "revisions/version-control-r39/spec-0.2.8/final-13-delivery-accepted.png",
+        "sha256": "8ffb4d9d0949dc811aa89e1d78e0d4036cfad590af204b7c9a90f3e8d36892ce",
+        "width": 1600,
+        "height": 900
+      },
+      {
+        "path": "revisions/version-control-r39/spec-0.2.8/final-14-delivery-complete.png",
+        "sha256": "9cc7f19881fb48254cfd6ecf45e86b92b1d7841c70272d7415b4091d53262e22",
+        "width": 1600,
+        "height": 900
+      },
+      {
+        "path": "revisions/version-control-r39/spec-0.2.8/final-15-mixed-complete.png",
+        "sha256": "01c7f2b3b4ef86c2a83e4f726412be745c46a65a1a6f57d98434757d70621e54",
+        "width": 1600,
+        "height": 900
+      },
+      {
+        "path": "revisions/version-control-r39/spec-0.2.8/final-16-generated-delivery.png",
+        "sha256": "64d514dbf78a7b17dcbd8b67a67f1a15a7f1d9c926fc4723e1dd7079778bb71c",
+        "width": 1600,
+        "height": 900
+      },
+      {
+        "path": "revisions/version-control-r39/spec-0.2.8/final-17-generated-scrolled.png",
+        "sha256": "7b525868f48b375e5a5a5784d238e00b76f1ab83d56da03fb5b1091bdcf295e2",
+        "width": 1600,
+        "height": 900
+      },
+      {
+        "path": "revisions/version-control-r39/spec-0.2.8/final-18-special-task.png",
+        "sha256": "abef496986c60a2eca6c73bc1057ca64718506b25540add7481ad03f0c2a7f09",
+        "width": 1600,
+        "height": 900
+      },
+      {
+        "path": "revisions/version-control-r39/spec-0.2.8/final-22-gui2.png",
+        "sha256": "eafe08652e5f7a68887fde2510df73d8cf619b734f12a369c608a9ac34e40926",
+        "width": 1600,
+        "height": 900
+      },
+      {
+        "path": "revisions/version-control-r39/spec-0.2.8/final-24-gui4.png",
+        "sha256": "e0bd8cddcec1c35344707918aaeafd935efebffac853ee352ca99e9fbe3d9595",
+        "width": 1600,
+        "height": 900
+      }
+    ],
+    "criticalOverlaySha256": {
+      "kubejs/assets/gnfrontier/lang/ja_jp.json": "bae50076f9d96fb53d5967dac455c4cb394717fc62960dcf9ca4057ffc57a2ff",
+      "kubejs/assets/gnfrontier/lang/en_us.json": "b655ad8644722d1f93c9b5bbe15436e22522de5bc089dcda4437748fbe17dba4",
+      "kubejs/assets/gwg/lang/ja_jp.json": "ddf81ffbb60f0d6bf3772b52aa43cd7851de379dce647deb154b71b0e677950b",
+      "kubejs/assets/hamster/lang/ja_jp.json": "28f371841fbe8461734d2f531345b4c9d0af646036f4629c3ea333634064c5a2",
+      "kubejs/assets/hbm_m/lang/ja_jp.json": "4764dfba069cc00b6511ccc7bb3abfbe7044e0033afdb07702a750a9be8a7b26",
+      "kubejs/assets/hbm_m/models/item/gun_kit_2.json": "7710821d1d27578612f718b3f107d19215da7134cef7d10e846ee7a9b2a7593e",
+      "kubejs/assets/gnfrontier/textures/item/weapon_repair_kit.png": "7ff84dab2178297142025884cfb871fa4da629c83a0cf0d8c049938579e9ca7f"
+    },
+    "visuallyInspected": true,
+    "imagesEdited": false,
+    "nativeTransactionsVerified": true,
+    "native": {
+      "status": "PASS",
+      "nativeTransactionsVerified": true,
+      "purchaseCount": 5,
+      "fundsBefore": 10000,
+      "purchaseSpend": 372,
+      "fundsAfterPurchases": 9628,
+      "fundsAfterClaims": 11128,
+      "twoDeliveriesClaimed": true,
+      "repeatButtonDidNotPayAgain": true,
+      "requiredItemsConsumed": true,
+      "productionGenerated": {
+        "generatedByProductionCatalog": true,
+        "missions": [
+          {
+            "kind": "DELIVERY",
+            "requirements": [
+              {
+                "count": 3,
+                "item": "tacz:modern_kinetic_gun"
+              }
+            ],
+            "title": "旧式回転式拳銃を求む"
+          },
+          {
+            "kind": "HUNT",
+            "requirements": [],
+            "title": "ゾンビ類の討伐"
+          },
+          {
+            "kind": "DELIVERY",
+            "requirements": [
+              {
+                "count": 2,
+                "item": "tfmg:circuit_board"
+              },
+              {
+                "count": 12,
+                "item": "tfmg:copper_wire"
+              }
+            ],
+            "title": "制御盤の補修部品の納入依頼"
+          }
+        ]
+      },
+      "guiScales": [
+        2,
+        3,
+        4
+      ]
+    },
+    "goodsWithNativeModels": 42,
+    "sourceGoodsChecked": {
+      "market_meat": [
+        1,
+        6
+      ],
+      "market_fruit": [
+        5,
+        26
+      ],
+      "market_milk": [
+        1,
+        20
+      ],
+      "market_energy": [
+        1,
+        10
+      ],
+      "market_wine": [
+        1,
+        15
+      ],
+      "market_dagger": [
+        1,
+        50
+      ],
+      "market_french_nail": [
+        1,
+        50
+      ],
+      "market_makarov": [
+        1,
+        100
+      ],
+      "market_repair": [
+        1,
+        300
+      ]
+    },
+    "guiScales": [
+      2,
+      3,
+      4
+    ],
+    "runtimeRestored": true,
+    "inventoryAndAccountRestoredExactly": true,
+    "desktopSwitched": false,
+    "osInputInjected": false,
+    "normalSaveAndExit": true
+  },
+  "installation": {
+    "status": "PASS",
+    "version": "0.2.8",
+    "coreSha256": "f7b821d4b366fc519ebf8c10263f32f0f8ca2d628bacff603ae01098fae332ee",
+    "changedFiles": 10,
+    "thirdPartyJarsUnchanged": 132,
+    "singleCore": true,
+    "liveWorldsTouched": false,
+    "liveGameStarted": false,
+    "customConfigurationRetained": true
+  },
+  "limits": [
+    "Source wallet-not-found is not fabricated for the always-present GN account balance.",
+    "The repair-kit provider is unconfirmed. Its visible closed black case was manually redrawn; the existing HBM kit behavior is retained and cross-gun repair compatibility is not established.",
+    "The selected GR Makarov is a closer installed model, not a conclusive identification of the original video GunId.",
+    "The three comparison tasks are controlled fixtures. Normal daily boards still use the production random catalog, which was also rendered and checked.",
+    "The computing capture after purchasing the pistol includes the upstream English Gun Archive achievement toast; PDA labels were localized, but this external toast remains untranslated.",
+    "Test harness errors in earlier fixed fixtures were corrected before the final run; final native validation, saves, shutdown and restoration passed. Earlier candidate images are excluded.",
+    "No actual multi-client session, new generation, FPS benchmark or release archive import was performed in this UI review."
+  ]
+}

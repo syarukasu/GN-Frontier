@@ -16,5 +16,7 @@
   "hamster.gun.webley.name": "ウェブリー回転式拳銃",
   "hamster.gun.webley.desc": "旧式の回転式拳銃。",
   "hamster.gun.mosin9130.name": "モシン・ナガンM91/30",
-  "hamster.gun.mosin9130.desc": "ボルト操作で次弾を装填する旧式小銃。"
+  "hamster.gun.mosin9130.desc": "ボルト操作で次弾を装填する旧式小銃。",
+  "hamster.gun.makarov.name": "マカロフPM",
+  "hamster.gun.makarov.desc": "旧式の軍用・警察用拳銃。小型で携行しやすい。"
 }

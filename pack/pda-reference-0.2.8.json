@@ -1,0 +1,201 @@
+{
+  "schema": 1,
+  "version": "0.2.8",
+  "referenceVideo": "https://www.youtube.com/watch?v=dqV4ANw9UhM",
+  "observations": [
+    {
+      "time": "07:53",
+      "page": "shop-food",
+      "items": [
+        {
+          "name": "肉の缶詰",
+          "count": 1,
+          "price": 6
+        },
+        {
+          "name": "フルーツ缶",
+          "count": 5,
+          "price": 26
+        },
+        {
+          "name": "コンデンスミルク",
+          "count": 1,
+          "price": 20
+        },
+        {
+          "name": "エナジードリンク",
+          "count": 1,
+          "price": 10
+        },
+        {
+          "name": "ワイン",
+          "count": 1,
+          "price": 15
+        }
+      ]
+    },
+    {
+      "time": "07:54",
+      "page": "shop-weapons",
+      "items": [
+        {
+          "name": "軍用ダガー",
+          "count": 1,
+          "price": 50
+        },
+        {
+          "name": "フレンチネイル",
+          "count": 1,
+          "price": 50
+        },
+        {
+          "name": "マカロフPM",
+          "count": 1,
+          "price": 100
+        },
+        {
+          "name": "武器修理キット",
+          "count": 1,
+          "price": 300
+        }
+      ]
+    },
+    {
+      "time": "07:55",
+      "page": "shop-computing",
+      "order": [
+        "mining_rig",
+        "i3",
+        "pentium",
+        "i5",
+        "gpu8800",
+        "gpu480"
+      ],
+      "prices": [
+        200,
+        150,
+        200,
+        250,
+        200,
+        300
+      ]
+    },
+    {
+      "time": "08:00",
+      "page": "delivery",
+      "title": "ジャンク屋",
+      "observedRequirement": "旧式の制御基板8枚",
+      "reward": 300
+    },
+    {
+      "time": "08:02",
+      "page": "vehicle",
+      "title": "装甲輸送路",
+      "observedRequirement": "BMP-2を2両",
+      "reward": 3000
+    },
+    {
+      "time": "08:04",
+      "page": "ship",
+      "title": "海の藻屑",
+      "observedRequirement": "船舶1隻",
+      "reward": 1500
+    }
+  ],
+  "layout": {
+    "coordinateSpace": [
+      1920,
+      1200
+    ],
+    "editorialZoomCopiedIntoGuiScale": false,
+    "shopRows": {
+      "top": 300,
+      "pitch": 72,
+      "visible": 6,
+      "iconX": 248,
+      "iconSize": 36,
+      "nameX": 342,
+      "priceRight": 1346
+    },
+    "shopDetail": {
+      "nameY": 750,
+      "descriptionY": 790,
+      "quantityY": 825,
+      "unitY": 865
+    },
+    "categories": {
+      "x": 1465,
+      "headerY": 265,
+      "firstY": 295,
+      "pitch": 33
+    },
+    "tasks": {
+      "titleY": 255,
+      "descriptionY": 355,
+      "rewardY": 455,
+      "statusY": 555,
+      "limitY": 605,
+      "hintY": 890,
+      "requiredIconsY": 665,
+      "iconSize": 32
+    },
+    "taskList": {
+      "headerY": 265,
+      "firstY": 300,
+      "pitch": 34,
+      "shape": "outlined rounded rows"
+    },
+    "actionButton": [
+      1529,
+      950,
+      1702,
+      983
+    ]
+  },
+  "itemRepresentation": {
+    "militaryDagger": {
+      "item": "lrtactical:melee",
+      "MeleeWeaponId": "lrtactical:dagger"
+    },
+    "frenchNail": {
+      "item": "lrtactical:melee",
+      "MeleeWeaponId": "gwg:french_nail"
+    },
+    "makarov": {
+      "item": "tacz:modern_kinetic_gun",
+      "GunId": "hamster:makarov"
+    },
+    "repairKit": {
+      "item": "hbm_m:gun_kit_2",
+      "providerConfirmed": false,
+      "appearance": "manually redrawn closed black case",
+      "behavior": "existing HBM Gun Repair Kit retained"
+    },
+    "videoFramesUsedAsRuntimeTextures": false,
+    "condensedMilk": {
+      "item": "lrtactical:consumable",
+      "ConsumableId": "lrtactical:condensed_milk"
+    },
+    "generativeImageModelUsed": false,
+    "videoFramePixelsCopied": false,
+    "manualTexture": "overlay/kubejs/assets/gnfrontier/textures/item/weapon_repair_kit.png",
+    "manualTextureSha256": "7ff84dab2178297142025884cfb871fa4da629c83a0cf0d8c049938579e9ca7f"
+  },
+  "limits": [
+    "Visible English headings are translated to Japanese; Intel and GeForce product names retain their spelling.",
+    "The source wallet-not-found state is not fabricated for GN's always-present account balance. The heading accurately reports account funds.",
+    "Delivery requirement icons, daily/special selectors and selling mode retain user-requested extensions; they are not claimed as visible in these source frames.",
+    "The three-task visual review uses explicitly controlled test missions for comparison. It does not replace random daily boards in player saves.",
+    "Stock limits and reputation gates for the nine added goods are reproduction defaults; the source only establishes names, counts and purchase prices.",
+    "The exact provider and behavior of the source mining machine and repair-kit compatibility across gun systems remain unconfirmed. Native installed item models and existing GN machine textures are retained."
+  ],
+  "additionalReference": {
+    "video": "https://www.youtube.com/watch?v=Cn_WhgMn5Bo",
+    "time": "01:18",
+    "title": "空の害虫",
+    "requirement": "AH-6を1機",
+    "reward": 3000,
+    "sameTaskLayout": true,
+    "editorialRedUnderlineCopied": false
+  }
+}

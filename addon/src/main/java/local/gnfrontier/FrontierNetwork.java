@@ -114,7 +114,7 @@ public final class FrontierNetwork {
             row.putInt("buyStock", world.stock(offer, Economy.Direction.BUY)); row.putInt("sellStock", world.stock(offer, Economy.Direction.SELL));
             row.putBoolean("unlocked", Economy.standing(account, offer.merchant()) >= offer.requiredReputation() && Campaign.militaryRank(account)>=VehicleMarket.rank(offer.id()));
             row.putBoolean("progressUnlocked", IndustrialProgress.canBuy(player,offer.id()));
-            row.putInt("rank",VehicleMarket.rank(offer.id()));row.put("stack",VehicleMarket.stack(offer.id(),offer.item()).save(new CompoundTag()));
+            row.putInt("rank",VehicleMarket.rank(offer.id()));row.put("stack",MarketGoods.stack(offer.id(),offer.item()).save(new CompoundTag()));
             if(VehicleMarket.CATALOG.containsKey(offer.id()))row.putString("displayName",VehicleMarket.CATALOG.get(offer.id()).title());
             row.putBoolean("available", TradeService.exists(offer.item())); offers.add(row);
         }

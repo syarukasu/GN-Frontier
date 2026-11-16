@@ -1,0 +1,5 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {"layer0": "gnfrontier:item/weapon_repair_kit"},
+  "display": {"gui": {"scale": [1.125, 1.125, 1.125]}}
+}

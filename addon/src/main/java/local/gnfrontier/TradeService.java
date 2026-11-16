@@ -47,7 +47,7 @@ public final class TradeService {
         return data;
     }
     public static void trade(ServerPlayer player, String id, Economy.Direction direction, int units) {
-        WorldState world = active(player); Economy.Offer offer = Economy.offer(id); ItemStack template=VehicleMarket.stack(id,offer.item());
+        WorldState world = active(player); Economy.Offer offer = Economy.offer(id); ItemStack template=MarketGoods.stack(id,offer.item());
         if(direction==Economy.Direction.BUY && !IndustrialProgress.canBuy(player,id))
             throw new IllegalArgumentException("STEEL REQUIRED");
         if(Campaign.militaryRank(world.account(player.getUUID()))<VehicleMarket.rank(id))throw new IllegalArgumentException("必要な軍需Rankに達していません");

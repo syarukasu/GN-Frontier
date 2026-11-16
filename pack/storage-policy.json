@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "activeReview": "revisions/version-control-r39/runtime/minecraft",
+  "maxReviewEnvironments": 1,
+  "historyObjectStore": ".cache/review-history/objects",
+  "workspaceSoftLimitBytes": 30000000000,
+  "preserveAllSaves": true,
+  "notes": "Retire generated review copies only. Keep every distinct historical byte sequence in a local content-addressed store; preserve all saves in place. GitHub main owns current source, overlay and dependency metadata."
+}

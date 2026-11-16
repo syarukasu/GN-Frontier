@@ -1,0 +1,119 @@
+[
+  {
+    "when": "position",
+    "dimension": "minecraft:overworld",
+    "spawntype": [
+      "natural",
+      "chunk_generation"
+    ],
+    "mob": [
+      "simpleenemymod:ruunit",
+      "tacz_sewv:ru_medic",
+      "tacz_sewv:ru_engineer",
+      "tacz_sewv:ru_combat_engineer"
+    ],
+    "mincount": {
+      "amount": 8,
+      "perplayer": true,
+      "mob": [
+        "simpleenemymod:ruunit",
+        "tacz_sewv:ru_medic",
+        "tacz_sewv:ru_engineer",
+        "tacz_sewv:ru_combat_engineer"
+      ]
+    },
+    "result": "deny"
+  },
+  {
+    "when": "position",
+    "dimension": "minecraft:overworld",
+    "spawntype": [
+      "natural",
+      "chunk_generation"
+    ],
+    "mob": [
+      "simpleenemymod:usunit",
+      "tacz_sewv:us_medic",
+      "tacz_sewv:us_engineer",
+      "tacz_sewv:us_combat_engineer"
+    ],
+    "mincount": {
+      "amount": 8,
+      "perplayer": true,
+      "mob": [
+        "simpleenemymod:usunit",
+        "tacz_sewv:us_medic",
+        "tacz_sewv:us_engineer",
+        "tacz_sewv:us_combat_engineer"
+      ]
+    },
+    "result": "deny"
+  },
+  {
+    "when": "position",
+    "dimension": "minecraft:overworld",
+    "spawntype": [
+      "natural",
+      "chunk_generation"
+    ],
+    "mob": [
+      "simpleenemymod:pmcunit",
+      "tacz_sewv:pmc_commander"
+    ],
+    "mincount": {
+      "amount": 16,
+      "perplayer": true,
+      "mob": [
+        "simpleenemymod:pmcunit",
+        "tacz_sewv:pmc_commander"
+      ]
+    },
+    "result": "deny"
+  },
+  {
+    "when": "position",
+    "dimension": "minecraft:overworld",
+    "spawntype": [
+      "natural",
+      "chunk_generation"
+    ],
+    "mob": [
+      "minecraft:pillager"
+    ],
+    "mincount": {
+      "amount": 16,
+      "perplayer": true,
+      "mob": [
+        "minecraft:pillager"
+      ]
+    },
+    "result": "deny"
+  },
+  {
+    "when": "position",
+    "dimension": "minecraft:overworld",
+    "spawntype": [
+      "natural",
+      "chunk_generation"
+    ],
+    "mob": [
+      "minecraft:zombie",
+      "minecraft:husk",
+      "minecraft:drowned",
+      "minecraft:skeleton",
+      "minecraft:stray"
+    ],
+    "mincount": {
+      "amount": 64,
+      "perplayer": true,
+      "mob": [
+        "minecraft:zombie",
+        "minecraft:husk",
+        "minecraft:drowned",
+        "minecraft:skeleton",
+        "minecraft:stray"
+      ]
+    },
+    "result": "deny"
+  }
+]

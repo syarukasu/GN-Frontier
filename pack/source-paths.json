@@ -9830,5 +9830,37 @@
   {
     "path": "tacz/tacz-pre.toml",
     "source": "pack/defaults/tacz/tacz-pre.toml"
+  },
+  {
+    "path": "config/entityculling.json",
+    "source": "overlay/config/entityculling.json"
+  },
+  {
+    "path": "config/incontrol/spawn.json",
+    "source": "overlay/config/incontrol/spawn.json"
+  },
+  {
+    "path": "kubejs/data/gnfrontier/npc_loadouts/catalog.json",
+    "source": "overlay/kubejs/data/gnfrontier/npc_loadouts/catalog.json"
+  },
+  {
+    "path": "kubejs/data/gnfrontier/tags/items/ballistic_armor.json",
+    "source": "overlay/kubejs/data/gnfrontier/tags/items/ballistic_armor.json"
+  },
+  {
+    "path": "kubejs/data/minecraft/tags/damage_type/bypasses_armor.json",
+    "source": "overlay/kubejs/data/minecraft/tags/damage_type/bypasses_armor.json"
+  },
+  {
+    "path": "kubejs/data/minecraft/tags/damage_type/bypasses_enchantments.json",
+    "source": "overlay/kubejs/data/minecraft/tags/damage_type/bypasses_enchantments.json"
+  },
+  {
+    "path": "mods/.index/entityculling.pw.toml",
+    "source": "overlay/mods/.index/entityculling.pw.toml"
+  },
+  {
+    "path": "mods/.index/incontrol.pw.toml",
+    "source": "overlay/mods/.index/incontrol.pw.toml"
   }
 ]

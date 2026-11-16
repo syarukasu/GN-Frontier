@@ -8,7 +8,8 @@
     "controlling": "Client key binding screen",
     "searchables": "Client search UI library",
     "nerb": "Client recipe book UI",
-    "jei": "Client recipe browser"
+    "jei": "Client recipe browser",
+    "entityculling": "Client visibility culling; gameplay ticking remains native"
   },
   "shared_registry_notes": {
     "xaeroworldmap": "Retain on dedicated servers to preserve its four registered map-restriction effects in shared worlds."
@@ -27,7 +28,13 @@
     "config/oculus.properties",
     "config/enhancedvisuals.json",
     "config/sodiumoptionsapi-options.json",
-    "config/xaeroworldmap.txt"
+    "config/xaeroworldmap.txt",
+    "config/entityculling.json"
   ],
-  "exclude_config_suffixes": ["-client.toml", "-client.json", "-client.jsonc", "-client.snbt"]
+  "exclude_config_suffixes": [
+    "-client.toml",
+    "-client.json",
+    "-client.jsonc",
+    "-client.snbt"
+  ]
 }

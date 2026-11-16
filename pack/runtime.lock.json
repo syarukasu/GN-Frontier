@@ -4836,6 +4836,70 @@
       ],
       "sha1": "59e5ef296ff50bd1f0feaccc1ab7262a65b5429f",
       "sha512": "de58b0e5f605c24fb636db798f0da3c40e90d54723525945ffe7597711b14c6d95eb23c8a72725c1dad00ffa8abc3b919680a214f973734b9b3b7d47dbf8d850"
+    },
+    {
+      "path": "mods/entityculling-forge-1.11.3-mc1.20.1.jar",
+      "name": "Entity Culling",
+      "side": "client",
+      "size": 1515076,
+      "sha256": "86de2a9fc6538bc26e71e5393ae72018eb9bb349a5dbaa0645fd194da5654b66",
+      "sha512": "be5be53897ae7403a202e4b0b094701bcc4ecdb94afcf2ea144cd07d9a4553a1fc6a88917732a72c477d01c33583162cffb9c4a19d259089deb018878eec1da8",
+      "sha1": "d3c513e88ef9f5cdd7e27d17d923d4dca69c6d55",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9100/267/entityculling-forge-1.11.3-mc1.20.1.jar",
+        "https://edge.forgecdn.net/files/9100/267/entityculling-forge-1.11.3-mc1.20.1.jar"
+      ],
+      "page": "https://www.curseforge.com/minecraft/mc-mods/entityculling/files/9100267",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 448233,
+          "file-id": 9100267
+        }
+      },
+      "mods": [
+        {
+          "modId": "entityculling",
+          "displayName": "EntityCulling",
+          "version": "1.11.3"
+        }
+      ],
+      "installed_path": "mods/entityculling-forge-1.11.3-mc1.20.1.jar"
+    },
+    {
+      "path": "mods/incontrol-1.20-9.5.1.jar",
+      "name": "In Control!",
+      "side": "both",
+      "size": 372764,
+      "sha256": "9ec708e1fb194d9fed9ee776b4fb7d44769dce6f3b97b5ba1192b0ebbedfc368",
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9321/498/incontrol-1.20-9.5.1.jar",
+        "https://edge.forgecdn.net/files/9321/498/incontrol-1.20-9.5.1.jar"
+      ],
+      "page": "https://www.curseforge.com/minecraft/mc-mods/in-control/files/9321498",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 257356,
+          "file-id": 9321498
+        }
+      },
+      "mods": [
+        {
+          "modId": "incontrol",
+          "displayName": "InControl",
+          "version": "1.20-9.5.1",
+          "authors": "McJty"
+        }
+      ],
+      "declared_license": "MIT",
+      "installed_path": "mods/incontrol-1.20-9.5.1.jar",
+      "curseforge": {
+        "projectID": 257356,
+        "fileID": 9321498,
+        "required": true
+      },
+      "delivery": "manifest",
+      "sha1": "57db24e561a4aa373ca6832816e010ed03bd6a1a",
+      "sha512": "7c3a7db69e57a7645c00d74b17089fb9c4050f75bddc653e499148273d2c253fee29ddb81e43a095d1019038bb053fccaf1066821af46fff88caad74deb037a4"
     }
   ],
   "embedded_from_create": [

@@ -1,0 +1,82 @@
+{
+  "upstream": "Modern Structures 1.6",
+  "license": "Academic Free License 3.0",
+  "modSha256": "fc83d7ddac4dec14424b289f0b89b33014714c83df267290feb93837aac2c34a",
+  "generator": "addon/tools/generate_city_assets.py",
+  "templates": [
+    {
+      "source": "factory",
+      "asset": "industrial_factory",
+      "originalNbtSha256": "1afd4966a0d64b801ba167aff19015814664a6dc4da101e454428b8865cd9e26",
+      "size": [
+        38,
+        13,
+        29
+      ],
+      "chunkSize": [
+        3,
+        2
+      ],
+      "floors": 3,
+      "preservedSolidBlocks": 3568,
+      "paletteEntries": 216
+    },
+    {
+      "source": "factory_2",
+      "asset": "industrial_green_factory",
+      "originalNbtSha256": "0a4c1cc8c40de7dba4fc17895f050715d94f6c6c99a52aeaeaafb17022083fc1",
+      "size": [
+        45,
+        15,
+        31
+      ],
+      "chunkSize": [
+        3,
+        2
+      ],
+      "floors": 3,
+      "preservedSolidBlocks": 5738,
+      "paletteEntries": 266
+    },
+    {
+      "source": "bunker",
+      "asset": "military_bunker",
+      "originalNbtSha256": "ac849da64126a19841e3fa556bd020cb2cb09fa11ddc39e515b69a169ba4d455",
+      "size": [
+        45,
+        17,
+        46
+      ],
+      "chunkSize": [
+        3,
+        3
+      ],
+      "floors": 3,
+      "preservedSolidBlocks": 20080,
+      "paletteEntries": 334
+    },
+    {
+      "source": "research_outpost_2",
+      "asset": "military_outpost",
+      "originalNbtSha256": "d42e407e99ac7e2a8658287ac823d46d49257d80ea5a91414c08e298386cd579",
+      "size": [
+        21,
+        9,
+        20
+      ],
+      "chunkSize": [
+        2,
+        2
+      ],
+      "floors": 2,
+      "preservedSolidBlocks": 819,
+      "paletteEntries": 76
+    }
+  ],
+  "changes": [
+    "Split into 16x16x6 Lost Cities parts, pad margins with air",
+    "Keep source block states and block entity configuration; remove absolute saved coordinates",
+    "Use existing GN industrial/military loot conditions for storage containers",
+    "Keep source geometry; no new textures"
+  ]
+}

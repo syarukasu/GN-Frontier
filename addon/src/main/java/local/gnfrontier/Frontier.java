@@ -26,6 +26,10 @@ public final class Frontier {
     public static final String ID = "gnfrontier";
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ID);
     public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, ID);
+    public static final DeferredRegister<net.minecraft.world.inventory.MenuType<?>> MENUS=DeferredRegister.create(ForgeRegistries.MENU_TYPES,ID);
+    public static final RegistryObject<net.minecraft.world.inventory.MenuType<CorpseMenu>> CORPSE_MENU=MENUS.register("corpse",()->net.minecraftforge.common.extensions.IForgeMenuType.create(CorpseMenu::new));
+    public static final RegistryObject<EntityType<FallenSoldier>> FALLEN_SOLDIER = ENTITIES.register("fallen_soldier", () ->
+            EntityType.Builder.<FallenSoldier>of(FallenSoldier::new,MobCategory.MISC).sized(1.8f,.45f).clientTrackingRange(8).updateInterval(20).build("gnfrontier:fallen_soldier"));
     public static final RegistryObject<EntityType<ScavengerHook>> SCAVENGER_HOOK = ENTITIES.register("scavenger_hook", () ->
             EntityType.Builder.<ScavengerHook>of(ScavengerHook::new,MobCategory.MISC).sized(.25f,.25f).clientTrackingRange(32).updateInterval(1).build("gnfrontier:scavenger_hook"));
     public static final DeferredRegister<RecipeSerializer<?>> RECIPES = DeferredRegister.create(ForgeRegistries.RECIPE_SERIALIZERS, ID);
@@ -78,8 +82,11 @@ public final class Frontier {
     public static ResourceLocation id(String path) { return new ResourceLocation(ID, path); }
     public Frontier() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+        net.minecraftforge.fml.DistExecutor.unsafeRunWhenOn(net.minecraftforge.api.distmarker.Dist.CLIENT,
+                () -> () -> local.gnfrontier.client.FallenSoldierRenderer.bind(bus));
         ITEMS.register(bus);
         ENTITIES.register(bus);
+        MENUS.register(bus);
         RECIPES.register(bus);
         Infrastructure.BLOCKS.register(bus);
         Infrastructure.BLOCK_ENTITIES.register(bus);

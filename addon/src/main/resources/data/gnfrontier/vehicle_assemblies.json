@@ -1,10 +1,242 @@
 [
-  {"template":"discardblackcar_1","front":"discardblackcar_1","rear":"discardblackcar_2","large":false},
-  {"template":"discardbluecar_2","front":"discardbluecar_1","rear":"discardbluecar_2","large":false},
-  {"template":"discardredcar_1","front":"discardredcar_1","rear":"discardredcar_2","large":false},
-  {"template":"discardwhitecar_2","front":"discardwhitecar_1","rear":"discardwhitecar_2","large":false},
-  {"template":"discardgreyjeep_1","front":"discardgreyjeep_1","rear":"discardgreyjeep_2","large":false},
-  {"template":"discardgreenpickuptruck","front":"discardgreenjeep_1","rear":"discardgreenpickuptruck","large":false},
-  {"template":"discardwhitevan_1","front":"discardwhitevan_1","rear":"discardwhitevan_2","large":true},
-  {"template":"discardredstationwagon","front":"discardredcar_1","rear":"discardredstationwagon","large":true}
+  {
+    "template": "discardblackcar_1",
+    "front": "discardblackcar_1",
+    "rear": "discardblackcar_2",
+    "large": false
+  },
+  {
+    "template": "discardbluecar_2",
+    "front": "discardbluecar_1",
+    "rear": "discardbluecar_2",
+    "large": false
+  },
+  {
+    "template": "discardredcar_1",
+    "front": "discardredcar_1",
+    "rear": "discardredcar_2",
+    "large": false
+  },
+  {
+    "template": "discardwhitecar_2",
+    "front": "discardwhitecar_1",
+    "rear": "discardwhitecar_2",
+    "large": false
+  },
+  {
+    "template": "discardgreyjeep_1",
+    "front": "discardgreyjeep_1",
+    "rear": "discardgreyjeep_2",
+    "large": false
+  },
+  {
+    "template": "discardgreenpickuptruck",
+    "front": "discardgreenjeep_1",
+    "rear": "discardgreenpickuptruck",
+    "large": false
+  },
+  {
+    "template": "discardwhitevan_1",
+    "front": "discardwhitevan_1",
+    "rear": "discardwhitevan_2",
+    "large": true
+  },
+  {
+    "template": "discardredstationwagon",
+    "front": "discardredcar_1",
+    "rear": "discardredstationwagon",
+    "large": true
+  },
+  {
+    "template": "ambulance_1",
+    "front": "ambulance_1",
+    "rear": "ambulance_2",
+    "large": true
+  },
+  {
+    "template": "black_jeep_1",
+    "front": "black_jeep_1",
+    "rear": "black_jeep_2",
+    "large": false
+  },
+  {
+    "template": "blackvan_1",
+    "front": "blackvan_1",
+    "rear": "blackvan_2",
+    "large": true
+  },
+  {
+    "template": "blue_jeep_1",
+    "front": "blue_jeep_1",
+    "rear": "blue_jeep_2",
+    "large": false
+  },
+  {
+    "template": "bluevan_1",
+    "front": "bluevan_1",
+    "rear": "bluevan_2",
+    "large": true
+  },
+  {
+    "template": "brown_jeep_1",
+    "front": "brown_jeep_1",
+    "rear": "brown_jeep_2",
+    "large": false
+  },
+  {
+    "template": "discard_bluevan_1",
+    "front": "discard_bluevan_1",
+    "rear": "discard_bluevan_2",
+    "large": true
+  },
+  {
+    "template": "discard_redvan_1",
+    "front": "discard_redvan_1",
+    "rear": "discard_redvan_2",
+    "large": true
+  },
+  {
+    "template": "discard_white_jeep_1",
+    "front": "discard_white_jeep_1",
+    "rear": "discard_white_jeep_2",
+    "large": false
+  },
+  {
+    "template": "discardblackjeep_1",
+    "front": "discardblackjeep_1",
+    "rear": "discardblackjeep_2",
+    "large": false
+  },
+  {
+    "template": "discardblackvan_1",
+    "front": "discardblackvan_1",
+    "rear": "discardblackvan_2",
+    "large": true
+  },
+  {
+    "template": "discardbluejeep_1",
+    "front": "discardbluejeep_1",
+    "rear": "discardbluejeep_2",
+    "large": false
+  },
+  {
+    "template": "discardbrownjeep_1",
+    "front": "discardbrownjeep_1",
+    "rear": "discardbrownjeep_2",
+    "large": false
+  },
+  {
+    "template": "discardgreencar_1",
+    "front": "discardgreencar_1",
+    "rear": "discardgreencar_2",
+    "large": false
+  },
+  {
+    "template": "discardgreenjeep_1",
+    "front": "discardgreenjeep_1",
+    "rear": "discardgreenjeep_2",
+    "large": false
+  },
+  {
+    "template": "discardgreenvan_1",
+    "front": "discardgreenvan_1",
+    "rear": "discardgreenvan_2",
+    "large": true
+  },
+  {
+    "template": "discardgreycar_1",
+    "front": "discardgreycar_1",
+    "rear": "discardgreycar_2",
+    "large": false
+  },
+  {
+    "template": "discardgreyvan_1",
+    "front": "discardgreyvan_1",
+    "rear": "discardgreyvan_2",
+    "large": true
+  },
+  {
+    "template": "discardkhakicar_1",
+    "front": "discardkhakicar_1",
+    "rear": "discardkhakicar_2",
+    "large": false
+  },
+  {
+    "template": "discardpolicecar_1",
+    "front": "discardpolicecar_1",
+    "rear": "discardpolicecar_2",
+    "large": false
+  },
+  {
+    "template": "discardredjeep_1",
+    "front": "discardredjeep_1",
+    "rear": "discardredjeep_2",
+    "large": false
+  },
+  {
+    "template": "discardyellowvan_1",
+    "front": "discardyellowvan_1",
+    "rear": "discardyellowvan_2",
+    "large": true
+  },
+  {
+    "template": "green_jeep_1",
+    "front": "green_jeep_1",
+    "rear": "green_jeep_2",
+    "large": false
+  },
+  {
+    "template": "greenvan_1",
+    "front": "greenvan_1",
+    "rear": "greenvan_2",
+    "large": true
+  },
+  {
+    "template": "grey_jeep_1",
+    "front": "grey_jeep_1",
+    "rear": "grey_jeep_2",
+    "large": false
+  },
+  {
+    "template": "greyvan_1",
+    "front": "greyvan_1",
+    "rear": "greyvan_2",
+    "large": true
+  },
+  {
+    "template": "policecar_1",
+    "front": "policecar_1",
+    "rear": "policecar_2",
+    "large": false
+  },
+  {
+    "template": "red_jeep_1",
+    "front": "red_jeep_1",
+    "rear": "red_jeep_2",
+    "large": false
+  },
+  {
+    "template": "redvan_1",
+    "front": "redvan_1",
+    "rear": "redvan_2",
+    "large": true
+  },
+  {
+    "template": "white_jeep_1",
+    "front": "white_jeep_1",
+    "rear": "white_jeep_2",
+    "large": false
+  },
+  {
+    "template": "whitevan_1",
+    "front": "whitevan_1",
+    "rear": "whitevan_2",
+    "large": true
+  },
+  {
+    "template": "yellowvan_1",
+    "front": "yellowvan_1",
+    "rear": "yellowvan_2",
+    "large": true
+  }
 ]

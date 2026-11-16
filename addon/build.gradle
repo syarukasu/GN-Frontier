@@ -187,3 +187,33 @@ tasks.register('reviewJar', Jar) {
 }
 reobf { reviewJar {} }
 tasks.named('reviewJar') { finalizedBy 'reobfReviewJar' }
+
+// Headless integration checks; this test-only JAR is never part of either distribution.
+sourceSets {
+    combatReview {
+        compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath
+        runtimeClasspath += sourceSets.main.output + sourceSets.main.runtimeClasspath
+    }
+}
+tasks.register('combatReviewJar', Jar) {
+    dependsOn 'combatReviewClasses'
+    archiveBaseName = 'gn-combat-review'
+    from sourceSets.combatReview.output
+}
+reobf { combatReviewJar {} }
+tasks.named('combatReviewJar') { finalizedBy 'reobfCombatReviewJar' }
+
+// In-process visual review helper; never installed as a MOD or shipped with the pack.
+sourceSets {
+    visualReview {
+        compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath
+        runtimeClasspath += sourceSets.main.output + sourceSets.main.runtimeClasspath
+    }
+}
+tasks.register('visualReviewJar', Jar) {
+    dependsOn 'visualReviewClasses'
+    archiveBaseName = 'gn-frontier-visual-checks'
+    from sourceSets.visualReview.output
+}
+reobf { visualReviewJar {} }
+tasks.named('visualReviewJar') { finalizedBy 'reobfVisualReviewJar' }

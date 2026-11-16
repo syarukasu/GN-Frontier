@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "tacz:bullet", "tacz:bullet_void", "tacz:bullet_ignore_armor", "tacz:bullet_void_ignore_armor",
+    "superbwarfare:gunfire", "superbwarfare:gunfire_headshot"
+  ]
+}

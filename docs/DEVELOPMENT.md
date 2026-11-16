@@ -23,6 +23,18 @@ GitHub Actionsは同じ手順でコアをビルドし、番号と内包ライブ
 
 セーブ、アカウント、ログ、取得済み第三者JAR、生成された配布ZIP、画面検証データ、過去revisionはGitに入れません。動画の原画像・抽出テクスチャもリポジトリに入れません。公開可否が未確認の派生データは[CurseForgeの残件](CURSEFORGE.md)で管理します。
 
+現行ソースはGitHubの`main`と、このチェックアウトの`addon/`・`overlay/`・`pack/`で管理します。機能を変更するたびにソースやゲーム環境を丸ごと複製しません。必要な開発だけをブランチまたはドラフトPRに分け、検証環境は既存の1組を使い回します。[容量方針](../pack/storage-policy.json)に現在の再利用先を記録します。
+
+過去の検証コピーは、`tools/storage.py`で一覧と整理計画を作成してから適用します。実ワールドと既存の全セーブはその場に保持し、現行ソースと再利用先を対象外にします。古い設定・素材・未公開成果物を含む異なる内容は、SHA-256ごとにローカルへ1個ずつ保存します。内容を照合した重複ファイルだけを取り除き、確認できないファイルは削除しません。記録はGit対象外の`local/`、保管本体は`.cache/review-history/`に置きます。Windowsで実行します。
+
+```powershell
+python tools/storage.py inventory --output local/storage-review
+python tools/storage.py plan --inventory local/storage-review/inventory.json --output local/storage-plan
+python tools/storage.py apply --output local/storage-plan
+```
+
+JavaやPrismがこの作業先を使用している場合は適用を拒否します。実行前にパス、リンク、変更日時と容量を確認し、適用時は排他アクセスとSHA-256を再確認します。保管先の照合後に個別ファイルを削除し、最後に空のフォルダーだけを除去します。
+
 コアのビルド後、メタデータから3種類のパックと単独コアを作成します。第三者JARをダウンロードしたり、ゲーム環境を複製したりする必要はありません。
 
 ```powershell

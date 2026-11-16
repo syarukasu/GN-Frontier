@@ -14,6 +14,7 @@ public final class PrototypeConfig {
     public static final ForgeConfigSpec.IntValue ROD_RANGE, ROD_COOLDOWN, ROD_CHANCE;
     public static final ForgeConfigSpec.DoubleValue ROD_PULL;
     public static final ForgeConfigSpec.IntValue ROTOR_BASE_RADIUS;
+    public static final ForgeConfigSpec.IntValue CORPSE_SEARCH_TICKS,CORPSE_EMPTY_SEARCH_TICKS;
     static {
         ForgeConfigSpec.Builder b = new ForgeConfigSpec.Builder();
         b.comment("Prototype balance, NOT original-series settings. Applies only to activated GN worlds.").push("rules");
@@ -46,6 +47,10 @@ public final class PrototypeConfig {
         ROD_COOLDOWN=b.defineInRange("cooldownTicks",100,40,1200);
         ROD_CHANCE=b.defineInRange("spawnOneIn",16,1,256);
         ROD_PULL=b.defineInRange("pullStrength",.9,.1,2.0);
+        b.pop();
+        b.comment("Corpse searching, measured in server ticks. Reproduction balance, not original Tarkov timing.").push("corpseSearch");
+        CORPSE_SEARCH_TICKS=b.defineInRange("itemTicks",30,1,1200);
+        CORPSE_EMPTY_SEARCH_TICKS=b.defineInRange("emptySlotTicks",2,1,200);
         b.pop(); SPEC = b.build();
     }
 }

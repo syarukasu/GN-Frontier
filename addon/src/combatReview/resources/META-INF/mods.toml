@@ -1,0 +1,13 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All Rights Reserved"
+[[mods]]
+modId="gncombatreview"
+version="1"
+displayName="GN headless combat checks (test only)"
+[[dependencies.gncombatreview]]
+modId="gnfrontier"
+mandatory=true
+versionRange="[0.2.3,)"
+ordering="AFTER"
+side="SERVER"

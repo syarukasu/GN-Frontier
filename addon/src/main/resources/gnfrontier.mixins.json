@@ -5,6 +5,15 @@
   "compatibilityLevel": "JAVA_17",
   "plugin": "local.gnfrontier.mixin.FrontierMixinPlugin",
   "mixins": [
+    "CityDistrictsMixin",
+    "LostCityTypeLookupMixin",
+    "SkarrierTeamSetupMixin",
+    "TinyInvHotbarMixin",
+    "TinyInvSlotRulesMixin",
+    "ExpertBulletArmorMixin",
+    "NpcFreshEquipmentMixin",
+    "NpcNativeDropsMixin",
+    "NpcInventoryCapabilityMixin",
     "ExfilDedicatedServerMixin",
     "AnomalyDialogServerMixin",
     "FurnaceMixin",
@@ -60,6 +69,7 @@
     "ScanPromptOverlayMixin",
     "JapanesePackPriorityMixin",
     "GunTooltipJapaneseMixin",
-    "CreateWorldAccess"
+    "CreateWorldAccess",
+    "LivingRendererAccess"
   ]
 }

@@ -18,12 +18,12 @@ public final class TradeService {
         return Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation(id)));
     }
     public static boolean hasPda(net.minecraft.world.entity.player.Player player) {
-        // Other mods may attach an empty or custom NBT tag while the PDA is held.
-        // Possession depends on the registered item, not its incidental NBT.
-        var inventory=player.getInventory();
-        for(int slot=0;slot<inventory.getContainerSize();slot++)
-            if(inventory.getItem(slot).is(Frontier.PDA.get()))return true;
-        return false;
+        // PDA access is a permanent hotkey feature from the beginning, including after death.
+        return player!=null;
+    }
+    static boolean receivePreserved(ServerPlayer player,ItemStack stack){
+        try{mutateInventory(player,stack,0,stack.getCount());return true;}
+        catch(IllegalArgumentException full){return false;}
     }
     // Grid placeholders are reserved cells, not empty slots. Armor/offhand/disabled hotbar stay outside trades.
     private static boolean matches(ItemStack stack, ItemStack template) { return ItemStack.isSameItemSameTags(stack,template); }

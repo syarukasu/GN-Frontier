@@ -35,6 +35,7 @@
 !/tools/build_release.py
 !/tools/verify_repository.py
 !/tools/test_distribution.py
+!/tools/storage.py
 /docs/*
 !/docs/VERSIONING.md
 !/docs/DEVELOPMENT.md

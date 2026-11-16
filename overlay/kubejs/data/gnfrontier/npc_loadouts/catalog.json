@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "note": "GN reproduction balance, not confirmed quantities from the original videos. Ammunition is finite and carried by the unit.",
+  "east": {
+    "helmet": "superbwarfare:ru_helmet_6b47", "vest": "superbwarfare:ru_chest_6b43",
+    "weapons": [
+      {"id":"tacz:ak47","weight":8,"loaded":30,"reserve":90,"mode":"AUTO","scope":"tacz:sight_t2"},
+      {"id":"tacz:rpk","weight":2,"loaded":40,"reserve":120,"mode":"AUTO","scope":"tacz:sight_t2"}
+    ]
+  },
+  "west": {
+    "helmet": "superbwarfare:us_helmet_pasgt", "vest": "superbwarfare:us_chest_iotv",
+    "weapons": [
+      {"id":"tacz:m4a1","weight":7,"loaded":30,"reserve":90,"mode":"AUTO","scope":"tacz:scope_acog_ta31"},
+      {"id":"tacz:scar_l","weight":2,"loaded":30,"reserve":90,"mode":"AUTO","scope":"tacz:scope_acog_ta31"},
+      {"id":"tacz:m249","weight":1,"loaded":75,"reserve":150,"mode":"AUTO","scope":"tacz:scope_acog_ta31"}
+    ]
+  },
+  "supplies": [{"id":"survival_instinct:bandage","count":2},{"id":"survival_instinct:mre","count":1}],
+  "medic_supplies": [{"id":"survival_instinct:bandage","count":6},{"id":"survival_instinct:antibiotics","count":1},{"id":"survival_instinct:mre","count":1}],
+  "support_reserve_magazines": 2,
+  "carried_loot_table": "gnfrontier:entities/soldier",
+  "empty_corpse_ticks": 1200
+}

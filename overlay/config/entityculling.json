@@ -1,0 +1,22 @@
+{
+  "configVersion": 9,
+  "safeMode": true,
+  "tickCulling": false,
+  "entityWhitelist": [
+    "botania:mana_burst",
+    "drg_flares:drg_flares",
+    "quark:soul_bead",
+    "gnfrontier:fallen_soldier",
+    "create:contraption",
+    "create:carriage_contraption"
+  ],
+  "blockEntityWhitelist": [
+    "betterend:eternal_pedestal",
+    "botania:falling_star",
+    "botania:flame_ring",
+    "botania:magic_missile",
+    "create:hose_pulley",
+    "create:rope_pulley",
+    "minecraft:beacon"
+  ]
+}

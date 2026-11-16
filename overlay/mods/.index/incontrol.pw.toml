@@ -1,0 +1,15 @@
+filename = "incontrol-1.20-9.5.1.jar"
+name = "In Control!"
+side = "both"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "9ec708e1fb194d9fed9ee776b4fb7d44769dce6f3b97b5ba1192b0ebbedfc368"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/9321/498/incontrol-1.20-9.5.1.jar"
+
+[update.curseforge]
+file-id = 9321498
+project-id = 257356

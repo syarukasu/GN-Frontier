@@ -62,6 +62,11 @@ caliberDamage = false
 wallPenetration = true
 ricochets = true
 
+# GN-085: ordinary armor and Protection enchantments are not ballistic protection.
+[bodyArmor]
+vanillaArmorVsBullets = 0.0
+vanillaProtectionVsBullets = 0.0
+
 [weaponLights]
 enabled = true
 

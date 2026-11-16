@@ -1,0 +1,15 @@
+filename = "entityculling-forge-1.11.3-mc1.20.1.jar"
+name = "Entity Culling"
+side = "client"
+x-prismlauncher-mc-versions = ["1.20.1"]
+x-prismlauncher-loaders = ["forge"]
+
+[download]
+hash-format = "sha256"
+hash = "86de2a9fc6538bc26e71e5393ae72018eb9bb349a5dbaa0645fd194da5654b66"
+mode = "url"
+url = "https://mediafilez.forgecdn.net/files/9100/267/entityculling-forge-1.11.3-mc1.20.1.jar"
+
+[update.curseforge]
+file-id = 9100267
+project-id = 448233

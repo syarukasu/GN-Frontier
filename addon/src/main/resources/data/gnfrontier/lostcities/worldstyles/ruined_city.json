@@ -435,8 +435,16 @@
   ],
   "citystyles": [
     {
-      "factor": 1,
-      "citystyle": "gnfrontier:commercial_core"
+      "factor": 5,
+      "citystyle": "gnfrontier:residential_city"
+    },
+    {
+      "factor": 3,
+      "citystyle": "gnfrontier:industrial_city"
+    },
+    {
+      "factor": 2,
+      "citystyle": "gnfrontier:military_city"
     }
   ],
   "parts": {

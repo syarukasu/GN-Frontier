@@ -153,7 +153,7 @@
   "item.superbwarfare.tow_bar": "牽引バー",
   "item.superbwarfare.towline": "牽引索",
   "item.superbwarfare.track": "線路",
-  "item.superbwarfare.us_helmet_pasgt": "米軍PASGTヘルメット",
+  "item.superbwarfare.us_helmet_pasgt": "西軍 PASGT 防弾ヘルメット",
   "item.superbwarfare.vehicle_gun": "車載銃",
   "item.superbwarfare.vehicle_key": "車両キー",
   "item.superbwarfare.vehicle_smoke_ammo": "車両用発煙弾",
@@ -294,7 +294,7 @@
   "info.superbwarfare.air_sheep": "本当に空を飛ぶ羊",
   "info.superbwarfare.fh_77bw": "FH77BW「アーチャー」はスウェーデンの装輪自走榴弾砲。完全自動装填装置を備えた155mm52口径砲を搭載する。迅速な展開と精密な火力支援のために設計され、高い機動性と操作の自動化が特徴。",
   "info.superbwarfare.happiest_ghast": "ヒヒヒヒヒヒ、ハハハハハ、ヤハハハハ、ヒヒヒヒヒ",
-  "info.superbwarfare.kirov": "キーロフ飛行船はソ連の重爆撃飛行船。徹甲航空爆弾を搭載し、地上基地や集結した装甲部隊の破壊を担う。重装甲と圧倒的な火力を持つが、低速で対空防御を持たない。",
+  "info.superbwarfare.kirov": "キーロフ飛行船は東側の重爆撃飛行船。徹甲航空爆弾を搭載し、地上基地や集結した装甲部隊の破壊を担う。重装甲と圧倒的な火力を持つが、低速で対空防御を持たない。",
   "info.superbwarfare.tow": "TOWは大型の対戦車ミサイル発射器。車両やヘリに搭載され、有線または無線の指令で誘導する。敵戦車・装甲車両・強化陣地を遠距離から精密に攻撃し、高い信頼性と継続戦闘能力を備える。",
   "item.superbwarfare.iff": "敵味方識別装置",
   "key.superbwarfare.change_seat": "座席を次へ切り替え",
@@ -441,5 +441,8 @@
   "commands.superbwarfare.ammo.add": "%3$s人に%1$sを%2$s追加しました。",
   "commands.superbwarfare.ammo.set": "%3$s人の%1$sを%2$sに設定しました。",
   "tips.superbwarfare.switch_ammo": "スイッチ",
-  "context.superbwarfare.tactical_map.ok": "確定"
+  "context.superbwarfare.tactical_map.ok": "確定",
+  "item.superbwarfare.ru_helmet_6b47": "東軍 6B47 防弾ヘルメット",
+  "item.superbwarfare.ru_chest_6b43": "東軍 6B43 防弾ベスト",
+  "item.superbwarfare.us_chest_iotv": "西軍 IOTV 防弾ベスト"
 }

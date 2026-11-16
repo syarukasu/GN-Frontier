@@ -1,4 +1,5 @@
 {
   "hud.inv_stats_show": false,
+  "hud.contam_show": false,
   "hud.vitals_y": -60
 }

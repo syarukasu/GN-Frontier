@@ -26,18 +26,27 @@ public final class WindowKick {
         if(now>=previous && now-previous<14)return;
         last.put(p.getUUID(),now);
         Vec3 eye=p.getEyePosition();
-        BlockHitResult hit=p.serverLevel().clip(new ClipContext(eye,eye.add(p.getLookAngle().scale(2.8)),ClipContext.Block.OUTLINE,ClipContext.Fluid.NONE,p));
+        BlockHitResult hit=p.serverLevel().clip(new ClipContext(eye,eye.add(p.getLookAngle().scale(2.0)),ClipContext.Block.OUTLINE,ClipContext.Fluid.NONE,p));
         FrontierNetwork.CHANNEL.send(PacketDistributor.TRACKING_ENTITY_AND_SELF.with(()->p),new FrontierNetwork.KickAnimation(p.getId()));
         p.serverLevel().playSound(null,p.blockPosition(),SoundEvents.PLAYER_ATTACK_SWEEP,SoundSource.PLAYERS,.6f,.8f);
         if(!p.isCreative())p.causeFoodExhaustion(.3f);
         if(hit.getType()!=HitResult.Type.BLOCK)return;
-        BlockPos pos=hit.getBlockPos();
-        if(!p.serverLevel().hasChunkAt(pos) || !p.serverLevel().getBlockState(pos).is(WINDOWS)
-            || p.serverLevel().getBlockEntity(pos)!=null || !p.serverLevel().mayInteract(p,pos)
-            || Gameplay.protectedAt(p.serverLevel(),pos))return;
-        if(ForgeHooks.onBlockBreakEvent(p.serverLevel(),p.gameMode.getGameModeForPlayer(),p,pos)==-1)return;
-        // Glass shards are an effect, never an extra item or a duplicate block drop.
-        p.serverLevel().destroyBlock(pos,false,p);
+        if(!p.serverLevel().getBlockState(hit.getBlockPos()).is(WINDOWS))return;
+        // Clear the two-block-high passage in this same window plane, never a block behind it.
+        BlockPos base=new BlockPos(hit.getBlockPos().getX(),p.getBlockY(),hit.getBlockPos().getZ());
+        boolean opened=false;
+        for(BlockPos pos:List.of(base,base.above())){
+            if(!p.serverLevel().hasChunkAt(pos)||!p.serverLevel().getBlockState(pos).is(WINDOWS)
+                ||p.serverLevel().getBlockEntity(pos)!=null||!p.serverLevel().mayInteract(p,pos)
+                ||Gameplay.protectedAt(p.serverLevel(),pos))continue;
+            if(ForgeHooks.onBlockBreakEvent(p.serverLevel(),p.gameMode.getGameModeForPlayer(),p,pos)==-1)continue;
+            opened|=p.serverLevel().destroyBlock(pos,false,p);
+        }
+        if(opened){
+            Vec3 forward=new Vec3(p.getLookAngle().x,0,p.getLookAngle().z).normalize().scale(.2);
+            p.push(forward.x,0,forward.z);
+            p.connection.send(new net.minecraft.network.protocol.game.ClientboundSetEntityMotionPacket(p));
+        }
     }
     @SubscribeEvent public void logout(PlayerEvent.PlayerLoggedOutEvent e){last.remove(e.getEntity().getUUID());}
     @SubscribeEvent public void stopped(ServerStoppedEvent e){last.clear();}

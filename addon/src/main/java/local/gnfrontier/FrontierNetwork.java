@@ -14,7 +14,7 @@ import java.util.*;
 import java.util.function.Supplier;
 
 public final class FrontierNetwork {
-    private static final String VERSION = "8";
+    private static final String VERSION = "9";
     public static final SimpleChannel CHANNEL = NetworkRegistry.newSimpleChannel(Frontier.id("pda"), () -> VERSION, VERSION::equals, VERSION::equals);
     private static final Map<UUID, Long> LAST_REQUEST = new HashMap<>();
     private static final Map<UUID, Long> LAST_REFRESH = new HashMap<>();

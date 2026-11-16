@@ -11,6 +11,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 public final class EnemyDrops {
     @SubscribeEvent(priority=EventPriority.LOWEST) public void drops(LivingDropsEvent e) {
         if(e.isCanceled() || !(e.getEntity().level() instanceof ServerLevel l) || !WorldState.get(l).enabled)return;
+        if(NpcEquipment.managed(e.getEntity()))return;
         var id=ForgeRegistries.ENTITY_TYPES.getKey(e.getEntity().getType());if(id==null)return;
         // ChaosZ Bandits spawns vanilla Pillagers; it registers no custom entity namespace.
         boolean soldier=id.getNamespace().equals("simpleenemymod") || e.getEntity() instanceof Pillager;

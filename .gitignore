@@ -36,9 +36,11 @@
 !/tools/verify_repository.py
 !/tools/test_distribution.py
 !/tools/storage.py
+!/tools/audit_quest_repetition.java
 /docs/*
 !/docs/VERSIONING.md
 !/docs/DEVELOPMENT.md
 !/docs/STATUS.md
 !/docs/CURSEFORGE.md
 !/docs/SERVER.md
+!/docs/SPEC_AUDIT_0.2.6.md

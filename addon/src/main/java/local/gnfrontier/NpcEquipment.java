@@ -37,7 +37,12 @@ public final class NpcEquipment {
     public static IItemHandler inventory(Mob mob){return mob.getCapability(ForgeCapabilities.ITEM_HANDLER).orElseThrow(()->new IllegalStateException("Missing NPC inventory: "+mob.getType()));}
     public static void markFresh(Mob mob){mob.getPersistentData().putBoolean(FRESH,true);}
     @SubscribeEvent public static void tick(LivingEvent.LivingTickEvent e){
-        if(!(e.getEntity() instanceof Mob mob)||mob.level().isClientSide||!eligible(mob)||!RespawnRules.enabled(mob.level()))return;
+        if(!(e.getEntity() instanceof Mob mob)||mob.level().isClientSide)return;
+        var state=mob.getPersistentData();
+        // Issued units need no registry, faction or world-data lookup on every living tick.
+        // A revived unit's death snapshot still takes the original cleanup path.
+        if(state.getBoolean(ISSUED)&&state.getBoolean(NpcGunQuality.INITIALIZED)&&!state.contains(SNAPSHOT))return;
+        if(!eligible(mob)||!RespawnRules.enabled(mob.level()))return;
         if(mob.isAlive())mob.getPersistentData().remove(SNAPSHOT);
         if(!mob.getPersistentData().getBoolean(ISSUED)||!mob.getPersistentData().getBoolean(NpcGunQuality.INITIALIZED))prepare(mob);
     }

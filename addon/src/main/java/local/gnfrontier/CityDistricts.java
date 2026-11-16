@@ -1,6 +1,7 @@
 package local.gnfrontier;
 
 import java.util.*;
+import local.gnfrontier.core.CityCentreDraw;
 import mcjty.lostcities.config.LostCityProfile;
 import mcjty.lostcities.varia.ChunkCoord;
 import mcjty.lostcities.worldgen.IDimensionInfo;
@@ -40,7 +41,7 @@ public final class CityDistricts {
         for(int x=x0;x<=x1;x++)for(int z=z0;z<=z1;z++){
             // Installed Lost Cities 7.5.7 normal-city draw. Confirm the rare candidates with the native API;
             // do not populate LC2H's per-chunk caches with every rejected coordinate.
-            if(new Random(z*797003437L+x*295075153L).nextDouble()>=tile.chance())continue;
+            if(CityCentreDraw.draw(x,z)>=tile.chance())continue;
             var coord=new ChunkCoord(info.getType(),x,z);
             if(City.isCityCenter(coord,info))centres.put(((long)x<<32)^(z&0xffffffffL),new Centre(x,z,City.getCityRadius(coord,info)));
         }

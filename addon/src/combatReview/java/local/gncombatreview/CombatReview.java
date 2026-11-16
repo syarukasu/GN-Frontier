@@ -10,6 +10,7 @@ import com.tacz.guns.item.ModernKineticGunScriptAPI;
 import com.tacz.guns.util.TacHitResult;
 import java.nio.file.*;
 import java.util.*;
+import local.gnperf.PerformanceChecks;
 import local.gnfrontier.*;
 import net.minecraft.nbt.*;
 import net.minecraft.resources.ResourceLocation;
@@ -53,7 +54,7 @@ public final class CombatReview {
             run(server.overworld());result.put("status",failures.isEmpty()?"PASS":"FAIL");result.put("failures",failures);
         }catch(Throwable error){result.put("status","FAIL");result.put("error",error.toString());error.printStackTrace();}
         finally{
-            fixtures.forEach(Entity::discard);result.put("checks",checks);result.put("failures",failures);result.put("version","0.2.4");result.put("screenUsed",false);
+            fixtures.forEach(Entity::discard);result.put("checks",checks);result.put("failures",failures);result.put("version",net.minecraftforge.fml.ModList.get().getModContainerById(Frontier.ID).orElseThrow().getModInfo().getVersion().toString());result.put("screenUsed",false);
             try{Files.writeString(evidence,new GsonBuilder().setPrettyPrinting().create().toJson(result));}catch(Exception error){error.printStackTrace();}
             System.out.println("GN_COMBAT_REVIEW "+result.get("status")+" checks="+checks.size());
         }
@@ -199,6 +200,7 @@ public final class CombatReview {
         fixtures.forEach(Entity::discard);fixtures.clear();
         verifySpawnRules(level,one,two);
         var pack=PackChecks.run(level,one);result.put("pack",pack);for(Object name:(List<?>)pack.get("checks"))checks.add(name.toString());
+        var performance=PerformanceChecks.run(level,unit(level,"simpleenemymod:usunit"));result.put("performance",performance);for(Object name:(List<?>)performance.get("checks"))checks.add(name.toString());
         result.put("worldgen",CityGenerationChecks.run(level));check(true,"final preset generates both city and natural chunks at their actual boundary");
     }
     @SuppressWarnings({"rawtypes","unchecked"})

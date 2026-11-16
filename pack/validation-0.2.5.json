@@ -1,0 +1,128 @@
+{
+  "schema": 1,
+  "version": "0.2.5",
+  "date": "2026-11-16",
+  "modificationIds": [
+    "GN-095"
+  ],
+  "coreSha256": "547797c7d8d317ab621a2b6341cba7c1520784b2ec9377f551a268f84a225f46",
+  "releasePublished": false,
+  "checksPassed": 239,
+  "server": {
+    "done": true,
+    "exitCode": 0,
+    "mods": 108,
+    "cpuLimit": 2,
+    "maxHeapGB": 6,
+    "globalTestWorlds": 2,
+    "existingRuntimeReused": true,
+    "environmentCopied": false,
+    "worldCopied": false,
+    "runtimeRestored": true
+  },
+  "cityDraw": {
+    "samples": 9,
+    "pairsCompared": 1000025,
+    "optimized": {
+      "nanos": 436100,
+      "allocatedBytes": 840
+    },
+    "drawsPerSample": 150000,
+    "native": {
+      "nanos": 1250600,
+      "allocatedBytes": 3600840
+    },
+    "timeReductionPercent": 65.13,
+    "scope": "normal-city candidate random draw only"
+  },
+  "bedRoutes": {
+    "cases": [
+      {
+        "routeLength": 11,
+        "scenario": "open",
+        "samples": 9,
+        "optimized": {
+          "nanos": 1048300,
+          "allocatedBytes": 223768
+        },
+        "native": {
+          "nanos": 1513300,
+          "allocatedBytes": 365544
+        },
+        "timeReductionPercent": 30.73,
+        "allocationReductionPercent": 38.78
+      },
+      {
+        "routeLength": 25,
+        "scenario": "detour",
+        "samples": 9,
+        "optimized": {
+          "nanos": 1641200,
+          "allocatedBytes": 378720
+        },
+        "native": {
+          "nanos": 1994600,
+          "allocatedBytes": 594672
+        },
+        "timeReductionPercent": 17.72,
+        "allocationReductionPercent": 36.31
+      },
+      {
+        "routeLength": 11,
+        "scenario": "breach",
+        "samples": 9,
+        "optimized": {
+          "nanos": 804600,
+          "allocatedBytes": 255864
+        },
+        "native": {
+          "nanos": 1081900,
+          "allocatedBytes": 424976
+        },
+        "timeReductionPercent": 25.63,
+        "allocationReductionPercent": 39.79
+      },
+      {
+        "routeLength": 0,
+        "scenario": "unbreakable",
+        "samples": 9,
+        "optimized": {
+          "nanos": 814000,
+          "allocatedBytes": 205376
+        },
+        "native": {
+          "nanos": 961900,
+          "allocatedBytes": 311968
+        },
+        "timeReductionPercent": 15.38,
+        "allocationReductionPercent": 34.17
+      }
+    ],
+    "mixedTransitionsCompared": 1728,
+    "resultAndTieOrderExact": true,
+    "observesEditsInNextSearch": true,
+    "measurement": "9 alternating paired samples, median wall time and thread-allocated bytes per case"
+  },
+  "compatibility": {
+    "nativeVehicleLootCases": 320,
+    "cityTypesAndBoundaryGeneration": "PASS",
+    "npcInventoryAndGunNbtRetained": true,
+    "revivedSnapshotCleanupRetained": true,
+    "npcInitializationRetained": true
+  },
+  "installation": {
+    "status": "PASS",
+    "singleCore": true,
+    "changedFiles": 3,
+    "thirdPartyJarsUnchanged": 132,
+    "liveWorldsTouched": false,
+    "liveGameStarted": false
+  },
+  "screenshots": 0,
+  "osInputInjected": false,
+  "clientGameplayFpsMeasured": false,
+  "limitations": [
+    "Focused route and random-draw measurements on an isolated server; no whole-session FPS/TPS benchmark.",
+    "The client was not launched for this update. Existing third-party resource and palette warnings remain."
+  ]
+}

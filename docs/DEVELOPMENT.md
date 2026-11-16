@@ -12,7 +12,7 @@ python tools/project.py check
 cd addon
 .\gradlew.bat --no-daemon --max-workers=2 jar
 cd ..
-python tools/project.py check --jar addon/build/libs/gn-frontier-0.2.2.jar
+python tools/project.py check --jar "addon/build/libs/gn-frontier-$(Get-Content VERSION).jar"
 ```
 
 Linuxでは`addon`内から`bash gradlew --no-daemon --max-workers=2 jar`を使います。取得する依存物は`pack/build-dependencies.lock.json`のURLとSHA-256で固定し、既存Minecraftインスタンスをビルドに使う必要はありません。
@@ -39,7 +39,7 @@ JavaやPrismがこの作業先を使用している場合は適用を拒否し�
 
 ```powershell
 python tools/build_release.py
-python tools/test_distribution.py --release dist/GN-Frontier-0.2.2
+python tools/test_distribution.py --release "dist/GN-Frontier-$(Get-Content VERSION)"
 ```
 
 出力先は`dist/GN-Frontier-<version>/`です。既存成果物の上書きは拒否するため、検討用には`--output <別の出力先>`を指定します。取得済み原版も検査する場合だけ`--cache <原版ファイルのフォルダー>`を追加します。`pack/source-paths.json`が各設定の正規ソースを示し、新規導入用の値は`pack/defaults/`から取得します。サーバー用の除外規則は`pack/server-profile.json`、起動処理は`pack/bootstrap/`です。

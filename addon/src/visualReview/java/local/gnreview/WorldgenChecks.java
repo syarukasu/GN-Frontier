@@ -17,7 +17,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.chunk.ChunkStatus;
 import net.minecraftforge.fml.ModList;
 
-/** Native prefab and FULL chunk checks in the sole registered review world. */
+/** Keep manually placed algorithm fixtures separate from native FULL generation evidence. */
 public final class WorldgenChecks {
     private static boolean c2me() { return ModList.get().isLoaded("c2meforge"); }
 
@@ -105,6 +105,74 @@ public final class WorldgenChecks {
         if(!player.getServer().getWorldData().getLevelName().equals("GN_Review_r39_creation"))throw new IllegalStateException("Owned review world required");
         if(!ModList.get().isLoaded("noisium"))throw new AssertionError("Noisium missing");
         if(action.equals("batch"))return batch(player,settings);
+        if(action.equals("tower-sites")) {
+            var provider=Registration.LOSTCITY_FEATURE.get().getDimensionInfo(level);
+            List<Map<String,Object>> sites=new ArrayList<>();int checked=0;
+            search:for(int radius=0;radius<=20;radius++)for(int z=250-radius;z<=250+radius;z++)for(int x=250-radius;x<=250+radius;x++) {
+                if(Math.max(Math.abs(x-250),Math.abs(z-250))!=radius)continue;
+                var info=BuildingInfo.getBuildingInfo(new ChunkCoord(level.dimension(),x,z),provider);checked++;
+                if(info.hasBuilding&&info.buildingType!=null&&info.buildingType.getName().contains("radio_tower")) {
+                    sites.add(Map.of("x",x,"z",z,"building",info.buildingType.getName(),"plannedGround",info.getCityGroundLevel(),"cityStyle",info.getCityStyle().getName()));
+                    if(sites.size()>=12)break search;
+                }
+            }
+            return Map.of("sites",sites,"coordinatesChecked",checked,"worldBlocksWritten",false,"scope","Native BuildingInfo selection only; no building or height forced");
+        }
+        if(action.equals("tower-natural")) {
+            int cx=Integer.parseInt(settings.getProperty("x")),cz=Integer.parseInt(settings.getProperty("z"));
+            if(Math.abs(cx-250)>20||Math.abs(cz-250)>20)throw new IllegalArgumentException("Bounded surveyed tower site required");
+            var provider=Registration.LOSTCITY_FEATURE.get().getDimensionInfo(level);
+            var selected=BuildingInfo.getBuildingInfo(new ChunkCoord(level.dimension(),cx,cz),provider);
+            if(!selected.hasBuilding||selected.buildingType==null||!selected.buildingType.getName().contains("radio_tower"))throw new IllegalStateException("Native tower selection required");
+            var output=Path.of(settings.getProperty("path")).resolveSibling("tower-natural-complete.json");
+            if(Files.exists(output))throw new IllegalStateException("Fresh natural generation evidence required");
+            List<CompletableFuture<?>> futures=new ArrayList<>();
+            for(int z=cz-1;z<=cz+2;z++)for(int x=cx-1;x<=cx+2;x++) {
+                var pos=new net.minecraft.world.level.ChunkPos(x,z);
+                level.getChunkSource().addRegionTicket(net.minecraft.server.level.TicketType.FORCED,pos,0,pos);
+                futures.add(level.getChunkSource().getChunkFuture(x,z,ChunkStatus.FULL,true));
+            }
+            CompletableFuture.allOf(futures.toArray(CompletableFuture[]::new)).whenCompleteAsync((ignored,failure)->{
+                Map<String,Object> result=new LinkedHashMap<>();
+                try {
+                    if(failure!=null)throw new RuntimeException(failure);
+                    for(var future:futures)if(((com.mojang.datafixers.util.Either<?,?>)future.join()).left().isEmpty())throw new AssertionError("Native FULL generation incomplete");
+                    List<Map<String,Object>> neighbors=new ArrayList<>();
+                    for(int z=cz-1;z<=cz+2;z++)for(int x=cx-1;x<=cx+2;x++) {
+                        var info=BuildingInfo.getBuildingInfo(new ChunkCoord(level.dimension(),x,z),provider);
+                        neighbors.add(Map.of("x",x,"z",z,"ground",info.getCityGroundLevel(),"building",info.hasBuilding&&info.buildingType!=null?info.buildingType.getName():"street","status",level.getChunk(x,z).getStatus().toString()));
+                    }
+                    result.put("site",Map.of("x",cx,"z",cz,"building",selected.buildingType.getName(),"ground",selected.getCityGroundLevel()));result.put("neighbors",neighbors);
+                    List<Map<String,Object>> columns=new ArrayList<>();
+                    int ground=selected.getCityGroundLevel();
+                    for(int z=cz*16-4;z<=cz*16+35;z+=3)for(int x=cx*16-4;x<=cx*16+35;x+=3) {
+                        int top=ground-25;
+                        for(int y=ground+4;y>=ground-24;y--)if(level.getBlockState(new BlockPos(x,y,z)).isSolidRender(level,new BlockPos(x,y,z))){top=y;break;}
+                        columns.add(Map.of("x",x,"z",z,"topNearPlannedGround",top,"block",String.valueOf(net.minecraftforge.registries.ForgeRegistries.BLOCKS.getKey(level.getBlockState(new BlockPos(x,top,z)).getBlock()))));
+                    }
+                    result.put("groundColumns",columns);result.put("nativeFullChunks",16);result.put("manualClearing",false);result.put("manualTerrainPlacement",false);result.put("manualBuildingPlacement",false);
+                    result.put("profile",provider.getProfile().getName());result.put("worldStyle",provider.getProfile().getWorldStyle());result.put("status","PASS");
+                    player.getServer().saveEverything(true,true,true);
+                }catch(Throwable e){result.put("status","ERROR");result.put("error",e.toString());}
+                finally {for(int z=cz-1;z<=cz+2;z++)for(int x=cx-1;x<=cx+2;x++){var pos=new net.minecraft.world.level.ChunkPos(x,z);level.getChunkSource().removeRegionTicket(net.minecraft.server.level.TicketType.FORCED,pos,0,pos);}}
+                try{Files.writeString(output,new com.google.gson.GsonBuilder().setPrettyPrinting().create().toJson(result));}catch(Exception e){throw new RuntimeException(e);}
+            },player.getServer());
+            return Map.of("queued",true,"naturalSelectedBuilding",selected.buildingType.getName(),"completeFile",output.getFileName().toString());
+        }
+        if(action.equals("tower-view")) {
+            int cx=Integer.parseInt(settings.getProperty("x")),cz=Integer.parseInt(settings.getProperty("z"));
+            if(Math.abs(cx-250)>20||Math.abs(cz-250)>20)throw new IllegalArgumentException("Bounded surveyed tower site required");
+            var provider=Registration.LOSTCITY_FEATURE.get().getDimensionInfo(level);
+            var info=BuildingInfo.getBuildingInfo(new ChunkCoord(level.dimension(),cx,cz),provider);
+            if(!info.hasBuilding||!info.buildingType.getName().contains("radio_tower"))throw new IllegalStateException("Native tower required");
+            boolean close=settings.getProperty("camera","wide").equals("base");
+            var client=net.minecraft.client.Minecraft.getInstance();client.execute(()->client.options.renderDistance().set(close?4:6));
+            player.setGameMode(GameType.CREATIVE);player.getAbilities().flying=true;player.onUpdateAbilities();player.setInvulnerable(true);
+            player.teleportTo(level,cx*16+8,info.getCityGroundLevel()+(close?5:30),cz*16+(close?43:92),180,close?5:0);
+            player.getServer().getCommands().performPrefixedCommand(player.getServer().createCommandSourceStack(),"time set 6000");
+            player.getServer().getCommands().performPrefixedCommand(player.getServer().createCommandSourceStack(),"weather clear");
+            return Map.of("nativeBuilding",info.buildingType.getName(),"cityGround",info.getCityGroundLevel(),"camera",player.position().toString(),"manualTerrainPlacement",false);
+        }
         if(action.equals("clouds-off")) {
             var client=net.minecraft.client.Minecraft.getInstance();
             client.execute(()->client.options.cloudStatus().set(net.minecraft.client.CloudStatus.OFF));
@@ -144,6 +212,7 @@ public final class WorldgenChecks {
             return Map.of("status",chunk.getStatus().toString(),"chunk",List.of(x,z),"elapsedMs",(System.nanoTime()-start)/1_000_000,"noisiumLoaded",true,"profile",provider.getProfile().getName(),"worldStyle",provider.getProfile().getWorldStyle(),"cityStyle",info.getCityStyle().getName());
         }
         if(!action.equals("tower-before")&&!action.equals("tower-after"))throw new IllegalArgumentException(action);
+        // Fixed-height algorithm fixture: its cleared plot is never evidence of natural terrain.
         int cx=1,cz=1,ground=70;
         var coord=new ChunkCoord(level.dimension(),cx,cz);
         var info=copy(BuildingInfo.getBuildingInfo(coord,provider));
@@ -183,6 +252,6 @@ public final class WorldgenChecks {
         player.connection.send(new net.minecraft.network.protocol.game.ClientboundLevelChunkWithLightPacket(chunk,level.getLightEngine(),null,null));
         player.getServer().getCommands().performPrefixedCommand(player.getServer().createCommandSourceStack(),"time set 6000");
         player.getServer().getCommands().performPrefixedCommand(player.getServer().createCommandSourceStack(),"weather clear");
-        return Map.of("fixture",action,"nativePart","lostcities:radio_tower1_0_0_0","partSlices",tower.getSliceCount(),"ruinFraction",.85,"floatingStructuralBlocks",floating,"totalBlocks",total,"maxY",maxY,"components",components,"scope","Native generatePart and transformed generateRuins; existing owned review world only");
+        return Map.of("fixture",action,"nativePart","lostcities:radio_tower1_0_0_0","partSlices",tower.getSliceCount(),"ruinFraction",.85,"floatingStructuralBlocks",floating,"totalBlocks",total,"maxY",maxY,"components",components,"naturalGenerationEvidence",false,"scope","Native ruin algorithm fixture with manual clearing and placement; not natural terrain evidence");
     }
 }

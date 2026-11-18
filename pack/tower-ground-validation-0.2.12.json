@@ -1,0 +1,341 @@
+{
+  "schema": 1,
+  "version": "0.2.12",
+  "date": "2026-11-18",
+  "modificationIds": [
+    "GN-104"
+  ],
+  "scope": "Correction of test-fixture appearance acceptance and native tower generation verification; no production behavior change",
+  "coreSha256": "771cba41b810a5890a4d5f616fd2c845cd4dca39adf0ced2cd4cc58c874611b5",
+  "productionCoreChanged": false,
+  "fixtureAudit": {
+    "coreSha256": "771cba41b810a5890a4d5f616fd2c845cd4dca39adf0ced2cd4cc58c874611b5",
+    "testClassesInProductionJar": [],
+    "productionCoreUnchanged": true,
+    "fixedHeightClearingSource": "addon/src/visualReview/java/local/gnreview/WorldgenChecks.java",
+    "clearingBounds": {
+      "x": [
+        16,
+        31
+      ],
+      "y": [
+        70,
+        264
+      ],
+      "z": [
+        16,
+        31
+      ]
+    },
+    "naturalGenerationEvidence": false
+  },
+  "beforeGeneration": {
+    "selectedSite": {
+      "z": 250,
+      "plannedGround": 71,
+      "building": "radio_tower1_0_0",
+      "cityStyle": "gnfrontier:military_city",
+      "x": 255
+    },
+    "chunksBeforeGeneration": [
+      {
+        "x": 254,
+        "z": 249,
+        "status": "minecraft:structure_starts",
+        "terrainPresent": false,
+        "blockEntities": 0
+      },
+      {
+        "x": 255,
+        "z": 249,
+        "status": "minecraft:structure_starts",
+        "terrainPresent": false,
+        "blockEntities": 0
+      },
+      {
+        "x": 256,
+        "z": 249,
+        "status": "minecraft:structure_starts",
+        "terrainPresent": false,
+        "blockEntities": 0
+      },
+      {
+        "x": 257,
+        "z": 249,
+        "status": "minecraft:structure_starts",
+        "terrainPresent": false,
+        "blockEntities": 0
+      },
+      {
+        "x": 254,
+        "z": 250,
+        "status": "minecraft:structure_starts",
+        "terrainPresent": false,
+        "blockEntities": 0
+      },
+      {
+        "x": 255,
+        "z": 250,
+        "status": "minecraft:structure_starts",
+        "terrainPresent": false,
+        "blockEntities": 0
+      },
+      {
+        "x": 256,
+        "z": 250,
+        "status": "minecraft:structure_starts",
+        "terrainPresent": false,
+        "blockEntities": 0
+      },
+      {
+        "x": 257,
+        "z": 250,
+        "status": "minecraft:structure_starts",
+        "terrainPresent": false,
+        "blockEntities": 0
+      },
+      {
+        "x": 254,
+        "z": 251,
+        "status": "minecraft:structure_starts",
+        "terrainPresent": false,
+        "blockEntities": 0
+      },
+      {
+        "x": 255,
+        "z": 251,
+        "status": "minecraft:structure_starts",
+        "terrainPresent": false,
+        "blockEntities": 0
+      },
+      {
+        "x": 256,
+        "z": 251,
+        "status": "minecraft:structure_starts",
+        "terrainPresent": false,
+        "blockEntities": 0
+      },
+      {
+        "x": 257,
+        "z": 251,
+        "status": "minecraft:structure_starts",
+        "terrainPresent": false,
+        "blockEntities": 0
+      },
+      {
+        "x": 254,
+        "z": 252,
+        "status": "minecraft:structure_starts",
+        "terrainPresent": false,
+        "blockEntities": 0
+      },
+      {
+        "x": 255,
+        "z": 252,
+        "status": "minecraft:structure_starts",
+        "terrainPresent": false,
+        "blockEntities": 0
+      },
+      {
+        "x": 256,
+        "z": 252,
+        "status": "minecraft:structure_starts",
+        "terrainPresent": false,
+        "blockEntities": 0
+      },
+      {
+        "x": 257,
+        "z": 252,
+        "status": "minecraft:structure_starts",
+        "terrainPresent": false,
+        "blockEntities": 0
+      }
+    ],
+    "terrainGeneratedChunksBefore": 0,
+    "nativeStructureStartsPreserved": true,
+    "chunkFilesDeleted": 0,
+    "manualPlacement": false,
+    "scope": "Existing native protochunks contain structure starts only, no block terrain or block entities. Continue normal lifecycle without resetting them."
+  },
+  "nativeGeneration": {
+    "site": {
+      "z": 250,
+      "building": "radio_tower1_0_0",
+      "ground": 71,
+      "x": 255
+    },
+    "neighbors": [
+      {
+        "z": 249,
+        "building": "gnfrontier:industrial_green_factory_2_1",
+        "ground": 71,
+        "x": 254,
+        "status": "minecraft:full"
+      },
+      {
+        "z": 249,
+        "building": "radio_tower2_0_0",
+        "ground": 71,
+        "x": 255,
+        "status": "minecraft:full"
+      },
+      {
+        "z": 249,
+        "building": "radio_tower2_0_0",
+        "ground": 71,
+        "x": 256,
+        "status": "minecraft:full"
+      },
+      {
+        "z": 249,
+        "building": "street",
+        "ground": 71,
+        "x": 257,
+        "status": "minecraft:full"
+      },
+      {
+        "z": 250,
+        "building": "street",
+        "ground": 71,
+        "x": 254,
+        "status": "minecraft:full"
+      },
+      {
+        "z": 250,
+        "building": "radio_tower1_0_0",
+        "ground": 71,
+        "x": 255,
+        "status": "minecraft:full"
+      },
+      {
+        "z": 250,
+        "building": "street",
+        "ground": 71,
+        "x": 256,
+        "status": "minecraft:full"
+      },
+      {
+        "z": 250,
+        "building": "street",
+        "ground": 71,
+        "x": 257,
+        "status": "minecraft:full"
+      },
+      {
+        "z": 251,
+        "building": "gasstation1_1_0",
+        "ground": 71,
+        "x": 254,
+        "status": "minecraft:full"
+      },
+      {
+        "z": 251,
+        "building": "gasstation1_2_0",
+        "ground": 71,
+        "x": 255,
+        "status": "minecraft:full"
+      },
+      {
+        "z": 251,
+        "building": "street",
+        "ground": 71,
+        "x": 256,
+        "status": "minecraft:full"
+      },
+      {
+        "z": 251,
+        "building": "gnfrontier:military_bunker_0_0",
+        "ground": 71,
+        "x": 257,
+        "status": "minecraft:full"
+      },
+      {
+        "z": 252,
+        "building": "gasstation1_1_1",
+        "ground": 71,
+        "x": 254,
+        "status": "minecraft:full"
+      },
+      {
+        "z": 252,
+        "building": "gasstation1_2_1",
+        "ground": 71,
+        "x": 255,
+        "status": "minecraft:full"
+      },
+      {
+        "z": 252,
+        "building": "street",
+        "ground": 71,
+        "x": 256,
+        "status": "minecraft:full"
+      },
+      {
+        "z": 252,
+        "building": "gnfrontier:military_bunker_0_1",
+        "ground": 71,
+        "x": 257,
+        "status": "minecraft:full"
+      }
+    ],
+    "nativeFullChunks": 16,
+    "manualClearing": false,
+    "manualTerrainPlacement": false,
+    "manualBuildingPlacement": false,
+    "profile": "gn_azzz15flat_nature",
+    "worldStyle": "gnfrontier:ruined_city",
+    "status": "PASS"
+  },
+  "nearGroundSamples": {
+    "count": 196,
+    "minTop": 69,
+    "maxTop": 75,
+    "countsByY": {
+      "69": 3,
+      "70": 28,
+      "71": 111,
+      "72": 39,
+      "73": 2,
+      "74": 1,
+      "75": 12
+    },
+    "method": "Highest opaque block from planned ground +4 down to ground -24 at each 3-block grid point. This is a near-ground cut check, not an unrestricted terrain heightmap."
+  },
+  "screenshots": [
+    {
+      "path": "revisions/version-control-r39/spec-0.2.12-terrain/natural-tower-wide.png",
+      "sha256": "d6c415d7e41adf93e2fc16cb73761aa7473194f01b6fb28d3101eb88e69eb3e9",
+      "visuallyInspected": true,
+      "source": "Actual Minecraft framebuffer on inactive review desktop"
+    },
+    {
+      "path": "revisions/version-control-r39/spec-0.2.12-terrain/natural-tower-base-final.png",
+      "sha256": "10037de9566f81f354136fc68e743e01a6d7438ea94836234cac25fef26f96d6",
+      "visuallyInspected": true,
+      "source": "Actual Minecraft framebuffer on inactive review desktop"
+    }
+  ],
+  "rejectedCaptures": [
+    {
+      "path": "revisions/version-control-r39/spec-0.2.12-terrain/natural-tower-base.png",
+      "reason": "Captured the temporary shader loading screen; excluded from appearance acceptance."
+    }
+  ],
+  "isolation": {
+    "registeredRuntimeReused": true,
+    "worldsCreated": 0,
+    "environmentsCopied": 0,
+    "userWorldWrites": false,
+    "desktopSwitched": false,
+    "osInputInjected": false,
+    "clientClosed": true,
+    "runtimeRestored": true,
+    "optionsRestored": true,
+    "temporaryAccountRemoved": true,
+    "liveCoreHashUnchanged": true
+  },
+  "limitations": [
+    "One normally selected radio_tower1 site and its 16 surrounding FULL chunks; not exhaustive validation of every seed or all tower variants.",
+    "The pre-existing high-altitude flat-plane rendering issue remains outside this grounded-tower check."
+  ]
+}

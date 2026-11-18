@@ -4940,6 +4940,47 @@
       "delivery": "manifest",
       "sha1": "7da1cdf00c0ae5cad31e17f765f6ea021c8ac808",
       "sha512": "5bc43bc1b748edcd63d074a8bb14d393d986c51e1933e1f38cd7a2dd2fd70dba5a46a6415f46d4a52c68e7e1e9ce101e54376ad04273df958608e2fdb43db502"
+    },
+    {
+      "path": "mods/c2meforge-0.2.0-forge.9.9.6-all.jar",
+      "name": "Concurrent Chunk Management Engine (Forge)",
+      "side": "both",
+      "size": 1400830,
+      "sha256": "e73681883b2c867049800f8b2f7bdcbbbda6c9a44eb5e165c0513914364abfc6",
+      "sha1": "29ad8a207749081458221e7d97b1201c2181d62d",
+      "sha512": "9168ada22629e0ddfa4520c155df0031058fd95aeef563d0c5ed4ac67c47de4440f81b68870dc96070b1697c4622ff6f5ed86d52e42f7c2982cf5a79bd9481b5",
+      "urls": [
+        "https://edge.forgecdn.net/files/9387/498/c2meforge-0.2.0-forge.9.9.6-all.jar",
+        "https://mediafilez.forgecdn.net/files/9387/498/c2meforge-0.2.0-forge.9.9.6-all.jar"
+      ],
+      "page": "https://www.curseforge.com/minecraft/mc-mods/concurrent-chunk-management-engine-forge/files/9387498",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 1610389,
+          "file-id": 9387498
+        }
+      },
+      "mods": [
+        {
+          "modId": "c2meforge",
+          "displayName": "Concurrent Chunk Management Engine (Forge)",
+          "version": "0.2.0-forge.9.9.6"
+        },
+        {
+          "modId": "c2me",
+          "displayName": "C2ME (compatibility alias)",
+          "version": "0.2.0-forge.9.9.6"
+        }
+      ],
+      "authors": "RelativityMC, ishland (Fabric); Forge port by Makki132",
+      "declared_license": "MIT",
+      "installed_path": "mods/c2meforge-0.2.0-forge.9.9.6-all.jar",
+      "curseforge": {
+        "projectID": 1610389,
+        "fileID": 9387498,
+        "required": true
+      },
+      "delivery": "manifest"
     }
   ],
   "embedded_from_create": [

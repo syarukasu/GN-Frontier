@@ -9862,5 +9862,9 @@
   {
     "path": "mods/.index/incontrol.pw.toml",
     "source": "overlay/mods/.index/incontrol.pw.toml"
+  },
+  {
+    "path": "config/c2me.toml",
+    "source": "overlay/config/c2me.toml"
   }
 ]

@@ -2,6 +2,9 @@ package local.gnreview;
 
 import java.lang.reflect.*;
 import java.util.*;
+import java.util.concurrent.*;
+import java.nio.file.*;
+import java.lang.management.ManagementFactory;
 import mcjty.lostcities.setup.Registration;
 import mcjty.lostcities.varia.ChunkCoord;
 import mcjty.lostcities.worldgen.*;
@@ -16,6 +19,77 @@ import net.minecraftforge.fml.ModList;
 
 /** Native prefab and FULL chunk checks in the sole registered review world. */
 public final class WorldgenChecks {
+    private static boolean c2me() { return ModList.get().isLoaded("c2meforge"); }
+
+    /** Submit the same bounded cold region on both runs; completion never blocks the render thread. */
+    private static Map<String,Object> batch(ServerPlayer player, Properties settings)throws Exception {
+        var level=player.serverLevel();
+        var output=Path.of(settings.getProperty("path")).resolveSibling("batch-"+(c2me()?"candidate":"baseline")+"-complete.json");
+        if(Files.exists(output))throw new IllegalStateException("Fresh benchmark result required");
+        var cpu=ManagementFactory.getThreadMXBean();
+        var active=new java.util.concurrent.atomic.AtomicInteger();
+        ThreadPoolExecutor pool=null;
+        int configured=0;
+        if(c2me()) {
+            var globals=Class.forName("com.ishland.c2me.base.common.GlobalExecutors");
+            configured=globals.getField("GLOBAL_EXECUTOR_PARALLELISM").getInt(null);
+            pool=(ThreadPoolExecutor)globals.getField("executor").get(null);
+            if(configured!=4)throw new AssertionError("Four configured C2ME workers required: "+configured);
+        }
+        final var executor=pool;final int parallelism=configured;
+        var monitor=Executors.newSingleThreadScheduledExecutor(r->{var t=new Thread(r,"GN-bounded-worldgen-check");t.setDaemon(true);return t;});
+        monitor.scheduleAtFixedRate(()->{if(executor!=null)active.accumulateAndGet(executor.getActiveCount(),Math::max);},0,10,TimeUnit.MILLISECONDS);
+        List<CompletableFuture<?>> futures=new ArrayList<>();
+        long start=System.nanoTime();
+        for(int z=528;z<532;z++)for(int x=528;x<532;x++) {
+            var pos=new net.minecraft.world.level.ChunkPos(x,z);
+            level.getChunkSource().addRegionTicket(net.minecraft.server.level.TicketType.FORCED,pos,0,pos);
+        }
+        for(int z=528;z<532;z++)for(int x=528;x<532;x++)futures.add(level.getChunkSource().getChunkFuture(x,z,ChunkStatus.FULL,true));
+        CompletableFuture.allOf(futures.toArray(CompletableFuture[]::new)).whenCompleteAsync((ignored,failure)->{
+            Map<String,Object> result=new LinkedHashMap<>();
+            result.put("c2meLoaded",c2me());result.put("workersConfigured",parallelism);result.put("peakActiveC2meWorkers",active.get());
+            result.put("elapsedMs",(System.nanoTime()-start)/1_000_000);monitor.shutdown();
+            try {
+                if(failure!=null)throw new RuntimeException(failure);
+                for(var future:futures) {
+                    var value=(com.mojang.datafixers.util.Either<?,?>)future.join();
+                    var generated=value.left().orElseThrow(()->new AssertionError("A requested FULL future returned unloaded"));
+                    if(!(generated instanceof net.minecraft.world.level.chunk.ChunkAccess access)||!access.getStatus().isOrAfter(ChunkStatus.FULL))throw new AssertionError("A FULL future returned an incomplete chunk");
+                }
+                var provider=Registration.LOSTCITY_FEATURE.get().getDimensionInfo(level);
+                List<Map<String,Object>> rows=new ArrayList<>();
+                for(int z=528;z<532;z++)for(int x=528;x<532;x++) {
+                    var chunk=level.getChunk(x,z);
+                    if(!chunk.getStatus().isOrAfter(ChunkStatus.FULL))throw new AssertionError("Incomplete requested chunk");
+                    var info=BuildingInfo.getBuildingInfo(new ChunkCoord(level.dimension(),x,z),provider);
+                    rows.add(Map.of("x",x,"z",z,"status",chunk.getStatus().toString(),"city",info.isCity,"building",info.hasBuilding,"style",info.getCityStyle().getName()));
+                }
+                var pos=new BlockPos(528*16+2,318,528*16+2);
+                level.setBlock(pos,Blocks.CHEST.defaultBlockState(),3);
+                var chest=(net.minecraft.world.level.block.entity.ChestBlockEntity)level.getBlockEntity(pos);
+                var token=new net.minecraft.world.item.ItemStack(net.minecraft.world.item.Items.PAPER,7);
+                token.getOrCreateTag().putString("gn_review_token","c2me-region-16-16");chest.setItem(0,token);chest.setChanged();
+                long saveStart=System.nanoTime();player.getServer().saveEverything(true,true,true);
+                result.put("saveMs",(System.nanoTime()-saveStart)/1_000_000);
+                result.put("chest",Map.of("x",pos.getX(),"y",pos.getY(),"z",pos.getZ(),"item","minecraft:paper","count",7,"token","c2me-region-16-16"));
+                result.put("rows",rows);result.put("profile",provider.getProfile().getName());result.put("worldStyle",provider.getProfile().getWorldStyle());
+                List<Map<String,Object>> workers=new ArrayList<>();
+                for(var t:Thread.getAllStackTraces().keySet())if(t.getName().startsWith("C2ME worker #"))workers.add(Map.of("name",t.getName(),"cpuNanos",cpu.getThreadCpuTime(t.getId())));
+                result.put("workers",workers);
+                if(c2me()&&(active.get()<2||workers.size()<2))throw new AssertionError("Parallel workers were not observed");
+                result.put("status","PASS");
+            }catch(Throwable e){result.put("status","ERROR");result.put("error",e.toString());}
+            finally {
+                for(int z=528;z<532;z++)for(int x=528;x<532;x++) {
+                    var pos=new net.minecraft.world.level.ChunkPos(x,z);
+                    level.getChunkSource().removeRegionTicket(net.minecraft.server.level.TicketType.FORCED,pos,0,pos);
+                }
+            }
+            try {Files.writeString(output,new com.google.gson.GsonBuilder().setPrettyPrinting().create().toJson(result));}catch(Exception e){throw new RuntimeException(e);}
+        },player.getServer());
+        return Map.of("queued",true,"c2meLoaded",c2me(),"requestedChunks",16,"completeFile",output.getFileName().toString(),"processorHint",Runtime.getRuntime().availableProcessors());
+    }
     private static void set(Object target,String name,Object value)throws Exception {
         for(Class<?> c=target.getClass();c!=null;c=c.getSuperclass())try {var f=c.getDeclaredField(name);f.setAccessible(true);f.set(target,value);return;}catch(NoSuchFieldException ignored){}
         throw new NoSuchFieldException(name);
@@ -30,6 +104,37 @@ public final class WorldgenChecks {
         var level=player.serverLevel();
         if(!player.getServer().getWorldData().getLevelName().equals("GN_Review_r39_creation"))throw new IllegalStateException("Owned review world required");
         if(!ModList.get().isLoaded("noisium"))throw new AssertionError("Noisium missing");
+        if(action.equals("batch"))return batch(player,settings);
+        if(action.equals("clouds-off")) {
+            var client=net.minecraft.client.Minecraft.getInstance();
+            client.execute(()->client.options.cloudStatus().set(net.minecraft.client.CloudStatus.OFF));
+            return Map.of("scope","Temporary visual diagnosis in the owned review client; launcher restores options","vanillaCloudsRequested","OFF");
+        }
+        if(action.equals("reload")) {
+            int count=0;
+            for(int z=528;z<532;z++)for(int x=528;x<532;x++) {
+                var chunk=level.getChunkSource().getChunk(x,z,ChunkStatus.FULL,true);
+                if(chunk==null||!chunk.getStatus().isOrAfter(ChunkStatus.FULL))throw new AssertionError("Saved FULL chunk did not reload");
+                count++;
+            }
+            var chest=(net.minecraft.world.level.block.entity.ChestBlockEntity)level.getBlockEntity(new BlockPos(8450,318,8450));
+            if(chest==null)throw new AssertionError("Saved native chest missing");
+            var item=chest.getItem(0);
+            if(!item.is(net.minecraft.world.item.Items.PAPER)||item.getCount()!=7||!"c2me-region-16-16".equals(item.getOrCreateTag().getString("gn_review_token")))throw new AssertionError("Saved contents changed");
+            return Map.of("reloadedFullChunks",count,"savedChestContentsIntact",true,"c2meLoaded",c2me(),"scope","Native chunk loader in a newly started client; saved blocks and items read without replacement");
+        }
+        if(action.equals("view-batch")) {
+            // Limit extra chunks requested only for the visual review, after timing has ended.
+            var client=net.minecraft.client.Minecraft.getInstance();
+            client.execute(()->client.options.renderDistance().set(6));
+            double viewY=Double.parseDouble(settings.getProperty("y","105"));
+            if(viewY!=105&&viewY!=150)throw new IllegalArgumentException("Bounded review heights");
+            player.setGameMode(GameType.CREATIVE);player.getAbilities().flying=true;player.onUpdateAbilities();player.setInvulnerable(true);
+            player.teleportTo(level,8490,viewY,8500,135,viewY==150?32:22);
+            player.getServer().getCommands().performPrefixedCommand(player.getServer().createCommandSourceStack(),"time set 6000");
+            player.getServer().getCommands().performPrefixedCommand(player.getServer().createCommandSourceStack(),"weather clear");
+            return Map.of("scope","Actual generated benchmark area; no placed terrain or buildings","position",player.position().toString(),"c2meLoaded",c2me());
+        }
         var provider=Registration.LOSTCITY_FEATURE.get().getDimensionInfo(level);
         if(action.equals("chunk")) {
             int x=250,z=250;long start=System.nanoTime();

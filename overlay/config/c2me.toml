@@ -1,0 +1,6 @@
+# GN Frontier: generation workers for the 8 GB pack configuration.
+version = 3
+globalExecutorParallelism = 4
+
+[threadedWorldGen]
+enabled = true

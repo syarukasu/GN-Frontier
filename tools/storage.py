@@ -64,10 +64,13 @@ def inventory(args):
                 if entry.is_dir(follow_symlinks=False):
                     stack.append(Path(entry.path))
                 elif entry.is_file(follow_symlinks=False):
+                    if args.jars_only and not entry.name.lower().endswith('.jar'):
+                        continue
                     rows.append({'path': Path(entry.path).relative_to(ROOT).as_posix(),
                                  'bytes': info.st_size, 'mtimeNs': info.st_mtime_ns})
     (output / 'inventory.json').write_text(json.dumps(rows, ensure_ascii=False), encoding='utf-8')
-    print(json.dumps({'files': len(rows), 'bytes': sum(r['bytes'] for r in rows)}))
+    print(json.dumps({'files': len(rows), 'bytes': sum(r['bytes'] for r in rows),
+                      'artifactScope': 'jars-only' if args.jars_only else 'all-files'}))
 
 def plan(args):
     inventory = json.loads(inside(args.inventory).read_text('utf-8'))
@@ -108,7 +111,9 @@ def plan(args):
               'retainedReview': active, 'files': len(candidates), 'bytes': total,
               'distinctFiles': len(unique), 'distinctBytes': sum(unique.values()),
               'estimatedDuplicateBytes': total - sum(unique.values()),
-              'preservesAllSaves': True, 'sourceUploaded': False}
+              'preservesAllSaves': True, 'sourceUploaded': False,
+              'artifactScope': 'jars-only' if inventory and all(
+                  row['path'].lower().endswith('.jar') for row in inventory) else 'all-files'}
     (output / 'plan.json').write_text(json.dumps(report, indent=2), encoding='utf-8')
     print(json.dumps({k: v for k, v in report.items() if k not in ('roots', 'root')}, ensure_ascii=False), flush=True)
 
@@ -162,6 +167,8 @@ def apply(args):
     with (directory / 'files.jsonl').open(encoding='utf-8') as handle:
         for line in handle:
             row = json.loads(line)
+            if report.get('artifactScope') == 'jars-only' and not row['path'].lower().endswith('.jar'):
+                raise RuntimeError('A JAR-only plan contains another file type')
             path = inside(row['path'])
             if 'saves' in path.relative_to(ROOT).parts or not any(path.is_relative_to(root) for root in roots):
                 raise RuntimeError('Protected or unplanned path')
@@ -215,5 +222,9 @@ if __name__ == '__main__':
     parser.add_argument('mode', choices=('inventory', 'plan', 'apply'))
     parser.add_argument('--inventory')
     parser.add_argument('--output', required=True)
+    parser.add_argument('--jars-only', action='store_true',
+                        help='Inventory only JARs; exclude saves, settings and other artifacts from the plan')
     options = parser.parse_args()
+    if options.jars_only and options.mode != 'inventory':
+        parser.error('--jars-only is an inventory option')
     {'inventory': inventory, 'plan': plan, 'apply': apply}[options.mode](options)

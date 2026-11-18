@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "date": "2026-11-18",
+  "scope": "GN Frontier inactive generated review environments; JAR files only",
+  "status": "PASS",
+  "retiredJarSets": 38,
+  "retiredJarPaths": 588,
+  "retainedDistinctContents": 176,
+  "retainedArchiveBytes": 927841070,
+  "duplicateContentBytesRemoved": 2303939429,
+  "observedFreeSpaceIncreaseBytes": 2302812160,
+  "protectedJarFilesUnchanged": 739,
+  "liveJarFilesUnchanged": 135,
+  "sourceFilesUnchangedDuringCleanup": 3009,
+  "worldMarkersUnchanged": 2,
+  "allArchiveHashesVerified": true,
+  "currentRegisteredReviewValidated": true,
+  "activeReview": "revisions/version-control-r39/runtime/minecraft",
+  "archiveStore": ".cache/review-history/objects",
+  "privateRestoreMap": "local/jar-cleanup/plan-20261118/files.jsonl",
+  "retainedInPlace": [
+    "all saves",
+    "source and Git history",
+    "current review and build dependencies",
+    "live instance",
+    "non-JAR settings, logs, screenshots and other historical files"
+  ],
+  "productionBehaviorChanged": false,
+  "screenshotsTakenForCleanup": 0,
+  "osInputInjected": false,
+  "limitations": [
+    "This cleanup covers the GN Frontier checkout, not every JAR reported by the whole-drive scanner.",
+    "Observed C-drive free space can also change because of concurrent work; content bytes removed are recorded independently."
+  ],
+  "postCleanupOldEnvironmentJarCandidates": 0,
+  "jarOnlyInventoryModeVerified": true
+}

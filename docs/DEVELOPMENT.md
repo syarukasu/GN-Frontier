@@ -35,6 +35,16 @@ python tools/storage.py apply --output local/storage-plan
 
 JavaやPrismがこの作業先を使用している場合は適用を拒否します。実行前にパス、リンク、変更日時と容量を確認し、適用時は排他アクセスとSHA-256を再確認します。保管先の照合後に個別ファイルを削除し、最後に空のフォルダーだけを除去します。
 
+作業中のJAR重複整理は、一覧作成に`--jars-only`を付けます。旧複製のJARだけを計画へ入れ、設定・ログ・画像などは元の場所に保持します。現行の検証環境・ビルド依存・稼働インスタンスは対象外です。異なる内容は保管先に1つずつ残し、計画の`files.jsonl`に元のパスとSHA-256の対応を保持します。再実行するときは一覧を取り直し、別の未使用の計画名を指定します。
+
+```powershell
+python tools/storage.py inventory --jars-only --output local/jar-review
+python tools/storage.py plan --inventory local/jar-review/inventory.json --output local/jar-plan
+python tools/storage.py apply --output local/jar-plan
+```
+
+2026-11-18は旧複製38か所のJAR 588個を176種類の内容へ集約し、重複約2.30GBを解消しました。現行・ビルド用JAR739個、稼働用JAR135個、整理前のソース3009ファイルはハッシュ一致を確認しています。[整理記録](../pack/storage-maintenance-20261118.json)
+
 コアのビルド後、メタデータから3種類のパックと単独コアを作成します。第三者JARをダウンロードしたり、ゲーム環境を複製したりする必要はありません。
 
 ```powershell

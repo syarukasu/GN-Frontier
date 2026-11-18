@@ -1,0 +1,4 @@
+# TaCZ uses the same crawling hitbox and eye height for armed and unarmed players.
+[misc]
+EnableCrawl = true
+EnableCrawlWithoutGun = true

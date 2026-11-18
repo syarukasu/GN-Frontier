@@ -5,6 +5,7 @@ import java.util.*;
 
 /** Permanent, player-owned black-market contracts. Definitions and rewards are server authoritative. */
 public final class MerchantQuests {
+    private static final int ALERT_PER_COMPLETED_CONTRACT = 5;
     public record Requirement(String item,int count) {}
     public record Quest(String id,int revision,String title,String description,List<String> requires,
                         int reputation,long reward,int reputationReward,List<Requirement> items,String signature) {
@@ -74,6 +75,8 @@ public final class MerchantQuests {
         if(a.balance>Economy.MAX_MONEY-q.reward())throw error("balance_limit");
         Campaign.State next=s.copy();Economy.State account=a.copy();next.merchantCompleted.add(q.id());
         account.balance+=q.reward();Economy.rewardStanding(account,Economy.Merchant.BLACK,q.reputationReward());
+        for (int i = 0; i < account.alert.length; i++)
+            account.alert[i] = Economy.clamp(account.alert[i] + ALERT_PER_COMPLETED_CONTRACT, 0, 100);
         return new Claim(next,account);
     }
 }

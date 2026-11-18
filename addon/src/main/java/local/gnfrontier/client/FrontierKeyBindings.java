@@ -29,6 +29,7 @@ public final class FrontierKeyBindings {
             "key.anomalyzone.toggle_detector_mode",new Binding(GLFW.GLFW_KEY_F10,KeyModifier.SHIFT));
     @SubscribeEvent public static void login(ClientPlayerNetworkEvent.LoggingIn e){Minecraft.getInstance().execute(FrontierKeyBindings::migrate);}
     private static void migrate(){
+        bindPdaToMapKey();
         Path marker=FMLPaths.CONFIGDIR.get().resolve("gnfrontier-keybinds-v1.json");if(Files.exists(marker))return;
         var mc=Minecraft.getInstance();var changes=new JsonObject();
         for(KeyMapping key:mc.options.keyMappings){
@@ -40,5 +41,25 @@ public final class FrontierKeyBindings {
         KeyMapping.resetMapping();if(changes.size()>0)mc.options.save();
         try{Files.writeString(marker,new GsonBuilder().setPrettyPrinting().create().toJson(changes)+"\n");}
         catch(java.io.IOException error){LogUtils.getLogger().warn("GN Frontier: could not record key migration",error);}
+    }
+
+    private static void bindPdaToMapKey() {
+        var options = Minecraft.getInstance().options;
+        KeyMapping map = null, pda = null;
+        for (KeyMapping mapping : options.keyMappings) {
+            if (mapping.getName().equals("gui.xaero_open_map")) map = mapping;
+            if (mapping.getName().equals("key.campchat.open_chat")) pda = mapping;
+        }
+        if (pda == null) return;
+        boolean oldPdaDefault = pda.getKey().getValue() == GLFW.GLFW_KEY_INSERT && pda.getKeyModifier() == KeyModifier.NONE;
+        boolean mapAssigned = map != null && !map.isUnbound();
+        if (!oldPdaDefault && !mapAssigned) return;
+        if (oldPdaDefault || mapAssigned && pda.isDefault()) {
+            var key = mapAssigned ? map.getKey() : InputConstants.Type.KEYSYM.getOrCreate(GLFW.GLFW_KEY_M);
+            pda.setKeyModifierAndCode(mapAssigned ? map.getKeyModifier() : KeyModifier.NONE, key);
+        }
+        if (mapAssigned) map.setKeyModifierAndCode(KeyModifier.NONE, InputConstants.UNKNOWN);
+        KeyMapping.resetMapping();
+        options.save();
     }
 }

@@ -7,11 +7,13 @@ import java.util.*;
 import net.minecraft.core.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.*;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.*;
 import net.minecraftforge.common.ForgeHooks;
 import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.event.server.ServerStoppedEvent;
 import net.minecraftforge.eventbus.api.*;
@@ -21,6 +23,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 public final class VehicleAssemblies {
     public record Model(String template,String front,String rear,boolean large) {}
     public static final List<Model> MODELS=load();
+    private static final float DISMANTLE_TICKS = 56;
     private static List<Model> load() {
         try(InputStream in=Objects.requireNonNull(VehicleAssemblies.class.getResourceAsStream("/data/gnfrontier/vehicle_assemblies.json"));
             Reader reader=new InputStreamReader(in,StandardCharsets.UTF_8)) {
@@ -82,9 +85,36 @@ public final class VehicleAssemblies {
     private record Pending(ServerLevel level,UUID player,BlockPos broken,BlockState original,Mate mate) {}
     private final List<Pending> pending=new ArrayList<>();
     private boolean checkingMate;
+
+    @SubscribeEvent(priority = EventPriority.LOWEST)
+    public void breakSpeed(PlayerEvent.BreakSpeed event) {
+        var player = event.getEntity();
+        var state = event.getState();
+        if (player.isCreative() || !state.is(Frontier.SALVAGE_VEHICLES)
+                || player.level() instanceof ServerLevel level && !WorldState.get(level).enabled) return;
+
+        ItemStack tool = player.getMainHandItem();
+        if (!SalvageLoot.canDismantle(tool)) {
+            event.setNewSpeed(0);
+            return;
+        }
+        float hardness = state.getDestroySpeed(player.level(), event.getPosition().orElse(BlockPos.ZERO));
+        if (hardness < 0) return;
+        float divisor = ForgeHooks.isCorrectToolForDrops(state, player) ? 30 : 100;
+        // Measured from multiple uninterrupted wrecks in Part 2. A better tool cannot turn it into an instant break.
+        float originalSpeed = Math.max(1, tool.getDestroySpeed(state));
+        float conditions = Math.max(0, Math.min(1, event.getNewSpeed() / originalSpeed));
+        event.setNewSpeed(hardness * divisor * conditions / DISMANTLE_TICKS);
+    }
+
     @SubscribeEvent(priority=EventPriority.LOWEST) public void breaking(BlockEvent.BreakEvent event) {
         if(checkingMate||event.isCanceled()||!(event.getLevel() instanceof ServerLevel level)
             ||!(event.getPlayer() instanceof ServerPlayer player)||!WorldState.get(level).enabled)return;
+        if (event.getState().is(Frontier.SALVAGE_VEHICLES) && !player.isCreative()
+                && !SalvageLoot.canDismantle(player.getMainHandItem())) {
+            event.setCanceled(true);
+            return;
+        }
         Mate mate=mate(level,event.getPos(),event.getState());if(mate==null)return;
         boolean permitted=level.mayInteract(player,mate.pos())&&player.mayBuild()&&level.getBlockEntity(mate.pos())==null;
         if(permitted)try {

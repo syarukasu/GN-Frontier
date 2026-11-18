@@ -222,5 +222,18 @@
   "screen.gnfrontier.repair.unsupported": "この品は補修の対象外です。",
   "screen.gnfrontier.repair.changed": "所持品が変わりました。銃を選び直してください。",
   "screen.gnfrontier.repair.disabled": "銃器の補修は利用できません。",
-  "screen.gnfrontier.repair.usage": "手に持って右クリックし、補修する銃を選びます。"
+  "screen.gnfrontier.repair.usage": "手に持って右クリックし、補修する銃を選びます。",
+  "gui.gnfrontier.carry_pda": "MキーでPDAを開く",
+  "gui.gnfrontier.faction.relation": "現在の関係　%s",
+  "gui.gnfrontier.faction.neutral": "中立",
+  "gui.gnfrontier.faction.ally": "友好",
+  "gui.gnfrontier.faction.enemy": "敵対",
+  "gui.gnfrontier.faction.force": "投入戦力　%s",
+  "gui.gnfrontier.faction.force.0": "増援の兆候なし",
+  "gui.gnfrontier.faction.force.1": "歩兵の増援",
+  "gui.gnfrontier.faction.force.2": "歩兵と地上車両",
+  "gui.gnfrontier.faction.force.3": "強化部隊と地上車両。軍施設付近ではヘリコプターも出現",
+  "gui.gnfrontier.faction.eligible_offers": "取引可能な商品　%s種類",
+  "gui.gnfrontier.faction.eligible_contracts": "受注可能な専用任務　%s件",
+  "message.gnfrontier.faction_standing_changed": "%sの評価が低下しました。評価 %s／警戒度 %s"
 }

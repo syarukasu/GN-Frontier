@@ -96,7 +96,10 @@ final class PackChecks {
             // Window opening is two blocks high, preserves the wall, and uses a collision-respecting push.
             BlockPos glass=origin.north();level.setBlock(glass,Blocks.GLASS.defaultBlockState(),3);level.setBlock(glass.above(),Blocks.GLASS_PANE.defaultBlockState(),3);level.setBlock(glass.above(2),Blocks.STONE.defaultBlockState(),3);
             player.setPos(origin.getX()+.5,origin.getY(),origin.getZ()+.5);player.setYRot(180);player.setXRot(0);player.setDeltaMovement(Vec3.ZERO);
-            WindowKick.kick(player);
+            // This synchronous fixture covers the strike; VideoSpecChecks verifies the timed input path.
+            var strike=WindowKick.class.getDeclaredMethod("strike",ServerPlayer.class);
+            strike.setAccessible(true);
+            strike.invoke(null,player);
             check(level.getBlockState(glass).isAir()&&level.getBlockState(glass.above()).isAir(),"kick opens both lower and upper window cells within two blocks");
             check(level.getBlockState(glass.above(2)).is(Blocks.STONE),"kick keeps solid wall outside the window passage");
             check(player.getDeltaMovement().horizontalDistance()>0&&player.getDeltaMovement().horizontalDistance()<=.21,"kick gives a small forward push without teleporting");

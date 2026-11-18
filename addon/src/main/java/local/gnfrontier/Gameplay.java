@@ -43,7 +43,9 @@ public final class Gameplay {
     // The wrench still uses normal block breaking, including protection and creative rules.
     @SubscribeEvent public void vehicleHarvest(PlayerEvent.HarvestCheck event) {
         if(event.getTargetBlock().is(Frontier.SALVAGE_VEHICLES)
-            && SalvageLoot.isCreateWrench(event.getEntity().getMainHandItem()))event.setCanHarvest(true);
+                && (!(event.getEntity().level() instanceof ServerLevel level) || WorldState.get(level).enabled)) {
+            event.setCanHarvest(SalvageLoot.canDismantle(event.getEntity().getMainHandItem()));
+        }
     }
     public static boolean protectedAt(ServerLevel level, BlockPos pos) {
         if (!level.hasChunkAt(pos)) return false;
@@ -62,7 +64,7 @@ public final class Gameplay {
     @SubscribeEvent public void commands(RegisterCommandsEvent event) {
         event.getDispatcher().register(Commands.literal("gn")
             .then(Commands.literal("help").executes(c->{
-                for(String line:List.of("GN：PDAキー（初期Insertキー）で地図・売買・依頼を開きます。端末の携帯は不要です。", "車は通常破壊で金属回収。窓蹴りは操作設定のGN Frontier（初期Vキー）。", "地下ではマスクを装備し、交換フィルターを右クリック。死亡すると携行品を失います。", "リグは設置後にCPU・GPUを右クリックで装着し、Forge Energyを供給。", "衛星装置はAd Astraの宇宙で使用。Noahは火星・Glacioの環境改変器に投入。"))
+                for(String line:List.of("GN：MキーでPDAを呼び出して地図・売買・依頼を開きます。端末の携帯は不要です。", "廃車はツルハシかCreateのレンチで解体できます。レンチは回収量が増えます。窓蹴りは操作設定のGN Frontier（初期Vキー）。", "地下ではマスクを装備し、交換フィルターを右クリック。死亡すると携行品を失います。", "リグは設置後にCPU・GPUを右クリックで装着し、Forge Energyを供給。", "衛星装置はAd Astraの宇宙で使用。Noahは火星・Glacioの環境改変器に投入。"))
                     c.getSource().sendSuccess(()->Component.literal(line),false);return 1;}))
             .then(Commands.literal("pda").executes(c -> { ServerPlayer p = c.getSource().getPlayerOrException();
                 if (p.isAlive() && !p.isSpectator() && !Hypoxia.down(p)) FrontierNetwork.send(p, ""); return 1; }))
@@ -83,7 +85,7 @@ public final class Gameplay {
             if (p.getInventory().getItem(slot).is(Frontier.PDA.get())) p.getInventory().setItem(slot, ItemStack.EMPTY);
         if (!data.starterGiven.contains(p.getUUID())) {
             data.starterGiven.add(p.getUUID()); data.setDirty();
-            p.sendSystemMessage(Component.literal("GN Frontier: PDAキー（初期Insert）で地図と取引を開けます。/gn pda"));
+            p.sendSystemMessage(Component.literal("GN Frontier: MキーでPDAの地図と取引を開けます。/gn pda"));
         }
         DiplomacyBridge.sync(p, account);
     }

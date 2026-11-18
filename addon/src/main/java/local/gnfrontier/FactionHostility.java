@@ -3,6 +3,7 @@ package local.gnfrontier;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.tags.TagKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.goal.GoalSelector;
@@ -15,6 +16,7 @@ import net.minecraft.world.entity.monster.Giant;
 import net.minecraft.world.entity.monster.warden.Warden;
 import net.minecraftforge.event.entity.EntityJoinLevelEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
+import net.minecraftforge.event.entity.living.LivingChangeTargetEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -43,6 +45,18 @@ public final class FactionHostility {
         int one=faction(a),two=faction(b);
         if(one>=0&&two>=0)return one!=two;
         return (vanillaHostile(a)&&force(b))||(force(a)&&vanillaHostile(b));
+    }
+
+    @SubscribeEvent(priority = EventPriority.LOWEST)
+    public void respectAlliedPlayers(LivingChangeTargetEvent event) {
+        if (!(event.getEntity() instanceof Mob mob) || !(event.getNewTarget() instanceof ServerPlayer player)
+                || !RespawnRules.enabled(player.serverLevel())) return;
+        int faction = faction(mob);
+        if (faction >= 0 && faction < 2 && local.gnfrontier.core.FactionStanding.relation(
+                WorldState.get(player.serverLevel()).account(player.getUUID()), faction)
+                == local.gnfrontier.core.FactionStanding.Relation.ALLY) {
+            event.setNewTarget(null);
+        }
     }
     @SubscribeEvent(priority=EventPriority.LOWEST) public void join(EntityJoinLevelEvent event){
         if(event.getLevel().isClientSide()||!(event.getEntity() instanceof Mob mob)||!vanillaHostile(mob))return;

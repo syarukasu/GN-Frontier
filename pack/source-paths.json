@@ -776,6 +776,10 @@
     "source": "overlay/defaultconfigs/gnfrontier-server.toml"
   },
   {
+    "path": "defaultconfigs/tacz-server.toml",
+    "source": "overlay/defaultconfigs/tacz-server.toml"
+  },
+  {
     "path": "defaultconfigs/lostcities-server.toml",
     "source": "overlay/defaultconfigs/lostcities-server.toml"
   },
@@ -1020,8 +1024,8 @@
     "source": "overlay/kubejs/assets/gnfrontier/textures/item/metal_scrap.png"
   },
   {
-    "path": "kubejs/assets/gnfrontier/textures/item/plastic_fragment_video_r14.png",
-    "source": "overlay/kubejs/assets/gnfrontier/textures/item/plastic_fragment_video_r14.png"
+    "path": "kubejs/assets/gnfrontier/textures/item/plastic_fragment.png",
+    "source": "overlay/kubejs/assets/gnfrontier/textures/item/plastic_fragment.png"
   },
   {
     "path": "kubejs/assets/gnfrontier/textures/item/rough_iron_ingot.png",
@@ -1040,8 +1044,8 @@
     "source": "overlay/kubejs/assets/gnfrontier/textures/item/unlit_torch.png"
   },
   {
-    "path": "kubejs/assets/gnfrontier/textures/item/waste_battery_video_r14.png",
-    "source": "overlay/kubejs/assets/gnfrontier/textures/item/waste_battery_video_r14.png"
+    "path": "kubejs/assets/gnfrontier/textures/item/waste_battery.png",
+    "source": "overlay/kubejs/assets/gnfrontier/textures/item/waste_battery.png"
   },
   {
     "path": "kubejs/assets/gucci_attachments/lang/ja_jp.json",

@@ -82,6 +82,7 @@ public final class PdaPageChecks {
         switch(action){
             case "shop"->click.accept(470,216);
             case "tasks"->click.accept(630,216);
+            case "stats"->click.accept(790,216);
             case "category"->click.accept(1615,311+Integer.parseInt(settings.getProperty("pdaPage"))*33);
             case "row"->click.accept(800,330+Integer.parseInt(settings.getProperty("pdaPage"))*72);
             case "task"->click.accept(1600,314+Integer.parseInt(settings.getProperty("pdaPage"))*34);

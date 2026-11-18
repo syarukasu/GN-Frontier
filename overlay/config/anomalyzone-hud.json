@@ -1,5 +1,7 @@
 {
   "hud.inv_stats_show": false,
   "hud.contam_show": false,
+  "hud.hp_show": false,
+  "hud.stamina_show": false,
   "hud.vitals_y": -60
 }

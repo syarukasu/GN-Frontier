@@ -3,6 +3,7 @@ package local.gnfrontier;
 import java.util.UUID;
 import local.gnfrontier.core.*;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.monster.Pillager;
 
@@ -36,10 +37,15 @@ public final class FactionRelations {
         return hostileTo(mob,player.getUUID(),WorldState.get(player.serverLevel()).account(player.getUUID()));
     }
     public static void recordAggression(LivingEntity victim,ServerPlayer killer){
+        if (killer.isCreative() || killer.isSpectator()) return;
         int faction=FactionHostility.faction(victim);
         if(faction<0||faction>1)return;
         WorldState world=WorldState.get(killer.serverLevel());var account=world.account(killer.getUUID());
         Economy.aggression(account,faction==0?Economy.Faction.EAST:Economy.Faction.WEST);
         world.setDirty();DiplomacyBridge.sync(killer,account);
+        PdaSignals.sync(killer);
+        killer.sendSystemMessage(Component.translatable("message.gnfrontier.faction_standing_changed",
+                Component.translatable(faction == 0 ? "gui.gnfrontier.merchant.east" : "gui.gnfrontier.merchant.west"),
+                account.reputation[faction], account.alert[faction]));
     }
 }

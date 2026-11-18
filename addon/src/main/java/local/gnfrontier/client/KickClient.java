@@ -9,8 +9,11 @@ import net.minecraft.client.model.PlayerModel;
 import net.minecraft.client.model.geom.ModelLayers;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.texture.OverlayTexture;
+import net.minecraft.util.Mth;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.world.entity.HumanoidArm;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.PlayerModelPart;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.*;
 import net.minecraftforge.client.settings.KeyConflictContext;
@@ -33,29 +36,38 @@ public final class KickClient {
     public static float strength(int id,float partial) {
         Minecraft mc=Minecraft.getInstance();if(mc.level==null || !starts.containsKey(id))return 0;
         float age=mc.level.getGameTime()-starts.get(id)+partial;
-        return age<0 || age>=10?0:(float)Math.sin(Math.PI*age/10);
+        if (age < 0 || age >= WindowKick.RECOVERY_TICKS) return 0;
+        if (age < WindowKick.IMPACT_TICK) return ease(age / WindowKick.IMPACT_TICK);
+        return age < 5 ? 1 : ease((WindowKick.RECOVERY_TICKS - age) / (WindowKick.RECOVERY_TICKS - 5));
     }
+    private static float ease(float t) { return t * t * (3 - 2 * t); }
     @SubscribeEvent public static void tick(TickEvent.ClientTickEvent e) {
         if(e.phase!=TickEvent.Phase.END)return;Minecraft mc=Minecraft.getInstance();
         if(mc.level==null || mc.player==null)return;
         long now=mc.level.getGameTime();starts.entrySet().removeIf(x->now-x.getValue()>12);
-        while(KEY.consumeClick())if(mc.screen==null&&!mc.player.isPassenger()&&!net.minecraft.client.gui.screens.Screen.hasControlDown()&&!net.minecraft.client.gui.screens.Screen.hasAltDown() && (now<lastRequest || now-lastRequest>=14)) {
+        while(KEY.consumeClick())if(mc.screen==null&&!mc.player.isPassenger()&&!mc.player.isVisuallySwimming()&&!net.minecraft.client.gui.screens.Screen.hasControlDown()&&!net.minecraft.client.gui.screens.Screen.hasAltDown() && (now<lastRequest || now-lastRequest>=14)) {
             lastRequest=now;FrontierNetwork.CHANNEL.sendToServer(new FrontierNetwork.KickRequest());
         }
     }
     @SubscribeEvent public static void logout(ClientPlayerNetworkEvent.LoggingOut e){starts.clear();lastRequest=Long.MIN_VALUE/2;AtmosphereOverrides.resetClient();PdaScreen.reset();}
-    @SubscribeEvent(priority=EventPriority.HIGHEST) public static void hand(RenderHandEvent e) {
+    @SubscribeEvent(priority=EventPriority.LOWEST, receiveCanceled=true) public static void hand(RenderHandEvent e) {
         Minecraft mc=Minecraft.getInstance();if(mc.player==null)return;float f=strength(mc.player.getId(),e.getPartialTick());
-        if(f<=0 || !mc.options.getCameraType().isFirstPerson())return;
-        e.setCanceled(true);if(e.getHand()!=InteractionHand.MAIN_HAND)return;
+        if(f<=0 || e.getHand()!=InteractionHand.MAIN_HAND || !mc.options.getCameraType().isFirstPerson())return;
         if(legModel==null)legModel=new PlayerModel<>(mc.getEntityModels().bakeLayer(ModelLayers.PLAYER),false);
+        boolean left = mc.player.getMainArm() == HumanoidArm.RIGHT;
+        var leg = left ? legModel.leftLeg : legModel.rightLeg;
+        var pants = left ? legModel.leftPants : legModel.rightPants;
         PoseStack pose=e.getPoseStack();pose.pushPose();
-        pose.translate(.26,-.72+.22*f,-.55-.42*f);pose.mulPose(Axis.XP.rotationDegrees(85*f));
-        pose.scale(1,-1,-1);
-        legModel.rightLeg.setPos(0,0,0);legModel.rightLeg.xRot=0;legModel.rightLeg.yRot=0;legModel.rightLeg.zRot=0;
-        legModel.rightPants.copyFrom(legModel.rightLeg);
+        pose.translate((left ? -1 : 1) * Mth.lerp(f, .25f, .07f), -.79 + .42 * f, -.65 - .16 * f);
+        pose.mulPose(Axis.XP.rotationDegrees(Mth.lerp(f, 22, 126)));
+        pose.mulPose(Axis.ZP.rotationDegrees((left ? -1 : 1) * 7 * f));
+        pose.scale(1,-1,1);
+        leg.setPos(0,0,0);leg.xRot=0;leg.yRot=0;leg.zRot=0;
+        pants.copyFrom(leg);
         var vertices=e.getMultiBufferSource().getBuffer(RenderType.entityCutoutNoCull(mc.player.getSkinTextureLocation()));
-        legModel.rightLeg.render(pose,vertices,e.getPackedLight(),OverlayTexture.NO_OVERLAY);
-        legModel.rightPants.render(pose,vertices,e.getPackedLight(),OverlayTexture.NO_OVERLAY);pose.popPose();
+        leg.render(pose,vertices,e.getPackedLight(),OverlayTexture.NO_OVERLAY);
+        if(mc.player.isModelPartShown(left ? PlayerModelPart.LEFT_PANTS_LEG : PlayerModelPart.RIGHT_PANTS_LEG))
+            pants.render(pose,vertices,e.getPackedLight(),OverlayTexture.NO_OVERLAY);
+        pose.popPose();
     }
 }

@@ -2,6 +2,7 @@ package local.gnfrontier;
 
 import local.gnfrontier.core.Economy;
 import local.gnfrontier.core.Campaign;
+import local.gnfrontier.core.FactionStanding;
 import local.gnfrontier.core.MerchantQuests;
 import net.minecraft.nbt.*;
 import net.minecraft.network.FriendlyByteBuf;
@@ -106,6 +107,9 @@ public final class FrontierNetwork {
         n.put("campaign",campaign.clientSnapshot());n.putLong("taskTicksRemaining",world.dailyCycle.remaining());
         n.putBoolean("daylightCycle",player.getServer().overworld().getGameRules().getBoolean(net.minecraft.world.level.GameRules.RULE_DAYLIGHT));
         n.putInt("militaryRank",Campaign.militaryRank(account));n.putBoolean("satelliteOnline",Campaign.satelliteOnline(campaign,tick));n.putBoolean("deterrenceOnline",Campaign.deterrenceOnline(campaign,tick));
+        n.putString("eastRelation", FactionStanding.relation(account, 0).name());
+        n.putString("westRelation", FactionStanding.relation(account, 1).name());
+        n.putIntArray("reinforcementTiers", new int[]{Campaign.raidTier(account.alert[0]), Campaign.raidTier(account.alert[1])});
         ListTag offers = new ListTag();
         for (Economy.Offer offer : Economy.OFFERS) {
             CompoundTag row = new CompoundTag(); row.putString("id", offer.id()); row.putString("item", offer.item());

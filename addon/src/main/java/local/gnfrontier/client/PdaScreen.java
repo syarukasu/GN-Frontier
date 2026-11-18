@@ -19,7 +19,9 @@ public final class PdaScreen {
     private static java.lang.reflect.Field tabField;
     private static String currentTab="MAP";
     private static int updateTick, category, selected, listScroll, textScroll, quantity=1, guidePage;
-    private static boolean special, guide, selling;
+    private static int standingPage;
+    private static boolean special, selling;
+    private static final String[] STANDING_PAGES = {"EAST", "WEST", "BLACK"};
     private static int bx,by,left,top,right,bottom,side,sideRight,rowHeight,visibleRows,totalRows,textLines,textVisible;
     private static float scale,textScale;
     private static final int INK=0xe5e8d1, MUTED=0xb1c19b, WARN=0xe3bf7e;
@@ -31,7 +33,7 @@ public final class PdaScreen {
     public static boolean isNative(Screen screen){return screen!=null&&screen.getClass().getName().equals(NATIVE);}
     public static boolean signalLost(){return snapshot.getBoolean("enabled")&&snapshot.getBoolean("signalLost");}
     public static void signal(boolean enabled,boolean lost){snapshot.putBoolean("enabled",enabled);snapshot.putBoolean("signalLost",lost);hits.clear();}
-    public static void reset(){snapshot=new CompoundTag();hits.clear();}
+    public static void reset(){snapshot=new CompoundTag();standingPage=0;hits.clear();}
     public static String tab(Screen screen){
         if(!isNative(screen))return "MAP";
         try {if(tabField==null){tabField=screen.getClass().getDeclaredField("activeTab");tabField.setAccessible(true);}return ((Enum<?>)tabField.get(screen)).name();}
@@ -208,17 +210,38 @@ public final class PdaScreen {
         if(!hovered.isEmpty())g.renderTooltip(Minecraft.getInstance().font,hovered,mx,my);
     }
     private static void stats(GuiGraphics g,int mx,int my){
-        button(g,tr("gui.gnfrontier.tab.stats"),side,top,sideRight-side,rowHeight-2,true,!guide,mx,my,()->{guide=false;textScroll=0;});
-        button(g,tr("gui.gnfrontier.tab.guide"),side,top+rowHeight,sideRight-side,rowHeight-2,true,guide,mx,my,()->{guide=true;textScroll=0;});
+        for (int i = 0; i <= STANDING_PAGES.length; i++) {
+            int page = i;
+            String name = i == STANDING_PAGES.length ? tr("gui.gnfrontier.tab.guide") : merchant(STANDING_PAGES[i]);
+            button(g,name,side,top+i*rowHeight,sideRight-side,rowHeight-2,true,standingPage==i,mx,my,()->{standingPage=page;textScroll=0;});
+        }
         List<Component> lines=new ArrayList<>();
-        if(guide){
-            for(int i=0;i<8;i++){final int n=i;button(g,Integer.toString(i+1),side+(i%4)*(sideRight-side)/4,top+(2+i/4)*rowHeight,(sideRight-side)/4-1,rowHeight-2,true,i==guidePage,mx,my,()->{guidePage=n;textScroll=0;});}
+        if(standingPage == STANDING_PAGES.length){
+            for(int i=0;i<8;i++){final int n=i;button(g,Integer.toString(i+1),side+(i%4)*(sideRight-side)/4,top+(4+i/4)*rowHeight,(sideRight-side)/4-1,rowHeight-2,true,i==guidePage,mx,my,()->{guidePage=n;textScroll=0;});}
             lines.add(Component.translatable("gui.gnfrontier.guide."+guidePage));
-        }else{
-            int[] rep=snapshot.getIntArray("reputation"),alert=snapshot.getIntArray("alert"),trader=snapshot.getIntArray("traderReputation");CompoundTag c=snapshot.getCompound("campaign");
+        } else if (standingPage < 2) {
+            int[] rep = snapshot.getIntArray("reputation"), alert = snapshot.getIntArray("alert");
+            int[] tiers = snapshot.getIntArray("reinforcementTiers");
+            if (rep.length == 2 && alert.length == 2 && tiers.length == 2) {
+                String sideName = standingPage == 0 ? "east" : "west";
+                String relation = snapshot.getString(sideName + "Relation").toLowerCase(Locale.ROOT);
+                lines.add(Component.translatable("gui.gnfrontier." + sideName + "_record", rep[standingPage], alert[standingPage]));
+                lines.add(Component.translatable("gui.gnfrontier.faction.relation", Component.translatable("gui.gnfrontier.faction." + relation)));
+                lines.add(Component.translatable("gui.gnfrontier.faction.force", Component.translatable("gui.gnfrontier.faction.force." + tiers[standingPage])));
+            }
+        } else {
+            int[] trader = snapshot.getIntArray("traderReputation");
+            if (trader.length == 4) {
+                lines.add(Component.translatable("gui.gnfrontier.trader_record", merchant("BLACK"), trader[3]));
+                long offers = snapshot.getList("offers", Tag.TAG_COMPOUND).stream().map(CompoundTag.class::cast)
+                        .filter(o -> o.getString("merchant").equals("BLACK") && o.getBoolean("unlocked") && o.getBoolean("available") && o.getBoolean("progressUnlocked")).count();
+                long contracts = snapshot.getList("specialQuests", Tag.TAG_COMPOUND).stream().map(CompoundTag.class::cast)
+                        .filter(q -> q.getBoolean("unlocked") && !q.getBoolean("completed")).count();
+                lines.add(Component.translatable("gui.gnfrontier.faction.eligible_offers", offers));
+                lines.add(Component.translatable("gui.gnfrontier.faction.eligible_contracts", contracts));
+            }
+            CompoundTag c = snapshot.getCompound("campaign");
             lines.add(Component.translatable("gui.gnfrontier.balance",snapshot.getLong("balance")));
-            if(rep.length==2&&alert.length==2){lines.add(Component.translatable("gui.gnfrontier.east_record",rep[0],alert[0]));lines.add(Component.translatable("gui.gnfrontier.west_record",rep[1],alert[1]));}
-            if(trader.length==4)for(int i=0;i<4;i++)lines.add(Component.translatable("gui.gnfrontier.trader_record",merchant(new String[]{"EAST","WEST","NEUTRAL","BLACK"}[i]),trader[i]));
             lines.add(Component.translatable("gui.gnfrontier.connected"));lines.add(Component.translatable("gui.gnfrontier.clearance",snapshot.getInt("militaryRank")));
             lines.add(Component.translatable("gui.gnfrontier.satellite",c.getInt("satellitesLaunched"),tr(snapshot.getBoolean("satelliteOnline")?"gui.gnfrontier.online":"gui.gnfrontier.satellite_waiting")));
             lines.add(Component.translatable("gui.gnfrontier.deterrence",tr(snapshot.getBoolean("deterrenceOnline")?"gui.gnfrontier.online":"gui.gnfrontier.deterrence_waiting")));

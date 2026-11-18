@@ -70,6 +70,11 @@ vanillaProtectionVsBullets = 0.0
 [weaponLights]
 enabled = true
 
+[leaning]
+enabled = true
+distance = 0.6
+roll = 14.0
+
 [suppression]
 enabled = true
 

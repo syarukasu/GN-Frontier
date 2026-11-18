@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "version": "0.2.13",
+  "date": "2026-11-19",
+  "modificationIds": ["GN-106", "GN-107", "GN-108", "GN-109", "GN-110"],
+  "coreSha256": "1e20a9de1d62b1c4e3fa0ad2b400ea20a8ed702f8df4b46dfa0313233b7b620e",
+  "offline": {
+    "coreChecks": 4067,
+    "merchantQuestChecks": 126,
+    "distributionChecks": 9,
+    "exfilZonesAndAnomalyZoneServerCompatibilityChecks": "PASS"
+  },
+  "runtime": {
+    "type": "integrated server with client on an inactive desktop",
+    "existingReviewWorldReused": true,
+    "osInputInjected": false,
+    "desktopSwitched": false,
+    "runtimeRestored": true,
+    "fixturesRestored": true,
+    "clientClosed": true,
+    "nativeKick": {"twoWindowBlocksRemoved": true, "forwardMovementObserved": true, "impactFrameVerified": true},
+    "stances": {"unarmedProneEyeHeight": 0.4, "nativeLeftLean": -1.0, "nativeRightLean": 1.0},
+    "pda": {"opensWithMapKey": true, "nativeEmbeddedMap": true, "standaloneMapBlocked": true, "standingPageRendered": true},
+    "standing": {"eastEnemyTargetAllowed": true, "eastAlliedTargetDenied": true, "westReputationUnchanged": true},
+    "consumption": {"foodBefore": 10, "foodAfter": 20, "healthBefore": 8, "healthAfterRegeneration": 13},
+    "inventory": {"hotbarSlotsVisible": 5, "revisedIconsVisible": 6},
+    "vehicles": {
+      "taggedBlocksChecked": 161,
+      "pairedModelDefinitions": 40,
+      "bareHandProgress": 0,
+      "axeProgress": 0,
+      "bareHandServerBreakDenied": true,
+      "standardDismantleTicks": 56,
+      "nativeGreenJeepTest": {
+        "bothPartsRemovedWithPickaxe": true,
+        "bothPartsRemovedWithWrench": true,
+        "roughIronMetalAluminumWithPickaxe": [2, 4, 4],
+        "roughIronMetalAluminumWithWrench": [3, 6, 6]
+      }
+    }
+  },
+  "installation": {
+    "dedicatedCoreJars": 1,
+    "unchangedThirdPartyJars": 134,
+    "userWorldWrites": false,
+    "userGameRestarted": false
+  },
+  "releasePublished": false
+}

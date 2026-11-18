@@ -22,16 +22,27 @@ public final class MerchantQuestVerification {
         long paid=0;
         for(var quest:catalog) {
             var original=campaign;var before=account;Map<String,Integer> items=new HashMap<>();quest.items().forEach(i->items.put(i.item(),i.count()));
+            int[] originalAlert = account.alert.clone();
             reject(()->MerchantQuests.claim(original,before,quest,items));
             campaign=MerchantQuests.accept(campaign,account,quest);var accepted=campaign;CompoundTag unchanged=accepted.save();
+            check(Arrays.equals(account.alert, originalAlert), "Accepting a contract leaves both armies' alert intact");
             var shortItems=new HashMap<>(items);var last=quest.items().get(quest.items().size()-1);shortItems.put(last.item(),last.count()-1);
             reject(()->MerchantQuests.claim(accepted,before,quest,shortItems));check(accepted.save().equals(unchanged),"Short final ingredient leaves every progress field unchanged");
             Economy.State capped=account.copy();capped.balance=Economy.MAX_MONEY;
             reject(()->MerchantQuests.claim(accepted,capped,quest,items));check(accepted.save().equals(unchanged),"Overflow leaves progress unchanged");
             var claim=MerchantQuests.claim(campaign,account,quest,items);paid+=quest.reward();
             check(account.balance==paid-quest.reward()&&claim.account().balance==paid,"Exact reward without mutating old account");
+            if (quest == catalog.get(0)) {
+                var highAlert = account.copy();
+                highAlert.alert[0] = 98;
+                highAlert.alert[1] = 100;
+                check(Arrays.equals(MerchantQuests.claim(campaign, highAlert, quest, items).account().alert, new int[]{100, 100}),
+                        "Both army alerts are capped at 100 on completion");
+            }
             campaign=claim.campaign();account=claim.account();var done=campaign;var rewarded=account;
             reject(()->MerchantQuests.claim(done,rewarded,quest,items));reject(()->MerchantQuests.accept(done,rewarded,quest));
+            check(Arrays.equals(before.alert, originalAlert) && account.alert[0] == originalAlert[0]+5 && account.alert[1] == originalAlert[1]+5,
+                    "Only a successful claim raises each army's alert, once");
             Campaign.refresh(campaign,player,(campaign.day+1)*Economy.DAY_TICKS);
             check(campaign.merchantCompleted.contains(quest.id()),"Daily reset preserves completed contracts");
             campaign=Campaign.State.load(campaign.save());check(campaign.merchantCompleted.contains(quest.id()),"NBT reload preserves completion");

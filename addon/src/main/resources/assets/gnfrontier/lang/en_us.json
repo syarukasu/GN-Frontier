@@ -347,5 +347,17 @@
   "screen.gnfrontier.repair.unsupported": "This item cannot be repaired.",
   "screen.gnfrontier.repair.changed": "Inventory changed. Select the firearm again.",
   "screen.gnfrontier.repair.disabled": "Weapon maintenance is unavailable.",
-  "screen.gnfrontier.repair.usage": "Hold and use to choose a carried firearm."
+  "screen.gnfrontier.repair.usage": "Hold and use to choose a carried firearm.",
+  "gui.gnfrontier.faction.relation": "Standing  %s",
+  "gui.gnfrontier.faction.neutral": "Neutral",
+  "gui.gnfrontier.faction.ally": "Allied",
+  "gui.gnfrontier.faction.enemy": "Hostile",
+  "gui.gnfrontier.faction.force": "Reinforcements  %s",
+  "gui.gnfrontier.faction.force.0": "No signs of reinforcements",
+  "gui.gnfrontier.faction.force.1": "Infantry",
+  "gui.gnfrontier.faction.force.2": "Infantry and ground vehicles",
+  "gui.gnfrontier.faction.force.3": "Reinforced units with ground vehicles. Helicopters may join near military sites.",
+  "gui.gnfrontier.faction.eligible_offers": "%s goods available to trade",
+  "gui.gnfrontier.faction.eligible_contracts": "%s special contracts available",
+  "message.gnfrontier.faction_standing_changed": "Your standing with %s has fallen. Reputation %s / alert %s"
 }

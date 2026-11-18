@@ -117,6 +117,7 @@ public final class TradeService {
         player.getInventory().setChanged();player.inventoryMenu.broadcastChanges();
         if(player.containerMenu!=player.inventoryMenu)player.containerMenu.broadcastChanges();
         DiplomacyBridge.sync(player,claim.account());
+        PdaSignals.sync(player);
     }
     private static boolean missionMatches(ItemStack stack,Campaign.DeliveryItem required) {
         if(!stack.is(item(required.item())))return false;

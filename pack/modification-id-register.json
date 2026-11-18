@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "created_at": "2026-11-12T23:34:24.310863+09:00",
-  "next_sequence": 106,
+  "next_sequence": 111,
   "rules": [
     "IDは登録時に固定し、名称・分類・実装状態が変わっても変更しない。",
     "新規項目には未使用の次番号を登録する。削除・統合したIDは廃止記録を残して再利用しない。",
@@ -1048,6 +1048,60 @@
       "related_ids": [
         "GN-103",
         "GN-104"
+      ]
+    },
+    {
+      "id": "GN-106",
+      "initial_title": "窓蹴りの打点と伏せ・リーンの姿勢",
+      "first_recorded_revision": "0.2.13",
+      "state": "active",
+      "related_ids": [
+        "GN-027",
+        "GN-028",
+        "GN-097"
+      ]
+    },
+    {
+      "id": "GN-107",
+      "initial_title": "地図キーのPDA統合と陣営評価による反応・警戒の変化",
+      "first_recorded_revision": "0.2.13",
+      "state": "active",
+      "related_ids": [
+        "GN-046",
+        "GN-075",
+        "GN-097",
+        "GN-099"
+      ]
+    },
+    {
+      "id": "GN-108",
+      "initial_title": "5枠ホットバーに体力と満腹度のアイコンを表示",
+      "first_recorded_revision": "0.2.13",
+      "state": "active",
+      "related_ids": [
+        "GN-093"
+      ]
+    },
+    {
+      "id": "GN-109",
+      "initial_title": "初期の採掘工具と回収素材6種のアイコン更新",
+      "first_recorded_revision": "0.2.13",
+      "state": "active",
+      "related_ids": [
+        "GN-003",
+        "GN-047",
+        "GN-092"
+      ]
+    },
+    {
+      "id": "GN-110",
+      "initial_title": "全廃車の適正ツール制限と解体時間",
+      "first_recorded_revision": "0.2.13",
+      "state": "active",
+      "related_ids": [
+        "GN-015",
+        "GN-042",
+        "GN-092"
       ]
     }
   ]

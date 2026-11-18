@@ -293,6 +293,8 @@ modelPart_hat:true
 key_key.taczexpert.cycle_bullet_type:key.keyboard.left.bracket
 key_key.taczexpert.lean_left:key.keyboard.home
 key_key.taczexpert.lean_right:key.keyboard.end
+key_key.campchat.open_chat:key.keyboard.m
+key_gui.xaero_open_map:key.keyboard.unknown
 key_key.taczexpert.weapon_light:key.keyboard.backslash
 key_key.taczexpert.nvg:key.keyboard.f9
 key_key.taczexpert.underbarrel:key.keyboard.f8

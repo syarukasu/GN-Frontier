@@ -49,7 +49,10 @@ public final class CorpseVisualChecks {
             ((net.minecraft.world.level.saveddata.SavedData)world).setDirty();PdaSignals.sync(p);FrontierNetwork.send(p,"");return Map.of("signalLost",action.endsWith("on"));
         }
         if(action.equals("kick")){
-            WindowKick.kick(p);var window=p.getPersistentData().getCompound("gn_visual_window");BlockPos pos=BlockPos.of(window.getLong("pos"));
+            WindowKick.kick(p);return Map.of("impactDelayTicks",WindowKick.IMPACT_TICK);
+        }
+        if(action.equals("kick-result")){
+            var window=p.getPersistentData().getCompound("gn_visual_window");BlockPos pos=BlockPos.of(window.getLong("pos"));
             return Map.of("lowerAir",level.getBlockState(pos).isAir(),"upperAir",level.getBlockState(pos.above()).isAir(),"motion",p.getDeltaMovement().toString());
         }
         if(action.equals("window")){

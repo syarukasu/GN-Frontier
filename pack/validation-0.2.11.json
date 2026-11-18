@@ -1,0 +1,168 @@
+{
+  "schema": 1,
+  "version": "0.2.11",
+  "date": "2026-11-18",
+  "modificationIds": [
+    "GN-102",
+    "GN-103",
+    "GN-104"
+  ],
+  "coreSha256": "a26578c92ebc3900ce366501dfdd39eb439b3122dd1afc16016322ceea34def9",
+  "releasePublished": false,
+  "offline": {
+    "status": "PASS",
+    "coreChecks": 4067,
+    "serverCompatibility": [
+      "pinned original ExfilZones client allocation isolation",
+      "both Anomaly Zone dialog packet codecs and acknowledgement"
+    ],
+    "dedicatedServerStarted": false
+  },
+  "nativeRuinRegression": {
+    "status": "PASS",
+    "before": {
+      "fixture": "tower-before",
+      "scope": "Native generatePart and transformed generateRuins; existing owned review world only",
+      "maxY": 139,
+      "partSlices": 70,
+      "floatingStructuralBlocks": 600,
+      "nativePart": "lostcities:radio_tower1_0_0_0",
+      "totalBlocks": 641,
+      "ruinFraction": 0.85,
+      "components": [
+        {
+          "maxY": 139,
+          "blocks": 539,
+          "minY": 80
+        },
+        {
+          "maxY": 85,
+          "blocks": 61,
+          "minY": 79
+        }
+      ]
+    },
+    "after": {
+      "nativePart": "lostcities:radio_tower1_0_0_0",
+      "totalBlocks": 710,
+      "ruinFraction": 0.85,
+      "components": [
+        {
+          "blocks": 510,
+          "minY": 70,
+          "maxY": 124
+        },
+        {
+          "blocks": 116,
+          "minY": 70,
+          "maxY": 85
+        }
+      ],
+      "fixture": "tower-after",
+      "scope": "Native generatePart and transformed generateRuins; existing owned review world only",
+      "maxY": 124,
+      "partSlices": 70,
+      "floatingStructuralBlocks": 0
+    },
+    "normalSixBlockFloors": "Existing ruin arithmetic is used without replacement. This is a code scope guarantee; an independent native block parity comparison was not run.",
+    "existingUserChunksRepaired": false
+  },
+  "worldGeneration": {
+    "status": "PASS",
+    "fullChunk": {
+      "chunk": [
+        250,
+        250
+      ],
+      "status": "minecraft:full",
+      "noisiumLoaded": true,
+      "elapsedMs": 6298,
+      "worldStyle": "gnfrontier:ruined_city",
+      "cityStyle": "gnfrontier:military_city",
+      "profile": "gn_azzz15flat_nature"
+    },
+    "cityCoverageParametersChanged": false,
+    "naturalTerrainModsChanged": false,
+    "allDistrictsSurveyed": false,
+    "upstreamOptimization": "Noisium 2.3.0+mc1.20-1.20.1, original CF project 930207/file 5650506",
+    "noisiumSha256": "b0b020250c81e8cce7776c3dc8f7085f269e2007570d5fbd492c4497ad60685c",
+    "performanceABMeasured": false,
+    "remainingPerformanceWork": "A 45-second live JFR showed substantial LC2H city role/height sampling work. The 6298 ms FULL-chunk check is an isolated compatibility measurement, not a speedup benchmark. Smooth exploration and improved FPS are not established."
+  },
+  "screenshots": [
+    {
+      "path": "revisions/version-control-r39/spec-0.2.11/final-title.png",
+      "sha256": "38d60b94f98995a66340f6472ac932d8f41bae45857cb8309b3c33ad6186aedd",
+      "visuallyInspected": true,
+      "source": "actual native Minecraft framebuffer on inactive review desktop"
+    },
+    {
+      "path": "revisions/version-control-r39/spec-0.2.11/tower-before.png",
+      "sha256": "63858c4be4610070adc8ae3aa2f0bc25f70914eca2d613a84a0f8aeac5e23720",
+      "visuallyInspected": true,
+      "source": "actual native Minecraft framebuffer on inactive review desktop"
+    },
+    {
+      "path": "revisions/version-control-r39/spec-0.2.11/tower-after.png",
+      "sha256": "1565917130455b96edb4aaf070926eb0ec50cd0d7f1dbff5ba56c2dbf2a26ddf",
+      "visuallyInspected": true,
+      "source": "actual native Minecraft framebuffer on inactive review desktop"
+    }
+  ],
+  "isolation": {
+    "existingRegisteredRuntimeReused": true,
+    "worldsCreated": 0,
+    "environmentCopied": false,
+    "desktopSwitched": false,
+    "osInputInjected": false,
+    "userWorldUsedForTests": false,
+    "userWorldReadOnlyInspection": true,
+    "userWorldWrites": false,
+    "routineStorageCleanupPerformed": false,
+    "optionsRestored": true,
+    "temporaryAccountRemoved": true,
+    "clientClosed": true,
+    "runtimeRestored": true
+  },
+  "limitations": [
+    "Native tower fixture uses a fixed 0.85 ruin fraction; other world seeds and all tall asset variants were not exhaustively surveyed.",
+    "Existing user chunks retain previously generated floating sections. No chunk deletion, regeneration, loot reset or automatic save repair is performed.",
+    "Repair-kit provider/operation investigation remains on hold at the user request; its production behavior was not changed."
+  ],
+  "startupNotice": {
+    "status": "PASS",
+    "nativeEventProbe": {
+      "nativeNoticeShownBefore": false,
+      "noticeDidNotReplaceScreen": true,
+      "screen": "local.gnfrontier.client.ui.FrontierTitleScreen",
+      "noisiumLoaded": true,
+      "nativeNoticeShownAfter": false
+    },
+    "noUpstreamConfigSwitch": true,
+    "implementation": "client-only cancellable HEAD injection in the single dedicated core; upstream JAR unchanged",
+    "actualFirstTitleCaptured": true
+  },
+  "deployment": {
+    "status": "PASS",
+    "version": "0.2.11",
+    "coreSha256": "a26578c92ebc3900ce366501dfdd39eb439b3122dd1afc16016322ceea34def9",
+    "noisiumSha256": "b0b020250c81e8cce7776c3dc8f7085f269e2007570d5fbd492c4497ad60685c",
+    "unchangedThirdPartyJars": 132,
+    "thirdPartyJarsAfter": 133,
+    "dedicatedCoreJars": 1,
+    "updatedFiles": [
+      "mods/gn-frontier-0.2.11.jar",
+      "mods/noisium-forge-2.3.0+mc1.20-1.20.1.jar",
+      "config/bcc-common.toml",
+      "mods/.index/gnfrontier.pw.toml",
+      "mods/.index/noisium.pw.toml"
+    ],
+    "removedSupersededCore": "mods/gn-frontier-0.2.10.jar",
+    "userWorldWrites": false,
+    "userGameRestarted": false,
+    "rollbackOriginalCoreAvailableAndVerified": true
+  },
+  "driverCorrections": [
+    "A startup event constructor mismatch and missing early return were corrected in the private review driver. The final event probe passed. These were driver failures, not accepted game checks."
+  ]
+}

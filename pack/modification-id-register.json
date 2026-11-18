@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "created_at": "2026-11-12T23:34:24.310863+09:00",
-  "next_sequence": 102,
+  "next_sequence": 105,
   "rules": [
     "IDは登録時に固定し、名称・分類・実装状態が変わっても変更しない。",
     "新規項目には未使用の次番号を登録する。削除・統合したIDは廃止記録を残して再利用しない。",
@@ -1018,6 +1018,27 @@
         "GN-099",
         "GN-100"
       ]
+    },
+    {
+      "id": "GN-102",
+      "initial_title": "同梱済みAnomaly Zone推奨MOD案内の起動時抑止",
+      "first_recorded_revision": "0.2.11",
+      "state": "active",
+      "related_ids": []
+    },
+    {
+      "id": "GN-103",
+      "initial_title": "原版Noisium導入による生成最適化と配布元メタデータ",
+      "first_recorded_revision": "0.2.11",
+      "state": "active",
+      "related_ids": []
+    },
+    {
+      "id": "GN-104",
+      "initial_title": "実パーツ高さに基づく廃墟化と塔の中抜け・浮遊防止",
+      "first_recorded_revision": "0.2.11",
+      "state": "active",
+      "related_ids": []
     }
   ]
 }

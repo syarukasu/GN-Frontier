@@ -9,7 +9,7 @@ GN Frontierのパック専用処理をまとめた、Forge 1.20.1向けのコア
 | 項目 | 内容 |
 | --- | --- |
 | 表示名 / MOD ID | GN Frontier / `gnfrontier` |
-| バージョン | パックと共通の **0.2.10**（[VERSION](../VERSION)、開発版） |
+| バージョン | パックと共通の **0.2.11**（[VERSION](../VERSION)、開発版） |
 | 対応環境 | Minecraft **1.20.1** / Forge **47.4.20** / Java **17** |
 | 利用するMODパック | [GN Frontier](../README.md) |
 | ソース | [src/main](src/main/) |

@@ -4900,6 +4900,46 @@
       "delivery": "manifest",
       "sha1": "57db24e561a4aa373ca6832816e010ed03bd6a1a",
       "sha512": "7c3a7db69e57a7645c00d74b17089fb9c4050f75bddc653e499148273d2c253fee29ddb81e43a095d1019038bb053fccaf1066821af46fff88caad74deb037a4"
+    },
+    {
+      "path": "mods/noisium-forge-2.3.0+mc1.20-1.20.1.jar",
+      "name": "Noisium",
+      "side": "both",
+      "size": 218152,
+      "sha256": "b0b020250c81e8cce7776c3dc8f7085f269e2007570d5fbd492c4497ad60685c",
+      "urls": [
+        "https://edge.forgecdn.net/files/5650/506/noisium-forge-2.3.0%2Bmc1.20-1.20.1.jar",
+        "https://mediafilez.forgecdn.net/files/5650/506/noisium-forge-2.3.0%2Bmc1.20-1.20.1.jar"
+      ],
+      "page": "https://www.curseforge.com/projects/930207/files/5650506",
+      "source_metadata": {
+        "curseforge": {
+          "project-id": 930207,
+          "file-id": 5650506
+        },
+        "modrinth": {
+          "project-id": "KuNKN7d2",
+          "version-id": "gbYUKrDP"
+        }
+      },
+      "mods": [
+        {
+          "modId": "noisium",
+          "displayName": "Noisium",
+          "version": "2.3.0+mc1.20-1.20.1",
+          "authors": "Steveplays28"
+        }
+      ],
+      "declared_license": "LGPL-3.0",
+      "installed_path": "mods/noisium-forge-2.3.0+mc1.20-1.20.1.jar",
+      "curseforge": {
+        "projectID": 930207,
+        "fileID": 5650506,
+        "required": true
+      },
+      "delivery": "manifest",
+      "sha1": "7da1cdf00c0ae5cad31e17f765f6ea021c8ac808",
+      "sha512": "5bc43bc1b748edcd63d074a8bb14d393d986c51e1933e1f38cd7a2dd2fd70dba5a46a6415f46d4a52c68e7e1e9ce101e54376ad04273df958608e2fdb43db502"
     }
   ],
   "embedded_from_create": [

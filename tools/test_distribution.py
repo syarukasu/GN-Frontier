@@ -133,6 +133,17 @@ def check_archives(directory):
                    and (r['curseforge']['projectID'], r['curseforge']['fileID']) in cf_ids}
         assert covered.isdisjoint({r['path'] for r in extras['files']})
         assert covered | {r['path'] for r in extras['files']} == paths
+        # Resource-pack selections must use the file names written by each distribution.
+        for reader, options, prefixes in (
+            (cf, 'overrides/options.txt', ('overrides/',)),
+            (mr, 'client-overrides/options.txt', ('client-overrides/', 'overrides/')),
+        ):
+            line = next(line for line in reader.read(options).decode('utf-8').splitlines()
+                        if line.startswith('resourcePacks:'))
+            for selection in json.loads(line.split(':', 1)[1]):
+                if selection.startswith('file/'):
+                    resource = 'resourcepacks/' + selection.removeprefix('file/')
+                    assert resource in paths or any(prefix + resource in reader.namelist() for prefix in prefixes), resource
         servers = {r['path'] for r in server_manifest['files']}
         assert servers == {r['path'] for r in index['files'] if r['env']['server'] == 'required'}
         assert all(r['env']['client'] == 'required' for r in index['files'])

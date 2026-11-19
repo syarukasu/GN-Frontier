@@ -42,7 +42,7 @@ ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"true"
-resourcePacks:["file/FreshAnimations_v1.11.2_1.20.zip","file/TZP_1.20.1_2.7.zip","file/FA+Player-v1.1.zip"]
+resourcePacks:["file/FreshAnimations_v1.11.2_1.20+.zip","file/TZP_1.20.1_2.7.zip","file/FA+Player-v1.1.zip"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:ja_jp

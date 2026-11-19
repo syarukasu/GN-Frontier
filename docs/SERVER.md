@@ -2,7 +2,7 @@
 
 [MODパック](../README.md) · [専用コアMOD](../addon/README.md) · [配布方式](CURSEFORGE.md)
 
-クライアントと同じバージョンの`GN-Frontier-<version>-Server.zip`を[Release](https://github.com/syarukasu/GN-Frontier/releases/tag/v0.2.2)から取得します。MODとForgeのJARは入っていません。初回起動で、メタデータに固定した原版を取得してSHA-256を検証します。
+クライアントと同じバージョンの`GN-Frontier-<version>-Server.zip`を取得します。初回起動で、メタデータに固定した原版MODとForgeを取得してSHA-256を検証します。[Release](https://github.com/syarukasu/GN-Frontier/releases/tag/v0.2.13)
 
 ## 初回セットアップ
 
@@ -29,7 +29,7 @@
 | `defaultconfigs/lostcities-server.toml` | 新規ワールドの専用プロファイル`gn_azzz15flat_nature` |
 | `GN-Frontier-Setup/downloads.json` | 原版のURL・サイズ・ハッシュ、固定したForgeの取得元 |
 
-サーバーには、クライアント用の24本のMOD、シェーダー、リソースパック、画面設定を含めません。Xaero's World Mapは共有ワールドに登録される4つの地図制限効果を保つためサーバー側にも残します。ゲーム内ルール・レシピ・生成・loot・勢力処理を保ち、0.2.2では**トップレベル107本のJARと5個のガンパックZIP**を取得します。難易度は専用コアのルールによりハード固定です。
+0.2.13では、サーバー用の**トップレベル110本のJARと5個のガンパックZIP**を取得します。Xaero's World Mapは共有ワールドに登録される4つの地図制限効果を保つためサーバー側にも残します。クライアント専用の25本のMOD、シェーダー、リソースパック、画面設定はクライアント版に含まれます。難易度は専用コアのルールによりハード固定です。
 
 RCONとコマンドブロックは既定で無効です。参加者へOPを与えるかどうか、ホワイトリスト、接続先の公開方法は運用者が設定してください。
 

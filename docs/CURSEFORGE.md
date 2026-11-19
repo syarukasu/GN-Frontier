@@ -4,14 +4,14 @@
 
 ## Releaseのファイル
 
-0.2.2から、[GitHub Release](https://github.com/syarukasu/GN-Frontier/releases/tag/v0.2.2)に次の配布物を置きます。パックのZIP・mrpackにはJARを同梱しません。
+0.2.13の配布ファイルをGitHubで公開しています。依存物は固定した取得元からダウンロードします。[GitHub Release](https://github.com/syarukasu/GN-Frontier/releases/tag/v0.2.13)
 
 | ファイル | 依存物の取得 |
 | --- | --- |
-| `GN-Frontier-0.2.2-CurseForge.zip` | `manifest.json`の132項目をランチャーが取得。残り8項目は付属スクリプトで補完 |
-| `GN-Frontier-0.2.2.mrpack` | Prismが140項目をURLとハッシュから取得。外部配布元の確認が出る場合あり |
-| `GN-Frontier-0.2.2-Server.zip` | Windows／Linuxの起動スクリプトが112項目とForgeを取得 |
-| `gn-frontier-0.2.2.jar` | パックのメタデータが参照する専用コアの単独取得先 |
+| `GN-Frontier-0.2.13-CurseForge.zip` | `manifest.json`の136項目をランチャーが取得。残り8項目は付属スクリプトで補完 |
+| `GN-Frontier-0.2.13.mrpack` | Prismが144項目をURLとハッシュから取得。外部配布元の確認が出る場合あり |
+| `GN-Frontier-0.2.13-Server.zip` | Windows／Linuxの起動スクリプトが115項目とForgeを取得 |
+| `gn-frontier-0.2.13.jar` | パックのメタデータが参照する専用コアの単独取得先 |
 | `downloads.lock.json` / `SHA256SUMS.txt` | 全依存物の固定メタデータ／Release成果物の照合用ハッシュ |
 
 `pack/runtime.lock.json`に第三者原版のURL、配布元ID、サイズ、SHA-1・SHA-256・SHA-512を固定します。専用コアはビルド後のハッシュとRelease URLを生成時に追加します。Prismの取得元表示用`.pw.toml`にも、実在するCurseForge／ModrinthのIDを使います。

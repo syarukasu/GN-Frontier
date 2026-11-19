@@ -4576,7 +4576,7 @@
       "sha512": "d2a5c46ae53e4bb6355604a1ade253ab49f1deb205f5ee69085014965241d3c9623204951ab174a5dbdaf24d9b25ecae9a1638cc6a13d780b398a6d70d157a4e"
     },
     {
-      "path": "resourcepacks/FreshAnimations_v1.11.2_1.20.zip",
+      "path": "resourcepacks/FreshAnimations_v1.11.2_1.20+.zip",
       "name": "FreshAnimations_v1.11.2_1.20+.zip",
       "side": "client",
       "size": 742790,
@@ -4592,7 +4592,7 @@
           "file-id": 9394023
         }
       },
-      "installed_path": "resourcepacks/FreshAnimations_v1.11.2_1.20.zip",
+      "installed_path": "resourcepacks/FreshAnimations_v1.11.2_1.20+.zip",
       "curseforge": {
         "projectID": 453763,
         "fileID": 9394023,
@@ -4863,7 +4863,13 @@
           "version": "1.11.3"
         }
       ],
-      "installed_path": "mods/entityculling-forge-1.11.3-mc1.20.1.jar"
+      "installed_path": "mods/entityculling-forge-1.11.3-mc1.20.1.jar",
+      "curseforge": {
+        "projectID": 448233,
+        "fileID": 9100267,
+        "required": true
+      },
+      "delivery": "manifest"
     },
     {
       "path": "mods/incontrol-1.20-9.5.1.jar",

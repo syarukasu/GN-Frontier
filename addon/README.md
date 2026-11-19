@@ -44,7 +44,7 @@ GN Frontierのパック専用処理をまとめた、Forge 1.20.1向けのコア
 
 リポジトリ全体を取得し、[開発・ビルド手順](../docs/DEVELOPMENT.md)に従ってください。`addon/`だけではなく、ルートの`VERSION`と固定依存リストを使ってビルドします。
 
-生成されるJARは`build/libs/gn-frontier-<バージョン>.jar`です。[Release](https://github.com/syarukasu/GN-Frontier/releases/tag/v0.2.2)では、パックのメタデータが参照する取得先として単独のJARを公開します。パックZIP・mrpack・サーバーZIPには同梱しません。[GitHub Actions](https://github.com/syarukasu/GN-Frontier/actions/workflows/build.yml)の`gn-frontier-core`は開発確認用の成果物です。
+生成されるJARは`build/libs/gn-frontier-<バージョン>.jar`です。パックのメタデータは、単独で公開しているコアJARを参照します。[Release](https://github.com/syarukasu/GN-Frontier/releases/tag/v0.2.13) · [GitHub Actionsの開発ビルド](https://github.com/syarukasu/GN-Frontier/actions/workflows/build.yml)
 
 ## 不具合の報告
 

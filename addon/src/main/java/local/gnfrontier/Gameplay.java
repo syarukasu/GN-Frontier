@@ -64,7 +64,7 @@ public final class Gameplay {
     @SubscribeEvent public void commands(RegisterCommandsEvent event) {
         event.getDispatcher().register(Commands.literal("gn")
             .then(Commands.literal("help").executes(c->{
-                for(String line:List.of("GN：MキーでPDAを呼び出して地図・売買・依頼を開きます。端末の携帯は不要です。", "廃車はツルハシかCreateのレンチで解体できます。レンチは回収量が増えます。窓蹴りは操作設定のGN Frontier（初期Vキー）。", "地下ではマスクを装備し、交換フィルターを右クリック。死亡すると携行品を失います。", "リグは設置後にCPU・GPUを右クリックで装着し、Forge Energyを供給。", "衛星装置はAd Astraの宇宙で使用。Noahは火星・Glacioの環境改変器に投入。"))
+                for(String line:List.of("GN：MキーでPDAを呼び出して地図・売買・依頼を開きます。端末の携帯は不要です。", "廃車はツルハシかCreateのレンチで一括解体できます。窓蹴りは操作設定のGN Frontier（初期Vキー）。", "地下ではマスクを装備し、交換フィルターを右クリック。死亡すると携行品を失います。", "リグは設置後にCPU・GPUを右クリックで装着し、Forge Energyを供給。", "衛星装置はAd Astraの宇宙で使用。Noahは火星・Glacioの環境改変器に投入。"))
                     c.getSource().sendSuccess(()->Component.literal(line),false);return 1;}))
             .then(Commands.literal("pda").executes(c -> { ServerPlayer p = c.getSource().getPlayerOrException();
                 if (p.isAlive() && !p.isSpectator() && !Hypoxia.down(p)) FrontierNetwork.send(p, ""); return 1; }))

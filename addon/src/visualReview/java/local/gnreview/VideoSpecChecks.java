@@ -15,6 +15,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.nbt.*;
 import net.minecraft.network.protocol.game.ClientboundSetCarriedItemPacket;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.Mob;
@@ -23,8 +24,13 @@ import net.minecraft.world.item.*;
 import net.minecraft.world.level.GameType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.Heightmap;
+import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.minecraft.world.phys.AABB;
+import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.entity.EntityJoinLevelEvent;
@@ -134,6 +140,29 @@ public final class VideoSpecChecks {
                 if (states.isEmpty()) throw new AssertionError("No tagged vehicle blocks");
                 return Map.of("rows",states,"taggedBlocks",states.size(),"pairedModels",VehicleAssemblies.MODELS.size());
             }
+            case "car-loot-parity" -> {
+                var state = VehicleAssemblies.state("green_jeep_1", Direction.NORTH);
+                var pickaxe = new ItemStack(Frontier.ROUGH_PICKAXE.get());
+                var wrench = new ItemStack(TradeService.item("create:wrench"));
+                int batteryRolls = 0;
+                int aluminumRolls = 0;
+                var seeds = new Random(650);
+                for (int roll = 0; roll < 64; roll++) {
+                    long seed = seeds.nextLong();
+                    var baseline = seededCarLoot(level, state, player, pickaxe, seed);
+                    var usingWrench = seededCarLoot(level, state, player, wrench, seed);
+                    if (baseline.size() != usingWrench.size()) throw new AssertionError("Different salvage for seed " + seed);
+                    for (int i = 0; i < baseline.size(); i++) {
+                        if (!ItemStack.matches(baseline.get(i), usingWrench.get(i)))
+                            throw new AssertionError("Different salvage for seed " + seed);
+                    }
+                    if (baseline.stream().anyMatch(item -> item.is(Frontier.WASTE_BATTERY.get()))) batteryRolls++;
+                    if (baseline.stream().anyMatch(item -> item.is(Frontier.ALUMINUM_CHUNK.get()))) aluminumRolls++;
+                }
+                if (batteryRolls == 0 || aluminumRolls == 0 || batteryRolls == 64 || aluminumRolls == 64)
+                    throw new AssertionError("Fixture did not cover both rare-drop outcomes");
+                return Map.of("matchedSeeds",64,"batteryDropsPerTool",batteryRolls,"aluminumLumpDropsPerTool",aluminumRolls);
+            }
             case "car-stage" -> {
                 if (save.contains("car") || !level.hasChunkAt(CAR) || !level.getEntitiesOfClass(ItemEntity.class, DROP_ZONE).isEmpty())
                     throw new IllegalStateException("Unused vehicle test site required");
@@ -173,20 +202,21 @@ public final class VideoSpecChecks {
                     player.getInventory().setItem(player.getInventory().selected, original);
                     MinecraftForge.EVENT_BUS.unregister(observe);
                 }
-                save.putBoolean("wrench", wrench);
                 save.put("drops", drops);
                 return Map.of("nativeBreak", true, "wrench",wrench,"itemsSpawned",drops.toString());
             }
             case "car-drops" -> {
                 if (!save.contains("car") || !level.getBlockState(CAR).isAir() || !level.getBlockState(REAR).isAir())
                     throw new AssertionError("A single break must clear both parts");
-                boolean wrench = save.getBoolean("wrench");
                 var record = save.getCompound("drops");
                 Map<String,Integer> drops = new TreeMap<>();
                 for (String key : record.getAllKeys()) drops.put(key, record.getInt(key));
-                if (drops.getOrDefault("gnfrontier:rough_iron_ingot", 0) != (wrench ? 3 : 2)
-                        || drops.getOrDefault("gnfrontier:metal_scrap", 0) != (wrench ? 6 : 4)
-                        || drops.getOrDefault("gnfrontier:aluminum_scrap", 0) != (wrench ? 6 : 4))
+                if (drops.getOrDefault("gnfrontier:rough_iron_ingot", 0) != 2
+                        || drops.getOrDefault("gnfrontier:metal_scrap", 0) != 4
+                        || drops.getOrDefault("gnfrontier:aluminum_scrap", 0) != 4
+                        || drops.getOrDefault("gnfrontier:plastic_fragment", 0) != 1
+                        || drops.getOrDefault("tfmg:copper_wire", 0) != 2
+                        || drops.getOrDefault("tfmg:rubber_sheet", 0) != 1)
                     throw new AssertionError("Expected a single native salvage drop: " + drops);
                 clearCar(player, save);
                 return Map.of("bothPartsRemoved",true,"drops",drops);
@@ -230,12 +260,21 @@ public final class VideoSpecChecks {
         }
     }
 
+    private static List<ItemStack> seededCarLoot(ServerLevel level, BlockState state, ServerPlayer player, ItemStack tool, long seed) {
+        var parameters = new LootParams.Builder(level)
+                .withParameter(LootContextParams.BLOCK_STATE, state)
+                .withParameter(LootContextParams.ORIGIN, Vec3.atCenterOf(CAR))
+                .withParameter(LootContextParams.TOOL, tool)
+                .withParameter(LootContextParams.THIS_ENTITY, player)
+                .create(LootContextParamSets.BLOCK);
+        return level.getServer().getLootData().getLootTable(state.getBlock().getLootTable()).getRandomItems(parameters, seed);
+    }
+
     private static void clearCar(ServerPlayer player, CompoundTag save) {
         var level = player.serverLevel();
         level.getEntitiesOfClass(ItemEntity.class, DROP_ZONE).forEach(ItemEntity::discard);
         for (BlockPos pos : BlockPos.betweenClosed(PAD_START, PAD_END.above(4))) level.removeBlock(pos, false);
         save.remove("car");
-        save.remove("wrench");
         save.remove("drops");
     }
 

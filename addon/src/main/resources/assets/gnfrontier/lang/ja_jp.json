@@ -55,7 +55,7 @@
   "gui.gnfrontier.loading.tip.6": "PDA：PDAは専用キーで呼び出せる。端末を手に持つ必要はない。割り当てはキー設定で確認しよう。",
   "gui.gnfrontier.loading.tip.7": "任務：討伐依頼の進捗は受注してから記録される。出発前に、依頼を引き受けたか確認しよう。",
   "gui.gnfrontier.loading.tip.8": "探索：軍事施設へ入る前に、周囲の敵と退路を確かめよう。回収した装備は持ち帰ってこそ役に立つ。",
-  "gui.gnfrontier.loading.tip.9": "回収：Createのレンチで車を解体すると、通常より多くの素材を回収できる。",
+  "gui.gnfrontier.loading.tip.9": "廃車はツルハシかCreateのレンチで一括解体できる。",
   "gui.gnfrontier.loading.tip.10": "工業：粗悪な鉄のツルハシには、粗悪な鉄3個・銅線1個・棒1本が必要だ。配置はレシピを確認しよう。",
   "gui.gnfrontier.loading.tip.11": "生存：眠って夜を飛ばすことはできない。ベッドは、戻る場所を登録するために使う。",
   "gui.gnfrontier.loading.tip.12": "戦闘：釣り竿を持つ敵には距離を取ろう。釣り針で引き寄せられ、手に持った物を奪われることがある。",

@@ -40,17 +40,17 @@ public final class SalvageLoot extends LootModifier {
             result.clear();
             return result;
         }
-        boolean wrench=car && isCreateWrench(tool);
-        result.clear();result.add(new ItemStack(Frontier.ROUGH_IRON.get(),car?(wrench?3:2):1));
-        result.add(new ItemStack(Frontier.METAL_SCRAP.get(),car?(wrench?6:4):2));
-        if(car||appliance){
-            result.add(new ItemStack(Frontier.PLASTIC_FRAGMENT.get(),wrench?3:1));
-            if(car && ctx.getRandom().nextInt(wrench?2:4)==0)result.add(new ItemStack(Frontier.ALUMINUM_CHUNK.get()));
-            result.add(new ItemStack(Frontier.ALUMINUM_SCRAP.get(),car?(wrench?6:4):2));
-            result.add(new ItemStack(TradeService.item("tfmg:copper_wire"),wrench?3:2));
-            if(car)result.add(new ItemStack(TradeService.item("tfmg:rubber_sheet")));
-            if(ctx.getRandom().nextInt(wrench?2:4)==0)result.add(new ItemStack(Frontier.WASTE_BATTERY.get()));
-            if(appliance)result.add(new ItemStack(TradeService.item("survival_instinct:electronic_scrap")));
+        result.clear();
+        result.add(new ItemStack(Frontier.ROUGH_IRON.get(), car ? 2 : 1));
+        result.add(new ItemStack(Frontier.METAL_SCRAP.get(), car ? 4 : 2));
+        if (car || appliance) {
+            result.add(new ItemStack(Frontier.PLASTIC_FRAGMENT.get()));
+            if (car && ctx.getRandom().nextInt(4) == 0) result.add(new ItemStack(Frontier.ALUMINUM_CHUNK.get()));
+            result.add(new ItemStack(Frontier.ALUMINUM_SCRAP.get(), car ? 4 : 2));
+            result.add(new ItemStack(TradeService.item("tfmg:copper_wire"), 2));
+            if (car) result.add(new ItemStack(TradeService.item("tfmg:rubber_sheet")));
+            if (ctx.getRandom().nextInt(4) == 0) result.add(new ItemStack(Frontier.WASTE_BATTERY.get()));
+            if (appliance) result.add(new ItemStack(TradeService.item("survival_instinct:electronic_scrap")));
         }
         return result;
     }

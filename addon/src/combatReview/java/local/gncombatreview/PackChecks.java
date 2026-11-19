@@ -58,7 +58,13 @@ final class PackChecks {
                 totals.put(tool,counts);check(counts.getOrDefault("gnfrontier:rough_iron_ingot",0)>0&&counts.getOrDefault("gnfrontier:aluminum_scrap",0)>0,"native vehicle loot gives iron and aluminum using "+tool);
                 check(drops.stream().noneMatch(s->s.getItem() instanceof BlockItem),"salvage does not duplicate the vehicle block item for "+tool);
             }
-            check(totals.get("create:wrench").get("gnfrontier:rough_iron_ingot")>totals.get("gnfrontier:rough_iron_pickaxe").get("gnfrontier:rough_iron_ingot"),"Create wrench retains its salvage bonus");
+            var pickaxe = new HashMap<>(totals.get("gnfrontier:rough_iron_pickaxe"));
+            var wrench = new HashMap<>(totals.get("create:wrench"));
+            for (String optional : List.of("gnfrontier:aluminum_chunk", "gnfrontier:waste_battery")) {
+                pickaxe.remove(optional);
+                wrench.remove(optional);
+            }
+            check(pickaxe.equals(wrench), "Both tools yield the same guaranteed salvage");
             evidence.put("vehicleLoot",totals);
             int variants=0;
             for(var block:vehicleBlocks)for(String tool:List.of("gnfrontier:rough_iron_pickaxe","create:wrench")){

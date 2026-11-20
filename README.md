@@ -27,9 +27,10 @@ GN Frontierは、動画の世界観とゲーム体験の再現を目指す、Min
 
 | 項目 | 現在の状態 |
 | --- | --- |
-| MODパック / 専用コアMOD | 開発版 **0.2.14** ／ 公開プレリリース **0.2.13** |
+| MODパック / 専用コアMOD | 開発版 **0.2.16** ／ 公開プレリリース **0.2.13** |
 | Minecraft / Forge | **1.20.1 / 47.4.20** |
 | Java | **17** |
+| 開発版の既定シェーダー | [GN Frontier Shaders](https://github.com/syarukasu/GN-Frontier-Shaders) |
 | ダウンロード | [GitHub Releases](https://github.com/syarukasu/GN-Frontier/releases/tag/v0.2.13) |
 | CurseForgeサイトへの掲載 | 準備中。公開IDと一部依存物の掲載対応が残っています |
 | ソース・設定 | このGitHubリポジトリで公開 |

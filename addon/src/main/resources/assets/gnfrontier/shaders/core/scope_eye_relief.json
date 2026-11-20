@@ -1,0 +1,12 @@
+{
+  "vertex": "gnfrontier:scope_eye_relief",
+  "fragment": "gnfrontier:scope_eye_relief",
+  "attributes": ["Position"],
+  "samplers": [{"name": "Sampler0"}],
+  "uniforms": [
+    {"name": "LensBounds", "type": "float", "count": 4, "values": [0.0, 0.0, 1.0, 1.0]},
+    {"name": "EyeMotion", "type": "float", "count": 4, "values": [0.0, 0.0, 0.0, 0.0]},
+    {"name": "CopyRegion", "type": "float", "count": 4, "values": [0.0, 0.0, 1.0, 1.0]},
+    {"name": "CircleMask", "type": "int", "count": 1, "values": [0]}
+  ]
+}

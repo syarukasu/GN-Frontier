@@ -73,6 +73,11 @@
     "JapanesePackPriorityMixin",
     "GunTooltipJapaneseMixin",
     "CreateWorldAccess",
-    "LivingRendererAccess"
+    "LivingRendererAccess",
+    "TaczScopeLensAccess",
+    "TaczScopeEyeReliefMixin",
+    "ExpertScopeAccess",
+    "ExpertScopeEyeReliefMixin",
+    "OculusShaderPresetMixin"
   ]
 }

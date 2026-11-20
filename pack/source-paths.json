@@ -9832,6 +9832,10 @@
     "source": "pack/defaults/shaderpacks/ComplementaryUnbound_r5.9.3.zip.txt"
   },
   {
+    "path": "shaderpacks/GN Frontier Shaders.zip.txt",
+    "source": "overlay/shaderpacks/GN Frontier Shaders.zip.txt"
+  },
+  {
     "path": "tacz/tacz-pre.toml",
     "source": "pack/defaults/tacz/tacz-pre.toml"
   },

@@ -133,6 +133,7 @@ def check_archives(directory):
                    and (r['curseforge']['projectID'], r['curseforge']['fileID']) in cf_ids}
         assert covered.isdisjoint({r['path'] for r in extras['files']})
         assert covered | {r['path'] for r in extras['files']} == paths
+        has_gn_default_shader = tuple(map(int, value.split('.'))) >= (0, 2, 16)
         # Resource-pack selections must use the file names written by each distribution.
         for reader, options, prefixes in (
             (cf, 'overrides/options.txt', ('overrides/',)),
@@ -144,6 +145,15 @@ def check_archives(directory):
                 if selection.startswith('file/'):
                     resource = 'resourcepacks/' + selection.removeprefix('file/')
                     assert resource in paths or any(prefix + resource in reader.namelist() for prefix in prefixes), resource
+            if has_gn_default_shader:
+                oculus = next(reader.read(prefix + 'config/oculus.properties') for prefix in prefixes
+                              if prefix + 'config/oculus.properties' in reader.namelist())
+                assert b'shaderPack=GN Frontier Shaders.zip' in oculus.splitlines()
+                assert b'enableShaders=true' in oculus.splitlines()
+                assert any(prefix + 'shaderpacks/GN Frontier Shaders.zip.txt' in reader.namelist() for prefix in prefixes)
+                assert not any(prefix + 'shaderpacks/GN Frontier Shaders.zip' in reader.namelist() for prefix in prefixes)
+        if has_gn_default_shader:
+            assert 'shaderpacks/ComplementaryUnbound_r5.9.3.zip' in covered
         servers = {r['path'] for r in server_manifest['files']}
         assert servers == {r['path'] for r in index['files'] if r['env']['server'] == 'required'}
         assert all(r['env']['client'] == 'required' for r in index['files'])
